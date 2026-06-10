@@ -86,39 +86,40 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| DSGN-01 | TBD | Pending |
-| DSGN-02 | TBD | Pending |
-| DSGN-03 | TBD | Pending |
-| DSGN-04 | TBD | Pending |
-| DSGN-05 | TBD | Pending |
-| EEAT-01 | TBD | Pending |
-| EEAT-02 | TBD | Pending |
-| EEAT-03 | TBD | Pending |
-| EEAT-04 | TBD | Pending |
-| EEAT-05 | TBD | Pending |
-| EEAT-06 | TBD | Pending |
-| EEAT-07 | TBD | Pending |
-| EEAT-08 | TBD | Pending |
-| EEAT-09 | TBD | Pending |
-| EEAT-10 | TBD | Pending |
-| ARTL-01 | TBD | Pending |
-| ARTL-02 | TBD | Pending |
-| HOME-01 | TBD | Pending |
-| HOME-02 | TBD | Pending |
-| CATG-01 | TBD | Pending |
-| TRST-01 | TBD | Pending |
-| TRST-02 | TBD | Pending |
-| TRST-03 | TBD | Pending |
-| QASE-01 | TBD | Pending |
-| QASE-02 | TBD | Pending |
-| QASE-03 | TBD | Pending |
-| QASE-04 | TBD | Pending |
+| DSGN-01 | Phase 1 | Pending |
+| DSGN-02 | Phase 1 | Pending |
+| DSGN-03 | Phase 1 | Pending |
+| DSGN-04 | Phase 1 | Pending |
+| DSGN-05 | Phase 1 | Pending |
+| EEAT-01 | Phase 2 | Pending |
+| EEAT-02 | Phase 2 | Pending |
+| EEAT-03 | Phase 3 | Pending |
+| EEAT-04 | Phase 3 | Pending |
+| EEAT-05 | Phase 3 | Pending |
+| EEAT-06 | Phase 4 | Pending |
+| EEAT-07 | Phase 3 | Pending |
+| EEAT-08 | Phase 3 | Pending |
+| EEAT-09 | Phase 3 | Pending |
+| EEAT-10 | Phase 4 | Pending |
+| ARTL-01 | Phase 4 | Pending |
+| ARTL-02 | Phase 4 | Pending |
+| HOME-01 | Phase 5 | Pending |
+| HOME-02 | Phase 5 | Pending |
+| CATG-01 | Phase 5 | Pending |
+| TRST-01 | Phase 5 | Pending |
+| TRST-02 | Phase 5 | Pending |
+| TRST-03 | Phase 5 | Pending |
+| QASE-01 | Phase 6 | Pending |
+| QASE-02 | Phase 6 | Pending |
+| QASE-03 | Phase 6 | Pending |
+| QASE-04 | Phase 6 | Pending |
 
 **Coverage:**
 - v1 requirements: 27 total
-- Mapped to phases: 0 (pending roadmap creation)
-- Unmapped: 27 ⚠️
+- Mapped to phases: 27/27 ✓
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-06-10*
-*Last updated: 2026-06-10 after initial definition*
+*Last updated: 2026-06-10 after roadmap creation*
+</content>
