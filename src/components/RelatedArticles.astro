@@ -1,0 +1,93 @@
+---
+import { getCollection } from "astro:content";
+import { getArticlePath } from "@/data/site";
+
+interface Props {
+  category: string;
+  currentSlug: string;
+}
+
+const { category, currentSlug } = Astro.props;
+
+const related = (await getCollection("articles"))
+  .filter((a) => a.data.category === category && a.slug !== currentSlug)
+  .sort((a, b) => a.data.order - b.data.order)
+  .slice(0, 3);
+---
+
+{related.length > 0 && (
+  <section class="related">
+    <p class="related-label">Bài viết liên quan</p>
+    <div class="related-grid">
+      {related.map((article) => (
+        <a class="related-card" href={getArticlePath(article)}>
+          <strong class="related-title">{article.data.title}</strong>
+          <p class="related-desc">{article.data.description}</p>
+          <span class="related-meta">{article.data.readingTime}</span>
+        </a>
+      ))}
+    </div>
+  </section>
+)}
+
+<style>
+  .related {
+    margin-top: var(--space-12);
+    padding-top: var(--space-8);
+    border-top: 1px solid var(--line);
+  }
+
+  .related-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-neutral-400);
+    margin: 0 0 var(--space-4);
+  }
+
+  .related-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: var(--space-4);
+  }
+
+  .related-card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    padding: var(--space-4);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-md);
+    background: var(--surface);
+    text-decoration: none;
+    transition: box-shadow var(--transition), border-color var(--transition);
+  }
+
+  .related-card:hover {
+    box-shadow: var(--shadow-sm);
+    border-color: var(--color-brand-100);
+    text-decoration: none;
+  }
+
+  .related-title {
+    font-family: var(--font-serif);
+    font-size: 0.95rem;
+    color: var(--color-brand-900);
+    line-height: 1.4;
+  }
+
+  .related-desc {
+    margin: 0;
+    font-size: 0.83rem;
+    color: var(--muted);
+    line-height: 1.5;
+    flex: 1;
+  }
+
+  .related-meta {
+    font-size: 0.78rem;
+    color: var(--color-neutral-400);
+    font-weight: 500;
+  }
+</style>

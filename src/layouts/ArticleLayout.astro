@@ -1,0 +1,353 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import AuthorBox from "@/components/AuthorBox.astro";
+import RelatedArticles from "@/components/RelatedArticles.astro";
+import ShareBar from "@/components/ShareBar.astro";
+import TOC from "@/components/TOC.astro";
+import { categories, getCategoryPath, site } from "@/data/site";
+
+interface Props {
+  entry: any;
+  headings?: { depth: number; slug: string; text: string }[];
+}
+
+const { entry, headings = [] } = Astro.props;
+const { title, description, publishDate, updatedDate, readingTime, sources } = entry.data;
+
+const categoryMeta = categories.find((c) => c.slug === entry.data.category);
+const categoryTitle = categoryMeta?.title ?? entry.data.category;
+const categoryPath = getCategoryPath(categoryMeta ?? entry.data.category);
+const categoryGroupPath = categoryMeta && "groupPath" in categoryMeta ? categoryMeta.groupPath : undefined;
+const isInvestingCategory = categoryMeta?.group === "Đầu tư";
+
+const articleUrl = new URL(Astro.url.pathname, Astro.site).toString();
+const ogImageUrl = new URL("/images/hero-investing.png", Astro.site).toString();
+
+const hasToc = headings.filter((h) => h.depth === 2).length > 1;
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": title,
+  "description": description,
+  "url": articleUrl,
+  "datePublished": publishDate.toISOString(),
+  "dateModified": updatedDate.toISOString(),
+  "inLanguage": "vi",
+  "image": {
+    "@type": "ImageObject",
+    "url": ogImageUrl,
+    "width": 1200,
+    "height": 630,
+  },
+  "author": {
+    "@type": "Person",
+    "name": site.author,
+    "url": new URL("/about/", Astro.site).toString(),
+  },
+  "reviewedBy": {
+    "@type": "Organization",
+    "name": site.editorialReviewer,
+    "url": new URL("/editorial-policy/", Astro.site).toString(),
+  },
+  "publisher": { "@id": `${Astro.site}#organization` },
+  "isPartOf": { "@id": `${Astro.site}#website` },
+  "citation": sources,
+};
+
+const faqSchema = entry.data.faq?.length
+  ? {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": entry.data.faq.map((item: { question: string; answer: string }) => ({
+        "@type": "Question",
+        "name": item.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": item.answer,
+        },
+      })),
+    }
+  : null;
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": isInvestingCategory
+    ? [
+        { "@type": "ListItem", "position": 1, "name": "Trang chủ", "item": Astro.site?.toString() },
+        { "@type": "ListItem", "position": 2, "name": "Đầu tư", "item": new URL("/dau-tu/", Astro.site).toString() },
+        { "@type": "ListItem", "position": 3, "name": categoryTitle, "item": new URL(categoryPath, Astro.site).toString() },
+        { "@type": "ListItem", "position": 4, "name": title, "item": articleUrl },
+      ]
+    : [
+        { "@type": "ListItem", "position": 1, "name": "Trang chủ", "item": Astro.site?.toString() },
+        { "@type": "ListItem", "position": 2, "name": categoryTitle, "item": new URL(categoryPath, Astro.site).toString() },
+        { "@type": "ListItem", "position": 3, "name": title, "item": articleUrl },
+      ],
+};
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  ogType="article"
+  articleMeta={{
+    publishedTime: publishDate?.toISOString(),
+    modifiedTime: updatedDate?.toISOString(),
+    author: site.author,
+  }}
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+    {faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
+  </Fragment>
+
+  <header class="article-header">
+    <div class="article-container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Trang chủ</a>
+        <span aria-hidden="true">›</span>
+        {isInvestingCategory && categoryGroupPath ? (
+          <>
+            <a href={categoryGroupPath}>Đầu tư</a>
+            <span aria-hidden="true">›</span>
+          </>
+        ) : null}
+        <a href={categoryPath}>{categoryTitle}</a>
+        <span aria-hidden="true">›</span>
+        <span aria-current="page">{title}</span>
+      </nav>
+      <div class="eyebrow">{categoryTitle}</div>
+      <h1>{title}</h1>
+      <p class="lead">{description}</p>
+      <p class="meta">
+        Viết bởi <a href="/about/">{site.author}</a> · Rà soát theo <a href="/editorial-policy/">chính sách biên tập</a> · Cập nhật {updatedDate.toLocaleDateString("vi-VN")} · {readingTime}
+      </p>
+      <div class="article-trust" aria-label="Thông tin độ tin cậy của bài viết">
+        <span>Kiểm tra nguồn</span>
+        <span>Không tư vấn cá nhân</span>
+        <span>Có quy trình đính chính</span>
+      </div>
+    </div>
+  </header>
+
+  <div class:list={["article-body", { "article-body--toc": hasToc }]}>
+    <article class="prose article-content">
+      <aside class="ymyl-note" aria-label="Lưu ý tài chính">
+        <strong>Lưu ý trước khi đọc:</strong>
+        <span>{site.disclosure}</span>
+      </aside>
+      <slot />
+      {entry.data.faq?.length ? (
+        <section class="faq-section">
+          <h2>Câu hỏi thường gặp</h2>
+          <div class="faq-list">
+            {entry.data.faq.map((item: { question: string; answer: string }) => (
+              <details>
+                <summary>{item.question}</summary>
+                <p>{item.answer}</p>
+              </details>
+            ))}
+          </div>
+        </section>
+      ) : null}
+      {sources?.length ? (
+        <section class="source-section">
+          <h2>Nguồn tham khảo</h2>
+          <p>
+            Bài viết ưu tiên nguồn gốc và tài liệu có thể kiểm chứng. Xem thêm
+            <a href="/sources-policy/"> chính sách nguồn tham khảo</a>.
+          </p>
+          <ul>
+            {sources.map((source: string) => <li>{source}</li>)}
+          </ul>
+        </section>
+      ) : null}
+      <section class="editorial-review">
+        <h2>Cách chúng tôi kiểm tra nội dung</h2>
+        <p>
+          Nội dung được rà soát về tính chính xác, tính cập nhật và mức độ phù hợp với nhà đầu tư cá nhân.
+          Nếu phát hiện lỗi có thể ảnh hưởng đến quyết định tài chính, bài viết sẽ được cập nhật và ghi nhận theo
+          <a href="/corrections-policy/"> chính sách đính chính</a>.
+        </p>
+      </section>
+      <ShareBar title={title} url={articleUrl} />
+      <AuthorBox />
+      <RelatedArticles category={entry.data.category} currentSlug={entry.slug} />
+    </article>
+
+    {hasToc && (
+      <aside class="toc-sidebar" aria-label="Mục lục bài viết">
+        <TOC headings={headings} />
+      </aside>
+    )}
+  </div>
+</BaseLayout>
+
+<style>
+  /* Breadcrumb */
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+
+  .breadcrumb a {
+    color: var(--muted);
+    transition: color var(--transition);
+  }
+
+  .breadcrumb a:hover {
+    color: var(--brand);
+    text-decoration: none;
+  }
+
+  .breadcrumb span[aria-current] {
+    color: var(--color-neutral-400);
+  }
+
+  .meta a {
+    color: var(--brand);
+    font-weight: 600;
+  }
+
+  .article-trust {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 18px;
+  }
+
+  .article-trust span {
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: var(--color-neutral-100);
+    color: var(--muted);
+    font-size: 0.82rem;
+    font-weight: 600;
+    line-height: 1.2;
+    padding: 7px 12px;
+  }
+
+  /* Article body: single column by default */
+  .article-body {
+    width: min(100% - 32px, var(--article));
+    margin-inline: auto;
+    padding-bottom: var(--space-16);
+  }
+
+  /* With TOC: wider container, 2 columns */
+  .article-body--toc {
+    width: min(100% - 32px, calc(var(--article) + 240px + var(--space-12)));
+    display: grid;
+    grid-template-columns: minmax(0, var(--article)) 220px;
+    gap: var(--space-12);
+    align-items: start;
+  }
+
+  .article-content {
+    font-size: 1.05rem;
+    min-width: 0; /* prevent grid blowout */
+  }
+
+  .ymyl-note,
+  .editorial-review,
+  .source-section {
+    border: 1px solid var(--line);
+    border-radius: var(--radius-md);
+    background: var(--surface);
+    padding: 18px 20px;
+  }
+
+  .ymyl-note {
+    display: grid;
+    gap: 4px;
+    margin: 28px 0 30px;
+    border-left: 4px solid var(--color-brand-900);
+  }
+
+  .ymyl-note strong {
+    color: var(--color-brand-900);
+  }
+
+  .ymyl-note span,
+  .source-section p,
+  .editorial-review p {
+    color: var(--muted);
+    font-size: 0.96rem;
+    line-height: 1.65;
+  }
+
+  .source-section,
+  .editorial-review,
+  .faq-section {
+    margin-top: 42px;
+  }
+
+  .faq-list {
+    display: grid;
+    gap: 10px;
+  }
+
+  .faq-list details {
+    border: 1px solid var(--line);
+    border-radius: var(--radius-md);
+    background: var(--surface);
+    padding: 14px 16px;
+  }
+
+  .faq-list summary {
+    color: var(--color-brand-900);
+    cursor: pointer;
+    font-weight: 800;
+  }
+
+  .faq-list p {
+    margin: 10px 0 0;
+    color: var(--muted);
+    font-size: 0.98rem;
+  }
+
+  .source-section h2,
+  .editorial-review h2 {
+    margin-top: 0;
+  }
+
+  .article-content :global(h2) {
+    margin-top: 42px;
+    font-family: var(--font-serif);
+    color: var(--color-brand-900);
+  }
+
+  .article-content :global(p),
+  .article-content :global(li) {
+    color: #1a2330;
+    line-height: 1.8;
+  }
+
+  .article-content :global(blockquote) {
+    border-left: 4px solid var(--brand);
+    margin: 28px 0;
+    padding: 12px 18px;
+    background: var(--color-brand-100);
+    color: var(--muted);
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  }
+
+  /* Hide TOC on narrow screens */
+  @media (max-width: 1080px) {
+    .article-body--toc {
+      grid-template-columns: 1fr;
+    }
+
+    .toc-sidebar {
+      display: none;
+    }
+  }
+</style>

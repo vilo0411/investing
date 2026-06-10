@@ -1,0 +1,123 @@
+---
+interface Props {
+  title: string;
+  url: string;
+}
+
+const { title, url } = Astro.props;
+const fbUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}&quote=${encodeURIComponent(title)}`;
+---
+
+<div class="share-bar">
+  <span class="share-label">Chia sẻ</span>
+  <a
+    class="share-btn share-fb"
+    href={fbUrl}
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Chia sẻ lên Facebook"
+  >
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+    </svg>
+    Facebook
+  </a>
+  <button
+    class="share-btn share-copy"
+    id="copy-link-btn"
+    aria-label="Sao chép đường dẫn"
+    data-url={url}
+  >
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+      <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
+      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
+    </svg>
+    <span id="copy-text">Sao chép link</span>
+  </button>
+</div>
+
+<style>
+  .share-bar {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    margin-top: var(--space-8);
+    padding-top: var(--space-6);
+    border-top: 1px solid var(--line);
+    flex-wrap: wrap;
+  }
+
+  .share-label {
+    font-size: 0.82rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-neutral-400);
+    margin-right: var(--space-1);
+  }
+
+  .share-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 14px;
+    border-radius: var(--radius-md);
+    font-size: 0.88rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background var(--transition), color var(--transition);
+    text-decoration: none;
+    border: 1.5px solid var(--line);
+    background: var(--surface);
+    color: var(--muted);
+  }
+
+  .share-btn:hover {
+    text-decoration: none;
+  }
+
+  .share-fb:hover {
+    background: #1877f2;
+    color: #fff;
+    border-color: #1877f2;
+  }
+
+  .share-copy:hover {
+    background: var(--color-brand-100);
+    color: var(--color-brand-900);
+    border-color: var(--color-brand-100);
+  }
+
+  .share-copy.copied {
+    background: #d1fae5;
+    color: #065f46;
+    border-color: #6ee7b7;
+  }
+</style>
+
+<script is:inline>
+  const btn = document.getElementById("copy-link-btn");
+  if (btn) {
+    btn.addEventListener("click", async () => {
+      const url = btn.dataset.url;
+      try {
+        await navigator.clipboard.writeText(url);
+      } catch {
+        // Fallback for older browsers
+        const el = document.createElement("textarea");
+        el.value = url;
+        document.body.appendChild(el);
+        el.select();
+        document.execCommand("copy");
+        document.body.removeChild(el);
+      }
+      const text = document.getElementById("copy-text");
+      btn.classList.add("copied");
+      if (text) text.textContent = "Đã sao chép!";
+      setTimeout(() => {
+        btn.classList.remove("copied");
+        if (text) text.textContent = "Sao chép link";
+      }, 2000);
+    });
+  }
+</script>

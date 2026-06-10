@@ -1,0 +1,153 @@
+---
+import { site } from "@/data/site";
+---
+
+<aside class="author-box">
+  <div class="author-avatar" aria-hidden="true">
+    {site.author.split(" ").pop()?.charAt(0)}
+  </div>
+  <div class="author-info">
+    <div class="author-heading">
+      <div>
+        <p class="author-label">Về tác giả</p>
+        <a class="author-name" href="/about/">{site.author}</a>
+      </div>
+      <a class="author-profile-link" href="/about/">Xem hồ sơ</a>
+    </div>
+    <p class="author-role">{site.authorProfile.role}</p>
+    <p class="author-bio">
+      Phụ trách nội dung tại ValueInvesting.com.vn — tập trung giải thích khái niệm đầu tư bằng
+      ngôn ngữ rõ ràng, có nguồn tham khảo, không khuyến nghị mua bán.
+    </p>
+    <div class="author-expertise" aria-label="Chuyên môn tác giả">
+      {site.authorProfile.expertise.map((item) => <span>{item}</span>)}
+    </div>
+    <p class="author-note">
+      Nội dung được viết cho mục đích giáo dục tài chính, ưu tiên nguồn chính thống và tiếp nhận phản hồi đính chính qua email công khai.
+    </p>
+  </div>
+</aside>
+
+<style>
+  .author-box {
+    display: flex;
+    gap: var(--space-4);
+    align-items: flex-start;
+    padding: var(--space-6);
+    margin-top: var(--space-12);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-md);
+    background: var(--surface);
+    border-left: 4px solid var(--color-brand-900);
+  }
+
+  .author-avatar {
+    flex-shrink: 0;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: var(--color-brand-900);
+    color: #fff;
+    font-family: var(--font-serif);
+    font-weight: 700;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .author-info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+    min-width: 0;
+  }
+
+  .author-heading {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: var(--space-4);
+  }
+
+  .author-label {
+    margin: 0;
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-accent);
+  }
+
+  .author-name {
+    font-family: var(--font-serif);
+    font-size: 1.18rem;
+    font-weight: 700;
+    color: var(--color-brand-900);
+    text-decoration: none;
+  }
+
+  .author-name:hover {
+    text-decoration: underline;
+  }
+
+  .author-profile-link {
+    flex-shrink: 0;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    color: var(--brand);
+    font-size: 0.78rem;
+    font-weight: 800;
+    line-height: 1.2;
+    padding: 7px 10px;
+    text-decoration: none;
+  }
+
+  .author-profile-link:hover {
+    border-color: var(--brand);
+    text-decoration: none;
+  }
+
+  .author-role {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.86rem;
+    font-weight: 700;
+  }
+
+  .author-bio,
+  .author-note {
+    margin: var(--space-1) 0 0;
+    font-size: 0.9rem;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+
+  .author-expertise {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: var(--space-3);
+  }
+
+  .author-expertise span {
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    color: var(--brand);
+    font-size: 0.78rem;
+    font-weight: 800;
+    line-height: 1.2;
+    padding: 6px 9px;
+  }
+
+  @media (max-width: 560px) {
+    .author-box {
+      flex-direction: column;
+    }
+
+    .author-heading {
+      flex-direction: column;
+      gap: var(--space-2);
+    }
+  }
+</style>

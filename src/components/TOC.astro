@@ -1,0 +1,103 @@
+---
+interface Heading {
+  depth: number;
+  slug: string;
+  text: string;
+}
+
+interface Props {
+  headings: Heading[];
+}
+
+const { headings } = Astro.props;
+const h2 = headings.filter((h) => h.depth === 2);
+---
+
+{h2.length > 1 && (
+  <nav class="toc" aria-label="Mục lục">
+    <p class="toc-title">Mục lục</p>
+    <ol class="toc-list">
+      {h2.map((h) => (
+        <li>
+          <a class="toc-link" href={`#${h.slug}`}>{h.text}</a>
+        </li>
+      ))}
+    </ol>
+  </nav>
+)}
+
+<style>
+  .toc {
+    position: sticky;
+    top: calc(72px + 24px); /* header height + gap */
+    padding: var(--space-4) var(--space-4) var(--space-4) var(--space-3);
+    border-left: 2px solid var(--color-brand-100);
+    max-height: calc(100vh - 72px - 48px);
+    overflow-y: auto;
+  }
+
+  .toc-title {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-neutral-400);
+    margin: 0 0 var(--space-3);
+  }
+
+  .toc-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+  }
+
+  .toc-link {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--muted);
+    line-height: 1.5;
+    padding: 3px 0;
+    transition: color var(--transition);
+    text-decoration: none;
+    border-left: 2px solid transparent;
+    padding-left: var(--space-2);
+    margin-left: calc(-1 * var(--space-2) - 2px); /* align with border */
+  }
+
+  .toc-link:hover,
+  .toc-link.active {
+    color: var(--color-brand-900);
+    border-left-color: var(--color-brand-900);
+    text-decoration: none;
+  }
+</style>
+
+<script is:inline>
+  // Highlight active TOC item on scroll
+  const links = document.querySelectorAll(".toc-link");
+  if (links.length) {
+    const headingEls = [...links].map((l) =>
+      document.getElementById(l.getAttribute("href").slice(1))
+    ).filter(Boolean);
+
+    const obs = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            links.forEach((l) => l.classList.remove("active"));
+            const active = document.querySelector(
+              `.toc-link[href="#${entry.target.id}"]`
+            );
+            if (active) active.classList.add("active");
+          }
+        });
+      },
+      { rootMargin: "-20% 0px -70% 0px" }
+    );
+
+    headingEls.forEach((el) => obs.observe(el));
+  }
+</script>

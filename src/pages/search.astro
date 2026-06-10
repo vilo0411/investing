@@ -1,0 +1,261 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { categories, categoryMeta, getArticlePath } from "@/data/site";
+
+const articles = (await getCollection("articles"))
+  .toSorted((a, b) => b.data.updatedDate.getTime() - a.data.updatedDate.getTime());
+
+const searchIndex = articles.map((article) => {
+  const meta = categoryMeta[article.data.category] ?? {
+    label: article.data.category,
+    abbr: "?",
+    gradientClass: "thumb-stocks",
+  };
+
+  return {
+    title: article.data.title,
+    description: article.data.description,
+    category: article.data.category,
+    categoryLabel: meta.label,
+    readingTime: article.data.readingTime,
+    updatedDate: article.data.updatedDate.toLocaleDateString("vi-VN", {
+      day: "numeric",
+      month: "long",
+      year: "numeric",
+    }),
+    href: getArticlePath(article),
+    tags: article.data.tags,
+    text: [
+      article.data.title,
+      article.data.description,
+      meta.label,
+      ...article.data.tags,
+    ].join(" ").toLowerCase(),
+  };
+});
+---
+
+<BaseLayout title="Tìm kiếm" description="Tìm bài viết theo chủ đề, thuật ngữ hoặc nhóm nội dung trên ValueInvesting.com.vn.">
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Trang chủ</a>
+        <span aria-hidden="true">›</span>
+        <span aria-current="page">Tìm kiếm</span>
+      </nav>
+      <div class="eyebrow">Thư viện kiến thức</div>
+      <h1>Tìm kiếm</h1>
+      <p class="lead">Tra nhanh khái niệm, chỉ số tài chính, sản phẩm đầu tư và bài viết nền tảng cho người mới.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container search-shell">
+      <form class="search-controls" role="search" aria-label="Tìm kiếm bài viết" data-search-form>
+        <label class="search-label" for="search-query">Từ khóa</label>
+        <input
+          id="search-query"
+          class="search-input"
+          type="search"
+          name="q"
+          placeholder="Ví dụ: ETF, P/E, trái phiếu, công ty chứng khoán"
+          autocomplete="off"
+          data-search-input
+        />
+        <div class="filter-row" aria-label="Lọc theo chủ đề">
+          <button class="filter-chip is-active" type="button" data-category="all">Tất cả</button>
+          {categories.map((category) => (
+            <button class="filter-chip" type="button" data-category={category.slug}>{category.title}</button>
+          ))}
+        </div>
+      </form>
+
+      <div class="search-summary" data-search-summary>{articles.length} bài viết</div>
+      <div class="search-results" data-search-results></div>
+    </div>
+  </section>
+
+  <script type="application/json" id="search-index" set:html={JSON.stringify(searchIndex)} />
+</BaseLayout>
+
+<style>
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: var(--space-4);
+    flex-wrap: wrap;
+  }
+
+  .breadcrumb a {
+    color: var(--muted);
+  }
+
+  .search-shell {
+    display: grid;
+    gap: 22px;
+  }
+
+  .search-controls {
+    border: 1px solid var(--line);
+    border-radius: var(--radius-md);
+    background: var(--surface);
+    padding: 20px;
+  }
+
+  .search-label {
+    display: block;
+    color: var(--color-brand-900);
+    font-weight: 800;
+    font-size: 0.84rem;
+    margin-bottom: 8px;
+  }
+
+  .search-input {
+    width: 100%;
+    min-height: 48px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-md);
+    padding: 0 14px;
+    color: var(--text);
+    font: inherit;
+    outline: none;
+  }
+
+  .search-input:focus {
+    border-color: var(--color-brand-900);
+    box-shadow: 0 0 0 3px rgba(0, 107, 44, 0.12);
+  }
+
+  .filter-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 14px;
+  }
+
+  .filter-chip {
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: var(--surface);
+    color: var(--muted);
+    cursor: pointer;
+    font: inherit;
+    font-size: 0.84rem;
+    font-weight: 700;
+    padding: 7px 11px;
+  }
+
+  .filter-chip.is-active,
+  .filter-chip:hover {
+    border-color: var(--color-brand-900);
+    background: var(--color-brand-100);
+    color: var(--color-brand-900);
+  }
+
+  .search-summary {
+    color: var(--muted);
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+
+  .search-results {
+    display: grid;
+    gap: 12px;
+  }
+
+  .result-card {
+    display: grid;
+    gap: 8px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-md);
+    background: var(--surface);
+    padding: 18px 20px;
+    text-decoration: none;
+  }
+
+  .result-card:hover {
+    border-color: var(--color-brand-100);
+    box-shadow: var(--shadow-sm);
+    text-decoration: none;
+  }
+
+  .result-meta {
+    display: flex;
+    gap: 10px;
+    color: var(--muted);
+    font-size: 0.82rem;
+    flex-wrap: wrap;
+  }
+
+  .result-title {
+    margin: 0;
+    color: var(--text);
+    font-family: var(--font-serif);
+    font-size: 1.2rem;
+    line-height: 1.3;
+  }
+
+  .result-desc {
+    margin: 0;
+    color: var(--muted);
+  }
+</style>
+
+<script is:inline>
+  const rawIndex = document.getElementById("search-index")?.textContent ?? "[]";
+  const index = JSON.parse(rawIndex);
+  const input = document.querySelector("[data-search-input]");
+  const results = document.querySelector("[data-search-results]");
+  const summary = document.querySelector("[data-search-summary]");
+  const chips = [...document.querySelectorAll("[data-category]")];
+  const params = new URLSearchParams(window.location.search);
+  let activeCategory = params.get("category") || "all";
+
+  const normalize = (value) =>
+    value.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+
+  const render = () => {
+    const query = normalize(input.value.trim());
+    const filtered = index.filter((item) => {
+      const matchesCategory = activeCategory === "all" || item.category === activeCategory;
+      const haystack = normalize(item.text);
+      const matchesQuery = !query || query.split(/\s+/).every((part) => haystack.includes(part));
+      return matchesCategory && matchesQuery;
+    });
+
+    summary.textContent = `${filtered.length} bài viết phù hợp`;
+    results.innerHTML = filtered.length
+      ? filtered.map((item) => `
+          <a class="result-card" href="${item.href}">
+            <span class="result-meta">
+              <strong>${item.categoryLabel}</strong>
+              <span>${item.readingTime}</span>
+              <span>Cập nhật ${item.updatedDate}</span>
+            </span>
+            <h2 class="result-title">${item.title}</h2>
+            <p class="result-desc">${item.description}</p>
+          </a>
+        `).join("")
+      : `<div class="result-card"><h2 class="result-title">Không tìm thấy bài phù hợp</h2><p class="result-desc">Hãy thử từ khóa rộng hơn hoặc chọn tất cả chủ đề.</p></div>`;
+  };
+
+  if (input) {
+    input.value = params.get("q") || "";
+    input.addEventListener("input", render);
+  }
+
+  chips.forEach((chip) => {
+    chip.classList.toggle("is-active", chip.dataset.category === activeCategory);
+    chip.addEventListener("click", () => {
+      activeCategory = chip.dataset.category;
+      chips.forEach((item) => item.classList.toggle("is-active", item === chip));
+      render();
+    });
+  });
+
+  render();
+</script>

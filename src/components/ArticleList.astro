@@ -1,0 +1,178 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { categoryMeta, getArticlePath } from "@/data/site";
+
+interface Props {
+  articles: CollectionEntry<"articles">[];
+}
+
+const { articles } = Astro.props;
+
+---
+
+<div class="card-grid">
+  {articles.map((article) => {
+    const meta = categoryMeta[article.data.category] ?? { abbr: "?", label: article.data.category, gradientClass: "thumb-stocks" };
+    const path = getArticlePath(article);
+    return (
+      <a class="article-card" href={path}>
+        <div class={`card-thumb ${meta.gradientClass}`}>
+          <span class="card-thumb-abbr">{meta.abbr}</span>
+        </div>
+        <div class="card-body">
+          <div class="card-tag-row">
+            <span class={`card-tag tag-${article.data.category}`}>{meta.label}</span>
+            <span class="card-read-time">{article.data.readingTime}</span>
+          </div>
+          <h3 class="card-title">{article.data.title}</h3>
+          <p class="card-excerpt">{article.data.description}</p>
+          <div class="card-footer">
+            <span class="card-date">
+              {article.data.updatedDate.toLocaleDateString("vi-VN", { day: "numeric", month: "long", year: "numeric" })}
+            </span>
+          </div>
+        </div>
+      </a>
+    );
+  })}
+</div>
+
+<style>
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+  }
+
+  .article-card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 2px 8px rgba(0, 107, 44, 0.06);
+    overflow: hidden;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow var(--transition), transform var(--transition), border-color var(--transition);
+  }
+
+  .article-card:hover {
+    box-shadow: 0 6px 24px rgba(0, 107, 44, 0.12);
+    transform: translateY(-3px);
+    border-color: var(--color-brand-100);
+    text-decoration: none;
+  }
+
+  /* Gradient thumbnails */
+  .card-thumb {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .card-thumb-abbr {
+    font-family: var(--font-serif);
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: rgba(0,0,0,0.25);
+    letter-spacing: 0.04em;
+  }
+
+  .thumb-stocks   { background: linear-gradient(135deg, #e8f8ee, #a7f3c0); }
+  .thumb-etf      { background: linear-gradient(135deg, #eef2ff, #c7d2fe); }
+  .thumb-fund     { background: linear-gradient(135deg, #fdf4ff, #e9d5ff); }
+  .thumb-bond     { background: linear-gradient(135deg, #eff6ff, #bfdbfe); }
+  .thumb-derivative { background: linear-gradient(135deg, #ecfeff, #a5f3fc); }
+  .thumb-analyse  { background: linear-gradient(135deg, #fff7ed, #fed7aa); }
+  .thumb-technical { background: linear-gradient(135deg, #f0fdf4, #bbf7d0); }
+  .thumb-review   { background: linear-gradient(135deg, #fdf2f8, #fbcfe8); }
+  .thumb-investor { background: linear-gradient(135deg, #fefce8, #fde68a); }
+
+  .card-body {
+    padding: 18px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .card-tag-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  .card-tag {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 3px 10px;
+    border-radius: 999px;
+    background: var(--color-brand-100);
+    color: var(--color-brand-900);
+  }
+
+  .tag-etf      { background: #eef2ff; color: #3730a3; }
+  .tag-quy-dau-tu { background: #fdf4ff; color: #7e22ce; }
+  .tag-trai-phieu { background: #eff6ff; color: #1d4ed8; }
+  .tag-phan-tich  { background: #fff7ed; color: #c2410c; }
+  .tag-reviews    { background: #fdf2f8; color: #be185d; }
+  .tag-nha-dau-tu { background: #fefce8; color: #a16207; }
+
+  .card-read-time {
+    font-size: 12px;
+    color: var(--muted);
+  }
+
+  .card-title {
+    font-family: var(--font-serif);
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1.35;
+    margin: 0 0 8px;
+    transition: color var(--transition);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .article-card:hover .card-title {
+    color: var(--brand);
+  }
+
+  .card-excerpt {
+    font-size: 0.875rem;
+    color: var(--muted);
+    line-height: 1.55;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin: 0 0 16px;
+    flex: 1;
+  }
+
+  .card-footer {
+    border-top: 1px solid var(--line);
+    padding-top: 12px;
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+
+  @media (max-width: 900px) {
+    .card-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (max-width: 580px) {
+    .card-grid { grid-template-columns: 1fr; }
+  }
+</style>

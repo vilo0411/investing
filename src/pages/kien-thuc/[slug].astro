@@ -1,0 +1,31 @@
+---
+import { getCollection } from "astro:content";
+import { getArticlePath, site } from "@/data/site";
+
+export async function getStaticPaths() {
+  const articles = await getCollection("articles");
+  return articles.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const redirectPath = getArticlePath(entry);
+const redirectUrl = new URL(redirectPath, Astro.site).toString();
+const { title } = entry.data;
+---
+
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex, follow" />
+    <meta http-equiv="refresh" content={`0;url=${redirectPath}`} />
+    <link rel="canonical" href={redirectUrl} />
+    <title>{title} | {site.name}</title>
+  </head>
+  <body>
+    <p>Bài viết đã chuyển sang <a href={redirectPath}>{redirectUrl}</a>.</p>
+  </body>
+</html>

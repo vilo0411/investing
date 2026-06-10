@@ -1,0 +1,221 @@
+---
+import { SEO } from "astro-seo";
+import { categories, site } from "@/data/site";
+import "@/styles/global.css";
+
+const investCategories = categories.filter(c => c.group === "Đầu tư");
+const phanTichCategories = categories.filter(c => c.group === "Phân tích");
+
+interface Props {
+  title?: string;
+  description?: string;
+  ogImage?: string;
+  ogType?: "website" | "article";
+  articleMeta?: {
+    publishedTime?: string;
+    modifiedTime?: string;
+    author?: string;
+  };
+}
+
+const {
+  title = site.name,
+  description = site.description,
+  ogImage = "/images/hero-investing.png",
+  ogType = "website",
+  articleMeta,
+} = Astro.props;
+
+const pageTitle = title === site.name ? title : `${title} | ${site.name}`;
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
+const ogImageUrl = new URL(ogImage, Astro.site).toString();
+
+const openGraphExtra =
+  ogType === "article" && articleMeta
+    ? [
+        articleMeta.publishedTime
+          ? { property: "article:published_time", content: articleMeta.publishedTime }
+          : null,
+        articleMeta.modifiedTime
+          ? { property: "article:modified_time", content: articleMeta.modifiedTime }
+          : null,
+        articleMeta.author
+          ? { property: "article:author", content: articleMeta.author }
+          : null,
+      ].filter((x): x is NonNullable<typeof x> => x !== null)
+    : [];
+---
+
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts: DM Serif Display + DM Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Organization + WebSite schema (all pages) -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": `${Astro.site}#organization`,
+          "name": site.name,
+          "url": Astro.site,
+          "logo": {
+            "@type": "ImageObject",
+            "url": `${Astro.site}images/hero-investing.png`,
+          },
+          "email": site.email,
+          "founder": {
+            "@type": "Person",
+            "name": site.author,
+            "url": `${Astro.site}about/`,
+          },
+        },
+        {
+          "@type": "WebSite",
+          "@id": `${Astro.site}#website`,
+          "url": Astro.site,
+          "name": site.name,
+          "description": site.description,
+          "inLanguage": "vi",
+          "publisher": { "@id": `${Astro.site}#organization` },
+        },
+      ],
+    })} />
+
+    <SEO
+      title={pageTitle}
+      description={description}
+      canonical={canonicalUrl}
+      openGraph={{
+        basic: {
+          title: pageTitle,
+          type: ogType,
+          image: ogImageUrl,
+          url: canonicalUrl,
+        },
+        optional: {
+          description: description,
+          locale: "vi_VN",
+          siteName: site.name,
+        },
+        image: {
+          width: 1200,
+          height: 630,
+          alt: pageTitle,
+        },
+        article:
+          ogType === "article" && articleMeta
+            ? {
+                publishedTime: articleMeta.publishedTime,
+                modifiedTime: articleMeta.modifiedTime,
+                authors: articleMeta.author ? [articleMeta.author] : undefined,
+              }
+            : undefined,
+      }}
+      twitter={{
+        card: "summary_large_image",
+        title: pageTitle,
+        description: description,
+        image: ogImageUrl,
+        imageAlt: pageTitle,
+      }}
+      extend={{
+        link: [
+          { rel: "alternate", hreflang: "vi", href: canonicalUrl },
+          { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+        ],
+        meta: [
+          { name: "author", content: site.author },
+          ...openGraphExtra,
+        ],
+      }}
+    />
+    <slot name="head" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="container nav" aria-label="Menu chính">
+        <a class="brand" href="/">{site.name}</a>
+        <div class="nav-links">
+          <!-- Đầu tư — mega dropdown -->
+          <div class="nav-item-mega">
+            <a href="/dau-tu/" class="nav-link-mega">
+              Đầu tư
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+            </a>
+            <div class="mega-dropdown">
+              {investCategories.map(cat => (
+                <a href={cat.path} class="mega-item">
+                  <span class="mega-item-title">{cat.title}</span>
+                  <span class="mega-item-desc">{cat.description}</span>
+                </a>
+              ))}
+            </div>
+          </div>
+          <!-- Phân tích — dropdown -->
+          <div class="nav-item-mega">
+            <a href="/phan-tich/" class="nav-link-mega">
+              Phân tích
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+            </a>
+            <div class="mega-dropdown">
+              {phanTichCategories.map(cat => (
+                <a href={cat.path} class="mega-item">
+                  <span class="mega-item-title">{cat.title}</span>
+                  <span class="mega-item-desc">{cat.description}</span>
+                </a>
+              ))}
+            </div>
+          </div>
+          <a href="/reviews/">Reviews</a>
+          <a href="/nha-dau-tu/">Nhà đầu tư</a>
+          <a href="/about/">Tác giả</a>
+          <a class="nav-search" href="/search/" aria-label="Tìm kiếm bài viết">Tìm kiếm</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-4col">
+        <div class="footer-brand">
+          <strong>{site.name}</strong>
+          <p>Kiến thức đầu tư giá trị cho người Việt — miễn phí, có nguồn, không khuyến nghị mua bán.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Đầu tư</h5>
+          {investCategories.map(cat => <a href={cat.path}>{cat.title}</a>)}
+        </div>
+        <div class="footer-col">
+          <h5>Phân tích & Review</h5>
+          <a href="/phan-tich/">Phân tích cơ bản</a>
+          <a href="/phan-tich-ky-thuat/">Phân tích kỹ thuật</a>
+          <a href="/reviews/">Reviews</a>
+          <a href="/nha-dau-tu/">Nhà đầu tư</a>
+        </div>
+        <div class="footer-col">
+          <h5>Về trang web</h5>
+          <a href="/about/">Tác giả</a>
+          <a href="/editorial-policy/">Biên tập</a>
+          <a href="/sources-policy/">Nguồn tham khảo</a>
+          <a href="/corrections-policy/">Đính chính</a>
+          <a href="/contact/">Liên hệ</a>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© 2026 {site.name}. {site.disclosure}</span>
+      </div>
+    </footer>
+  </body>
+</html>

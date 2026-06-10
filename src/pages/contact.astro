@@ -1,0 +1,16 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { site } from "@/data/site";
+---
+
+<BaseLayout title="Liên hệ" description="Liên hệ với ValueInvesting.com.vn.">
+  <section class="article-header">
+    <div class="article-container">
+      <h1>Liên hệ</h1>
+      <p class="lead">Gửi góp ý, yêu cầu đính chính hoặc đề xuất chủ đề mới.</p>
+    </div>
+  </section>
+  <section class="article-container prose">
+    <p>Email: <a href={`mailto:${site.email}`}>{site.email}</a></p>
+  </section>
+</BaseLayout>

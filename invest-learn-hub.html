@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InvestLearn – Học đầu tư thông minh</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    /* ── Design Tokens ─────────────────────────────────────── */
+    :root {
+      --green:        #00ae4d;
+      --green-dark:   #006b2c;
+      --green-light:  #8dc63f;
+      --green-pale:   #e8f8ee;
+      --green-mid:    #d0f0dd;
+      --text:         #1a1a1a;
+      --text-sub:     #555;
+      --text-muted:   #999;
+      --border:       #e5e5e5;
+      --bg:           #f7f8f6;
+      --white:        #ffffff;
+      --shadow-sm:    0 2px 8px rgba(0,0,0,0.07);
+      --shadow-md:    0 4px 20px rgba(0,0,0,0.12);
+      --shadow-lg:    0 8px 40px rgba(0,0,0,0.16);
+      --radius:       10px;
+      --radius-sm:    6px;
+      --radius-pill:  999px;
+      --font-display: 'DM Serif Display', Georgia, serif;
+      --font-body:    'DM Sans', system-ui, sans-serif;
+      --max-w:        1200px;
+      --header-h:     64px;
+    }
+
+    /* ── Reset ─────────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font-body);
+      font-size: 16px;
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+    button { font-family: inherit; cursor: pointer; border: none; background: none; }
+
+    /* ── Utilities ──────────────────────────────────────────── */
+    .container { max-width: var(--max-w); margin: 0 auto; padding: 0 24px; }
+    .section-title {
+      font-family: var(--font-display);
+      font-size: 28px;
+      color: var(--text);
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .section-title::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+    .tag {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: var(--radius-pill);
+      background: var(--green-pale);
+      color: var(--green-dark);
+    }
+    .tag.crypto  { background: #fdf3e7; color: #b45309; }
+    .tag.etf     { background: #eef2ff; color: #3730a3; }
+    .tag.retire  { background: #fdf4ff; color: #7e22ce; }
+    .tag.bds     { background: #fff1f2; color: #be123c; }
+
+    /* ── Header ─────────────────────────────────────────────── */
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      height: var(--header-h);
+      display: flex;
+      align-items: center;
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      gap: 0;
+      width: 100%;
+    }
+    .logo {
+      font-family: var(--font-display);
+      font-size: 22px;
+      color: var(--green-dark);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-shrink: 0;
+      margin-right: 36px;
+    }
+    .logo-icon {
+      width: 32px; height: 32px;
+      background: var(--green);
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .logo-icon svg { width: 18px; height: 18px; fill: white; }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      flex: 1;
+    }
+    .nav-item {
+      position: relative;
+    }
+    .nav-link {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      padding: 8px 14px;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text-sub);
+      border-radius: var(--radius-sm);
+      transition: background .15s, color .15s;
+    }
+    .nav-link:hover {
+      background: var(--bg);
+      color: var(--green-dark);
+    }
+    .nav-link svg { width: 12px; height: 12px; opacity: .5; }
+
+    /* Mega menu */
+    .mega-menu {
+      display: none;
+      position: absolute;
+      top: calc(100% + 8px);
+      left: -20px;
+      min-width: 520px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-lg);
+      padding: 24px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .nav-item:hover .mega-menu { display: grid; }
+    .mega-col h4 {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--green);
+      margin-bottom: 10px;
+    }
+    .mega-col a {
+      display: block;
+      font-size: 13.5px;
+      color: var(--text-sub);
+      padding: 5px 0;
+      transition: color .15s;
+    }
+    .mega-col a:hover { color: var(--green-dark); }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-left: auto;
+    }
+    .btn-icon {
+      width: 36px; height: 36px;
+      display: flex; align-items: center; justify-content: center;
+      border-radius: var(--radius-sm);
+      color: var(--text-sub);
+      transition: background .15s;
+    }
+    .btn-icon:hover { background: var(--bg); }
+    .btn-icon svg { width: 18px; height: 18px; }
+    .btn-primary {
+      background: var(--green);
+      color: white;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 9px 20px;
+      border-radius: var(--radius-pill);
+      transition: background .15s, transform .1s;
+    }
+    .btn-primary:hover { background: var(--green-dark); transform: translateY(-1px); }
+
+    /* ── Hero ───────────────────────────────────────────────── */
+    .hero {
+      padding: 64px 0 0;
+      background: linear-gradient(180deg, var(--green-pale) 0%, var(--white) 100%);
+      overflow: hidden;
+    }
+    .hero-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--green);
+      letter-spacing: .05em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .hero-eyebrow span {
+      width: 24px; height: 2px;
+      background: var(--green);
+      border-radius: 2px;
+    }
+    .hero h1 {
+      font-family: var(--font-display);
+      font-size: clamp(36px, 4vw, 52px);
+      line-height: 1.15;
+      color: var(--text);
+      margin-bottom: 20px;
+    }
+    .hero h1 em {
+      font-style: italic;
+      color: var(--green);
+    }
+    .hero-sub {
+      font-size: 17px;
+      color: var(--text-sub);
+      line-height: 1.65;
+      margin-bottom: 32px;
+      max-width: 440px;
+    }
+    .hero-actions { display: flex; gap: 12px; align-items: center; }
+    .btn-secondary {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--green-dark);
+      display: flex; align-items: center; gap: 6px;
+    }
+    .btn-secondary svg { width: 16px; height: 16px; }
+    .btn-secondary:hover { text-decoration: underline; }
+
+    .hero-stats {
+      display: flex;
+      gap: 32px;
+      margin-top: 40px;
+      padding-top: 32px;
+      border-top: 1px solid var(--green-mid);
+    }
+    .stat-item {}
+    .stat-num {
+      font-family: var(--font-display);
+      font-size: 28px;
+      color: var(--green-dark);
+      line-height: 1;
+    }
+    .stat-label { font-size: 13px; color: var(--text-muted); margin-top: 4px; }
+
+    /* Featured video card */
+    .hero-video {
+      position: relative;
+      background: var(--text);
+      border-radius: 16px;
+      overflow: hidden;
+      aspect-ratio: 16/10;
+      box-shadow: var(--shadow-lg);
+      cursor: pointer;
+    }
+    .hero-video-bg {
+      width: 100%; height: 100%;
+      background: linear-gradient(135deg, #0d4c2e 0%, #1a7a47 40%, #00ae4d 100%);
+      display: flex; align-items: center; justify-content: center;
+    }
+    .hero-video-pattern {
+      position: absolute; inset: 0;
+      background-image: radial-gradient(circle at 70% 30%, rgba(141,198,63,.25) 0%, transparent 50%),
+                        radial-gradient(circle at 20% 80%, rgba(0,107,44,.3) 0%, transparent 40%);
+    }
+    .hero-video-content {
+      position: absolute; inset: 0;
+      display: flex; flex-direction: column;
+      justify-content: flex-end;
+      padding: 24px;
+      background: linear-gradient(to top, rgba(0,0,0,.6) 0%, transparent 60%);
+    }
+    .play-btn {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 60px; height: 60px;
+      background: rgba(255,255,255,.15);
+      backdrop-filter: blur(8px);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      border: 2px solid rgba(255,255,255,.4);
+      transition: background .2s, transform .2s;
+    }
+    .hero-video:hover .play-btn {
+      background: rgba(255,255,255,.25);
+      transform: translate(-50%, -50%) scale(1.08);
+    }
+    .play-btn svg { width: 22px; height: 22px; fill: white; margin-left: 3px; }
+    .video-label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--green-light);
+      margin-bottom: 6px;
+    }
+    .video-title {
+      font-family: var(--font-display);
+      font-size: 20px;
+      color: white;
+      line-height: 1.3;
+    }
+    .video-meta {
+      font-size: 13px;
+      color: rgba(255,255,255,.6);
+      margin-top: 6px;
+    }
+    .video-badge {
+      position: absolute;
+      top: 16px; right: 16px;
+      background: var(--green);
+      color: white;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: var(--radius-pill);
+    }
+
+    /* ── Topic Filters ─────────────────────────────────────── */
+    .topics {
+      padding: 36px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .topics-scroll {
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+      padding-bottom: 4px;
+      scrollbar-width: none;
+    }
+    .topics-scroll::-webkit-scrollbar { display: none; }
+    .pill {
+      flex-shrink: 0;
+      padding: 8px 18px;
+      border-radius: var(--radius-pill);
+      font-size: 14px;
+      font-weight: 500;
+      border: 1.5px solid var(--border);
+      color: var(--text-sub);
+      background: var(--white);
+      cursor: pointer;
+      transition: all .15s;
+      white-space: nowrap;
+    }
+    .pill:hover { border-color: var(--green); color: var(--green-dark); }
+    .pill.active {
+      background: var(--green);
+      border-color: var(--green);
+      color: white;
+      font-weight: 600;
+    }
+    .pill-icon { display: inline; margin-right: 5px; }
+
+    /* ── Article Cards ─────────────────────────────────────── */
+    .section { padding: 56px 0; }
+    .section + .section { padding-top: 0; }
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .article-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+      overflow: hidden;
+      transition: box-shadow .2s, transform .2s;
+      cursor: pointer;
+    }
+    .article-card:hover {
+      box-shadow: var(--shadow-md);
+      transform: translateY(-3px);
+    }
+
+    .card-thumb {
+      width: 100%;
+      aspect-ratio: 16/9;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+    .card-thumb-inner {
+      width: 100%; height: 100%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 40px;
+      position: relative;
+    }
+    .card-thumb-inner::after {
+      content: '';
+      position: absolute; inset: 0;
+      background: inherit;
+      opacity: .15;
+    }
+
+    /* Unique thumb gradients per category */
+    .thumb-stocks  { background: linear-gradient(135deg, #e8f8ee, #b8e8cc); }
+    .thumb-etf     { background: linear-gradient(135deg, #eef2ff, #c7d2fe); }
+    .thumb-crypto  { background: linear-gradient(135deg, #fdf3e7, #fde68a); }
+    .thumb-retire  { background: linear-gradient(135deg, #fdf4ff, #e9d5ff); }
+    .thumb-bds     { background: linear-gradient(135deg, #fff1f2, #fecdd3); }
+    .thumb-general { background: linear-gradient(135deg, #f0fdf4, #bbf7d0); }
+
+    .card-body { padding: 18px 20px 20px; }
+    .card-tag-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
+    .card-read-time { font-size: 12px; color: var(--text-muted); }
+    .card-title {
+      font-size: 17px;
+      font-weight: 600;
+      color: var(--text);
+      line-height: 1.4;
+      margin-bottom: 10px;
+      transition: color .15s;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .article-card:hover .card-title { color: var(--green-dark); }
+    .card-excerpt {
+      font-size: 14px;
+      color: var(--text-sub);
+      line-height: 1.55;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      margin-bottom: 16px;
+    }
+    .card-meta {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 13px;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border);
+      padding-top: 14px;
+    }
+    .avatar {
+      width: 26px; height: 26px;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 11px;
+      font-weight: 700;
+      color: white;
+      flex-shrink: 0;
+    }
+    .av-green  { background: var(--green); }
+    .av-blue   { background: #3b82f6; }
+    .av-orange { background: #f59e0b; }
+    .av-purple { background: #8b5cf6; }
+    .av-red    { background: #ef4444; }
+    .card-author { font-weight: 500; color: var(--text-sub); }
+    .card-dot { color: var(--border); }
+
+    /* Featured card (first in nổi bật section) */
+    .article-card.featured {
+      grid-column: span 1;
+    }
+
+    /* ── Newsletter Strip ──────────────────────────────────── */
+    .newsletter {
+      background: linear-gradient(135deg, var(--green-dark) 0%, var(--green) 60%, var(--green-light) 100%);
+      padding: 56px 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .newsletter::before {
+      content: '';
+      position: absolute; inset: 0;
+      background-image: radial-gradient(circle at 80% 50%, rgba(255,255,255,.08) 0%, transparent 50%),
+                        radial-gradient(circle at 10% 80%, rgba(0,0,0,.1) 0%, transparent 40%);
+    }
+    .newsletter-inner {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+    }
+    .newsletter-copy {}
+    .newsletter-eyebrow {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.65);
+      margin-bottom: 10px;
+    }
+    .newsletter-title {
+      font-family: var(--font-display);
+      font-size: 30px;
+      color: white;
+      line-height: 1.25;
+      margin-bottom: 8px;
+    }
+    .newsletter-sub { font-size: 15px; color: rgba(255,255,255,.75); }
+    .newsletter-form {
+      display: flex;
+      gap: 10px;
+      flex-shrink: 0;
+    }
+    .newsletter-input {
+      font-family: var(--font-body);
+      font-size: 15px;
+      padding: 12px 18px;
+      border-radius: var(--radius-pill);
+      border: 2px solid rgba(255,255,255,.3);
+      background: rgba(255,255,255,.15);
+      color: white;
+      outline: none;
+      width: 260px;
+      transition: border-color .2s, background .2s;
+    }
+    .newsletter-input::placeholder { color: rgba(255,255,255,.55); }
+    .newsletter-input:focus { border-color: white; background: rgba(255,255,255,.22); }
+    .btn-white {
+      background: white;
+      color: var(--green-dark);
+      font-size: 14px;
+      font-weight: 700;
+      padding: 12px 24px;
+      border-radius: var(--radius-pill);
+      flex-shrink: 0;
+      transition: transform .15s, box-shadow .15s;
+      border: none;
+      cursor: pointer;
+    }
+    .btn-white:hover { transform: translateY(-1px); box-shadow: 0 4px 16px rgba(0,0,0,.2); }
+
+    /* ── Footer ─────────────────────────────────────────────── */
+    .footer {
+      background: #0f1f15;
+      color: rgba(255,255,255,.55);
+      padding: 56px 0 32px;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.6fr 1fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 48px;
+    }
+    .footer-brand {}
+    .footer-logo {
+      font-family: var(--font-display);
+      font-size: 20px;
+      color: white;
+      display: flex; align-items: center; gap: 8px;
+      margin-bottom: 16px;
+    }
+    .footer-logo-icon {
+      width: 28px; height: 28px;
+      background: var(--green);
+      border-radius: 6px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .footer-logo-icon svg { width: 16px; height: 16px; fill: white; }
+    .footer-tagline { font-size: 14px; line-height: 1.6; max-width: 240px; }
+    .footer-social {
+      display: flex; gap: 10px; margin-top: 20px;
+    }
+    .social-btn {
+      width: 34px; height: 34px;
+      background: rgba(255,255,255,.08);
+      border-radius: 6px;
+      display: flex; align-items: center; justify-content: center;
+      transition: background .15s;
+    }
+    .social-btn:hover { background: rgba(255,255,255,.15); }
+    .social-btn svg { width: 16px; height: 16px; fill: rgba(255,255,255,.7); }
+
+    .footer-col h5 {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.9);
+      margin-bottom: 16px;
+    }
+    .footer-col a {
+      display: block;
+      font-size: 14px;
+      color: rgba(255,255,255,.5);
+      padding: 5px 0;
+      transition: color .15s;
+    }
+    .footer-col a:hover { color: var(--green-light); }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,.08);
+      padding-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13px;
+    }
+    .footer-bottom a { color: rgba(255,255,255,.4); transition: color .15s; }
+    .footer-bottom a:hover { color: white; }
+    .footer-links { display: flex; gap: 20px; }
+
+    /* ── Animations ─────────────────────────────────────────── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .fade-up {
+      opacity: 0;
+      animation: fadeUp .5s ease forwards;
+    }
+    .fade-up-1 { animation-delay: .05s; }
+    .fade-up-2 { animation-delay: .15s; }
+    .fade-up-3 { animation-delay: .25s; }
+    .fade-up-4 { animation-delay: .35s; }
+
+    /* ── Responsive ─────────────────────────────────────────── */
+    @media (max-width: 1024px) {
+      .cards-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .hero-inner { grid-template-columns: 1fr; }
+      .hero-video { max-width: 560px; margin: 0 auto; }
+    }
+    @media (max-width: 768px) {
+      .hero { padding: 40px 0 0; }
+      .hero h1 { font-size: 32px; }
+      .cards-grid { grid-template-columns: 1fr; }
+      .newsletter-inner { flex-direction: column; align-items: flex-start; }
+      .newsletter-form { flex-direction: column; width: 100%; }
+      .newsletter-input { width: 100%; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .nav { display: none; }
+      .section-title { font-size: 22px; }
+      .hero-stats { gap: 20px; }
+    }
+    @media (max-width: 480px) {
+      .footer-grid { grid-template-columns: 1fr; }
+      .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ╔══════════════════════════════════════════╗ -->
+<!-- ║              HEADER                      ║ -->
+<!-- ╚══════════════════════════════════════════╝ -->
+<header class="header">
+  <div class="container">
+    <div class="header-inner">
+      <a href="#" class="logo">
+        <div class="logo-icon">
+          <svg viewBox="0 0 24 24"><path d="M3 17l4-8 4 5 3-4 4 7H3z"/></svg>
+        </div>
+        InvestLearn
+      </a>
+
+      <nav class="nav">
+        <!-- Stocks with mega menu -->
+        <div class="nav-item">
+          <a href="#" class="nav-link">
+            Cổ phiếu
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+          </a>
+          <div class="mega-menu">
+            <div class="mega-col">
+              <h4>Học cơ bản</h4>
+              <a href="#">Cổ phiếu là gì?</a>
+              <a href="#">Cách đọc biểu đồ</a>
+              <a href="#">P/E Ratio là gì?</a>
+              <a href="#">Phân tích cơ bản</a>
+            </div>
+            <div class="mega-col">
+              <h4>Chiến lược</h4>
+              <a href="#">Đầu tư giá trị</a>
+              <a href="#">Tăng trưởng dài hạn</a>
+              <a href="#">Dollar-cost averaging</a>
+              <a href="#">Diversification</a>
+            </div>
+            <div class="mega-col">
+              <h4>Công cụ</h4>
+              <a href="#">So sánh môi giới</a>
+              <a href="#">Máy tính lãi kép</a>
+              <a href="#">Screener cổ phiếu</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Funds -->
+        <div class="nav-item">
+          <a href="#" class="nav-link">
+            Quỹ &amp; ETF
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+          </a>
+          <div class="mega-menu">
+            <div class="mega-col">
+              <h4>ETF</h4>
+              <a href="#">ETF là gì?</a>
+              <a href="#">ETF vs Cổ phiếu</a>
+              <a href="#">ETF tốt nhất 2025</a>
+            </div>
+            <div class="mega-col">
+              <h4>Quỹ tương hỗ</h4>
+              <a href="#">Index fund cơ bản</a>
+              <a href="#">Phí quản lý (TER)</a>
+              <a href="#">Passive investing</a>
+            </div>
+            <div class="mega-col">
+              <h4>Tài nguyên</h4>
+              <a href="#">So sánh quỹ</a>
+              <a href="#">Máy tính ETF</a>
+            </div>
+          </div>
+        </div>
+
+        <a href="#" class="nav-link">Nghỉ hưu</a>
+        <a href="#" class="nav-link">Crypto</a>
+        <a href="#" class="nav-link">Máy tính</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn-icon" aria-label="Tìm kiếm">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+        </button>
+        <a href="#" class="btn-primary">Bắt đầu</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<!-- ╔══════════════════════════════════════════╗ -->
+<!-- ║              HERO                        ║ -->
+<!-- ╚══════════════════════════════════════════╝ -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <div class="hero-eyebrow fade-up fade-up-1">
+          <span></span>
+          Kiến thức đầu tư
+        </div>
+        <h1 class="fade-up fade-up-2">
+          Học đầu tư<br/><em>thông minh</em><br/>từ A đến Z
+        </h1>
+        <p class="hero-sub fade-up fade-up-3">
+          Hướng dẫn đầu tư toàn diện bằng tiếng Việt — từ cổ phiếu, ETF, crypto đến lập kế hoạch nghỉ hưu. Không phí tư vấn, chỉ có kiến thức thực sự.
+        </p>
+        <div class="hero-actions fade-up fade-up-4">
+          <a href="#" class="btn-primary">Bắt đầu học ngay</a>
+          <a href="#featured" class="btn-secondary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M10 8l6 4-6 4V8z" fill="currentColor" stroke="none"/></svg>
+            Xem video giới thiệu
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-num">200+</div>
+            <div class="stat-label">Bài viết chuyên sâu</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">50k+</div>
+            <div class="stat-label">Người học mỗi tháng</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">100%</div>
+            <div class="stat-label">Miễn phí hoàn toàn</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-video fade-up fade-up-3" id="featured">
+        <div class="hero-video-bg">
+          <div class="hero-video-pattern"></div>
+        </div>
+        <div class="hero-video-content">
+          <div class="video-label">Video nổi bật</div>
+          <div class="video-title">ETF Index Fund là gì và tại sao Warren Buffett khuyên dùng?</div>
+          <div class="video-meta">12 phút · Nguyễn Minh Tài · 24k lượt xem</div>
+        </div>
+        <div class="play-btn">
+          <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+        </div>
+        <div class="video-badge">🎬 Mới nhất</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ╔══════════════════════════════════════════╗ -->
+<!-- ║          TOPIC FILTER PILLS              ║ -->
+<!-- ╚══════════════════════════════════════════╝ -->
+<section class="topics">
+  <div class="container">
+    <div class="topics-scroll">
+      <button class="pill active" onclick="setActive(this)">
+        <span class="pill-icon">✦</span> Tất cả
+      </button>
+      <button class="pill" onclick="setActive(this)">
+        <span class="pill-icon">📈</span> Cổ phiếu
+      </button>
+      <button class="pill" onclick="setActive(this)">
+        <span class="pill-icon">🧺</span> Quỹ ETF
+      </button>
+      <button class="pill" onclick="setActive(this)">
+        <span class="pill-icon">₿</span> Crypto
+      </button>
+      <button class="pill" onclick="setActive(this)">
+        <span class="pill-icon">🏡</span> Bất động sản
+      </button>
+      <button class="pill" onclick="setActive(this)">
+        <span class="pill-icon">🌿</span> Nghỉ hưu
+      </button>
+      <button class="pill" onclick="setActive(this)">
+        <span class="pill-icon">🧮</span> Máy tính
+      </button>
+      <button class="pill" onclick="setActive(this)">
+        <span class="pill-icon">📰</span> Tin tức
+      </button>
+    </div>
+  </div>
+</section>
+
+
+<!-- ╔══════════════════════════════════════════╗ -->
+<!-- ║         BÀI VIẾT NỔI BẬT                ║ -->
+<!-- ╚══════════════════════════════════════════╝ -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Bài viết nổi bật</h2>
+    <div class="cards-grid">
+
+      <div class="article-card">
+        <div class="card-thumb">
+          <div class="card-thumb-inner thumb-general">📊</div>
+        </div>
+        <div class="card-body">
+          <div class="card-tag-row">
+            <span class="tag">Cổ phiếu</span>
+            <span class="card-read-time">8 phút đọc</span>
+          </div>
+          <h3 class="card-title">Hướng dẫn đầy đủ mua cổ phiếu lần đầu tại Việt Nam 2025</h3>
+          <p class="card-excerpt">Từ cách mở tài khoản chứng khoán, chọn môi giới uy tín, đến đặt lệnh mua cổ phiếu đầu tiên — từng bước chi tiết cho người mới.</p>
+          <div class="card-meta">
+            <div class="avatar av-green">MT</div>
+            <span class="card-author">Minh Tài</span>
+            <span class="card-dot">·</span>
+            <span>5 tháng 6, 2025</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="article-card">
+        <div class="card-thumb">
+          <div class="card-thumb-inner thumb-etf">🧺</div>
+        </div>
+        <div class="card-body">
+          <div class="card-tag-row">
+            <span class="tag etf">Quỹ ETF</span>
+            <span class="card-read-time">6 phút đọc</span>
+          </div>
+          <h3 class="card-title">ETF là gì? Tại sao 90% nhà đầu tư cá nhân nên mua ETF thay cổ phiếu?</h3>
+          <p class="card-excerpt">ETF index fund giúp bạn sở hữu toàn bộ thị trường với chi phí tối thiểu, hiệu suất vượt trội so với đa số quỹ chủ động.</p>
+          <div class="card-meta">
+            <div class="avatar av-blue">LH</div>
+            <span class="card-author">Lan Hương</span>
+            <span class="card-dot">·</span>
+            <span>1 tháng 6, 2025</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="article-card">
+        <div class="card-thumb">
+          <div class="card-thumb-inner thumb-crypto">₿</div>
+        </div>
+        <div class="card-body">
+          <div class="card-tag-row">
+            <span class="tag crypto">Crypto</span>
+            <span class="card-read-time">10 phút đọc</span>
+          </div>
+          <h3 class="card-title">Bitcoin vs Cổ phiếu: Đâu là kênh đầu tư phù hợp với bạn?</h3>
+          <p class="card-excerpt">So sánh rủi ro, lợi nhuận kỳ vọng, và cách phân bổ danh mục giữa tài sản truyền thống và crypto một cách khoa học.</p>
+          <div class="card-meta">
+            <div class="avatar av-orange">PD</div>
+            <span class="card-author">Phong Điền</span>
+            <span class="card-dot">·</span>
+            <span>28 tháng 5, 2025</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ╔══════════════════════════════════════════╗ -->
+<!-- ║         ĐẦU TƯ VÀO CỔ PHIẾU             ║ -->
+<!-- ╚══════════════════════════════════════════╝ -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Đầu tư vào cổ phiếu</h2>
+    <div class="cards-grid">
+
+      <div class="article-card">
+        <div class="card-thumb">
+          <div class="card-thumb-inner thumb-stocks">📈</div>
+        </div>
+        <div class="card-body">
+          <div class="card-tag-row">
+            <span class="tag">Cổ phiếu</span>
+            <span class="card-read-time">7 phút đọc</span>
+          </div>
+          <h3 class="card-title">Phân tích cơ bản (Fundamental Analysis) cho người mới bắt đầu</h3>
+          <p class="card-excerpt">Cách đọc báo cáo tài chính, đánh giá doanh nghiệp và tìm cổ phiếu tốt với giá hợp lý bằng các chỉ số P/E, P/B, ROE.</p>
+          <div class="card-meta">
+            <div class="avatar av-green">MT</div>
+            <span class="card-author">Minh Tài</span>
+            <span class="card-dot">·</span>
+            <span>20 tháng 5, 2025</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="article-card">
+        <div class="card-thumb">
+          <div class="card-thumb-inner thumb-stocks">🏦</div>
+        </div>
+        <div class="card-body">
+          <div class="card-tag-row">
+            <span class="tag">Cổ phiếu</span>
+            <span class="card-read-time">5 phút đọc</span>
+          </div>
+          <h3 class="card-title">Top 5 sàn chứng khoán uy tín nhất Việt Nam năm 2025</h3>
+          <p class="card-excerpt">So sánh phí giao dịch, tính năng ứng dụng, dịch vụ khách hàng của VPS, SSI, TCBS, DNSE và MBS để chọn môi giới phù hợp.</p>
+          <div class="card-meta">
+            <div class="avatar av-purple">NA</div>
+            <span class="card-author">Nam Anh</span>
+            <span class="card-dot">·</span>
+            <span>15 tháng 5, 2025</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="article-card">
+        <div class="card-thumb">
+          <div class="card-thumb-inner thumb-stocks">🎯</div>
+        </div>
+        <div class="card-body">
+          <div class="card-tag-row">
+            <span class="tag">Cổ phiếu</span>
+            <span class="card-read-time">9 phút đọc</span>
+          </div>
+          <h3 class="card-title">Chiến lược Dollar-Cost Averaging: Đầu tư định kỳ đánh bại thị trường</h3>
+          <p class="card-excerpt">Bằng cách mua đều đặn mỗi tháng thay vì cố "bắt đáy", DCA giúp giảm rủi ro và tối ưu chi phí trung bình theo thời gian.</p>
+          <div class="card-meta">
+            <div class="avatar av-blue">LH</div>
+            <span class="card-author">Lan Hương</span>
+            <span class="card-dot">·</span>
+            <span>10 tháng 5, 2025</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ╔══════════════════════════════════════════╗ -->
+<!-- ║             QUỸ & ETF                    ║ -->
+<!-- ╚══════════════════════════════════════════╝ -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Quỹ &amp; ETF</h2>
+    <div class="cards-grid">
+
+      <div class="article-card">
+        <div class="card-thumb">
+          <div class="card-thumb-inner thumb-etf">📦</div>
+        </div>
+        <div class="card-body">
+          <div class="card-tag-row">
+            <span class="tag etf">Quỹ ETF</span>
+            <span class="card-read-time">6 phút đọc</span>
+          </div>
+          <h3 class="card-title">VFMVN30 ETF: Đầu tư vào 30 cổ phiếu lớn nhất Việt Nam chỉ với 10k</h3>
+          <p class="card-excerpt">Hướng dẫn chi tiết về quỹ ETF phổ biến nhất Việt Nam — cách mua, chi phí thực sự, và so sánh với VNM ETF của VanEck.</p>
+          <div class="card-meta">
+            <div class="avatar av-green">MT</div>
+            <span class="card-author">Minh Tài</span>
+            <span class="card-dot">·</span>
+            <span>8 tháng 6, 2025</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="article-card">
+        <div class="card-thumb">
+          <div class="card-thumb-inner thumb-etf">🌍</div>
+        </div>
+        <div class="card-body">
+          <div class="card-tag-row">
+            <span class="tag etf">Quỹ ETF</span>
+            <span class="card-read-time">8 phút đọc</span>
+          </div>
+          <h3 class="card-title">Đầu tư ETF thế giới từ Việt Nam: S&amp;P 500, MSCI World qua IBKR</h3>
+          <p class="card-excerpt">Cách mở tài khoản Interactive Brokers, mua SPY/VOO/VT từ Việt Nam, xử lý thuế và chuyển tiền quốc tế an toàn.</p>
+          <div class="card-meta">
+            <div class="avatar av-orange">PD</div>
+            <span class="card-author">Phong Điền</span>
+            <span class="card-dot">·</span>
+            <span>3 tháng 6, 2025</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="article-card">
+        <div class="card-thumb">
+          <div class="card-thumb-inner thumb-etf">⚖️</div>
+        </div>
+        <div class="card-body">
+          <div class="card-tag-row">
+            <span class="tag etf">Quỹ ETF</span>
+            <span class="card-read-time">5 phút đọc</span>
+          </div>
+          <h3 class="card-title">Expense Ratio: Phí quản lý quỹ ảnh hưởng lợi nhuận của bạn thế nào?</h3>
+          <p class="card-excerpt">Chênh lệch 1% phí mỗi năm có thể "ăn" hơn 100 triệu đồng lợi nhuận trong 30 năm đầu tư. Cách chọn quỹ phí thấp nhất.</p>
+          <div class="card-meta">
+            <div class="avatar av-purple">NA</div>
+            <span class="card-author">Nam Anh</span>
+            <span class="card-dot">·</span>
+            <span>29 tháng 5, 2025</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ╔══════════════════════════════════════════╗ -->
+<!-- ║          NEWSLETTER STRIP                ║ -->
+<!-- ╚══════════════════════════════════════════╝ -->
+<section class="newsletter">
+  <div class="container">
+    <div class="newsletter-inner">
+      <div class="newsletter-copy">
+        <div class="newsletter-eyebrow">📬 Bản tin tuần</div>
+        <h2 class="newsletter-title">Kiến thức đầu tư mỗi tuần,<br/>thẳng vào hộp thư của bạn</h2>
+        <p class="newsletter-sub">Tóm tắt thị trường, bài viết mới nhất và mẹo đầu tư thực tế — không spam, hủy đăng ký bất kỳ lúc nào.</p>
+      </div>
+      <form class="newsletter-form" onsubmit="return false">
+        <input class="newsletter-input" type="email" placeholder="email@example.com" />
+        <button class="btn-white" type="submit">Đăng ký miễn phí</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+<!-- ╔══════════════════════════════════════════╗ -->
+<!-- ║              FOOTER                      ║ -->
+<!-- ╚══════════════════════════════════════════╝ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <div class="footer-logo-icon">
+            <svg viewBox="0 0 24 24"><path d="M3 17l4-8 4 5 3-4 4 7H3z"/></svg>
+          </div>
+          InvestLearn
+        </div>
+        <p class="footer-tagline">Kiến thức đầu tư đáng tin cậy bằng tiếng Việt — giúp bạn đưa ra quyết định tài chính thông minh hơn.</p>
+        <div class="footer-social">
+          <a href="#" class="social-btn" aria-label="Facebook">
+            <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="#" class="social-btn" aria-label="YouTube">
+            <svg viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 001.46 6.42 29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.96A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+          </a>
+          <a href="#" class="social-btn" aria-label="Twitter">
+            <svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h5>Học đầu tư</h5>
+        <a href="#">Cổ phiếu cơ bản</a>
+        <a href="#">ETF &amp; Index Fund</a>
+        <a href="#">Phân tích kỹ thuật</a>
+        <a href="#">Quản lý rủi ro</a>
+        <a href="#">Lập kế hoạch nghỉ hưu</a>
+      </div>
+
+      <div class="footer-col">
+        <h5>Công cụ</h5>
+        <a href="#">Máy tính lãi kép</a>
+        <a href="#">So sánh ETF</a>
+        <a href="#">Screener cổ phiếu</a>
+        <a href="#">Danh mục mẫu</a>
+        <a href="#">Theo dõi thị trường</a>
+      </div>
+
+      <div class="footer-col">
+        <h5>Về InvestLearn</h5>
+        <a href="#">Về chúng tôi</a>
+        <a href="#">Đội ngũ tác giả</a>
+        <a href="#">Quy trình biên tập</a>
+        <a href="#">Hợp tác</a>
+        <a href="#">Liên hệ</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2025 InvestLearn. Thông tin chỉ mang tính giáo dục, không phải tư vấn tài chính.</span>
+      <div class="footer-links">
+        <a href="#">Điều khoản</a>
+        <a href="#">Chính sách bảo mật</a>
+        <a href="#">Cookie</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+  function setActive(btn) {
+    document.querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
+    btn.classList.add('active');
+  }
+
+  /* Intersection Observer for scroll animations */
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.article-card').forEach((card, i) => {
+    card.style.opacity = '0';
+    card.style.transform = 'translateY(20px)';
+    card.style.transition = `opacity .4s ease ${i * 0.08}s, transform .4s ease ${i * 0.08}s, box-shadow .2s, transform .2s`;
+    observer.observe(card);
+  });
+</script>
+
+</body>
+</html>

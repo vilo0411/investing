@@ -1,0 +1,25 @@
+---
+import { getCollection, render } from "astro:content";
+import ArticleLayout from "@/layouts/ArticleLayout.astro";
+import { categories } from "@/data/site";
+
+export async function getStaticPaths() {
+  const rootCategorySlugs = categories
+    .filter((category) => category.group !== "Đầu tư")
+    .map((category) => category.slug);
+  const articles = await getCollection("articles");
+  return articles
+    .filter((entry) => rootCategorySlugs.includes(entry.data.category))
+    .map((entry) => ({
+      params: { category: entry.data.category, slug: entry.slug },
+      props: { entry },
+    }));
+}
+
+const { entry } = Astro.props;
+const { Content, headings } = await render(entry);
+---
+
+<ArticleLayout entry={entry} headings={headings}>
+  <Content />
+</ArticleLayout>

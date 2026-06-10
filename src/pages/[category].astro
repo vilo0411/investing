@@ -1,0 +1,224 @@
+---
+import { getCollection } from "astro:content";
+import ArticleList from "@/components/ArticleList.astro";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { categories, getCategoryPath } from "@/data/site";
+
+export async function getStaticPaths() {
+  return categories
+    .filter((category) => category.group !== "Đầu tư")
+    .map((category) => ({
+      params: { category: category.slug },
+      props: { category },
+    }));
+}
+
+const { category } = Astro.props;
+const articles = (await getCollection("articles"))
+  .filter((article) => article.data.category === category.slug)
+  .sort((a, b) => a.data.order - b.data.order);
+const latestArticles = articles
+  .toSorted((a, b) => b.data.updatedDate.getTime() - a.data.updatedDate.getTime())
+  .slice(0, 3);
+
+const categoryUrl = new URL(getCategoryPath(category), Astro.site).toString();
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Trang chủ",
+      "item": Astro.site?.toString(),
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": category.title,
+      "item": categoryUrl,
+    },
+  ],
+};
+---
+
+<BaseLayout title={category.title} description={category.description}>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  </Fragment>
+
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Trang chủ</a>
+        <span aria-hidden="true">›</span>
+        <span aria-current="page">{category.title}</span>
+      </nav>
+      <div class="eyebrow">{category.group}</div>
+      <h1>{category.title}</h1>
+      <p class="lead">{category.description}</p>
+      <div class="category-meta">
+        <span class="article-count-badge">
+          {articles.length} {articles.length === 1 ? "bài viết" : "bài viết"}
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      {
+        articles.length ? (
+          <div class="category-layout">
+            <div>
+              <div class="section-header">
+                <div>
+                  <h2>Learning path</h2>
+                  <p class="muted">Đọc theo thứ tự để xây dựng nền tảng vững chắc.</p>
+                </div>
+              </div>
+              <ArticleList articles={articles} />
+            </div>
+            <aside class="latest-panel" aria-label="Bài viết mới nhất">
+              <h2>Mới nhất</h2>
+              {latestArticles.map((article) => (
+                <a href={`/${category.slug}/${article.slug}/`}>
+                  <strong>{article.data.title}</strong>
+                  <span>{article.data.readingTime}</span>
+                </a>
+              ))}
+            </aside>
+          </div>
+        ) : (
+          <div class="card empty-state">
+            <div class="eyebrow">Sắp ra mắt</div>
+            <h3>Nội dung đang được biên tập</h3>
+            <p>
+              Chủ đề <strong>{category.title}</strong> sẽ sớm có bài viết mới.
+              Quay lại trang chủ để xem nội dung hiện có.
+            </p>
+            <a href="/" class="empty-state-link">← Về trang chủ</a>
+          </div>
+        )
+      }
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: var(--space-4);
+    flex-wrap: wrap;
+  }
+
+  .breadcrumb a {
+    color: var(--muted);
+    transition: color var(--transition);
+  }
+
+  .breadcrumb a:hover {
+    color: var(--brand);
+    text-decoration: none;
+  }
+
+  .breadcrumb span[aria-current] {
+    color: var(--color-neutral-400);
+  }
+
+  .category-meta {
+    margin-top: var(--space-4);
+  }
+
+  .article-count-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-1);
+    padding: 5px 12px;
+    background: var(--color-brand-100);
+    color: var(--color-brand-900);
+    border-radius: 999px;
+    font-size: 0.84rem;
+    font-weight: 600;
+  }
+
+  .empty-state {
+    max-width: 480px;
+    padding: var(--space-8);
+  }
+
+  .empty-state h3 {
+    font-family: var(--font-serif);
+    color: var(--color-brand-900);
+  }
+
+  .empty-state p {
+    margin: var(--space-2) 0 var(--space-4);
+    color: var(--muted);
+  }
+
+  .empty-state-link {
+    font-weight: 500;
+    font-size: 0.9rem;
+  }
+
+  .category-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 260px;
+    gap: 28px;
+    align-items: start;
+  }
+
+  .latest-panel {
+    position: sticky;
+    top: 96px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-md);
+    background: var(--surface);
+    padding: 18px;
+  }
+
+  .latest-panel h2 {
+    color: var(--text);
+    font-size: 1.1rem;
+    margin: 0 0 12px;
+  }
+
+  .latest-panel a {
+    display: grid;
+    gap: 4px;
+    border-top: 1px solid var(--line);
+    padding: 12px 0;
+    text-decoration: none;
+  }
+
+  .latest-panel a:first-of-type {
+    border-top: none;
+  }
+
+  .latest-panel strong {
+    color: var(--text);
+    font-size: 0.92rem;
+    line-height: 1.4;
+  }
+
+  .latest-panel span {
+    color: var(--muted);
+    font-size: 0.8rem;
+  }
+
+  @media (max-width: 920px) {
+    .category-layout {
+      grid-template-columns: 1fr;
+    }
+
+    .latest-panel {
+      position: static;
+    }
+  }
+</style>
