@@ -31,7 +31,12 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. Article pages display body text with a visually distinct type scale, ~1.7 line-height, and content width capped around 65ch
   4. The new brand font(s) render correctly with Vietnamese diacritics across major browsers
   5. Every route in the site (including `search.astro` and error pages) has been visually checked and shows no broken layout after the token swap
-**Plans**: TBD
+**Plans**: 3 plans
+
+Plans:
+- [ ] 01-01-PLAN.md — Build layered token system (colors/typography/spacing/effects/aliases) and restructure global.css imports + type-scale edits
+- [ ] 01-02-PLAN.md — Swap Google Fonts to Source Serif 4 + Inter and create DSGN-05 route audit checklist
+- [ ] 01-03-PLAN.md — Build verification + manual DSGN-03/04/05 route and typography audit (checkpoint)
 
 ### Phase 2: EEAT Data Model & Schema Extensions
 **Goal**: A single canonical source of author/reviewer data and an extended, backward-compatible content schema exist, ready to back every EEAT component built in later phases.
