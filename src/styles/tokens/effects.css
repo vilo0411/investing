@@ -1,0 +1,15 @@
+/* ─── Effects Tokens — Radius, Shadow, Transition ────────────────────────── */
+:root {
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 20px;
+
+  --shadow-sm: 0 1px 3px rgba(10, 37, 64, .08);
+  --shadow-md: 0 4px 12px rgba(10, 37, 64, .10);
+  --shadow-lg: 0 8px 24px rgba(10, 37, 64, .12);
+
+  --transition-fast: 100ms ease;
+  --transition-base: 200ms ease;
+  --transition-slow: 350ms ease;
+}
