@@ -4,12 +4,12 @@ milestone: v1.0
 milestone_name: milestone
 status: executing
 stopped_at: Phase 01 UI-SPEC approved
-last_updated: "2026-06-11T16:05:41.392Z"
-last_activity: 2026-06-10 — Roadmap created from requirements + research
+last_updated: "2026-06-11T16:08:09.517Z"
+last_activity: 2026-06-11 -- Phase 01 execution started
 progress:
   total_phases: 6
   completed_phases: 0
-  total_plans: 0
+  total_plans: 3
   completed_plans: 0
   percent: 0
 ---
@@ -21,14 +21,14 @@ progress:
 See: .planning/PROJECT.md (updated 2026-06-10)
 
 **Core value:** Người đọc và Google phải cảm nhận ngay đây là một nguồn tài chính chuyên nghiệp, đáng tin cậy — từ giao diện tổng thể đến từng bài viết, với thông tin tác giả, nguồn tham khảo và quy trình biên tập rõ ràng.
-**Current focus:** Phase 1 — Design Token Foundation
+**Current focus:** Phase 01 — design-token-foundation
 
 ## Current Position
 
-Phase: 1 of 6 (Design Token Foundation)
-Plan: 0 of TBD in current phase
-Status: Ready to execute
-Last activity: 2026-06-10 — Roadmap created from requirements + research
+Phase: 01 (design-token-foundation) — EXECUTING
+Plan: 1 of 3
+Status: Executing Phase 01
+Last activity: 2026-06-11 -- Phase 01 execution started
 
 Progress: [░░░░░░░░░░] 0%
 

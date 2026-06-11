@@ -39,8 +39,8 @@ Decimal phases appear between their surrounding integers in numeric order.
 Plans:
 **Wave 1**
 
-- [ ] 01-01-PLAN.md — Build layered token system (colors/typography/spacing/effects/aliases) and restructure global.css imports + type-scale edits
-- [ ] 01-02-PLAN.md — Swap Google Fonts to Source Serif 4 + Inter and create DSGN-05 route audit checklist
+- [x] 01-01-PLAN.md — Build layered token system (colors/typography/spacing/effects/aliases) and restructure global.css imports + type-scale edits
+- [x] 01-02-PLAN.md — Swap Google Fonts to Source Serif 4 + Inter and create DSGN-05 route audit checklist
 
 **Wave 2** *(blocked on Wave 1 completion)*
 
@@ -127,7 +127,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Design Token Foundation | 0/TBD | Not started | - |
+| 1. Design Token Foundation | 2/3 | In Progress|  |
 | 2. EEAT Data Model & Schema Extensions | 0/TBD | Not started | - |
 | 3. New EEAT Components | 0/TBD | Not started | - |
 | 4. Article Layout Wiring & Author Profile Pages | 0/TBD | Not started | - |
