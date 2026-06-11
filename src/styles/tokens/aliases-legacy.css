@@ -1,0 +1,22 @@
+/* ─── Legacy Alias Tokens — compatibility shim, do not extend ───────────── */
+:root {
+  /* Legacy primitive names -> new navy primitives */
+  --color-brand-900: var(--color-navy-800);
+  --color-brand-700: var(--color-navy-600);
+  --color-brand-100: var(--color-navy-50);
+
+  /* Legacy neutral names that don't map 1:1 to the new scale */
+  --color-neutral-950: var(--color-neutral-900);
+  --color-neutral-0: #ffffff;
+
+  /* Legacy accent names -> gold (D-04) */
+  --color-accent: var(--color-gold-700);
+  --color-accent-soft: var(--color-gold-50);
+
+  /* Retired green, alias-only, not promoted to primitive palette */
+  --color-green-700: #006b2c;
+  --color-green-50: #eafaf0;
+
+  /* Singular legacy transition name */
+  --transition: var(--transition-base);
+}

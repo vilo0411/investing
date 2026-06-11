@@ -1,0 +1,14 @@
+/* ─── Typography Tokens ──────────────────────────────────────────────────── */
+:root {
+  --font-serif: 'Source Serif 4', Georgia, serif;
+  --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+
+  --text-h1: clamp(2.25rem, 1.8rem + 2.25vw, 3.5rem);
+  --text-h2: clamp(1.5rem, 1.3rem + 1vw, 2.25rem);
+  --text-h3: clamp(1.15rem, 1.05rem + 0.5vw, 1.5rem);
+  --text-body: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+  --leading-body: 1.7;
+
+  --max: 1120px;
+  --article: 65ch;
+}
