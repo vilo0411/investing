@@ -13,7 +13,7 @@ This milestone takes ValueInvesting.com.vn from its current navy/serif identity 
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Design Token Foundation** - New token system re-skins the entire site via CSS cascade with zero markup changes
+- [x] **Phase 1: Design Token Foundation** - New token system re-skins the entire site via CSS cascade with zero markup changes (completed 2026-06-11)
 - [ ] **Phase 2: EEAT Data Model & Schema Extensions** - Canonical author data and additive content schema fields back all upcoming EEAT components
 - [ ] **Phase 3: New EEAT Components** - Key Takeaways, Citation box, AuthorBox v2, breadcrumb, disclaimer, comparison table built and validated in isolation
 - [ ] **Phase 4: Article Layout Wiring & Author Profile Pages** - Article template composes new components in EEAT order; author profile pages and JSON-LD go live
@@ -44,7 +44,7 @@ Plans:
 
 **Wave 2** *(blocked on Wave 1 completion)*
 
-- [ ] 01-03-PLAN.md — Build verification + manual DSGN-03/04/05 route and typography audit (checkpoint)
+- [x] 01-03-PLAN.md — Build verification + manual DSGN-03/04/05 route and typography audit (checkpoint)
 
 ### Phase 2: EEAT Data Model & Schema Extensions
 
@@ -127,7 +127,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Design Token Foundation | 2/3 | In Progress|  |
+| 1. Design Token Foundation | 3/3 | Complete    | 2026-06-11 |
 | 2. EEAT Data Model & Schema Extensions | 0/TBD | Not started | - |
 | 3. New EEAT Components | 0/TBD | Not started | - |
 | 4. Article Layout Wiring & Author Profile Pages | 0/TBD | Not started | - |

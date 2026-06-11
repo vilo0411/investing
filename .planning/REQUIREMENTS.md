@@ -7,11 +7,11 @@
 
 ### Design System (Tokens)
 
-- [ ] **DSGN-01**: Site sử dụng bộ design token mới (color, typography, spacing, radius/shadow, motion) tách thành các file riêng trong `src/styles/tokens/`, import vào `global.css`
-- [ ] **DSGN-02**: Tên biến CSS hiện có (`--brand`, `--surface`, `--line`, `--muted`, `--space-*`, `--font-serif`...) được giữ làm alias để không vỡ component cũ
-- [ ] **DSGN-03**: Trang bài viết có typography tối ưu cho đọc dài: type scale rõ ràng, line-height thoải mái (~1.7), độ rộng nội dung giới hạn (~65ch)
-- [ ] **DSGN-04**: Site dùng bộ font thương hiệu mới (serif/sans), hiển thị đúng dấu tiếng Việt trên các trình duyệt phổ biến
-- [ ] **DSGN-05**: Toàn bộ trang trong site (kể cả `search.astro`, trang lỗi, các trang chưa redesign trực tiếp) được audit để không bị vỡ giao diện sau khi đổi token
+- [x] **DSGN-01**: Site sử dụng bộ design token mới (color, typography, spacing, radius/shadow, motion) tách thành các file riêng trong `src/styles/tokens/`, import vào `global.css`
+- [x] **DSGN-02**: Tên biến CSS hiện có (`--brand`, `--surface`, `--line`, `--muted`, `--space-*`, `--font-serif`...) được giữ làm alias để không vỡ component cũ
+- [x] **DSGN-03**: Trang bài viết có typography tối ưu cho đọc dài: type scale rõ ràng, line-height thoải mái (~1.7), độ rộng nội dung giới hạn (~65ch)
+- [x] **DSGN-04**: Site dùng bộ font thương hiệu mới (serif/sans), hiển thị đúng dấu tiếng Việt trên các trình duyệt phổ biến
+- [x] **DSGN-05**: Toàn bộ trang trong site (kể cả `search.astro`, trang lỗi, các trang chưa redesign trực tiếp) được audit để không bị vỡ giao diện sau khi đổi token
 
 ### EEAT Data & Components
 
@@ -86,11 +86,11 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| DSGN-01 | Phase 1 | Pending |
-| DSGN-02 | Phase 1 | Pending |
-| DSGN-03 | Phase 1 | Pending |
-| DSGN-04 | Phase 1 | Pending |
-| DSGN-05 | Phase 1 | Pending |
+| DSGN-01 | Phase 1 | Complete |
+| DSGN-02 | Phase 1 | Complete |
+| DSGN-03 | Phase 1 | Complete |
+| DSGN-04 | Phase 1 | Complete |
+| DSGN-05 | Phase 1 | Complete |
 | EEAT-01 | Phase 2 | Pending |
 | EEAT-02 | Phase 2 | Pending |
 | EEAT-03 | Phase 3 | Pending |
@@ -115,6 +115,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | QASE-04 | Phase 6 | Pending |
 
 **Coverage:**
+
 - v1 requirements: 27 total
 - Mapped to phases: 27/27 ✓
 - Unmapped: 0
