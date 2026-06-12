@@ -5,6 +5,7 @@ import RelatedArticles from "@/components/RelatedArticles.astro";
 import ShareBar from "@/components/ShareBar.astro";
 import TOC from "@/components/TOC.astro";
 import { categories, getCategoryPath, site } from "@/data/site";
+import { author } from "@/data/authors";
 
 interface Props {
   entry: any;
@@ -42,7 +43,7 @@ const articleSchema = {
   },
   "author": {
     "@type": "Person",
-    "name": site.author,
+    "name": author.name,
     "url": new URL("/about/", Astro.site).toString(),
   },
   "reviewedBy": {
@@ -95,7 +96,7 @@ const breadcrumbSchema = {
   articleMeta={{
     publishedTime: publishDate?.toISOString(),
     modifiedTime: updatedDate?.toISOString(),
-    author: site.author,
+    author: author.name,
   }}
 >
   <Fragment slot="head">
@@ -123,7 +124,7 @@ const breadcrumbSchema = {
       <h1>{title}</h1>
       <p class="lead">{description}</p>
       <p class="meta">
-        Viết bởi <a href="/about/">{site.author}</a> · Rà soát theo <a href="/editorial-policy/">chính sách biên tập</a> · Cập nhật {updatedDate.toLocaleDateString("vi-VN")} · {readingTime}
+        Viết bởi <a href="/about/">{author.name}</a> · Rà soát theo <a href="/editorial-policy/">chính sách biên tập</a> · Cập nhật {updatedDate.toLocaleDateString("vi-VN")} · {readingTime}
       </p>
       <div class="article-trust" aria-label="Thông tin độ tin cậy của bài viết">
         <span>Kiểm tra nguồn</span>

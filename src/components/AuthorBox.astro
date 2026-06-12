@@ -1,26 +1,23 @@
 ---
-import { site } from "@/data/site";
+import { author } from "@/data/authors";
 ---
 
 <aside class="author-box">
   <div class="author-avatar" aria-hidden="true">
-    {site.author.split(" ").pop()?.charAt(0)}
+    {author.name.split(" ").pop()?.charAt(0)}
   </div>
   <div class="author-info">
     <div class="author-heading">
       <div>
         <p class="author-label">Về tác giả</p>
-        <a class="author-name" href="/about/">{site.author}</a>
+        <a class="author-name" href="/about/">{author.name}</a>
       </div>
       <a class="author-profile-link" href="/about/">Xem hồ sơ</a>
     </div>
-    <p class="author-role">{site.authorProfile.role}</p>
-    <p class="author-bio">
-      Phụ trách nội dung tại ValueInvesting.com.vn — tập trung giải thích khái niệm đầu tư bằng
-      ngôn ngữ rõ ràng, có nguồn tham khảo, không khuyến nghị mua bán.
-    </p>
+    <p class="author-role">{author.role}</p>
+    <p class="author-bio">{author.bio}</p>
     <div class="author-expertise" aria-label="Chuyên môn tác giả">
-      {site.authorProfile.expertise.map((item) => <span>{item}</span>)}
+      {author.expertise.map((item) => <span>{item}</span>)}
     </div>
     <p class="author-note">
       Nội dung được viết cho mục đích giáo dục tài chính, ưu tiên nguồn chính thống và tiếp nhận phản hồi đính chính qua email công khai.
