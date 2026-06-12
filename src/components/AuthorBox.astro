@@ -10,15 +10,24 @@ import { author } from "@/data/authors";
     <div class="author-heading">
       <div>
         <p class="author-label">Về tác giả</p>
-        <a class="author-name" href="/about/">{author.name}</a>
+        <a class="author-name" href={`/author/${author.slug}`}>{author.name}</a>
       </div>
-      <a class="author-profile-link" href="/about/">Xem hồ sơ</a>
+      <a class="author-profile-link" href={`/author/${author.slug}`}>Xem hồ sơ</a>
     </div>
     <p class="author-role">{author.role}</p>
     <p class="author-bio">{author.bio}</p>
     <div class="author-expertise" aria-label="Chuyên môn tác giả">
       {author.expertise.map((item) => <span>{item}</span>)}
     </div>
+    {author.credentials.length > 0 && (
+      <div class="author-credentials" aria-label="Chứng chỉ chuyên môn">
+        <p class="author-sublabel">Chứng chỉ</p>
+        <ul>
+          {author.credentials.map((c) => <li>{c}</li>)}
+        </ul>
+      </div>
+    )}
+    <p class="author-experience">{author.experience}</p>
     <p class="author-note">
       Nội dung được viết cho mục đích giáo dục tài chính, ưu tiên nguồn chính thống và tiếp nhận phản hồi đính chính qua email công khai.
     </p>
@@ -113,11 +122,29 @@ import { author } from "@/data/authors";
   }
 
   .author-bio,
-  .author-note {
+  .author-note,
+  .author-experience {
     margin: var(--space-1) 0 0;
     font-size: 0.9rem;
     color: var(--muted);
     line-height: 1.6;
+  }
+
+  .author-sublabel {
+    margin: 0 0 var(--space-1);
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+  }
+
+  .author-credentials ul {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    display: grid;
+    gap: var(--space-1);
   }
 
   .author-expertise {
