@@ -61,8 +61,8 @@ Plans:
 Plans:
 **Wave 1**
 
-- [ ] 02-01-PLAN.md — Extend content.config.ts schema with citations, keyTakeaways, factCheckedDate (EEAT-01)
-- [ ] 02-02-PLAN.md — Create src/data/authors.ts as single source of author/reviewer profile data (EEAT-02)
+- [x] 02-01-PLAN.md — Extend content.config.ts schema with citations, keyTakeaways, factCheckedDate (EEAT-01)
+- [x] 02-02-PLAN.md — Create src/data/authors.ts as single source of author/reviewer profile data (EEAT-02)
 
 **Wave 2** *(depends on 02-02)*
 
@@ -137,7 +137,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Design Token Foundation | 3/3 | Complete    | 2026-06-11 |
-| 2. EEAT Data Model & Schema Extensions | 0/3 | Not started | - |
+| 2. EEAT Data Model & Schema Extensions | 2/3 | In Progress|  |
 | 3. New EEAT Components | 0/TBD | Not started | - |
 | 4. Article Layout Wiring & Author Profile Pages | 0/TBD | Not started | - |
 | 5. Homepage, Category & Trust Pages | 0/TBD | Not started | - |
