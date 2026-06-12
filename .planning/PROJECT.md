@@ -18,6 +18,11 @@ Người đọc và Google phải cảm nhận ngay đây là một nguồn tài
 - ✓ Trang About và Editorial Policy đã tồn tại (nội dung cơ bản) — existing
 - ✓ SEO setup: astro-seo, sitemap, redirects cho URL cũ — existing
 - ✓ Brand identity hiện tại: navy + serif/sans, design tokens trong `global.css` — existing (sẽ được làm lại)
+- ✓ Component mới: "Key Takeaways" — box tóm tắt ý chính đầu bài viết (Phase 3)
+- ✓ Component mới: Bảng so sánh / data table cho bài so sánh sản phẩm tài chính (Phase 3)
+- ✓ Component mới: Fact-check / Citation box — hiển thị nguồn tham khảo, ngày cập nhật, inline citation (Phase 3)
+- ✓ Component mới: Breadcrumb, Disclaimer (Phase 3)
+- ✓ Nâng cấp Author Box — chuyên môn, chứng chỉ, kinh nghiệm hiển thị rõ ràng hơn (Phase 3, component standalone — chưa wiring vào ArticleLayout production, xem Phase 4)
 
 ### Active
 
@@ -25,12 +30,9 @@ Người đọc và Google phải cảm nhận ngay đây là một nguồn tài
 - [ ] Redesign trang chủ (Homepage) — điều hướng rõ ràng đến các chuyên mục, thể hiện uy tín thương hiệu
 - [ ] Redesign trang danh mục/listing (category pages)
 - [ ] Redesign trải nghiệm đọc bài viết: typography, layout, spacing, khoảng cách dòng tối ưu cho đọc dài
-- [ ] Component mới: "Key Takeaways" — box tóm tắt ý chính đầu bài viết
-- [ ] Component mới: Bảng so sánh / data table cho bài so sánh sản phẩm tài chính
-- [ ] Component mới: Fact-check / Citation box — hiển thị nguồn tham khảo, ngày cập nhật, inline citation
-- [ ] Nâng cấp Author Box / author profile — chuyên môn, chứng chỉ, kinh nghiệm rõ ràng hơn
 - [ ] Nâng cấp trang About — giới thiệu chuyên sâu hơn về tác giả/đội ngũ và chuyên môn
 - [ ] Nâng cấp trang Editorial Policy — quy trình biên tập, fact-check, độc lập biên tập rõ ràng hơn (chuẩn EEAT)
+- [ ] Wiring các component EEAT mới (KeyTakeaways, CitationBox, AuthorBox v2, Breadcrumb, Disclaimer, ComparisonTable) vào ArticleLayout production + trang author profile (Phase 4)
 
 ### Out of Scope
 
