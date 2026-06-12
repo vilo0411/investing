@@ -1,0 +1,80 @@
+---
+interface Props {
+  sources?: string[];
+  citations?: { title: string; url?: string; publisher?: string; date?: string }[];
+  factCheckedDate?: Date;
+  updatedDate: Date;
+}
+
+const { sources = [], citations = [], factCheckedDate, updatedDate } = Astro.props;
+const hasAny = sources.length > 0 || citations.length > 0;
+---
+
+{hasAny && (
+  <aside class="citation-box" aria-label="Nguồn tham khảo và kiểm tra">
+    <p class="citation-label">
+      {factCheckedDate
+        ? `Kiểm tra nguồn lần cuối: ${factCheckedDate.toLocaleDateString("vi-VN")}`
+        : `Cập nhật lần cuối: ${updatedDate.toLocaleDateString("vi-VN")}`}
+    </p>
+    <h2>Nguồn tham khảo</h2>
+    <ul>
+      {citations.length > 0
+        ? citations.map((c) => (
+            <li>
+              {c.url ? (
+                <a href={c.url} target="_blank" rel="noopener noreferrer">{c.title}</a>
+              ) : (
+                c.title
+              )}
+              {c.publisher ? <> — {c.publisher}</> : null}
+              {c.date ? <> ({c.date})</> : null}
+            </li>
+          ))
+        : sources.map((s) => <li>{s}</li>)}
+    </ul>
+  </aside>
+)}
+
+<style>
+  .citation-box {
+    padding: var(--space-6);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-md);
+    background: var(--surface);
+    border-left: 4px solid var(--color-brand-900);
+  }
+
+  .citation-label {
+    margin: 0 0 var(--space-2);
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-accent);
+  }
+
+  .citation-box h2 {
+    margin: 0 0 var(--space-2);
+    font-size: 0.9rem;
+    color: var(--color-brand-900);
+  }
+
+  .citation-box ul {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    display: grid;
+    gap: var(--space-2);
+  }
+
+  .citation-box li {
+    font-size: 0.9rem;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+
+  .citation-box a {
+    color: var(--brand);
+  }
+</style>
