@@ -14,7 +14,7 @@ This milestone takes ValueInvesting.com.vn from its current navy/serif identity 
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Design Token Foundation** - New token system re-skins the entire site via CSS cascade with zero markup changes (completed 2026-06-11)
-- [ ] **Phase 2: EEAT Data Model & Schema Extensions** - Canonical author data and additive content schema fields back all upcoming EEAT components
+- [x] **Phase 2: EEAT Data Model & Schema Extensions** - Canonical author data and additive content schema fields back all upcoming EEAT components (completed 2026-06-12)
 - [ ] **Phase 3: New EEAT Components** - Key Takeaways, Citation box, AuthorBox v2, breadcrumb, disclaimer, comparison table built and validated in isolation
 - [ ] **Phase 4: Article Layout Wiring & Author Profile Pages** - Article template composes new components in EEAT order; author profile pages and JSON-LD go live
 - [ ] **Phase 5: Homepage, Category & Trust Pages** - Homepage, category listings, About, and Editorial Policy redesigned on the new system
@@ -66,7 +66,7 @@ Plans:
 
 **Wave 2** *(depends on 02-02)*
 
-- [ ] 02-03-PLAN.md — Migrate AuthorBox, ArticleLayout, BaseLayout, about.astro, index.astro, site.ts to authors.ts (EEAT-02)
+- [x] 02-03-PLAN.md — Migrate AuthorBox, ArticleLayout, BaseLayout, about.astro, index.astro, site.ts to authors.ts (EEAT-02)
 
 ### Phase 3: New EEAT Components
 
@@ -137,7 +137,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Design Token Foundation | 3/3 | Complete    | 2026-06-11 |
-| 2. EEAT Data Model & Schema Extensions | 2/3 | In Progress|  |
+| 2. EEAT Data Model & Schema Extensions | 3/3 | Complete   | 2026-06-12 |
 | 3. New EEAT Components | 0/TBD | Not started | - |
 | 4. Article Layout Wiring & Author Profile Pages | 0/TBD | Not started | - |
 | 5. Homepage, Category & Trust Pages | 0/TBD | Not started | - |
