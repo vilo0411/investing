@@ -17,13 +17,13 @@
 
 - [ ] **EEAT-01**: Schema nội dung (`content.config.ts`) được mở rộng thêm các field tùy chọn (`citations`, `reviewedBy`, `factCheckedDate`, `keyTakeaways`...) mà không phá vỡ bài viết hiện có
 - [ ] **EEAT-02**: Có file dữ liệu tác giả/reviewer tập trung (`src/data/authors.ts`) làm nguồn dữ liệu chung cho AuthorBox, trang tác giả và JSON-LD
-- [ ] **EEAT-03**: Component "Key Takeaways" hiển thị box tóm tắt ý chính đầu bài viết, lấy dữ liệu từ section `## Key takeaways` hiện có hoặc field mới trong frontmatter
-- [ ] **EEAT-04**: Component "Citation/Fact-check box" hiển thị danh sách nguồn tham khảo và ngày cập nhật cuối cùng ở cuối bài viết
-- [ ] **EEAT-05**: AuthorBox được nâng cấp (v2): hiển thị chuyên môn, kinh nghiệm, link đến trang hồ sơ tác giả
+- [x] **EEAT-03**: Component "Key Takeaways" hiển thị box tóm tắt ý chính đầu bài viết, lấy dữ liệu từ section `## Key takeaways` hiện có hoặc field mới trong frontmatter
+- [x] **EEAT-04**: Component "Citation/Fact-check box" hiển thị danh sách nguồn tham khảo và ngày cập nhật cuối cùng ở cuối bài viết
+- [x] **EEAT-05**: AuthorBox được nâng cấp (v2): hiển thị chuyên môn, kinh nghiệm, link đến trang hồ sơ tác giả
 - [ ] **EEAT-06**: Có trang hồ sơ tác giả `/author/[slug]` hiển thị thông tin chi tiết về tác giả/reviewer
-- [ ] **EEAT-07**: Component breadcrumb navigation hiển thị trên trang bài viết và trang danh mục
-- [ ] **EEAT-08**: Component disclaimer/risk-disclosure hiển thị trên các bài viết liên quan đến quyết định tài chính
-- [ ] **EEAT-09**: Component bảng so sánh (comparison table) được style nhất quán cho các bài so sánh sản phẩm tài chính
+- [x] **EEAT-07**: Component breadcrumb navigation hiển thị trên trang bài viết và trang danh mục
+- [x] **EEAT-08**: Component disclaimer/risk-disclosure hiển thị trên các bài viết liên quan đến quyết định tài chính
+- [x] **EEAT-09**: Component bảng so sánh (comparison table) được style nhất quán cho các bài so sánh sản phẩm tài chính
 - [ ] **EEAT-10**: Dữ liệu cấu trúc (Key Takeaways, citations) được backfill cho 21 bài viết hiện có dựa trên nội dung sẵn có (không viết lại nội dung chính)
 
 ### Article Layout
@@ -93,13 +93,13 @@ Which phases cover which requirements. Updated during roadmap creation.
 | DSGN-05 | Phase 1 | Complete |
 | EEAT-01 | Phase 2 | Pending |
 | EEAT-02 | Phase 2 | Pending |
-| EEAT-03 | Phase 3 | Pending |
-| EEAT-04 | Phase 3 | Pending |
-| EEAT-05 | Phase 3 | Pending |
+| EEAT-03 | Phase 3 | Complete |
+| EEAT-04 | Phase 3 | Complete |
+| EEAT-05 | Phase 3 | Complete |
 | EEAT-06 | Phase 4 | Pending |
-| EEAT-07 | Phase 3 | Pending |
-| EEAT-08 | Phase 3 | Pending |
-| EEAT-09 | Phase 3 | Pending |
+| EEAT-07 | Phase 3 | Complete |
+| EEAT-08 | Phase 3 | Complete |
+| EEAT-09 | Phase 3 | Complete |
 | EEAT-10 | Phase 4 | Pending |
 | ARTL-01 | Phase 4 | Pending |
 | ARTL-02 | Phase 4 | Pending |
