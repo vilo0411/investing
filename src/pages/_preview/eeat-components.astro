@@ -1,0 +1,148 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import KeyTakeaways from "@/components/KeyTakeaways.astro";
+import CitationBox from "@/components/CitationBox.astro";
+import AuthorBox from "@/components/AuthorBox.astro";
+import Breadcrumb from "@/components/Breadcrumb.astro";
+import Disclaimer from "@/components/Disclaimer.astro";
+import ComparisonTable from "@/components/ComparisonTable.astro";
+---
+
+<BaseLayout
+  title="EEAT Components Preview"
+  description="Isolated preview of Phase 3 EEAT components for visual verification."
+>
+  <div class="container preview-container">
+    <h1>EEAT Components Preview</h1>
+    <p>
+      Trang xem trước nội bộ, dùng để kiểm tra trực quan các component EEAT của Phase 3.
+      Trang này không xuất hiện trong sitemap.
+    </p>
+
+    <!-- KeyTakeaways -->
+    <section>
+      <h2>KeyTakeaways — populated</h2>
+      <KeyTakeaways
+        items={[
+          "Đa dạng hóa giúp giảm rủi ro tổng thể",
+          "Chi phí thấp là lợi thế dài hạn của ETF",
+          "Không có chiến lược đầu tư nào đảm bảo lợi nhuận",
+        ]}
+      />
+
+      <h2>KeyTakeaways — empty</h2>
+      <p>(no output expected below this line)</p>
+      <KeyTakeaways items={[]} />
+    </section>
+
+    <!-- CitationBox -->
+    <section>
+      <h2>CitationBox — variant A (citations + factCheckedDate)</h2>
+      <CitationBox
+        citations={[
+          {
+            title: "Báo cáo thị trường chứng khoán Việt Nam 2026",
+            url: "https://www.ssc.gov.vn/",
+            publisher: "Ủy ban Chứng khoán Nhà nước",
+            date: "2026-05-20",
+          },
+          {
+            title: "Thống kê giao dịch ETF nội địa",
+            url: "https://www.hsx.vn/",
+            publisher: "Sở Giao dịch Chứng khoán TP.HCM",
+            date: "2026-06-01",
+          },
+        ]}
+        factCheckedDate={new Date("2026-06-10")}
+        updatedDate={new Date("2026-06-01")}
+      />
+
+      <h2>CitationBox — variant B (sources-only, updatedDate fallback)</h2>
+      <CitationBox
+        sources={["Ủy ban Chứng khoán Nhà nước", "Sở Giao dịch Chứng khoán TP.HCM"]}
+        updatedDate={new Date("2026-05-15")}
+      />
+
+      <h2>CitationBox — variant C (both empty)</h2>
+      <p>(no output expected below this line)</p>
+      <CitationBox sources={[]} citations={[]} updatedDate={new Date()} />
+    </section>
+
+    <!-- AuthorBox -->
+    <section>
+      <h2>AuthorBox</h2>
+      <p>
+        AuthorBox không nhận props — dữ liệu lấy trực tiếp từ <code>src/data/authors.ts</code>.
+        Khối "Chứng chỉ" hiện đang ẩn vì <code>author.credentials</code> hiện là mảng rỗng
+        (<code>credentials: []</code>, theo quyết định D-08). Đoạn văn "Kinh nghiệm"
+        (<code>author.experience</code>) vẫn hiển thị bên dưới các thẻ chuyên môn.
+        Đường dẫn hồ sơ tác giả trỏ tới <code>/author/&#123;slug&#125;</code> và sẽ trả 404 cho
+        tới khi Phase 4 dựng route này (D-09, đã chấp nhận).
+      </p>
+      <AuthorBox />
+    </section>
+
+    <!-- Breadcrumb -->
+    <section>
+      <h2>Breadcrumb — variant A (article-style)</h2>
+      <Breadcrumb
+        items={[
+          { label: "Trang chủ", href: "/" },
+          { label: "Đầu tư", href: "/dau-tu/" },
+          { label: "ETF", href: "/dau-tu/etf/" },
+          { label: "ETF là gì?" },
+        ]}
+      />
+
+      <h2>Breadcrumb — variant B (category-style)</h2>
+      <Breadcrumb
+        items={[
+          { label: "Trang chủ", href: "/" },
+          { label: "Đầu tư", href: "/dau-tu/" },
+          { label: "Cổ phiếu" },
+        ]}
+      />
+    </section>
+
+    <!-- Disclaimer -->
+    <section>
+      <h2>Disclaimer — variant A (default text)</h2>
+      <Disclaimer />
+
+      <h2>Disclaimer — variant B (custom text)</h2>
+      <Disclaimer text="Đây là nội dung minh họa cho mục đích xem trước component." />
+    </section>
+
+    <!-- ComparisonTable -->
+    <section>
+      <h2>ComparisonTable</h2>
+      <ComparisonTable
+        columns={["Loại quỹ", "Phí quản lý", "Mức độ rủi ro", "Phù hợp với"]}
+        rows={[
+          ["ETF VN30", "0.5%/năm", "Trung bình", "Nhà đầu tư dài hạn"],
+          ["Quỹ trái phiếu", "1.0%/năm", "Thấp", "Nhà đầu tư bảo toàn vốn"],
+          ["Quỹ cổ phiếu chủ động", "1.8%/năm", "Cao", "Nhà đầu tư chấp nhận rủi ro"],
+        ]}
+        caption="So sánh các loại quỹ đầu tư phổ biến"
+      />
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .preview-container {
+    display: grid;
+    gap: var(--space-12);
+    padding: var(--space-12) 0;
+  }
+
+  .preview-container section {
+    display: grid;
+    gap: var(--space-4);
+  }
+
+  .preview-container h2 {
+    font-size: 1.05rem;
+    color: var(--color-brand-900);
+  }
+</style>
