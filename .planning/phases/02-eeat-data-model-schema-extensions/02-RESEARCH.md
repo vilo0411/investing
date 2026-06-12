@@ -276,17 +276,19 @@ Note: `author.bio` must equal the exact existing hardcoded string (per 02-UI-SPE
 | A2 | `export const author = {...}` (singular, named `author`) is the correct export name, with no `authors[]` array needed in Phase 2 | Pattern 2 | If Phase 4 strictly requires array-based iteration for `/author/[slug]` `getStaticPaths`, a rename/wrap will be needed then — low risk, trivial to add `export const authors = [author]` later without breaking `author` import |
 | A3 | `site.author` and `site.authorProfile` can be fully removed from `site.ts` once all 5 call sites are migrated (no external/unknown consumers) | Pitfall 1 | If some other untracked file (e.g. a `.astro` page not grepped, or content-engine markdown referencing this programmatically — unlikely since content engine is pure markdown) references `site.author`, build breaks. Grep was comprehensive (`src/**/*.astro`, `src/**/*.ts`) — risk is low. |
 
-## Open Questions
+## Open Questions (RESOLVED)
 
-1. **Should `site.author` remain as a re-exported alias string in `site.ts` for any reason?**
+1. **Should `site.author` remain as a re-exported alias string in `site.ts` for any reason?** (RESOLVED)
    - What we know: Grep found 5 files referencing `site.author`/`authorProfile`/`editorialReviewer`; all 5 are in-scope for this phase's refactor per D-06's broadened understanding.
    - What's unclear: Whether removing `author`/`authorProfile` from `site.ts` entirely (vs. keeping `author: author.name` as a derived alias) causes friction with any future phase that imports `site` for unrelated reasons and also expects `.author`.
    - Recommendation: Planner should have the executing task grep again at refactor time (cheap, ~5s) to confirm no new references were added since this research, then decide alias-vs-remove based on whether any remaining `site.ts` consumer needs a plain author-name string for non-author-data purposes (e.g., copyright line in `BaseLayout.astro` footer — check `site.disclosure`/footer usage, which currently does NOT use `site.author` directly based on the BaseLayout read above, only `site.name` and `site.disclosure`).
+   - RESOLVED: 02-03-PLAN.md resolves this — no alias kept; the executing task re-greps at refactor time and removes `author`/`authorProfile` from `site.ts` once all 5 call sites are migrated.
 
-2. **Exact placeholder values for `credentials`, `avatar`, `socialLinks` (Claude's Discretion per CONTEXT.md)**
+2. **Exact placeholder values for `credentials`, `avatar`, `socialLinks` (Claude's Discretion per CONTEXT.md)** (RESOLVED)
    - What we know: D-02 lists these as optional/placeholder fields; user can fill in later.
    - What's unclear: Whether to use empty arrays/`undefined`, or illustrative placeholder text (e.g., `credentials: []`, `avatar: undefined`, `socialLinks: undefined`).
    - Recommendation: Use empty/undefined values (`credentials: []`, `avatar: undefined`, `socialLinks: undefined`) rather than fabricated placeholder text — per CLAUDE.md's YMYL caution, inventing fake credentials for a financial-content author is a trust/EEAT risk if accidentally shipped. Empty/absent is safer than fictional.
+   - RESOLVED: 02-02-PLAN.md adopts empty/undefined values (`credentials: []`, `avatar: undefined`, `socialLinks: undefined`) per the YMYL-caution recommendation.
 
 ## Environment Availability
 
