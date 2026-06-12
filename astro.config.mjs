@@ -12,7 +12,8 @@ export default defineConfig({
           "https://valueinvesting.com.vn/etf/",
           "https://valueinvesting.com.vn/quy-dau-tu/",
           "https://valueinvesting.com.vn/trai-phieu/",
-        ].includes(page),
+        ].includes(page) &&
+        !page.includes("/preview/"),
     }),
   ],
   redirects: {
