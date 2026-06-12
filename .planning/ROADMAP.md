@@ -81,7 +81,16 @@ Plans:
   4. A breadcrumb navigation component renders correctly for both article and category page contexts
   5. A disclaimer/risk-disclosure component and a consistently styled comparison table are available for use in financial-decision content
 
-**Plans**: TBD
+**Plans**: 3 plans
+Plans:
+**Wave 1**
+
+- [ ] 03-01-PLAN.md — Create KeyTakeaways.astro, CitationBox.astro, upgrade AuthorBox.astro to v2 (EEAT-03, EEAT-04, EEAT-05)
+- [ ] 03-02-PLAN.md — Create Breadcrumb.astro, Disclaimer.astro, ComparisonTable.astro (EEAT-07, EEAT-08, EEAT-09)
+
+**Wave 2** *(depends on 03-01, 03-02)*
+
+- [ ] 03-03-PLAN.md — Build isolated preview page for all 6 components, exclude from sitemap, run full build + manual verification (EEAT-03, EEAT-04, EEAT-05, EEAT-07, EEAT-08, EEAT-09)
 
 ### Phase 4: Article Layout Wiring & Author Profile Pages
 
@@ -138,7 +147,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6
 |-------|----------------|--------|-----------|
 | 1. Design Token Foundation | 3/3 | Complete    | 2026-06-11 |
 | 2. EEAT Data Model & Schema Extensions | 3/3 | Complete   | 2026-06-12 |
-| 3. New EEAT Components | 0/TBD | Not started | - |
+| 3. New EEAT Components | 0/3 | Not started | - |
 | 4. Article Layout Wiring & Author Profile Pages | 0/TBD | Not started | - |
 | 5. Homepage, Category & Trust Pages | 0/TBD | Not started | - |
 | 6. QA, CWV & SEO Verification | 0/TBD | Not started | - |
