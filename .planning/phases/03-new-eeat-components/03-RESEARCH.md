@@ -448,17 +448,19 @@ Check `src/data/site.ts` for the existing `site.disclosure` string (referenced i
 | A2 | `site.disclosure` exists as a string in `src/data/site.ts` and is suitable as default Disclaimer text | Code Examples (Disclaimer) | If `site.disclosure` doesn't exist or has wrong tone, planner/implementer writes new YMYL copy per CONTEXT.md Claude's Discretion — low risk, already anticipated |
 | A3 | `_preview/` prefix convention is acceptable for an isolated, non-nav preview page and Astro will build it without requiring sitemap/nav registration | Recommended Project Structure | If the planner prefers a different location (e.g., outside `src/pages/` entirely isn't possible in Astro — pages must be under `src/pages/` to be routable/buildable), low risk — any subdirectory name works identically; `_preview/` is just a naming suggestion |
 
-## Open Questions
+## Open Questions (RESOLVED)
 
 1. **How will ComparisonTable (and potentially other components) eventually be invoked from within real article markdown body content?**
    - What we know: Plain `.md` collections don't support component tags in body; MDX migration is explicitly out of scope per REQUIREMENTS.md; Phase 3 only needs the component to exist and render correctly via direct `.astro` import (which always works).
    - What's unclear: Whether a future phase will (a) migrate to MDX selectively for comparison-heavy articles, (b) use a remark/rehype plugin to transform a custom markdown syntax into the component, or (c) handle comparison tables entirely outside the markdown body (e.g., as a frontmatter-driven section rendered by `ArticleLayout.astro` before/after `<Content />`, similar to how `sources`/`faq` are handled today).
    - Recommendation: Phase 3 should NOT attempt to resolve this — build `ComparisonTable.astro` with clean, generic `columns`/`rows` props (option c above is actually quite feasible: a `comparisonTable` frontmatter field + schema addition could let `ArticleLayout.astro` render it without any markdown-body component syntax at all, avoiding MDX entirely). Flag this as a design question for whoever scopes the Phase 4/5 wiring work or a future `/gsd-discuss-phase`.
+   - RESOLVED: Out of scope for Phase 3 by design — REQUIREMENTS.md and CONTEXT.md already scope MDX/markdown-body invocation to a future phase. Phase 3 delivers `ComparisonTable.astro` with clean, generic `columns`/`rows` props (option c, frontmatter-driven rendering via `ArticleLayout.astro`, is the leading candidate) and defers the invocation-mechanism decision to whoever scopes Phase 4/5 wiring or a future `/gsd-discuss-phase`. No action needed in this phase.
 
 2. **Should the isolated preview page be route-addressable in the built site, or excluded?**
    - What we know: Astro requires pages to live under `src/pages/` to be built/routable. The project excludes `kien-thuc/*` from the sitemap via a custom filter in `astro.config.mjs`, establishing precedent for "buildable but not in sitemap."
    - What's unclear: Whether the planner wants the preview page excluded from `sitemap-index.xml` (consistent with `kien-thuc` precedent) or simply left unlinked (orphan page, still technically reachable by URL).
    - Recommendation: Add the preview page path to the existing sitemap `filter` function in `astro.config.mjs` (same mechanism as `kien-thuc`), and do not link it from any nav. This is a one-line addition the planner can include as a task.
+   - RESOLVED: 03-03-PLAN.md Task 2 adds the preview page path to the existing sitemap `filter` function in `astro.config.mjs` (same mechanism as `kien-thuc`) and leaves it unlinked from nav — buildable but excluded from `sitemap-index.xml`.
 
 ## Environment Availability
 
