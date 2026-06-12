@@ -17,6 +17,15 @@ const articles = defineCollection({
       answer: z.string(),
     })).default([]),
     sources: z.array(z.string()).default([]),
+    citations: z.array(z.object({
+      title: z.string(),
+      url: z.string().optional(),
+      publisher: z.string().optional(),
+      date: z.string().optional(),
+    })).default([]),
+    keyTakeaways: z.array(z.string()).default([]),
+    // Optional, no default — resolves to undefined when not set. Type is Date | undefined; Phase 3 consumers must handle the undefined case explicitly.
+    factCheckedDate: z.coerce.date().optional(),
   }),
 });
 
