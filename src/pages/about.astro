@@ -2,6 +2,7 @@
 import { getCollection } from "astro:content";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { categories, getArticlePath, site } from "@/data/site";
+import { author } from "@/data/authors";
 
 const articles = await getCollection("articles");
 const latestArticles = articles
@@ -10,7 +11,7 @@ const latestArticles = articles
 
 const articleCount = articles.length;
 const categoryCount = new Set(articles.map((article) => article.data.category)).size;
-const authorInitial = site.author.split(" ").pop()?.charAt(0) ?? site.author.charAt(0);
+const authorInitial = author.name.split(" ").pop()?.charAt(0) ?? author.name.charAt(0);
 const categoryLabels = new Map(categories.map((category) => [category.slug, category.title]));
 ---
 
@@ -24,15 +25,15 @@ const categoryLabels = new Map(categories.map((category) => [category.slug, cate
             <a href={`mailto:${site.email}`}>Email</a>
             <a href="/editorial-policy/">Chính sách biên tập</a>
           </div>
-          <h1>{site.author}</h1>
-          <p class="author-role">{site.authorProfile.role}</p>
+          <h1>{author.name}</h1>
+          <p class="author-role">{author.role}</p>
         </div>
       </div>
 
       <aside class="expertise-panel" aria-label="Chuyên môn tác giả">
         <p class="panel-label">Chuyên môn</p>
         <ul>
-          {site.authorProfile.expertise.map((item) => <li>{item}</li>)}
+          {author.expertise.map((item) => <li>{item}</li>)}
         </ul>
       </aside>
     </div>
@@ -43,13 +44,13 @@ const categoryLabels = new Map(categories.map((category) => [category.slug, cate
       <main class="author-main">
         <section class="quote-block" aria-label="Quan điểm về tiền và đầu tư">
           <p class="panel-label">Quan điểm về đầu tư</p>
-          <blockquote>“{site.authorProfile.moneyPerspective}”</blockquote>
+          <blockquote>“{author.moneyPerspective}”</blockquote>
         </section>
 
         <section class="bio-section">
           <h2>Giới thiệu</h2>
           <p>
-            {site.author} phụ trách nội dung tại {site.name}, tập trung xây dựng kiến thức đầu tư dài hạn,
+            {author.name} phụ trách nội dung tại {site.name}, tập trung xây dựng kiến thức đầu tư dài hạn,
             phân tích cơ bản và đánh giá sản phẩm tài chính theo hướng minh bạch, có nguồn và phù hợp với
             người mới bắt đầu.
           </p>
@@ -63,7 +64,7 @@ const categoryLabels = new Map(categories.map((category) => [category.slug, cate
           <div class="section-heading-row">
             <div>
               <p class="panel-label">Bài viết mới</p>
-              <h2>Mới nhất từ {site.author.split(" ").pop()}</h2>
+              <h2>Mới nhất từ {author.name.split(" ").pop()}</h2>
             </div>
             <a href="/dau-tu/">Xem chủ đề đầu tư</a>
           </div>
@@ -99,20 +100,18 @@ const categoryLabels = new Map(categories.map((category) => [category.slug, cate
 
         <div class="profile-card">
           <h2>Kinh nghiệm nội dung</h2>
-          <ul>
-            {site.authorProfile.experience.map((item) => <li>{item}</li>)}
-          </ul>
+          <p>{author.experience}</p>
         </div>
 
         <div class="profile-card">
           <h2>Học vấn và chứng chỉ</h2>
-          <p>{site.authorProfile.education}</p>
+          <p>{author.education}</p>
         </div>
 
         <div class="profile-card">
           <h2>Đã xuất bản tại</h2>
           <div class="published-list">
-            {site.authorProfile.publishedIn.map((item) => <span>{item}</span>)}
+            {author.publishedIn.map((item) => <span>{item}</span>)}
           </div>
         </div>
       </aside>

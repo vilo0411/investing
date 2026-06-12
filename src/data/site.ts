@@ -1,6 +1,5 @@
 export const site = {
   name: "ValueInvesting.com.vn",
-  author: "Nguyễn Viết Lộc",
   email: "hello@valueinvesting.com.vn",
   description:
     "Kiến thức đầu tư, phân tích tài chính và đánh giá sản phẩm đầu tư dành cho người mới bắt đầu.",
@@ -12,15 +11,6 @@ export const site = {
   ],
   disclosure:
     "ValueInvesting.com.vn không cung cấp dịch vụ tư vấn đầu tư cá nhân, môi giới chứng khoán hoặc tín hiệu giao dịch. Nội dung chỉ nhằm mục đích giáo dục.",
-  authorProfile: {
-    role: "Người phụ trách nội dung",
-    expertise: ["Đầu tư giá trị", "Phân tích cơ bản", "Sản phẩm đầu tư cho người mới"],
-    moneyPerspective:
-      "Đầu tư nên bắt đầu từ hiểu doanh nghiệp, hiểu rủi ro và biết giới hạn của chính mình trước khi nhìn vào lợi nhuận kỳ vọng.",
-    experience: ["Xây dựng nội dung giáo dục tài chính cho nhà đầu tư cá nhân", "Biên tập bài viết theo hướng có nguồn, rõ rủi ro và không khuyến nghị mua bán"],
-    education: "Thông tin học vấn và chứng chỉ chuyên môn sẽ được cập nhật khi có hồ sơ xác thực công khai.",
-    publishedIn: ["ValueInvesting.com.vn"],
-  },
 };
 
 export const navigation = [

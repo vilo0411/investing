@@ -3,6 +3,7 @@ import { getCollection } from "astro:content";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import ArticleList from "@/components/ArticleList.astro";
 import { categories, categoryMeta, getCategoryPath, getArticlePath, site } from "@/data/site";
+import { author } from "@/data/authors";
 
 const articles = await getCollection("articles");
 
@@ -173,7 +174,7 @@ const startHere = startSlugs
     <div class="container author-home-grid">
       <div>
         <div class="eyebrow">Tác giả</div>
-        <h2 class="section-title">{site.author}</h2>
+        <h2 class="section-title">{author.name}</h2>
         <p>
           Phụ trách nội dung theo hướng giáo dục, có nguồn, không khuyến nghị mua bán và ưu tiên khả năng tự học của nhà đầu tư cá nhân.
         </p>
