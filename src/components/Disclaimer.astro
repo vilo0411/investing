@@ -1,0 +1,36 @@
+---
+import { site } from "@/data/site";
+
+interface Props {
+  text?: string;
+}
+
+const { text = site.disclosure } = Astro.props;
+---
+
+<aside class="disclaimer" aria-label="Lưu ý tài chính">
+  <strong>Lưu ý quan trọng:</strong>
+  <span>{text}</span>
+</aside>
+
+<style>
+  .disclaimer {
+    display: grid;
+    gap: var(--space-1);
+    padding: var(--space-6);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-md);
+    background: var(--surface);
+    border-left: 4px solid var(--color-brand-900);
+  }
+
+  .disclaimer strong {
+    color: var(--color-brand-900);
+  }
+
+  .disclaimer span {
+    color: var(--muted);
+    font-size: 0.96rem;
+    line-height: 1.65;
+  }
+</style>
