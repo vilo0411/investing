@@ -129,7 +129,13 @@ Plans:
   5. The Editorial Policy page describes the fact-check process in detail and links to the Citation box concept used on articles
   6. A dedicated Disclaimer page/section explains the content's limitations and that it is not personalized financial advice
 
-**Plans**: TBD
+**Plans**: 4 plans
+
+Plans (Wave 1 — all independent, run in parallel):
+- [ ] 05-01-PLAN.md — Homepage trust-strip section (HOME-01, HOME-02)
+- [ ] 05-02-PLAN.md — Shared CategoryListing component + thin route files (CATG-01)
+- [ ] 05-03-PLAN.md — About page rewrite: mission, process, author preview, stats (TRST-01)
+- [ ] 05-04-PLAN.md — Disclaimer page + Disclaimer link + Editorial Policy expansion (TRST-02, TRST-03)
 
 **UI hint**: yes
 
