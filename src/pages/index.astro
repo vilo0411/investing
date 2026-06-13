@@ -62,6 +62,35 @@ const startHere = startSlugs
     </div>
   </section>
 
+  <section class="section trust-strip-section">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <div class="eyebrow">Vì sao tin chúng tôi</div>
+          <h2 class="section-title">Nguyên tắc xây dựng nội dung</h2>
+        </div>
+      </div>
+      <div class="trust-strip">
+        <a class="trust-card" href="/editorial-policy/">
+          <h3>Quy trình biên tập rõ ràng</h3>
+          <p>Mỗi bài viết được rà soát về nguồn, tính cập nhật và rủi ro trước khi xuất bản.</p>
+        </a>
+        <a class="trust-card" href="/disclaimer/">
+          <h3>Không khuyến nghị mua/bán</h3>
+          <p>Nội dung mang tính giáo dục, không thay thế tư vấn tài chính cá nhân hóa.</p>
+        </a>
+        <a class="trust-card" href="/about/">
+          <h3>Có nguồn, có tác giả rõ ràng</h3>
+          <p>Mỗi bài viết ghi rõ tác giả, nguồn tham khảo và ngày cập nhật cuối.</p>
+        </a>
+        <a class="trust-card" href="/editorial-policy/">
+          <h3>Cập nhật thường xuyên</h3>
+          <p>Nội dung được rà soát và cập nhật định kỳ khi có thay đổi về số liệu hoặc quy định.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
   <section class="section topic-section">
     <div class="container">
       <div class="section-header">
@@ -292,6 +321,43 @@ const startHere = startSlugs
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 16px;
+  }
+
+  /* ── Trust strip ─────────────────────────────────────────────────────── */
+  .trust-strip {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .trust-card {
+    border: 1px solid var(--line);
+    border-radius: var(--radius-md);
+    background: var(--surface);
+    padding: 20px;
+    text-decoration: none;
+  }
+
+  .trust-card:hover {
+    border-color: var(--color-brand-100);
+    box-shadow: var(--shadow-md);
+    text-decoration: none;
+  }
+
+  .trust-card h3 {
+    font-size: 0.92rem;
+    font-weight: 700;
+    line-height: 1.4;
+    color: var(--text);
+    margin: 0 0 8px;
+  }
+
+  .trust-card p {
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: var(--muted);
+    line-height: 1.55;
+    margin: 0;
   }
 
   .topic-card,
@@ -663,6 +729,10 @@ const startHere = startSlugs
       grid-template-columns: 1fr;
     }
 
+    .trust-strip {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
     .latest-col {
       border-top: 1px solid var(--line);
       padding-top: 28px;
@@ -677,6 +747,10 @@ const startHere = startSlugs
     .topic-grid,
     .start-list,
     .author-home-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .trust-strip {
       grid-template-columns: 1fr;
     }
 
