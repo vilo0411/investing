@@ -1,22 +1,19 @@
 ---
-title: "Quỹ mở là gì?"
-description: "Quỹ mở cho phép nhà đầu tư góp vốn vào danh mục do công ty quản lý quỹ vận hành."
-category: "quy-dau-tu"
-publishDate: "2026-06-09"
-updatedDate: "2026-06-09"
-readingTime: "4 phút đọc"
+title: Quỹ mở là gì?
+description: Quỹ mở cho phép nhà đầu tư góp vốn vào danh mục do công ty quản lý quỹ vận hành.
+category: quy-dau-tu
+publishDate: '2026-06-09'
+updatedDate: '2026-06-09'
+readingTime: 4 phút đọc
 featured: true
 order: 3
 sources:
-  - "Tài liệu công bố của công ty quản lý quỹ"
+  - Tài liệu công bố của công ty quản lý quỹ
+keyTakeaways:
+  - Quỹ mở gom vốn từ nhiều nhà đầu tư để đầu tư theo mục tiêu đã công bố.
+  - Nhà đầu tư mua chứng chỉ quỹ thay vì tự chọn từng tài sản.
+  - 'Cần đọc kỹ phí, chiến lược đầu tư và hiệu quả dài hạn.'
 ---
-
-## Key takeaways
-
-- Quỹ mở gom vốn từ nhiều nhà đầu tư để đầu tư theo mục tiêu đã công bố.
-- Nhà đầu tư mua chứng chỉ quỹ thay vì tự chọn từng tài sản.
-- Cần đọc kỹ phí, chiến lược đầu tư và hiệu quả dài hạn.
-
 ## Quỹ mở hoạt động ra sao?
 
 Công ty quản lý quỹ xây dựng danh mục theo điều lệ quỹ. Nhà đầu tư mua chứng chỉ quỹ và hưởng kết quả tương ứng với biến động giá trị tài sản ròng.

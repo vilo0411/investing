@@ -1,23 +1,20 @@
 ---
-title: "Cổ phiếu là gì?"
-description: "Giải thích cổ phiếu, quyền sở hữu doanh nghiệp và những điều người mới cần hiểu trước khi đầu tư."
-category: "co-phieu"
-publishDate: "2026-06-09"
-updatedDate: "2026-06-09"
-readingTime: "5 phút đọc"
+title: Cổ phiếu là gì?
+description: 'Giải thích cổ phiếu, quyền sở hữu doanh nghiệp và những điều người mới cần hiểu trước khi đầu tư.'
+category: co-phieu
+publishDate: '2026-06-09'
+updatedDate: '2026-06-09'
+readingTime: 5 phút đọc
 featured: true
 order: 1
 sources:
-  - "Ủy ban Chứng khoán Nhà nước"
-  - "Sở Giao dịch Chứng khoán TP.HCM"
+  - Ủy ban Chứng khoán Nhà nước
+  - Sở Giao dịch Chứng khoán TP.HCM
+keyTakeaways:
+  - Cổ phiếu đại diện cho một phần quyền sở hữu trong doanh nghiệp.
+  - Lợi nhuận của nhà đầu tư có thể đến từ tăng giá và cổ tức.
+  - 'Giá cổ phiếu biến động vì kỳ vọng, kết quả kinh doanh và tâm lý thị trường.'
 ---
-
-## Key takeaways
-
-- Cổ phiếu đại diện cho một phần quyền sở hữu trong doanh nghiệp.
-- Lợi nhuận của nhà đầu tư có thể đến từ tăng giá và cổ tức.
-- Giá cổ phiếu biến động vì kỳ vọng, kết quả kinh doanh và tâm lý thị trường.
-
 ## Cổ phiếu hoạt động như thế nào?
 
 Khi mua cổ phiếu, nhà đầu tư trở thành cổ đông của công ty phát hành. Tỷ lệ sở hữu phụ thuộc vào số lượng cổ phiếu nắm giữ so với tổng số cổ phiếu đang lưu hành.

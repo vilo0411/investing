@@ -1,23 +1,20 @@
 ---
-title: "P/E là gì?"
-description: "P/E cho biết nhà đầu tư đang trả bao nhiêu đồng cho một đồng lợi nhuận của doanh nghiệp."
-category: "phan-tich"
-publishDate: "2026-06-09"
-updatedDate: "2026-06-09"
-readingTime: "6 phút đọc"
+title: P/E là gì?
+description: P/E cho biết nhà đầu tư đang trả bao nhiêu đồng cho một đồng lợi nhuận của doanh nghiệp.
+category: phan-tich
+publishDate: '2026-06-09'
+updatedDate: '2026-06-09'
+readingTime: 6 phút đọc
 featured: true
 order: 5
 sources:
-  - "CFA Institute"
-  - "Investopedia"
+  - CFA Institute
+  - Investopedia
+keyTakeaways:
+  - P/E là giá cổ phiếu chia cho lợi nhuận trên mỗi cổ phiếu.
+  - P/E thấp không luôn đồng nghĩa cổ phiếu rẻ.
+  - 'Nên so sánh P/E với lịch sử doanh nghiệp, ngành và triển vọng tăng trưởng.'
 ---
-
-## Key takeaways
-
-- P/E là giá cổ phiếu chia cho lợi nhuận trên mỗi cổ phiếu.
-- P/E thấp không luôn đồng nghĩa cổ phiếu rẻ.
-- Nên so sánh P/E với lịch sử doanh nghiệp, ngành và triển vọng tăng trưởng.
-
 ## Công thức P/E
 
 P/E = Giá thị trường của cổ phiếu / EPS.

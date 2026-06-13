@@ -1,28 +1,29 @@
 ---
-title: "RSI là gì?"
-description: "RSI là chỉ báo động lượng trong phân tích kỹ thuật, thường dùng để quan sát trạng thái quá mua hoặc quá bán của giá."
-category: "phan-tich-ky-thuat"
-publishDate: "2026-06-09"
-updatedDate: "2026-06-09"
-readingTime: "5 phút đọc"
+title: RSI là gì?
+description: 'RSI là chỉ báo động lượng trong phân tích kỹ thuật, thường dùng để quan sát trạng thái quá mua hoặc quá bán của giá.'
+category: phan-tich-ky-thuat
+publishDate: '2026-06-09'
+updatedDate: '2026-06-09'
+readingTime: 5 phút đọc
 featured: false
 order: 1
-tags: ["RSI", "phân tích kỹ thuật", "động lượng", "chỉ báo"]
+tags:
+  - RSI
+  - phân tích kỹ thuật
+  - động lượng
+  - chỉ báo
 faq:
-  - question: "RSI trên 70 có phải nên bán ngay không?"
-    answer: "Không. RSI trên 70 chỉ cho thấy động lượng mạnh hoặc trạng thái quá mua tương đối; giá vẫn có thể tiếp tục tăng trong xu hướng mạnh."
-  - question: "RSI dưới 30 có phải nên mua không?"
-    answer: "Không tự động. RSI dưới 30 cần được kiểm tra cùng xu hướng, hỗ trợ, khối lượng và bối cảnh thị trường."
+  - question: RSI trên 70 có phải nên bán ngay không?
+    answer: Không. RSI trên 70 chỉ cho thấy động lượng mạnh hoặc trạng thái quá mua tương đối; giá vẫn có thể tiếp tục tăng trong xu hướng mạnh.
+  - question: RSI dưới 30 có phải nên mua không?
+    answer: 'Không tự động. RSI dưới 30 cần được kiểm tra cùng xu hướng, hỗ trợ, khối lượng và bối cảnh thị trường.'
 sources:
-  - "J. Welles Wilder, New Concepts in Technical Trading Systems"
+  - 'J. Welles Wilder, New Concepts in Technical Trading Systems'
+keyTakeaways:
+  - RSI là chỉ báo động lượng dao động từ 0 đến 100.
+  - 'Vùng 70 và 30 thường được dùng để quan sát quá mua/quá bán, không phải tín hiệu mua bán tuyệt đối.'
+  - 'RSI hiệu quả hơn khi kết hợp với xu hướng, vùng giá và quản trị rủi ro.'
 ---
-
-## Key takeaways
-
-- RSI là chỉ báo động lượng dao động từ 0 đến 100.
-- Vùng 70 và 30 thường được dùng để quan sát quá mua/quá bán, không phải tín hiệu mua bán tuyệt đối.
-- RSI hiệu quả hơn khi kết hợp với xu hướng, vùng giá và quản trị rủi ro.
-
 ## RSI hoạt động như thế nào?
 
 RSI đo tương quan giữa mức tăng và mức giảm trung bình trong một giai đoạn, phổ biến là 14 phiên. Khi giá tăng mạnh liên tục, RSI thường đi lên. Khi giá giảm mạnh liên tục, RSI thường đi xuống.
