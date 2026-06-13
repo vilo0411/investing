@@ -62,7 +62,7 @@ Người đọc và Google phải cảm nhận ngay đây là một nguồn tài
 |----------|-----------|---------|
 | Làm lại toàn bộ design system thay vì giữ brand cũ | Brand hiện tại chưa truyền tải sự chuyên nghiệp/tin cậy cần thiết cho YMYL finance | — Pending |
 | Ưu tiên redesign Homepage, Category, Article, About/Editorial Policy | Đây là các trang ảnh hưởng trực tiếp đến trải nghiệm đọc và tín hiệu EEAT | — Pending |
-| Thêm 3 component mới: Key Takeaways, Comparison Table, Fact-check/Citation box | Mô phỏng theo Investopedia/NerdWallet, lấp khoảng trống UI hiện tại | — Pending |
+| Thêm 3 component mới: Key Takeaways, Comparison Table, Fact-check/Citation box | Mô phỏng theo Investopedia/NerdWallet, lấp khoảng trống UI hiện tại | Validated in Phase 4 — Key Takeaways và Citation box đã wired vào ArticleLayout cho toàn bộ 21 bài viết; Comparison Table vẫn pending |
 | Giữ nguyên nội dung bài viết hiện có | Tập trung vào trình bày/giao diện, tránh phạm vi quá rộng | — Pending |
 
 ## Evolution
@@ -83,4 +83,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-06-10 after initialization*
+*Last updated: 2026-06-13 after Phase 4 completion*
