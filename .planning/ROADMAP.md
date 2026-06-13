@@ -104,7 +104,16 @@ Plans:
   3. JSON-LD on article pages (Person, Article, dateModified) is generated from `src/data/authors.ts`, matching what AuthorBox displays
   4. All 21 existing articles display Key Takeaways and Citation box content backfilled from their existing body/sources, without any rewritten body content
 
-**Plans**: TBD
+**Plans**: 3 plans
+Plans:
+**Wave 0**
+
+- [ ] 04-01-PLAN.md — Install gray-matter, create backfill script, relocate Key Takeaways bullets from body to keyTakeaways frontmatter for all 21 articles (EEAT-10)
+
+**Wave 1** *(depends on 04-01)*
+
+- [ ] 04-02-PLAN.md — Rewire ArticleLayout.astro: Breadcrumb/KeyTakeaways/CitationBox composition order + expanded JSON-LD author Person (ARTL-01, ARTL-02, EEAT-10)
+- [ ] 04-03-PLAN.md — Create /author/[slug] credibility profile page with full article list (EEAT-06)
 
 ### Phase 5: Homepage, Category & Trust Pages
 
