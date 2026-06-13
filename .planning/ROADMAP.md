@@ -17,7 +17,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 2: EEAT Data Model & Schema Extensions** - Canonical author data and additive content schema fields back all upcoming EEAT components (completed 2026-06-12)
 - [x] **Phase 3: New EEAT Components** - Key Takeaways, Citation box, AuthorBox v2, breadcrumb, disclaimer, comparison table built and validated in isolation (completed 2026-06-12)
 - [x] **Phase 4: Article Layout Wiring & Author Profile Pages** - Article template composes new components in EEAT order; author profile pages and JSON-LD go live (completed 2026-06-13)
-- [ ] **Phase 5: Homepage, Category & Trust Pages** - Homepage, category listings, About, and Editorial Policy redesigned on the new system
+- [x] **Phase 5: Homepage, Category & Trust Pages** - Homepage, category listings, About, and Editorial Policy redesigned on the new system (completed 2026-06-13)
 - [ ] **Phase 6: QA, CWV & SEO Verification** - Full-site visual regression, Core Web Vitals, structured data, and URL-contract verification
 
 ## Phase Details
@@ -132,10 +132,11 @@ Plans:
 **Plans**: 4 plans
 
 Plans (Wave 1 — all independent, run in parallel):
-- [ ] 05-01-PLAN.md — Homepage trust-strip section (HOME-01, HOME-02)
-- [ ] 05-02-PLAN.md — Shared CategoryListing component + thin route files (CATG-01)
-- [ ] 05-03-PLAN.md — About page rewrite: mission, process, author preview, stats (TRST-01)
-- [ ] 05-04-PLAN.md — Disclaimer page + Disclaimer link + Editorial Policy expansion (TRST-02, TRST-03)
+
+- [x] 05-01-PLAN.md — Homepage trust-strip section (HOME-01, HOME-02)
+- [x] 05-02-PLAN.md — Shared CategoryListing component + thin route files (CATG-01)
+- [x] 05-03-PLAN.md — About page rewrite: mission, process, author preview, stats (TRST-01)
+- [x] 05-04-PLAN.md — Disclaimer page + Disclaimer link + Editorial Policy expansion (TRST-02, TRST-03)
 
 **UI hint**: yes
 
@@ -164,6 +165,6 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6
 | 2. EEAT Data Model & Schema Extensions | 3/3 | Complete   | 2026-06-12 |
 | 3. New EEAT Components | 3/3 | Complete    | 2026-06-12 |
 | 4. Article Layout Wiring & Author Profile Pages | 3/3 | Complete    | 2026-06-13 |
-| 5. Homepage, Category & Trust Pages | 0/TBD | Not started | - |
+| 5. Homepage, Category & Trust Pages | 4/4 | Complete   | 2026-06-13 |
 | 6. QA, CWV & SEO Verification | 0/TBD | Not started | - |
 </content>
