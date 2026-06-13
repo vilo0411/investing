@@ -20,16 +20,16 @@
 - [x] **EEAT-03**: Component "Key Takeaways" hiển thị box tóm tắt ý chính đầu bài viết, lấy dữ liệu từ section `## Key takeaways` hiện có hoặc field mới trong frontmatter
 - [x] **EEAT-04**: Component "Citation/Fact-check box" hiển thị danh sách nguồn tham khảo và ngày cập nhật cuối cùng ở cuối bài viết
 - [x] **EEAT-05**: AuthorBox được nâng cấp (v2): hiển thị chuyên môn, kinh nghiệm, link đến trang hồ sơ tác giả
-- [ ] **EEAT-06**: Có trang hồ sơ tác giả `/author/[slug]` hiển thị thông tin chi tiết về tác giả/reviewer
+- [x] **EEAT-06**: Có trang hồ sơ tác giả `/author/[slug]` hiển thị thông tin chi tiết về tác giả/reviewer
 - [x] **EEAT-07**: Component breadcrumb navigation hiển thị trên trang bài viết và trang danh mục
 - [x] **EEAT-08**: Component disclaimer/risk-disclosure hiển thị trên các bài viết liên quan đến quyết định tài chính
 - [x] **EEAT-09**: Component bảng so sánh (comparison table) được style nhất quán cho các bài so sánh sản phẩm tài chính
-- [ ] **EEAT-10**: Dữ liệu cấu trúc (Key Takeaways, citations) được backfill cho 21 bài viết hiện có dựa trên nội dung sẵn có (không viết lại nội dung chính)
+- [x] **EEAT-10**: Dữ liệu cấu trúc (Key Takeaways, citations) được backfill cho 21 bài viết hiện có dựa trên nội dung sẵn có (không viết lại nội dung chính)
 
 ### Article Layout
 
-- [ ] **ARTL-01**: `ArticleLayout.astro` được wiring lại để hiển thị các component mới theo thứ tự: Breadcrumb → Key Takeaways → TOC → Nội dung → Citation box → AuthorBox v2 → Share/Related
-- [ ] **ARTL-02**: JSON-LD (Person, Article, dateModified) trên trang bài viết lấy dữ liệu từ `src/data/authors.ts` để đồng nhất với AuthorBox
+- [x] **ARTL-01**: `ArticleLayout.astro` được wiring lại để hiển thị các component mới theo thứ tự: Breadcrumb → Key Takeaways → TOC → Nội dung → Citation box → AuthorBox v2 → Share/Related
+- [x] **ARTL-02**: JSON-LD (Person, Article, dateModified) trên trang bài viết lấy dữ liệu từ `src/data/authors.ts` để đồng nhất với AuthorBox
 
 ### Homepage & Category Pages
 
@@ -96,13 +96,13 @@ Which phases cover which requirements. Updated during roadmap creation.
 | EEAT-03 | Phase 3 | Complete |
 | EEAT-04 | Phase 3 | Complete |
 | EEAT-05 | Phase 3 | Complete |
-| EEAT-06 | Phase 4 | Pending |
+| EEAT-06 | Phase 4 | Complete |
 | EEAT-07 | Phase 3 | Complete |
 | EEAT-08 | Phase 3 | Complete |
 | EEAT-09 | Phase 3 | Complete |
-| EEAT-10 | Phase 4 | Pending |
-| ARTL-01 | Phase 4 | Pending |
-| ARTL-02 | Phase 4 | Pending |
+| EEAT-10 | Phase 4 | Complete |
+| ARTL-01 | Phase 4 | Complete |
+| ARTL-02 | Phase 4 | Complete |
 | HOME-01 | Phase 5 | Pending |
 | HOME-02 | Phase 5 | Pending |
 | CATG-01 | Phase 5 | Pending |
