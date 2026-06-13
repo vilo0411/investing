@@ -1,23 +1,20 @@
 ---
-title: "ETF là gì?"
-description: "ETF là quỹ mô phỏng chỉ số, giúp nhà đầu tư tiếp cận một rổ tài sản chỉ bằng một mã giao dịch."
-category: "etf"
-publishDate: "2026-06-09"
-updatedDate: "2026-06-09"
-readingTime: "4 phút đọc"
+title: ETF là gì?
+description: 'ETF là quỹ mô phỏng chỉ số, giúp nhà đầu tư tiếp cận một rổ tài sản chỉ bằng một mã giao dịch.'
+category: etf
+publishDate: '2026-06-09'
+updatedDate: '2026-06-09'
+readingTime: 4 phút đọc
 featured: true
 order: 2
 sources:
-  - "Investopedia"
-  - "Thông tin quỹ ETF tại các công ty quản lý quỹ"
+  - Investopedia
+  - Thông tin quỹ ETF tại các công ty quản lý quỹ
+keyTakeaways:
+  - ETF thường mô phỏng một chỉ số hoặc một nhóm tài sản.
+  - ETF giúp đa dạng hóa dễ hơn so với mua từng cổ phiếu riêng lẻ.
+  - 'Nhà đầu tư vẫn cần hiểu phí, thanh khoản và sai lệch mô phỏng.'
 ---
-
-## Key takeaways
-
-- ETF thường mô phỏng một chỉ số hoặc một nhóm tài sản.
-- ETF giúp đa dạng hóa dễ hơn so với mua từng cổ phiếu riêng lẻ.
-- Nhà đầu tư vẫn cần hiểu phí, thanh khoản và sai lệch mô phỏng.
-
 ## ETF phù hợp với ai?
 
 ETF phù hợp với người mới muốn đầu tư theo thị trường chung nhưng chưa đủ thời gian hoặc kỹ năng để chọn từng cổ phiếu. Với một giao dịch, nhà đầu tư có thể sở hữu gián tiếp nhiều cổ phiếu trong một chỉ số.

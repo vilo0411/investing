@@ -1,23 +1,20 @@
 ---
-title: "Trái phiếu là gì?"
-description: "Trái phiếu là công cụ nợ, trong đó nhà đầu tư cho tổ chức phát hành vay vốn theo điều kiện đã công bố."
-category: "trai-phieu"
-publishDate: "2026-06-09"
-updatedDate: "2026-06-09"
-readingTime: "5 phút đọc"
+title: Trái phiếu là gì?
+description: 'Trái phiếu là công cụ nợ, trong đó nhà đầu tư cho tổ chức phát hành vay vốn theo điều kiện đã công bố.'
+category: trai-phieu
+publishDate: '2026-06-09'
+updatedDate: '2026-06-09'
+readingTime: 5 phút đọc
 featured: true
 order: 4
 sources:
-  - "Bộ Tài chính"
-  - "Ủy ban Chứng khoán Nhà nước"
+  - Bộ Tài chính
+  - Ủy ban Chứng khoán Nhà nước
+keyTakeaways:
+  - Trái phiếu là khoản vay có kỳ hạn giữa nhà đầu tư và tổ chức phát hành.
+  - Lợi suất cao thường đi kèm rủi ro cao hơn.
+  - Cần phân biệt trái phiếu chính phủ và trái phiếu doanh nghiệp.
 ---
-
-## Key takeaways
-
-- Trái phiếu là khoản vay có kỳ hạn giữa nhà đầu tư và tổ chức phát hành.
-- Lợi suất cao thường đi kèm rủi ro cao hơn.
-- Cần phân biệt trái phiếu chính phủ và trái phiếu doanh nghiệp.
-
 ## Trái phiếu khác cổ phiếu thế nào?
 
 Cổ phiếu đại diện cho quyền sở hữu, còn trái phiếu đại diện cho quyền chủ nợ. Người nắm giữ trái phiếu thường quan tâm đến khả năng trả lãi và trả gốc của tổ chức phát hành.

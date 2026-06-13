@@ -1,29 +1,30 @@
 ---
-title: "Benjamin Graham là ai?"
-description: "Benjamin Graham được xem là cha đẻ của đầu tư giá trị, nổi bật với tư duy biên an toàn và phân tích doanh nghiệp dựa trên nền tảng tài chính."
-category: "nha-dau-tu"
-publishDate: "2026-06-09"
-updatedDate: "2026-06-09"
-readingTime: "5 phút đọc"
+title: Benjamin Graham là ai?
+description: 'Benjamin Graham được xem là cha đẻ của đầu tư giá trị, nổi bật với tư duy biên an toàn và phân tích doanh nghiệp dựa trên nền tảng tài chính.'
+category: nha-dau-tu
+publishDate: '2026-06-09'
+updatedDate: '2026-06-09'
+readingTime: 5 phút đọc
 featured: false
 order: 9
-tags: ["Benjamin Graham", "đầu tư giá trị", "biên an toàn", "nhà đầu tư"]
+tags:
+  - Benjamin Graham
+  - đầu tư giá trị
+  - biên an toàn
+  - nhà đầu tư
 faq:
-  - question: "Benjamin Graham nổi tiếng vì điều gì?"
-    answer: "Ông nổi tiếng với trường phái đầu tư giá trị, nguyên tắc biên an toàn và cuốn The Intelligent Investor."
-  - question: "Người mới học được gì từ Graham?"
-    answer: "Bài học quan trọng là xem cổ phiếu như quyền sở hữu doanh nghiệp và luôn yêu cầu biên an toàn trước khi đầu tư."
+  - question: Benjamin Graham nổi tiếng vì điều gì?
+    answer: 'Ông nổi tiếng với trường phái đầu tư giá trị, nguyên tắc biên an toàn và cuốn The Intelligent Investor.'
+  - question: Người mới học được gì từ Graham?
+    answer: Bài học quan trọng là xem cổ phiếu như quyền sở hữu doanh nghiệp và luôn yêu cầu biên an toàn trước khi đầu tư.
 sources:
-  - "Benjamin Graham, The Intelligent Investor"
-  - "Benjamin Graham and David Dodd, Security Analysis"
+  - 'Benjamin Graham, The Intelligent Investor'
+  - 'Benjamin Graham and David Dodd, Security Analysis'
+keyTakeaways:
+  - Benjamin Graham đặt nền móng cho trường phái đầu tư giá trị.
+  - 'Biên an toàn là nguyên tắc trung tâm: mua với giá đủ thấp so với giá trị ước tính.'
+  - Tư duy của Graham ảnh hưởng lớn đến Warren Buffett và nhiều nhà đầu tư dài hạn.
 ---
-
-## Key takeaways
-
-- Benjamin Graham đặt nền móng cho trường phái đầu tư giá trị.
-- Biên an toàn là nguyên tắc trung tâm: mua với giá đủ thấp so với giá trị ước tính.
-- Tư duy của Graham ảnh hưởng lớn đến Warren Buffett và nhiều nhà đầu tư dài hạn.
-
 ## Triết lý đầu tư
 
 Graham cho rằng nhà đầu tư nên phân biệt giữa giá thị trường và giá trị nội tại. Thị trường có thể biến động cảm xúc trong ngắn hạn, nhưng về dài hạn giá trị doanh nghiệp mới là yếu tố quan trọng.
