@@ -16,7 +16,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 1: Design Token Foundation** - New token system re-skins the entire site via CSS cascade with zero markup changes (completed 2026-06-11)
 - [x] **Phase 2: EEAT Data Model & Schema Extensions** - Canonical author data and additive content schema fields back all upcoming EEAT components (completed 2026-06-12)
 - [x] **Phase 3: New EEAT Components** - Key Takeaways, Citation box, AuthorBox v2, breadcrumb, disclaimer, comparison table built and validated in isolation (completed 2026-06-12)
-- [ ] **Phase 4: Article Layout Wiring & Author Profile Pages** - Article template composes new components in EEAT order; author profile pages and JSON-LD go live
+- [x] **Phase 4: Article Layout Wiring & Author Profile Pages** - Article template composes new components in EEAT order; author profile pages and JSON-LD go live (completed 2026-06-13)
 - [ ] **Phase 5: Homepage, Category & Trust Pages** - Homepage, category listings, About, and Editorial Policy redesigned on the new system
 - [ ] **Phase 6: QA, CWV & SEO Verification** - Full-site visual regression, Core Web Vitals, structured data, and URL-contract verification
 
@@ -112,8 +112,8 @@ Plans:
 
 **Wave 1** *(depends on 04-01)*
 
-- [ ] 04-02-PLAN.md — Rewire ArticleLayout.astro: Breadcrumb/KeyTakeaways/CitationBox composition order + expanded JSON-LD author Person (ARTL-01, ARTL-02, EEAT-10)
-- [ ] 04-03-PLAN.md — Create /author/[slug] credibility profile page with full article list (EEAT-06)
+- [x] 04-02-PLAN.md — Rewire ArticleLayout.astro: Breadcrumb/KeyTakeaways/CitationBox composition order + expanded JSON-LD author Person (ARTL-01, ARTL-02, EEAT-10)
+- [x] 04-03-PLAN.md — Create /author/[slug] credibility profile page with full article list (EEAT-06)
 
 ### Phase 5: Homepage, Category & Trust Pages
 
@@ -157,7 +157,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6
 | 1. Design Token Foundation | 3/3 | Complete    | 2026-06-11 |
 | 2. EEAT Data Model & Schema Extensions | 3/3 | Complete   | 2026-06-12 |
 | 3. New EEAT Components | 3/3 | Complete    | 2026-06-12 |
-| 4. Article Layout Wiring & Author Profile Pages | 1/3 | In Progress|  |
+| 4. Article Layout Wiring & Author Profile Pages | 3/3 | Complete   | 2026-06-13 |
 | 5. Homepage, Category & Trust Pages | 0/TBD | Not started | - |
 | 6. QA, CWV & SEO Verification | 0/TBD | Not started | - |
 </content>
