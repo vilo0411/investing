@@ -132,19 +132,7 @@ const breadcrumbSchema = {
 
   <header class="article-header">
     <div class="article-container">
-      <nav class="breadcrumb" aria-label="Breadcrumb">
-        <a href="/">Trang chủ</a>
-        <span aria-hidden="true">›</span>
-        {isInvestingCategory && categoryGroupPath ? (
-          <>
-            <a href={categoryGroupPath}>Đầu tư</a>
-            <span aria-hidden="true">›</span>
-          </>
-        ) : null}
-        <a href={categoryPath}>{categoryTitle}</a>
-        <span aria-hidden="true">›</span>
-        <span aria-current="page">{title}</span>
-      </nav>
+      <Breadcrumb items={breadcrumbItems} />
       <div class="eyebrow">{categoryTitle}</div>
       <h1>{title}</h1>
       <p class="lead">{description}</p>
@@ -165,6 +153,7 @@ const breadcrumbSchema = {
         <strong>Lưu ý trước khi đọc:</strong>
         <span>{site.disclosure}</span>
       </aside>
+      <KeyTakeaways items={entry.data.keyTakeaways} />
       <slot />
       {entry.data.faq?.length ? (
         <section class="faq-section">
@@ -179,18 +168,7 @@ const breadcrumbSchema = {
           </div>
         </section>
       ) : null}
-      {sources?.length ? (
-        <section class="source-section">
-          <h2>Nguồn tham khảo</h2>
-          <p>
-            Bài viết ưu tiên nguồn gốc và tài liệu có thể kiểm chứng. Xem thêm
-            <a href="/sources-policy/"> chính sách nguồn tham khảo</a>.
-          </p>
-          <ul>
-            {sources.map((source: string) => <li>{source}</li>)}
-          </ul>
-        </section>
-      ) : null}
+      <CitationBox sources={entry.data.sources} updatedDate={updatedDate} />
       <section class="editorial-review">
         <h2>Cách chúng tôi kiểm tra nội dung</h2>
         <p>
@@ -199,8 +177,8 @@ const breadcrumbSchema = {
           <a href="/corrections-policy/"> chính sách đính chính</a>.
         </p>
       </section>
-      <ShareBar title={title} url={articleUrl} />
       <AuthorBox />
+      <ShareBar title={title} url={articleUrl} />
       <RelatedArticles category={entry.data.category} currentSlug={entry.slug} />
     </article>
 
@@ -213,31 +191,6 @@ const breadcrumbSchema = {
 </BaseLayout>
 
 <style>
-  /* Breadcrumb */
-  .breadcrumb {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    font-size: 0.85rem;
-    color: var(--muted);
-    margin-bottom: 20px;
-    flex-wrap: wrap;
-  }
-
-  .breadcrumb a {
-    color: var(--muted);
-    transition: color var(--transition);
-  }
-
-  .breadcrumb a:hover {
-    color: var(--brand);
-    text-decoration: none;
-  }
-
-  .breadcrumb span[aria-current] {
-    color: var(--color-neutral-400);
-  }
-
   .meta a {
     color: var(--brand);
     font-weight: 500;
@@ -283,8 +236,7 @@ const breadcrumbSchema = {
   }
 
   .ymyl-note,
-  .editorial-review,
-  .source-section {
+  .editorial-review {
     border: 1px solid var(--line);
     border-radius: var(--radius-md);
     background: var(--surface);
@@ -303,14 +255,12 @@ const breadcrumbSchema = {
   }
 
   .ymyl-note span,
-  .source-section p,
   .editorial-review p {
     color: var(--muted);
     font-size: 0.96rem;
     line-height: 1.65;
   }
 
-  .source-section,
   .editorial-review,
   .faq-section {
     margin-top: 42px;
@@ -340,7 +290,6 @@ const breadcrumbSchema = {
     font-size: 0.98rem;
   }
 
-  .source-section h2,
   .editorial-review h2 {
     margin-top: 0;
   }
