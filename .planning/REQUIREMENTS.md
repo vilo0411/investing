@@ -33,15 +33,15 @@
 
 ### Homepage & Category Pages
 
-- [ ] **HOME-01**: Trang chủ redesign với hero section, grid điều hướng danh mục, danh sách bài viết nổi bật/mới nhất
-- [ ] **HOME-02**: Trang chủ có "trust strip" — dải hiển thị tín hiệu tin cậy, liên kết đến Editorial Policy, About
-- [ ] **CATG-01**: Trang danh mục (`[category].astro` và `dau-tu/[category].astro`) được redesign đồng bộ, lý tưởng qua shared component `CategoryListing`
+- [x] **HOME-01**: Trang chủ redesign với hero section, grid điều hướng danh mục, danh sách bài viết nổi bật/mới nhất
+- [x] **HOME-02**: Trang chủ có "trust strip" — dải hiển thị tín hiệu tin cậy, liên kết đến Editorial Policy, About
+- [x] **CATG-01**: Trang danh mục (`[category].astro` và `dau-tu/[category].astro`) được redesign đồng bộ, lý tưởng qua shared component `CategoryListing`
 
 ### Trust Pages
 
-- [ ] **TRST-01**: Trang About mở rộng, giới thiệu chuyên sâu về tác giả/team dựa trên `src/data/authors.ts` (chuyên môn, kinh nghiệm, chứng chỉ)
-- [ ] **TRST-02**: Trang Editorial Policy mở rộng với mô tả quy trình fact-check chi tiết, liên kết đến Citation box trên bài viết
-- [ ] **TRST-03**: Có trang/section Disclaimer riêng về giới hạn nội dung, không phải lời khuyên tài chính cá nhân hóa
+- [x] **TRST-01**: Trang About mở rộng, giới thiệu chuyên sâu về tác giả/team dựa trên `src/data/authors.ts` (chuyên môn, kinh nghiệm, chứng chỉ)
+- [x] **TRST-02**: Trang Editorial Policy mở rộng với mô tả quy trình fact-check chi tiết, liên kết đến Citation box trên bài viết
+- [x] **TRST-03**: Có trang/section Disclaimer riêng về giới hạn nội dung, không phải lời khuyên tài chính cá nhân hóa
 
 ### QA & SEO Verification
 
@@ -103,12 +103,12 @@ Which phases cover which requirements. Updated during roadmap creation.
 | EEAT-10 | Phase 4 | Complete |
 | ARTL-01 | Phase 4 | Complete |
 | ARTL-02 | Phase 4 | Complete |
-| HOME-01 | Phase 5 | Pending |
-| HOME-02 | Phase 5 | Pending |
-| CATG-01 | Phase 5 | Pending |
-| TRST-01 | Phase 5 | Pending |
-| TRST-02 | Phase 5 | Pending |
-| TRST-03 | Phase 5 | Pending |
+| HOME-01 | Phase 5 | Complete |
+| HOME-02 | Phase 5 | Complete |
+| CATG-01 | Phase 5 | Complete |
+| TRST-01 | Phase 5 | Complete |
+| TRST-02 | Phase 5 | Complete |
+| TRST-03 | Phase 5 | Complete |
 | QASE-01 | Phase 6 | Pending |
 | QASE-02 | Phase 6 | Pending |
 | QASE-03 | Phase 6 | Pending |

@@ -165,6 +165,6 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6
 | 2. EEAT Data Model & Schema Extensions | 3/3 | Complete   | 2026-06-12 |
 | 3. New EEAT Components | 3/3 | Complete    | 2026-06-12 |
 | 4. Article Layout Wiring & Author Profile Pages | 3/3 | Complete    | 2026-06-13 |
-| 5. Homepage, Category & Trust Pages | 4/4 | Complete   | 2026-06-13 |
+| 5. Homepage, Category & Trust Pages | 4/4 | Complete    | 2026-06-13 |
 | 6. QA, CWV & SEO Verification | 0/TBD | Not started | - |
 </content>
