@@ -1,7 +1,7 @@
 ---
 phase: 6
 slug: qa-cwv-seo-verification
-status: draft
+status: approved
 nyquist_compliant: true
 wave_0_complete: false
 created: 2026-06-13
