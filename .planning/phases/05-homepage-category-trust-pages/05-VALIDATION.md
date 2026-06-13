@@ -1,9 +1,9 @@
 ---
 phase: 5
 slug: homepage-category-trust-pages
-status: draft
-nyquist_compliant: false
-wave_0_complete: false
+status: approved
+nyquist_compliant: true
+wave_0_complete: true
 created: 2026-06-13
 ---
 
@@ -38,11 +38,10 @@ created: 2026-06-13
 
 | Task ID | Plan | Wave | Requirement | Threat Ref | Secure Behavior | Test Type | Automated Command | File Exists | Status |
 |---------|------|------|-------------|------------|-----------------|-----------|-------------------|-------------|--------|
-| 05-01-xx | TBD | TBD | HOME-02 | — | Trust strip renders with links to `/about/`, `/editorial-policy/`, `/disclaimer/` | manual + build | `npm run build`, grep `dist/index.html` for the three hrefs | ❌ W0 | ⬜ pending |
-| 05-02-xx | TBD | TBD | CATG-01 | — | `[category].astro` and `dau-tu/[category].astro` render via shared `CategoryListing` | build + visual | `npm run build` then structural diff of `dist/co-phieu/index.html` vs `dist/dau-tu/co-phieu/index.html` | ❌ W0 | ⬜ pending |
-| 05-03-xx | TBD | TBD | TRST-01 | — | `/about/` renders mission/process/preview-card/stats without full author dossier | manual + build | `npm run build`, inspect `dist/about/index.html` | ❌ W0 | ⬜ pending |
-| 05-04-xx | TBD | TBD | TRST-02 | — | `/editorial-policy/` has new fact-check + CitationBox-reference sections | manual + build | `npm run build`, inspect `dist/editorial-policy/index.html` for new `<h2>` text | ❌ W0 | ⬜ pending |
-| 05-05-xx | TBD | TBD | TRST-03 | — | `/disclaimer/` page exists; `Disclaimer.astro` links to it | build + manual | `npm run build`, check `dist/disclaimer/index.html` exists; grep `Disclaimer.astro` usages for `href="/disclaimer/"` | ❌ W0 | ⬜ pending |
+| 05-01-01 | 01 | 1 | HOME-01, HOME-02 | — | Trust strip renders with links to `/about/`, `/editorial-policy/`, `/disclaimer/` | manual + build | `npm run build`, grep `dist/index.html` for the three hrefs | ✅ existing | ⬜ pending |
+| 05-02-01/02 | 02 | 1 | CATG-01 | — | `[category].astro` and `dau-tu/[category].astro` render via shared `CategoryListing` | build + visual | `npm run build` then structural diff of `dist/co-phieu/index.html` vs `dist/dau-tu/co-phieu/index.html` | ✅ existing | ⬜ pending |
+| 05-03-01 | 03 | 1 | TRST-01 | — | `/about/` renders mission/process/preview-card/stats without full author dossier | manual + build | `npm run build`, inspect `dist/about/index.html` | ✅ existing | ⬜ pending |
+| 05-04-01/02 | 04 | 1 | TRST-02, TRST-03 | — | `/disclaimer/` page exists + `/editorial-policy/` expanded; `Disclaimer.astro` links to `/disclaimer/` | build + manual | `npm run build`, check `dist/disclaimer/index.html` exists; inspect `dist/editorial-policy/index.html`; grep `Disclaimer.astro` usages for `href="/disclaimer/"` | ✅ existing | ⬜ pending |
 
 *Status: ⬜ pending · ✅ green · ❌ red · ⚠️ flaky*
 
