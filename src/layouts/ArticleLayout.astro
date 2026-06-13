@@ -6,6 +6,9 @@ import ShareBar from "@/components/ShareBar.astro";
 import TOC from "@/components/TOC.astro";
 import { categories, getCategoryPath, site } from "@/data/site";
 import { author } from "@/data/authors";
+import Breadcrumb from "@/components/Breadcrumb.astro";
+import KeyTakeaways from "@/components/KeyTakeaways.astro";
+import CitationBox from "@/components/CitationBox.astro";
 
 interface Props {
   entry: any;
@@ -21,10 +24,28 @@ const categoryPath = getCategoryPath(categoryMeta ?? entry.data.category);
 const categoryGroupPath = categoryMeta && "groupPath" in categoryMeta ? categoryMeta.groupPath : undefined;
 const isInvestingCategory = categoryMeta?.group === "Đầu tư";
 
+const breadcrumbItems =
+  isInvestingCategory && categoryGroupPath
+    ? [
+        { label: "Trang chủ", href: "/" },
+        { label: "Đầu tư", href: categoryGroupPath },
+        { label: categoryTitle, href: categoryPath },
+        { label: title },
+      ]
+    : [
+        { label: "Trang chủ", href: "/" },
+        { label: categoryTitle, href: categoryPath },
+        { label: title },
+      ];
+
 const articleUrl = new URL(Astro.url.pathname, Astro.site).toString();
 const ogImageUrl = new URL("/images/hero-investing.png", Astro.site).toString();
 
 const hasToc = headings.filter((h) => h.depth === 2).length > 1;
+
+const sameAs = author.socialLinks
+  ? [author.socialLinks.linkedin, author.socialLinks.twitter].filter((v): v is string => Boolean(v))
+  : [];
 
 const articleSchema = {
   "@context": "https://schema.org",
@@ -44,7 +65,11 @@ const articleSchema = {
   "author": {
     "@type": "Person",
     "name": author.name,
-    "url": new URL("/about/", Astro.site).toString(),
+    "url": new URL(`/author/${author.slug}/`, Astro.site).toString(),
+    "jobTitle": author.role,
+    "description": author.bio,
+    "knowsAbout": author.expertise,
+    ...(sameAs.length > 0 ? { "sameAs": sameAs } : {}),
   },
   "reviewedBy": {
     "@type": "Organization",
