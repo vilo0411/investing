@@ -70,3 +70,10 @@ None — plan executed exactly as written. The pre-existing build warnings (depr
 ## Known Stubs
 
 None.
+
+## Self-Check: PASSED
+
+- FOUND: scripts/backfill-key-takeaways.mjs
+- FOUND: .planning/phases/04-article-layout-wiring-author-profile-pages/04-01-SUMMARY.md
+- FOUND: commit 1f70f07
+- FOUND: commit 8579872
