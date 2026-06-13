@@ -11,6 +11,7 @@ const { text = site.disclosure } = Astro.props;
 <aside class="disclaimer" aria-label="Lưu ý tài chính">
   <strong>Lưu ý quan trọng:</strong>
   <span>{text}</span>
+  <a class="disclaimer-link" href="/disclaimer/">Tìm hiểu thêm</a>
 </aside>
 
 <style>
@@ -32,5 +33,12 @@ const { text = site.disclosure } = Astro.props;
     color: var(--muted);
     font-size: 0.96rem;
     line-height: 1.65;
+  }
+
+  .disclaimer-link {
+    color: var(--brand);
+    font-size: 0.85rem;
+    font-weight: 700;
+    justify-self: start;
   }
 </style>
