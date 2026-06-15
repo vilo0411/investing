@@ -1,0 +1,149 @@
+---
+import RatingBadge from "@/components/RatingBadge.astro";
+import ProsConsBox from "@/components/ProsConsBox.astro";
+import ReviewCTA from "@/components/ReviewCTA.astro";
+
+interface Props {
+  companyInfo?: {
+    founded?: string;
+    hq?: string;
+    license?: string;
+    website?: string;
+    products: string[];
+  };
+  accountSteps: { title: string; desc: string }[];
+  pros: string[];
+  cons: string[];
+  rating: number;
+  ctaUrl?: string;
+  ctaLabel?: string;
+}
+
+const { companyInfo, accountSteps, pros, cons, rating, ctaUrl, ctaLabel } = Astro.props;
+
+const infoRows = companyInfo
+  ? [
+      { label: "Năm thành lập", value: companyInfo.founded },
+      { label: "Trụ sở", value: companyInfo.hq },
+      { label: "Giấy phép", value: companyInfo.license },
+      { label: "Website", value: companyInfo.website },
+    ].filter((row): row is { label: string; value: string } => Boolean(row.value))
+  : [];
+---
+
+<div class="company-review-body">
+  <div class="cr-hero">
+    <RatingBadge rating={rating} label="Đánh giá tổng thể" />
+  </div>
+
+  {infoRows.length > 0 && (
+    <section id="thong-tin-nhanh">
+      <h2>Thông tin nhanh</h2>
+      <dl class="info-list">
+        {infoRows.map((row) => (
+          <div class="info-row">
+            <dt>{row.label}</dt>
+            <dd>{row.value}</dd>
+          </div>
+        ))}
+      </dl>
+    </section>
+  )}
+
+  {companyInfo?.products?.length ? (
+    <section id="san-pham">
+      <h2>Sản phẩm & dịch vụ</h2>
+      <ul class="product-list">
+        {companyInfo.products.map((product) => <li>{product}</li>)}
+      </ul>
+    </section>
+  ) : null}
+
+  {accountSteps.length > 0 && (
+    <section id="mo-tai-khoan">
+      <h2>Hướng dẫn mở tài khoản</h2>
+      <ol class="account-steps">
+        {accountSteps.map((step) => (
+          <li>
+            <strong>{step.title}</strong>
+            <p>{step.desc}</p>
+          </li>
+        ))}
+      </ol>
+    </section>
+  )}
+
+  <section id="uu-nhuoc-diem">
+    <h2>Ưu & nhược điểm</h2>
+    <ProsConsBox pros={pros} cons={cons} />
+  </section>
+
+  <ReviewCTA label={ctaLabel ?? "Mở tài khoản ngay"} url={ctaUrl ?? "#"} sticky={true} />
+</div>
+
+<style>
+  .cr-hero {
+    display: flex;
+    justify-content: center;
+    margin: var(--space-6) 0;
+  }
+
+  .info-list {
+    display: grid;
+    gap: var(--space-2);
+    margin: var(--space-4) 0;
+  }
+
+  .info-row {
+    display: flex;
+    gap: var(--space-3);
+    padding: var(--space-2) 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .info-row dt {
+    flex: 0 0 140px;
+    font-weight: 700;
+    color: var(--muted);
+  }
+
+  .info-row dd {
+    margin: 0;
+    color: var(--text);
+  }
+
+  .product-list {
+    display: grid;
+    gap: var(--space-2);
+    margin: var(--space-4) 0;
+    padding-left: 1.25rem;
+  }
+
+  .product-list li {
+    color: var(--text);
+    line-height: 1.6;
+  }
+
+  .account-steps {
+    display: grid;
+    gap: var(--space-4);
+    margin: var(--space-4) 0;
+    padding-left: 1.5rem;
+    counter-reset: step;
+  }
+
+  .account-steps li {
+    color: var(--text);
+  }
+
+  .account-steps li strong {
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  .account-steps li p {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+</style>

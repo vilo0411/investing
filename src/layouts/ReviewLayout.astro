@@ -1,0 +1,562 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import AuthorBox from "@/components/AuthorBox.astro";
+import RelatedArticles from "@/components/RelatedArticles.astro";
+import ShareBar from "@/components/ShareBar.astro";
+import ReviewJumpNav from "@/components/ReviewJumpNav.astro";
+import { categories, getCategoryPath, site } from "@/data/site";
+import { author } from "@/data/authors";
+import Breadcrumb from "@/components/Breadcrumb.astro";
+import KeyTakeaways from "@/components/KeyTakeaways.astro";
+import CitationBox from "@/components/CitationBox.astro";
+import CompanyReviewBody from "@/components/review/CompanyReviewBody.astro";
+import ComparisonBody from "@/components/review/ComparisonBody.astro";
+import ListicleBody from "@/components/review/ListicleBody.astro";
+
+interface Props {
+  entry: any;
+  headings?: { depth: number; slug: string; text: string }[];
+}
+
+const { entry, headings = [] } = Astro.props;
+const { title, description, publishDate, updatedDate, readingTime, sources, heroImage } = entry.data;
+
+const categoryMeta = categories.find((c) => c.slug === entry.data.category);
+const categoryTitle = categoryMeta?.title ?? entry.data.category;
+const categoryPath = getCategoryPath(categoryMeta ?? entry.data.category);
+const categoryGroupPath = categoryMeta && "groupPath" in categoryMeta ? categoryMeta.groupPath : undefined;
+const isInvestingCategory = categoryMeta?.group === "Đầu tư";
+
+const categoryBg = categoryMeta?.slug === "co-phieu" || isInvestingCategory
+  ? "var(--color-mint)"
+  : categoryMeta?.slug === "tiet-kiem"
+    ? "var(--color-lilac)"
+    : "var(--color-peach)";
+
+const breadcrumbItems =
+  isInvestingCategory && categoryGroupPath
+    ? [
+        { label: "Trang chủ", href: "/" },
+        { label: "Đầu tư", href: categoryGroupPath },
+        { label: categoryTitle, href: categoryPath },
+        { label: title },
+      ]
+    : [
+        { label: "Trang chủ", href: "/" },
+        { label: categoryTitle, href: categoryPath },
+        { label: title },
+      ];
+
+const categoryDefaultImages: Record<string, string> = {
+  "co-phieu": "/images/hero-co-phieu.png",
+  "etf": "/images/hero-etf.png",
+  "trai-phieu": "/images/hero-trai-phieu.png",
+  "phai-sinh": "/images/hero-phai-sinh.png",
+  "co-ban": "/images/hero-co-ban.png",
+  "ky-thuat": "/images/hero-ky-thuat.png",
+  "reviews": "/images/hero-reviews.png",
+  "nha-dau-tu": "/images/hero-nha-dau-tu.png",
+};
+
+const featuredImage = heroImage ?? categoryDefaultImages[entry.data.category] ?? "/images/hero-investing.png";
+const articleUrl = new URL(Astro.url.pathname, Astro.site).toString();
+const ogImageUrl = new URL(featuredImage, Astro.site).toString();
+
+const sameAs = author.socialLinks
+  ? [author.socialLinks.linkedin, author.socialLinks.twitter].filter((v): v is string => Boolean(v))
+  : [];
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": title,
+  "description": description,
+  "url": articleUrl,
+  "datePublished": publishDate.toISOString(),
+  "dateModified": updatedDate.toISOString(),
+  "inLanguage": "vi",
+  "image": {
+    "@type": "ImageObject",
+    "url": ogImageUrl,
+    "width": 1200,
+    "height": 630,
+  },
+  "author": {
+    "@type": "Person",
+    "name": author.name,
+    "url": new URL(`/author/${author.slug}/`, Astro.site).toString(),
+    "jobTitle": author.role,
+    "description": author.bio,
+    "knowsAbout": author.expertise,
+    ...(sameAs.length > 0 ? { "sameAs": sameAs } : {}),
+  },
+  "reviewedBy": {
+    "@type": "Organization",
+    "name": site.editorialReviewer,
+    "url": new URL("/editorial-policy/", Astro.site).toString(),
+  },
+  "publisher": { "@id": `${Astro.site}#organization` },
+  "isPartOf": { "@id": `${Astro.site}#website` },
+  "citation": sources,
+};
+
+const faqSchema = entry.data.faq?.length
+  ? {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": entry.data.faq.map((item: { question: string; answer: string }) => ({
+        "@type": "Question",
+        "name": item.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": item.answer,
+        },
+      })),
+    }
+  : null;
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": isInvestingCategory
+    ? [
+        { "@type": "ListItem", "position": 1, "name": "Trang chủ", "item": Astro.site?.toString() },
+        { "@type": "ListItem", "position": 2, "name": "Đầu tư", "item": new URL("/dau-tu/", Astro.site).toString() },
+        { "@type": "ListItem", "position": 3, "name": categoryTitle, "item": new URL(categoryPath, Astro.site).toString() },
+        { "@type": "ListItem", "position": 4, "name": title, "item": articleUrl },
+      ]
+    : [
+        { "@type": "ListItem", "position": 1, "name": "Trang chủ", "item": Astro.site?.toString() },
+        { "@type": "ListItem", "position": 2, "name": categoryTitle, "item": new URL(categoryPath, Astro.site).toString() },
+        { "@type": "ListItem", "position": 3, "name": title, "item": articleUrl },
+      ],
+};
+
+const reviewType = entry.data.reviewType as "company" | "comparison" | "listicle" | undefined;
+
+const navItemsByType: Record<string, { label: string; href: string }[]> = {
+  company: [
+    { label: "Thông tin nhanh", href: "#thong-tin-nhanh" },
+    { label: "Sản phẩm", href: "#san-pham" },
+    { label: "Mở tài khoản", href: "#mo-tai-khoan" },
+    { label: "Ưu nhược điểm", href: "#uu-nhuoc-diem" },
+  ],
+  comparison: [
+    { label: "So sánh", href: "#so-sanh" },
+    { label: "Ưu nhược điểm", href: "#uu-nhuoc-diem" },
+    { label: "Nên chọn ai", href: "#nen-chon-ai" },
+  ],
+  listicle: [
+    { label: "Tổng quan", href: "#tong-quan" },
+    { label: "Xếp hạng", href: "#xep-hang" },
+  ],
+};
+
+const navItems = reviewType ? navItemsByType[reviewType] ?? [] : [];
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  ogType="article"
+  articleMeta={{
+    publishedTime: publishDate?.toISOString(),
+    modifiedTime: updatedDate?.toISOString(),
+    author: author.name,
+  }}
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+    {faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
+  </Fragment>
+
+  <header class="article-header">
+    <div class="article-container">
+      <Breadcrumb items={breadcrumbItems} />
+      <div class="eyebrow" style={`--eyebrow-bg: ${categoryBg};`}>{categoryTitle}</div>
+      <h1>{title}</h1>
+      <p class="lead">{description}</p>
+
+      <div class="article-meta-block">
+        <div class="meta-author-avatar" aria-hidden="true">
+          {author.name.split(" ").pop()?.charAt(0)}
+        </div>
+        <div class="meta-info">
+          <div class="meta-author-row">
+            <span class="meta-author-label">Tác giả:</span>
+            <a class="meta-author-name" href={`/author/${author.slug}/`}>{author.name}</a>
+            <span class="meta-divider">|</span>
+            <span class="meta-date">Cập nhật: {updatedDate.toLocaleDateString("vi-VN")}</span>
+            <span class="meta-divider">|</span>
+            <span class="meta-read-time">{readingTime}</span>
+          </div>
+          <div class="meta-reviewer-row">
+            <span class="meta-reviewer-text">Rà soát theo <a href="/editorial-policy/">chính sách biên tập</a></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="article-trust" aria-label="Thông tin độ tin cậy của bài viết">
+        <span>Kiểm tra nguồn</span>
+        <span>Không tư vấn cá nhân</span>
+        <span>Có quy trình đính chính</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="article-hero-wrapper">
+    <div class="article-hero">
+      <img src={featuredImage} alt={title} width="1000" height="600" />
+    </div>
+  </div>
+
+  {navItems.length > 0 && <ReviewJumpNav items={navItems} />}
+
+  <div class="article-body">
+    <article class="prose article-content">
+      <aside class="ymyl-note" aria-label="Lưu ý tài chính">
+        <strong>Lưu ý trước khi đọc:</strong>
+        <span>{site.disclosure}</span>
+      </aside>
+      <KeyTakeaways items={entry.data.keyTakeaways} />
+
+      {reviewType === "company" && (
+        <CompanyReviewBody
+          companyInfo={entry.data.companyInfo}
+          accountSteps={entry.data.accountSteps ?? []}
+          pros={entry.data.brokers?.[0]?.pros ?? []}
+          cons={entry.data.brokers?.[0]?.cons ?? []}
+          rating={entry.data.brokers?.[0]?.rating ?? 0}
+          ctaUrl={entry.data.brokers?.[0]?.ctaUrl}
+        />
+      )}
+      {reviewType === "comparison" && (
+        <ComparisonBody
+          brokers={entry.data.brokers ?? []}
+          comparisonCriteria={entry.data.comparisonCriteria ?? []}
+          winnerByCriteria={entry.data.winnerByCriteria ?? {}}
+          bestForScenarios={entry.data.bestForScenarios ?? []}
+        />
+      )}
+      {reviewType === "listicle" && (
+        <ListicleBody
+          brokers={entry.data.brokers ?? []}
+          rankings={entry.data.rankings ?? []}
+          comparisonCriteria={entry.data.comparisonCriteria ?? []}
+        />
+      )}
+
+      <slot />
+      {entry.data.faq?.length ? (
+        <section class="faq-section">
+          <h2>Câu hỏi thường gặp</h2>
+          <div class="faq-list">
+            {entry.data.faq.map((item: { question: string; answer: string }) => (
+              <details>
+                <summary>{item.question}</summary>
+                <p>{item.answer}</p>
+              </details>
+            ))}
+          </div>
+        </section>
+      ) : null}
+      <CitationBox sources={entry.data.sources} updatedDate={updatedDate} />
+      <section class="editorial-review">
+        <h2>Quy trình kiểm định nội dung</h2>
+        <p>
+          Nội dung được rà soát về tính chính xác, tính cập nhật và mức độ phù hợp với nhà đầu tư cá nhân.
+          Nếu phát hiện lỗi có thể ảnh hưởng đến quyết định tài chính, bài viết sẽ được cập nhật và ghi nhận theo
+          <a href="/corrections-policy/"> chính sách đính chính</a>.
+        </p>
+      </section>
+      <AuthorBox />
+      <ShareBar title={title} url={articleUrl} />
+      <RelatedArticles category={entry.data.category} currentSlug={entry.slug} />
+    </article>
+  </div>
+</BaseLayout>
+
+<style>
+  .meta a {
+    color: var(--brand);
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    transition: color var(--transition-fast);
+  }
+
+  .meta a:hover {
+    color: var(--brand-strong);
+  }
+
+  .eyebrow {
+    display: inline-block;
+    padding: 4px 10px;
+    border: 1px solid var(--line);
+    background: var(--eyebrow-bg, var(--color-mint));
+    color: var(--text);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: var(--space-4);
+    box-shadow: 2px 2px 0px var(--line);
+  }
+
+  /* Redesigned horizontal author metadata block */
+  .article-meta-block {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+    padding: var(--space-3) 0 0;
+    margin: var(--space-3) 0 var(--space-5);
+  }
+
+  .meta-author-avatar {
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    background: var(--brand);
+    color: #fff;
+    font-family: var(--font-serif);
+    font-weight: 700;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--line);
+    box-shadow: 2px 2px 0px var(--line);
+  }
+
+  .meta-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 0;
+  }
+
+  .meta-author-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+    font-size: 0.88rem;
+    color: var(--text);
+    font-weight: 500;
+  }
+
+  .meta-author-label {
+    color: var(--muted);
+    font-weight: 700;
+  }
+
+  .meta-author-name {
+    color: var(--text);
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  .meta-author-name:hover {
+    color: var(--brand);
+  }
+
+  .meta-divider {
+    color: var(--line);
+    margin-inline: 4px;
+  }
+
+  .meta-date,
+  .meta-read-time {
+    color: var(--muted);
+  }
+
+  .meta-reviewer-row {
+    font-size: 0.82rem;
+    color: var(--muted);
+  }
+
+  .meta-reviewer-row a {
+    color: var(--brand);
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  .meta-reviewer-row a:hover {
+    color: var(--brand-strong);
+  }
+
+  .article-trust {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: var(--space-3);
+    margin-bottom: 0;
+  }
+
+  .article-trust span {
+    border: 1px solid var(--line);
+    border-radius: 0px;
+    background: var(--color-mint);
+    color: var(--text);
+    font-size: 0.82rem;
+    font-weight: 700;
+    line-height: 1.2;
+    padding: 7px 12px;
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  }
+
+  .article-trust span:hover {
+    transform: translate(1px, 1px);
+    box-shadow: none;
+  }
+
+  /* Hero Image Layout */
+  .article-hero-wrapper {
+    width: min(100% - 32px, var(--article));
+    margin: 0 auto var(--space-8);
+  }
+
+  .article-hero {
+    border: 1px solid var(--line);
+    box-shadow: var(--shadow-lg);
+    background: var(--surface-alt);
+    line-height: 0;
+  }
+
+  .article-hero img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 5 / 3;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* Article body: single column, no TOC sidebar for review pages */
+  .article-body {
+    width: min(100% - 32px, var(--article));
+    margin-inline: auto;
+    padding-bottom: var(--space-16);
+  }
+
+  .article-content {
+    font-size: 1.05rem;
+    min-width: 0;
+  }
+
+  .ymyl-note,
+  .editorial-review {
+    border: 1px solid var(--line);
+    border-radius: 0px;
+    padding: 18px 20px;
+  }
+
+  .ymyl-note {
+    display: grid;
+    gap: 4px;
+    margin: 28px 0 30px;
+    background: var(--color-peach);
+    border-left: 6px solid var(--line);
+    box-shadow: var(--shadow-md);
+  }
+
+  .ymyl-note strong {
+    color: var(--text);
+  }
+
+  .ymyl-note span {
+    color: var(--text);
+    font-size: 0.96rem;
+    line-height: 1.65;
+    font-weight: 500;
+  }
+
+  .editorial-review p {
+    color: var(--muted);
+    font-size: 0.96rem;
+    line-height: 1.65;
+  }
+
+  .editorial-review {
+    background: var(--surface-alt);
+    border-left: 6px solid var(--brand);
+    box-shadow: var(--shadow-md);
+  }
+
+  .editorial-review {
+    margin-top: 42px;
+  }
+
+  .faq-section {
+    margin-top: 42px;
+    margin-bottom: 42px;
+  }
+
+  .faq-list {
+    display: grid;
+    gap: 10px;
+  }
+
+  .faq-list details {
+    border: 1px solid var(--line);
+    border-radius: 0px;
+    background: var(--surface);
+    padding: 14px 16px;
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  }
+
+  .faq-list details:hover {
+    transform: translate(1px, 1px);
+    box-shadow: none;
+  }
+
+  .faq-list summary {
+    color: var(--text);
+    cursor: pointer;
+    font-weight: 700;
+  }
+
+  .faq-list summary:hover {
+    color: var(--brand);
+  }
+
+  .faq-list p {
+    margin: 10px 0 0;
+    color: var(--text);
+    font-size: 0.98rem;
+  }
+
+  .editorial-review h2 {
+    margin-top: 0;
+    font-family: var(--font-serif);
+    font-weight: 700;
+  }
+
+  .article-content :global(h2) {
+    margin-top: 42px;
+    font-family: var(--font-serif);
+    color: var(--text);
+    font-weight: 700;
+  }
+
+  .article-content :global(p),
+  .article-content :global(li) {
+    color: var(--text);
+    line-height: 1.8;
+  }
+
+  .article-content :global(blockquote) {
+    border-left: 6px solid var(--brand);
+    margin: 28px 0;
+    padding: 12px 18px;
+    background: var(--color-mint);
+    color: var(--text);
+    border-radius: 0px;
+    box-shadow: var(--shadow-sm);
+    font-weight: 500;
+  }
+</style>

@@ -3,9 +3,11 @@ interface Props {
   columns: string[];
   rows: (string | number)[][];
   caption?: string;
+  /** rowIndex -> array of winning column indices, highlighted with a `winner-cell` style */
+  highlightMap?: Record<number, number[]>;
 }
 
-const { columns, rows, caption } = Astro.props;
+const { columns, rows, caption, highlightMap = {} } = Astro.props;
 ---
 
 <div class="comparison-table-wrap">
@@ -17,9 +19,15 @@ const { columns, rows, caption } = Astro.props;
       </tr>
     </thead>
     <tbody>
-      {rows.map((row) => (
+      {rows.map((row, rowIndex) => (
         <tr>
-          {row.map((cell) => <td>{cell}</td>)}
+          {row.map((cell, colIndex) => (
+            highlightMap[rowIndex]?.includes(colIndex) ? (
+              <td class="winner-cell"><strong>{cell}</strong></td>
+            ) : (
+              <td>{cell}</td>
+            )
+          ))}
         </tr>
       ))}
     </tbody>
@@ -30,30 +38,42 @@ const { columns, rows, caption } = Astro.props;
   .comparison-table-wrap {
     overflow-x: auto;
     margin: var(--space-6) 0;
-    border: 1px solid var(--line);
-    border-radius: var(--radius-md);
   }
 
   .comparison-table {
     width: 100%;
     border-collapse: collapse;
     font-size: 0.92rem;
+    border: 1px solid var(--line);
+    box-shadow: var(--shadow-sm);
   }
 
   .comparison-table th {
-    background: var(--color-brand-900);
-    color: #fff;
+    background: var(--brand);
+    color: #ffffff;
     text-align: left;
     padding: var(--space-3) var(--space-4);
     white-space: nowrap;
+    border: 1px solid var(--line);
+    font-family: var(--font-sans);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.82rem;
+    letter-spacing: 0.05em;
   }
 
   .comparison-table td {
     padding: var(--space-3) var(--space-4);
-    border-bottom: 1px solid var(--line);
+    border: 1px solid var(--line);
+    color: var(--text);
+    font-weight: 500;
   }
 
   .comparison-table tbody tr:nth-child(even) {
     background: var(--surface-alt);
+  }
+
+  .comparison-table td.winner-cell {
+    background: var(--color-mint);
   }
 </style>

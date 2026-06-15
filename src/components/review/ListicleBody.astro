@@ -1,0 +1,130 @@
+---
+import ComparisonTable from "@/components/ComparisonTable.astro";
+import RatingBadge from "@/components/RatingBadge.astro";
+import ProsConsBox from "@/components/ProsConsBox.astro";
+import ReviewCTA from "@/components/ReviewCTA.astro";
+
+interface Broker {
+  name: string;
+  slug: string;
+  rating: number;
+  best_for: string;
+  pros: string[];
+  cons: string[];
+  verdict?: string;
+  fee_rate?: string;
+  margin_rate?: string;
+  app_rating?: string;
+  min_deposit?: string;
+  logo?: string;
+  ctaUrl?: string;
+}
+
+interface Props {
+  brokers: Broker[];
+  rankings: { slug: string; rank: number; badge: string }[];
+  comparisonCriteria: { label: string; key: string }[];
+}
+
+const { brokers, rankings, comparisonCriteria } = Astro.props;
+
+const columns = ["Tiêu chí", ...brokers.map((b) => b.name)];
+
+const rows: (string | number)[][] = comparisonCriteria.map((criteria) => [
+  criteria.label,
+  ...brokers.map((broker) => {
+    const value = (broker as unknown as Record<string, string | number | undefined>)[criteria.key];
+    return value ?? "-";
+  }),
+]);
+
+const rankingsBySlug = new Map(rankings.map((r) => [r.slug, r]));
+
+const rankedBrokers = [...brokers].sort((a, b) => {
+  const rankA = rankingsBySlug.get(a.slug)?.rank ?? Number.MAX_SAFE_INTEGER;
+  const rankB = rankingsBySlug.get(b.slug)?.rank ?? Number.MAX_SAFE_INTEGER;
+  return rankA - rankB;
+});
+---
+
+<div class="listicle-body">
+  <section id="tong-quan">
+    <h2>Tổng quan so sánh</h2>
+    {rows.length > 0 && <ComparisonTable columns={columns} rows={rows} />}
+  </section>
+
+  <section id="xep-hang">
+    <h2>Bảng xếp hạng chi tiết</h2>
+    <div class="ranked-list">
+      {rankedBrokers.map((broker) => {
+        const ranking = rankingsBySlug.get(broker.slug);
+        const isFirst = ranking?.rank === 1;
+        return (
+          <div class:list={["ranked-card", { "ranked-card--winner": isFirst }]}>
+            <div class="ranked-card-header">
+              {ranking && <span class="rank-number">#{ranking.rank}</span>}
+              <h3>{broker.name}</h3>
+              {ranking?.badge && <span class="rank-badge">{ranking.badge}</span>}
+            </div>
+            <RatingBadge rating={broker.rating} />
+            <ProsConsBox pros={broker.pros} cons={broker.cons} />
+            <ReviewCTA label={`Mở tài khoản ${broker.name}`} url={broker.ctaUrl ?? "#"} />
+          </div>
+        );
+      })}
+    </div>
+  </section>
+</div>
+
+<style>
+  .ranked-list {
+    display: grid;
+    gap: var(--space-6);
+    margin: var(--space-4) 0;
+  }
+
+  .ranked-card {
+    border: 1px solid var(--line);
+    border-radius: 0px;
+    padding: var(--space-5);
+    box-shadow: var(--shadow-md);
+    background: var(--surface);
+  }
+
+  .ranked-card--winner {
+    border-left: 6px solid var(--brand);
+  }
+
+  .ranked-card-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    flex-wrap: wrap;
+    margin-bottom: var(--space-3);
+  }
+
+  .ranked-card-header h3 {
+    margin: 0;
+    font-family: var(--font-serif);
+    color: var(--text);
+  }
+
+  .rank-number {
+    font-family: var(--font-serif);
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--brand);
+  }
+
+  .rank-badge {
+    border: 1px solid var(--line);
+    background: var(--color-mint);
+    color: var(--text);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 4px 10px;
+    box-shadow: 2px 2px 0px var(--line);
+  }
+</style>

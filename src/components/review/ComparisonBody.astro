@@ -1,0 +1,145 @@
+---
+import ComparisonTable from "@/components/ComparisonTable.astro";
+import ProsConsBox from "@/components/ProsConsBox.astro";
+import ReviewCTA from "@/components/ReviewCTA.astro";
+
+interface Broker {
+  name: string;
+  slug: string;
+  rating: number;
+  best_for: string;
+  pros: string[];
+  cons: string[];
+  verdict?: string;
+  fee_rate?: string;
+  margin_rate?: string;
+  app_rating?: string;
+  min_deposit?: string;
+  logo?: string;
+  ctaUrl?: string;
+}
+
+interface Props {
+  brokers: Broker[];
+  comparisonCriteria: { label: string; key: string }[];
+  winnerByCriteria: Record<string, string>;
+  bestForScenarios: { scenario: string; winnerSlug: string; reason: string }[];
+}
+
+const { brokers, comparisonCriteria, winnerByCriteria, bestForScenarios } = Astro.props;
+
+const columns = ["Tiêu chí", ...brokers.map((b) => b.name)];
+
+const rows: (string | number)[][] = comparisonCriteria.map((criteria) => [
+  criteria.label,
+  ...brokers.map((broker) => {
+    const value = (broker as unknown as Record<string, string | number | undefined>)[criteria.key];
+    return value ?? "-";
+  }),
+]);
+
+const highlightMap: Record<number, number[]> = {};
+comparisonCriteria.forEach((criteria, rowIndex) => {
+  const winnerSlug = winnerByCriteria[criteria.key];
+  if (!winnerSlug) return;
+  const brokerIndex = brokers.findIndex((b) => b.slug === winnerSlug);
+  if (brokerIndex === -1) return;
+  highlightMap[rowIndex] = [brokerIndex + 1]; // +1 to account for "Tiêu chí" column
+});
+---
+
+<div class="comparison-body">
+  <section id="so-sanh">
+    <h2>So sánh nhanh</h2>
+    {rows.length > 0 && (
+      <ComparisonTable columns={columns} rows={rows} highlightMap={highlightMap} />
+    )}
+  </section>
+
+  <section id="uu-nhuoc-diem">
+    <h2>Ưu & nhược điểm từng bên</h2>
+    <div class="broker-grid">
+      {brokers.map((broker) => (
+        <div class="broker-card">
+          <h3>{broker.name}</h3>
+          <ProsConsBox pros={broker.pros} cons={broker.cons} />
+        </div>
+      ))}
+    </div>
+  </section>
+
+  {bestForScenarios.length > 0 && (
+    <section id="nen-chon-ai">
+      <h2>Nên chọn ai?</h2>
+      <div class="scenario-list">
+        {bestForScenarios.map((scenario) => {
+          const winner = brokers.find((b) => b.slug === scenario.winnerSlug);
+          return (
+            <div class="scenario-item">
+              <p class="scenario-text">{scenario.scenario}</p>
+              {winner && <p class="scenario-winner">Lựa chọn tốt nhất: <strong>{winner.name}</strong></p>}
+              <p class="scenario-reason">{scenario.reason}</p>
+              {winner?.ctaUrl && (
+                <ReviewCTA label={`Mở tài khoản ${winner.name}`} url={winner.ctaUrl} />
+              )}
+            </div>
+          );
+        })}
+      </div>
+    </section>
+  )}
+</div>
+
+<style>
+  .broker-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-5);
+    margin: var(--space-4) 0;
+  }
+
+  .broker-card {
+    border: 1px solid var(--line);
+    border-radius: 0px;
+    padding: var(--space-4);
+    box-shadow: var(--shadow-sm);
+    background: var(--surface);
+  }
+
+  .broker-card h3 {
+    margin-top: 0;
+    font-family: var(--font-serif);
+    color: var(--text);
+  }
+
+  .scenario-list {
+    display: grid;
+    gap: var(--space-5);
+    margin: var(--space-4) 0;
+  }
+
+  .scenario-item {
+    border: 1px solid var(--line);
+    border-radius: 0px;
+    padding: var(--space-5);
+    box-shadow: var(--shadow-sm);
+    background: var(--surface);
+  }
+
+  .scenario-text {
+    font-weight: 700;
+    margin: 0 0 8px;
+    color: var(--text);
+  }
+
+  .scenario-winner {
+    margin: 0 0 8px;
+    color: var(--brand);
+  }
+
+  .scenario-reason {
+    margin: 0 0 8px;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+</style>
