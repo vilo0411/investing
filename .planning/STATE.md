@@ -74,6 +74,12 @@ Recent decisions affecting current work:
 
 None yet.
 
+### Quick Tasks Completed
+
+| # | Description | Date | Commit | Directory |
+|---|-------------|------|--------|-----------|
+| 260615-u57 | Xây dựng layout riêng cho trang Reviews (reviewType schema, 4 shared components, 3 body layouts, ReviewLayout dispatcher, migrate listicle mẫu) | 2026-06-16 | f17fae8 | [260615-u57-...](./quick/260615-u57-x-y-d-ng-layout-ri-ng-cho-trang-reviews-/) |
+
 ### Blockers/Concerns
 
 - Phase 3 needs a research/spike decision on Key Takeaways extraction mechanism (CSS `:has()` vs remark plugin) before component build.
@@ -89,6 +95,8 @@ Items acknowledged and carried forward from previous milestone close:
 | *(none)* | | | |
 
 ## Session Continuity
+
+Last activity: 2026-06-16 - Completed quick task 260615-u57: Reviews layout system (schema + components + layouts + migrate listicle mẫu)
 
 Last session: 2026-06-13T03:49:28.759Z
 Stopped at: Phase 6 context gathered
