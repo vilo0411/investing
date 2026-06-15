@@ -1,0 +1,67 @@
+---
+interface Props {
+  rating: number;
+  label?: string;
+}
+
+const { rating, label } = Astro.props;
+const ratingDisplay = rating.toFixed(1);
+const starCount = Math.round(rating);
+const stars = Array.from({ length: 5 }, (_, i) => i < starCount);
+---
+
+<div class="rating-badge">
+  <span class="rating-number">{ratingDisplay}</span>
+  <div class="rating-stars" aria-hidden="true">
+    {stars.map((filled) => (
+      <span class:list={["star", { "star--filled": filled }]}>★</span>
+    ))}
+  </div>
+  {label && <span class="rating-label">{label}</span>}
+</div>
+
+<style>
+  .rating-badge {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    padding: var(--space-4) var(--space-6);
+    border: 1px solid var(--line);
+    background: var(--surface);
+    box-shadow: 2px 2px 0px var(--line);
+    border-radius: 0px;
+  }
+
+  .rating-number {
+    font-family: var(--font-serif);
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--text);
+    line-height: 1;
+  }
+
+  .rating-stars {
+    display: flex;
+    gap: 2px;
+    font-size: 1.1rem;
+    line-height: 1;
+  }
+
+  .star {
+    color: var(--line);
+  }
+
+  .star--filled {
+    color: var(--brand);
+  }
+
+  .rating-label {
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--muted);
+    text-align: center;
+  }
+</style>

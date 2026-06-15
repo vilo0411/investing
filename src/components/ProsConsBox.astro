@@ -1,0 +1,95 @@
+---
+interface Props {
+  pros: string[];
+  cons: string[];
+}
+
+const { pros, cons } = Astro.props;
+---
+
+<div class="pros-cons-box">
+  <div class="pros-col">
+    <p class="pc-label">Ưu điểm</p>
+    <ul>
+      {pros.map((item) => <li>{item}</li>)}
+    </ul>
+  </div>
+  <div class="cons-col">
+    <p class="pc-label">Nhược điểm</p>
+    <ul>
+      {cons.map((item) => <li>{item}</li>)}
+    </ul>
+  </div>
+</div>
+
+<style>
+  .pros-cons-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4);
+    margin: var(--space-6) 0;
+  }
+
+  .pros-col,
+  .cons-col {
+    border: 1px solid var(--line);
+    border-radius: 0px;
+    padding: var(--space-4) var(--space-5);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .pros-col {
+    background: var(--color-mint);
+    border-left: 6px solid var(--line);
+  }
+
+  .cons-col {
+    background: var(--color-peach);
+    border-left: 6px solid var(--line);
+  }
+
+  .pc-label {
+    margin: 0 0 var(--space-2);
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text);
+  }
+
+  .pros-col ul,
+  .cons-col ul {
+    margin: 0;
+    padding-left: 1.25rem;
+    list-style: none;
+    display: grid;
+    gap: var(--space-2);
+  }
+
+  .pros-col li,
+  .cons-col li {
+    font-size: 0.94rem;
+    color: var(--text);
+    line-height: 1.6;
+    position: relative;
+    font-weight: 500;
+  }
+
+  .pros-col li::before,
+  .cons-col li::before {
+    content: "";
+    position: absolute;
+    left: -1.25rem;
+    top: 0.6rem;
+    width: 5px;
+    height: 5px;
+    background-color: var(--text);
+    border-radius: 0px;
+  }
+
+  @media (max-width: 580px) {
+    .pros-cons-box {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

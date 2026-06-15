@@ -1,0 +1,66 @@
+---
+interface Props {
+  label: string;
+  url: string;
+  sticky?: boolean;
+}
+
+const { label, url, sticky = false } = Astro.props;
+---
+
+<div class:list={["review-cta-wrap", { "sticky-cta": sticky }]}>
+  <a
+    class="review-cta"
+    href={url}
+    target="_blank"
+    rel="noopener sponsored nofollow"
+  >
+    {label}
+  </a>
+</div>
+
+<style>
+  .review-cta-wrap {
+    margin: var(--space-5) 0;
+  }
+
+  .review-cta {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    background: var(--brand);
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 14px 24px;
+    border: 1px solid var(--line);
+    box-shadow: 2px 2px 0px var(--line);
+    border-radius: 0px;
+    text-decoration: none;
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  }
+
+  .review-cta:hover {
+    transform: translate(1px, 1px);
+    box-shadow: none;
+  }
+
+  @media (max-width: 580px) {
+    .sticky-cta {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 50;
+      margin: 0;
+      padding: var(--space-3) var(--space-4);
+      background: var(--surface);
+      border-top: 1px solid var(--line);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .sticky-cta .review-cta {
+      width: 100%;
+    }
+  }
+</style>
