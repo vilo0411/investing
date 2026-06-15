@@ -1,11 +1,12 @@
 ---
 import { getCollection, render } from "astro:content";
 import ArticleLayout from "@/layouts/ArticleLayout.astro";
+import ReviewLayout from "@/layouts/ReviewLayout.astro";
 import { categories } from "@/data/site";
 
 export async function getStaticPaths() {
   const rootCategorySlugs = categories
-    .filter((category) => category.group !== "Đầu tư")
+    .filter((category) => category.group !== "Đầu tư" && category.group !== "Phân tích")
     .map((category) => category.slug);
   const articles = await getCollection("articles");
   return articles
@@ -20,6 +21,12 @@ const { entry } = Astro.props;
 const { Content, headings } = await render(entry);
 ---
 
-<ArticleLayout entry={entry} headings={headings}>
-  <Content />
-</ArticleLayout>
+{entry.data.layoutType === "review" ? (
+  <ReviewLayout entry={entry} headings={headings}>
+    <Content />
+  </ReviewLayout>
+) : (
+  <ArticleLayout entry={entry} headings={headings}>
+    <Content />
+  </ArticleLayout>
+)}
