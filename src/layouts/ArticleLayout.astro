@@ -4,7 +4,7 @@ import AuthorBox from "@/components/AuthorBox.astro";
 import RelatedArticles from "@/components/RelatedArticles.astro";
 import ShareBar from "@/components/ShareBar.astro";
 import TOC from "@/components/TOC.astro";
-import { categories, getCategoryPath, site } from "@/data/site";
+import { categories, getCategoryPath, site, url } from "@/data/site";
 import { author } from "@/data/authors";
 import Breadcrumb from "@/components/Breadcrumb.astro";
 import KeyTakeaways from "@/components/KeyTakeaways.astro";
@@ -169,7 +169,7 @@ const breadcrumbSchema = {
             <span class="meta-read-time">{readingTime}</span>
           </div>
           <div class="meta-reviewer-row">
-            <span class="meta-reviewer-text">Rà soát theo <a href="/editorial-policy/">chính sách biên tập</a></span>
+            <span class="meta-reviewer-text">Rà soát theo <a href={url("/editorial-policy/")}>chính sách biên tập</a></span>
           </div>
         </div>
       </div>
@@ -235,7 +235,7 @@ const breadcrumbSchema = {
         <p>
           Nội dung được rà soát về tính chính xác, tính cập nhật và mức độ phù hợp với nhà đầu tư cá nhân.
           Nếu phát hiện lỗi có thể ảnh hưởng đến quyết định tài chính, bài viết sẽ được cập nhật và ghi nhận theo
-          <a href="/corrections-policy/"> chính sách đính chính</a>.
+          <a href={url("/corrections-policy/")}> chính sách đính chính</a>.
         </p>
       </section>
       <AuthorBox />

@@ -1,5 +1,6 @@
 ---
 import { author } from "@/data/authors";
+import { url } from "@/data/site";
 ---
 
 <section class="eeat-section">
@@ -13,7 +14,7 @@ import { author } from "@/data/authors";
           <p class="author-bio-short">
             Phụ trách nội dung giáo dục đầu tư, cam kết thông tin khách quan, có nguồn kiểm chứng rõ ràng cho nhà đầu tư cá nhân.
           </p>
-          <a class="see-all-author" href="/author/nguyen-viet-loc/">Xem hồ sơ tác giả <span aria-hidden="true">→</span></a>
+          <a class="see-all-author" href={url("/author/nguyen-viet-loc/")}>Xem hồ sơ tác giả <span aria-hidden="true">→</span></a>
         </div>
       </div>
     </div>

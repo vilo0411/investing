@@ -3,7 +3,7 @@ import type { Page } from "astro";
 import type { CollectionEntry } from "astro:content";
 import Breadcrumb from "@/components/Breadcrumb.astro";
 import type { Category } from "@/data/site";
-import { categoryMeta, getArticlePath, getCategoryPath } from "@/data/site";
+import { categoryMeta, getArticlePath, getCategoryPath, url } from "@/data/site";
 
 interface Props {
   category: Category;
@@ -222,7 +222,7 @@ function formatDate(date: Date) {
           <div class="eyebrow">Sắp ra mắt</div>
           <h3>Nội dung đang được biên tập</h3>
           <p>Chủ đề <strong>{category.title}</strong> sẽ sớm có bài viết mới.</p>
-          <a href="/" class="btn-primary">← Về trang chủ</a>
+          <a href={url("/")} class="btn-primary">← Về trang chủ</a>
         </div>
       </div>
     </section>

@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
+import { url } from "@/data/site";
 ---
 
 <BaseLayout title="Miễn trừ trách nhiệm" description="Phạm vi nội dung giáo dục và giới hạn trách nhiệm của Value Investing.">
@@ -44,7 +45,7 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
     <h2>Liên hệ và phản hồi</h2>
     <p>
       Nếu phát hiện thông tin lỗi thời hoặc không chính xác, vui lòng xem
-      <a href="/corrections-policy/">Chính sách đính chính</a> để biết cách gửi yêu cầu rà soát.
+      <a href={url("/corrections-policy/")}>Chính sách đính chính</a> để biết cách gửi yêu cầu rà soát.
       Blog cập nhật nội dung khi có thay đổi từ cơ quan quản lý hoặc sàn giao dịch.
     </p>
   </section>

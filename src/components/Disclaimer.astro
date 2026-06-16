@@ -1,5 +1,5 @@
 ---
-import { site } from "@/data/site";
+import { site, url } from "@/data/site";
 
 interface Props {
   text?: string;
@@ -11,7 +11,7 @@ const { text = site.disclosure } = Astro.props;
 <aside class="disclaimer" aria-label="Lưu ý tài chính">
   <strong>Lưu ý quan trọng:</strong>
   <span>{text}</span>
-  <a class="disclaimer-link" href="/disclaimer/">Tìm hiểu thêm</a>
+  <a class="disclaimer-link" href={url("/disclaimer/")}>Tìm hiểu thêm</a>
 </aside>
 
 <style>

@@ -1,7 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import BaseLayout from "@/layouts/BaseLayout.astro";
-import { categories, categoryMeta, getArticlePath } from "@/data/site";
+import { categories, categoryMeta, getArticlePath, url } from "@/data/site";
 
 const articles = (await getCollection("articles"))
   .toSorted((a, b) => b.data.updatedDate.getTime() - a.data.updatedDate.getTime());
@@ -40,7 +40,7 @@ const searchIndex = articles.map((article) => {
   <section class="page-hero">
     <div class="container">
       <nav class="breadcrumb" aria-label="Breadcrumb">
-        <a href="/">Trang chủ</a>
+        <a href={url("/")}>Trang chủ</a>
         <span class="separator" aria-hidden="true">/</span>
         <span aria-current="page">Tìm kiếm</span>
       </nav>

@@ -104,13 +104,17 @@ export const categoryMeta: Record<string, { abbr: string; label: string; gradien
   "nha-dau-tu": { abbr: "NĐT", label: "Nhà đầu tư", gradientClass: "thumb-investor" },
 };
 
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+
+export const url = (path: string) => `${base}${path}`;
+
 export const getCategoryPath = (category: Category | string) => {
   const categoryMeta =
     typeof category === "string"
       ? categories.find((item) => item.slug === category)
       : category;
 
-  return categoryMeta?.path ?? "/";
+  return url(categoryMeta?.path ?? "/");
 };
 
 export const getArticlePath = (article: { slug: string; data: { category: string } }) => {

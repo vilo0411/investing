@@ -4,7 +4,7 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 import ArticleList from "@/components/ArticleList.astro";
 import StartHereGrid from "@/components/StartHereGrid.astro";
 import EeatBanner from "@/components/EeatBanner.astro";
-import { categories, getCategoryPath, site } from "@/data/site";
+import { categories, getCategoryPath, site, url } from "@/data/site";
 
 const articles = await getCollection("articles");
 
@@ -40,8 +40,8 @@ const startHere = startSlugs
           Kiến thức đầu tư, phân tích tài chính và đánh giá sản phẩm đầu tư dành cho người mới bắt đầu.
         </p>
         <div class="hero-actions">
-          <a class="primary-action" href="/dau-tu/">Khám phá chủ đề</a>
-          <a class="secondary-action" href="/search/">Tìm bài viết</a>
+          <a class="primary-action" href={url("/dau-tu/")}>Khám phá chủ đề</a>
+          <a class="secondary-action" href={url("/search/")}>Tìm bài viết</a>
         </div>
       </div>
       <aside class="hero-trust-panel" aria-label="Nguyên tắc nội dung">

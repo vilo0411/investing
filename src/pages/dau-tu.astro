@@ -1,7 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import BaseLayout from "@/layouts/BaseLayout.astro";
-import { categories, getCategoryPath, getArticlePath } from "@/data/site";
+import { categories, getCategoryPath, getArticlePath, url } from "@/data/site";
 
 const articles = await getCollection("articles");
 
@@ -35,7 +35,7 @@ const gradients: Record<string, string> = {
     <div class="container hero-grid">
       <div class="hero-content">
         <nav class="breadcrumb" aria-label="Breadcrumb">
-          <a href="/">Trang chủ</a>
+          <a href={url("/")}>Trang chủ</a>
           <span class="separator" aria-hidden="true">/</span>
           <span aria-current="page">Đầu tư</span>
         </nav>

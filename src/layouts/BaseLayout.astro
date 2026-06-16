@@ -1,7 +1,7 @@
 ---
 import { SEO } from "astro-seo";
 import { getCollection } from "astro:content";
-import { categories, categoryMeta, getArticlePath, site } from "@/data/site";
+import { categories, categoryMeta, getArticlePath, site, url } from "@/data/site";
 import { author } from "@/data/authors";
 import "@/styles/global.css";
 
@@ -169,7 +169,7 @@ const openGraphExtra =
   <body>
     <header class="site-header" id="site-header">
       <nav class="container nav" aria-label="Menu chính">
-        <a class="brand" href="/">
+        <a class="brand" href={url("/")}>
           <svg class="brand-mark" width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true">
             <rect width="26" height="26" fill="var(--brand)"/>
             <path d="M6 19L13 7L20 19" stroke="#fff" stroke-width="2.2" stroke-linecap="square" stroke-linejoin="miter"/>
@@ -181,13 +181,13 @@ const openGraphExtra =
         <div class="nav-links" id="nav-links">
           <!-- Đầu tư — mega dropdown -->
           <div class="nav-item-mega">
-            <a href="/dau-tu/" class="nav-link-mega" aria-haspopup="true">
+            <a href={url("/dau-tu/")} class="nav-link-mega" aria-haspopup="true">
               Đầu tư
               <svg class="nav-chevron" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
             </a>
             <div class="mega-dropdown" role="region" aria-label="Danh mục đầu tư">
               {investCategories.map(cat => (
-                <a href={cat.path} class="mega-item">
+                <a href={url(cat.path)} class="mega-item">
                   <span class="mega-item-title">{cat.title}</span>
                   <span class="mega-item-desc">{cat.description}</span>
                 </a>
@@ -196,21 +196,21 @@ const openGraphExtra =
           </div>
           <!-- Phân tích — dropdown -->
           <div class="nav-item-mega">
-            <a href="/phan-tich/" class="nav-link-mega" aria-haspopup="true">
+            <a href={url("/phan-tich/")} class="nav-link-mega" aria-haspopup="true">
               Phân tích
               <svg class="nav-chevron" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
             </a>
             <div class="mega-dropdown" role="region" aria-label="Danh mục phân tích">
               {phanTichCategories.map(cat => (
-                <a href={cat.path} class="mega-item">
+                <a href={url(cat.path)} class="mega-item">
                   <span class="mega-item-title">{cat.title}</span>
                   <span class="mega-item-desc">{cat.description}</span>
                 </a>
               ))}
             </div>
           </div>
-          <a href="/nha-dau-tu/">Nhà đầu tư</a>
-          <a href="/reviews/">Reviews</a>
+          <a href={url("/nha-dau-tu/")}>Nhà đầu tư</a>
+          <a href={url("/reviews/")}>Reviews</a>
         </div>
 
         <div class="nav-actions">
@@ -238,22 +238,22 @@ const openGraphExtra =
         </div>
         <div class="footer-col">
           <h5>Đầu tư</h5>
-          {investCategories.map(cat => <a href={cat.path}>{cat.title}</a>)}
+          {investCategories.map(cat => <a href={url(cat.path)}>{cat.title}</a>)}
         </div>
         <div class="footer-col">
           <h5>Phân tích & Review</h5>
-          <a href="/phan-tich/co-ban/">Phân tích cơ bản</a>
-          <a href="/phan-tich/ky-thuat/">Phân tích kỹ thuật</a>
-          <a href="/reviews/">Reviews</a>
-          <a href="/nha-dau-tu/">Nhà đầu tư</a>
+          <a href={url("/phan-tich/co-ban/")}>Phân tích cơ bản</a>
+          <a href={url("/phan-tich/ky-thuat/")}>Phân tích kỹ thuật</a>
+          <a href={url("/reviews/")}>Reviews</a>
+          <a href={url("/nha-dau-tu/")}>Nhà đầu tư</a>
         </div>
         <div class="footer-col">
           <h5>Về trang web</h5>
-          <a href="/about/">Về dự án</a>
-          <a href="/editorial-policy/">Biên tập</a>
-          <a href="/sources-policy/">Nguồn tham khảo</a>
-          <a href="/corrections-policy/">Đính chính</a>
-          <a href="/contact/">Liên hệ</a>
+          <a href={url("/about/")}>Về dự án</a>
+          <a href={url("/editorial-policy/")}>Biên tập</a>
+          <a href={url("/sources-policy/")}>Nguồn tham khảo</a>
+          <a href={url("/corrections-policy/")}>Đính chính</a>
+          <a href={url("/contact/")}>Liên hệ</a>
         </div>
       </div>
       <div class="container footer-bottom">
@@ -314,7 +314,7 @@ const openGraphExtra =
           <div id="search-results-state" hidden>
             <p class="search-results-count" id="search-results-count"></p>
             <ul class="search-results-list" id="search-modal-results" role="listbox"></ul>
-            <a class="search-see-all" id="search-see-all" href="/search/">Xem tất cả kết quả &rarr;</a>
+            <a class="search-see-all" id="search-see-all" href={url("/search/")}>Xem tất cả kết quả &rarr;</a>
           </div>
 
           <!-- Empty state -->
