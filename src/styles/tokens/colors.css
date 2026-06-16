@@ -2,50 +2,33 @@
 :root {
   color-scheme: light;
 
-  /* Primitive scale: Navy (primary brand) */
-  --color-navy-50: #eef3f9;
-  --color-navy-100: #d9e6f5;
-  --color-navy-200: #b8cfe8;
-  --color-navy-300: #8fb3d9;
-  --color-navy-400: #5f8fc4;
-  --color-navy-500: #3d6fa8;
-  --color-navy-600: #2c5282;
-  --color-navy-700: #1e3a5f;
-  --color-navy-800: #163050;
-  --color-navy-900: #0a2540;
+  /* Primitive scale: Deep Pine and Neutrals from DESIGN.md */
+  --color-pine-900: #0b4a43;
+  --color-pine-800: #134f48;
+  --color-pine-700: #2a625a; /* Deep Pine */
+  --color-pine-100: #b4eee3; /* Mint */
 
-  /* Primitive scale: Tinted Neutral */
-  --color-neutral-50: #f7f8fa;
-  --color-neutral-100: #eef1f5;
-  --color-neutral-200: #dde2ea;
-  --color-neutral-300: #c3cbd6;
-  --color-neutral-400: #94a3b8;
-  --color-neutral-500: #6b7a90;
-  --color-neutral-600: #5a677a;
-  --color-neutral-700: #475569;
-  --color-neutral-800: #2e3947;
-  --color-neutral-900: #1a2330;
+  --color-neutral-warm-paper: #FDFCF8; /* Warm Off-White */
+  --color-neutral-gray-bg: #f8faf8;
+  --color-neutral-dark-ink: #121212;
+  --color-neutral-muted: #404947;
 
-  /* Primitive scale: Gold/Premium Accent */
-  --color-gold-50: #fdf8ec;
-  --color-gold-100: #faedc7;
-  --color-gold-300: #edcb7a;
-  --color-gold-500: #c9952c;
-  --color-gold-600: #ad7d1f;
-  --color-gold-700: #92660a;
-  --color-gold-900: #5c4108;
+  /* Accents from DESIGN.md */
+  --color-mint: #b4eee3;
+  --color-lilac: #e2d5f3;
+  --color-peach: #ffdbd0;
 
-  /* Semantic tokens (defined exactly once) */
-  --bg: var(--color-neutral-50);
-  --surface: #ffffff;
-  --surface-alt: var(--color-navy-50);
-  --text: var(--color-neutral-900);
-  --muted: var(--color-neutral-700);
-  --line: var(--color-neutral-100);
-  --brand: var(--color-navy-800);
-  --brand-strong: var(--color-navy-600);
-  --accent: var(--color-gold-700);
+  /* Semantic tokens (mapped to Neo-Brutalist theme) */
+  --bg: var(--color-neutral-warm-paper);       /* #FDFCF8 — warm off-white, base canvas */
+  --surface: var(--color-neutral-warm-paper);  /* #FDFCF8 — cards, header, inputs: same warm tone */
+  --surface-alt: #F4F2EC;                      /* slightly deeper warm cream for bands, pills, alt surfaces */
+  --text: var(--color-neutral-dark-ink);
+  --muted: var(--color-neutral-muted);
+  --line: var(--color-neutral-dark-ink); /* Stark 1px borders in #121212 */
+  --brand: var(--color-pine-700);        /* Deep Pine */
+  --brand-strong: var(--color-pine-900);
+  --accent: var(--color-pine-700);
 
   /* Reserved for future phases */
-  --destructive: #dc2626;
+  --destructive: #ba1a1a;
 }

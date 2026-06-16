@@ -24,16 +24,47 @@ const editorialSteps = [
 ];
 ---
 
-<BaseLayout title="Giới thiệu" description="ValueInvesting.com.vn là nguồn kiến thức đầu tư bằng tiếng Việt cho người mới bắt đầu, có nguồn tham khảo và quy trình biên tập rõ ràng.">
+<BaseLayout title="Giới thiệu" description="Value Investing là nguồn kiến thức đầu tư bằng tiếng Việt cho người mới bắt đầu, có nguồn tham khảo và quy trình biên tập rõ ràng.">
   <section class="page-hero">
     <div class="container">
       <div class="eyebrow">Giới thiệu</div>
-      <h1>Vì sao ValueInvesting.com.vn ra đời</h1>
+      <h1>Vì sao Value Investing ra đời</h1>
       <p class="lead">
         Trang được xây dựng cho người mới bắt đầu đầu tư tại Việt Nam, cung cấp nội dung giáo dục có nguồn
-        tham khảo rõ ràng. Chúng tôi không khuyến nghị mua hay bán bất kỳ cổ phiếu, chứng chỉ quỹ hoặc sản
+        tham khảo rõ ràng. Blog không khuyến nghị mua hay bán bất kỳ cổ phiếu, chứng chỉ quỹ hoặc sản
         phẩm đầu tư cụ thể nào, và không cung cấp tín hiệu giao dịch.
       </p>
+    </div>
+  </section>
+
+  <section class="section values-section">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <div class="eyebrow">Giá trị cốt lõi</div>
+          <h2 class="section-title">Sứ mệnh & Định vị</h2>
+        </div>
+      </div>
+      <div class="positioning-box">
+        <strong>Định vị của blog</strong>
+        <p>
+          Value Investing là thư viện tra cứu kiến thức tài chính hệ thống, trung lập, được viết riêng cho bối cảnh thị trường Việt Nam (HOSE, HNX, UPCoM, UBCKNN, ETF VN30...).
+        </p>
+      </div>
+      <div class="values-grid">
+        <div class="value-card">
+          <div class="value-badge">Gần gũi</div>
+          <p>Viết như đang giải thích cho người bạn thân. Không dùng jargon nếu có thể dùng ngôn ngữ đời thường, lấy ví dụ từ cuộc sống Việt Nam (quán cà phê, xe máy, gửi tiết kiệm...).</p>
+        </div>
+        <div class="value-card">
+          <div class="value-badge">Thành thật</div>
+          <p>Nói thẳng về rủi ro, không hứa hẹn làm giàu nhanh hay phím mã đầu cơ. Xây dựng lòng tin bền vững thông qua sự trung thực.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-badge">Thực chiến</div>
+          <p>Mỗi bài viết đều hướng đến hành động cụ thể để bạn có thể tự mình thực hành ngay (như tính các chỉ số định giá P/E, P/B, tự mở báo cáo tài chính).</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -120,10 +151,17 @@ const editorialSteps = [
     border-radius: var(--radius-md);
     background: var(--surface);
     padding: 20px;
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  }
+
+  .start-item:hover {
+    transform: translate(2px, 2px);
+    box-shadow: none;
   }
 
   .start-number {
-    color: var(--color-accent);
+    color: var(--brand);
     font-weight: 800;
   }
 
@@ -131,6 +169,7 @@ const editorialSteps = [
     color: var(--text);
     display: block;
     line-height: 1.35;
+    font-weight: 700;
   }
 
   .start-item small {
@@ -138,6 +177,7 @@ const editorialSteps = [
     display: block;
     margin-top: 6px;
     line-height: 1.6;
+    font-weight: 500;
   }
 
   .process-link {
@@ -147,11 +187,12 @@ const editorialSteps = [
   .process-link a {
     color: var(--brand);
     font-weight: 700;
-    text-decoration: none;
+    text-decoration: underline;
+    text-underline-offset: 4px;
   }
 
   .process-link a:hover {
-    text-decoration: underline;
+    color: var(--brand-strong);
   }
 
   .author-preview-card {
@@ -163,19 +204,22 @@ const editorialSteps = [
     border-radius: var(--radius-md);
     background: var(--surface);
     padding: var(--space-6, 24px);
+    box-shadow: var(--shadow-sm);
   }
 
   .author-avatar-small {
     width: 64px;
     aspect-ratio: 1;
-    border-radius: 50%;
-    background: radial-gradient(circle at 32% 26%, var(--color-neutral-50) 0 0, var(--color-neutral-50) 18%, var(--color-brand-700) 19%, var(--color-brand-900) 72%);
+    border-radius: 0px;
+    border: 1px solid var(--line);
+    background: var(--brand);
     color: #fff;
     display: grid;
     place-items: center;
     font-family: var(--font-serif);
     font-size: 1.6rem;
     line-height: 1;
+    box-shadow: 2px 2px 0px var(--line);
   }
 
   .author-preview-card strong {
@@ -183,6 +227,7 @@ const editorialSteps = [
     color: var(--text);
     font-size: 1.1rem;
     margin-bottom: 2px;
+    font-weight: 700;
   }
 
   .author-role-small {
@@ -206,11 +251,12 @@ const editorialSteps = [
   .preview-cta {
     color: var(--brand);
     font-weight: 700;
-    text-decoration: none;
+    text-decoration: underline;
+    text-underline-offset: 4px;
   }
 
   .preview-cta:hover {
-    text-decoration: underline;
+    color: var(--brand-strong);
   }
 
   .stat-stack {
@@ -221,6 +267,7 @@ const editorialSteps = [
     border-radius: var(--radius-md);
     background: var(--surface);
     padding: 0 22px;
+    box-shadow: var(--shadow-sm);
   }
 
   .stat-stack div {
@@ -237,6 +284,7 @@ const editorialSteps = [
     font-family: var(--font-serif);
     font-size: 2rem;
     line-height: 1;
+    font-weight: 700;
   }
 
   .stat-stack span {
@@ -245,6 +293,7 @@ const editorialSteps = [
     color: var(--muted);
     font-size: 0.88rem;
     line-height: 1.5;
+    font-weight: 500;
   }
 
   @media (max-width: 640px) {
@@ -263,6 +312,80 @@ const editorialSteps = [
     .stat-stack div:not(:last-child) {
       border-right: 0;
       border-bottom: 1px solid var(--line);
+    }
+  }
+
+  /* ── Values & Positioning Section ───────────────────────────────────── */
+  .positioning-box {
+    border: 1px solid var(--line);
+    border-radius: 0px;
+    background: var(--surface-alt);
+    padding: 24px;
+    margin-bottom: 32px;
+    border-left: 8px solid var(--brand);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .positioning-box strong {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 8px;
+  }
+
+  .positioning-box p {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.65;
+    font-weight: 500;
+  }
+
+  .values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .value-card {
+    border: 1px solid var(--line);
+    border-radius: 0px;
+    background: var(--surface);
+    padding: 24px;
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  }
+
+  .value-card:hover {
+    transform: translate(2px, 2px);
+    box-shadow: none;
+  }
+
+  .value-badge {
+    display: inline-block;
+    font-size: 0.82rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 4px 12px;
+    background: var(--color-mint);
+    color: var(--text);
+    border: 1px solid var(--line);
+    box-shadow: 2px 2px 0px var(--line);
+    margin-bottom: 16px;
+  }
+
+  .value-card p {
+    margin: 0;
+    font-size: 0.92rem;
+    color: var(--muted);
+    line-height: 1.6;
+    font-weight: 500;
+  }
+
+  @media (max-width: 768px) {
+    .values-grid {
+      grid-template-columns: 1fr;
     }
   }
 </style>

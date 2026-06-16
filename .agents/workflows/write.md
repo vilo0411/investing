@@ -56,7 +56,32 @@ Trước khi làm bất cứ việc gì, hệ thống phải đọc:
 - Kích hoạt skill `.antigravity/skills/seo-drafting/SKILL.md` → Step 1: Execute.
 - Đọc Outline đã approve từ `knowledge/4-content/1-outlines/[slug].md`.
 - Viết bài theo 3S Rule (Specific, Story, Statistics). Internalize anti-ai-rules — không chỉ liệt kê.
+- **Bắt buộc** chèn tên thương hiệu "**[Value Investing](/)**" (có link về trang chủ `/`) một cách tự nhiên trong Sapo (đoạn mở đầu, ngay dưới H1).
 - Lưu draft tại: `knowledge/4-content/2-drafts/Draft-[slug].md`.
+
+**Bước 2.1.5 — Chèn ảnh Unsplash (Image Manifest & Hero Image):**
+- **Bắt buộc** có ít nhất 1 hình ảnh inline trong thân bài và 1 ảnh bìa heroImage riêng biệt được crop tỉ lệ 5:3. Đọc **Section 5 (Image Manifest)** trong outline.
+- Với mỗi dòng trong manifest:
+  1. Chạy `node .antigravity/skills/seo-image/scripts/unsplash.mjs search "<search query>"` → trả về 3 ảnh (thumb, mô tả, tác giả).
+  2. **Chọn ảnh:**
+     - Pipeline_Mode `Auto` hoặc cờ `--auto`: tự động chọn ảnh đầu tiên (top-1), không hỏi người dùng.
+     - Mặc định (Guided/Express): hiển thị 3 lựa chọn cho người dùng (thumbnail URL + mô tả + tác giả) để chọn 1.
+  3. Chạy `node .antigravity/skills/seo-image/scripts/unsplash.mjs download <photoId> <slug> <filename>` với ảnh đã chọn — lưu vào `src/content/articles/images/[slug]/[filename].jpg`.
+  4. Chèn vào draft tại đúng vị trí trong manifest:
+     ```markdown
+     ![<alt text tiếng Việt>](./images/[slug]/[filename].jpg)
+     *Ảnh: <photographer> / Unsplash*
+     ```
+     Không gắn link — chỉ ghi tên nguồn.
+- Nếu thiếu `UNSPLASH_ACCESS_KEY` (trong `.env`): báo người dùng và bỏ qua bước này, tiếp tục draft không ảnh.
+
+**Hero Image (BẮT BUỘC):**
+- Dùng ảnh `featured-01` đã chọn ở trên (cùng `photoId`), chạy thêm:
+  ```bash
+  node .antigravity/skills/seo-image/scripts/unsplash.mjs hero <photoId> <slug>
+  ```
+  Lệnh này tự crop ảnh về tỷ lệ chuẩn 5:3 (1000×600, entropy crop) và lưu vào `public/images/articles/[slug]/hero.jpg`.
+- **Lưu ý chọn ảnh**: nếu ảnh `featured-01` có chữ/text lớn trong khung hình (dễ bị cắt mất khi crop về thumbnail nhỏ trên card), nên search thêm 1 query khác không có chữ (ví dụ "finance growth chart") và dùng ảnh đó cho `hero`, thay vì ảnh featured trong bài.
 
 **Bước 2.2 — Internal Linking:**
 - Kích hoạt skill `.antigravity/skills/internal-linking/SKILL.md` → Mode: Contextual Insertion.
@@ -80,7 +105,7 @@ Trước khi làm bất cứ việc gì, hệ thống phải đọc:
 
 **Bước 3.1 — File Management (BẮT BUỘC):**
 - Lấy nội dung từ `knowledge/4-content/2-drafts/Draft-[slug].md`.
-- Thêm frontmatter Astro chuẩn (xem template dưới) và lưu vào `src/content/articles/[slug].md`.
+- Thêm frontmatter Astro chuẩn (xem template dưới) và lưu vào `src/content/articles/[slug].md`. **BẮT BUỘC** phải điền trường `heroImage` trỏ đến ảnh bìa riêng của bài viết (tỷ lệ 5:3, đã tải và crop tại `public/images/articles/[slug]/hero.jpg` ở bước `/drafting`), không dùng chung ảnh mặc định của category.
 - Xóa file draft tạm: `knowledge/4-content/2-drafts/Draft-[slug].md`.
 - Cập nhật `knowledge/4-content/topic-clusters.md` → trạng thái `Finalized`.
 
@@ -90,6 +115,7 @@ Trước khi làm bất cứ việc gì, hệ thống phải đọc:
 title: "[Tiêu đề bài viết]"
 description: "[Meta description ~155 ký tự]"
 category: "[slug-category]"
+heroImage: "/images/articles/[slug]/hero.jpg"
 publishDate: "[YYYY-MM-DD]"
 updatedDate: "[YYYY-MM-DD]"
 readingTime: "[X phút đọc]"

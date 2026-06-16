@@ -42,24 +42,27 @@ import { author } from "@/data/authors";
     padding: var(--space-6);
     margin-top: var(--space-12);
     border: 1px solid var(--line);
-    border-radius: var(--radius-md);
+    border-radius: 0px;
     background: var(--surface);
-    border-left: 4px solid var(--color-brand-900);
+    border-left: 8px solid var(--brand);
+    box-shadow: var(--shadow-md);
   }
 
   .author-avatar {
     flex-shrink: 0;
     width: 52px;
     height: 52px;
-    border-radius: 50%;
-    background: var(--color-brand-900);
+    border-radius: 0px;
+    border: 1px solid var(--line);
+    background: var(--brand);
     color: #fff;
     font-family: var(--font-serif);
     font-weight: 700;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 2px 2px 0px var(--line);
   }
 
   .author-info {
@@ -82,35 +85,38 @@ import { author } from "@/data/authors";
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    color: var(--color-accent);
+    color: var(--brand);
   }
 
   .author-name {
     font-family: var(--font-serif);
-    font-size: 1.18rem;
+    font-size: 1.25rem;
     font-weight: 700;
-    color: var(--color-brand-900);
+    color: var(--text);
     text-decoration: none;
   }
 
   .author-name:hover {
     text-decoration: underline;
+    text-underline-offset: 4px;
   }
 
   .author-profile-link {
     flex-shrink: 0;
     border: 1px solid var(--line);
-    border-radius: 999px;
-    color: var(--brand);
+    border-radius: var(--radius-sm);
+    background: var(--surface-alt);
+    color: var(--text);
     font-size: 0.78rem;
     font-weight: 700;
     line-height: 1.2;
     padding: 7px 10px;
     text-decoration: none;
+    box-shadow: 1px 1px 0px var(--line);
   }
 
   .author-profile-link:hover {
-    border-color: var(--brand);
+    background: var(--color-mint);
     text-decoration: none;
   }
 
@@ -156,8 +162,9 @@ import { author } from "@/data/authors";
 
   .author-expertise span {
     border: 1px solid var(--line);
-    border-radius: 999px;
-    color: var(--brand);
+    border-radius: var(--radius-sm);
+    background: var(--color-mint);
+    color: var(--text);
     font-size: 0.78rem;
     font-weight: 700;
     line-height: 1.2;

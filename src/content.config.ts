@@ -1,12 +1,13 @@
 import { defineCollection, z } from "astro:content";
 
+// Only slug is required — all other fields fall back to src/data/brokers.ts at render time.
 const brokerSchema = z.object({
-  name: z.string(),
   slug: z.string(),
-  rating: z.number().min(0).max(5),
-  best_for: z.string(),
-  pros: z.array(z.string()).default([]),
-  cons: z.array(z.string()).default([]),
+  name: z.string().optional(),
+  rating: z.number().min(0).max(5).optional(),
+  best_for: z.string().optional(),
+  pros: z.array(z.string()).optional(),
+  cons: z.array(z.string()).optional(),
   verdict: z.string().optional(),
   fee_rate: z.string().optional(),
   margin_rate: z.string().optional(),

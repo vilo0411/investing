@@ -1,9 +1,9 @@
 ---
+import type { Page } from "astro";
 import type { CollectionEntry } from "astro:content";
-import ArticleList from "@/components/ArticleList.astro";
 import Breadcrumb from "@/components/Breadcrumb.astro";
 import type { Category } from "@/data/site";
-import { getArticlePath } from "@/data/site";
+import { categoryMeta, getArticlePath, getCategoryPath } from "@/data/site";
 
 interface Props {
   category: Category;
@@ -12,165 +12,882 @@ interface Props {
 }
 
 const { category, articles, breadcrumbItems } = Astro.props;
-const latestArticles = articles
-  .toSorted((a, b) => b.data.updatedDate.getTime() - a.data.updatedDate.getTime())
-  .slice(0, 3);
+
+// Only show articles with an explicit order (< 100) in the learning path.
+// Non-curated articles default to order: 100 in schema.
+const byOrder = [...articles]
+  .filter((a) => a.data.order < 100)
+  .sort((a, b) => a.data.order - b.data.order);
+
+// Sort by newest first for default "Mới nhất" tab
+const byNewest = [...articles].sort(
+  (a, b) => b.data.updatedDate.getTime() - a.data.updatedDate.getTime()
+);
+
+const featuredArticle = byNewest[0];
+const restArticles = byNewest.slice(1);
+const pageSize = 3; // Number of cards to show initially in the grid and load per click
+
+const meta = categoryMeta[category.slug] ?? {
+  abbr: "?",
+  label: category.title,
+  gradientClass: "thumb-stocks",
+};
+
+function formatDate(date: Date) {
+  return date.toLocaleDateString("vi-VN", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  });
+}
 ---
 
-<section class="page-hero">
+<!-- ── Hero ───────────────────────────────────────────────────────────── -->
+<section class="cat-hero">
   <div class="container">
     <Breadcrumb items={breadcrumbItems} />
-    <div class="eyebrow">{category.group}</div>
-    <h1>{category.title}</h1>
-    <p class="lead">{category.description}</p>
-    <div class="category-meta">
-      <span class="article-count-badge">
-        {articles.length} bài viết
-      </span>
-      {articles.length > 0 && (
-        <span class="category-meta-hint">Đọc theo thứ tự để xây dựng nền tảng vững chắc</span>
-      )}
+    <div class="cat-hero-grid">
+      <div class="cat-hero-content">
+        <div class="cat-eyebrow">{category.group}</div>
+        <h1 class="cat-title">{category.title}</h1>
+        <p class="cat-desc">{category.description}</p>
+        
+        {byOrder.length > 0 && (
+          <div class="cat-hero-actions">
+            <a href="#panel-order" class="btn-primary" id="start-learning-btn">
+              Bắt đầu học ngay →
+            </a>
+          </div>
+        )}
+      </div>
+
+      <div class="cat-hero-visual-wrapper">
+        <div class={`cat-hero-visual ${meta.gradientClass}`}>
+          <div class="cat-hero-visual-dots"></div>
+          <span class="cat-hero-visual-abbr">{meta.abbr}</span>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="section">
-  <div class="container">
-    {
-      articles.length ? (
-        <div class="category-layout">
-          <div>
-            <div class="section-header">
-              <div>
-                <h2>Learning path</h2>
-                <p class="muted">Đọc theo thứ tự để xây dựng nền tảng vững chắc.</p>
+<!-- ── Controls bar ───────────────────────────────────────────────────── -->
+<div class="controls-bar">
+  <div class="container controls-inner">
+    <div class="filter-tabs" role="tablist" aria-label="Sắp xếp bài viết">
+      <button
+        class="tab-btn active"
+        id="tab-newest"
+        role="tab"
+        aria-selected="true"
+        aria-controls="panel-newest"
+        data-target="panel-newest"
+      >
+        Mới nhất
+      </button>
+      {byOrder.length > 0 && (
+        <button
+          class="tab-btn"
+          id="tab-order"
+          role="tab"
+          aria-selected="false"
+          aria-controls="panel-order"
+          data-target="panel-order"
+        >
+          Theo thứ tự học
+        </button>
+      )}
+    </div>
+    <span class="article-count">Hiển thị {articles.length} bài viết</span>
+  </div>
+</div>
+
+<!-- ── Article panels ─────────────────────────────────────────────────── -->
+{
+  articles.length ? (
+    <section class="cat-section">
+      <div class="container">
+
+        {/* ── Panel: Newest ── */}
+        <div id="panel-newest" role="tabpanel" aria-labelledby="tab-newest" class="tab-panel active">
+          {featuredArticle && (
+            <a href={getArticlePath(featuredArticle)} class="featured-card">
+              <div class={`featured-thumb ${meta.gradientClass}`}>
+                {featuredArticle.data.heroImage ? (
+                  <img class="thumb-img" src={featuredArticle.data.heroImage} alt={featuredArticle.data.title} loading="lazy" width="600" height="450" />
+                ) : (
+                  <>
+                    <div class="thumb-dots"></div>
+                    <span class="featured-abbr">{meta.abbr}</span>
+                  </>
+                )}
+              </div>
+              <div class="featured-body">
+                <div class="featured-meta-row">
+                  <span class={`card-tag tag-${featuredArticle.data.category}`}>{meta.label}</span>
+                  <span class="featured-read-time">{featuredArticle.data.readingTime}</span>
+                </div>
+                <h2 class="featured-title">{featuredArticle.data.title}</h2>
+                <p class="featured-excerpt">{featuredArticle.data.description}</p>
+                <span class="featured-date">{formatDate(featuredArticle.data.updatedDate)}</span>
+              </div>
+            </a>
+          )}
+
+          {restArticles.length > 0 && (
+            <div class="articles-grid">
+              {restArticles.map((article, index) => {
+                const m = categoryMeta[article.data.category] ?? meta;
+                const isHidden = index >= pageSize;
+                return (
+                  <a href={getArticlePath(article)} class={`mini-card ${isHidden ? "is-hidden" : ""}`}>
+                    <div class={`mini-thumb ${m.gradientClass}`}>
+                      {article.data.heroImage ? (
+                        <img class="thumb-img" src={article.data.heroImage} alt={article.data.title} loading="lazy" width="600" height="338" />
+                      ) : (
+                        <>
+                          <div class="thumb-dots"></div>
+                          <span class="mini-abbr">{m.abbr}</span>
+                        </>
+                      )}
+                    </div>
+                    <div class="mini-body">
+                      <span class={`card-tag tag-${article.data.category}`}>{m.label}</span>
+                      <h3 class="mini-title">{article.data.title}</h3>
+                      <p class="mini-excerpt">{article.data.description}</p>
+                      <span class="mini-date">{formatDate(article.data.updatedDate)}</span>
+                    </div>
+                  </a>
+                );
+              })}
+            </div>
+          )}
+
+          {restArticles.length > pageSize && (
+            <div class="pagination-container">
+              <button class="btn-load-more" id="btn-load-more">
+                Tải thêm bài viết
+              </button>
+            </div>
+          )}
+
+          <noscript>
+            <style>
+              .mini-card.is-hidden {
+                display: flex !important;
+              }
+              .btn-load-more {
+                display: none !important;
+              }
+            </style>
+          </noscript>
+        </div>
+
+        {/* ── Panel: Learning Order ── */}
+        {byOrder.length > 0 && (
+          <div id="panel-order" role="tabpanel" aria-labelledby="tab-order" class="tab-panel" hidden>
+            <p class="order-hint">Đọc theo thứ tự để xây dựng nền tảng vững chắc.</p>
+            <div class="learning-timeline-container">
+              <div class="learning-timeline-line"></div>
+              <div class="learning-list">
+                {byOrder.map((article, i) => (
+                  <div class="learning-row">
+                    <span class="learning-num">{String(i + 1).padStart(2, "0")}</span>
+                    <div class="learning-card">
+                      <a href={getArticlePath(article)} class="learning-link">
+                        <div class="learning-card-body">
+                          <strong class="learning-title">{article.data.title}</strong>
+                          <p class="learning-desc">{article.data.description}</p>
+                          <span class="learning-meta">
+                            <span class="learning-badge">Bước {i + 1}</span>
+                            &nbsp;·&nbsp; {article.data.readingTime} &nbsp;·&nbsp; Cập nhật {formatDate(article.data.updatedDate)}
+                          </span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
-            <ArticleList articles={articles} />
           </div>
-          <aside class="latest-panel" aria-label="Bài viết mới nhất">
-            <h2>Mới nhất</h2>
-            {latestArticles.map((article) => (
-              <a href={getArticlePath(article)}>
-                <strong>{article.data.title}</strong>
-                <span>{article.data.readingTime}</span>
-              </a>
-            ))}
-          </aside>
-        </div>
-      ) : (
-        <div class="card empty-state">
+        )}
+
+      </div>
+    </section>
+  ) : (
+    <section class="cat-section">
+      <div class="container">
+        <div class="empty-state">
           <div class="eyebrow">Sắp ra mắt</div>
           <h3>Nội dung đang được biên tập</h3>
-          <p>
-            Chủ đề <strong>{category.title}</strong> sẽ sớm có bài viết mới.
-            Quay lại trang chủ để xem nội dung hiện có.
-          </p>
-          <a href="/" class="empty-state-link">← Về trang chủ</a>
+          <p>Chủ đề <strong>{category.title}</strong> sẽ sớm có bài viết mới.</p>
+          <a href="/" class="btn-primary">← Về trang chủ</a>
         </div>
-      )
-    }
-  </div>
-</section>
+      </div>
+    </section>
+  )
+}
+
+<script>
+  const tabs = document.querySelectorAll(".tab-btn");
+  const panels = document.querySelectorAll(".tab-panel");
+
+  tabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      const target = (tab as HTMLButtonElement).dataset.target;
+
+      tabs.forEach((t) => {
+        t.classList.toggle("active", t === tab);
+        t.setAttribute("aria-selected", String(t === tab));
+      });
+
+      panels.forEach((panel) => {
+        const isTarget = panel.id === target;
+        panel.classList.toggle("active", isTarget);
+        (panel as HTMLElement).hidden = !isTarget;
+      });
+    });
+  });
+
+  // Handle start learning button click
+  const startBtn = document.getElementById("start-learning-btn");
+  const tabOrder = document.getElementById("tab-order");
+  if (startBtn && tabOrder) {
+    startBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      tabOrder.click();
+      const panelOrder = document.getElementById("panel-order");
+      if (panelOrder) {
+        panelOrder.scrollIntoView({ behavior: "smooth" });
+      }
+    });
+  }
+
+  // Handle Load More DOM-based
+  const loadMoreBtn = document.getElementById("btn-load-more");
+  const pageSize = 3;
+
+  if (loadMoreBtn) {
+    loadMoreBtn.addEventListener("click", () => {
+      // Find all hidden cards in the grid
+      const hiddenCards = Array.from(document.querySelectorAll(".articles-grid .mini-card.is-hidden"));
+
+      // Reveal the next pageSize hidden cards
+      const nextChunk = hiddenCards.slice(0, pageSize);
+      nextChunk.forEach((card) => {
+        card.classList.remove("is-hidden");
+      });
+
+      // If no more hidden cards left, remove the load more button
+      if (hiddenCards.length <= pageSize) {
+        loadMoreBtn.remove();
+      }
+    });
+  }
+</script>
 
 <style>
-  .category-meta {
-    margin-top: var(--space-4);
+  /* ── Hero Grid ─────────────────────────────────────────────────────── */
+  .cat-hero {
+    padding: 44px 0 40px;
+    background: var(--surface);
+    border-bottom: 2px solid var(--line);
+  }
+
+  .cat-hero-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .cat-hero-content {
+    max-width: 680px;
+  }
+
+  .cat-hero-actions {
+    margin-top: 20px;
+  }
+
+  .cat-hero-visual-wrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .cat-hero-visual {
+    width: 220px;
+    height: 140px;
+    border: 1px solid var(--line);
+    box-shadow: var(--shadow-md);
     display: flex;
     align-items: center;
-    gap: 16px;
-    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
   }
 
-  .category-meta-hint {
-    font-size: 0.85rem;
+  .cat-hero-visual-dots {
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(rgba(18, 18, 18, 0.12) 1.5px, transparent 1.5px);
+    background-size: 10px 10px;
+    opacity: 0.8;
+    z-index: 1;
+  }
+
+  .cat-hero-visual-abbr {
+    position: relative;
+    z-index: 2;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-serif);
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px 24px;
+    border: 1px solid var(--line);
+    box-shadow: var(--shadow-sm);
+    transform: rotate(-3deg);
+  }
+
+  .cat-eyebrow {
+    color: var(--accent);
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin-bottom: 8px;
+  }
+
+  .cat-title {
+    font-family: var(--font-serif);
+    font-size: clamp(2rem, 5vw, 2.8rem);
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1.12;
+    margin: 0 0 12px;
+    letter-spacing: -0.02em;
+  }
+
+  .cat-desc {
+    font-size: 1.05rem;
     color: var(--muted);
+    line-height: 1.65;
+    margin: 0;
   }
 
-  .article-count-badge {
-    display: inline-flex;
+  /* ── Controls bar ──────────────────────────────────────────────────── */
+  .controls-bar {
+    background: var(--surface);
+    border-bottom: 1px solid var(--line);
+    padding: 0;
+    position: sticky;
+    top: 76px; /* below nav */
+    z-index: 9;
+  }
+
+  .controls-inner {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 16px;
+  }
+
+  .filter-tabs {
+    display: flex;
+    gap: 0;
+  }
+
+  .tab-btn {
+    background: none;
+    border: none;
+    border-bottom: 3px solid transparent;
+    padding: 14px 20px;
+    font-family: var(--font-sans);
+    font-size: 0.88rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--muted);
+    cursor: pointer;
+    transition: color var(--transition-fast), border-color var(--transition-fast);
+    white-space: nowrap;
+  }
+
+  .tab-btn:hover {
+    color: var(--text);
+  }
+
+  .tab-btn.active {
+    color: var(--brand);
+    border-bottom-color: var(--brand);
+  }
+
+  .article-count {
+    display: flex;
     align-items: center;
-    gap: var(--space-1);
-    padding: 5px 12px;
-    background: var(--color-brand-100);
-    color: var(--color-brand-900);
-    border-radius: 999px;
-    font-size: 0.84rem;
-    font-weight: 600;
+    font-size: 0.82rem;
+    color: var(--muted);
+    font-weight: 500;
+    padding-right: 4px;
+    white-space: nowrap;
   }
 
+  /* ── Section ───────────────────────────────────────────────────────── */
+  .cat-section {
+    padding: 40px 0 60px;
+  }
+
+  /* ── Featured card ─────────────────────────────────────────────────── */
+  .featured-card {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 0;
+    border: 1px solid var(--line);
+    background: var(--surface);
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
+    text-decoration: none;
+    margin-bottom: 28px;
+    transition: box-shadow var(--transition-fast), transform var(--transition-fast);
+  }
+
+  .featured-card:hover {
+    transform: translate(4px, 4px);
+    box-shadow: none;
+    text-decoration: none;
+  }
+
+  .featured-thumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 240px;
+    border-right: 1px solid var(--line);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .featured-abbr {
+    position: relative;
+    z-index: 2;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-serif);
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 8px 18px;
+    border: 1px solid var(--line);
+    box-shadow: 2px 2px 0px var(--line);
+    transform: rotate(-3deg);
+    letter-spacing: 0.04em;
+  }
+
+  .featured-body {
+    padding: 28px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .featured-meta-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .featured-read-time {
+    font-size: 0.8rem;
+    color: var(--muted);
+    font-weight: 500;
+  }
+
+  .featured-title {
+    font-family: var(--font-serif);
+    font-size: clamp(1.4rem, 3vw, 1.9rem);
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1.25;
+    margin: 0;
+    transition: color var(--transition-fast);
+  }
+
+  .featured-card:hover .featured-title {
+    color: var(--brand);
+  }
+
+  .featured-excerpt {
+    font-size: 0.95rem;
+    color: var(--muted);
+    line-height: 1.6;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .featured-date {
+    font-size: 0.8rem;
+    color: var(--muted);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  /* ── Mini card grid ────────────────────────────────────────────────── */
+  .articles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .mini-card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: box-shadow var(--transition-fast), transform var(--transition-fast);
+  }
+
+  .mini-card:hover {
+    transform: translate(3px, 3px);
+    box-shadow: none;
+    text-decoration: none;
+  }
+
+  .mini-thumb {
+    aspect-ratio: 16 / 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid var(--line);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .mini-abbr {
+    position: relative;
+    z-index: 2;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-serif);
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 6px 14px;
+    border: 1px solid var(--line);
+    box-shadow: 2px 2px 0px var(--line);
+    transform: rotate(-3deg);
+    letter-spacing: 0.04em;
+  }
+
+  .thumb-dots {
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(rgba(18, 18, 18, 0.12) 1.5px, transparent 1.5px);
+    background-size: 10px 10px;
+    opacity: 0.8;
+    z-index: 1;
+  }
+
+  .thumb-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .mini-body {
+    padding: 16px 18px 18px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 6px;
+  }
+
+  .mini-title {
+    font-family: var(--font-serif);
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1.35;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    transition: color var(--transition-fast);
+  }
+
+  .mini-card:hover .mini-title {
+    color: var(--brand);
+  }
+
+  .mini-excerpt {
+    font-size: 0.84rem;
+    color: var(--muted);
+    line-height: 1.55;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin: 0;
+    flex: 1;
+  }
+
+  .mini-date {
+    font-size: 0.78rem;
+    color: var(--muted);
+    font-weight: 500;
+    padding-top: 10px;
+    border-top: 1px solid var(--line);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  /* ── Card tags (shared) ────────────────────────────────────────────── */
+  .card-tag {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 3px 9px;
+    background: var(--surface-alt);
+    color: var(--text);
+    border: 1px solid var(--line);
+    white-space: nowrap;
+  }
+
+  .tag-co-phieu     { background: var(--color-mint); }
+  .tag-etf          { background: var(--color-mint); }
+  .tag-quy-dau-tu   { background: var(--color-mint); }
+  .tag-trai-phieu   { background: var(--color-mint); }
+  .tag-phai-sinh    { background: var(--color-mint); }
+  .tag-co-ban       { background: var(--color-lilac); }
+  .tag-ky-thuat     { background: var(--color-lilac); }
+  .tag-reviews      { background: var(--color-peach); }
+  .tag-nha-dau-tu   { background: var(--color-peach); }
+
+  /* ── Gradient thumbs ───────────────────────────────────────────────── */
+  .thumb-stocks, .thumb-etf, .thumb-fund, .thumb-bond, .thumb-derivative {
+    background: var(--color-mint);
+  }
+  .thumb-analyse, .thumb-technical { background: var(--color-lilac); }
+  .thumb-review, .thumb-investor   { background: var(--color-peach); }
+
+  /* ── Learning order panel & timeline ───────────────────────────────── */
+  .order-hint {
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin: 0 0 24px;
+  }
+
+  .learning-timeline-container {
+    position: relative;
+    padding-left: 20px;
+    margin-top: var(--space-4);
+  }
+
+  .learning-timeline-line {
+    position: absolute;
+    left: 41px; /* Center with the num badges */
+    top: 24px;
+    bottom: 24px;
+    width: 2px;
+    background-image: linear-gradient(to bottom, var(--line) 60%, transparent 40%);
+    background-size: 2px 10px;
+    z-index: 1;
+  }
+
+  .learning-list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    position: relative;
+  }
+
+  .learning-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .learning-num {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    background-color: var(--color-mint);
+    color: var(--text);
+    font-family: var(--font-serif);
+    font-size: 1.15rem;
+    font-weight: 700;
+    border: 1px solid var(--line);
+    box-shadow: 2px 2px 0px var(--line);
+    flex-shrink: 0;
+    z-index: 2;
+  }
+
+  .learning-card {
+    flex: 1;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  }
+
+  .learning-card:hover {
+    transform: translate(3px, 3px);
+    box-shadow: none;
+  }
+
+  .learning-link {
+    display: block;
+    text-decoration: none;
+    color: var(--text);
+  }
+
+  .learning-link:hover {
+    text-decoration: none;
+    color: var(--text);
+  }
+
+  .learning-card-body {
+    padding: 20px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .learning-title {
+    font-family: var(--font-serif);
+    font-size: 1.15rem;
+    font-weight: 700;
+    line-height: 1.3;
+    transition: color var(--transition-fast);
+  }
+
+  .learning-card:hover .learning-title {
+    color: var(--brand);
+  }
+
+  .learning-desc {
+    font-size: 0.88rem;
+    color: var(--muted);
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .learning-meta {
+    font-size: 0.8rem;
+    color: var(--muted);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 4px;
+  }
+
+  .learning-badge {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 2px 6px;
+    background: var(--surface-alt);
+    border: 1px solid var(--line);
+  }
+
+  /* ── Empty state ───────────────────────────────────────────────────── */
   .empty-state {
     max-width: 480px;
     padding: var(--space-8);
+    background: var(--color-peach);
+    border: 1px solid var(--line);
+    border-left: 6px solid var(--brand);
+    box-shadow: var(--shadow-sm);
   }
 
   .empty-state h3 {
     font-family: var(--font-serif);
-    color: var(--color-brand-900);
+    font-weight: 700;
+    color: var(--text);
   }
 
   .empty-state p {
     margin: var(--space-2) 0 var(--space-4);
-    color: var(--muted);
-  }
-
-  .empty-state-link {
+    color: var(--text);
     font-weight: 500;
-    font-size: 0.9rem;
   }
 
-  .category-layout {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) 260px;
-    gap: 28px;
-    align-items: start;
-  }
+  /* ── Tab panel ─────────────────────────────────────────────────────── */
+  .tab-panel { display: block; }
+  .tab-panel[hidden] { display: none; }
 
-  .latest-panel {
-    position: sticky;
-    top: 96px;
-    border: 1px solid var(--line);
-    border-radius: var(--radius-md);
-    background: var(--surface);
-    padding: 18px;
-  }
+  /* ── Responsive ────────────────────────────────────────────────────── */
+  @media (max-width: 900px) {
+    .cat-hero-grid {
+      grid-template-columns: 1fr;
+      gap: 32px;
+    }
 
-  .latest-panel h2 {
-    color: var(--text);
-    font-size: 1.1rem;
-    margin: 0 0 12px;
-  }
+    .cat-hero-visual-wrapper {
+      justify-content: flex-start;
+    }
 
-  .latest-panel a {
-    display: grid;
-    gap: 4px;
-    border-top: 1px solid var(--line);
-    padding: 12px 0;
-    text-decoration: none;
-  }
-
-  .latest-panel a:first-of-type {
-    border-top: none;
-  }
-
-  .latest-panel strong {
-    color: var(--text);
-    font-size: 0.92rem;
-    line-height: 1.4;
-  }
-
-  .latest-panel span {
-    color: var(--muted);
-    font-size: 0.8rem;
-  }
-
-  @media (max-width: 920px) {
-    .category-layout {
+    .featured-card {
       grid-template-columns: 1fr;
     }
 
-    .latest-panel {
-      position: static;
+    .featured-thumb {
+      min-height: 160px;
+      border-right: none;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .articles-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 600px) {
+    .articles-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .controls-inner {
+      flex-wrap: wrap;
+    }
+
+    .tab-btn {
+      padding: 14px 12px;
+      font-size: 0.8rem;
+    }
+
+    .learning-row {
+      gap: 16px;
+    }
+
+    .learning-card-body {
+      padding: 16px;
     }
   }
 </style>

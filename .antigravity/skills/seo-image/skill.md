@@ -33,6 +33,7 @@
 
 **Bước 2 — Chọn style + lập manifest**
 - Chọn 1 style từ bảng assets
+- Áp dụng **Quy tắc số lượng & vị trí** bên dưới để xác định số ảnh inline
 - Announce manifest:
 ```
 📸 [slug] — [style]
@@ -40,6 +41,32 @@
 - inline-01:   [concept 5 từ] → H2 "[tên section]"
 - inline-02:   [concept 5 từ] → H2 "[tên section]"
 ```
+
+---
+
+## Quy tắc số lượng & vị trí (SEO)
+
+| Loại bài (theo word count) | Featured | Inline | Tổng |
+|---|---|---|---|
+| Ngắn (< 1200 từ) | 1 | 1 | 2 |
+| Chuẩn (1200–2500 từ) | 1 | 2–3 | 3–4 |
+| Dài/Pillar (> 2500 từ) | 1 | 3–4 | 4–5 |
+
+**Vị trí:**
+- `featured-01`: luôn đặt đầu bài (trước H2 đầu tiên) — dùng làm OG image/social share
+- `inline-XX`: đặt ngay **sau heading** của H2 mà nó minh họa, **trước** đoạn văn đầu của section đó
+- Cách nhau **tối thiểu 2 H2** giữa hai ảnh inline — không đặt 2 ảnh liền kề nhau
+- Không đặt ảnh trong section "Key takeaways" hoặc "FAQ"
+
+**Ưu tiên chọn H2 để gắn inline image** (theo thứ tự):
+1. Section có table/so sánh → minh họa bằng `abstract-finance` hoặc infographic
+2. Section step-by-step/hướng dẫn → `flat-illustration` dạng infographic
+3. Section khái niệm trừu tượng (định nghĩa, công thức) → `abstract-finance`
+4. Bỏ qua section quá ngắn (< 100 từ) hoặc section list đơn giản
+
+**Alt text (bắt buộc cho SEO):**
+- Mỗi ảnh phải có alt text tiếng Việt chứa từ khóa chính hoặc biến thể (semantic keyword), mô tả đúng nội dung ảnh — không nhồi keyword
+- Format: `![{{mô tả ngắn có chứa từ khóa liên quan}}](đường-dẫn-ảnh)`
 
 **Bước 3 — Compose prompt mỗi ảnh**
 
@@ -77,7 +104,7 @@ Agent chỉ cần điền block này. Dùng `{}` cho nested objects, `[]` cho ar
     detail:  {{1 đặc điểm quan trọng}}
   }
 
-  accent: { element: {{DSC green xuất hiện như thế nào}}, max: 15% canvas }
+  accent: { element: {{Mint/Lilac/Peach xuất hiện như thế nào}}, max: 15% canvas }
 
   depth: {{secondary layer — hoặc none}}
 
@@ -113,10 +140,11 @@ Agent chỉ cần điền block này. Dùng `{}` cho nested objects, `[]` cho ar
 | # | Check | Pass |
 |---|-------|------|
 | 1 | No text | Không có chữ trong featured/inline |
-| 2 | Brand green | Màu #00AD14 xuất hiện tự nhiên |
+| 2 | Brand palette | Deep Pine (#2A625A) + Mint/Lilac/Peach xuất hiện tự nhiên |
 | 3 | No red | Không có đỏ bất kỳ dạng nào |
 | 4 | No cliché | Không bắt tay, không chỉ màn hình |
-| 5 | Ratio đúng | 16:9 featured/inline — 2:3 infographic |
-| 6 | Tone match | Mood ảnh khớp tone bài viết |
+| 5 | Sharp edges | Không có rounded corners, không soft shadow/blur/gradient |
+| 6 | Ratio đúng | 5:3 (1000×600) featured, 8:5 (800×500) inline — 2:3 infographic |
+| 7 | Tone match | Mood ảnh khớp tone bài viết |
 
 Fail → regen: `"Regenerate. Fix: [vấn đề]. Keep everything else identical."`

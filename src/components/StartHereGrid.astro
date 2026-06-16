@@ -1,0 +1,78 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { categoryMeta, getArticlePath } from "@/data/site";
+
+interface Props {
+  articles: CollectionEntry<"articles">[];
+}
+
+const { articles } = Astro.props;
+---
+
+<div class="start-list">
+  {articles.map((article, index) => {
+    const meta = categoryMeta[article.data.category] ?? { label: article.data.category, gradientClass: "thumb-stocks", abbr: "?" };
+    return (
+      <a class="start-item" href={getArticlePath(article)}>
+        <span class="start-number">{String(index + 1).padStart(2, "0")}</span>
+        <span>
+          <strong>{article.data.title}</strong>
+          <small>{meta.label} · {article.data.readingTime}</small>
+        </span>
+      </a>
+    );
+  })}
+</div>
+
+<style>
+  .start-list {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .start-item {
+    border: 1px solid var(--line);
+    border-radius: 0px;
+    background: var(--surface);
+    padding: 20px;
+    text-decoration: none;
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 12px;
+    align-items: start;
+  }
+
+  .start-item:hover {
+    transform: translate(2px, 2px);
+    box-shadow: none;
+    text-decoration: none;
+  }
+
+  .start-number {
+    color: var(--brand);
+    font-weight: 800;
+    font-size: 1.25rem;
+  }
+
+  .start-item strong {
+    color: var(--text);
+    display: block;
+    line-height: 1.35;
+    font-weight: 700;
+  }
+
+  .start-item small {
+    color: var(--muted);
+    display: block;
+    margin-top: 6px;
+  }
+
+  @media (max-width: 640px) {
+    .start-list {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

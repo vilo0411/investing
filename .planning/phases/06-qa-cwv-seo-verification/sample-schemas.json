@@ -1,0 +1,89 @@
+{
+  "Article": {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Blue chip là gì?",
+    "description": "Blue chip thường chỉ các cổ phiếu lớn, có vị thế thị trường mạnh và lịch sử hoạt động ổn định hơn mặt bằng chung.",
+    "url": "https://valueinvesting.com.vn/dau-tu/co-phieu/blue-chip-la-gi/",
+    "datePublished": "2026-06-09T00:00:00.000Z",
+    "dateModified": "2026-06-09T00:00:00.000Z",
+    "inLanguage": "vi",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://valueinvesting.com.vn/images/hero-investing.png",
+      "width": 1200,
+      "height": 630
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Nguyễn Viết Lộc",
+      "url": "https://valueinvesting.com.vn/author/nguyen-viet-loc/",
+      "jobTitle": "Người phụ trách nội dung",
+      "description": "Phụ trách nội dung tại ValueInvesting.com.vn — tập trung giải thích khái niệm đầu tư bằng ngôn ngữ rõ ràng, có nguồn tham khảo, không khuyến nghị mua bán.",
+      "knowsAbout": [
+        "Đầu tư giá trị",
+        "Phân tích cơ bản",
+        "Sản phẩm đầu tư cho người mới"
+      ]
+    },
+    "reviewedBy": {
+      "@type": "Organization",
+      "name": "Ban biên tập ValueInvesting.com.vn",
+      "url": "https://valueinvesting.com.vn/editorial-policy/"
+    },
+    "publisher": {
+      "@id": "https://valueinvesting.com.vn/#organization"
+    },
+    "isPartOf": {
+      "@id": "https://valueinvesting.com.vn/#website"
+    },
+    "citation": [
+      "Sở Giao dịch Chứng khoán TP.HCM"
+    ]
+  },
+  "Person": {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://valueinvesting.com.vn/author/nguyen-viet-loc/#person",
+    "name": "Nguyễn Viết Lộc",
+    "url": "https://valueinvesting.com.vn/author/nguyen-viet-loc/",
+    "jobTitle": "Người phụ trách nội dung",
+    "description": "Phụ trách nội dung tại ValueInvesting.com.vn — tập trung giải thích khái niệm đầu tư bằng ngôn ngữ rõ ràng, có nguồn tham khảo, không khuyến nghị mua bán.",
+    "knowsAbout": [
+      "Đầu tư giá trị",
+      "Phân tích cơ bản",
+      "Sản phẩm đầu tư cho người mới"
+    ],
+    "sameAs": []
+  },
+  "BreadcrumbList": {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Trang chủ",
+        "item": "https://valueinvesting.com.vn/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Đầu tư",
+        "item": "https://valueinvesting.com.vn/dau-tu/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Cổ phiếu",
+        "item": "https://valueinvesting.com.vn/dau-tu/co-phieu/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "Blue chip là gì?",
+        "item": "https://valueinvesting.com.vn/dau-tu/co-phieu/blue-chip-la-gi/"
+      }
+    ]
+  }
+}

@@ -40,7 +40,7 @@ Mỗi khi người dùng đưa ra phản hồi chỉnh sửa, hãy trích xuất
 ### [PLACEHOLDER: Brand-specific CTA rules]
 - **Trạng thái:** PENDING
 - **Nguồn:** Cần bổ sung sau khi có knowledge/1-brand/profile.md
-- **Bản năng:** Sẽ cập nhật sau khi setup brand profile cho ValueInvesting.com.vn.
+- **Bản năng:** Sẽ cập nhật sau khi setup brand profile cho Value Investing.
 - **Phạm vi:** Global
 
 ### Thỏa mãn Search Intent kỹ thuật trong bài phân tích
@@ -162,6 +162,13 @@ Mỗi khi người dùng đưa ra phản hồi chỉnh sửa, hãy trích xuất
 - **Phạm vi:** Global
 
 ---
+
+### Tránh đặt target từ số trên H2 chứa H3 con
+- **Trạng thái:** ACTIVE
+- **Nguồn:** cach-dau-tu-co-phieu
+- **Phản hồi từ User:** Sửa lỗi script count_words.py đếm thiếu từ của H2 Câu hỏi thường gặp do split bởi H3 câu hỏi con.
+- **Bản năng:** Đối với các thẻ H2 trong Outline dự kiến sẽ chứa các thẻ H3 con trong Draft (như phần Câu hỏi thường gặp FAQ), tuyệt đối không đặt target từ bằng con số ở Outline (ví dụ: **Target: 150 từ**). Thay vào đó, mô tả bằng chữ (ví dụ: **Target: Mỗi câu trả lời 40-80 từ**) để tránh script QA count_words.py parsing số và tính sai từ của H2.
+- **Phạm vi:** Global
 
 *(Agent tự động append bản năng mới vào section "Bản năng Active" sau mỗi vòng viết.)*
 

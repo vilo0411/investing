@@ -1,30 +1,27 @@
 [STYLE: abstract-finance] {
-  ref: Bloomberg Terminal dark + TradingView + Nikkei Asia data viz
+  ref: Bloomberg Terminal precision + The Economist data viz + Neo-Brutalist print journals
   best-for: [technical indicators, oscillators, chart-based articles, macro data]
 
   objects: {
-    type: abstract chart elements — lines, bands, curves, candles
-    weight: bold and readable — NOT decorative hairlines
-    color: { primary: #00AD14, peak-gradient: #2BE841 → #10E7B3 }
+    type: abstract chart elements — lines, bands, candles, bars — geometric and architectural
+    weight: bold, sharp-edged, ruler-precise — NOT decorative hairlines
+    color: { primary: #2A625A (Deep Pine), accent: #B4EEE3 (Mint) }
   }
 
   bg: {
-    color: #0D1B2A
-    overlay: dotted grid at 5% opacity — optional depth layer
+    color: #FDFCF8 (Warm Off-White)
+    overlay: 1px ink (#121212) grid lines at 8–12% opacity — "ledger paper" feel
   }
 
-  lighting: {
-    source: glow from chart lines — bioluminescent NOT studio
-    direction: right side brighter — momentum toward viewer
-  }
+  lighting: flat, even, no gradients — depth comes only from hard-edged ink shadow offsets (4–8px solid #121212, never blurred)
 
-  grain: 4–6% film — editorial precision, NOT glossy
+  grain: none — crisp print/vector precision
 
   decoration: [
-    dashed threshold lines: teal 20–25% opacity,
-    faint trend arrow: depth only,
-    NO unrelated geometric shapes
+    stark 1px ink axis lines / dashed threshold lines,
+    solid Mint or Peach blocks marking key data points,
+    NO unrelated geometric shapes, NO glow
   ]
 
-  vibe: seasoned trader's screen — clinical, every element is data
+  vibe: a page from a premium financial almanac — architectural, every line intentional
 }

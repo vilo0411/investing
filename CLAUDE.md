@@ -1,4 +1,4 @@
-# CLAUDE.md — ValueInvesting.com.vn
+# CLAUDE.md — Value Investing
 
 SEO content production engine cho dự án đầu tư cá nhân tại Việt Nam.
 
@@ -103,18 +103,34 @@ keyword
 ---
 title: ""
 description: ""        # ~155 ký tự
-category: ""           # slug của category
+category: ""           # slug category — phải khớp categories[] trong src/data/site.ts
 publishDate: "YYYY-MM-DD"
 updatedDate: "YYYY-MM-DD"
 readingTime: "X phút đọc"
 featured: false
-order: 1
-sources:
-
+order: 100
+tags:
   - ""
-
+faq:
+  - question: ""
+    answer: ""
+sources:
+  - ""
+citations:
+  - title: ""
+    url: ""            # optional
+    publisher: ""      # optional
+    date: ""           # optional — YYYY-MM-DD
+keyTakeaways:
+  - ""                 # 3–5 ý chính, mỗi ý ≤ 20 từ
+# factCheckedDate: "YYYY-MM-DD"  # chỉ thêm khi đã fact-check
 ---
 ```
+
+**Category slugs hợp lệ** (theo `src/data/site.ts`):
+- Nhóm `/dau-tu/...`: `co-phieu`, `etf`, `quy-dau-tu`, `trai-phieu`, `phai-sinh`
+- Nhóm `/phan-tich/...`: `co-ban`, `ky-thuat`
+- Nhóm gốc: `reviews`, `nha-dau-tu`
 
 ---
 
@@ -124,9 +140,9 @@ sources:
 
 ## Project
 
-**ValueInvesting.com.vn — Redesign & EEAT Upgrade**
+**Value Investing — Redesign & EEAT Upgrade**
 
-ValueInvesting.com.vn là một website SEO tài chính tại Việt Nam, xây dựng trên Astro (static site), cung cấp nội dung giáo dục đầu tư bằng tiếng Việt theo phong cách Investopedia và NerdWallet. Milestone này tập trung làm lại toàn bộ design system và trải nghiệm đọc, đồng thời tăng cường tín hiệu E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness) — yếu tố sống còn với nội dung YMYL (Your Money, Your Life).
+Value Investing là một website SEO tài chính tại Việt Nam, xây dựng trên Astro (static site), cung cấp nội dung giáo dục đầu tư bằng tiếng Việt theo phong cách Investopedia và NerdWallet. Milestone này tập trung làm lại toàn bộ design system và trải nghiệm đọc, đồng thời tăng cường tín hiệu E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness) — yếu tố sống còn với nội dung YMYL (Your Money, Your Life).
 
 **Core Value:** Người đọc và Google phải cảm nhận ngay đây là một nguồn tài chính **chuyên nghiệp, đáng tin cậy** — từ giao diện tổng thể đến từng bài viết, với thông tin tác giả, nguồn tham khảo và quy trình biên tập rõ ràng.
 
@@ -290,7 +306,7 @@ ValueInvesting.com.vn là một website SEO tài chính tại Việt Nam, xây d
 
 - Two distinct subsystems sharing one repo: (1) the Astro website (`src/`, `astro.config.mjs`, `dist/`), and (2) the SEO content engine (`.antigravity/`, `.agents/`, `knowledge/`) which is pure markdown/process docs, no runtime code.
 - Content is data-driven: `src/data/site.ts` defines categories/navigation; `src/content/articles/*.md` (validated by `src/content.config.ts`) supplies pages. Pages are generated via `getStaticPaths()` + `getCollection("articles")`.
-- Vietnamese-language site about value investing (ValueInvesting.com.vn). Two URL hierarchies for categories: `/dau-tu/{category}/{slug}/` (the "Đầu tư" group) and `/{category}/{slug}/` for non-Đầu tư groups (Phân tích, Reviews, Nhà đầu tư).
+- Vietnamese-language site about value investing (Value Investing). Two URL hierarchies for categories: `/dau-tu/{category}/{slug}/` (the "Đầu tư" group) and `/{category}/{slug}/` for non-Đầu tư groups (Phân tích, Reviews, Nhà đầu tư).
 - Sitemap integration (`@astrojs/sitemap`) excludes legacy `kien-thuc` routes and old top-level category roots; `astro.config.mjs` defines explicit redirects from old flat category URLs (`/co-phieu/` etc.) to the new `/dau-tu/...` hierarchy.
 
 ## Layers

@@ -1,16 +1,16 @@
 export const site = {
-  name: "ValueInvesting.com.vn",
+  name: "Value Investing",
   email: "hello@valueinvesting.com.vn",
   description:
-    "Kiến thức đầu tư, phân tích tài chính và đánh giá sản phẩm đầu tư dành cho người mới bắt đầu.",
-  editorialReviewer: "Ban biên tập ValueInvesting.com.vn",
+    "Đơn giản hóa kiến thức đầu tư tài chính dài hạn và sản phẩm tài chính cơ bản cho người mới bắt đầu (F0) tại Việt Nam bằng ngôn ngữ đời thường, thực chiến.",
+  editorialReviewer: "Ban biên tập Value Investing",
   trustStats: [
     "Nội dung giáo dục, không khuyến nghị mua bán",
     "Ưu tiên nguồn gốc: cơ quan quản lý, sàn giao dịch, tài liệu công bố",
     "Có ngày cập nhật và quy trình đính chính công khai",
   ],
   disclosure:
-    "ValueInvesting.com.vn không cung cấp dịch vụ tư vấn đầu tư cá nhân, môi giới chứng khoán hoặc tín hiệu giao dịch. Nội dung chỉ nhằm mục đích giáo dục.",
+    "Value Investing không cung cấp dịch vụ tư vấn đầu tư cá nhân, môi giới chứng khoán hoặc tín hiệu giao dịch. Nội dung chỉ nhằm mục đích giáo dục.",
 };
 
 export const navigation = [
@@ -31,22 +31,13 @@ export const categories = [
     path: "/dau-tu/co-phieu/",
   },
   {
-    title: "ETF",
+    title: "Quỹ ETF",
     slug: "etf",
     group: "Đầu tư",
     groupPath: "/dau-tu/",
     description:
-      "Tìm hiểu cách ETF hoạt động, ưu nhược điểm và cách dùng ETF cho chiến lược đầu tư dài hạn.",
+      "Tìm hiểu ETF, quỹ mở, chứng chỉ quỹ — các loại quỹ đầu tư và cách chọn quỹ phù hợp cho chiến lược dài hạn.",
     path: "/dau-tu/etf/",
-  },
-  {
-    title: "Quỹ đầu tư",
-    slug: "quy-dau-tu",
-    group: "Đầu tư",
-    groupPath: "/dau-tu/",
-    description:
-      "Các loại quỹ mở, quỹ chủ động, quỹ thụ động và cách đánh giá chứng chỉ quỹ.",
-    path: "/dau-tu/quy-dau-tu/",
   },
   {
     title: "Trái phiếu",
@@ -68,19 +59,19 @@ export const categories = [
   },
   {
     title: "Phân tích cơ bản",
-    slug: "phan-tich",
+    slug: "co-ban",
     group: "Phân tích",
     description:
       "Các chỉ số như P/E, P/B, ROE, ROA, EPS và phương pháp đọc báo cáo tài chính.",
-    path: "/phan-tich/",
+    path: "/phan-tich/co-ban/",
   },
   {
     title: "Phân tích kỹ thuật",
-    slug: "phan-tich-ky-thuat",
+    slug: "ky-thuat",
     group: "Phân tích",
     description:
       "Đọc biểu đồ, xu hướng, hỗ trợ/kháng cự, các chỉ báo RSI, MACD và ứng dụng trong giao dịch.",
-    path: "/phan-tich-ky-thuat/",
+    path: "/phan-tich/ky-thuat/",
   },
   {
     title: "Reviews",
@@ -104,12 +95,11 @@ export type Category = (typeof categories)[number];
 
 export const categoryMeta: Record<string, { abbr: string; label: string; gradientClass: string }> = {
   "co-phieu": { abbr: "CP", label: "Cổ phiếu", gradientClass: "thumb-stocks" },
-  "etf": { abbr: "ETF", label: "ETF", gradientClass: "thumb-etf" },
-  "quy-dau-tu": { abbr: "QĐT", label: "Quỹ đầu tư", gradientClass: "thumb-fund" },
+  "etf": { abbr: "QĐT", label: "Quỹ ETF", gradientClass: "thumb-etf" },
   "trai-phieu": { abbr: "TP", label: "Trái phiếu", gradientClass: "thumb-bond" },
   "phai-sinh": { abbr: "PS", label: "Phái sinh", gradientClass: "thumb-derivative" },
-  "phan-tich": { abbr: "PT", label: "Phân tích", gradientClass: "thumb-analyse" },
-  "phan-tich-ky-thuat": { abbr: "KT", label: "Kỹ thuật", gradientClass: "thumb-technical" },
+  "co-ban": { abbr: "CB", label: "Phân tích cơ bản", gradientClass: "thumb-analyse" },
+  "ky-thuat": { abbr: "KT", label: "Phân tích kỹ thuật", gradientClass: "thumb-technical" },
   "reviews": { abbr: "REV", label: "Reviews", gradientClass: "thumb-review" },
   "nha-dau-tu": { abbr: "NĐT", label: "Nhà đầu tư", gradientClass: "thumb-investor" },
 };

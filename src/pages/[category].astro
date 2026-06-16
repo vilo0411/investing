@@ -6,7 +6,7 @@ import { categories, getCategoryPath } from "@/data/site";
 
 export async function getStaticPaths() {
   return categories
-    .filter((category) => category.group !== "Đầu tư")
+    .filter((category) => category.group !== "Đầu tư" && category.group !== "Phân tích")
     .map((category) => ({
       params: { category: category.slug },
       props: { category },

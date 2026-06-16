@@ -38,6 +38,13 @@ Tương đương với `Phase 1` và `Phase 2` của lệnh `/write`.
 - Lưu tại: `knowledge/4-content/1-outlines/[slug].md`.
 - Cập nhật `topic-clusters.md` → trạng thái `Outlining`.
 
+### Bước 4: Image Manifest (Unsplash)
+- Dựa trên cấu trúc H2 vừa tạo, chọn 1–3 vị trí chèn ảnh photo/editorial (đầu bài + 1–2 section quan trọng).
+- Với mỗi vị trí, điền vào **Section 5 (Image Manifest)** của outline:
+  - Search query tiếng Anh (ngắn, cụ thể — concept ảnh cho Unsplash)
+  - Alt text tiếng Việt (mô tả ảnh, tự nhiên, chứa từ khóa liên quan nếu hợp lý)
+- Ảnh sẽ được fetch & download thật ở bước `/drafting` — ở đây chỉ lập kế hoạch.
+
 ### 🚧 APPROVAL GATE:
 > Trình bày Outline + SERP summary cho người dùng.
 > **DỪNG LẠI. Chờ `/approve` trước khi tiếp tục sang drafting.**

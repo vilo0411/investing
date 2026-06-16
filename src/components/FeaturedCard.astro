@@ -1,0 +1,155 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { categoryMeta, getArticlePath } from "@/data/site";
+
+interface Props {
+  article: CollectionEntry<"articles">;
+}
+
+const { article } = Astro.props;
+const meta = categoryMeta[article.data.category] ?? { gradientClass: "thumb-stocks", label: article.data.category };
+---
+
+<a class="featured-card" href={getArticlePath(article)}>
+  <div class={`featured-thumb ${meta.gradientClass}`}>
+    {article.data.heroImage ? (
+      <img class="featured-thumb-img" src={article.data.heroImage} alt={article.data.title} loading="lazy" />
+    ) : (
+      <span class="featured-thumb-label">{meta.label}</span>
+    )}
+  </div>
+  <div class="featured-body">
+    <div class="featured-meta">
+      <span class="article-tag">{meta.label}</span>
+      <span class="article-date">
+        {article.data.updatedDate.toLocaleDateString("vi-VN", { day: "numeric", month: "long", year: "numeric" })}
+      </span>
+    </div>
+    <h3 class="featured-title">{article.data.title}</h3>
+    <p class="featured-desc">{article.data.description}</p>
+    <span class="featured-cta">Đọc bài viết <span aria-hidden="true">→</span></span>
+  </div>
+</a>
+
+<style>
+  .featured-card {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    border-radius: 0px;
+    border: 1px solid var(--line);
+    overflow: hidden;
+    background: var(--surface);
+    box-shadow: var(--shadow-md);
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  }
+
+  .featured-card:hover {
+    transform: translate(4px, 4px);
+    box-shadow: none;
+    text-decoration: none;
+  }
+
+  .featured-thumb {
+    width: 100%;
+    aspect-ratio: 16 / 7;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px 24px;
+    border-bottom: 1px solid var(--line);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .featured-thumb-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .featured-thumb-label {
+    font-family: var(--font-serif);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text);
+    opacity: 0.25;
+    letter-spacing: 0.02em;
+  }
+
+  /* Thumb colors */
+  .thumb-stocks   { background: var(--color-mint); }
+  .thumb-etf      { background: var(--color-mint); }
+  .thumb-fund     { background: var(--color-mint); }
+  .thumb-bond     { background: var(--color-mint); }
+  .thumb-derivative { background: var(--color-mint); }
+  .thumb-analyse  { background: var(--color-lilac); }
+  .thumb-technical { background: var(--color-lilac); }
+  .thumb-review   { background: var(--color-peach); }
+  .thumb-investor { background: var(--color-peach); }
+
+  .featured-body {
+    padding: 24px 28px 28px;
+  }
+
+  .featured-meta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+
+  .article-tag {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 3px 10px;
+    border-radius: 0px;
+    background: var(--surface-alt);
+    color: var(--text);
+    border: 1px solid var(--line);
+    white-space: nowrap;
+  }
+
+  .article-date {
+    font-size: 0.82rem;
+    color: var(--muted);
+  }
+
+  .featured-title {
+    font-family: var(--font-serif);
+    font-size: clamp(1.5rem, 2.8vw, 2.25rem);
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1.25;
+    margin: 0 0 12px;
+    letter-spacing: -0.01em;
+  }
+
+  .featured-card:hover .featured-title {
+    color: var(--brand);
+  }
+
+  .featured-desc {
+    font-size: 1rem;
+    color: var(--muted);
+    line-height: 1.65;
+    margin: 0 0 20px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .featured-cta {
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--brand);
+  }
+</style>

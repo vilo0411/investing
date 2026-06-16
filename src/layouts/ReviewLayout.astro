@@ -5,6 +5,7 @@ import RelatedArticles from "@/components/RelatedArticles.astro";
 import ShareBar from "@/components/ShareBar.astro";
 import ReviewJumpNav from "@/components/ReviewJumpNav.astro";
 import { categories, getCategoryPath, site } from "@/data/site";
+import { mergeBroker } from "@/data/brokers";
 import { author } from "@/data/authors";
 import Breadcrumb from "@/components/Breadcrumb.astro";
 import KeyTakeaways from "@/components/KeyTakeaways.astro";
@@ -20,6 +21,11 @@ interface Props {
 
 const { entry, headings = [] } = Astro.props;
 const { title, description, publishDate, updatedDate, readingTime, sources, heroImage } = entry.data;
+
+// Merge each broker entry with central registry — article values override registry defaults.
+const mergedBrokers = (entry.data.brokers ?? []).map(
+  (b: { slug: string; [key: string]: unknown }) => mergeBroker(b)
+);
 
 const categoryMeta = categories.find((c) => c.slug === entry.data.category);
 const categoryTitle = categoryMeta?.title ?? entry.data.category;
@@ -223,17 +229,23 @@ const navItems = reviewType ? navItemsByType[reviewType] ?? [] : [];
 
       {reviewType === "company" && (
         <CompanyReviewBody
-          companyInfo={entry.data.companyInfo}
-          accountSteps={entry.data.accountSteps ?? []}
-          pros={entry.data.brokers?.[0]?.pros ?? []}
-          cons={entry.data.brokers?.[0]?.cons ?? []}
-          rating={entry.data.brokers?.[0]?.rating ?? 0}
-          ctaUrl={entry.data.brokers?.[0]?.ctaUrl}
+          companyInfo={mergedBrokers[0]?.companyInfo ?? entry.data.companyInfo}
+          accountSteps={entry.data.accountSteps?.length ? entry.data.accountSteps : (mergedBrokers[0]?.accountSteps ?? [])}
+          pros={mergedBrokers[0]?.pros ?? []}
+          cons={mergedBrokers[0]?.cons ?? []}
+          rating={mergedBrokers[0]?.rating ?? 0}
+          ctaUrl={mergedBrokers[0]?.ctaUrl}
+          verdict={mergedBrokers[0]?.verdict}
+          bestFor={mergedBrokers[0]?.best_for}
+          name={mergedBrokers[0]?.name}
+          feeRate={mergedBrokers[0]?.fee_rate}
+          marginRate={mergedBrokers[0]?.margin_rate}
+          appRating={mergedBrokers[0]?.app_rating}
         />
       )}
       {reviewType === "comparison" && (
         <ComparisonBody
-          brokers={entry.data.brokers ?? []}
+          brokers={mergedBrokers}
           comparisonCriteria={entry.data.comparisonCriteria ?? []}
           winnerByCriteria={entry.data.winnerByCriteria ?? {}}
           bestForScenarios={entry.data.bestForScenarios ?? []}
@@ -241,7 +253,7 @@ const navItems = reviewType ? navItemsByType[reviewType] ?? [] : [];
       )}
       {reviewType === "listicle" && (
         <ListicleBody
-          brokers={entry.data.brokers ?? []}
+          brokers={mergedBrokers}
           rankings={entry.data.rankings ?? []}
           comparisonCriteria={entry.data.comparisonCriteria ?? []}
         />

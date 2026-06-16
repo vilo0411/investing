@@ -1,33 +1,33 @@
 [STYLE: flat-illustration] {
-  ref: MoMo / VNPay marketing vectors + Stripe.com editorial illustration
+  ref: Stripe.com editorial illustration + Neo-Brutalist print posters
   best-for: [how-to, step-by-step, checklists, product explainers]
 
   objects: {
-    type: flat vector — phones / charts / coins / contracts / abstract figures
+    type: flat vector — documents / charts / coins / phones / abstract figures
     faces: geometric abstract heads only — NO detailed faces
-    edges: slightly rounded, NOT soft or bubbly
-    outline: { weight: 1.5px, color: #0D1B2A }
-    fills: { primary: #00AD14, secondary: #FFFFFF, accent: #10E7B3 }
+    edges: sharp, 0px radius — NO rounded corners, NO bubbly shapes
+    outline: { weight: 1.5–2px, color: #121212 }
+    fills: { primary: #2A625A (Deep Pine), bg: #FDFCF8, accents: #B4EEE3 / #E2D5F3 / #FFDBD0 }
   }
 
   bg: {
-    color: #FFFFFF
-    overlay: 1px dotted grid 4% OR thin geometric arc motifs teal 6% — optional
+    color: #FDFCF8
+    overlay: 1px ink grid at 4–6% OR none
   }
 
   lighting: {
-    type: 2-tone shading only — solid fill + 8% darker same hue
-    shadow: offset teal 4–6px down-right — optional
-    forbidden: [realistic lighting, drop shadows]
+    type: flat fill only — no shading gradients
+    shadow: hard-edged ink offset 4–6px down-right — optional, Neo-Brutalist signature
+    forbidden: [realistic lighting, soft drop shadows, gradients]
   }
 
   grain: none — crisp vector edges throughout
 
   decoration: [
-    geometric shapes (circles / arcs / dots) — structural intentional placement,
-    large DSC green numerals — geometric slab-serif integrated into layout,
-    dashed connector lines between steps or elements
+    sharp geometric shapes (squares / lines / dots) — structural intentional placement,
+    large Deep Pine numerals — bold slab/geometric integrated into layout,
+    dashed ink connector lines between steps or elements
   ]
 
-  vibe: confident instructional modern — fintech onboarding quality, NOT childish
+  vibe: confident instructional, premium financial-guide quality — architectural, not childish
 }

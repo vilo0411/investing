@@ -43,16 +43,16 @@ const fbUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent
     gap: var(--space-2);
     margin-top: var(--space-8);
     padding-top: var(--space-6);
-    border-top: 1px solid var(--line);
+    border-top: 2px solid var(--line);
     flex-wrap: wrap;
   }
 
   .share-label {
     font-size: 0.82rem;
-    font-weight: 700;
+    font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    color: var(--color-neutral-400);
+    color: var(--brand);
     margin-right: var(--space-1);
   }
 
@@ -61,37 +61,44 @@ const fbUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent
     align-items: center;
     gap: 6px;
     padding: 7px 14px;
-    border-radius: var(--radius-md);
-    font-size: 0.88rem;
-    font-weight: 500;
+    border-radius: var(--radius-sm);
+    font-size: 0.82rem;
+    font-weight: 700;
     cursor: pointer;
-    transition: background var(--transition), color var(--transition);
     text-decoration: none;
-    border: 1.5px solid var(--line);
+    border: 1px solid var(--line);
     background: var(--surface);
-    color: var(--muted);
+    color: var(--text);
+    box-shadow: 1px 1px 0px var(--line);
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast), background var(--transition-fast), color var(--transition-fast);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
   }
 
   .share-btn:hover {
     text-decoration: none;
+    transform: translate(1px, 1px);
+    box-shadow: none;
   }
 
   .share-fb:hover {
     background: #1877f2;
     color: #fff;
-    border-color: #1877f2;
+    border-color: var(--line);
   }
 
   .share-copy:hover {
-    background: var(--color-brand-100);
-    color: var(--color-brand-900);
-    border-color: var(--color-brand-100);
+    background: var(--color-mint);
+    color: var(--text);
+    border-color: var(--line);
   }
 
   .share-copy.copied {
-    background: #d1fae5;
-    color: #065f46;
-    border-color: #6ee7b7;
+    background: var(--color-mint);
+    color: var(--text);
+    border-color: var(--line);
+    box-shadow: none;
+    transform: translate(1px, 1px);
   }
 </style>
 

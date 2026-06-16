@@ -67,6 +67,10 @@ Xem mục "Scoring & Report Format" bên dưới.
 - [ ] Cấu trúc heading đúng thứ bậc: H1 → H2 → H3 (không nhảy cấp)
 - [ ] Chỉ có **đúng 1 H1** trong toàn bài
 - [ ] Secondary keywords xuất hiện tự nhiên trong ít nhất 2 H2
+- [ ] Frontmatter có trường heroImage trỏ tới ảnh hero riêng của bài viết (/images/articles/[slug]/hero.jpg) được crop tỷ lệ 5:3. Tuyệt đối không dùng ảnh mặc định chung của category (ví dụ /images/hero-co-phieu.png).
+- [ ] Có chứa ít nhất 1 thẻ ảnh markdown (inline image) trỏ tới relative path (`./images/[slug]/[filename].jpg`) và tệp ảnh tồn tại trong thư mục `src/content/articles/images/[slug]/`. Ảnh này phải nằm ở các phần H2/H3 phía dưới, tuyệt đối không nằm ngay dưới Sapo.
+- [ ] Không có tiêu đề `## Key Takeaways` hoặc `## Tóm tắt ý chính` (hoặc danh sách tóm tắt trùng lặp) trong phần thân bài viết Markdown.
+
 
 ### [CL2] Anti-AI — CRITICAL nếu có trigger phrase trong blacklist
 
@@ -89,6 +93,7 @@ Nếu phát hiện bất kỳ phrase nào — đánh dấu CRITICAL, ghi line nu
 - [ ] VN-Index viết có dấu gạch ngang
 - [ ] Số liệu dùng dấu phẩy thập phân (5,8% không phải 5.8%)
 - [ ] Lãi suất có ghi `/năm`
+- [ ] Bài viết bắt buộc phải chứa tên thương hiệu "**[Value Investing](/)**" có gắn link về trang chủ ở phần Sapo (mở bài) một cách tự nhiên.
 
 ### [CL4] Persona Alignment — MAJOR nếu sai
 

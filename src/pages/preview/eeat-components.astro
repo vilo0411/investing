@@ -21,7 +21,7 @@ import ComparisonTable from "@/components/ComparisonTable.astro";
 
     <!-- KeyTakeaways -->
     <section>
-      <h2>KeyTakeaways — populated</h2>
+      <h2>KeyTakeaways: populated</h2>
       <KeyTakeaways
         items={[
           "Đa dạng hóa giúp giảm rủi ro tổng thể",
@@ -30,14 +30,14 @@ import ComparisonTable from "@/components/ComparisonTable.astro";
         ]}
       />
 
-      <h2>KeyTakeaways — empty</h2>
+      <h2>KeyTakeaways: empty</h2>
       <p>(no output expected below this line)</p>
       <KeyTakeaways items={[]} />
     </section>
 
     <!-- CitationBox -->
     <section>
-      <h2>CitationBox — variant A (citations + factCheckedDate)</h2>
+      <h2>CitationBox: variant A (citations + factCheckedDate)</h2>
       <CitationBox
         citations={[
           {
@@ -57,13 +57,13 @@ import ComparisonTable from "@/components/ComparisonTable.astro";
         updatedDate={new Date("2026-06-01")}
       />
 
-      <h2>CitationBox — variant B (sources-only, updatedDate fallback)</h2>
+      <h2>CitationBox: variant B (sources-only, updatedDate fallback)</h2>
       <CitationBox
         sources={["Ủy ban Chứng khoán Nhà nước", "Sở Giao dịch Chứng khoán TP.HCM"]}
         updatedDate={new Date("2026-05-15")}
       />
 
-      <h2>CitationBox — variant C (both empty)</h2>
+      <h2>CitationBox: variant C (both empty)</h2>
       <p>(no output expected below this line)</p>
       <CitationBox sources={[]} citations={[]} updatedDate={new Date()} />
     </section>
@@ -72,7 +72,7 @@ import ComparisonTable from "@/components/ComparisonTable.astro";
     <section>
       <h2>AuthorBox</h2>
       <p>
-        AuthorBox không nhận props — dữ liệu lấy trực tiếp từ <code>src/data/authors.ts</code>.
+        AuthorBox không nhận props, dữ liệu lấy trực tiếp từ <code>src/data/authors.ts</code>.
         Khối "Chứng chỉ" hiện đang ẩn vì <code>author.credentials</code> hiện là mảng rỗng
         (<code>credentials: []</code>, theo quyết định D-08). Đoạn văn "Kinh nghiệm"
         (<code>author.experience</code>) vẫn hiển thị bên dưới các thẻ chuyên môn.
@@ -84,7 +84,7 @@ import ComparisonTable from "@/components/ComparisonTable.astro";
 
     <!-- Breadcrumb -->
     <section>
-      <h2>Breadcrumb — variant A (article-style)</h2>
+      <h2>Breadcrumb: variant A (article-style)</h2>
       <Breadcrumb
         items={[
           { label: "Trang chủ", href: "/" },
@@ -94,7 +94,7 @@ import ComparisonTable from "@/components/ComparisonTable.astro";
         ]}
       />
 
-      <h2>Breadcrumb — variant B (category-style)</h2>
+      <h2>Breadcrumb: variant B (category-style)</h2>
       <Breadcrumb
         items={[
           { label: "Trang chủ", href: "/" },
@@ -106,10 +106,10 @@ import ComparisonTable from "@/components/ComparisonTable.astro";
 
     <!-- Disclaimer -->
     <section>
-      <h2>Disclaimer — variant A (default text)</h2>
+      <h2>Disclaimer: variant A (default text)</h2>
       <Disclaimer />
 
-      <h2>Disclaimer — variant B (custom text)</h2>
+      <h2>Disclaimer: variant B (custom text)</h2>
       <Disclaimer text="Đây là nội dung minh họa cho mục đích xem trước component." />
     </section>
 

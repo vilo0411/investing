@@ -23,7 +23,10 @@ const { columns, rows, caption, highlightMap = {} } = Astro.props;
         <tr>
           {row.map((cell, colIndex) => (
             highlightMap[rowIndex]?.includes(colIndex) ? (
-              <td class="winner-cell"><strong>{cell}</strong></td>
+              <td class="winner-cell">
+                <strong>{cell}</strong>
+                <span class="winner-badge" aria-label="Tốt nhất">✓</span>
+              </td>
             ) : (
               <td>{cell}</td>
             )
@@ -75,5 +78,15 @@ const { columns, rows, caption, highlightMap = {} } = Astro.props;
 
   .comparison-table td.winner-cell {
     background: var(--color-mint);
+    position: relative;
+  }
+
+  .winner-badge {
+    display: inline-block;
+    margin-left: 6px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: #1a7a4a;
+    vertical-align: middle;
   }
 </style>

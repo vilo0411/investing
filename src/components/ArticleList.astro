@@ -17,7 +17,11 @@ const { articles } = Astro.props;
     return (
       <a class="article-card" href={path}>
         <div class={`card-thumb ${meta.gradientClass}`}>
-          <span class="card-thumb-abbr">{meta.abbr}</span>
+          {article.data.heroImage ? (
+            <img class="card-thumb-img" src={article.data.heroImage} alt={article.data.title} loading="lazy" width="600" height="338" />
+          ) : (
+            <span class="card-thumb-abbr">{meta.abbr}</span>
+          )}
         </div>
         <div class="card-body">
           <div class="card-tag-row">
@@ -47,23 +51,23 @@ const { articles } = Astro.props;
   .article-card {
     background: var(--surface);
     border: 1px solid var(--line);
-    border-radius: var(--radius-lg);
-    box-shadow: 0 2px 8px rgba(0, 107, 44, 0.06);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
     overflow: hidden;
     text-decoration: none;
     display: flex;
     flex-direction: column;
-    transition: box-shadow var(--transition), transform var(--transition), border-color var(--transition);
+    height: 100%;
+    transition: box-shadow var(--transition-fast), transform var(--transition-fast);
   }
 
   .article-card:hover {
-    box-shadow: 0 6px 24px rgba(0, 107, 44, 0.12);
-    transform: translateY(-3px);
-    border-color: var(--color-brand-100);
+    box-shadow: none;
+    transform: translate(4px, 4px);
     text-decoration: none;
   }
 
-  /* Gradient thumbnails */
+  /* Gradient thumbnails replaced by flat accents with borders */
   .card-thumb {
     width: 100%;
     aspect-ratio: 16 / 9;
@@ -71,25 +75,37 @@ const { articles } = Astro.props;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+    border-bottom: 1px solid var(--line);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .card-thumb-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   .card-thumb-abbr {
     font-family: var(--font-serif);
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 700;
-    color: rgba(0,0,0,0.25);
+    color: var(--text);
+    opacity: 0.25;
     letter-spacing: 0.04em;
   }
 
-  .thumb-stocks   { background: linear-gradient(135deg, #e8f8ee, #a7f3c0); }
-  .thumb-etf      { background: linear-gradient(135deg, #eef2ff, #c7d2fe); }
-  .thumb-fund     { background: linear-gradient(135deg, #fdf4ff, #e9d5ff); }
-  .thumb-bond     { background: linear-gradient(135deg, #eff6ff, #bfdbfe); }
-  .thumb-derivative { background: linear-gradient(135deg, #ecfeff, #a5f3fc); }
-  .thumb-analyse  { background: linear-gradient(135deg, #fff7ed, #fed7aa); }
-  .thumb-technical { background: linear-gradient(135deg, #f0fdf4, #bbf7d0); }
-  .thumb-review   { background: linear-gradient(135deg, #fdf2f8, #fbcfe8); }
-  .thumb-investor { background: linear-gradient(135deg, #fefce8, #fde68a); }
+  .thumb-stocks   { background: var(--color-mint); }
+  .thumb-etf      { background: var(--color-mint); }
+  .thumb-fund     { background: var(--color-mint); }
+  .thumb-bond     { background: var(--color-mint); }
+  .thumb-derivative { background: var(--color-mint); }
+  .thumb-analyse  { background: var(--color-lilac); }
+  .thumb-technical { background: var(--color-lilac); }
+  .thumb-review   { background: var(--color-peach); }
+  .thumb-investor { background: var(--color-peach); }
 
   .card-body {
     padding: 18px 20px 20px;
@@ -112,31 +128,36 @@ const { articles } = Astro.props;
     letter-spacing: 0.05em;
     text-transform: uppercase;
     padding: 3px 10px;
-    border-radius: 999px;
-    background: var(--color-brand-100);
-    color: var(--color-brand-900);
+    border-radius: var(--radius-sm);
+    background: var(--surface-alt);
+    color: var(--text);
+    border: 1px solid var(--line);
   }
 
-  .tag-etf      { background: #eef2ff; color: #3730a3; }
-  .tag-quy-dau-tu { background: #fdf4ff; color: #7e22ce; }
-  .tag-trai-phieu { background: #eff6ff; color: #1d4ed8; }
-  .tag-phan-tich  { background: #fff7ed; color: #c2410c; }
-  .tag-reviews    { background: #fdf2f8; color: #be185d; }
-  .tag-nha-dau-tu { background: #fefce8; color: #a16207; }
+  .tag-co-phieu { background: var(--color-mint); color: var(--text); }
+  .tag-etf      { background: var(--color-mint); color: var(--text); }
+  .tag-quy-dau-tu { background: var(--color-mint); color: var(--text); }
+  .tag-trai-phieu { background: var(--color-mint); color: var(--text); }
+  .tag-phai-sinh { background: var(--color-mint); color: var(--text); }
+  .tag-phan-tich  { background: var(--color-lilac); color: var(--text); }
+  .tag-phan-tich-ky-thuat { background: var(--color-lilac); color: var(--text); }
+  .tag-reviews    { background: var(--color-peach); color: var(--text); }
+  .tag-nha-dau-tu { background: var(--color-peach); color: var(--text); }
 
   .card-read-time {
     font-size: 12px;
     color: var(--muted);
+    font-weight: 500;
   }
 
   .card-title {
     font-family: var(--font-serif);
-    font-size: 1.05rem;
+    font-size: 1.15rem;
     font-weight: 700;
     color: var(--text);
     line-height: 1.35;
     margin: 0 0 8px;
-    transition: color var(--transition);
+    transition: color var(--transition-fast);
     display: -webkit-box;
     -webkit-line-clamp: 2;
     line-clamp: 2;

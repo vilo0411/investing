@@ -1,0 +1,182 @@
+---
+import { author } from "@/data/authors";
+---
+
+<section class="eeat-section">
+  <div class="container eeat-grid">
+    <div class="eeat-author-card">
+      <div class="eyebrow">Tác giả & Sáng lập</div>
+      <div class="author-profile-block">
+        <div class="author-avatar-square">L</div>
+        <div class="author-details">
+          <h3 class="author-name-title">{author.name}</h3>
+          <p class="author-bio-short">
+            Phụ trách nội dung giáo dục đầu tư, cam kết thông tin khách quan, có nguồn kiểm chứng rõ ràng cho nhà đầu tư cá nhân.
+          </p>
+          <a class="see-all-author" href="/author/nguyen-viet-loc/">Xem hồ sơ tác giả <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="eeat-principles-block">
+      <div class="eyebrow">Vì sao tin cậy blog này</div>
+      <h3 class="principles-title">Nguyên tắc xây dựng nội dung</h3>
+      <div class="principles-horizontal-list">
+        <div class="principle-item">
+          <div class="principle-bullet"></div>
+          <div>
+            <strong>Quy trình biên tập rõ ràng:</strong> Rà soát nguồn, tính cập nhật và rủi ro trước khi xuất bản.
+          </div>
+        </div>
+        <div class="principle-item">
+          <div class="principle-bullet"></div>
+          <div>
+            <strong>Không khuyến nghị mua/bán:</strong> Nội dung mang tính giáo dục học thuật, không thế chỗ tư vấn cá nhân.
+          </div>
+        </div>
+        <div class="principle-item">
+          <div class="principle-bullet"></div>
+          <div>
+            <strong>Nguồn gốc & Tác giả minh bạch:</strong> Luôn ghi rõ danh tính người viết và trích dẫn tài liệu tham khảo chính thống.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .eeat-section {
+    background: var(--color-pine-700);
+    color: var(--surface);
+    border-bottom: 2px solid var(--line);
+    padding: 80px 0;
+  }
+
+  .eeat-section .eyebrow {
+    color: var(--color-mint);
+    margin-bottom: 8px;
+    font-weight: 700;
+  }
+
+  .eeat-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.9fr);
+    gap: 56px;
+    align-items: start;
+  }
+
+  .eeat-author-card {
+    border: 2px solid var(--line);
+    background: var(--surface);
+    color: var(--text);
+    padding: 28px;
+    box-shadow: 4px 4px 0px var(--line);
+  }
+
+  .author-profile-block {
+    display: flex;
+    gap: 20px;
+    margin-top: 16px;
+  }
+
+  .author-avatar-square {
+    width: 64px;
+    height: 64px;
+    background: var(--color-pine-700);
+    color: var(--surface);
+    font-family: var(--font-serif);
+    font-size: 2rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--line);
+    flex-shrink: 0;
+  }
+
+  .author-details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .author-name-title {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+
+  .author-bio-short {
+    font-size: 0.88rem;
+    color: var(--muted);
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .see-all-author {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--color-pine-700);
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    margin-top: 4px;
+    display: inline-block;
+  }
+
+  .see-all-author:hover {
+    color: var(--brand);
+  }
+
+  .eeat-principles-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .principles-title {
+    color: var(--surface);
+    font-size: 1.75rem;
+    margin: 0 0 24px;
+    font-family: var(--font-serif);
+    font-weight: 700;
+  }
+
+  .principles-horizontal-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .principle-item {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--surface);
+  }
+
+  .principle-bullet {
+    width: 8px;
+    height: 8px;
+    background: var(--color-mint);
+    border: 1px solid var(--line);
+    margin-top: 6px;
+    flex-shrink: 0;
+  }
+
+  .principle-item strong {
+    color: var(--color-mint);
+    display: block;
+    margin-bottom: 2px;
+  }
+
+  @media (max-width: 860px) {
+    .eeat-grid {
+      grid-template-columns: 1fr;
+      gap: 32px;
+    }
+  }
+</style>

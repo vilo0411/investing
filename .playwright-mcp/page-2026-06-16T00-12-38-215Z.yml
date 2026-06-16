@@ -1,0 +1,370 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation "Menu chính" [ref=e3]:
+      - link "Value Investing" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - img [ref=e5]
+        - generic [ref=e8]: Value Investing
+      - generic [ref=e9]:
+        - link "Đầu tư" [ref=e11] [cursor=pointer]:
+          - /url: /dau-tu/
+          - text: Đầu tư
+          - img [ref=e12]
+        - link "Phân tích" [ref=e15] [cursor=pointer]:
+          - /url: /phan-tich/
+          - text: Phân tích
+          - img [ref=e16]
+        - link "Nhà đầu tư" [ref=e18] [cursor=pointer]:
+          - /url: /nha-dau-tu/
+        - link "Reviews" [ref=e19] [cursor=pointer]:
+          - /url: /reviews/
+      - button "Mở tìm kiếm" [ref=e21]:
+        - img [ref=e22]
+  - main [ref=e25]:
+    - generic [ref=e27]:
+      - navigation "Breadcrumb" [ref=e28]:
+        - list [ref=e29]:
+          - listitem [ref=e30]:
+            - link "Trang chủ" [ref=e31] [cursor=pointer]:
+              - /url: /
+            - generic [ref=e32]: /
+          - listitem [ref=e33]:
+            - link "Reviews" [ref=e34] [cursor=pointer]:
+              - /url: /reviews/
+            - generic [ref=e35]: /
+          - listitem [ref=e36]:
+            - generic [ref=e37]: "So sánh TCBS vs SSI: Nên chọn công ty chứng khoán nào năm 2026?"
+      - generic [ref=e38]: Reviews
+      - 'heading "So sánh TCBS vs SSI: Nên chọn công ty chứng khoán nào năm 2026?" [level=1] [ref=e39]'
+      - paragraph [ref=e40]: "So sánh chi tiết TCBS và SSI năm 2026 theo 5 tiêu chí: phí giao dịch, lãi suất margin, giao diện ứng dụng, báo cáo phân tích và hỗ trợ khách hàng."
+      - generic [ref=e41]:
+        - generic [ref=e42]: L
+        - generic [ref=e43]:
+          - generic [ref=e44]:
+            - generic [ref=e45]: "Tác giả:"
+            - link "Nguyễn Viết Lộc" [ref=e46] [cursor=pointer]:
+              - /url: /author/nguyen-viet-loc/
+            - generic [ref=e47]: "|"
+            - generic [ref=e48]: "Cập nhật: 16/6/2026"
+            - generic [ref=e49]: "|"
+            - generic [ref=e50]: 8 phút đọc
+          - generic [ref=e52]:
+            - text: Rà soát theo
+            - link "chính sách biên tập" [ref=e53] [cursor=pointer]:
+              - /url: /editorial-policy/
+      - generic "Thông tin độ tin cậy của bài viết" [ref=e54]:
+        - generic [ref=e55]: Kiểm tra nguồn
+        - generic [ref=e56]: Không tư vấn cá nhân
+        - generic [ref=e57]: Có quy trình đính chính
+    - 'img "So sánh TCBS vs SSI: Nên chọn công ty chứng khoán nào năm 2026?" [ref=e60]'
+    - navigation "Điều hướng nhanh trong bài" [ref=e61]:
+      - list [ref=e62]:
+        - listitem [ref=e63]:
+          - link "So sánh" [ref=e64] [cursor=pointer]:
+            - /url: "#so-sanh"
+        - listitem [ref=e65]:
+          - link "Ưu nhược điểm" [ref=e66] [cursor=pointer]:
+            - /url: "#uu-nhuoc-diem"
+        - listitem [ref=e67]:
+          - link "Nên chọn ai" [ref=e68] [cursor=pointer]:
+            - /url: "#nen-chon-ai"
+    - article [ref=e70]:
+      - complementary "Lưu ý tài chính" [ref=e71]:
+        - strong [ref=e72]: "Lưu ý trước khi đọc:"
+        - generic [ref=e73]: Value Investing không cung cấp dịch vụ tư vấn đầu tư cá nhân, môi giới chứng khoán hoặc tín hiệu giao dịch. Nội dung chỉ nhằm mục đích giáo dục.
+      - complementary "Tóm tắt nội dung chính" [ref=e74]:
+        - paragraph [ref=e75]: Tóm tắt nội dung chính
+        - list [ref=e76]:
+          - listitem [ref=e77]: TCBS thắng rõ ràng về phí (0% vs 0.15–0.25%) và công cụ phân tích tích hợp TCInvest.
+          - listitem [ref=e78]: SSI vượt trội về độ ổn định hệ thống, uy tín thương hiệu và chất lượng báo cáo phân tích.
+          - listitem [ref=e79]: Nhà đầu tư tự chủ với vốn dưới 500 triệu nên chọn TCBS để tối ưu chi phí.
+          - listitem [ref=e80]: Nhà đầu tư có vốn lớn hoặc cần môi giới dẫn dắt nên cân nhắc SSI.
+          - listitem [ref=e81]: "Giải pháp tối ưu nhất: mở cả hai, dùng TCBS để giao dịch và SSI để nghiên cứu."
+      - generic [ref=e82]:
+        - generic [ref=e83]:
+          - generic [ref=e84]:
+            - text: ★ TCBS (Techcom Securities)
+            - generic [ref=e85]: 4 /4 tiêu chí
+            - text: "Tốt cho: Nhà đầu tư tự chủ, ưu tiên phí thấp & công cụ phân tích"
+            - link "Mở tài khoản TCBS (Techcom Securities)" [ref=e87] [cursor=pointer]:
+              - /url: https://tcbs.com.vn
+          - generic [ref=e88]:
+            - text: SSI Securities
+            - generic [ref=e89]: 0 /4 tiêu chí
+            - text: "Tốt cho: Nhà đầu tư cần sự ổn định, uy tín & phân tích chuyên sâu"
+        - generic [ref=e90]:
+          - heading "So sánh nhanh" [level=2] [ref=e91]
+          - table [ref=e93]:
+            - rowgroup [ref=e94]:
+              - row "Tiêu chí TCBS (Techcom Securities) SSI Securities" [ref=e95]:
+                - columnheader "Tiêu chí" [ref=e96]
+                - columnheader "TCBS (Techcom Securities)" [ref=e97]
+                - columnheader "SSI Securities" [ref=e98]
+            - rowgroup [ref=e99]:
+              - row "Phí giao dịch 0% (miễn phí trọn đời) Tốt nhất 0.15% – 0.25%" [ref=e100]:
+                - cell "Phí giao dịch" [ref=e101]
+                - cell "0% (miễn phí trọn đời) Tốt nhất" [ref=e102]:
+                  - strong [ref=e103]: 0% (miễn phí trọn đời)
+                  - generic "Tốt nhất" [ref=e104]: ✓
+                - cell "0.15% – 0.25%" [ref=e105]
+              - row "Lãi suất margin 10.0%/năm Tốt nhất 11.5%/năm" [ref=e106]:
+                - cell "Lãi suất margin" [ref=e107]
+                - cell "10.0%/năm Tốt nhất" [ref=e108]:
+                  - strong [ref=e109]: 10.0%/năm
+                  - generic "Tốt nhất" [ref=e110]: ✓
+                - cell "11.5%/năm" [ref=e111]
+              - row "Đánh giá app 4.5/5 Tốt nhất 4.2/5" [ref=e112]:
+                - cell "Đánh giá app" [ref=e113]
+                - cell "4.5/5 Tốt nhất" [ref=e114]:
+                  - strong [ref=e115]: 4.5/5
+                  - generic "Tốt nhất" [ref=e116]: ✓
+                - cell "4.2/5" [ref=e117]
+              - row "Nạp tiền tối thiểu Không yêu cầu Tốt nhất Không yêu cầu" [ref=e118]:
+                - cell "Nạp tiền tối thiểu" [ref=e119]
+                - cell "Không yêu cầu Tốt nhất" [ref=e120]:
+                  - strong [ref=e121]: Không yêu cầu
+                  - generic "Tốt nhất" [ref=e122]: ✓
+                - cell "Không yêu cầu" [ref=e123]
+        - generic [ref=e124]:
+          - heading "Ưu & nhược điểm từng bên" [level=2] [ref=e125]
+          - generic [ref=e126]:
+            - generic [ref=e127]:
+              - generic [ref=e128]: TCBS (Techcom Securities) 4.7/5
+              - paragraph [ref=e129]: "Tốt cho: Nhà đầu tư tự chủ, ưu tiên phí thấp & công cụ phân tích"
+              - generic [ref=e130]:
+                - generic [ref=e131]:
+                  - paragraph [ref=e132]: Ưu điểm
+                  - list [ref=e133]:
+                    - listitem [ref=e134]: ✓ Miễn 100% phí giao dịch cổ phiếu — Zero-fee áp dụng vĩnh viễn
+                    - listitem [ref=e135]: "✓ Bộ công cụ TCInvest: báo cáo tài chính, định giá, phân tích kỹ thuật tích hợp"
+                    - listitem [ref=e136]: ✓ Liên kết hệ sinh thái Techcombank — chuyển tiền tức thì, không mất phí
+                    - listitem [ref=e137]: ✓ Giao diện ứng dụng hiện đại, thao tác đặt lệnh trực quan
+                - generic [ref=e138]:
+                  - paragraph [ref=e139]: Nhược điểm
+                  - list [ref=e140]:
+                    - listitem [ref=e141]: ✕ Không có đội ngũ môi giới tư vấn trực tiếp
+                    - listitem [ref=e142]: ✕ Hỗ trợ qua chatbot, phản hồi đôi khi chậm trong giờ cao điểm
+                    - listitem [ref=e143]: ✕ Thỉnh thoảng lag/nghẽn lệnh vào phiên giao dịch biến động mạnh
+              - paragraph [ref=e144]: TCBS là lựa chọn tối ưu cho phần lớn nhà đầu tư cá nhân tại Việt Nam. Zero-fee kết hợp TCInvest tạo ra lợi thế chi phí và thông tin rõ ràng — đặc biệt nếu bạn không cần môi giới dẫn dắt.
+            - generic [ref=e145]:
+              - generic [ref=e146]: SSI Securities 4.5/5
+              - paragraph [ref=e147]: "Tốt cho: Nhà đầu tư cần sự ổn định, uy tín & phân tích chuyên sâu"
+              - generic [ref=e148]:
+                - generic [ref=e149]:
+                  - paragraph [ref=e150]: Ưu điểm
+                  - list [ref=e151]:
+                    - listitem [ref=e152]: ✓ Uy tín và an toàn tài chính hàng đầu — hoạt động liên tục từ 1999
+                    - listitem [ref=e153]: ✓ Hệ thống giao dịch ổn định nhất thị trường, cực kỳ hiếm khi xảy ra lỗi
+                    - listitem [ref=e154]: ✓ Báo cáo phân tích doanh nghiệp thuộc hàng chất lượng cao nhất Việt Nam
+                    - listitem [ref=e155]: ✓ Đội ngũ môi giới chuyên nghiệp, có kinh nghiệm dày dặn
+                - generic [ref=e156]:
+                  - paragraph [ref=e157]: Nhược điểm
+                  - list [ref=e158]:
+                    - listitem [ref=e159]: ✕ Phí giao dịch cao hơn đáng kể so với TCBS và các đối thủ mới
+                    - listitem [ref=e160]: ✕ Lãi suất margin không cạnh tranh
+                    - listitem [ref=e161]: ✕ Giao diện ứng dụng ít hiện đại hơn
+              - paragraph [ref=e162]: SSI là lựa chọn tốt nhất khi sự ổn định và uy tín là ưu tiên hàng đầu — đặc biệt với nhà đầu tư có vốn lớn, nơi chi phí giao dịch cao hơn một chút không còn là rào cản đáng kể.
+        - generic [ref=e163]:
+          - heading "Nên chọn ai?" [level=2] [ref=e164]
+          - generic [ref=e165]:
+            - generic [ref=e166]:
+              - generic [ref=e167]:
+                - text: Nếu bạn là...
+                - paragraph [ref=e168]: Tôi muốn tối đa hóa lợi nhuận, không cần môi giới tư vấn
+              - generic [ref=e169]:
+                - generic [ref=e170]:
+                  - text: "Lựa chọn tốt nhất:"
+                  - strong [ref=e171]: TCBS (Techcom Securities)
+                - paragraph [ref=e172]: TCBS miễn 100% phí giao dịch cổ phiếu và có bộ công cụ TCInvest đủ mạnh để tự nghiên cứu — phù hợp hoàn hảo với nhà đầu tư tự chủ.
+                - link "Mở tài khoản TCBS (Techcom Securities)" [ref=e174] [cursor=pointer]:
+                  - /url: https://tcbs.com.vn
+            - generic [ref=e175]:
+              - generic [ref=e176]:
+                - text: Nếu bạn là...
+                - paragraph [ref=e177]: Tôi có vốn lớn (>500 triệu) và cần đối tác tin cậy dài hạn
+              - generic [ref=e178]:
+                - generic [ref=e179]:
+                  - text: "Lựa chọn tốt nhất:"
+                  - strong [ref=e180]: SSI Securities
+                - paragraph [ref=e181]: SSI là công ty chứng khoán uy tín nhất Việt Nam với hệ thống cực kỳ ổn định và báo cáo phân tích chất lượng cao — phù hợp khi số vốn đủ lớn để phí giao dịch không còn là ưu tiên hàng đầu.
+                - link "Mở tài khoản SSI Securities" [ref=e183] [cursor=pointer]:
+                  - /url: https://www.ssi.com.vn
+            - generic [ref=e184]:
+              - generic [ref=e185]:
+                - text: Nếu bạn là...
+                - paragraph [ref=e186]: Tôi là F0 muốn vừa học vừa đầu tư
+              - generic [ref=e187]:
+                - generic [ref=e188]:
+                  - text: "Lựa chọn tốt nhất:"
+                  - strong [ref=e189]: TCBS (Techcom Securities)
+                - paragraph [ref=e190]: TCInvest của TCBS cung cấp báo cáo doanh nghiệp miễn phí, dễ đọc và trực quan — giúp người mới xây dựng nền tảng phân tích cơ bản mà không tốn thêm chi phí.
+                - link "Mở tài khoản TCBS (Techcom Securities)" [ref=e192] [cursor=pointer]:
+                  - /url: https://tcbs.com.vn
+      - paragraph [ref=e193]:
+        - text: "Hai câu hỏi phổ biến nhất khi người Việt bắt đầu đầu tư chứng khoán: “Chọn TCBS hay SSI?” và “Tại sao hai bên lại khác nhau đến vậy?”. Bài so sánh này từ"
+        - strong [ref=e194]:
+          - link "Value Investing" [ref=e195] [cursor=pointer]:
+            - /url: /
+        - text: sẽ đặt TCBS và SSI cạnh nhau theo 5 tiêu chí thực tế để bạn có câu trả lời rõ ràng.
+      - heading "Tại sao so sánh TCBS và SSI?" [level=2] [ref=e196]
+      - paragraph [ref=e197]: TCBS và SSI đại diện cho hai triết lý hoàn toàn khác nhau trong ngành môi giới chứng khoán Việt Nam.
+      - paragraph [ref=e198]:
+        - strong [ref=e199]: TCBS
+        - text: đặt cược vào công nghệ và phí thấp — chiến lược tương tự Robinhood hay Interactive Brokers.
+        - strong [ref=e200]: SSI
+        - text: giữ mô hình truyền thống với đội ngũ môi giới chuyên nghiệp và thương hiệu uy tín lâu đời. Cả hai đều có vị trí riêng, và lựa chọn đúng phụ thuộc vào phong cách đầu tư của bạn.
+      - heading "Phân tích chi tiết từng tiêu chí" [level=2] [ref=e201]
+      - 'heading "1. Phí giao dịch: TCBS thắng tuyệt đối" [level=3] [ref=e202]'
+      - paragraph [ref=e203]:
+        - text: Đây là điểm khác biệt lớn nhất giữa hai bên. TCBS áp dụng chính sách
+        - strong [ref=e204]: Zero-fee
+        - text: — miễn 100% phí giao dịch cổ phiếu áp dụng vĩnh viễn cho tất cả khách hàng tự giao dịch. SSI thu phí từ 0.15% đến 0.25% tùy khối lượng.
+      - paragraph [ref=e205]:
+        - text: Nếu bạn giao dịch 200 triệu đồng mỗi tháng, chênh lệch phí lên đến
+        - strong [ref=e206]: 300.000 – 500.000 đồng/tháng
+        - text: — tức hơn 3.6 – 6 triệu đồng/năm chỉ riêng tiền phí môi giới.
+      - 'heading "2. Công cụ phân tích: TCBS dẫn về tích hợp, SSI dẫn về chuyên sâu" [level=3] [ref=e207]'
+      - paragraph [ref=e208]:
+        - strong [ref=e209]: TCInvest
+        - text: "của TCBS tích hợp trực tiếp vào ứng dụng: báo cáo tài chính, định giá P/E, P/B, phân tích kỹ thuật đều có trên cùng một màn hình. Đây là lợi thế lớn cho nhà đầu tư cơ bản không muốn chuyển qua lại giữa nhiều công cụ."
+      - paragraph [ref=e210]:
+        - text: Ngược lại,
+        - strong [ref=e211]: báo cáo phân tích của SSI Research
+        - text: được giới chuyên môn đánh giá cao hơn về mức độ chuyên sâu — đặc biệt với các phân tích ngành và định giá doanh nghiệp lớn.
+      - 'heading "3. Hệ thống giao dịch: SSI ổn định hơn" [level=3] [ref=e212]'
+      - paragraph [ref=e213]: Đây là điểm SSI chiếm ưu thế rõ ràng. Hệ thống giao dịch SSI được xây dựng và vận hành hơn 25 năm, cực kỳ hiếm khi xảy ra lỗi hay nghẽn lệnh. TCBS đã cải thiện đáng kể trong 2 năm gần đây nhưng vẫn nhận phản ánh về tình trạng lag vào các phiên thị trường biến động lớn.
+      - 'heading "4. Hỗ trợ khách hàng: SSI có đội ngũ, TCBS có chatbot" [level=3] [ref=e214]'
+      - paragraph [ref=e215]: TCBS không sử dụng môi giới truyền thống — toàn bộ hỗ trợ qua ứng dụng, chatbot và tổng đài. SSI có đội ngũ môi giới trực tiếp, phù hợp hơn nếu bạn cần tư vấn trong các tình huống phức tạp (đặt lệnh lô lẻ, sửa lệnh, xử lý sự cố kỹ thuật).
+      - 'heading "Kết luận: Không có câu trả lời duy nhất" [level=2] [ref=e216]'
+      - paragraph [ref=e217]: Không có công ty chứng khoán nào “tốt hơn tuyệt đối” — chỉ có lựa chọn phù hợp hơn với từng người.
+      - paragraph [ref=e218]:
+        - text: Nếu bạn
+        - strong [ref=e219]: tự chủ trong đầu tư
+        - text: và muốn tối đa hóa lợi nhuận bằng cách tối thiểu hóa phí —
+        - strong [ref=e220]: TCBS là lựa chọn rõ ràng
+        - text: . Nếu bạn
+        - strong [ref=e221]: ưu tiên sự an toàn tuyệt đối
+        - text: và cần đội ngũ chuyên nghiệp hỗ trợ —
+        - strong [ref=e222]: SSI xứng đáng với chi phí cao hơn
+        - text: .
+      - paragraph [ref=e223]: "Giải pháp thực tế mà nhiều nhà đầu tư kinh nghiệm áp dụng: mở cả hai tài khoản, dùng TCBS để thực hiện lệnh (phí 0%) và đọc báo cáo SSI Research để nghiên cứu."
+      - generic [ref=e224]:
+        - heading "Câu hỏi thường gặp" [level=2] [ref=e225]
+        - generic [ref=e226]:
+          - group [ref=e227]:
+            - generic "TCBS và SSI cái nào phí rẻ hơn?" [ref=e228] [cursor=pointer]
+          - group [ref=e229]:
+            - generic "Có thể mở tài khoản cả TCBS lẫn SSI không?" [ref=e230] [cursor=pointer]
+          - group [ref=e231]:
+            - generic "SSI có ổn định hơn TCBS không?" [ref=e232] [cursor=pointer]
+      - complementary "Nguồn tham khảo và kiểm tra" [ref=e233]:
+        - paragraph [ref=e234]: "Cập nhật lần cuối: 16/6/2026"
+        - heading "Nguồn tham khảo" [level=2] [ref=e235]
+        - list [ref=e236]:
+          - listitem [ref=e237]: Biểu phí giao dịch chính thức của TCBS và SSI (tháng 6/2026)
+          - listitem [ref=e238]: Báo cáo thị phần môi giới HOSE quý 1/2026
+          - listitem [ref=e239]: Trải nghiệm thực tế hệ thống giao dịch hai nền tảng
+      - generic [ref=e240]:
+        - heading "Quy trình kiểm định nội dung" [level=2] [ref=e241]
+        - paragraph [ref=e242]:
+          - text: Nội dung được rà soát về tính chính xác, tính cập nhật và mức độ phù hợp với nhà đầu tư cá nhân. Nếu phát hiện lỗi có thể ảnh hưởng đến quyết định tài chính, bài viết sẽ được cập nhật và ghi nhận theo
+          - link "chính sách đính chính" [ref=e243] [cursor=pointer]:
+            - /url: /corrections-policy/
+          - text: .
+      - complementary [ref=e244]:
+        - generic [ref=e245]: L
+        - generic [ref=e246]:
+          - generic [ref=e247]:
+            - generic [ref=e248]:
+              - paragraph [ref=e249]: Về tác giả
+              - link "Nguyễn Viết Lộc" [ref=e250] [cursor=pointer]:
+                - /url: /author/nguyen-viet-loc
+            - link "Xem hồ sơ" [ref=e251] [cursor=pointer]:
+              - /url: /author/nguyen-viet-loc
+          - paragraph [ref=e252]: Người sáng lập & Phụ trách nội dung
+          - paragraph [ref=e253]: Lộc Nguyễn hiện là Chuyên viên SEO tại Công ty Chứng khoán DSC. Với hơn 3 năm kinh nghiệm triển khai nội dung và tối ưu hiệu suất tìm kiếm cho các sản phẩm tài chính lớn, Lộc sáng lập Value Investing nhằm chia sẻ các kiến thức đầu tư thực chiến bằng ngôn ngữ bình dân, giúp F0 tự tin và an toàn hơn trên thị trường.
+          - generic "Chuyên môn tác giả" [ref=e254]:
+            - generic [ref=e255]: Đầu tư giá trị
+            - generic [ref=e256]: Đơn giản hóa thuật ngữ tài chính
+            - generic [ref=e257]: Sản phẩm đầu tư cho người mới bắt đầu
+            - generic [ref=e258]: Cấu trúc thông tin tài chính (SEO)
+          - paragraph [ref=e259]: Hơn 3 năm kinh nghiệm thực tế triển khai nội dung tài chính và tối ưu hiệu suất tìm kiếm cho các sản phẩm tài chính lớn (hiện là Chuyên viên SEO tại Công ty Chứng khoán DSC). Chuyên sâu về nghiên cứu hành vi tìm kiếm (Search Intent) của nhà đầu tư cá nhân và đơn giản hóa cấu trúc thông tin.
+          - paragraph [ref=e260]: Nội dung được viết cho mục đích giáo dục tài chính, ưu tiên nguồn chính thống và tiếp nhận phản hồi đính chính qua email công khai.
+      - generic [ref=e261]:
+        - generic [ref=e262]: Chia sẻ
+        - link "Chia sẻ lên Facebook" [ref=e263] [cursor=pointer]:
+          - /url: https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fvalueinvesting.com.vn%2Freviews%2Fso-sanh-tcbs-vs-ssi%2F&quote=So%20s%C3%A1nh%20TCBS%20vs%20SSI%3A%20N%C3%AAn%20ch%E1%BB%8Dn%20c%C3%B4ng%20ty%20ch%E1%BB%A9ng%20kho%C3%A1n%20n%C3%A0o%20n%C4%83m%202026%3F
+          - img [ref=e264]
+          - text: Facebook
+        - button "Sao chép đường dẫn" [ref=e266] [cursor=pointer]:
+          - img [ref=e267]
+          - generic [ref=e270]: Sao chép link
+      - generic [ref=e271]:
+        - paragraph [ref=e272]: Bài viết liên quan
+        - generic [ref=e273]:
+          - 'link "Công ty chứng khoán phí thấp: Có nên chọn vì zero-fee? So sánh phí giao dịch tại các công ty chứng khoán Việt Nam. Tìm hiểu xu hướng miễn phí giao dịch trọn đời (zero-fee) và lưu ý khi lựa chọn. 5 phút đọc" [ref=e274] [cursor=pointer]':
+            - /url: /reviews/cong-ty-chung-khoan-phi-thap/
+            - strong [ref=e275]: "Công ty chứng khoán phí thấp: Có nên chọn vì zero-fee?"
+            - paragraph [ref=e276]: So sánh phí giao dịch tại các công ty chứng khoán Việt Nam. Tìm hiểu xu hướng miễn phí giao dịch trọn đời (zero-fee) và lưu ý khi lựa chọn.
+            - generic [ref=e277]: 5 phút đọc
+          - 'link "Review công ty chứng khoán cho người mới: Chọn ở đâu tốt? Review chi tiết ưu và nhược điểm của các công ty chứng khoán lớn tại Việt Nam giúp người mới bắt đầu (F0) lựa chọn nơi mở tài khoản tốt nhất. 5 phút đọc" [ref=e278] [cursor=pointer]':
+            - /url: /reviews/review-cong-ty-chung-khoan-cho-nguoi-moi/
+            - strong [ref=e279]: "Review công ty chứng khoán cho người mới: Chọn ở đâu tốt?"
+            - paragraph [ref=e280]: Review chi tiết ưu và nhược điểm của các công ty chứng khoán lớn tại Việt Nam giúp người mới bắt đầu (F0) lựa chọn nơi mở tài khoản tốt nhất.
+            - generic [ref=e281]: 5 phút đọc
+          - 'link "Review DSC Securities: Ưu nhược điểm & Có nên mở tài khoản không? Đánh giá chi tiết Chứng khoán DSC năm 2026: phí giao dịch, lãi suất margin, giao diện ứng dụng, chất lượng hỗ trợ và hướng dẫn mở tài khoản từng bước. 7 phút đọc" [ref=e282] [cursor=pointer]':
+            - /url: /reviews/review-dsc-securities/
+            - strong [ref=e283]: "Review DSC Securities: Ưu nhược điểm & Có nên mở tài khoản không?"
+            - paragraph [ref=e284]: "Đánh giá chi tiết Chứng khoán DSC năm 2026: phí giao dịch, lãi suất margin, giao diện ứng dụng, chất lượng hỗ trợ và hướng dẫn mở tài khoản từng bước."
+            - generic [ref=e285]: 7 phút đọc
+  - contentinfo [ref=e286]:
+    - generic [ref=e287]:
+      - generic [ref=e288]:
+        - strong [ref=e289]: Value Investing
+        - paragraph [ref=e290]: Kiến thức đầu tư giá trị cho người Việt, miễn phí, có nguồn, không khuyến nghị mua bán.
+      - generic [ref=e291]:
+        - heading "Đầu tư" [level=5] [ref=e292]
+        - link "Cổ phiếu" [ref=e293] [cursor=pointer]:
+          - /url: /dau-tu/co-phieu/
+        - link "Quỹ ETF" [ref=e294] [cursor=pointer]:
+          - /url: /dau-tu/etf/
+        - link "Trái phiếu" [ref=e295] [cursor=pointer]:
+          - /url: /dau-tu/trai-phieu/
+        - link "Phái sinh" [ref=e296] [cursor=pointer]:
+          - /url: /dau-tu/phai-sinh/
+      - generic [ref=e297]:
+        - heading "Phân tích & Review" [level=5] [ref=e298]
+        - link "Phân tích cơ bản" [ref=e299] [cursor=pointer]:
+          - /url: /phan-tich/co-ban/
+        - link "Phân tích kỹ thuật" [ref=e300] [cursor=pointer]:
+          - /url: /phan-tich/ky-thuat/
+        - link "Reviews" [ref=e301] [cursor=pointer]:
+          - /url: /reviews/
+        - link "Nhà đầu tư" [ref=e302] [cursor=pointer]:
+          - /url: /nha-dau-tu/
+      - generic [ref=e303]:
+        - heading "Về trang web" [level=5] [ref=e304]
+        - link "Về dự án" [ref=e305] [cursor=pointer]:
+          - /url: /about/
+        - link "Biên tập" [ref=e306] [cursor=pointer]:
+          - /url: /editorial-policy/
+        - link "Nguồn tham khảo" [ref=e307] [cursor=pointer]:
+          - /url: /sources-policy/
+        - link "Đính chính" [ref=e308] [cursor=pointer]:
+          - /url: /corrections-policy/
+        - link "Liên hệ" [ref=e309] [cursor=pointer]:
+          - /url: /contact/
+    - generic [ref=e310]: © 2026 Value Investing. Value Investing không cung cấp dịch vụ tư vấn đầu tư cá nhân, môi giới chứng khoán hoặc tín hiệu giao dịch. Nội dung chỉ nhằm mục đích giáo dục.
+  - generic [ref=e313]:
+    - button "Menu" [ref=e314]:
+      - img [ref=e316]
+      - generic: Menu
+    - button "Inspect" [ref=e320]:
+      - img [ref=e322]
+      - generic: Inspect
+    - button "Audit" [ref=e324]:
+      - img [ref=e326]
+      - generic: Audit
+    - button "Settings" [ref=e329]:
+      - img [ref=e331]
+      - generic: Settings

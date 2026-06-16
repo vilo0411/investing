@@ -75,16 +75,26 @@ const { pros, cons } = Astro.props;
     font-weight: 500;
   }
 
-  .pros-col li::before,
-  .cons-col li::before {
-    content: "";
+  .pros-col li::before {
+    content: "✓";
     position: absolute;
-    left: -1.25rem;
-    top: 0.6rem;
-    width: 5px;
-    height: 5px;
-    background-color: var(--text);
-    border-radius: 0px;
+    left: -1.4rem;
+    top: 0;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #1a7a4a;
+    line-height: 1.6;
+  }
+
+  .cons-col li::before {
+    content: "✕";
+    position: absolute;
+    left: -1.4rem;
+    top: 0;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #b83232;
+    line-height: 1.6;
   }
 
   @media (max-width: 580px) {

@@ -1,20 +1,19 @@
 export const author = {
   name: "Nguyễn Viết Lộc",
   slug: "nguyen-viet-loc",
-  role: "Người phụ trách nội dung",
-  bio: "Phụ trách nội dung tại ValueInvesting.com.vn — tập trung giải thích khái niệm đầu tư bằng ngôn ngữ rõ ràng, có nguồn tham khảo, không khuyến nghị mua bán.",
+  role: "Người sáng lập & Phụ trách nội dung",
+  bio: "Lộc Nguyễn hiện là Chuyên viên SEO tại Công ty Chứng khoán DSC. Với hơn 3 năm kinh nghiệm triển khai nội dung và tối ưu hiệu suất tìm kiếm cho các sản phẩm tài chính lớn, Lộc sáng lập Value Investing nhằm chia sẻ các kiến thức đầu tư thực chiến bằng ngôn ngữ bình dân, giúp F0 tự tin và an toàn hơn trên thị trường.",
   credentials: [] as string[],
-  // String per D-02 (not string[] — about.astro rendering updated in plan 02-03 to render this as a single paragraph)
   experience:
-    "Xây dựng nội dung giáo dục tài chính cho nhà đầu tư cá nhân, biên tập theo hướng có nguồn, rõ rủi ro và không khuyến nghị mua bán.",
-  expertise: ["Đầu tư giá trị", "Phân tích cơ bản", "Sản phẩm đầu tư cho người mới"],
+    "Hơn 3 năm kinh nghiệm thực tế triển khai nội dung tài chính và tối ưu hiệu suất tìm kiếm cho các sản phẩm tài chính lớn (hiện là Chuyên viên SEO tại Công ty Chứng khoán DSC). Chuyên sâu về nghiên cứu hành vi tìm kiếm (Search Intent) của nhà đầu tư cá nhân và đơn giản hóa cấu trúc thông tin.",
+  expertise: ["Đầu tư giá trị", "Đơn giản hóa thuật ngữ tài chính", "Sản phẩm đầu tư cho người mới bắt đầu", "Cấu trúc thông tin tài chính (SEO)"],
   avatar: undefined as string | undefined,
-  socialLinks: undefined as { linkedin?: string; twitter?: string; email?: string } | undefined,
+  socialLinks: { linkedin: "https://www.linkedin.com/in/locnguyen0411/" } as { linkedin?: string; twitter?: string; email?: string },
   moneyPerspective:
-    "Đầu tư nên bắt đầu từ hiểu doanh nghiệp, hiểu rủi ro và biết giới hạn của chính mình trước khi nhìn vào lợi nhuận kỳ vọng.",
+    "Đầu tư nên bắt đầu từ việc hiểu doanh nghiệp, biết giới hạn rủi ro của bản thân trước khi nhìn vào tỷ suất lợi nhuận kỳ vọng.",
   education:
-    "Thông tin học vấn và chứng chỉ chuyên môn sẽ được cập nhật khi có hồ sơ xác thực công khai.",
-  publishedIn: ["ValueInvesting.com.vn"],
+    "Tự học và nghiên cứu thực chiến về SEO kỹ thuật, Marketing tài chính và các hệ thống tự động hóa nội dung.",
+  publishedIn: ["Value Investing"],
 };
 
 export type Author = typeof author;

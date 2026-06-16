@@ -16,7 +16,7 @@ const { items } = Astro.props;
       ) : (
         <li>
           <a href={item.href}>{item.label}</a>
-          <span class="separator" aria-hidden="true">›</span>
+          <span class="separator" aria-hidden="true">/</span>
         </li>
       )
     ))}
@@ -45,19 +45,24 @@ const { items } = Astro.props;
   }
 
   .breadcrumb a {
-    color: var(--brand);
+    color: var(--text);
+    font-weight: 700;
     text-decoration: none;
   }
 
   .breadcrumb a:hover {
+    color: var(--brand);
     text-decoration: underline;
+    text-underline-offset: 2px;
   }
 
   .breadcrumb .separator {
     color: var(--muted);
+    font-weight: 500;
   }
 
   .breadcrumb [aria-current="page"] {
-    color: var(--color-neutral-400);
+    color: var(--muted);
+    font-weight: 500;
   }
 </style>

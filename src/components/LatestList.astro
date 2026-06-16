@@ -1,0 +1,154 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { categoryMeta, getArticlePath } from "@/data/site";
+
+interface Props {
+  articles: CollectionEntry<"articles">[];
+}
+
+const { articles } = Astro.props;
+---
+
+<aside class="latest-col">
+  <h2 class="col-heading">Mới nhất</h2>
+  <ul class="latest-list">
+    {articles.map((article) => {
+      const meta = categoryMeta[article.data.category] ?? { gradientClass: "thumb-stocks", label: article.data.category };
+      return (
+        <li class="latest-item">
+          <a class="latest-link" href={getArticlePath(article)}>
+            <div class={`latest-thumb ${meta.gradientClass}`}></div>
+            <div class="latest-text">
+              <span class="article-tag latest-tag">{meta.label}</span>
+              <span class="latest-title">{article.data.title}</span>
+              <span class="latest-time">{article.data.readingTime}</span>
+            </div>
+          </a>
+        </li>
+      );
+    })}
+  </ul>
+</aside>
+
+<style>
+  .latest-col {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .col-heading {
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: var(--text);
+    margin: 0 0 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--line);
+    font-family: var(--font-sans);
+  }
+
+  .latest-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .latest-item {
+    border-bottom: 1px solid var(--line);
+  }
+
+  .latest-item:last-child {
+    border-bottom: none;
+  }
+
+  .latest-link {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    padding: 14px 0;
+    text-decoration: none;
+    transition: opacity var(--transition-fast);
+  }
+
+  .latest-link:hover {
+    opacity: 0.85;
+    text-decoration: none;
+  }
+
+  .latest-thumb {
+    width: 64px;
+    height: 52px;
+    border-radius: 0px;
+    border: 1px solid var(--line);
+    flex-shrink: 0;
+  }
+
+  /* Thumb colors */
+  .thumb-stocks   { background: var(--color-mint); }
+  .thumb-etf      { background: var(--color-mint); }
+  .thumb-fund     { background: var(--color-mint); }
+  .thumb-bond     { background: var(--color-mint); }
+  .thumb-derivative { background: var(--color-mint); }
+  .thumb-analyse  { background: var(--color-lilac); }
+  .thumb-technical { background: var(--color-lilac); }
+  .thumb-review   { background: var(--color-peach); }
+  .thumb-investor { background: var(--color-peach); }
+
+  .latest-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 0;
+  }
+
+  .article-tag {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 3px 10px;
+    border-radius: 0px;
+    background: var(--surface-alt);
+    color: var(--text);
+    border: 1px solid var(--line);
+    white-space: nowrap;
+  }
+
+  .latest-tag {
+    font-size: 10px !important;
+    padding: 2px 8px !important;
+    align-self: flex-start;
+  }
+
+  .latest-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text);
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .latest-link:hover .latest-title {
+    color: var(--brand);
+  }
+
+  .latest-time {
+    font-size: 0.78rem;
+    color: var(--muted);
+  }
+
+  @media (max-width: 860px) {
+    .latest-col {
+      border-top: 2px solid var(--line);
+      padding-top: 28px;
+    }
+  }
+</style>

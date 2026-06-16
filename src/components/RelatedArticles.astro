@@ -34,15 +34,15 @@ const related = (await getCollection("articles"))
   .related {
     margin-top: var(--space-12);
     padding-top: var(--space-8);
-    border-top: 1px solid var(--line);
+    border-top: 2px solid var(--line);
   }
 
   .related-label {
     font-size: 0.75rem;
-    font-weight: 700;
+    font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    color: var(--color-neutral-400);
+    color: var(--brand);
     margin: 0 0 var(--space-4);
   }
 
@@ -58,23 +58,30 @@ const related = (await getCollection("articles"))
     gap: var(--space-2);
     padding: var(--space-4);
     border: 1px solid var(--line);
-    border-radius: var(--radius-md);
+    border-radius: 0px;
     background: var(--surface);
     text-decoration: none;
-    transition: box-shadow var(--transition), border-color var(--transition);
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
   }
 
   .related-card:hover {
-    box-shadow: var(--shadow-sm);
-    border-color: var(--color-brand-100);
+    transform: translate(2px, 2px);
+    box-shadow: none;
     text-decoration: none;
   }
 
   .related-title {
     font-family: var(--font-serif);
     font-size: 0.95rem;
-    color: var(--color-brand-900);
+    color: var(--text);
     line-height: 1.4;
+    font-weight: 700;
+    transition: color var(--transition-fast);
+  }
+
+  .related-card:hover .related-title {
+    color: var(--brand);
   }
 
   .related-desc {
@@ -83,11 +90,12 @@ const related = (await getCollection("articles"))
     color: var(--muted);
     line-height: 1.5;
     flex: 1;
+    font-weight: 500;
   }
 
   .related-meta {
     font-size: 0.78rem;
-    color: var(--color-neutral-400);
-    font-weight: 500;
+    color: var(--muted);
+    font-weight: 700;
   }
 </style>

@@ -1,0 +1,459 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { categories, getCategoryPath, getArticlePath } from "@/data/site";
+
+const articles = await getCollection("articles");
+
+const analysis = categories
+  .filter((cat) => cat.group === "Phân tích")
+  .map((cat) => {
+    const catArticles = articles
+      .filter((a) => a.data.category === cat.slug)
+      .sort((a, b) => a.data.order - b.data.order);
+    return {
+      ...cat,
+      count: catArticles.length,
+      topArticles: catArticles.slice(0, 3),
+    };
+  });
+
+const gradients: Record<string, string> = {
+  "phan-tich-co-ban":   "thumb-analyse",
+  "phan-tich-ky-thuat": "thumb-technical",
+};
+---
+
+<BaseLayout
+  title="Phân tích"
+  description="Hướng dẫn đọc báo cáo tài chính, hiểu chỉ số định giá P/E, P/B và phân tích biểu đồ kỹ thuật."
+>
+  <section class="page-hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="/">Trang chủ</a>
+          <span class="separator" aria-hidden="true">/</span>
+          <span aria-current="page">Phân tích</span>
+        </nav>
+        <div class="eyebrow">Hub nội dung</div>
+        <h1>Phân tích</h1>
+        <p class="lead">
+          Trang bị các kỹ năng từ cơ bản đến nâng cao để hiểu sâu về sức khỏe doanh nghiệp và xu hướng giá trên thị trường.
+        </p>
+      </div>
+
+      <div class="hero-sidebar">
+        <div class="hub-roadmap-card">
+          <h3 class="roadmap-card-title">Hành trình tự học</h3>
+          <p class="roadmap-card-subtitle">Lộ trình bài học qua 2 phương pháp:</p>
+          <ul class="roadmap-steps">
+            {analysis.map((cat, i) => (
+              <li>
+                <span class="step-badge">{i + 1}</span>
+                <a href={getCategoryPath(cat)} class="step-link">
+                  <strong>{cat.title}</strong>
+                  <span class="step-count">({cat.count} bài)</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="cat-grid">
+        {analysis.map((cat) => (
+          <div class="cat-card">
+            <div class={`cat-thumb ${gradients[cat.slug] ?? "thumb-analyse"}`}>
+              <div class="cat-thumb-dot-pattern"></div>
+              <span class="cat-thumb-badge">{cat.title}</span>
+            </div>
+            <div class="cat-body">
+              <div class="cat-tag-row">
+                <span class="cat-badge">Phân tích</span>
+                {cat.count > 0 && (
+                  <span class="cat-count">{cat.count} bài viết</span>
+                )}
+              </div>
+              <h2 class="cat-title">
+                <a href={getCategoryPath(cat)}>{cat.title}</a>
+              </h2>
+              <p class="cat-desc">{cat.description}</p>
+
+              {cat.topArticles.length > 0 && (
+                <div class="cat-articles-preview">
+                  <span class="preview-label">Bài viết cốt lõi</span>
+                  <ul class="preview-list">
+                    {cat.topArticles.map((art) => (
+                      <li>
+                        <a href={getArticlePath(art)} class="preview-link">
+                          <span class="bullet-square"></span>
+                          <span class="preview-title">{art.data.title}</span>
+                          <span class="preview-reading-time">({art.data.readingTime})</span>
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              <a class="cat-cta" href={getCategoryPath(cat)}>
+                Xem tất cả bài viết <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: var(--space-4);
+    flex-wrap: wrap;
+  }
+
+  .breadcrumb a {
+    color: var(--text);
+    font-weight: 700;
+    text-decoration: none;
+    transition: color var(--transition-fast);
+  }
+
+  .breadcrumb a:hover {
+    color: var(--brand);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  .breadcrumb .separator {
+    color: var(--muted);
+    font-weight: 500;
+  }
+
+  .breadcrumb span[aria-current] {
+    color: var(--muted);
+    font-weight: 500;
+  }
+
+  /* ── Page Hero Grid ───────────────────────────────────────────────── */
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .hero-sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .hub-roadmap-card {
+    background: var(--surface-alt);
+    border: 1px solid var(--line);
+    box-shadow: var(--shadow-md);
+    padding: 24px;
+    position: relative;
+  }
+
+  .roadmap-card-title {
+    font-family: var(--font-sans);
+    font-size: 0.88rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--brand);
+    margin: 0 0 6px 0;
+  }
+
+  .roadmap-card-subtitle {
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin: 0 0 16px 0;
+  }
+
+  .roadmap-steps {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .roadmap-steps li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .step-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background: var(--brand);
+    color: #ffffff;
+    font-family: var(--font-serif);
+    font-weight: 700;
+    font-size: 0.82rem;
+    flex-shrink: 0;
+  }
+
+  .step-link {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+    color: var(--text);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color var(--transition-fast);
+  }
+
+  .step-link:hover {
+    color: var(--brand);
+    text-decoration: none;
+  }
+
+  .step-count {
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+
+  /* ── Category Grid & Cards ─────────────────────────────────────────── */
+  .cat-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .cat-card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  }
+
+  .cat-card:hover {
+    transform: translate(4px, 4px);
+    box-shadow: none;
+  }
+
+  .cat-thumb {
+    width: 100%;
+    aspect-ratio: 16 / 6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--line);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cat-thumb-dot-pattern {
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(rgba(18, 18, 18, 0.12) 1.5px, transparent 1.5px);
+    background-size: 10px 10px;
+    opacity: 0.8;
+  }
+
+  .cat-thumb-badge {
+    position: relative;
+    z-index: 2;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-serif);
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 6px 14px;
+    border: 1px solid var(--line);
+    box-shadow: 2px 2px 0px var(--line);
+    transform: rotate(-2deg);
+    letter-spacing: 0.02em;
+  }
+
+  .cat-body {
+    padding: 20px 22px 24px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .cat-tag-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+  }
+
+  .cat-badge {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 3px 10px;
+    background: var(--color-lilac);
+    color: var(--text);
+    border: 1px solid var(--line);
+    box-shadow: 1px 1px 0px var(--line);
+  }
+
+  .cat-count {
+    font-size: 0.82rem;
+    color: var(--muted);
+    font-weight: 500;
+  }
+
+  .cat-title {
+    font-family: var(--font-serif);
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0 0 8px;
+    line-height: 1.3;
+  }
+
+  .cat-title a {
+    color: var(--text);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+  }
+
+  .cat-title a:hover {
+    color: var(--brand);
+    text-decoration: none;
+  }
+
+  .cat-desc {
+    font-size: 0.9rem;
+    color: var(--muted);
+    line-height: 1.6;
+    margin: 0 0 16px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  /* ── Core articles preview ────────────────────────────────────────── */
+  .cat-articles-preview {
+    margin-top: auto;
+    border-top: 1px dashed var(--line);
+    padding: 16px 0 4px;
+  }
+
+  .preview-label {
+    display: block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    margin-bottom: 10px;
+  }
+
+  .preview-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .preview-list li {
+    display: flex;
+  }
+
+  .preview-link {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    color: var(--text);
+    font-size: 0.88rem;
+    text-decoration: none;
+    line-height: 1.4;
+    transition: color var(--transition-fast);
+  }
+
+  .preview-link:hover {
+    color: var(--brand);
+    text-decoration: none;
+  }
+
+  .bullet-square {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background: var(--brand);
+    margin-top: 7px;
+    flex-shrink: 0;
+  }
+
+  .preview-title {
+    font-weight: 500;
+  }
+
+  .preview-reading-time {
+    color: var(--muted);
+    font-size: 0.8rem;
+    white-space: nowrap;
+  }
+
+  .cat-cta {
+    display: block;
+    font-size: 0.88rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--brand);
+    border-top: 1px solid var(--line);
+    padding-top: 14px;
+    margin-top: 14px;
+    text-decoration: none;
+    transition: color var(--transition-fast);
+  }
+
+  .cat-cta:hover {
+    color: var(--brand-strong);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  /* Category Thumbnails mapping to Lilac */
+  .thumb-analyse   { background: var(--color-lilac); }
+  .thumb-technical { background: var(--color-lilac); }
+
+  /* Responsive styles */
+  @media (max-width: 900px) {
+    .hero-grid {
+      grid-template-columns: 1fr;
+      gap: 32px;
+    }
+
+    .cat-grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  }
+</style>

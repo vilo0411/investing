@@ -1,11 +1,30 @@
 ---
 import { SEO } from "astro-seo";
-import { categories, site } from "@/data/site";
+import { getCollection } from "astro:content";
+import { categories, categoryMeta, getArticlePath, site } from "@/data/site";
 import { author } from "@/data/authors";
 import "@/styles/global.css";
 
 const investCategories = categories.filter(c => c.group === "Đầu tư");
 const phanTichCategories = categories.filter(c => c.group === "Phân tích");
+
+// Build search index at render time (works in static mode)
+const allArticles = await getCollection("articles");
+const searchIndex = allArticles
+  .sort((a, b) => b.data.updatedDate.getTime() - a.data.updatedDate.getTime())
+  .map(article => {
+    const meta = categoryMeta[article.data.category] ?? {
+      label: article.data.category, abbr: "?", gradientClass: "thumb-stocks",
+    };
+    return {
+      title: article.data.title,
+      description: article.data.description,
+      categoryLabel: meta.label,
+      href: getArticlePath(article),
+      text: [article.data.title, article.data.description, meta.label, ...article.data.tags]
+        .join(" ").toLowerCase(),
+    };
+  });
 
 interface Props {
   title?: string;
@@ -53,11 +72,11 @@ const openGraphExtra =
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Google Fonts: Source Serif 4 + Inter -->
+    <!-- Google Fonts: Space Grotesk + Outfit -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;500;700&family=Inter:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&family=Outfit:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
 
@@ -92,6 +111,7 @@ const openGraphExtra =
         },
       ],
     })} />
+
 
     <SEO
       title={pageTitle}
@@ -142,19 +162,30 @@ const openGraphExtra =
       }}
     />
     <slot name="head" />
+    <script is:inline>
+      document.documentElement.classList.add('js');
+    </script>
   </head>
   <body>
-    <header class="site-header">
+    <header class="site-header" id="site-header">
       <nav class="container nav" aria-label="Menu chính">
-        <a class="brand" href="/">{site.name}</a>
-        <div class="nav-links">
+        <a class="brand" href="/">
+          <svg class="brand-mark" width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true">
+            <rect width="26" height="26" fill="var(--brand)"/>
+            <path d="M6 19L13 7L20 19" stroke="#fff" stroke-width="2.2" stroke-linecap="square" stroke-linejoin="miter"/>
+            <line x1="9.5" y1="15.5" x2="16.5" y2="15.5" stroke="#fff" stroke-width="1.8" stroke-linecap="square"/>
+          </svg>
+          <span class="brand-text">{site.name}</span>
+        </a>
+
+        <div class="nav-links" id="nav-links">
           <!-- Đầu tư — mega dropdown -->
           <div class="nav-item-mega">
-            <a href="/dau-tu/" class="nav-link-mega">
+            <a href="/dau-tu/" class="nav-link-mega" aria-haspopup="true">
               Đầu tư
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+              <svg class="nav-chevron" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
             </a>
-            <div class="mega-dropdown">
+            <div class="mega-dropdown" role="region" aria-label="Danh mục đầu tư">
               {investCategories.map(cat => (
                 <a href={cat.path} class="mega-item">
                   <span class="mega-item-title">{cat.title}</span>
@@ -165,11 +196,11 @@ const openGraphExtra =
           </div>
           <!-- Phân tích — dropdown -->
           <div class="nav-item-mega">
-            <a href="/phan-tich/" class="nav-link-mega">
+            <a href="/phan-tich/" class="nav-link-mega" aria-haspopup="true">
               Phân tích
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+              <svg class="nav-chevron" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
             </a>
-            <div class="mega-dropdown">
+            <div class="mega-dropdown" role="region" aria-label="Danh mục phân tích">
               {phanTichCategories.map(cat => (
                 <a href={cat.path} class="mega-item">
                   <span class="mega-item-title">{cat.title}</span>
@@ -178,10 +209,21 @@ const openGraphExtra =
               ))}
             </div>
           </div>
-          <a href="/reviews/">Reviews</a>
           <a href="/nha-dau-tu/">Nhà đầu tư</a>
-          <a href="/about/">Tác giả</a>
-          <a class="nav-search" href="/search/" aria-label="Tìm kiếm bài viết">Tìm kiếm</a>
+          <a href="/reviews/">Reviews</a>
+        </div>
+
+        <div class="nav-actions">
+          <button class="nav-search-btn" id="search-open-btn" aria-label="Mở tìm kiếm" aria-expanded="false" aria-haspopup="dialog">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="square" aria-hidden="true">
+              <circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/>
+            </svg>
+          </button>
+          <button class="nav-hamburger" id="nav-hamburger" aria-label="Mở menu" aria-expanded="false" aria-controls="nav-links">
+            <span class="ham-bar"></span>
+            <span class="ham-bar"></span>
+            <span class="ham-bar"></span>
+          </button>
         </div>
       </nav>
     </header>
@@ -192,7 +234,7 @@ const openGraphExtra =
       <div class="container footer-4col">
         <div class="footer-brand">
           <strong>{site.name}</strong>
-          <p>Kiến thức đầu tư giá trị cho người Việt — miễn phí, có nguồn, không khuyến nghị mua bán.</p>
+          <p>Kiến thức đầu tư giá trị cho người Việt, miễn phí, có nguồn, không khuyến nghị mua bán.</p>
         </div>
         <div class="footer-col">
           <h5>Đầu tư</h5>
@@ -200,14 +242,14 @@ const openGraphExtra =
         </div>
         <div class="footer-col">
           <h5>Phân tích & Review</h5>
-          <a href="/phan-tich/">Phân tích cơ bản</a>
-          <a href="/phan-tich-ky-thuat/">Phân tích kỹ thuật</a>
+          <a href="/phan-tich/co-ban/">Phân tích cơ bản</a>
+          <a href="/phan-tich/ky-thuat/">Phân tích kỹ thuật</a>
           <a href="/reviews/">Reviews</a>
           <a href="/nha-dau-tu/">Nhà đầu tư</a>
         </div>
         <div class="footer-col">
           <h5>Về trang web</h5>
-          <a href="/about/">Tác giả</a>
+          <a href="/about/">Về dự án</a>
           <a href="/editorial-policy/">Biên tập</a>
           <a href="/sources-policy/">Nguồn tham khảo</a>
           <a href="/corrections-policy/">Đính chính</a>
@@ -218,5 +260,271 @@ const openGraphExtra =
         <span>© 2026 {site.name}. {site.disclosure}</span>
       </div>
     </footer>
+
+    <!-- ─── Search Modal ─────────────────────────────────────────────── -->
+    <div id="search-modal" class="search-modal" role="dialog" aria-modal="true" aria-label="Tìm kiếm" hidden>
+      <div class="search-modal-backdrop"></div>
+      <div class="search-modal-panel">
+        <div class="search-modal-header">
+          <div class="search-modal-input-wrap">
+            <svg class="search-modal-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="square" aria-hidden="true">
+              <circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/>
+            </svg>
+            <input
+              id="search-modal-input"
+              class="search-modal-q"
+              type="search"
+              placeholder="Tìm kiếm bài viết, khái niệm, chỉ số..."
+              autocomplete="off"
+              autocorrect="off"
+              spellcheck="false"
+              aria-autocomplete="list"
+              aria-controls="search-modal-results"
+            />
+          </div>
+          <button class="search-modal-close" id="search-close-btn" aria-label="Đóng tìm kiếm">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="square" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>
+          </button>
+        </div>
+
+        <div class="search-modal-body" id="search-modal-body">
+          <!-- Default state: popular + recents -->
+          <div id="search-default-state">
+            <div class="search-popular">
+              <span class="search-section-label">Chủ đề phổ biến</span>
+              <div class="search-tags" id="search-popular-tags">
+                <button class="search-tag" data-q="cổ phiếu">Cổ phiếu</button>
+                <button class="search-tag" data-q="etf">ETF</button>
+                <button class="search-tag" data-q="P/E">P/E</button>
+                <button class="search-tag" data-q="trái phiếu">Trái phiếu</button>
+                <button class="search-tag" data-q="Warren Buffett">Warren Buffett</button>
+                <button class="search-tag" data-q="phân tích cơ bản">Phân tích cơ bản</button>
+              </div>
+            </div>
+            <div class="search-recents" id="search-recents-wrap" hidden>
+              <div class="search-section-label">
+                <span>Tìm kiếm gần đây</span>
+                <button class="search-clear-history" id="search-clear-history">Xóa</button>
+              </div>
+              <ul class="search-recents-list" id="search-recents-list" role="listbox"></ul>
+            </div>
+          </div>
+
+          <!-- Results state -->
+          <div id="search-results-state" hidden>
+            <p class="search-results-count" id="search-results-count"></p>
+            <ul class="search-results-list" id="search-modal-results" role="listbox"></ul>
+            <a class="search-see-all" id="search-see-all" href="/search/">Xem tất cả kết quả &rarr;</a>
+          </div>
+
+          <!-- Empty state -->
+          <div id="search-empty-state" hidden>
+            <div class="search-no-results">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" opacity=".4" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
+              <p>Không tìm thấy kết quả phù hợp</p>
+              <span>Thử từ khóa khác hoặc rộng hơn</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="search-modal-footer">
+          <span><kbd>↵</kbd> Xem tất cả</span>
+          <span><kbd>ESC</kbd> Đóng</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Search index embedded at build time -->
+    <script type="application/json" id="search-data" set:html={JSON.stringify(searchIndex)}></script>
+
   </body>
+  <script is:inline>
+    /* == Hamburger ============================================================ */
+    var hamburger = document.getElementById('nav-hamburger');
+    var navLinks  = document.getElementById('nav-links');
+    var siteHeader = document.getElementById('site-header');
+
+    if (hamburger && navLinks) {
+      hamburger.addEventListener('click', function() {
+        var open = navLinks.classList.toggle('nav-open');
+        hamburger.setAttribute('aria-expanded', String(open));
+        hamburger.setAttribute('aria-label', open ? 'Đóng menu' : 'Mở menu');
+        hamburger.classList.toggle('is-open', open);
+      });
+    }
+
+    document.addEventListener('click', function(e) {
+      if (siteHeader && !siteHeader.contains(e.target)) {
+        if (navLinks) navLinks.classList.remove('nav-open');
+        if (hamburger) {
+          hamburger.setAttribute('aria-expanded', 'false');
+          hamburger.setAttribute('aria-label', 'Mở menu');
+          hamburger.classList.remove('is-open');
+        }
+      }
+    });
+
+    if (siteHeader) {
+      var onScroll = function() { siteHeader.classList.toggle('is-scrolled', window.scrollY > 8); };
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    }
+
+    /* == Search Modal ========================================================= */
+    var HISTORY_KEY = 'vi_search_history';
+    var MAX_HISTORY = 5;
+
+    var modal       = document.getElementById('search-modal');
+    var openBtn     = document.getElementById('search-open-btn');
+    var closeBtn    = document.getElementById('search-close-btn');
+    var input       = document.getElementById('search-modal-input');
+    var defaultSt   = document.getElementById('search-default-state');
+    var resultsSt   = document.getElementById('search-results-state');
+    var emptySt     = document.getElementById('search-empty-state');
+    var resultsList = document.getElementById('search-modal-results');
+    var countEl     = document.getElementById('search-results-count');
+    var seeAllLink  = document.getElementById('search-see-all');
+    var recentsWrap = document.getElementById('search-recents-wrap');
+    var recentsList = document.getElementById('search-recents-list');
+    var clearBtn    = document.getElementById('search-clear-history');
+
+    /* Load search index from embedded JSON tag */
+    var searchIndex = [];
+    try {
+      var rawEl = document.getElementById('search-data');
+      if (rawEl) searchIndex = JSON.parse(rawEl.textContent || '[]');
+    } catch(e) { console.error('Search index parse error', e); }
+
+    var normalize = function(s) {
+      return s.toLowerCase()
+              .normalize('NFD')
+              .replace(/[\u0300-\u036f]/g, '')
+              .replace(/đ/g, 'd');
+    };
+
+    /* -- History -- */
+    var getHistory = function() {
+      try { return JSON.parse(localStorage.getItem(HISTORY_KEY) || '[]'); }
+      catch(e) { return []; }
+    };
+    var saveHistory = function(q) {
+      var h = [q].concat(getHistory().filter(function(x){ return x !== q; })).slice(0, MAX_HISTORY);
+      localStorage.setItem(HISTORY_KEY, JSON.stringify(h));
+    };
+    var renderHistory = function() {
+      var h = getHistory();
+      if (recentsWrap) recentsWrap.hidden = (h.length === 0);
+      if (!recentsList) return;
+      recentsList.innerHTML = h.map(function(q) {
+        return '<li><button class="search-recent-item" data-q="' + q + '"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 8v4l3 3"/><circle cx="12" cy="12" r="9"/></svg>' + q + '</button></li>';
+      }).join('');
+      recentsList.querySelectorAll('[data-q]').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          if (input) input.value = btn.getAttribute('data-q') || '';
+          doSearch();
+          if (input) input.focus();
+        });
+      });
+    };
+    if (clearBtn) {
+      clearBtn.addEventListener('click', function() {
+        localStorage.removeItem(HISTORY_KEY);
+        renderHistory();
+      });
+    }
+
+    /* -- Popular tags -- */
+    document.querySelectorAll('#search-popular-tags .search-tag').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        if (input) input.value = btn.getAttribute('data-q') || '';
+        doSearch();
+        if (input) input.focus();
+      });
+    });
+
+    /* -- Render results -- */
+    var doSearch = function() {
+      if (!input) return;
+      var q = input.value.trim();
+      if (!q) {
+        if (defaultSt) defaultSt.hidden = false;
+        if (resultsSt) resultsSt.hidden = true;
+        if (emptySt)   emptySt.hidden   = true;
+        renderHistory();
+        return;
+      }
+      var nq = normalize(q);
+      var parts = nq.split(/\s+/).filter(Boolean);
+      var hits = searchIndex.filter(function(item) {
+        return parts.every(function(p) { return normalize(item.text).indexOf(p) !== -1; });
+      }).slice(0, 8);
+
+      if (defaultSt) defaultSt.hidden = true;
+
+      if (hits.length === 0) {
+        if (resultsSt) resultsSt.hidden = true;
+        if (emptySt)   emptySt.hidden   = false;
+        return;
+      }
+
+      if (emptySt)   emptySt.hidden   = true;
+      if (resultsSt) resultsSt.hidden = false;
+      if (countEl)   countEl.textContent = hits.length + ' ket qua cho "' + q + '"';
+      if (seeAllLink) seeAllLink.href = '/search/?q=' + encodeURIComponent(q);
+      if (resultsList) {
+        resultsList.innerHTML = hits.map(function(item) {
+          return '<li><a class="search-result-item" href="' + item.href + '"><span class="sri-cat">' + item.categoryLabel + '</span><span class="sri-title">' + item.title + '</span><span class="sri-desc">' + item.description + '</span></a></li>';
+        }).join('');
+      }
+    };
+
+    /* -- Open / close -- */
+    var openModal = function() {
+      if (!modal) return;
+      modal.hidden = false;
+      document.body.style.overflow = 'hidden';
+      if (openBtn) openBtn.setAttribute('aria-expanded', 'true');
+      renderHistory();
+      setTimeout(function() { if (input) input.focus(); }, 50);
+    };
+    var closeModal = function() {
+      if (!modal) return;
+      modal.hidden = true;
+      document.body.style.overflow = '';
+      if (openBtn) openBtn.setAttribute('aria-expanded', 'false');
+      if (input) input.value = '';
+      if (defaultSt) defaultSt.hidden = false;
+      if (resultsSt) resultsSt.hidden = true;
+      if (emptySt)   emptySt.hidden   = true;
+    };
+
+    if (openBtn) openBtn.addEventListener('click', openModal);
+    if (closeBtn) closeBtn.addEventListener('click', function(e) { e.stopPropagation(); closeModal(); });
+
+    /* Close when clicking outside the panel (backdrop area) */
+    if (modal) {
+      modal.addEventListener('click', function(e) {
+        if (!e.target.closest('.search-modal-panel')) closeModal();
+      });
+    }
+
+    /* -- Keyboard -- */
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && modal && !modal.hidden) { closeModal(); return; }
+      if (e.key === 'k' && (e.metaKey || e.ctrlKey)) {
+        e.preventDefault();
+        if (modal && !modal.hidden) closeModal(); else openModal();
+      }
+    });
+
+    if (input) {
+      input.addEventListener('input', doSearch);
+      input.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter') {
+          var q = input.value.trim();
+          if (q) { saveHistory(q); window.location.href = '/search/?q=' + encodeURIComponent(q); }
+        }
+      });
+    }
+  </script>
 </html>

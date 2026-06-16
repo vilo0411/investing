@@ -1,5 +1,4 @@
 ---
-import RatingBadge from "@/components/RatingBadge.astro";
 import ProsConsBox from "@/components/ProsConsBox.astro";
 import ReviewCTA from "@/components/ReviewCTA.astro";
 
@@ -17,9 +16,32 @@ interface Props {
   rating: number;
   ctaUrl?: string;
   ctaLabel?: string;
+  verdict?: string;
+  bestFor?: string;
+  name?: string;
+  feeRate?: string;
+  marginRate?: string;
+  appRating?: string;
 }
 
-const { companyInfo, accountSteps, pros, cons, rating, ctaUrl, ctaLabel } = Astro.props;
+const {
+  companyInfo,
+  accountSteps,
+  pros,
+  cons,
+  rating,
+  ctaUrl,
+  ctaLabel,
+  verdict,
+  bestFor,
+  name,
+  feeRate,
+  marginRate,
+  appRating,
+} = Astro.props;
+
+const ratingDisplay = rating.toFixed(1);
+const stars = Array.from({ length: 5 }, (_, i) => i < Math.round(rating));
 
 const infoRows = companyInfo
   ? [
@@ -29,12 +51,58 @@ const infoRows = companyInfo
       { label: "Website", value: companyInfo.website },
     ].filter((row): row is { label: string; value: string } => Boolean(row.value))
   : [];
+
+const metrics = [
+  feeRate && { label: "Phí GD", value: feeRate },
+  marginRate && { label: "Margin", value: marginRate },
+  appRating && { label: "Đánh giá app", value: appRating },
+].filter(Boolean) as { label: string; value: string }[];
 ---
 
 <div class="company-review-body">
-  <div class="cr-hero">
-    <RatingBadge rating={rating} label="Đánh giá tổng thể" />
+
+  <!-- Score card: tổng hợp toàn bộ thông tin đánh giá vào 1 widget -->
+  <div class="score-card" id="danh-gia-tong-the">
+    <div class="score-left">
+      <div class="score-number">{ratingDisplay}</div>
+      <div class="score-stars" aria-label={`${ratingDisplay} trên 5 sao`}>
+        {stars.map((filled) => (
+          <span class:list={["star", { "star--filled": filled }]} aria-hidden="true">★</span>
+        ))}
+      </div>
+      <div class="score-label">Điểm Value Investing</div>
+    </div>
+
+    <div class="score-right">
+      {bestFor && (
+        <div class="score-best-for">
+          <span class="score-best-for-label">Phù hợp nhất với</span>
+          <span class="score-best-for-value">{bestFor}</span>
+        </div>
+      )}
+
+      {metrics.length > 0 && (
+        <div class="score-metrics">
+          {metrics.map((m) => (
+            <div class="score-metric">
+              <span class="metric-label">{m.label}</span>
+              <span class="metric-value">{m.value}</span>
+            </div>
+          ))}
+        </div>
+      )}
+
+      <ReviewCTA label={ctaLabel ?? "Mở tài khoản ngay"} url={ctaUrl ?? "#"} />
+    </div>
   </div>
+
+  <!-- Verdict box: kết luận nhanh của biên tập -->
+  {verdict && (
+    <div class="verdict-box">
+      <p class="verdict-label">Nhận định của chúng tôi</p>
+      <p class="verdict-text">{verdict}</p>
+    </div>
+  )}
 
   {infoRows.length > 0 && (
     <section id="thong-tin-nhanh">
@@ -63,10 +131,13 @@ const infoRows = companyInfo
     <section id="mo-tai-khoan">
       <h2>Hướng dẫn mở tài khoản</h2>
       <ol class="account-steps">
-        {accountSteps.map((step) => (
-          <li>
-            <strong>{step.title}</strong>
-            <p>{step.desc}</p>
+        {accountSteps.map((step, i) => (
+          <li class="step-item">
+            <div class="step-num" aria-hidden="true">{i + 1}</div>
+            <div class="step-body">
+              <strong class="step-title">{step.title}</strong>
+              <p class="step-desc">{step.desc}</p>
+            </div>
           </li>
         ))}
       </ol>
@@ -78,72 +149,288 @@ const infoRows = companyInfo
     <ProsConsBox pros={pros} cons={cons} />
   </section>
 
-  <ReviewCTA label={ctaLabel ?? "Mở tài khoản ngay"} url={ctaUrl ?? "#"} sticky={true} />
 </div>
 
 <style>
-  .cr-hero {
+  /* ── Score Card ─────────────────────────────── */
+  .score-card {
     display: flex;
-    justify-content: center;
+    gap: var(--space-6);
+    align-items: flex-start;
+    border: 1px solid var(--line);
+    box-shadow: 3px 3px 0px var(--line);
+    background: var(--surface);
+    padding: var(--space-6);
     margin: var(--space-6) 0;
   }
 
+  .score-left {
+    flex: 0 0 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    border-right: 1px solid var(--line);
+    padding-right: var(--space-6);
+  }
+
+  .score-number {
+    font-family: var(--font-serif);
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--text);
+  }
+
+  .score-stars {
+    display: flex;
+    gap: 3px;
+    font-size: 1.1rem;
+  }
+
+  .star { color: var(--line); }
+  .star--filled { color: var(--brand); }
+
+  .score-label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--muted);
+    text-align: center;
+  }
+
+  .score-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+    min-width: 0;
+  }
+
+  .score-best-for {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .score-best-for-label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--muted);
+  }
+
+  .score-best-for-value {
+    font-size: 0.96rem;
+    font-weight: 600;
+    color: var(--text);
+    line-height: 1.4;
+  }
+
+  .score-metrics {
+    display: flex;
+    gap: var(--space-3);
+    flex-wrap: wrap;
+  }
+
+  .score-metric {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    border: 1px solid var(--line);
+    background: var(--surface-alt);
+    padding: 8px 12px;
+    flex: 1;
+    min-width: 90px;
+  }
+
+  .metric-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--muted);
+  }
+
+  .metric-value {
+    font-size: 0.94rem;
+    font-weight: 700;
+    color: var(--text);
+  }
+
+  /* ── Verdict box ─────────────────────────────── */
+  .verdict-box {
+    border: 1px solid var(--line);
+    border-left: 6px solid var(--brand);
+    background: var(--color-mint);
+    padding: var(--space-4) var(--space-5);
+    margin: var(--space-2) 0 var(--space-6);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .verdict-label {
+    margin: 0 0 6px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--brand);
+  }
+
+  .verdict-text {
+    margin: 0;
+    font-size: 0.96rem;
+    line-height: 1.7;
+    color: var(--text);
+    font-weight: 500;
+  }
+
+  /* scroll-margin-top accounts for sticky header (68px) + jump nav (~48px) + breathing room */
+  :global(#thong-tin-nhanh),
+  :global(#san-pham),
+  :global(#mo-tai-khoan),
+  :global(#uu-nhuoc-diem),
+  :global(#danh-gia-tong-the) {
+    scroll-margin-top: 132px;
+  }
+
+  /* ── Info table ─────────────────────────────── */
   .info-list {
     display: grid;
-    gap: var(--space-2);
+    gap: 0;
     margin: var(--space-4) 0;
+    border: 1px solid var(--line);
+    box-shadow: var(--shadow-sm);
   }
 
   .info-row {
     display: flex;
     gap: var(--space-3);
-    padding: var(--space-2) 0;
+    padding: var(--space-3) var(--space-4);
     border-bottom: 1px solid var(--line);
   }
+
+  .info-row:last-child { border-bottom: none; }
+  .info-row:nth-child(even) { background: var(--surface-alt); }
 
   .info-row dt {
     flex: 0 0 140px;
     font-weight: 700;
     color: var(--muted);
+    font-size: 0.88rem;
   }
 
   .info-row dd {
     margin: 0;
     color: var(--text);
+    font-size: 0.94rem;
   }
 
+  /* ── Products ─────────────────────────────── */
   .product-list {
     display: grid;
     gap: var(--space-2);
     margin: var(--space-4) 0;
-    padding-left: 1.25rem;
+    padding: 0;
+    list-style: none;
   }
 
   .product-list li {
     color: var(--text);
     line-height: 1.6;
+    font-size: 0.94rem;
+    padding: var(--space-2) var(--space-3);
+    border-left: 3px solid var(--brand);
+    background: var(--surface-alt);
   }
 
+  /* ── Account Steps ─────────────────────────────── */
   .account-steps {
-    display: grid;
-    gap: var(--space-4);
+    list-style: none;
+    padding: 0;
     margin: var(--space-4) 0;
-    padding-left: 1.5rem;
-    counter-reset: step;
+    display: grid;
+    gap: 0;
   }
 
-  .account-steps li {
-    color: var(--text);
+  .step-item {
+    display: flex;
+    gap: var(--space-4);
+    position: relative;
+    padding-bottom: var(--space-5);
   }
 
-  .account-steps li strong {
+  /* connecting line between steps */
+  .step-item:not(:last-child) .step-num::after {
+    content: "";
+    position: absolute;
+    left: 19px;
+    top: 40px;
+    width: 2px;
+    bottom: 0;
+    background: var(--line);
+  }
+
+  .step-num {
+    flex-shrink: 0;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: var(--brand);
+    color: #fff;
+    font-family: var(--font-serif);
+    font-weight: 700;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--line);
+    box-shadow: 2px 2px 0px var(--line);
+  }
+
+  .step-body {
+    flex: 1;
+    padding-top: 8px;
+  }
+
+  .step-title {
     display: block;
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--text);
     margin-bottom: 4px;
   }
 
-  .account-steps li p {
+  .step-desc {
     margin: 0;
     color: var(--muted);
+    font-size: 0.9rem;
     line-height: 1.6;
+  }
+
+  /* ── Responsive ─────────────────────────────── */
+  @media (max-width: 580px) {
+    .score-card {
+      flex-direction: column;
+      gap: var(--space-4);
+    }
+
+    .score-left {
+      flex-direction: row;
+      flex: unset;
+      border-right: none;
+      border-bottom: 1px solid var(--line);
+      padding-right: 0;
+      padding-bottom: var(--space-4);
+      gap: var(--space-3);
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .score-number { font-size: 2.2rem; }
+
+    .score-label { display: none; }
   }
 </style>

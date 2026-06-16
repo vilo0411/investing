@@ -1,0 +1,319 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation "Menu chính" [ref=e3]:
+      - link "ValueInvesting.com.vn" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - img [ref=e5]
+        - generic [ref=e8]: ValueInvesting.com.vn
+      - generic [ref=e9]:
+        - link "Đầu tư" [ref=e11] [cursor=pointer]:
+          - /url: /dau-tu/
+          - text: Đầu tư
+          - img [ref=e12]
+        - link "Phân tích" [ref=e15] [cursor=pointer]:
+          - /url: /phan-tich/
+          - text: Phân tích
+          - img [ref=e16]
+        - link "Reviews" [ref=e18] [cursor=pointer]:
+          - /url: /reviews/
+        - link "Nhà đầu tư" [ref=e19] [cursor=pointer]:
+          - /url: /nha-dau-tu/
+        - link "Tác giả" [ref=e20] [cursor=pointer]:
+          - /url: /about/
+      - button "Mở tìm kiếm" [ref=e22]:
+        - img [ref=e23]
+  - main [ref=e26]:
+    - generic [ref=e28]:
+      - navigation "Breadcrumb" [ref=e29]:
+        - list [ref=e30]:
+          - listitem [ref=e31]:
+            - link "Trang chủ" [ref=e32] [cursor=pointer]:
+              - /url: /
+            - generic [ref=e33]: /
+          - listitem [ref=e34]:
+            - link "Đầu tư" [ref=e35] [cursor=pointer]:
+              - /url: /dau-tu/
+            - generic [ref=e36]: /
+          - listitem [ref=e37]:
+            - link "Cổ phiếu" [ref=e38] [cursor=pointer]:
+              - /url: /dau-tu/co-phieu/
+            - generic [ref=e39]: /
+          - listitem [ref=e40]:
+            - generic [ref=e41]: "Cách đầu tư cổ phiếu: Hướng dẫn thực chiến từ con số 0"
+      - generic [ref=e42]: Cổ phiếu
+      - 'heading "Cách đầu tư cổ phiếu: Hướng dẫn thực chiến từ con số 0" [level=1] [ref=e43]'
+      - paragraph [ref=e44]: Hướng dẫn cách đầu tư cổ phiếu bài bản cho người mới. Quy trình từng bước mở tài khoản, nạp tiền, chọn mã tốt và quản trị rủi ro thực tế từ con số 0.
+      - generic [ref=e45]:
+        - generic [ref=e46]: L
+        - generic [ref=e47]:
+          - generic [ref=e48]:
+            - generic [ref=e49]: "Tác giả:"
+            - link "Nguyễn Viết Lộc" [ref=e50] [cursor=pointer]:
+              - /url: /author/nguyen-viet-loc/
+            - generic [ref=e51]: "|"
+            - generic [ref=e52]: "Cập nhật: 14/6/2026"
+            - generic [ref=e53]: "|"
+            - generic [ref=e54]: 5 phút đọc
+          - generic [ref=e56]:
+            - text: Rà soát theo
+            - link "chính sách biên tập" [ref=e57] [cursor=pointer]:
+              - /url: /editorial-policy/
+      - generic "Thông tin độ tin cậy của bài viết" [ref=e58]:
+        - generic [ref=e59]: Kiểm tra nguồn
+        - generic [ref=e60]: Không tư vấn cá nhân
+        - generic [ref=e61]: Có quy trình đính chính
+    - 'img "Cách đầu tư cổ phiếu: Hướng dẫn thực chiến từ con số 0" [ref=e64]'
+    - generic [ref=e65]:
+      - complementary "Mục lục bài viết" [ref=e66]:
+        - navigation "Mục lục" [ref=e67]:
+          - paragraph [ref=e68]: Mục lục
+          - list [ref=e69]:
+            - listitem [ref=e70]:
+              - link "Bản chất của kiếm tiền từ cổ phiếu" [ref=e71] [cursor=pointer]:
+                - /url: "#bản-chất-của-kiếm-tiền-từ-cổ-phiếu"
+            - listitem [ref=e72]:
+              - link "4 bước bắt đầu đầu tư cổ phiếu cho người mới" [ref=e73] [cursor=pointer]:
+                - /url: "#4-bước-bắt-đầu-đầu-tư-cổ-phiếu-cho-người-mới"
+            - listitem [ref=e74]:
+              - link "Cách chọn cổ phiếu tốt cho danh mục đầu tư" [ref=e75] [cursor=pointer]:
+                - /url: "#cách-chọn-cổ-phiếu-tốt-cho-danh-mục-đầu-tư"
+            - listitem [ref=e76]:
+              - link "3 quy tắc vàng để sống sót trên thị trường" [ref=e77] [cursor=pointer]:
+                - /url: "#3-quy-tắc-vàng-để-sống-sót-trên-thị-trường"
+            - listitem [ref=e78]:
+              - link "Hành trình đầu tư của bạn bắt đầu từ hôm nay" [ref=e79] [cursor=pointer]:
+                - /url: "#hành-trình-đầu-tư-của-bạn-bắt-đầu-từ-hôm-nay"
+      - article [ref=e80]:
+        - complementary "Lưu ý tài chính" [ref=e81]:
+          - strong [ref=e82]: "Lưu ý trước khi đọc:"
+          - generic [ref=e83]: ValueInvesting.com.vn không cung cấp dịch vụ tư vấn đầu tư cá nhân, môi giới chứng khoán hoặc tín hiệu giao dịch. Nội dung chỉ nhằm mục đích giáo dục.
+        - complementary "Tóm tắt nội dung chính" [ref=e84]:
+          - paragraph [ref=e85]: Tóm tắt nội dung chính
+          - list [ref=e86]:
+            - listitem [ref=e87]: Đầu tư cổ phiếu thực chất là góp vốn sở hữu doanh nghiệp để nhận cổ tức và chênh lệch giá.
+            - listitem [ref=e88]: Người mới có thể mở tài khoản trực tuyến eKYC 100% bằng CCCD gắn chip chỉ trong vài phút.
+            - listitem [ref=e89]: Nên kết hợp phân tích cơ bản để chọn mã tốt và phân tích kỹ thuật để tìm điểm giao dịch.
+            - listitem [ref=e90]: Hạn chế sử dụng đòn bẩy margin và đa dạng hóa danh mục để bảo vệ nguồn vốn tích lũy.
+        - paragraph [ref=e91]:
+          - text: Nhiều người nghĩ đầu tư cổ phiếu cần vốn lớn hoặc phải theo dõi bảng điện liên tục. Sự thật là bạn hoàn toàn có thể bắt đầu tích lũy chỉ từ vài trăm nghìn đồng. Trong bài viết này, mình sẽ hướng dẫn bạn
+          - strong [ref=e92]: cách đầu tư cổ phiếu
+          - text: chi tiết và thực tiễn nhất.
+        - paragraph [ref=e93]:
+          - img "Máy tính và tiền minh họa cho việc tính toán vốn đầu tư cổ phiếu" [ref=e94]
+          - emphasis [ref=e95]: "Ảnh: Jakub Żerdzicki / Unsplash"
+        - heading "Bản chất của kiếm tiền từ cổ phiếu" [level=2] [ref=e96]
+        - paragraph [ref=e97]: Để bắt đầu, bạn cần hiểu rõ bản chất của việc sở hữu cổ phiếu. Hãy hình dung bạn và hai người bạn cùng góp vốn mở một quán trà sữa tại TP.HCM.
+        - paragraph [ref=e98]: Tổng số vốn ban đầu để mở quán là 100 triệu đồng. Bạn góp 20 triệu đồng, tương đương sở hữu 20% cổ phần của quán trà sữa đó.
+        - paragraph [ref=e99]: Khi quán kinh doanh có lãi và trích một phần tiền chia cho các thành viên, bạn nhận được cổ tức. Nếu quán làm ăn phát triển và mở rộng thêm chi nhánh, giá trị thương hiệu sẽ tăng lên. Khi đó, bạn có thể bán lại 20% cổ phần với giá 50 triệu đồng để hưởng chênh lệch giá.
+        - paragraph [ref=e100]:
+          - text: Đầu tư
+          - link "cổ phiếu" [ref=e101] [cursor=pointer]:
+            - /url: /dau-tu/co-phieu/co-phieu-la-gi/
+          - text: trên thị trường chứng khoán cũng vận hành tương tự như ví dụ trên. Bạn mua cổ phiếu của các doanh nghiệp niêm yết tức là bạn đang góp vốn vào doanh nghiệp. Hai nguồn thu nhập chính của bạn sẽ đến từ việc nhận
+          - link "cổ tức" [ref=e102] [cursor=pointer]:
+            - /url: /dau-tu/co-phieu/co-tuc-la-gi/
+          - text: và chênh lệch giá cổ phiếu.
+        - paragraph [ref=e103]: Thông thường, các doanh nghiệp trẻ đang phát triển nhanh sẽ ít khi trả cổ tức bằng tiền mặt. Họ giữ lại lợi nhuận để tiếp tục tái đầu tư kinh doanh. Do đó, người mua nhóm này thường kỳ vọng vào sự tăng trưởng của giá cổ phiếu trên sàn.
+        - paragraph [ref=e104]: Ngược lại, các tổng công ty lớn hoạt động ổn định thường trả cổ tức đều đặn hàng năm. Nhóm cổ phiếu này đem lại dòng tiền mặt ổn định nhưng giá ít khi tăng đột biến.
+        - heading "4 bước bắt đầu đầu tư cổ phiếu cho người mới" [level=2] [ref=e105]
+        - paragraph [ref=e106]: Để bắt đầu giao dịch trên thị trường Việt Nam, bạn cần thực hiện theo quy trình 4 bước đơn giản. Mọi thủ tục hiện nay đều được số hóa nhằm hỗ trợ nhà đầu tư.
+        - paragraph [ref=e107]: Trước khi thực hiện bước đầu tiên, bạn hãy chọn một công ty chứng khoán phù hợp. Các yếu tố cần xem xét bao gồm phí giao dịch và chất lượng ứng dụng điện thoại.
+        - list [ref=e108]:
+          - listitem [ref=e109]:
+            - paragraph [ref=e110]:
+              - strong [ref=e111]: Bước 1. Mở tài khoản trực tuyến.
+              - text: Bạn chỉ cần chuẩn bị Căn cước công dân gắn chip và một điện thoại có camera. Việc định danh eKYC trực tuyến hoàn toàn miễn phí và chỉ mất từ 3 đến 5 phút để kích hoạt tài khoản của bạn.
+          - listitem [ref=e112]:
+            - paragraph [ref=e113]:
+              - strong [ref=e114]: Bước 2. Nạp tiền vào tài khoản.
+              - text: Sau khi có số tài khoản chứng khoán, bạn chuyển khoản từ ngân hàng của mình vào. Các công ty chứng khoán đều hướng dẫn chi tiết cách viết nội dung chuyển khoản để tiền vào đúng tài khoản của bạn.
+          - listitem [ref=e115]:
+            - paragraph [ref=e116]:
+              - strong [ref=e117]: Bước 3. Tìm hiểu và chọn cổ phiếu.
+              - text: Bạn nên bắt đầu bằng cách tìm hiểu các doanh nghiệp lớn quen thuộc trên thị trường. Hãy đọc các thông tin cơ bản về doanh nghiệp trước khi quyết định mua.
+          - listitem [ref=e118]:
+            - paragraph [ref=e119]:
+              - strong [ref=e120]: Bước 4. Đặt lệnh mua cổ phiếu.
+              - text: Bạn đăng nhập vào ứng dụng của công ty chứng khoán, chọn mã cổ phiếu, nhập số lượng và mức giá mong muốn rồi ấn xác nhận. Lô tối thiểu để giao dịch trên sàn HOSE và HNX là 100 cổ phiếu.
+        - paragraph [ref=e121]: Quy định lô tối thiểu 100 cổ phiếu có nghĩa là số vốn ban đầu sẽ phụ thuộc vào giá cổ phiếu bạn chọn. Ví dụ, nếu cổ phiếu có giá 15.000 đồng/cổ phiếu, số vốn tối thiểu để mua 100 cổ phiếu là 1,5 triệu đồng. Nhưng nếu cổ phiếu giá 100.000 đồng, bạn cần ít nhất 10 triệu đồng.
+        - paragraph [ref=e122]: Ngoài quy định về lô, bạn cần lưu ý chu kỳ thanh toán T+2 của thị trường chứng khoán Việt Nam. Sau khi khớp lệnh mua thành công, cổ phiếu sẽ về tài khoản của bạn vào chiều ngày làm việc thứ hai tiếp theo.
+        - paragraph [ref=e123]: Ngoài tiền mua cổ phiếu, bạn cần trả một khoản phí giao dịch nhỏ cho mỗi lần mua hoặc bán. Phí này thường dao động từ 0,1% đến 0,2% giá trị khớp lệnh.
+        - heading "Cách chọn cổ phiếu tốt cho danh mục đầu tư" [level=2] [ref=e124]
+        - paragraph [ref=e125]: Để tìm kiếm cơ hội trên thị trường, các nhà đầu tư thường sử dụng hai phương pháp phân tích phổ biến. Mỗi phương pháp giải quyết một bài toán khác nhau trong việc ra quyết định.
+        - paragraph [ref=e126]: Khi thực hiện phân tích cơ bản, bạn cần chú trọng vào các chỉ số tài chính quan trọng. Hãy tìm các doanh nghiệp có doanh thu và lợi nhuận tăng trưởng đều qua từng năm. Các chỉ số như P/E hay ROE sẽ giúp bạn đánh giá hiệu quả sử dụng vốn của doanh nghiệp.
+        - paragraph [ref=e127]: Đối với phân tích kỹ thuật, bạn sẽ tập trung quan sát đồ thị giá để tìm điểm mua tối ưu. Việc theo dõi xu hướng giúp bạn tránh việc mua cổ phiếu khi giá đang trên đà giảm. Các chỉ chỉ báo kỹ thuật như RSI, đường xu hướng sẽ chỉ ra thời điểm thị trường ở vùng quá mua.
+        - table [ref=e128]:
+          - rowgroup [ref=e129]:
+            - row "Phương pháp Phân tích cơ bản (FA) Phân tích kỹ thuật (TA)" [ref=e130]:
+              - columnheader "Phương pháp" [ref=e131]
+              - columnheader "Phân tích cơ bản (FA)" [ref=e132]
+              - columnheader "Phân tích kỹ thuật (TA)" [ref=e133]
+          - rowgroup [ref=e134]:
+            - row "Câu hỏi chính Mua cổ phiếu nào tốt. Mua khi nào hợp lý." [ref=e135]:
+              - cell "Câu hỏi chính" [ref=e136]:
+                - strong [ref=e137]: Câu hỏi chính
+              - cell "Mua cổ phiếu nào tốt." [ref=e138]
+              - cell "Mua khi nào hợp lý." [ref=e139]
+            - row "Trọng tâm nghiên cứu Báo cáo tài chính, lợi nhuận doanh nghiệp. Biểu đồ biến động giá, khối lượng giao dịch." [ref=e140]:
+              - cell "Trọng tâm nghiên cứu" [ref=e141]:
+                - strong [ref=e142]: Trọng tâm nghiên cứu
+              - cell "Báo cáo tài chính, lợi nhuận doanh nghiệp." [ref=e143]
+              - cell "Biểu đồ biến động giá, khối lượng giao dịch." [ref=e144]
+            - row "Mục tiêu chính Tìm cổ phiếu dưới giá trị thật để đầu tư dài hạn. Tìm kiếm lợi nhuận từ chênh lệch giá ngắn hạn." [ref=e145]:
+              - cell "Mục tiêu chính" [ref=e146]:
+                - strong [ref=e147]: Mục tiêu chính
+              - cell "Tìm cổ phiếu dưới giá trị thật để đầu tư dài hạn." [ref=e148]
+              - cell "Tìm kiếm lợi nhuận từ chênh lệch giá ngắn hạn." [ref=e149]
+            - row "Công cụ phổ biến Các chỉ số tài chính như P/E, P/B, ROE. Các chỉ chỉ báo kỹ thuật như RSI, đường xu hướng." [ref=e150]:
+              - cell "Công cụ phổ biến" [ref=e151]:
+                - strong [ref=e152]: Công cụ phổ biến
+              - cell "Các chỉ số tài chính như P/E, P/B, ROE." [ref=e153]
+              - cell "Các chỉ chỉ báo kỹ thuật như RSI, đường xu hướng." [ref=e154]
+        - paragraph [ref=e155]: Người mới tham gia thị trường nên bắt đầu bằng việc tìm hiểu các doanh nghiệp có nền tảng cơ bản vững chắc. Bạn có thể sử dụng phân tích cơ bản để đánh giá sức mạnh nội tại của doanh nghiệp. Sau đó, hãy dùng phân tích kỹ thuật cơ bản để chọn thời điểm mua có lợi nhất.
+        - paragraph [ref=e156]: Nhiều nhà đầu tư giàu kinh nghiệm kết hợp cả hai phương pháp này để tối ưu danh mục. Họ dùng phân tích cơ bản để chọn ra danh sách các cổ phiếu tốt. Sau đó, họ dùng phân tích kỹ thuật để tìm điểm mua vào với mức giá an toàn nhất.
+        - heading "3 quy tắc vàng để sống sót trên thị trường" [level=2] [ref=e157]
+        - paragraph [ref=e158]: Thị trường chứng khoán luôn đi kèm với rủi ro biến động giá ngắn hạn. Để bảo vệ nguồn vốn tích lũy của mình, bạn cần tuân thủ nghiêm ngặt các nguyên tắc quản trị rủi ro cơ bản.
+        - paragraph [ref=e159]: Khi thị trường tăng điểm, margin giúp bạn nhân đôi hoặc nhân ba lợi nhuận rất nhanh chóng. Ngược lại, khi thị trường sụt giảm, đòn bẩy tài chính này sẽ phóng đại khoản lỗ của bạn tương ứng. Công ty chứng khoán có quyền tự động bán giải chấp cổ phiếu nếu tỷ lệ tài sản giảm quá sâu.
+        - paragraph [ref=e160]: Đa dạng hóa không đơn thuần là việc bạn mua thật nhiều mã cổ phiếu khác nhau. Bạn nên phân bổ vốn vào các nhóm ngành không liên quan trực tiếp như ngân hàng và công nghệ. Nếu một ngành gặp khó khăn, các ngành còn lại sẽ giúp cân bằng danh mục tài sản của bạn.
+        - list [ref=e161]:
+          - listitem [ref=e162]:
+            - paragraph [ref=e163]:
+              - strong [ref=e164]: Quy tắc 1. Đa dạng hóa danh mục.
+              - text: Bạn không nên tập trung toàn bộ số vốn của mình vào một cổ phiếu duy nhất. Hãy phân bổ tiền vào 3 đến 5 mã cổ phiếu thuộc các ngành khác nhau để giảm thiểu rủi ro.
+          - listitem [ref=e165]:
+            - paragraph [ref=e166]:
+              - strong [ref=e167]: Quy tắc 2. Hạn chế sử dụng margin.
+              - text: Margin hay
+              - link "giao dịch ký quỹ (margin)" [ref=e168] [cursor=pointer]:
+                - /url: /dau-tu/co-phieu/margin-la-gi/
+              - text: là việc vay tiền của công ty chứng khoán để mua thêm cổ phiếu. Công cụ này là con dao hai lưỡi có thể khiến tài khoản của bạn bị tổn thất lớn rất nhanh.
+          - listitem [ref=e169]:
+            - paragraph [ref=e170]:
+              - strong [ref=e171]: Quy tắc 3. Kiểm soát tâm lý đám đông.
+              - text: Nhiều người mới thường mua theo tin đồn từ các hội nhóm mạng xã hội chưa được kiểm chứng. Bạn cần tự trang bị kiến thức và bám sát kế hoạch đầu tư cá nhân của mình.
+        - heading "Hành trình đầu tư của bạn bắt đầu từ hôm nay" [level=2] [ref=e172]
+        - paragraph [ref=e173]: Đầu tư cổ phiếu là hành trình tích lũy tài sản dài hạn. Cách tốt nhất là bạn hãy bắt đầu bằng số vốn nhỏ giống như chia sẻ của mình ở trên để làm quen nhịp thị trường và tích lũy thêm kinh nghiệm giao dịch.
+        - paragraph [ref=e174]:
+          - text: Hãy xem thêm bài viết
+          - link "cổ phiếu là gì" [ref=e175] [cursor=pointer]:
+            - /url: /dau-tu/co-phieu/co-phieu-la-gi/
+          - text: để trang bị đầy đủ kiến thức cơ bản trước khi đặt lệnh mua đầu tiên.
+        - generic [ref=e176]:
+          - heading "Câu hỏi thường gặp" [level=2] [ref=e177]
+          - generic [ref=e178]:
+            - group [ref=e179]:
+              - generic "Đầu tư cổ phiếu cần tối thiểu bao nhiêu tiền?" [ref=e180] [cursor=pointer]
+            - group [ref=e181]:
+              - generic "Mở tài khoản chứng khoán có mất phí không và mất bao lâu?" [ref=e182] [cursor=pointer]
+            - group [ref=e183]:
+              - generic "Tôi có thể rút tiền từ tài khoản chứng khoán về bất cứ lúc nào không?" [ref=e184] [cursor=pointer]
+        - complementary "Nguồn tham khảo và kiểm tra" [ref=e185]:
+          - paragraph [ref=e186]: "Cập nhật lần cuối: 14/6/2026"
+          - heading "Nguồn tham khảo" [level=2] [ref=e187]
+          - list [ref=e188]:
+            - listitem [ref=e189]: Ủy ban Chứng khoán Nhà nước
+            - listitem [ref=e190]: Sở Giao dịch Chứng khoán TP.HCM (HOSE)
+        - generic [ref=e191]:
+          - heading "Cách chúng tôi kiểm tra nội dung" [level=2] [ref=e192]
+          - paragraph [ref=e193]:
+            - text: Nội dung được rà soát về tính chính xác, tính cập nhật và mức độ phù hợp với nhà đầu tư cá nhân. Nếu phát hiện lỗi có thể ảnh hưởng đến quyết định tài chính, bài viết sẽ được cập nhật và ghi nhận theo
+            - link "chính sách đính chính" [ref=e194] [cursor=pointer]:
+              - /url: /corrections-policy/
+            - text: .
+        - complementary [ref=e195]:
+          - generic [ref=e196]: L
+          - generic [ref=e197]:
+            - generic [ref=e198]:
+              - generic [ref=e199]:
+                - paragraph [ref=e200]: Về tác giả
+                - link "Nguyễn Viết Lộc" [ref=e201] [cursor=pointer]:
+                  - /url: /author/nguyen-viet-loc
+              - link "Xem hồ sơ" [ref=e202] [cursor=pointer]:
+                - /url: /author/nguyen-viet-loc
+            - paragraph [ref=e203]: Người sáng lập & Phụ trách nội dung
+            - paragraph [ref=e204]: Lộc Nguyễn hiện là Chuyên viên SEO tại Công ty Chứng khoán DSC. Với hơn 3 năm kinh nghiệm triển khai nội dung và tối ưu hiệu suất tìm kiếm cho các sản phẩm tài chính lớn, Lộc sáng lập Value Investing nhằm chia sẻ các kiến thức đầu tư thực chiến bằng ngôn ngữ bình dân, giúp F0 tự tin và an toàn hơn trên thị trường.
+            - generic "Chuyên môn tác giả" [ref=e205]:
+              - generic [ref=e206]: Đầu tư giá trị
+              - generic [ref=e207]: Đơn giản hóa thuật ngữ tài chính
+              - generic [ref=e208]: Sản phẩm đầu tư cho người mới bắt đầu
+              - generic [ref=e209]: Cấu trúc thông tin tài chính (SEO)
+            - paragraph [ref=e210]: Hơn 3 năm kinh nghiệm thực tế triển khai nội dung tài chính và tối ưu hiệu suất tìm kiếm cho các sản phẩm tài chính lớn (hiện là Chuyên viên SEO tại Công ty Chứng khoán DSC). Chuyên sâu về nghiên cứu hành vi tìm kiếm (Search Intent) của nhà đầu tư cá nhân và đơn giản hóa cấu trúc thông tin.
+            - paragraph [ref=e211]: Nội dung được viết cho mục đích giáo dục tài chính, ưu tiên nguồn chính thống và tiếp nhận phản hồi đính chính qua email công khai.
+        - generic [ref=e212]:
+          - generic [ref=e213]: Chia sẻ
+          - link "Chia sẻ lên Facebook" [ref=e214] [cursor=pointer]:
+            - /url: https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fvalueinvesting.com.vn%2Fdau-tu%2Fco-phieu%2Fcach-dau-tu-co-phieu%2F&quote=C%C3%A1ch%20%C4%91%E1%BA%A7u%20t%C6%B0%20c%E1%BB%95%20phi%E1%BA%BFu%3A%20H%C6%B0%E1%BB%9Bng%20d%E1%BA%ABn%20th%E1%BB%B1c%20chi%E1%BA%BFn%20t%E1%BB%AB%20con%20s%E1%BB%91%200
+            - img [ref=e215]
+            - text: Facebook
+          - button "Sao chép đường dẫn" [ref=e217] [cursor=pointer]:
+            - img [ref=e218]
+            - generic [ref=e221]: Sao chép link
+        - generic [ref=e222]:
+          - paragraph [ref=e223]: Bài viết liên quan
+          - generic [ref=e224]:
+            - link "Cổ phiếu là gì? Giải thích cổ phiếu, quyền sở hữu doanh nghiệp và những điều người mới cần hiểu trước khi đầu tư. 5 phút đọc" [ref=e225] [cursor=pointer]:
+              - /url: /dau-tu/co-phieu/co-phieu-la-gi/
+              - strong [ref=e226]: Cổ phiếu là gì?
+              - paragraph [ref=e227]: Giải thích cổ phiếu, quyền sở hữu doanh nghiệp và những điều người mới cần hiểu trước khi đầu tư.
+              - generic [ref=e228]: 5 phút đọc
+            - link "Cổ tức là gì? Cổ tức là phần lợi nhuận doanh nghiệp phân phối cho cổ đông bằng tiền mặt, cổ phiếu hoặc hình thức khác. 5 phút đọc" [ref=e229] [cursor=pointer]:
+              - /url: /dau-tu/co-phieu/co-tuc-la-gi/
+              - strong [ref=e230]: Cổ tức là gì?
+              - paragraph [ref=e231]: Cổ tức là phần lợi nhuận doanh nghiệp phân phối cho cổ đông bằng tiền mặt, cổ phiếu hoặc hình thức khác.
+              - generic [ref=e232]: 5 phút đọc
+            - link "Margin là gì? Margin là hình thức vay ký quỹ để mua chứng khoán, có thể khuếch đại lợi nhuận nhưng cũng làm rủi ro thua lỗ tăng nhanh. 6 phút đọc" [ref=e233] [cursor=pointer]:
+              - /url: /dau-tu/co-phieu/margin-la-gi/
+              - strong [ref=e234]: Margin là gì?
+              - paragraph [ref=e235]: Margin là hình thức vay ký quỹ để mua chứng khoán, có thể khuếch đại lợi nhuận nhưng cũng làm rủi ro thua lỗ tăng nhanh.
+              - generic [ref=e236]: 6 phút đọc
+  - contentinfo [ref=e237]:
+    - generic [ref=e238]:
+      - generic [ref=e239]:
+        - strong [ref=e240]: ValueInvesting.com.vn
+        - paragraph [ref=e241]: Kiến thức đầu tư giá trị cho người Việt, miễn phí, có nguồn, không khuyến nghị mua bán.
+      - generic [ref=e242]:
+        - heading "Đầu tư" [level=5] [ref=e243]
+        - link "Cổ phiếu" [ref=e244] [cursor=pointer]:
+          - /url: /dau-tu/co-phieu/
+        - link "Quỹ ETF" [ref=e245] [cursor=pointer]:
+          - /url: /dau-tu/etf/
+        - link "Trái phiếu" [ref=e246] [cursor=pointer]:
+          - /url: /dau-tu/trai-phieu/
+        - link "Phái sinh" [ref=e247] [cursor=pointer]:
+          - /url: /dau-tu/phai-sinh/
+      - generic [ref=e248]:
+        - heading "Phân tích & Review" [level=5] [ref=e249]
+        - link "Phân tích cơ bản" [ref=e250] [cursor=pointer]:
+          - /url: /phan-tich/co-ban/
+        - link "Phân tích kỹ thuật" [ref=e251] [cursor=pointer]:
+          - /url: /phan-tich/ky-thuat/
+        - link "Reviews" [ref=e252] [cursor=pointer]:
+          - /url: /reviews/
+        - link "Nhà đầu tư" [ref=e253] [cursor=pointer]:
+          - /url: /nha-dau-tu/
+      - generic [ref=e254]:
+        - heading "Về trang web" [level=5] [ref=e255]
+        - link "Tác giả" [ref=e256] [cursor=pointer]:
+          - /url: /about/
+        - link "Biên tập" [ref=e257] [cursor=pointer]:
+          - /url: /editorial-policy/
+        - link "Nguồn tham khảo" [ref=e258] [cursor=pointer]:
+          - /url: /sources-policy/
+        - link "Đính chính" [ref=e259] [cursor=pointer]:
+          - /url: /corrections-policy/
+        - link "Liên hệ" [ref=e260] [cursor=pointer]:
+          - /url: /contact/
+    - generic [ref=e261]: © 2026 ValueInvesting.com.vn. ValueInvesting.com.vn không cung cấp dịch vụ tư vấn đầu tư cá nhân, môi giới chứng khoán hoặc tín hiệu giao dịch. Nội dung chỉ nhằm mục đích giáo dục.
+  - generic [ref=e264]:
+    - button "Menu" [ref=e265]:
+      - img [ref=e267]
+      - generic: Menu
+    - button "Inspect" [ref=e271]:
+      - img [ref=e273]
+      - generic: Inspect
+    - button "Audit" [ref=e275]:
+      - img [ref=e277]
+      - generic: Audit
+    - button "Settings" [ref=e280]:
+      - img [ref=e282]
+      - generic: Settings

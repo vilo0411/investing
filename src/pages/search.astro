@@ -36,12 +36,12 @@ const searchIndex = articles.map((article) => {
 });
 ---
 
-<BaseLayout title="Tìm kiếm" description="Tìm bài viết theo chủ đề, thuật ngữ hoặc nhóm nội dung trên ValueInvesting.com.vn.">
+<BaseLayout title="Tìm kiếm" description="Tìm bài viết theo chủ đề, thuật ngữ hoặc nhóm nội dung trên Value Investing.">
   <section class="page-hero">
     <div class="container">
       <nav class="breadcrumb" aria-label="Breadcrumb">
         <a href="/">Trang chủ</a>
-        <span aria-hidden="true">›</span>
+        <span class="separator" aria-hidden="true">/</span>
         <span aria-current="page">Tìm kiếm</span>
       </nav>
       <div class="eyebrow">Thư viện kiến thức</div>
@@ -77,185 +77,246 @@ const searchIndex = articles.map((article) => {
   </section>
 
   <script type="application/json" id="search-index" set:html={JSON.stringify(searchIndex)} />
-</BaseLayout>
 
-<style>
-  .breadcrumb {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    font-size: 0.85rem;
-    color: var(--muted);
-    margin-bottom: var(--space-4);
-    flex-wrap: wrap;
-  }
+  <style>
+    .breadcrumb {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-bottom: var(--space-4);
+      flex-wrap: wrap;
+    }
 
-  .breadcrumb a {
-    color: var(--muted);
-  }
+    .breadcrumb a {
+      color: var(--text);
+      font-weight: 700;
+      text-decoration: none;
+      transition: color var(--transition-fast);
+    }
 
-  .search-shell {
-    display: grid;
-    gap: 22px;
-  }
+    .breadcrumb a:hover {
+      color: var(--brand);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
 
-  .search-controls {
-    border: 1px solid var(--line);
-    border-radius: var(--radius-md);
-    background: var(--surface);
-    padding: 20px;
-  }
+    .breadcrumb .separator {
+      color: var(--muted);
+      font-weight: 500;
+    }
 
-  .search-label {
-    display: block;
-    color: var(--color-brand-900);
-    font-weight: 800;
-    font-size: 0.84rem;
-    margin-bottom: 8px;
-  }
+    .breadcrumb span[aria-current] {
+      color: var(--muted);
+      font-weight: 500;
+    }
 
-  .search-input {
-    width: 100%;
-    min-height: 48px;
-    border: 1px solid var(--line);
-    border-radius: var(--radius-md);
-    padding: 0 14px;
-    color: var(--text);
-    font: inherit;
-    outline: none;
-  }
+    .search-shell {
+      display: grid;
+      gap: 22px;
+    }
 
-  .search-input:focus {
-    border-color: var(--color-brand-900);
-    box-shadow: 0 0 0 3px rgba(0, 107, 44, 0.12);
-  }
+    .search-controls {
+      border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+      background: var(--surface);
+      padding: 20px;
+      box-shadow: var(--shadow-sm);
+    }
 
-  .filter-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-top: 14px;
-  }
+    .search-label {
+      display: block;
+      color: var(--brand);
+      font-weight: 800;
+      font-size: 0.84rem;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
 
-  .filter-chip {
-    border: 1px solid var(--line);
-    border-radius: 999px;
-    background: var(--surface);
-    color: var(--muted);
-    cursor: pointer;
-    font: inherit;
-    font-size: 0.84rem;
-    font-weight: 700;
-    padding: 7px 11px;
-  }
+    .search-input {
+      width: 100%;
+      min-height: 48px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-sm);
+      padding: 0 14px;
+      color: var(--text);
+      font: inherit;
+      font-weight: 500;
+      outline: none;
+      background: var(--surface);
+      transition: box-shadow var(--transition-fast);
+    }
 
-  .filter-chip.is-active,
-  .filter-chip:hover {
-    border-color: var(--color-brand-900);
-    background: var(--color-brand-100);
-    color: var(--color-brand-900);
-  }
+    .search-input:focus {
+      border-color: var(--line);
+      box-shadow: 2px 2px 0px var(--line);
+    }
 
-  .search-summary {
-    color: var(--muted);
-    font-size: 0.9rem;
-    font-weight: 700;
-  }
+    .filter-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 14px;
+    }
 
-  .search-results {
-    display: grid;
-    gap: 12px;
-  }
+    .filter-chip {
+      border: 1px solid var(--line);
+      border-radius: var(--radius-sm);
+      background: var(--surface-alt);
+      color: var(--text);
+      cursor: pointer;
+      font: inherit;
+      font-size: 0.84rem;
+      font-weight: 700;
+      padding: 7px 11px;
+      box-shadow: 1px 1px 0px var(--line);
+      transition: background var(--transition-fast), transform var(--transition-fast);
+    }
 
-  .result-card {
-    display: grid;
-    gap: 8px;
-    border: 1px solid var(--line);
-    border-radius: var(--radius-md);
-    background: var(--surface);
-    padding: 18px 20px;
-    text-decoration: none;
-  }
+    .filter-chip.is-active,
+    .filter-chip:hover {
+      border-color: var(--line);
+      background: var(--color-mint);
+      color: var(--text);
+    }
 
-  .result-card:hover {
-    border-color: var(--color-brand-100);
-    box-shadow: var(--shadow-sm);
-    text-decoration: none;
-  }
+    .search-summary {
+      color: var(--text);
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
 
-  .result-meta {
-    display: flex;
-    gap: 10px;
-    color: var(--muted);
-    font-size: 0.82rem;
-    flex-wrap: wrap;
-  }
+    .search-results {
+      display: grid;
+      gap: 12px;
+    }
 
-  .result-title {
-    margin: 0;
-    color: var(--text);
-    font-family: var(--font-serif);
-    font-size: 1.2rem;
-    line-height: 1.3;
-  }
+    .result-card {
+      display: grid;
+      gap: 8px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+      background: var(--surface);
+      padding: 18px 20px;
+      text-decoration: none;
+      box-shadow: var(--shadow-sm);
+      transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+    }
 
-  .result-desc {
-    margin: 0;
-    color: var(--muted);
-  }
-</style>
+    .result-card:hover {
+      transform: translate(2px, 2px);
+      box-shadow: none;
+      text-decoration: none;
+    }
 
-<script is:inline>
-  const rawIndex = document.getElementById("search-index")?.textContent ?? "[]";
-  const index = JSON.parse(rawIndex);
-  const input = document.querySelector("[data-search-input]");
-  const results = document.querySelector("[data-search-results]");
-  const summary = document.querySelector("[data-search-summary]");
-  const chips = [...document.querySelectorAll("[data-category]")];
-  const params = new URLSearchParams(window.location.search);
-  let activeCategory = params.get("category") || "all";
+    .result-meta {
+      display: flex;
+      gap: 10px;
+      color: var(--muted);
+      font-size: 0.82rem;
+      flex-wrap: wrap;
+      font-weight: 500;
+    }
 
-  const normalize = (value) =>
-    value.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    .result-meta strong {
+      color: var(--brand);
+    }
 
-  const render = () => {
-    const query = normalize(input.value.trim());
-    const filtered = index.filter((item) => {
-      const matchesCategory = activeCategory === "all" || item.category === activeCategory;
-      const haystack = normalize(item.text);
-      const matchesQuery = !query || query.split(/\s+/).every((part) => haystack.includes(part));
-      return matchesCategory && matchesQuery;
-    });
+    .result-title {
+      margin: 0;
+      color: var(--text);
+      font-family: var(--font-serif);
+      font-size: 1.25rem;
+      font-weight: 700;
+      line-height: 1.3;
+    }
 
-    summary.textContent = `${filtered.length} bài viết phù hợp`;
-    results.innerHTML = filtered.length
-      ? filtered.map((item) => `
-          <a class="result-card" href="${item.href}">
-            <span class="result-meta">
-              <strong>${item.categoryLabel}</strong>
-              <span>${item.readingTime}</span>
-              <span>Cập nhật ${item.updatedDate}</span>
-            </span>
-            <h2 class="result-title">${item.title}</h2>
-            <p class="result-desc">${item.description}</p>
-          </a>
-        `).join("")
-      : `<div class="result-card"><h2 class="result-title">Không tìm thấy bài phù hợp</h2><p class="result-desc">Hãy thử từ khóa rộng hơn hoặc chọn tất cả chủ đề.</p></div>`;
-  };
+    .result-desc {
+      margin: 0;
+      color: var(--muted);
+      font-weight: 500;
+    }
+  </style>
 
-  if (input) {
-    input.value = params.get("q") || "";
-    input.addEventListener("input", render);
-  }
+  <script is:inline>
+    document.addEventListener("DOMContentLoaded", () => {
+      const rawIndex = document.getElementById("search-index")?.textContent ?? "[]";
+      const index = JSON.parse(rawIndex);
+      const input = document.querySelector("[data-search-input]");
+      const results = document.querySelector("[data-search-results]");
+      const summary = document.querySelector("[data-search-summary]");
+      const chips = [...document.querySelectorAll("[data-category]")];
+      const params = new URLSearchParams(window.location.search);
+      let activeCategory = params.get("category") || "all";
 
-  chips.forEach((chip) => {
-    chip.classList.toggle("is-active", chip.dataset.category === activeCategory);
-    chip.addEventListener("click", () => {
-      activeCategory = chip.dataset.category;
-      chips.forEach((item) => item.classList.toggle("is-active", item === chip));
+      const normalize = (value) =>
+        value.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/đ/g, "d");
+
+      const render = () => {
+        const query = normalize(input.value.trim());
+        const filtered = index.filter((item) => {
+          const matchesCategory = activeCategory === "all" || item.category === activeCategory;
+          const haystack = normalize(item.text);
+          const matchesQuery = !query || query.split(/\s+/).every((part) => haystack.includes(part));
+          return matchesCategory && matchesQuery;
+        });
+
+        summary.textContent = `${filtered.length} bài viết phù hợp`;
+        results.innerHTML = filtered.length
+          ? filtered.map((item) => `
+              <a class="result-card" href="${item.href}">
+                <span class="result-meta">
+                  <strong>${item.categoryLabel}</strong>
+                  <span>${item.readingTime}</span>
+                  <span>Cập nhật ${item.updatedDate}</span>
+                </span>
+                <h2 class="result-title">${item.title}</h2>
+                <p class="result-desc">${item.description}</p>
+              </a>
+            `).join("")
+          : `<div class="result-card"><h2 class="result-title">Không tìm thấy bài phù hợp</h2><p class="result-desc">Hãy thử từ khóa rộng hơn hoặc chọn tất cả chủ đề.</p></div>`;
+      };
+
+      const updateURL = () => {
+        const query = input.value.trim();
+        const newParams = new URLSearchParams();
+        if (query) newParams.set("q", query);
+        if (activeCategory && activeCategory !== "all") newParams.set("category", activeCategory);
+        const newUrl = `${window.location.pathname}${newParams.toString() ? '?' + newParams.toString() : ''}`;
+        window.history.replaceState(null, "", newUrl);
+      };
+
+      if (input) {
+        input.value = params.get("q") || "";
+        input.addEventListener("input", () => {
+          render();
+          updateURL();
+        });
+      }
+
+      chips.forEach((chip) => {
+        chip.classList.toggle("is-active", chip.dataset.category === activeCategory);
+        chip.addEventListener("click", () => {
+          activeCategory = chip.dataset.category;
+          chips.forEach((item) => item.classList.toggle("is-active", item === chip));
+          render();
+          updateURL();
+        });
+      });
+
+      // Prevent form submission from reloading the page
+      const form = document.querySelector("[data-search-form]");
+      if (form) {
+        form.addEventListener("submit", (e) => {
+          e.preventDefault();
+          render();
+          updateURL();
+        });
+      }
+
       render();
     });
-  });
-
-  render();
-</script>
+  </script>
+</BaseLayout>

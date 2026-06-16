@@ -1,0 +1,61 @@
+---
+import { getCollection } from "astro:content";
+import CategoryListing from "@/components/CategoryListing.astro";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { categories, getCategoryPath } from "@/data/site";
+
+export async function getStaticPaths() {
+  return categories
+    .filter((category) => category.group === "Phân tích")
+    .map((category) => ({
+      params: { category: category.slug },
+      props: { category },
+    }));
+}
+
+const { category } = Astro.props;
+const articles = (await getCollection("articles"))
+  .filter((article) => article.data.category === category.slug)
+  .sort((a, b) => a.data.order - b.data.order);
+
+const categoryUrl = new URL(getCategoryPath(category), Astro.site).toString();
+
+const breadcrumbItems = [
+  { label: "Trang chủ", href: "/" },
+  { label: "Phân tích", href: "/phan-tich/" },
+  { label: category.title },
+];
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Trang chủ",
+      "item": Astro.site?.toString(),
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Phân tích",
+      "item": new URL("/phan-tich/", Astro.site).toString(),
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": category.title,
+      "item": categoryUrl,
+    },
+  ],
+};
+---
+
+<BaseLayout title={category.title} description={category.description}>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  </Fragment>
+
+  <CategoryListing category={category} articles={articles} breadcrumbItems={breadcrumbItems} />
+</BaseLayout>

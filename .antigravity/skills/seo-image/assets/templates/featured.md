@@ -1,5 +1,5 @@
 [IMAGE]
 type:    featured
-size:    1200 × 630 px
-ratio:   16:9
+size:    1000 × 600 px
+ratio:   5:3
 output:  single image — no collage, no border, no frame

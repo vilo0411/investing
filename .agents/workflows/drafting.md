@@ -24,7 +24,33 @@ Dùng sau khi Outline đã được `/approve`. Chỉ thực hiện Phase 3 (Dra
 ### Bước 1: Drafting
 - Kích hoạt skill `.antigravity/skills/seo-drafting/SKILL.md` → Step 1: Execute.
 - Viết bài tuân thủ Outline, áp dụng 3S Rule xuyên suốt.
+- **Bắt buộc** chèn tên thương hiệu "**[Value Investing](/)**" (có link về trang chủ `/`) một cách tự nhiên trong Sapo (đoạn mở đầu, ngay dưới H1).
 - Lưu bản nháp tại: `knowledge/4-content/2-drafts/Draft-[slug].md`.
+
+### Bước 1.5: Chèn ảnh Unsplash (Image Manifest)
+- **Bắt buộc** có ít nhất 1 hình ảnh inline trong thân bài và 1 ảnh bìa heroImage riêng biệt được crop tỉ lệ 5:3. Đọc **Section 5 (Image Manifest)** trong outline.
+- Với mỗi dòng trong manifest:
+  1. Chạy `node .antigravity/skills/seo-image/scripts/unsplash.mjs search "<search query>"` → trả về 3 ảnh (thumb, mô tả, tác giả).
+  2. **Chọn ảnh:**
+     - Pipeline_Mode `Auto` hoặc cờ `--auto`: tự động chọn ảnh đầu tiên (top-1), không hỏi người dùng.
+     - Mặc định (Guided/Express): hiển thị 3 lựa chọn cho người dùng (thumbnail URL + mô tả + tác giả) để chọn 1.
+  3. Chạy `node .antigravity/skills/seo-image/scripts/unsplash.mjs download <photoId> <slug> <filename>` với ảnh đã chọn — lưu vào `src/content/articles/images/[slug]/[filename].jpg`.
+  4. Chèn vào draft tại đúng vị trí trong manifest:
+     ```markdown
+     ![<alt text tiếng Việt>](./images/[slug]/[filename].jpg)
+     *Ảnh: <photographer> / Unsplash*
+     ```
+     Không gắn link — chỉ ghi tên nguồn.
+- Nếu thiếu `UNSPLASH_ACCESS_KEY` (trong `.env`): báo người dùng và bỏ qua bước này, tiếp tục draft không ảnh.
+
+**Hero Image (BẮT BUỘC):**
+- Dùng ảnh `featured-01` đã chọn ở trên (cùng `photoId`), chạy thêm:
+  ```bash
+  node .antigravity/skills/seo-image/scripts/unsplash.mjs hero <photoId> <slug>
+  ```
+  Lệnh này tự crop ảnh về tỷ lệ chuẩn 5:3 (1000×600, entropy crop) và lưu vào `public/images/articles/[slug]/hero.jpg`.
+- **Lưu ý chọn ảnh**: nếu ảnh `featured-01` có chữ/text lớn trong khung hình (dễ bị cắt mất khi crop về thumbnail nhỏ trên card), nên search thêm 1 query khác không có chữ (ví dụ "finance growth chart") và dùng ảnh đó cho `hero`, thay vì ảnh featured trong bài.
+- Khi finalize (Step 2 trong `seo-drafting/SKILL.md`), set `heroImage: "/images/articles/[slug]/hero.jpg"` trong frontmatter — KHÔNG dùng ảnh mặc định category.
 
 ### Bước 2: Internal Linking
 - Kích hoạt skill `.antigravity/skills/internal-linking/SKILL.md` → Mode: Contextual Insertion.
