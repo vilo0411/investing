@@ -25,16 +25,27 @@ const API = "https://api.unsplash.com";
 const slugKeywords = {
   "pe-la-gi": "financial calculator chart",
   "pb-la-gi": "balance sheet accounting book",
-  "roe-la-gi": "business profit equity growth",
-  "roa-la-gi": "factory asset industry gear",
-  "eps-la-gi": "earnings share coins profits",
-  "rsi-la-gi": "technical analysis stock trend",
-  "hop-dong-tuong-lai-la-gi": "futures derivatives exchange trading",
-  "benjamin-graham": "vintage book library scholar",
-  "warren-buffett": "business leader investor wisdom",
-  "cong-ty-chung-khoan-phi-thap": "digital banking phone cost",
-  "review-cong-ty-chung-khoan-cho-nguoi-moi": "laptop student learning trade",
-  "etf-vn30-la-gi": "vietnam securities exchange board"
+  "roe-la-gi": "equity return profit growth bar chart",
+  "roa-la-gi": "factory industrial manufacturing plant",
+  "eps-la-gi": "gold coins stack earnings dividend",
+  "rsi-la-gi": "candlestick oscillator momentum chart",
+  "hop-dong-tuong-lai-la-gi": "futures trading floor exchange",
+  "benjamin-graham": "vintage library books reading desk",
+  "warren-buffett": "newspaper reading investor office desk",
+  "cong-ty-chung-khoan-phi-thap": "mobile fintech app smartphone banking",
+  "review-cong-ty-chung-khoan-cho-nguoi-moi": "student laptop learning online education",
+  "etf-vn30-la-gi": "stock exchange board ticker screen",
+  "blue-chip-la-gi": "blue chip corporate headquarters skyscraper",
+  "co-phieu-la-gi": "stock certificate equity ownership shares",
+  "co-tuc-la-gi": "dividend payment check envelope money",
+  "etf-la-gi": "diversified portfolio index mutual fund",
+  "margin-la-gi": "leverage risk warning balance scale",
+  "trai-phieu-la-gi": "government bond certificate fixed income",
+  "trai-phieu-doanh-nghiep": "corporate bond contract office signing",
+  "cach-dau-tu-co-phieu": "stock market trading screen monitor",
+  "cach-dau-tu-quy-etf": "long term saving piggy bank growth",
+  "cach-dau-tu-trai-phieu": "fixed income coupon rate interest",
+  "cach-dau-tu-chung-khoan-phai-sinh": "risk management hedge derivative strategy",
 };
 
 function getMD5(filePath) {
@@ -69,13 +80,14 @@ function scanImages(dirPath) {
 
 function filePathToSlug(filePath) {
   const parts = filePath.replace(projectRoot, "").split("/");
+  // src/content/articles/images/[slug]/file.jpg → find 'images' AFTER 'articles'
   const articlesIdx = parts.indexOf("articles");
-  if (articlesIdx !== -1 && parts[articlesIdx + 1]) {
-    return parts[articlesIdx + 1];
-  }
-  const imagesIdx = parts.indexOf("images");
-  if (imagesIdx !== -1 && parts[imagesIdx + 1]) {
-    return parts[imagesIdx + 1];
+  if (articlesIdx !== -1) {
+    const next = parts[articlesIdx + 1];
+    if (next === "images" && parts[articlesIdx + 2]) {
+      return parts[articlesIdx + 2];
+    }
+    if (next) return next;
   }
   return "unknown";
 }
@@ -144,11 +156,7 @@ async function fixDuplicates() {
   const itemsToFix = [];
   for (const [hash, group] of Object.entries(hashGroups)) {
     if (group.length > 1) {
-      // Keep the first one, fix the rest
-      // Skip Group #2 if it is cach-dau-tu-co-phieu/hero.jpg and featured-cover.jpg since they are intended
-      const isIntentionalGroup = group.some(img => img.slug === "cach-dau-tu-co-phieu" && img.fileName === "featured-cover.jpg");
-      if (isIntentionalGroup) continue;
-
+      // Keep the first one, fix the rest — all duplicates must be replaced
       for (let i = 1; i < group.length; i++) {
         itemsToFix.push(group[i]);
       }
