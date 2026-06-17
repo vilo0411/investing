@@ -1,0 +1,369 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation "Menu chính" [ref=e3]:
+      - link "Value Investing" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - img [ref=e5]
+        - generic [ref=e8]: Value Investing
+      - generic [ref=e9]:
+        - link "Đầu tư" [ref=e11] [cursor=pointer]:
+          - /url: /dau-tu/
+          - text: Đầu tư
+          - img [ref=e12]
+        - link "Phân tích" [ref=e15] [cursor=pointer]:
+          - /url: /phan-tich/
+          - text: Phân tích
+          - img [ref=e16]
+        - link "Nhà đầu tư" [ref=e18] [cursor=pointer]:
+          - /url: /nha-dau-tu/
+        - link "Reviews" [ref=e19] [cursor=pointer]:
+          - /url: /reviews/
+      - button "Mở tìm kiếm" [ref=e21]:
+        - img [ref=e22]
+  - main [ref=e25]:
+    - generic [ref=e27]:
+      - navigation "Breadcrumb" [ref=e28]:
+        - list [ref=e29]:
+          - listitem [ref=e30]:
+            - link "Trang chủ" [ref=e31] [cursor=pointer]:
+              - /url: /
+            - generic [ref=e32]: /
+          - listitem [ref=e33]:
+            - link "Reviews" [ref=e34] [cursor=pointer]:
+              - /url: /reviews/
+            - generic [ref=e35]: /
+          - listitem [ref=e36]:
+            - generic [ref=e37]: "Review VPS Securities: Có nên mở tài khoản không? (2026)"
+      - generic [ref=e38]: Reviews
+      - 'heading "Review VPS Securities: Có nên mở tài khoản không? (2026)" [level=1] [ref=e39]'
+      - paragraph [ref=e40]: Đánh giá chi tiết VPS Securities năm 2026 — công ty chứng khoán số 1 về thị phần môi giới cá nhân. Phí, margin, ứng dụng SmartOne và hướng dẫn mở tài khoản.
+      - generic [ref=e41]:
+        - generic [ref=e42]: L
+        - generic [ref=e43]:
+          - generic [ref=e44]:
+            - generic [ref=e45]: "Tác giả:"
+            - link "Nguyễn Viết Lộc" [ref=e46] [cursor=pointer]:
+              - /url: /author/nguyen-viet-loc/
+            - generic [ref=e47]: "|"
+            - generic [ref=e48]: "Cập nhật: 16/6/2026"
+            - generic [ref=e49]: "|"
+            - generic [ref=e50]: 6 phút đọc
+          - generic [ref=e52]:
+            - text: Rà soát theo
+            - link "chính sách biên tập" [ref=e53] [cursor=pointer]:
+              - /url: /editorial-policy/
+      - generic "Thông tin độ tin cậy của bài viết" [ref=e54]:
+        - generic [ref=e55]: Kiểm tra nguồn
+        - generic [ref=e56]: Không tư vấn cá nhân
+        - generic [ref=e57]: Có quy trình đính chính
+    - 'img "Review VPS Securities: Có nên mở tài khoản không? (2026)" [ref=e60]'
+    - navigation "Điều hướng nhanh trong bài" [ref=e61]:
+      - generic [ref=e62]:
+        - generic [ref=e63]: Đọc nhanh
+        - list [ref=e64]:
+          - listitem [ref=e65]:
+            - link "Tiêu chí đánh giá" [ref=e66] [cursor=pointer]:
+              - /url: "#tieu-chi-danh-gia"
+              - generic [ref=e67]: "01"
+              - text: Tiêu chí đánh giá
+          - listitem [ref=e68]:
+            - link "Thông tin nhanh" [ref=e69] [cursor=pointer]:
+              - /url: "#thong-tin-nhanh"
+              - generic [ref=e70]: "02"
+              - text: Thông tin nhanh
+          - listitem [ref=e71]:
+            - link "Mở tài khoản" [ref=e72] [cursor=pointer]:
+              - /url: "#mo-tai-khoan"
+              - generic [ref=e73]: "03"
+              - text: Mở tài khoản
+          - listitem [ref=e74]:
+            - link "Ưu nhược điểm" [ref=e75] [cursor=pointer]:
+              - /url: "#uu-nhuoc-diem"
+              - generic [ref=e76]: "04"
+              - text: Ưu nhược điểm
+          - listitem [ref=e77]:
+            - link "Người dùng nói gì" [ref=e78] [cursor=pointer]:
+              - /url: "#phan-hoi-nguoi-dung"
+              - generic [ref=e79]: "05"
+              - text: Người dùng nói gì
+    - article [ref=e81]:
+      - complementary "Lưu ý tài chính" [ref=e82]:
+        - strong [ref=e83]: "Lưu ý trước khi đọc:"
+        - generic [ref=e84]: Value Investing không cung cấp dịch vụ tư vấn đầu tư cá nhân, môi giới chứng khoán hoặc tín hiệu giao dịch. Nội dung chỉ nhằm mục đích giáo dục.
+      - complementary "Tóm tắt nội dung chính" [ref=e85]:
+        - paragraph [ref=e86]: Tóm tắt nội dung chính
+        - list [ref=e87]:
+          - listitem [ref=e88]: VPS là CTCK có thị phần môi giới cá nhân số 1 Việt Nam với đội ngũ môi giới hùng hậu nhất.
+          - listitem [ref=e89]: Phí giao dịch cạnh tranh trong thời gian ưu đãi ban đầu, nhưng cần theo dõi sau khi hết ưu đãi.
+          - listitem [ref=e90]: Ứng dụng SmartOne đa tính năng, phù hợp cả nhà đầu tư mới lẫn có kinh nghiệm.
+          - listitem [ref=e91]: Lựa chọn tốt nhất cho F0 cần môi giới tư vấn — nhưng chú ý chất lượng môi giới không đồng đều.
+      - generic [ref=e92]:
+        - generic [ref=e93]:
+          - generic [ref=e94]:
+            - generic [ref=e95]: "4.2"
+            - generic "4.2 trên 5 sao" [ref=e96]:
+              - generic [ref=e97]: ★
+              - generic [ref=e98]: ★
+              - generic [ref=e99]: ★
+              - generic [ref=e100]: ★
+              - generic [ref=e101]: ★
+            - generic [ref=e102]: Điểm Value Investing
+          - generic [ref=e103]:
+            - generic [ref=e104]:
+              - generic [ref=e105]: Phù hợp nhất với
+              - generic [ref=e106]: Người mới cần hỗ trợ môi giới, muốn có người dẫn dắt
+            - generic [ref=e107]:
+              - generic [ref=e108]:
+                - generic [ref=e109]: Phí GD
+                - generic [ref=e110]: 0.15% (có ưu đãi ban đầu)
+              - generic [ref=e111]:
+                - generic [ref=e112]: Margin
+                - generic [ref=e113]: 10.5%/năm
+              - generic [ref=e114]:
+                - generic [ref=e115]: Đánh giá app
+                - generic [ref=e116]: 4.1/5
+            - link "Mở tài khoản ngay" [ref=e118] [cursor=pointer]:
+              - /url: https://www.vps.com.vn
+        - generic [ref=e119]:
+          - paragraph [ref=e120]: Nhận định của chúng tôi
+          - paragraph [ref=e121]: VPS phù hợp nhất với F0 cần được hỗ trợ trực tiếp từ môi giới trong giai đoạn học hỏi ban đầu. Hãy tận dụng thời gian ưu đãi phí ban đầu để trải nghiệm trước khi tính toán lại chi phí dài hạn.
+        - generic [ref=e122]:
+          - heading "Điểm theo từng tiêu chí" [level=2] [ref=e123]
+          - paragraph [ref=e124]: Điểm được tính dựa trên dữ liệu công khai (phí, lãi suất margin, app store rating), phản hồi người dùng thu thập từ App Store / Google Play / CafeF, và kiểm tra thực tế của đội biên tập Value Investing. Thang điểm 1–5.
+          - generic [ref=e125]:
+            - generic [ref=e126]:
+              - generic [ref=e127]:
+                - generic [ref=e128]: Phí giao dịch
+                - generic [ref=e129]: So sánh tổng chi phí giao dịch theo khối lượng trung bình
+              - generic [ref=e133]: "3.5"
+            - generic [ref=e134]:
+              - generic [ref=e135]:
+                - generic [ref=e136]: Ứng dụng & Công cụ
+                - generic [ref=e137]: Chất lượng nền tảng giao dịch, tính năng phân tích
+              - generic [ref=e141]: "4.0"
+            - generic [ref=e142]:
+              - generic [ref=e143]:
+                - generic [ref=e144]: Hỗ trợ khách hàng
+                - generic [ref=e145]: Tốc độ phản hồi, chất lượng tư vấn, kênh liên hệ
+              - generic [ref=e149]: "4.8"
+            - generic [ref=e150]:
+              - generic [ref=e151]:
+                - generic [ref=e152]: Độ ổn định hệ thống
+                - generic [ref=e153]: Uptime và hiệu suất vào phiên giao dịch cao điểm
+              - generic [ref=e157]: "3.5"
+            - generic [ref=e158]:
+              - generic [ref=e159]:
+                - generic [ref=e160]: Sản phẩm đầu tư
+                - generic [ref=e161]: "Đa dạng sản phẩm: cổ phiếu, phái sinh, trái phiếu, quỹ"
+              - generic [ref=e165]: "4.2"
+        - generic [ref=e166]:
+          - heading "Thông tin nhanh" [level=2] [ref=e167]
+          - generic [ref=e168]:
+            - generic [ref=e169]:
+              - term [ref=e170]: Năm thành lập
+              - definition [ref=e171]: "2006"
+            - generic [ref=e172]:
+              - term [ref=e173]: Trụ sở
+              - definition [ref=e174]: 89 Đinh Tiên Hoàng, Phường Đa Kao, Quận 1, TP. Hồ Chí Minh
+            - generic [ref=e175]:
+              - term [ref=e176]: Giấy phép
+              - definition [ref=e177]: Giấy phép KDCK số 47/UBCK-GPHĐKD
+            - generic [ref=e178]:
+              - term [ref=e179]: Website
+              - definition [ref=e180]: https://www.vps.com.vn
+        - generic [ref=e181]:
+          - heading "Sản phẩm & dịch vụ" [level=2] [ref=e182]
+          - list [ref=e183]:
+            - listitem [ref=e184]: Môi giới cổ phiếu, ETF, chứng chỉ quỹ
+            - listitem [ref=e185]: Giao dịch hợp đồng tương lai VN30
+            - listitem [ref=e186]: Cho vay margin
+            - listitem [ref=e187]: Ứng dụng SmartOne
+            - listitem [ref=e188]: Tư vấn môi giới cá nhân
+        - generic [ref=e189]:
+          - heading "Hướng dẫn mở tài khoản" [level=2] [ref=e190]
+          - list [ref=e191]:
+            - listitem [ref=e192]:
+              - generic [ref=e193]: "1"
+              - generic [ref=e194]:
+                - strong [ref=e195]: Tải ứng dụng SmartOne
+                - paragraph [ref=e196]: Tải SmartOne trên App Store hoặc Google Play để mở tài khoản online với eKYC nhanh trong 5 phút.
+            - listitem [ref=e197]:
+              - generic [ref=e198]: "2"
+              - generic [ref=e199]:
+                - strong [ref=e200]: Xác minh danh tính eKYC
+                - paragraph [ref=e201]: Chụp ảnh CCCD và selfie theo hướng dẫn. VPS nổi tiếng với tốc độ phê duyệt eKYC nhanh nhất thị trường.
+            - listitem [ref=e202]:
+              - generic [ref=e203]: "3"
+              - generic [ref=e204]:
+                - strong [ref=e205]: Liên hệ môi giới (tùy chọn)
+                - paragraph [ref=e206]: VPS sẽ assign môi giới hỗ trợ bạn sau khi mở tài khoản thành công. Bạn cũng có thể chủ động liên hệ nếu cần tư vấn.
+            - listitem [ref=e207]:
+              - generic [ref=e208]: "4"
+              - generic [ref=e209]:
+                - strong [ref=e210]: Nạp tiền và giao dịch
+                - paragraph [ref=e211]: Chuyển tiền vào tài khoản VPS theo thông tin được cấp. Không có yêu cầu số dư tối thiểu.
+        - generic [ref=e212]:
+          - heading "Ưu & nhược điểm" [level=2] [ref=e213]
+          - generic [ref=e214]:
+            - generic [ref=e215]:
+              - paragraph [ref=e216]: Ưu điểm
+              - list [ref=e217]:
+                - listitem [ref=e218]: ✓ Thị phần môi giới cá nhân số 1 Việt Nam
+                - listitem [ref=e219]: ✓ Đội ngũ môi giới hùng hậu, hỗ trợ 24/7
+                - listitem [ref=e220]: ✓ Ứng dụng SmartOne nhiều tính năng tiện ích
+                - listitem [ref=e221]: ✓ Quy trình mở tài khoản eKYC nhanh nhất thị trường
+            - generic [ref=e222]:
+              - paragraph [ref=e223]: Nhược điểm
+              - list [ref=e224]:
+                - listitem [ref=e225]: ✕ Phí giao dịch tăng cao sau thời gian ưu đãi ban đầu
+                - listitem [ref=e226]: ✕ Chất lượng môi giới không đồng đều do số lượng quá lớn
+                - listitem [ref=e227]: ✕ Đôi khi nghẽn lệnh vào phiên giao dịch cao điểm
+        - generic [ref=e228]:
+          - heading "Người dùng nói gì?" [level=2] [ref=e229]
+          - paragraph [ref=e230]: Tổng hợp phản hồi thực từ App Store, Google Play và diễn đàn CafeF. Trích dẫn được biên tập để ngắn gọn, không thay đổi ý nghĩa.
+          - generic [ref=e231]:
+            - generic [ref=e232]:
+              - generic [ref=e233]: ✓ Ưu điểm
+              - blockquote [ref=e234]: "\"Môi giới của tôi gọi ngay khi thị trường biến động mạnh, giải thích cổ phiếu tôi đang nắm giữ. F0 như tôi rất cần người dẫn dắt như vậy.\""
+              - generic [ref=e235]: — Google Play — SmartOne
+            - generic [ref=e236]:
+              - generic [ref=e237]: ✗ Hạn chế
+              - blockquote [ref=e238]: "\"3 lần trong năm app lỗi không đăng nhập được đúng lúc thị trường biến động. Tôi mất cơ hội cắt lỗ kịp — tức thật sự.\""
+              - generic [ref=e239]: — App Store — SmartOne
+            - generic [ref=e240]:
+              - generic [ref=e241]: ✗ Hạn chế
+              - blockquote [ref=e242]: "\"Sau khi hết ưu đãi phí 0%, tôi chuyển hết sang TCBS vì phí 0.2% mỗi lệnh cắn vào lợi nhuận khá nhiều khi giao dịch đều đặn.\""
+              - generic [ref=e243]: — CafeF Diễn đàn
+      - paragraph [ref=e244]:
+        - text: Nếu bạn hỏi bất kỳ nhà đầu tư Việt Nam nào “Công ty chứng khoán nào nhiều khách hàng nhất?”, câu trả lời gần như chắc chắn là
+        - strong [ref=e245]: VPS Securities
+        - text: . Với thị phần môi giới cá nhân số 1 Việt Nam liên tục nhiều năm, VPS xây dựng được mạng lưới môi giới rộng khắp và ứng dụng SmartOne được người dùng đánh giá cao.
+      - paragraph [ref=e246]:
+        - text: Bài review này từ
+        - strong [ref=e247]:
+          - link "Value Investing" [ref=e248] [cursor=pointer]:
+            - /url: /
+        - text: sẽ đánh giá VPS một cách thực tế để bạn biết công ty này phù hợp với mình hay không.
+      - heading "VPS Securities là công ty gì?" [level=2] [ref=e249]
+      - paragraph [ref=e250]: VPS Securities (Công ty Cổ phần Chứng khoán VPS) được thành lập năm 2006, có trụ sở chính tại TP. Hồ Chí Minh. Điểm nổi bật của VPS là chiến lược phát triển môi giới cá nhân cực kỳ mạnh mẽ — họ xây dựng đội ngũ môi giới lớn nhất thị trường và triển khai ứng dụng SmartOne với đầy đủ tính năng giao dịch, phân tích và cộng đồng đầu tư.
+      - heading "Đánh giá chi tiết VPS Securities" [level=2] [ref=e251]
+      - heading "Hệ thống và ứng dụng SmartOne" [level=3] [ref=e252]
+      - paragraph [ref=e253]: SmartOne là ứng dụng giao dịch chính của VPS với giao diện trực quan, hỗ trợ nhiều loại lệnh và tích hợp biểu đồ kỹ thuật cơ bản. Ứng dụng nhận đánh giá tích cực từ người dùng nhờ tốc độ phản hồi tốt trong điều kiện thị trường bình thường.
+      - paragraph [ref=e254]: Tuy nhiên, VPS cũng nhận một số phản ánh về tình trạng nghẽn lệnh trong các phiên giao dịch biến động mạnh — vấn đề chung của nhiều công ty chứng khoán Việt Nam.
+      - heading "Chất lượng môi giới" [level=3] [ref=e255]
+      - paragraph [ref=e256]: Đây là điểm mạnh và cũng là điểm yếu của VPS. Đội ngũ môi giới quá đông (hàng nghìn người) dẫn đến chất lượng tư vấn không đồng đều. Một số khách hàng gặp được môi giới giỏi có nhiều năm kinh nghiệm, nhưng cũng không ít người gặp phải môi giới non kinh nghiệm hoặc quá chú trọng doanh số.
+      - paragraph [ref=e257]:
+        - strong [ref=e258]: "Lời khuyên thực tế:"
+        - text: Nếu bạn quyết định mở tài khoản tại VPS, hãy chủ động hỏi về kinh nghiệm của môi giới được assign và đừng ngại yêu cầu đổi nếu không phù hợp.
+      - heading "Ai nên chọn VPS Securities?" [level=2] [ref=e259]
+      - paragraph [ref=e260]:
+        - text: VPS phù hợp nhất với
+        - strong [ref=e261]: nhà đầu tư F0
+        - text: muốn có người dẫn dắt trong giai đoạn đầu, đặc biệt nếu bạn cảm thấy cần được tư vấn trực tiếp khi gặp tình huống khó xử lý qua ứng dụng.
+      - paragraph [ref=e262]: Nếu bạn đã có kinh nghiệm và tự chủ trong quyết định, hãy cân nhắc TCBS (phí 0%) thay vì VPS để tối ưu chi phí dài hạn.
+      - generic [ref=e263]:
+        - heading "Câu hỏi thường gặp" [level=2] [ref=e264]
+        - generic [ref=e265]:
+          - group [ref=e266]:
+            - generic "VPS Securities có uy tín không?" [ref=e267] [cursor=pointer]
+          - group [ref=e268]:
+            - generic "Phí giao dịch tại VPS là bao nhiêu?" [ref=e269] [cursor=pointer]
+          - group [ref=e270]:
+            - generic "Ứng dụng SmartOne của VPS có tốt không?" [ref=e271] [cursor=pointer]
+      - complementary "Nguồn tham khảo và kiểm tra" [ref=e272]:
+        - paragraph [ref=e273]: "Cập nhật lần cuối: 16/6/2026"
+        - heading "Nguồn tham khảo" [level=2] [ref=e274]
+        - list [ref=e275]:
+          - listitem [ref=e276]: Báo cáo thị phần môi giới HOSE quý 1/2026
+          - listitem [ref=e277]: Dữ liệu phí giao dịch và margin từ website VPS Securities (tháng 6/2026)
+      - generic [ref=e278]:
+        - heading "Quy trình kiểm định nội dung" [level=2] [ref=e279]
+        - paragraph [ref=e280]:
+          - text: Nội dung được rà soát về tính chính xác, tính cập nhật và mức độ phù hợp với nhà đầu tư cá nhân. Nếu phát hiện lỗi có thể ảnh hưởng đến quyết định tài chính, bài viết sẽ được cập nhật và ghi nhận theo
+          - link "chính sách đính chính" [ref=e281] [cursor=pointer]:
+            - /url: /corrections-policy/
+          - text: .
+      - complementary [ref=e282]:
+        - generic [ref=e283]: L
+        - generic [ref=e284]:
+          - generic [ref=e285]:
+            - generic [ref=e286]:
+              - paragraph [ref=e287]: Về tác giả
+              - link "Nguyễn Viết Lộc" [ref=e288] [cursor=pointer]:
+                - /url: /author/nguyen-viet-loc
+            - link "Xem hồ sơ" [ref=e289] [cursor=pointer]:
+              - /url: /author/nguyen-viet-loc
+          - paragraph [ref=e290]: Người sáng lập & Phụ trách nội dung
+          - paragraph [ref=e291]: Lộc Nguyễn hiện là Chuyên viên SEO tại Công ty Chứng khoán DSC. Với hơn 3 năm kinh nghiệm triển khai nội dung và tối ưu hiệu suất tìm kiếm cho các sản phẩm tài chính lớn, Lộc sáng lập Value Investing nhằm chia sẻ các kiến thức đầu tư thực chiến bằng ngôn ngữ bình dân, giúp F0 tự tin và an toàn hơn trên thị trường.
+          - generic "Chuyên môn tác giả" [ref=e292]:
+            - generic [ref=e293]: Đầu tư giá trị
+            - generic [ref=e294]: Đơn giản hóa thuật ngữ tài chính
+            - generic [ref=e295]: Sản phẩm đầu tư cho người mới bắt đầu
+            - generic [ref=e296]: Cấu trúc thông tin tài chính (SEO)
+          - paragraph [ref=e297]: Hơn 3 năm kinh nghiệm thực tế triển khai nội dung tài chính và tối ưu hiệu suất tìm kiếm cho các sản phẩm tài chính lớn (hiện là Chuyên viên SEO tại Công ty Chứng khoán DSC). Chuyên sâu về nghiên cứu hành vi tìm kiếm (Search Intent) của nhà đầu tư cá nhân và đơn giản hóa cấu trúc thông tin.
+          - paragraph [ref=e298]: Nội dung được viết cho mục đích giáo dục tài chính, ưu tiên nguồn chính thống và tiếp nhận phản hồi đính chính qua email công khai.
+      - generic [ref=e299]:
+        - generic [ref=e300]: Chia sẻ
+        - link "Chia sẻ lên Facebook" [ref=e301] [cursor=pointer]:
+          - /url: https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fvalueinvesting.com.vn%2Freviews%2Freview-vps-securities%2F&quote=Review%20VPS%20Securities%3A%20C%C3%B3%20n%C3%AAn%20m%E1%BB%9F%20t%C3%A0i%20kho%E1%BA%A3n%20kh%C3%B4ng%3F%20(2026)
+          - img [ref=e302]
+          - text: Facebook
+        - button "Sao chép đường dẫn" [ref=e304] [cursor=pointer]:
+          - img [ref=e305]
+          - generic [ref=e308]: Sao chép link
+      - generic [ref=e309]:
+        - paragraph [ref=e310]: Bài viết liên quan
+        - generic [ref=e311]:
+          - 'link "Công ty chứng khoán phí thấp: Có nên chọn vì zero-fee? So sánh phí giao dịch tại các công ty chứng khoán Việt Nam. Tìm hiểu xu hướng miễn phí giao dịch trọn đời (zero-fee) và lưu ý khi lựa chọn. 5 phút đọc" [ref=e312] [cursor=pointer]':
+            - /url: /reviews/cong-ty-chung-khoan-phi-thap/
+            - strong [ref=e313]: "Công ty chứng khoán phí thấp: Có nên chọn vì zero-fee?"
+            - paragraph [ref=e314]: So sánh phí giao dịch tại các công ty chứng khoán Việt Nam. Tìm hiểu xu hướng miễn phí giao dịch trọn đời (zero-fee) và lưu ý khi lựa chọn.
+            - generic [ref=e315]: 5 phút đọc
+          - 'link "Review công ty chứng khoán cho người mới: Chọn ở đâu tốt? Review chi tiết ưu và nhược điểm của các công ty chứng khoán lớn tại Việt Nam giúp người mới bắt đầu (F0) lựa chọn nơi mở tài khoản tốt nhất. 5 phút đọc" [ref=e316] [cursor=pointer]':
+            - /url: /reviews/review-cong-ty-chung-khoan-cho-nguoi-moi/
+            - strong [ref=e317]: "Review công ty chứng khoán cho người mới: Chọn ở đâu tốt?"
+            - paragraph [ref=e318]: Review chi tiết ưu và nhược điểm của các công ty chứng khoán lớn tại Việt Nam giúp người mới bắt đầu (F0) lựa chọn nơi mở tài khoản tốt nhất.
+            - generic [ref=e319]: 5 phút đọc
+          - 'link "Review DSC Securities: Ưu nhược điểm & Có nên mở tài khoản không? Đánh giá chi tiết Chứng khoán DSC năm 2026: phí giao dịch, lãi suất margin, giao diện ứng dụng, chất lượng hỗ trợ và hướng dẫn mở tài khoản từng bước. 7 phút đọc" [ref=e320] [cursor=pointer]':
+            - /url: /reviews/review-dsc-securities/
+            - strong [ref=e321]: "Review DSC Securities: Ưu nhược điểm & Có nên mở tài khoản không?"
+            - paragraph [ref=e322]: "Đánh giá chi tiết Chứng khoán DSC năm 2026: phí giao dịch, lãi suất margin, giao diện ứng dụng, chất lượng hỗ trợ và hướng dẫn mở tài khoản từng bước."
+            - generic [ref=e323]: 7 phút đọc
+  - contentinfo [ref=e324]:
+    - generic [ref=e325]:
+      - generic [ref=e326]:
+        - strong [ref=e327]: Value Investing
+        - paragraph [ref=e328]: Kiến thức đầu tư giá trị cho người Việt, miễn phí, có nguồn, không khuyến nghị mua bán.
+      - generic [ref=e329]:
+        - heading "Đầu tư" [level=5] [ref=e330]
+        - link "Cổ phiếu" [ref=e331] [cursor=pointer]:
+          - /url: /dau-tu/co-phieu/
+        - link "Quỹ ETF" [ref=e332] [cursor=pointer]:
+          - /url: /dau-tu/etf/
+        - link "Trái phiếu" [ref=e333] [cursor=pointer]:
+          - /url: /dau-tu/trai-phieu/
+        - link "Phái sinh" [ref=e334] [cursor=pointer]:
+          - /url: /dau-tu/phai-sinh/
+      - generic [ref=e335]:
+        - heading "Phân tích & Review" [level=5] [ref=e336]
+        - link "Phân tích cơ bản" [ref=e337] [cursor=pointer]:
+          - /url: /phan-tich/co-ban/
+        - link "Phân tích kỹ thuật" [ref=e338] [cursor=pointer]:
+          - /url: /phan-tich/ky-thuat/
+        - link "Reviews" [ref=e339] [cursor=pointer]:
+          - /url: /reviews/
+        - link "Nhà đầu tư" [ref=e340] [cursor=pointer]:
+          - /url: /nha-dau-tu/
+      - generic [ref=e341]:
+        - heading "Về trang web" [level=5] [ref=e342]
+        - link "Về dự án" [ref=e343] [cursor=pointer]:
+          - /url: /about/
+        - link "Biên tập" [ref=e344] [cursor=pointer]:
+          - /url: /editorial-policy/
+        - link "Nguồn tham khảo" [ref=e345] [cursor=pointer]:
+          - /url: /sources-policy/
+        - link "Đính chính" [ref=e346] [cursor=pointer]:
+          - /url: /corrections-policy/
+        - link "Liên hệ" [ref=e347] [cursor=pointer]:
+          - /url: /contact/
+    - generic [ref=e348]: © 2026 Value Investing. Value Investing không cung cấp dịch vụ tư vấn đầu tư cá nhân, môi giới chứng khoán hoặc tín hiệu giao dịch. Nội dung chỉ nhằm mục đích giáo dục.

@@ -7,17 +7,22 @@ const { items } = Astro.props;
 ---
 
 <nav class="review-jump-nav" id="review-jump-nav" aria-label="Điều hướng nhanh trong bài">
-  <ul>
-    {items.map((item) => (
-      <li>
-        <a href={item.href} class="jump-link" data-href={item.href}>{item.label}</a>
-      </li>
-    ))}
-  </ul>
+  <div class="jump-nav-inner">
+    <span class="jump-nav-prefix" aria-hidden="true">Đọc nhanh</span>
+    <ul>
+      {items.map((item, i) => (
+        <li>
+          <a href={item.href} class="jump-link" data-href={item.href}>
+            <span class="jump-num" aria-hidden="true">{String(i + 1).padStart(2, "0")}</span>
+            {item.label}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
 </nav>
 
 <script>
-  // Highlight active section as user scrolls
   const nav = document.getElementById("review-jump-nav");
   if (nav) {
     const links = nav.querySelectorAll<HTMLAnchorElement>(".jump-link");
@@ -48,17 +53,40 @@ const { items } = Astro.props;
 <style>
   .review-jump-nav {
     position: sticky;
-    /* sits below site-header: 4px accent-bar + 64px nav = 68px */
     top: 68px;
     z-index: 90;
     background: var(--surface);
     border-bottom: 2px solid var(--line);
-    box-shadow: 0 2px 0 var(--line), 3px 3px 0 var(--line);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
     overflow-x: auto;
     scrollbar-width: none;
   }
 
   .review-jump-nav::-webkit-scrollbar { display: none; }
+
+  .jump-nav-inner {
+    display: flex;
+    align-items: stretch;
+    gap: 0;
+    white-space: nowrap;
+    width: min(100%, var(--article, 740px));
+    margin-inline: auto;
+    padding: 0 16px;
+  }
+
+  .jump-nav-prefix {
+    display: flex;
+    align-items: center;
+    padding: 0 var(--space-4) 0 0;
+    font-size: 0.68rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+    border-right: 1px solid var(--line);
+    margin-right: var(--space-3);
+    flex-shrink: 0;
+  }
 
   .review-jump-nav ul {
     display: flex;
@@ -66,35 +94,64 @@ const { items } = Astro.props;
     margin: 0;
     padding: 0;
     list-style: none;
-    white-space: nowrap;
   }
 
   .jump-link {
-    display: block;
-    padding: 12px var(--space-5);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 14px var(--space-4);
     color: var(--muted);
-    font-weight: 700;
-    font-size: 0.84rem;
+    font-weight: 600;
+    font-size: 0.82rem;
     text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.01em;
     border-bottom: 3px solid transparent;
-    transition: color 0.12s ease, border-color 0.12s ease;
+    transition: color 0.12s ease, border-color 0.12s ease, background 0.12s ease;
+    position: relative;
   }
 
   .jump-link:hover {
     color: var(--text);
+    background: var(--surface-alt);
   }
 
   .jump-link--active {
     color: var(--brand);
     border-bottom-color: var(--brand);
+    background: var(--surface-alt);
+  }
+
+  .jump-num {
+    font-size: 0.64rem;
+    font-weight: 700;
+    font-family: var(--font-sans);
+    color: var(--line);
+    letter-spacing: 0;
+    transition: color 0.12s;
+  }
+
+  .jump-link:hover .jump-num,
+  .jump-link--active .jump-num {
+    color: var(--brand);
   }
 
   @media (max-width: 580px) {
+    .jump-nav-inner {
+      padding: 0 8px;
+    }
+
+    .jump-nav-prefix {
+      display: none;
+    }
+
     .jump-link {
-      padding: 10px var(--space-4);
-      font-size: 0.78rem;
+      padding: 12px var(--space-3);
+      font-size: 0.76rem;
+    }
+
+    .jump-num {
+      display: none;
     }
   }
 </style>

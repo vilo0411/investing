@@ -2,9 +2,11 @@
 import ComparisonTable from "@/components/ComparisonTable.astro";
 import ProsConsBox from "@/components/ProsConsBox.astro";
 import ReviewCTA from "@/components/ReviewCTA.astro";
+import type { RatingDimension, UserVoice } from "@/data/brokers";
 
 interface Broker {
   name: string;
+  shortName?: string;
   slug: string;
   rating: number;
   best_for: string;
@@ -17,6 +19,8 @@ interface Broker {
   min_deposit?: string;
   logo?: string;
   ctaUrl?: string;
+  ratingBreakdown?: RatingDimension;
+  userVoices?: UserVoice[];
 }
 
 interface Props {
@@ -47,7 +51,6 @@ comparisonCriteria.forEach((criteria, rowIndex) => {
   highlightMap[rowIndex] = [brokerIndex + 1];
 });
 
-// Calculate win counts for each broker
 const winCounts = brokers.map((b) => ({
   broker: b,
   wins: Object.values(winnerByCriteria).filter((slug) => slug === b.slug).length,
@@ -55,32 +58,125 @@ const winCounts = brokers.map((b) => ({
 winCounts.sort((a, b) => b.wins - a.wins);
 const totalCriteria = comparisonCriteria.length;
 const overallWinner = winCounts[0];
+
+// Dimension scorecard for verdict section
+const dimensions: { key: keyof RatingDimension; label: string }[] = [
+  { key: "fee",       label: "Phí giao dịch" },
+  { key: "app",       label: "Ứng dụng & Công cụ" },
+  { key: "support",   label: "Hỗ trợ khách hàng" },
+  { key: "stability", label: "Độ ổn định hệ thống" },
+  { key: "products",  label: "Sản phẩm đầu tư" },
+];
+
+const hasBreakdown = brokers.some((b) => b.ratingBreakdown);
 ---
 
 <div class="comparison-body">
 
-  <!-- Verdict strip: winner row + runner-up rows -->
-  <div class="verdict-strip">
-    <p class="verdict-strip-eyebrow">Kết luận tổng thể</p>
+  <!-- Verdict card: kết luận tổng thể với visual rõ ràng -->
+  <div class="verdict-card" id="ket-luan-tong-the">
+    <div class="verdict-card-header">
+      <span class="verdict-card-eyebrow">Kết luận tổng thể</span>
+      <p class="verdict-card-subtitle">
+        Đánh giá dựa trên {dimensions.length} tiêu chí: phí giao dịch, ứng dụng, hỗ trợ khách hàng, độ ổn định hệ thống và đa dạng sản phẩm.
+      </p>
+    </div>
 
-    {winCounts.map((wc, i) => (
-      <div class:list={["verdict-row", { "verdict-row--winner": i === 0 }]}>
-        <div class="verdict-row-left">
-          {i === 0 && (
-            <span class="verdict-winner-badge">Người chiến thắng · {wc.wins}/{totalCriteria} tiêu chí</span>
+    <!-- Winner spotlight -->
+    {overallWinner && (
+      <div class="winner-spotlight">
+        <div class="winner-spotlight-left">
+          <div class="winner-spotlight-label">
+            <span class="winner-crown">★</span>
+            Lựa chọn tốt hơn trong hầu hết trường hợp
+          </div>
+          <div class="winner-name">{overallWinner.broker.name}</div>
+          {overallWinner.broker.best_for && (
+            <div class="winner-best-for">Phù hợp nhất: {overallWinner.broker.best_for}</div>
           )}
-          <span class="verdict-broker-name">{wc.broker.name}</span>
+          <div class="winner-score-summary">
+            Thắng {overallWinner.wins}/{totalCriteria} tiêu chí so sánh
+            · Điểm tổng: {overallWinner.broker.rating.toFixed(1)}/5
+          </div>
+        </div>
+        {overallWinner.broker.ctaUrl && (
+          <div class="winner-spotlight-cta">
+            <ReviewCTA
+              label={`Mở tài khoản ${overallWinner.broker.shortName ?? overallWinner.broker.name}`}
+              url={overallWinner.broker.ctaUrl}
+            />
+          </div>
+        )}
+      </div>
+    )}
+
+    <!-- Dimension scorecard: ai thắng từng tiêu chí -->
+    {hasBreakdown && (
+      <div class="verdict-scorecard">
+        <div class="scorecard-header-row">
+          <span class="scorecard-col-label">Tiêu chí đánh giá</span>
+          {brokers.map((b) => (
+            <span class="scorecard-broker-col">{b.shortName ?? b.name}</span>
+          ))}
+        </div>
+
+        {dimensions.map((dim) => {
+          const scores = brokers.map((b) => b.ratingBreakdown?.[dim.key] ?? 0);
+          const maxScore = Math.max(...scores);
+          return (
+            <div class="scorecard-row">
+              <span class="scorecard-dim-label">{dim.label}</span>
+              {brokers.map((b, idx) => {
+                const score = b.ratingBreakdown?.[dim.key] ?? 0;
+                const isWinner = score === maxScore && score > 0;
+                const scoreClass = score >= 4.5 ? "excellent" : score >= 3.5 ? "good" : "fair";
+                return (
+                  <div class:list={["scorecard-cell", { "scorecard-cell--winner": isWinner }]}>
+                    <span class:list={["scorecard-value", `scorecard-value--${scoreClass}`]}>
+                      {score > 0 ? score.toFixed(1) : "—"}
+                    </span>
+                    {isWinner && <span class="scorecard-win-mark" aria-label="Tốt hơn">✓</span>}
+                  </div>
+                );
+              })}
+            </div>
+          );
+        })}
+
+        <!-- Overall row -->
+        <div class="scorecard-row scorecard-row--total">
+          <span class="scorecard-dim-label">Điểm tổng</span>
+          {brokers.map((b) => {
+            const isWinner = b.slug === overallWinner?.broker.slug;
+            return (
+              <div class:list={["scorecard-cell", { "scorecard-cell--winner": isWinner }]}>
+                <span class:list={["scorecard-value", "scorecard-value--total", { "scorecard-value--winner": isWinner }]}>
+                  {b.rating.toFixed(1)}
+                </span>
+              </div>
+            );
+          })}
+        </div>
+
+        <p class="scorecard-methodology">
+          Thang điểm 1–5 theo từng tiêu chí. Điểm tổng là điểm biên tập Value Investing, không phải trung bình đơn giản.
+          Dữ liệu từ: trang web chính thức, App Store / Google Play, báo cáo thị phần HOSE.
+        </p>
+      </div>
+    )}
+
+    <!-- Runner-up row nếu có nhiều hơn 1 broker -->
+    {winCounts.slice(1).map((wc) => (
+      <div class="runner-up-row">
+        <div class="runner-up-left">
+          <span class="runner-up-label">Lựa chọn thay thế</span>
+          <span class="runner-up-name">{wc.broker.name}</span>
           {wc.broker.best_for && (
-            <span class="verdict-best-for">Tốt cho: {wc.broker.best_for}</span>
+            <span class="runner-up-best-for">Phù hợp: {wc.broker.best_for}</span>
           )}
         </div>
         {wc.broker.ctaUrl && (
-          <div class="verdict-row-right">
-            <ReviewCTA
-              label={i === 0 ? `Mở tài khoản ${wc.broker.name}` : "Mở tài khoản"}
-              url={wc.broker.ctaUrl}
-            />
-          </div>
+          <ReviewCTA label="Mở tài khoản" url={wc.broker.ctaUrl} />
         )}
       </div>
     ))}
@@ -108,6 +204,21 @@ const overallWinner = winCounts[0];
           <ProsConsBox pros={broker.pros} cons={broker.cons} />
           {broker.verdict && (
             <p class="broker-card-verdict">{broker.verdict}</p>
+          )}
+
+          <!-- Inline user voices per broker -->
+          {broker.userVoices && broker.userVoices.length > 0 && (
+            <div class="broker-voices">
+              {broker.userVoices.slice(0, 2).map((v) => (
+                <div class:list={["broker-voice", `broker-voice--${v.type}`]}>
+                  <span class="broker-voice-badge">{v.type === "pro" ? "✓" : "✗"}</span>
+                  <div class="broker-voice-content">
+                    <p class="broker-voice-quote">"{v.quote}"</p>
+                    <span class="broker-voice-source">{v.source}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
           )}
         </div>
       ))}
@@ -148,30 +259,201 @@ const overallWinner = winCounts[0];
 <style>
   :global(#so-sanh),
   :global(#uu-nhuoc-diem),
-  :global(#nen-chon-ai) {
+  :global(#nen-chon-ai),
+  :global(#ket-luan-tong-the) {
     scroll-margin-top: 132px;
   }
 
-  /* ── Verdict Strip ─────────────────────────────── */
-  .verdict-strip {
-    border: 1px solid var(--line);
-    box-shadow: 3px 3px 0px var(--line);
+  /* ── Verdict Card ─────────────────────────────── */
+  .verdict-card {
+    border: 2px solid var(--line);
+    box-shadow: 4px 4px 0px var(--line);
     margin: var(--space-6) 0;
     overflow: hidden;
+    background: var(--surface);
   }
 
-  .verdict-strip-eyebrow {
-    margin: 0;
-    padding: 8px var(--space-5);
+  .verdict-card-header {
+    background: var(--brand);
+    padding: var(--space-4) var(--space-5);
+  }
+
+  .verdict-card-eyebrow {
+    display: block;
     font-size: 0.72rem;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: #fff;
-    background: var(--brand);
+    letter-spacing: 0.1em;
+    color: rgba(255,255,255,0.75);
+    margin-bottom: 6px;
   }
 
-  .verdict-row {
+  .verdict-card-subtitle {
+    margin: 0;
+    font-size: 0.88rem;
+    color: rgba(255,255,255,0.9);
+    line-height: 1.5;
+  }
+
+  /* Winner spotlight */
+  .winner-spotlight {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+    padding: var(--space-5) var(--space-5);
+    background: var(--color-mint);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .winner-spotlight-left {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    min-width: 0;
+  }
+
+  .winner-spotlight-label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: var(--brand);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .winner-crown { font-size: 0.9rem; }
+
+  .winner-name {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1.2;
+  }
+
+  .winner-best-for {
+    font-size: 0.88rem;
+    color: var(--muted);
+    font-weight: 500;
+  }
+
+  .winner-score-summary {
+    font-size: 0.8rem;
+    color: var(--muted);
+    font-weight: 600;
+  }
+
+  .winner-spotlight-cta {
+    flex-shrink: 0;
+  }
+
+  /* Dimension Scorecard */
+  .verdict-scorecard {
+    border-top: 1px solid var(--line);
+  }
+
+  .scorecard-header-row {
+    display: grid;
+    grid-template-columns: 1fr repeat(var(--broker-count, 2), 100px);
+    background: var(--surface-alt);
+    border-bottom: 1px solid var(--line);
+    padding: 0;
+  }
+
+  .scorecard-col-label {
+    padding: 10px var(--space-4);
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--muted);
+  }
+
+  .scorecard-broker-col {
+    padding: 10px var(--space-3);
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--text);
+    text-align: center;
+    border-left: 1px solid var(--line);
+  }
+
+  .scorecard-row {
+    display: grid;
+    grid-template-columns: 1fr repeat(var(--broker-count, 2), 100px);
+    border-bottom: 1px solid var(--line);
+    transition: background 0.1s;
+  }
+
+  .scorecard-row:hover {
+    background: var(--surface-alt);
+  }
+
+  .scorecard-row--total {
+    background: var(--surface-alt);
+    font-weight: 700;
+  }
+
+  .scorecard-dim-label {
+    padding: 12px var(--space-4);
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+  }
+
+  .scorecard-row--total .scorecard-dim-label {
+    font-weight: 700;
+    font-size: 0.9rem;
+  }
+
+  .scorecard-cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding: 12px var(--space-3);
+    border-left: 1px solid var(--line);
+    text-align: center;
+  }
+
+  .scorecard-cell--winner {
+    background: rgba(26, 122, 74, 0.08);
+  }
+
+  .scorecard-value {
+    font-size: 0.96rem;
+    font-weight: 700;
+  }
+
+  .scorecard-value--excellent { color: #1a7a4a; }
+  .scorecard-value--good      { color: var(--brand); }
+  .scorecard-value--fair      { color: #b45309; }
+  .scorecard-value--total     { font-size: 1.1rem; color: var(--text); }
+  .scorecard-value--winner    { color: #1a7a4a; }
+
+  .scorecard-win-mark {
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: #1a7a4a;
+  }
+
+  .scorecard-methodology {
+    margin: 0;
+    padding: var(--space-3) var(--space-4);
+    font-size: 0.78rem;
+    color: var(--muted);
+    line-height: 1.55;
+    border-top: 1px solid var(--line);
+    background: var(--surface-alt);
+  }
+
+  /* Runner-up rows */
+  .runner-up-row {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -181,54 +463,30 @@ const overallWinner = winCounts[0];
     background: var(--surface);
   }
 
-  .verdict-row--winner {
-    background: var(--color-mint);
-  }
-
-  .verdict-row-left {
+  .runner-up-left {
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 3px;
     min-width: 0;
   }
 
-  .verdict-winner-badge {
-    display: inline-block;
+  .runner-up-label {
     font-size: 0.72rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.06em;
-    color: var(--brand);
+    color: var(--muted);
   }
 
-  .verdict-broker-name {
-    font-family: var(--font-serif);
-    font-size: 1.1rem;
+  .runner-up-name {
     font-weight: 700;
+    font-size: 1rem;
     color: var(--text);
   }
 
-  .verdict-best-for {
-    font-size: 0.84rem;
+  .runner-up-best-for {
+    font-size: 0.82rem;
     color: var(--muted);
-    line-height: 1.5;
-  }
-
-  .verdict-row-right {
-    flex-shrink: 0;
-    min-width: 180px;
-  }
-
-  @media (max-width: 580px) {
-    .verdict-row {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-
-    .verdict-row-right {
-      width: 100%;
-      min-width: unset;
-    }
   }
 
   /* ── Broker Cards ─────────────────────────────── */
@@ -246,7 +504,7 @@ const overallWinner = winCounts[0];
     background: var(--surface);
     display: flex;
     flex-direction: column;
-    gap: var(--space-2);
+    gap: var(--space-3);
   }
 
   .broker-card-header {
@@ -256,7 +514,6 @@ const overallWinner = winCounts[0];
     gap: var(--space-3);
     border-bottom: 1px solid var(--line);
     padding-bottom: var(--space-2);
-    margin-bottom: var(--space-2);
   }
 
   .broker-card-name {
@@ -272,6 +529,7 @@ const overallWinner = winCounts[0];
     color: var(--brand);
     border: 1px solid var(--brand);
     padding: 2px 8px;
+    flex-shrink: 0;
   }
 
   .broker-card-best-for {
@@ -282,12 +540,72 @@ const overallWinner = winCounts[0];
   }
 
   .broker-card-verdict {
-    margin: var(--space-2) 0 0;
+    margin: 0;
     font-size: 0.88rem;
     color: var(--muted);
     line-height: 1.6;
     border-top: 1px solid var(--line);
     padding-top: var(--space-3);
+  }
+
+  /* Inline user voices in broker cards */
+  .broker-voices {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    border-top: 1px solid var(--line);
+    padding-top: var(--space-3);
+  }
+
+  .broker-voice {
+    display: flex;
+    gap: var(--space-2);
+    align-items: flex-start;
+    font-size: 0.84rem;
+  }
+
+  .broker-voice-badge {
+    flex-shrink: 0;
+    font-size: 0.72rem;
+    font-weight: 700;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-top: 2px;
+  }
+
+  .broker-voice--pro .broker-voice-badge {
+    color: #1a7a4a;
+    background: rgba(26,122,74,0.1);
+  }
+
+  .broker-voice--con .broker-voice-badge {
+    color: #b45309;
+    background: rgba(180,83,9,0.1);
+  }
+
+  .broker-voice-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .broker-voice-quote {
+    margin: 0;
+    color: var(--text);
+    font-size: 0.82rem;
+    line-height: 1.55;
+    font-style: italic;
+  }
+
+  .broker-voice-source {
+    font-size: 0.72rem;
+    color: var(--muted);
+    font-style: normal;
+    font-weight: 600;
   }
 
   /* ── Scenario Cards ─────────────────────────────── */
@@ -341,14 +659,40 @@ const overallWinner = winCounts[0];
     font-weight: 600;
   }
 
-  .scenario-winner-tag strong {
-    color: var(--brand);
-  }
+  .scenario-winner-tag strong { color: var(--brand); }
 
   .scenario-reason {
     margin: 0;
     color: var(--muted);
     font-size: 0.9rem;
     line-height: 1.65;
+  }
+
+  /* ── Responsive ─────────────────────────────── */
+  @media (max-width: 640px) {
+    .winner-spotlight {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .winner-spotlight-cta {
+      width: 100%;
+    }
+
+    .scorecard-header-row,
+    .scorecard-row {
+      grid-template-columns: 1fr repeat(var(--broker-count, 2), 72px);
+    }
+
+    .scorecard-dim-label,
+    .scorecard-col-label {
+      font-size: 0.78rem;
+      padding: 10px var(--space-3);
+    }
+
+    .runner-up-row {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 </style>

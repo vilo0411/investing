@@ -142,10 +142,11 @@ const reviewType = entry.data.reviewType as "company" | "comparison" | "listicle
 
 const navItemsByType: Record<string, { label: string; href: string }[]> = {
   company: [
+    { label: "Tiêu chí đánh giá", href: "#tieu-chi-danh-gia" },
     { label: "Thông tin nhanh", href: "#thong-tin-nhanh" },
-    { label: "Sản phẩm", href: "#san-pham" },
     { label: "Mở tài khoản", href: "#mo-tai-khoan" },
     { label: "Ưu nhược điểm", href: "#uu-nhuoc-diem" },
+    { label: "Người dùng nói gì", href: "#phan-hoi-nguoi-dung" },
   ],
   comparison: [
     { label: "So sánh", href: "#so-sanh" },
@@ -234,6 +235,8 @@ const navItems = reviewType ? navItemsByType[reviewType] ?? [] : [];
           pros={mergedBrokers[0]?.pros ?? []}
           cons={mergedBrokers[0]?.cons ?? []}
           rating={mergedBrokers[0]?.rating ?? 0}
+          ratingBreakdown={mergedBrokers[0]?.ratingBreakdown}
+          userVoices={mergedBrokers[0]?.userVoices}
           ctaUrl={mergedBrokers[0]?.ctaUrl}
           verdict={mergedBrokers[0]?.verdict}
           bestFor={mergedBrokers[0]?.best_for}

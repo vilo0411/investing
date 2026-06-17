@@ -1,6 +1,7 @@
 ---
 import ProsConsBox from "@/components/ProsConsBox.astro";
 import ReviewCTA from "@/components/ReviewCTA.astro";
+import type { RatingDimension, UserVoice } from "@/data/brokers";
 
 interface Props {
   companyInfo?: {
@@ -14,6 +15,8 @@ interface Props {
   pros: string[];
   cons: string[];
   rating: number;
+  ratingBreakdown?: RatingDimension;
+  userVoices?: UserVoice[];
   ctaUrl?: string;
   ctaLabel?: string;
   verdict?: string;
@@ -30,6 +33,8 @@ const {
   pros,
   cons,
   rating,
+  ratingBreakdown,
+  userVoices,
   ctaUrl,
   ctaLabel,
   verdict,
@@ -57,6 +62,14 @@ const metrics = [
   marginRate && { label: "Margin", value: marginRate },
   appRating && { label: "Đánh giá app", value: appRating },
 ].filter(Boolean) as { label: string; value: string }[];
+
+const dimensions: { key: keyof RatingDimension; label: string; desc: string }[] = [
+  { key: "fee",       label: "Phí giao dịch",       desc: "So sánh tổng chi phí giao dịch theo khối lượng trung bình" },
+  { key: "app",       label: "Ứng dụng & Công cụ",  desc: "Chất lượng nền tảng giao dịch, tính năng phân tích" },
+  { key: "support",   label: "Hỗ trợ khách hàng",   desc: "Tốc độ phản hồi, chất lượng tư vấn, kênh liên hệ" },
+  { key: "stability", label: "Độ ổn định hệ thống", desc: "Uptime và hiệu suất vào phiên giao dịch cao điểm" },
+  { key: "products",  label: "Sản phẩm đầu tư",     desc: "Đa dạng sản phẩm: cổ phiếu, phái sinh, trái phiếu, quỹ" },
+];
 ---
 
 <div class="company-review-body">
@@ -104,6 +117,37 @@ const metrics = [
     </div>
   )}
 
+  <!-- Dimension breakdown: điểm từng tiêu chí -->
+  {ratingBreakdown && (
+    <section class="rating-breakdown" id="tieu-chi-danh-gia">
+      <h2>Điểm theo từng tiêu chí</h2>
+      <p class="breakdown-methodology">
+        Điểm được tính dựa trên dữ liệu công khai (phí, lãi suất margin, app store rating), phản hồi người dùng thu thập từ App Store / Google Play / CafeF, và kiểm tra thực tế của đội biên tập Value Investing. Thang điểm 1–5.
+      </p>
+      <div class="dimension-list">
+        {dimensions.map((dim) => {
+          const score = ratingBreakdown[dim.key];
+          const pct = (score / 5) * 100;
+          const scoreClass = score >= 4.5 ? "score-excellent" : score >= 3.5 ? "score-good" : "score-fair";
+          return (
+            <div class="dimension-row">
+              <div class="dimension-meta">
+                <span class="dimension-label">{dim.label}</span>
+                <span class="dimension-desc">{dim.desc}</span>
+              </div>
+              <div class="dimension-bar-wrap">
+                <div class="dimension-bar">
+                  <div class:list={["dimension-fill", scoreClass]} style={`width: ${pct}%`} />
+                </div>
+                <span class:list={["dimension-score", scoreClass]}>{score.toFixed(1)}</span>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </section>
+  )}
+
   {infoRows.length > 0 && (
     <section id="thong-tin-nhanh">
       <h2>Thông tin nhanh</h2>
@@ -148,6 +192,25 @@ const metrics = [
     <h2>Ưu & nhược điểm</h2>
     <ProsConsBox pros={pros} cons={cons} />
   </section>
+
+  <!-- User voices: phản hồi thực từ người dùng -->
+  {userVoices && userVoices.length > 0 && (
+    <section class="user-voices" id="phan-hoi-nguoi-dung">
+      <h2>Người dùng nói gì?</h2>
+      <p class="user-voices-note">Tổng hợp phản hồi thực từ App Store, Google Play và diễn đàn CafeF. Trích dẫn được biên tập để ngắn gọn, không thay đổi ý nghĩa.</p>
+      <div class="voices-grid">
+        {userVoices.map((v) => (
+          <div class:list={["voice-card", `voice-card--${v.type}`]}>
+            <div class="voice-type-badge">
+              {v.type === "pro" ? "✓ Ưu điểm" : "✗ Hạn chế"}
+            </div>
+            <blockquote class="voice-quote">"{v.quote}"</blockquote>
+            <cite class="voice-source">— {v.source}</cite>
+          </div>
+        ))}
+      </div>
+    </section>
+  )}
 
 </div>
 
@@ -287,12 +350,99 @@ const metrics = [
     font-weight: 500;
   }
 
-  /* scroll-margin-top accounts for sticky header (68px) + jump nav (~48px) + breathing room */
+  /* ── Rating Breakdown ─────────────────────────────── */
+  .rating-breakdown {
+    margin: var(--space-8) 0;
+  }
+
+  .breakdown-methodology {
+    font-size: 0.86rem;
+    color: var(--muted);
+    line-height: 1.6;
+    margin: 0 0 var(--space-5);
+    padding: var(--space-3) var(--space-4);
+    border-left: 3px solid var(--line);
+    background: var(--surface-alt);
+  }
+
+  .dimension-list {
+    display: grid;
+    gap: var(--space-3);
+  }
+
+  .dimension-row {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: var(--space-4);
+    align-items: center;
+    padding: var(--space-3) var(--space-4);
+    border: 1px solid var(--line);
+    background: var(--surface);
+  }
+
+  .dimension-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    min-width: 0;
+  }
+
+  .dimension-label {
+    font-weight: 700;
+    font-size: 0.92rem;
+    color: var(--text);
+  }
+
+  .dimension-desc {
+    font-size: 0.78rem;
+    color: var(--muted);
+    line-height: 1.4;
+  }
+
+  .dimension-bar-wrap {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    flex-shrink: 0;
+    width: 160px;
+  }
+
+  .dimension-bar {
+    flex: 1;
+    height: 8px;
+    background: var(--surface-alt);
+    border: 1px solid var(--line);
+    overflow: hidden;
+  }
+
+  .dimension-fill {
+    height: 100%;
+    transition: width 0.3s ease;
+  }
+
+  .dimension-fill.score-excellent { background: #1a7a4a; }
+  .dimension-fill.score-good      { background: var(--brand); }
+  .dimension-fill.score-fair      { background: #b45309; }
+
+  .dimension-score {
+    font-size: 0.88rem;
+    font-weight: 700;
+    min-width: 28px;
+    text-align: right;
+  }
+
+  .dimension-score.score-excellent { color: #1a7a4a; }
+  .dimension-score.score-good      { color: var(--brand); }
+  .dimension-score.score-fair      { color: #b45309; }
+
+  /* scroll anchors */
   :global(#thong-tin-nhanh),
   :global(#san-pham),
   :global(#mo-tai-khoan),
   :global(#uu-nhuoc-diem),
-  :global(#danh-gia-tong-the) {
+  :global(#danh-gia-tong-the),
+  :global(#tieu-chi-danh-gia),
+  :global(#phan-hoi-nguoi-dung) {
     scroll-margin-top: 132px;
   }
 
@@ -362,7 +512,6 @@ const metrics = [
     padding-bottom: var(--space-5);
   }
 
-  /* connecting line between steps */
   .step-item:not(:last-child) .step-num::after {
     content: "";
     position: absolute;
@@ -410,6 +559,70 @@ const metrics = [
     line-height: 1.6;
   }
 
+  /* ── User Voices ─────────────────────────────── */
+  .user-voices {
+    margin: var(--space-8) 0;
+  }
+
+  .user-voices-note {
+    font-size: 0.82rem;
+    color: var(--muted);
+    line-height: 1.6;
+    margin: 0 0 var(--space-5);
+    padding: var(--space-3) var(--space-4);
+    border-left: 3px solid var(--line);
+    background: var(--surface-alt);
+  }
+
+  .voices-grid {
+    display: grid;
+    gap: var(--space-3);
+  }
+
+  .voice-card {
+    border: 1px solid var(--line);
+    padding: var(--space-4) var(--space-5);
+    background: var(--surface);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+
+  .voice-card--pro {
+    border-left: 4px solid #1a7a4a;
+  }
+
+  .voice-card--con {
+    border-left: 4px solid #b45309;
+  }
+
+  .voice-type-badge {
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+
+  .voice-card--pro .voice-type-badge { color: #1a7a4a; }
+  .voice-card--con .voice-type-badge { color: #b45309; }
+
+  .voice-quote {
+    margin: 0;
+    font-size: 0.96rem;
+    line-height: 1.7;
+    color: var(--text);
+    font-style: italic;
+    font-weight: 500;
+    quotes: none;
+  }
+
+  .voice-source {
+    font-size: 0.78rem;
+    color: var(--muted);
+    font-style: normal;
+    font-weight: 600;
+  }
+
   /* ── Responsive ─────────────────────────────── */
   @media (max-width: 580px) {
     .score-card {
@@ -430,7 +643,15 @@ const metrics = [
     }
 
     .score-number { font-size: 2.2rem; }
-
     .score-label { display: none; }
+
+    .dimension-row {
+      grid-template-columns: 1fr;
+      gap: var(--space-2);
+    }
+
+    .dimension-bar-wrap {
+      width: 100%;
+    }
   }
 </style>
