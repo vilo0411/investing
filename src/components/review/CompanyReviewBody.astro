@@ -3,6 +3,13 @@ import ProsConsBox from "@/components/ProsConsBox.astro";
 import ReviewCTA from "@/components/ReviewCTA.astro";
 import type { RatingDimension, UserVoice } from "@/data/brokers";
 
+interface OfficialResource {
+  type: "video" | "article" | "guide";
+  title: string;
+  url: string;
+  description?: string;
+}
+
 interface Props {
   companyInfo?: {
     founded?: string;
@@ -12,6 +19,7 @@ interface Props {
     products: string[];
   };
   accountSteps: { title: string; desc: string }[];
+  officialResources?: OfficialResource[];
   pros: string[];
   cons: string[];
   rating: number;
@@ -30,6 +38,7 @@ interface Props {
 const {
   companyInfo,
   accountSteps,
+  officialResources = [],
   pros,
   cons,
   rating,
@@ -47,6 +56,13 @@ const {
 
 const ratingDisplay = rating.toFixed(1);
 const stars = Array.from({ length: 5 }, (_, i) => i < Math.round(rating));
+
+function getYouTubeId(url: string): string | null {
+  const m = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([^&\s]+)/);
+  return m ? m[1] : null;
+}
+
+const accountVideo = officialResources.find((r) => r.type === "video");
 
 const infoRows = companyInfo
   ? [
@@ -173,7 +189,7 @@ const dimensions: { key: keyof RatingDimension; label: string; desc: string }[] 
 
   {accountSteps.length > 0 && (
     <section id="mo-tai-khoan">
-      <h2>Hướng dẫn mở tài khoản</h2>
+      <h2>Hướng dẫn mở tài khoản {name ?? ""}</h2>
       <ol class="account-steps">
         {accountSteps.map((step, i) => (
           <li class="step-item">
@@ -185,6 +201,40 @@ const dimensions: { key: keyof RatingDimension; label: string; desc: string }[] 
           </li>
         ))}
       </ol>
+
+      {accountVideo && (() => {
+        const ytId = getYouTubeId(accountVideo.url);
+        return (
+          <div class="official-video">
+            <p class="official-video-label">Video hướng dẫn từ {name ?? "công ty"}</p>
+            {ytId ? (
+              <a href={accountVideo.url} target="_blank" rel="noopener noreferrer" class="yt-thumb-link" aria-label={accountVideo.title}>
+                <img
+                  src={`https://img.youtube.com/vi/${ytId}/maxresdefault.jpg`}
+                  alt={accountVideo.title}
+                  loading="lazy"
+                  width="1280"
+                  height="720"
+                  class="yt-thumb"
+                  onerror="this.src=`https://img.youtube.com/vi/${ytId}/hqdefault.jpg`"
+                />
+                <span class="yt-play-btn" aria-hidden="true">
+                  <svg viewBox="0 0 68 48" width="68" height="48"><path d="M66.5 7.7c-.8-2.9-3-5.2-5.9-6C55.8 0 34 0 34 0S12.2 0 7.4 1.7c-2.9.8-5.1 3.1-5.9 6C0 12.5 0 24 0 24s0 11.5 1.5 16.3c.8 2.9 3 5.2 5.9 6C12.2 48 34 48 34 48s21.8 0 26.6-1.7c2.9-.8 5.1-3.1 5.9-6C68 35.5 68 24 68 24s0-11.5-1.5-16.3z" fill="#ff0000"/><path d="M45 24 27 14v20" fill="#fff"/></svg>
+                </span>
+                <span class="yt-title">{accountVideo.title}</span>
+              </a>
+            ) : (
+              <a href={accountVideo.url} target="_blank" rel="noopener noreferrer" class="official-link-plain">
+                {accountVideo.title} ↗
+              </a>
+            )}
+            {accountVideo.description && (
+              <p class="official-video-desc">{accountVideo.description}</p>
+            )}
+          </div>
+        );
+      })()}
+
     </section>
   )}
 
@@ -439,6 +489,7 @@ const dimensions: { key: keyof RatingDimension; label: string; desc: string }[] 
   :global(#thong-tin-nhanh),
   :global(#san-pham),
   :global(#mo-tai-khoan),
+  :global(#tai-nguyen-chinh-thuc),
   :global(#uu-nhuoc-diem),
   :global(#danh-gia-tong-the),
   :global(#tieu-chi-danh-gia),
@@ -557,6 +608,87 @@ const dimensions: { key: keyof RatingDimension; label: string; desc: string }[] 
     color: var(--muted);
     font-size: 0.9rem;
     line-height: 1.6;
+  }
+
+  /* ── Official Video ─────────────────────────────── */
+  .official-video {
+    margin-top: var(--space-6);
+    border: 1px solid var(--line);
+    background: var(--surface);
+    overflow: hidden;
+  }
+
+  .official-video-label {
+    margin: 0;
+    padding: var(--space-2) var(--space-4);
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: var(--muted);
+    background: var(--surface-alt);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .yt-thumb-link {
+    display: block;
+    position: relative;
+    line-height: 0;
+    text-decoration: none;
+    background: #000;
+  }
+
+  .yt-thumb {
+    width: 100%;
+    height: auto;
+    display: block;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    opacity: 0.92;
+    transition: opacity 0.15s;
+  }
+
+  .yt-thumb-link:hover .yt-thumb { opacity: 0.8; }
+
+  .yt-play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    filter: drop-shadow(0 2px 8px rgba(0,0,0,0.4));
+    transition: transform 0.15s;
+  }
+
+  .yt-thumb-link:hover .yt-play-btn { transform: translate(-50%, -50%) scale(1.1); }
+
+  .yt-title {
+    display: block;
+    padding: var(--space-3) var(--space-4);
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--text);
+    line-height: 1.4;
+    background: var(--surface);
+    border-top: 1px solid var(--line);
+    text-decoration: none;
+  }
+
+  .official-link-plain {
+    display: block;
+    padding: var(--space-3) var(--space-4);
+    font-size: 0.94rem;
+    font-weight: 600;
+    color: var(--brand);
+    text-decoration: underline;
+  }
+
+  .official-video-desc {
+    margin: 0;
+    padding: var(--space-2) var(--space-4) var(--space-3);
+    font-size: 0.82rem;
+    color: var(--muted);
+    line-height: 1.55;
   }
 
   /* ── User Voices ─────────────────────────────── */

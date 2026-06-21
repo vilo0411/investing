@@ -1,0 +1,438 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation "Menu chính" [ref=e3]:
+      - link "Value Investing" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - img [ref=e5]
+        - generic [ref=e8]: Value Investing
+      - generic [ref=e9]:
+        - link "Đầu tư" [ref=e11] [cursor=pointer]:
+          - /url: /dau-tu/
+          - text: Đầu tư
+          - img [ref=e12]
+        - link "Phân tích" [ref=e15] [cursor=pointer]:
+          - /url: /phan-tich/
+          - text: Phân tích
+          - img [ref=e16]
+        - link "Nhà đầu tư" [ref=e18] [cursor=pointer]:
+          - /url: /nha-dau-tu/
+        - link "Reviews" [ref=e19] [cursor=pointer]:
+          - /url: /reviews/
+      - button "Mở tìm kiếm" [ref=e21]:
+        - img [ref=e22]
+  - main [ref=e25]:
+    - generic [ref=e27]:
+      - navigation "Breadcrumb" [ref=e28]:
+        - list [ref=e29]:
+          - listitem [ref=e30]:
+            - link "Trang chủ" [ref=e31] [cursor=pointer]:
+              - /url: /
+            - generic [ref=e32]: /
+          - listitem [ref=e33]:
+            - link "Reviews" [ref=e34] [cursor=pointer]:
+              - /url: /reviews/
+            - generic [ref=e35]: /
+          - listitem [ref=e36]:
+            - generic [ref=e37]: "Review DSC Securities: Ưu nhược điểm & Có nên mở tài khoản không?"
+      - generic [ref=e38]: Reviews
+      - 'heading "Review DSC Securities: Ưu nhược điểm & Có nên mở tài khoản không?" [level=1] [ref=e39]'
+      - paragraph [ref=e40]: "Đánh giá chi tiết Chứng khoán DSC năm 2026: phí giao dịch, lãi suất margin, giao diện ứng dụng, chất lượng hỗ trợ và hướng dẫn mở tài khoản từng bước."
+      - generic [ref=e41]:
+        - generic [ref=e42]: L
+        - generic [ref=e43]:
+          - generic [ref=e44]:
+            - generic [ref=e45]: "Tác giả:"
+            - link "Nguyễn Viết Lộc" [ref=e46] [cursor=pointer]:
+              - /url: /author/nguyen-viet-loc/
+            - generic [ref=e47]: "|"
+            - generic [ref=e48]: "Cập nhật: 16/6/2026"
+            - generic [ref=e49]: "|"
+            - generic [ref=e50]: 7 phút đọc
+          - generic [ref=e52]:
+            - text: Rà soát theo
+            - link "chính sách biên tập" [ref=e53] [cursor=pointer]:
+              - /url: /editorial-policy/
+      - generic "Thông tin độ tin cậy của bài viết" [ref=e54]:
+        - generic [ref=e55]: Kiểm tra nguồn
+        - generic [ref=e56]: Không tư vấn cá nhân
+        - generic [ref=e57]: Có quy trình đính chính
+    - 'img "Review DSC Securities: Ưu nhược điểm & Có nên mở tài khoản không?" [ref=e60]'
+    - navigation "Điều hướng nhanh trong bài" [ref=e61]:
+      - generic [ref=e63]:
+        - generic [ref=e64]: Đọc nhanh
+        - list [ref=e65]:
+          - listitem [ref=e66]:
+            - link "Tiêu chí đánh giá" [ref=e67] [cursor=pointer]:
+              - /url: "#tieu-chi-danh-gia"
+              - generic [ref=e68]: "01"
+              - text: Tiêu chí đánh giá
+          - listitem [ref=e69]:
+            - link "Thông tin nhanh" [ref=e70] [cursor=pointer]:
+              - /url: "#thong-tin-nhanh"
+              - generic [ref=e71]: "02"
+              - text: Thông tin nhanh
+          - listitem [ref=e72]:
+            - link "Mở tài khoản" [ref=e73] [cursor=pointer]:
+              - /url: "#mo-tai-khoan"
+              - generic [ref=e74]: "03"
+              - text: Mở tài khoản
+          - listitem [ref=e75]:
+            - link "Ưu nhược điểm" [ref=e76] [cursor=pointer]:
+              - /url: "#uu-nhuoc-diem"
+              - generic [ref=e77]: "04"
+              - text: Ưu nhược điểm
+          - listitem [ref=e78]:
+            - link "Người dùng nói gì" [ref=e79] [cursor=pointer]:
+              - /url: "#phan-hoi-nguoi-dung"
+              - generic [ref=e80]: "05"
+              - text: Người dùng nói gì
+          - listitem [ref=e81]:
+            - link "DSC Securities là công ty gì?" [ref=e82] [cursor=pointer]:
+              - /url: "#dsc-securities-là-công-ty-gì"
+              - generic [ref=e83]: "06"
+              - text: DSC Securities là công ty gì?
+          - listitem [ref=e84]:
+            - link "Đánh giá chi tiết DSC Securities" [ref=e85] [cursor=pointer]:
+              - /url: "#đánh-giá-chi-tiết-dsc-securities"
+              - generic [ref=e86]: "07"
+              - text: Đánh giá chi tiết DSC Securities
+          - listitem [ref=e87]:
+            - link "Ai nên chọn DSC Securities?" [ref=e88] [cursor=pointer]:
+              - /url: "#ai-nên-chọn-dsc-securities"
+              - generic [ref=e89]: "08"
+              - text: Ai nên chọn DSC Securities?
+    - article [ref=e91]:
+      - complementary "Lưu ý tài chính" [ref=e92]:
+        - strong [ref=e93]: "Lưu ý trước khi đọc:"
+        - generic [ref=e94]: Value Investing không cung cấp dịch vụ tư vấn đầu tư cá nhân, môi giới chứng khoán hoặc tín hiệu giao dịch. Nội dung chỉ nhằm mục đích giáo dục.
+      - complementary "Tóm tắt nội dung chính" [ref=e95]:
+        - paragraph [ref=e96]: Tóm tắt nội dung chính
+        - list [ref=e97]:
+          - listitem [ref=e98]: DSC Securities là CTCK thành viên PVN, hoạt động từ 2007, được cấp phép đầy đủ bởi UBCK.
+          - listitem [ref=e99]: Phí giao dịch từ 0.10% và lãi suất margin 9.9%/năm thuộc nhóm cạnh tranh nhất thị trường.
+          - listitem [ref=e100]: Ứng dụng DSC Trade còn hạn chế về tính năng phân tích so với TCBS hay SSI.
+          - listitem [ref=e101]: Phù hợp nhất với nhà đầu tư tự chủ muốn tối ưu chi phí, hoặc dùng song song với CTCK khác.
+      - generic [ref=e102]:
+        - generic [ref=e103]:
+          - generic [ref=e104]:
+            - generic [ref=e105]: "3.8"
+            - generic "3.8 trên 5 sao" [ref=e106]:
+              - generic [ref=e107]: ★
+              - generic [ref=e108]: ★
+              - generic [ref=e109]: ★
+              - generic [ref=e110]: ★
+              - generic [ref=e111]: ★
+            - generic [ref=e112]: Điểm Value Investing
+          - generic [ref=e113]:
+            - generic [ref=e114]:
+              - generic [ref=e115]: Phù hợp nhất với
+              - generic [ref=e116]: Nhà đầu tư tự chủ muốn phí thấp, hệ thống ổn định
+            - generic [ref=e117]:
+              - generic [ref=e118]:
+                - generic [ref=e119]: Phí GD
+                - generic [ref=e120]: 0.10% – 0.15%
+              - generic [ref=e121]:
+                - generic [ref=e122]: Margin
+                - generic [ref=e123]: 9.9%/năm
+              - generic [ref=e124]:
+                - generic [ref=e125]: Đánh giá app
+                - generic [ref=e126]: 3.5/5
+            - link "Mở tài khoản ngay" [ref=e128] [cursor=pointer]:
+              - /url: https://www.dsc.com.vn
+        - generic [ref=e129]:
+          - paragraph [ref=e130]: Nhận định của chúng tôi
+          - paragraph [ref=e131]: DSC phù hợp với nhà đầu tư đã có kinh nghiệm, tự chủ trong quyết định và muốn tối ưu hóa chi phí. Với mức phí và lãi suất margin cạnh tranh, đây là lựa chọn hợp lý để mở tài khoản thứ hai bên cạnh các công ty chứng khoán lớn hơn.
+        - generic [ref=e132]:
+          - heading "Điểm theo từng tiêu chí" [level=2] [ref=e133]
+          - paragraph [ref=e134]: Điểm được tính dựa trên dữ liệu công khai (phí, lãi suất margin, app store rating), phản hồi người dùng thu thập từ App Store / Google Play / CafeF, và kiểm tra thực tế của đội biên tập Value Investing. Thang điểm 1–5.
+          - generic [ref=e135]:
+            - generic [ref=e136]:
+              - generic [ref=e137]:
+                - generic [ref=e138]: Phí giao dịch
+                - generic [ref=e139]: So sánh tổng chi phí giao dịch theo khối lượng trung bình
+              - generic [ref=e143]: "4.8"
+            - generic [ref=e144]:
+              - generic [ref=e145]:
+                - generic [ref=e146]: Ứng dụng & Công cụ
+                - generic [ref=e147]: Chất lượng nền tảng giao dịch, tính năng phân tích
+              - generic [ref=e151]: "3.2"
+            - generic [ref=e152]:
+              - generic [ref=e153]:
+                - generic [ref=e154]: Hỗ trợ khách hàng
+                - generic [ref=e155]: Tốc độ phản hồi, chất lượng tư vấn, kênh liên hệ
+              - generic [ref=e159]: "3.5"
+            - generic [ref=e160]:
+              - generic [ref=e161]:
+                - generic [ref=e162]: Độ ổn định hệ thống
+                - generic [ref=e163]: Uptime và hiệu suất vào phiên giao dịch cao điểm
+              - generic [ref=e167]: "4.2"
+            - generic [ref=e168]:
+              - generic [ref=e169]:
+                - generic [ref=e170]: Sản phẩm đầu tư
+                - generic [ref=e171]: "Đa dạng sản phẩm: cổ phiếu, phái sinh, trái phiếu, quỹ"
+              - generic [ref=e175]: "3.5"
+        - generic [ref=e176]:
+          - heading "Thông tin nhanh" [level=2] [ref=e177]
+          - generic [ref=e178]:
+            - generic [ref=e179]:
+              - term [ref=e180]: Năm thành lập
+              - definition [ref=e181]: "2007"
+            - generic [ref=e182]:
+              - term [ref=e183]: Trụ sở
+              - definition [ref=e184]: Tòa nhà PVcomBank, 22 Ngô Quyền, Hoàn Kiếm, Hà Nội
+            - generic [ref=e185]:
+              - term [ref=e186]: Giấy phép
+              - definition [ref=e187]: Giấy phép KDCK số 20/UBCK-ĐKGPHĐKD
+            - generic [ref=e188]:
+              - term [ref=e189]: Website
+              - definition [ref=e190]: https://www.dsc.com.vn
+        - generic [ref=e191]:
+          - heading "Sản phẩm & dịch vụ" [level=2] [ref=e192]
+          - list [ref=e193]:
+            - listitem [ref=e194]: Môi giới cổ phiếu, chứng chỉ quỹ, ETF
+            - listitem [ref=e195]: Giao dịch hợp đồng tương lai VN30
+            - listitem [ref=e196]: Cho vay margin (lãi suất từ 9.9%/năm)
+            - listitem [ref=e197]: Tư vấn đầu tư và phân tích báo cáo
+            - listitem [ref=e198]: Phân phối trái phiếu doanh nghiệp
+        - generic [ref=e199]:
+          - heading "Hướng dẫn mở tài khoản DSC Securities" [level=2] [ref=e200]
+          - list [ref=e201]:
+            - listitem [ref=e202]:
+              - generic [ref=e203]: "1"
+              - generic [ref=e204]:
+                - strong [ref=e205]: Tải ứng dụng DSC Trade
+                - paragraph [ref=e206]: Vào App Store (iOS) hoặc Google Play (Android), tìm "DSC Trade" — biểu tượng logo xanh lá của Chứng khoán DSC. Cài đặt miễn phí, dung lượng khoảng 80 MB. Không cần cài thêm phần mềm nào khác; toàn bộ quy trình mở tài khoản lẫn giao dịch sau này đều thực hiện qua app này.
+            - listitem [ref=e207]:
+              - generic [ref=e208]: "2"
+              - generic [ref=e209]:
+                - strong [ref=e210]: Điền thông tin cá nhân
+                - paragraph [ref=e211]: Mở app, chọn "Mở tài khoản" → nhập số điện thoại đang dùng (sẽ nhận OTP xác nhận) → điền họ tên, ngày sinh, địa chỉ thường trú đúng theo CCCD. DSC yêu cầu email để gửi sao kê và thông báo giao dịch — nên dùng email cá nhân thường xuyên kiểm tra.
+            - listitem [ref=e212]:
+              - generic [ref=e213]: "3"
+              - generic [ref=e214]:
+                - strong [ref=e215]: Xác minh danh tính eKYC (CCCD gắn chip)
+                - paragraph [ref=e216]: "DSC dùng công nghệ eKYC tích hợp NFC cho CCCD gắn chip: (1) Chụp mặt trước và mặt sau CCCD trong khung hướng dẫn — đảm bảo ảnh rõ nét, không bị lóa đèn flash; (2) Quét chip NFC bằng cách đặt điện thoại lên mặt sau CCCD đến khi app báo thành công; (3) Chụp ảnh chân dung trực tiếp theo hướng dẫn khuôn mặt. Toàn bộ bước eKYC mất khoảng 3–5 phút nếu CCCD còn mới và chip không bị lỗi."
+            - listitem [ref=e217]:
+              - generic [ref=e218]: "4"
+              - generic [ref=e219]:
+                - strong [ref=e220]: Chờ phê duyệt tài khoản
+                - paragraph [ref=e221]: DSC xét duyệt trong ngày làm việc, thường trong vòng 1–3 giờ với hồ sơ nộp trước 15:00. Bạn sẽ nhận SMS và email thông báo khi tài khoản được kích hoạt, kèm số tài khoản chứng khoán (bắt đầu bằng ký hiệu DSC). Nếu hồ sơ thiếu thông tin, nhân viên DSC sẽ gọi điện xác nhận trực tiếp.
+            - listitem [ref=e222]:
+              - generic [ref=e223]: "5"
+              - generic [ref=e224]:
+                - strong [ref=e225]: Nạp tiền và thiết lập tài khoản ngân hàng liên kết
+                - paragraph [ref=e226]: "Trong app DSC Trade, vào mục \"Nạp tiền\" → chọn ngân hàng liên kết (DSC hỗ trợ hầu hết ngân hàng lớn: Vietcombank, BIDV, Techcombank, MB, VPBank...) → chuyển khoản đúng nội dung \"[Số tài khoản DSC] - [Họ tên]\". Tiền vào tài khoản chứng khoán trong vòng 15–30 phút. Không có số dư tối thiểu bắt buộc."
+            - listitem [ref=e227]:
+              - generic [ref=e228]: "6"
+              - generic [ref=e229]:
+                - strong [ref=e230]: Đặt lệnh giao dịch đầu tiên
+                - paragraph [ref=e231]: Vào "Giao dịch" → chọn mã cổ phiếu → nhập khối lượng và giá → xác nhận lệnh bằng mã PIN giao dịch (thiết lập lần đầu). Lệnh khớp trong phiên liên tục (9:15–14:30); tiền bán về tài khoản sau T+2 theo quy định HOSE/HNX. Với lệnh mua, tiền bị phong tỏa ngay khi đặt và hoàn về nếu lệnh không khớp hết.
+          - generic [ref=e232]:
+            - paragraph [ref=e233]: Video hướng dẫn từ DSC Securities
+            - link "Hướng dẫn giao dịch chứng khoán online DSC Trading trên website" [ref=e234] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=h8K0WOhlJLA
+              - img "Hướng dẫn giao dịch chứng khoán online DSC Trading trên website" [ref=e235]
+              - generic:
+                - img
+              - generic [ref=e236]: Hướng dẫn giao dịch chứng khoán online DSC Trading trên website
+            - paragraph [ref=e237]: Video chính thức từ kênh Chứng khoán DSC — hướng dẫn thao tác đặt lệnh, tra cứu danh mục và xem bảng giá trực tiếp trên nền tảng DSC Trading.
+        - generic [ref=e238]:
+          - heading "Ưu & nhược điểm" [level=2] [ref=e239]
+          - generic [ref=e240]:
+            - generic [ref=e241]:
+              - generic [ref=e242]: Ưu điểm
+              - generic [ref=e243]:
+                - generic [ref=e244]:
+                  - generic [ref=e245]: ✓
+                  - generic [ref=e246]: Phí giao dịch cạnh tranh, từ 0.10% — thấp hơn mức trung bình thị trường
+                - generic [ref=e247]:
+                  - generic [ref=e248]: ✓
+                  - generic [ref=e249]: Lãi suất margin 9.9%/năm, thuộc nhóm thấp nhất hiện nay
+                - generic [ref=e250]:
+                  - generic [ref=e251]: ✓
+                  - generic [ref=e252]: Hệ thống giao dịch ổn định, rất ít xảy ra lỗi hay nghẽn lệnh
+                - generic [ref=e253]:
+                  - generic [ref=e254]: ✓
+                  - generic [ref=e255]: Đội ngũ môi giới có chuyên môn, hỗ trợ tận tình qua điện thoại
+                - generic [ref=e256]:
+                  - generic [ref=e257]: ✓
+                  - generic [ref=e258]: Thủ tục mở tài khoản online nhanh, thường phê duyệt trong ngày
+            - generic [ref=e259]:
+              - generic [ref=e260]: Nhược điểm
+              - generic [ref=e261]:
+                - generic [ref=e262]:
+                  - generic [ref=e263]: ✕
+                  - generic [ref=e264]: Ứng dụng di động giao diện cũ, thiếu tính năng phân tích kỹ thuật nâng cao
+                - generic [ref=e265]:
+                  - generic [ref=e266]: ✕
+                  - generic [ref=e267]: Tên tuổi thị phần nhỏ, ít được người mới biết đến
+                - generic [ref=e268]:
+                  - generic [ref=e269]: ✕
+                  - generic [ref=e270]: Không có công cụ lọc cổ phiếu (stock screener) tích hợp
+                - generic [ref=e271]:
+                  - generic [ref=e272]: ✕
+                  - generic [ref=e273]: Báo cáo phân tích doanh nghiệp ít và không chuyên sâu bằng SSI, TCBS
+        - generic [ref=e274]:
+          - heading "Người dùng nói gì?" [level=2] [ref=e275]
+          - paragraph [ref=e276]: Tổng hợp phản hồi thực từ App Store, Google Play và diễn đàn CafeF. Trích dẫn được biên tập để ngắn gọn, không thay đổi ý nghĩa.
+          - generic [ref=e277]:
+            - generic [ref=e278]:
+              - generic [ref=e279]: ✓ Ưu điểm
+              - blockquote [ref=e280]: "\"Margin rate 9.9% thấp nhất tôi tìm được. Với danh mục margin cỡ 500 triệu, tiết kiệm được khoảng 3–4 triệu lãi/năm so với SSI.\""
+              - generic [ref=e281]: — CafeF Diễn đàn
+            - generic [ref=e282]:
+              - generic [ref=e283]: ✗ Hạn chế
+              - blockquote [ref=e284]: "\"App DSC Trade khá cơ bản, thiếu nhiều công cụ phân tích. Tôi chủ yếu dùng DSC cho margin, phân tích thì dùng TCBS.\""
+              - generic [ref=e285]: — Google Play — DSC Trade
+      - paragraph [ref=e286]:
+        - text: Nếu bạn đang tìm một công ty chứng khoán có phí thấp và lãi suất margin cạnh tranh mà ít được nhắc đến trong các bảng so sánh thông thường,
+        - strong [ref=e287]: DSC Securities
+        - text: (Chứng khoán DSC) là cái tên đáng xem xét.
+      - paragraph [ref=e288]:
+        - text: Bài review này từ
+        - strong [ref=e289]:
+          - link "Value Investing" [ref=e290] [cursor=pointer]:
+            - /url: /
+        - text: "sẽ đánh giá DSC một cách khách quan dựa trên các tiêu chí thực tế: chi phí, hệ thống giao dịch, ứng dụng và chất lượng hỗ trợ — để bạn có đủ thông tin trước khi quyết định mở tài khoản."
+      - heading "DSC Securities là công ty gì?" [level=2] [ref=e291]
+      - paragraph [ref=e292]: "Chứng khoán DSC (tên đầy đủ: Công ty Cổ phần Chứng khoán DSC) là thành viên thuộc Tập đoàn Dầu khí Việt Nam (PVN). Công ty được thành lập năm 2007 và được Ủy ban Chứng khoán Nhà nước cấp phép hoạt động đầy đủ trong lĩnh vực môi giới, tư vấn và tự doanh chứng khoán."
+      - paragraph [ref=e293]: Dù không phải tên tuổi đình đám như SSI hay VPS, DSC duy trì hoạt động ổn định với tệp khách hàng truyền thống là nhà đầu tư cá nhân và tổ chức trong hệ sinh thái PVN.
+      - heading "Đánh giá chi tiết DSC Securities" [level=2] [ref=e294]
+      - heading "Hệ thống giao dịch" [level=3] [ref=e295]
+      - paragraph [ref=e296]: Ứng dụng DSC Trade hỗ trợ giao dịch cổ phiếu, ETF, chứng chỉ quỹ và hợp đồng tương lai VN30 trên cùng một nền tảng. Hệ thống duy trì độ ổn định tốt ngay cả trong các phiên giao dịch biến động lớn — điểm cộng quan trọng mà không phải công ty chứng khoán nào cũng đảm bảo được.
+      - paragraph [ref=e297]: Tuy nhiên, giao diện ứng dụng còn thiếu các tính năng phân tích hiện đại. Nhà đầu tư cần dùng thêm công cụ bên thứ ba (như TradingView) nếu muốn phân tích kỹ thuật chuyên sâu.
+      - heading "Biểu phí giao dịch" [level=3] [ref=e298]
+      - paragraph [ref=e299]:
+        - text: Đây là điểm mạnh rõ ràng nhất của DSC. Mức phí từ
+        - strong [ref=e300]: 0.10%
+        - text: thấp hơn mức trung bình thị trường và có thể thương lượng xuống thêm tùy khối lượng giao dịch. Lãi suất margin
+        - strong [ref=e301]: 9.9%/năm
+        - text: là một trong những mức hấp dẫn nhất hiện nay.
+      - heading "Chất lượng môi giới và hỗ trợ" [level=3] [ref=e302]
+      - paragraph [ref=e303]: DSC vẫn duy trì mô hình môi giới truyền thống với đội ngũ tư vấn có chuyên môn. Khách hàng có thể liên hệ trực tiếp với môi giới qua điện thoại — điểm cộng cho những người mới cần được hướng dẫn trong giai đoạn đầu.
+      - heading "Ai nên chọn DSC Securities?" [level=2] [ref=e304]
+      - paragraph [ref=e305]:
+        - text: DSC phù hợp nhất với
+        - strong [ref=e306]: nhà đầu tư đã có kinh nghiệm
+        - text: ", tự chủ trong quyết định giao dịch và đang tìm cách tối giản chi phí. Nếu bạn đã có tài khoản tại TCBS hay SSI và muốn mở thêm tài khoản thứ hai để sử dụng margin với lãi suất thấp hơn, DSC là phương án hợp lý."
+      - paragraph [ref=e307]: Ngược lại, nếu bạn là F0 cần công cụ phân tích mạnh và giao diện trực quan, hãy cân nhắc TCBS hoặc VNDIRECT trước.
+      - generic [ref=e308]:
+        - heading "Câu hỏi thường gặp" [level=2] [ref=e309]
+        - generic [ref=e310]:
+          - group [ref=e311]:
+            - generic "DSC Securities có uy tín không?" [ref=e312] [cursor=pointer]
+          - group [ref=e313]:
+            - generic "Phí giao dịch tại DSC là bao nhiêu?" [ref=e314] [cursor=pointer]
+          - group [ref=e315]:
+            - generic "Có thể mở tài khoản DSC online không?" [ref=e316] [cursor=pointer]
+      - complementary "Nguồn tham khảo và kiểm tra" [ref=e317]:
+        - paragraph [ref=e318]: "Cập nhật lần cuối: 16/6/2026"
+        - heading "Nguồn tham khảo" [level=2] [ref=e319]
+        - list [ref=e320]:
+          - listitem [ref=e321]: Dữ liệu phí giao dịch và lãi suất margin từ website chính thức DSC Securities (tháng 6/2026)
+          - listitem [ref=e322]: Thông tin giấy phép từ Ủy ban Chứng khoán Nhà nước Việt Nam
+          - listitem [ref=e323]: Báo cáo thị phần môi giới HOSE quý 1/2026
+      - generic [ref=e324]:
+        - heading "Quy trình kiểm định nội dung" [level=2] [ref=e325]
+        - paragraph [ref=e326]:
+          - text: Nội dung được rà soát về tính chính xác, tính cập nhật và mức độ phù hợp với nhà đầu tư cá nhân. Nếu phát hiện lỗi có thể ảnh hưởng đến quyết định tài chính, bài viết sẽ được cập nhật và ghi nhận theo
+          - link "chính sách đính chính" [ref=e327] [cursor=pointer]:
+            - /url: /corrections-policy/
+          - text: .
+      - complementary [ref=e328]:
+        - generic [ref=e329]: L
+        - generic [ref=e330]:
+          - generic [ref=e331]:
+            - generic [ref=e332]:
+              - paragraph [ref=e333]: Về tác giả
+              - link "Nguyễn Viết Lộc" [ref=e334] [cursor=pointer]:
+                - /url: /author/nguyen-viet-loc
+            - link "Xem hồ sơ" [ref=e335] [cursor=pointer]:
+              - /url: /author/nguyen-viet-loc
+          - paragraph [ref=e336]: Người sáng lập & Phụ trách nội dung
+          - paragraph [ref=e337]: Lộc Nguyễn hiện là Chuyên viên SEO tại Công ty Chứng khoán DSC. Với hơn 3 năm kinh nghiệm triển khai nội dung và tối ưu hiệu suất tìm kiếm cho các sản phẩm tài chính lớn, Lộc sáng lập Value Investing nhằm chia sẻ các kiến thức đầu tư thực chiến bằng ngôn ngữ bình dân, giúp F0 tự tin và an toàn hơn trên thị trường.
+          - generic "Chuyên môn tác giả" [ref=e338]:
+            - generic [ref=e339]: Đầu tư giá trị
+            - generic [ref=e340]: Đơn giản hóa thuật ngữ tài chính
+            - generic [ref=e341]: Sản phẩm đầu tư cho người mới bắt đầu
+            - generic [ref=e342]: Cấu trúc thông tin tài chính (SEO)
+          - paragraph [ref=e343]: Hơn 3 năm kinh nghiệm thực tế triển khai nội dung tài chính và tối ưu hiệu suất tìm kiếm cho các sản phẩm tài chính lớn (hiện là Chuyên viên SEO tại Công ty Chứng khoán DSC). Chuyên sâu về nghiên cứu hành vi tìm kiếm (Search Intent) của nhà đầu tư cá nhân và đơn giản hóa cấu trúc thông tin.
+          - paragraph [ref=e344]: Nội dung được viết cho mục đích giáo dục tài chính, ưu tiên nguồn chính thống và tiếp nhận phản hồi đính chính qua email công khai.
+      - generic [ref=e345]:
+        - generic [ref=e346]: Chia sẻ
+        - link "Chia sẻ lên Facebook" [ref=e347] [cursor=pointer]:
+          - /url: https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fvalueinvesting.com.vn%2Freviews%2Freview-dsc-securities%2F&quote=Review%20DSC%20Securities%3A%20%C6%AFu%20nh%C6%B0%E1%BB%A3c%20%C4%91i%E1%BB%83m%20%26%20C%C3%B3%20n%C3%AAn%20m%E1%BB%9F%20t%C3%A0i%20kho%E1%BA%A3n%20kh%C3%B4ng%3F
+          - img [ref=e348]
+          - text: Facebook
+        - button "Sao chép đường dẫn" [ref=e350] [cursor=pointer]:
+          - img [ref=e351]
+          - generic [ref=e354]: Sao chép link
+      - generic [ref=e355]:
+        - paragraph [ref=e356]: Bài viết liên quan
+        - generic [ref=e357]:
+          - 'link "Công ty chứng khoán phí thấp: Có nên chọn vì zero-fee? So sánh phí giao dịch tại các công ty chứng khoán Việt Nam. Tìm hiểu xu hướng miễn phí giao dịch trọn đời (zero-fee) và lưu ý khi lựa chọn. 5 phút đọc" [ref=e358] [cursor=pointer]':
+            - /url: /reviews/cong-ty-chung-khoan-phi-thap/
+            - strong [ref=e359]: "Công ty chứng khoán phí thấp: Có nên chọn vì zero-fee?"
+            - paragraph [ref=e360]: So sánh phí giao dịch tại các công ty chứng khoán Việt Nam. Tìm hiểu xu hướng miễn phí giao dịch trọn đời (zero-fee) và lưu ý khi lựa chọn.
+            - generic [ref=e361]: 5 phút đọc
+          - 'link "Review công ty chứng khoán cho người mới: Chọn ở đâu tốt? Review chi tiết ưu và nhược điểm của các công ty chứng khoán lớn tại Việt Nam giúp người mới bắt đầu (F0) lựa chọn nơi mở tài khoản tốt nhất. 5 phút đọc" [ref=e362] [cursor=pointer]':
+            - /url: /reviews/review-cong-ty-chung-khoan-cho-nguoi-moi/
+            - strong [ref=e363]: "Review công ty chứng khoán cho người mới: Chọn ở đâu tốt?"
+            - paragraph [ref=e364]: Review chi tiết ưu và nhược điểm của các công ty chứng khoán lớn tại Việt Nam giúp người mới bắt đầu (F0) lựa chọn nơi mở tài khoản tốt nhất.
+            - generic [ref=e365]: 5 phút đọc
+          - 'link "So sánh TCBS vs SSI: Nên chọn công ty chứng khoán nào năm 2026? So sánh chi tiết TCBS và SSI năm 2026 theo 5 tiêu chí: phí giao dịch, lãi suất margin, giao diện ứng dụng, báo cáo phân tích và hỗ trợ khách hàng. 8 phút đọc" [ref=e366] [cursor=pointer]':
+            - /url: /reviews/so-sanh-tcbs-vs-ssi/
+            - strong [ref=e367]: "So sánh TCBS vs SSI: Nên chọn công ty chứng khoán nào năm 2026?"
+            - paragraph [ref=e368]: "So sánh chi tiết TCBS và SSI năm 2026 theo 5 tiêu chí: phí giao dịch, lãi suất margin, giao diện ứng dụng, báo cáo phân tích và hỗ trợ khách hàng."
+            - generic [ref=e369]: 8 phút đọc
+  - contentinfo [ref=e370]:
+    - generic [ref=e371]:
+      - generic [ref=e372]:
+        - strong [ref=e373]: Value Investing
+        - paragraph [ref=e374]: Kiến thức đầu tư giá trị cho người Việt, miễn phí, có nguồn, không khuyến nghị mua bán.
+      - generic [ref=e375]:
+        - heading "Đầu tư" [level=5] [ref=e376]
+        - link "Cổ phiếu" [ref=e377] [cursor=pointer]:
+          - /url: /dau-tu/co-phieu/
+        - link "Quỹ ETF" [ref=e378] [cursor=pointer]:
+          - /url: /dau-tu/etf/
+        - link "Trái phiếu" [ref=e379] [cursor=pointer]:
+          - /url: /dau-tu/trai-phieu/
+        - link "Phái sinh" [ref=e380] [cursor=pointer]:
+          - /url: /dau-tu/phai-sinh/
+      - generic [ref=e381]:
+        - heading "Phân tích & Review" [level=5] [ref=e382]
+        - link "Phân tích cơ bản" [ref=e383] [cursor=pointer]:
+          - /url: /phan-tich/co-ban/
+        - link "Phân tích kỹ thuật" [ref=e384] [cursor=pointer]:
+          - /url: /phan-tich/ky-thuat/
+        - link "Reviews" [ref=e385] [cursor=pointer]:
+          - /url: /reviews/
+        - link "Nhà đầu tư" [ref=e386] [cursor=pointer]:
+          - /url: /nha-dau-tu/
+      - generic [ref=e387]:
+        - heading "Về trang web" [level=5] [ref=e388]
+        - link "Về dự án" [ref=e389] [cursor=pointer]:
+          - /url: /about/
+        - link "Biên tập" [ref=e390] [cursor=pointer]:
+          - /url: /editorial-policy/
+        - link "Nguồn tham khảo" [ref=e391] [cursor=pointer]:
+          - /url: /sources-policy/
+        - link "Đính chính" [ref=e392] [cursor=pointer]:
+          - /url: /corrections-policy/
+        - link "Liên hệ" [ref=e393] [cursor=pointer]:
+          - /url: /contact/
+    - generic [ref=e394]: © 2026 Value Investing. Value Investing không cung cấp dịch vụ tư vấn đầu tư cá nhân, môi giới chứng khoán hoặc tín hiệu giao dịch. Nội dung chỉ nhằm mục đích giáo dục.
+  - generic [ref=e397]:
+    - button "Menu" [ref=e398]:
+      - img [ref=e400]
+      - generic: Menu
+    - button "Inspect" [ref=e404]:
+      - img [ref=e406]
+      - generic: Inspect
+    - button "Audit" [ref=e408]:
+      - img [ref=e410]
+      - generic: Audit
+    - button "Settings" [ref=e413]:
+      - img [ref=e415]
+      - generic: Settings

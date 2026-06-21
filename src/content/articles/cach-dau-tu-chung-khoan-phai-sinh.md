@@ -5,6 +5,7 @@ category: phai-sinh
 heroImage: "/images/articles/cach-dau-tu-chung-khoan-phai-sinh/hero.jpg"
 publishDate: "2026-06-15"
 updatedDate: "2026-06-15"
+factCheckedDate: "2026-06-21"
 readingTime: "6 phút đọc"
 featured: false
 order: 1

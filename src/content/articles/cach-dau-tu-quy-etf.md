@@ -5,6 +5,7 @@ category: etf
 heroImage: "/images/articles/cach-dau-tu-quy-etf/hero.jpg"
 publishDate: "2026-06-15"
 updatedDate: "2026-06-15"
+factCheckedDate: "2026-06-21"
 readingTime: "5 phút đọc"
 featured: false
 order: 5

@@ -60,6 +60,12 @@ const articles = defineCollection({
       title: z.string(),
       desc: z.string(),
     })).default([]),
+    officialResources: z.array(z.object({
+      type: z.enum(["video", "article", "guide"]),
+      title: z.string(),
+      url: z.string(),
+      description: z.string().optional(),
+    })).default([]),
     comparisonCriteria: z.array(z.object({
       label: z.string(),
       key: z.string(),

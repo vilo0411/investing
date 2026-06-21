@@ -7,18 +7,20 @@ const { items } = Astro.props;
 ---
 
 <nav class="review-jump-nav" id="review-jump-nav" aria-label="Điều hướng nhanh trong bài">
-  <div class="jump-nav-inner">
-    <span class="jump-nav-prefix" aria-hidden="true">Đọc nhanh</span>
-    <ul>
-      {items.map((item, i) => (
-        <li>
-          <a href={item.href} class="jump-link" data-href={item.href}>
-            <span class="jump-num" aria-hidden="true">{String(i + 1).padStart(2, "0")}</span>
-            {item.label}
-          </a>
-        </li>
-      ))}
-    </ul>
+  <div class="jump-nav-wrap">
+    <div class="jump-nav-inner">
+      <span class="jump-nav-prefix" aria-hidden="true">Đọc nhanh</span>
+      <ul>
+        {items.map((item, i) => (
+          <li>
+            <a href={item.href} class="jump-link" data-href={item.href}>
+              <span class="jump-num" aria-hidden="true">{String(i + 1).padStart(2, "0")}</span>
+              {item.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
   </div>
 </nav>
 
@@ -27,6 +29,7 @@ const { items } = Astro.props;
   if (nav) {
     const links = nav.querySelectorAll<HTMLAnchorElement>(".jump-link");
     const sectionIds = Array.from(links).map((l) => l.getAttribute("data-href")?.replace("#", ""));
+    const wrap = nav.querySelector<HTMLElement>(".jump-nav-wrap");
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -34,7 +37,11 @@ const { items } = Astro.props;
           if (entry.isIntersecting) {
             links.forEach((l) => l.classList.remove("jump-link--active"));
             const active = nav.querySelector<HTMLAnchorElement>(`[data-href="#${entry.target.id}"]`);
-            if (active) active.classList.add("jump-link--active");
+            if (active) {
+              active.classList.add("jump-link--active");
+              // Scroll heading bị khuất vào vùng nhìn thấy
+              active.scrollIntoView({ behavior: "smooth", inline: "nearest", block: "nearest" });
+            }
           }
         }
       },
@@ -47,6 +54,23 @@ const { items } = Astro.props;
         if (el) observer.observe(el);
       }
     });
+
+    // Cập nhật fade: ẩn khi scroll đến cuối
+    if (wrap) {
+      const updateFade = () => {
+        const atEnd = wrap.scrollLeft + wrap.clientWidth >= wrap.scrollWidth - 4;
+        wrap.classList.toggle("is-end", atEnd);
+      };
+      wrap.addEventListener("scroll", updateFade, { passive: true });
+      updateFade();
+
+      // Chuyển vertical wheel → horizontal scroll khi hover trên nav
+      wrap.addEventListener("wheel", (e) => {
+        if (wrap.scrollWidth <= wrap.clientWidth) return; // không cần scroll nếu vừa khít
+        e.preventDefault();
+        wrap.scrollBy({ left: e.deltaY + e.deltaX, behavior: "auto" });
+      }, { passive: false });
+    }
   }
 </script>
 
@@ -58,19 +82,35 @@ const { items } = Astro.props;
     background: var(--surface);
     border-bottom: 2px solid var(--line);
     box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-    overflow-x: auto;
-    scrollbar-width: none;
   }
 
-  .review-jump-nav::-webkit-scrollbar { display: none; }
+  /* Scroll container: căn giữa, giới hạn width, overflow ẩn */
+  .jump-nav-wrap {
+    width: min(100%, var(--article, 740px));
+    margin-inline: auto;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    /* Fade bên phải báo hiệu còn nội dung */
+    mask-image: linear-gradient(to right, black calc(100% - 48px), transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, black calc(100% - 48px), transparent 100%);
+  }
 
+  .jump-nav-wrap::-webkit-scrollbar { display: none; }
+
+  /* Tắt fade khi đã scroll đến cuối */
+  .jump-nav-wrap.is-end {
+    mask-image: none;
+    -webkit-mask-image: none;
+  }
+
+  /* Flex row thực sự, tự giãn theo nội dung */
   .jump-nav-inner {
     display: flex;
     align-items: stretch;
     gap: 0;
     white-space: nowrap;
-    width: min(100%, var(--article, 740px));
-    margin-inline: auto;
+    min-width: max-content;
     padding: 0 16px;
   }
 

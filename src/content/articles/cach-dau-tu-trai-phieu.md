@@ -5,6 +5,7 @@ category: "trai-phieu"
 heroImage: "/images/articles/cach-dau-tu-trai-phieu/hero.jpg"
 publishDate: "2026-06-14"
 updatedDate: "2026-06-14"
+factCheckedDate: "2026-06-21"
 readingTime: "7 phút đọc"
 featured: false
 order: 100

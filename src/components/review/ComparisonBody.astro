@@ -77,9 +77,9 @@ const hasBreakdown = brokers.some((b) => b.ratingBreakdown);
   <div class="verdict-card" id="ket-luan-tong-the">
     <div class="verdict-card-header">
       <span class="verdict-card-eyebrow">Kết luận tổng thể</span>
-      <p class="verdict-card-subtitle">
+      <div class="verdict-card-subtitle">
         Đánh giá dựa trên {dimensions.length} tiêu chí: phí giao dịch, ứng dụng, hỗ trợ khách hàng, độ ổn định hệ thống và đa dạng sản phẩm.
-      </p>
+      </div>
     </div>
 
     <!-- Winner spotlight -->
@@ -275,33 +275,35 @@ const hasBreakdown = brokers.some((b) => b.ratingBreakdown);
 
   .verdict-card-header {
     background: var(--brand);
-    padding: var(--space-4) var(--space-5);
+    padding: var(--space-3) var(--space-5);
+    display: flex;
+    align-items: baseline;
+    gap: var(--space-3);
+    flex-wrap: wrap;
   }
 
   .verdict-card-eyebrow {
-    display: block;
     font-size: 0.72rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    color: rgba(255,255,255,0.75);
-    margin-bottom: 6px;
+    color: #fff;
   }
 
   .verdict-card-subtitle {
     margin: 0;
-    font-size: 0.88rem;
-    color: rgba(255,255,255,0.9);
+    font-size: 0.82rem;
+    color: rgba(255,255,255,0.75);
     line-height: 1.5;
   }
 
-  /* Winner spotlight */
+  /* ── Winner spotlight ─────────────────────────────── */
   .winner-spotlight {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: var(--space-4);
-    padding: var(--space-5) var(--space-5);
+    gap: var(--space-5);
+    padding: var(--space-4) var(--space-5);
     background: var(--color-mint);
     border-bottom: 1px solid var(--line);
   }
@@ -309,98 +311,102 @@ const hasBreakdown = brokers.some((b) => b.ratingBreakdown);
   .winner-spotlight-left {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 4px;
     min-width: 0;
   }
 
   .winner-spotlight-label {
-    font-size: 0.72rem;
+    font-size: 0.68rem;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.07em;
+    letter-spacing: 0.08em;
     color: var(--brand);
     display: flex;
     align-items: center;
     gap: 5px;
   }
 
-  .winner-crown { font-size: 0.9rem; }
+  .winner-crown { font-size: 0.85rem; }
 
   .winner-name {
     font-family: var(--font-serif);
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 700;
     color: var(--text);
     line-height: 1.2;
   }
 
   .winner-best-for {
-    font-size: 0.88rem;
-    color: var(--muted);
+    font-size: 0.84rem;
+    color: var(--text);
     font-weight: 500;
   }
 
   .winner-score-summary {
-    font-size: 0.8rem;
+    font-size: 0.78rem;
     color: var(--muted);
     font-weight: 600;
   }
 
   .winner-spotlight-cta {
     flex-shrink: 0;
+    min-width: 180px;
   }
 
-  /* Dimension Scorecard */
+  /* Remove top/bottom margin from CTA when inside spotlight */
+  .winner-spotlight-cta :global(.review-cta-wrap) {
+    margin: 0;
+  }
+
+  /* ── Dimension Scorecard ─────────────────────────────── */
   .verdict-scorecard {
-    border-top: 1px solid var(--line);
+    border-top: 2px solid var(--line);
   }
 
   .scorecard-header-row {
     display: grid;
     grid-template-columns: 1fr repeat(var(--broker-count, 2), 100px);
-    background: var(--surface-alt);
-    border-bottom: 1px solid var(--line);
-    padding: 0;
+    background: var(--text);
+    border-bottom: 2px solid var(--line);
   }
 
   .scorecard-col-label {
     padding: 10px var(--space-4);
-    font-size: 0.72rem;
+    font-size: 0.68rem;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.06em;
-    color: var(--muted);
+    letter-spacing: 0.07em;
+    color: rgba(255,255,255,0.6);
   }
 
   .scorecard-broker-col {
     padding: 10px var(--space-3);
-    font-size: 0.82rem;
+    font-size: 0.84rem;
     font-weight: 700;
-    color: var(--text);
+    color: #fff;
     text-align: center;
-    border-left: 1px solid var(--line);
+    border-left: 1px solid rgba(255,255,255,0.15);
   }
 
   .scorecard-row {
     display: grid;
     grid-template-columns: 1fr repeat(var(--broker-count, 2), 100px);
     border-bottom: 1px solid var(--line);
-    transition: background 0.1s;
   }
 
-  .scorecard-row:hover {
-    background: var(--surface-alt);
+  .scorecard-row:last-of-type {
+    border-bottom: none;
   }
 
   .scorecard-row--total {
+    border-top: 2px solid var(--line);
     background: var(--surface-alt);
-    font-weight: 700;
   }
 
   .scorecard-dim-label {
-    padding: 12px var(--space-4);
+    padding: 11px var(--space-4);
     font-size: 0.88rem;
-    font-weight: 600;
+    font-weight: 500;
     color: var(--text);
     display: flex;
     align-items: center;
@@ -408,84 +414,116 @@ const hasBreakdown = brokers.some((b) => b.ratingBreakdown);
 
   .scorecard-row--total .scorecard-dim-label {
     font-weight: 700;
-    font-size: 0.9rem;
+    font-size: 0.88rem;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-size: 0.72rem;
   }
 
   .scorecard-cell {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 4px;
-    padding: 12px var(--space-3);
+    gap: 5px;
+    padding: 11px var(--space-3);
     border-left: 1px solid var(--line);
     text-align: center;
+    position: relative;
   }
 
   .scorecard-cell--winner {
-    background: rgba(26, 122, 74, 0.08);
+    background: rgba(26, 122, 74, 0.07);
   }
 
   .scorecard-value {
-    font-size: 0.96rem;
+    font-size: 0.94rem;
     font-weight: 700;
+    color: var(--muted);
   }
 
   .scorecard-value--excellent { color: #1a7a4a; }
   .scorecard-value--good      { color: var(--brand); }
   .scorecard-value--fair      { color: #b45309; }
-  .scorecard-value--total     { font-size: 1.1rem; color: var(--text); }
-  .scorecard-value--winner    { color: #1a7a4a; }
+
+  .scorecard-row--total .scorecard-value {
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: var(--text);
+  }
+
+  .scorecard-row--total .scorecard-cell--winner .scorecard-value {
+    color: #1a7a4a;
+  }
 
   .scorecard-win-mark {
-    font-size: 0.7rem;
-    font-weight: 700;
-    color: #1a7a4a;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    background: #1a7a4a;
+    color: #fff;
+    font-size: 0.6rem;
+    font-weight: 900;
+    border-radius: 50%;
+    flex-shrink: 0;
   }
 
   .scorecard-methodology {
     margin: 0;
     padding: var(--space-3) var(--space-4);
-    font-size: 0.78rem;
+    font-size: 0.76rem;
     color: var(--muted);
     line-height: 1.55;
-    border-top: 1px solid var(--line);
     background: var(--surface-alt);
+    border-top: 1px solid var(--line);
   }
 
-  /* Runner-up rows */
+  /* ── Runner-up rows ─────────────────────────────── */
   .runner-up-row {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: var(--space-4);
-    padding: var(--space-4) var(--space-5);
+    padding: var(--space-3) var(--space-5);
     border-top: 1px solid var(--line);
     background: var(--surface);
+  }
+
+  .runner-up-row :global(.review-cta-wrap) {
+    margin: 0;
+  }
+
+  .runner-up-row :global(.review-cta) {
+    padding: 10px 20px;
+    font-size: 0.88rem;
+    white-space: nowrap;
   }
 
   .runner-up-left {
     display: flex;
     flex-direction: column;
-    gap: 3px;
+    gap: 2px;
     min-width: 0;
   }
 
   .runner-up-label {
-    font-size: 0.72rem;
+    font-size: 0.68rem;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.07em;
     color: var(--muted);
   }
 
   .runner-up-name {
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 0.96rem;
     color: var(--text);
   }
 
   .runner-up-best-for {
-    font-size: 0.82rem;
+    font-size: 0.8rem;
     color: var(--muted);
   }
 

@@ -16,7 +16,7 @@ interface Props {
 }
 
 const { entry, headings = [] } = Astro.props;
-const { title, description, publishDate, updatedDate, readingTime, sources, heroImage } = entry.data;
+const { title, description, publishDate, updatedDate, readingTime, sources, heroImage, citations, factCheckedDate } = entry.data;
 
 const categoryMeta = categories.find((c) => c.slug === entry.data.category);
 const categoryTitle = categoryMeta?.title ?? entry.data.category;
@@ -65,15 +65,30 @@ const sameAs = author.socialLinks
   ? [author.socialLinks.linkedin, author.socialLinks.twitter].filter((v): v is string => Boolean(v))
   : [];
 
+const structuredCitations = citations?.length
+  ? citations.map((c: { title: string; url?: string; publisher?: string; date?: string }) => ({
+      "@type": "CreativeWork",
+      "name": c.title,
+      ...(c.url ? { "url": c.url } : {}),
+      ...(c.publisher ? { "publisher": { "@type": "Organization", "name": c.publisher } } : {}),
+      ...(c.date ? { "datePublished": c.date } : {}),
+    }))
+  : sources;
+
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
+  "@id": `${articleUrl}#article`,
   "headline": title,
   "description": description,
   "url": articleUrl,
+  "mainEntityOfPage": { "@type": "WebPage", "@id": articleUrl },
   "datePublished": publishDate.toISOString(),
   "dateModified": updatedDate.toISOString(),
   "inLanguage": "vi",
+  "articleSection": categoryTitle,
+  "keywords": entry.data.tags?.join(", "),
+  ...(factCheckedDate ? { "dateReviewed": factCheckedDate.toISOString() } : {}),
   "image": {
     "@type": "ImageObject",
     "url": ogImageUrl,
@@ -82,21 +97,27 @@ const articleSchema = {
   },
   "author": {
     "@type": "Person",
+    "@id": new URL(`/author/${author.slug}/#person`, Astro.site).toString(),
     "name": author.name,
     "url": new URL(`/author/${author.slug}/`, Astro.site).toString(),
     "jobTitle": author.role,
     "description": author.bio,
     "knowsAbout": author.expertise,
+    "image": {
+      "@type": "ImageObject",
+      "url": new URL(author.avatar, Astro.site).toString(),
+    },
     ...(sameAs.length > 0 ? { "sameAs": sameAs } : {}),
   },
   "reviewedBy": {
     "@type": "Organization",
+    "@id": `${Astro.site}#organization`,
     "name": site.editorialReviewer,
     "url": new URL("/editorial-policy/", Astro.site).toString(),
   },
   "publisher": { "@id": `${Astro.site}#organization` },
   "isPartOf": { "@id": `${Astro.site}#website` },
-  "citation": sources,
+  "citation": structuredCitations,
 };
 
 const faqSchema = entry.data.faq?.length
@@ -157,7 +178,10 @@ const breadcrumbSchema = {
       
       <div class="article-meta-block">
         <div class="meta-author-avatar" aria-hidden="true">
-          {author.name.split(" ").pop()?.charAt(0)}
+          {author.avatar
+            ? <img src={author.avatar} alt={author.name} width="40" height="40" />
+            : author.name.split(" ").pop()?.charAt(0)
+          }
         </div>
         <div class="meta-info">
           <div class="meta-author-row">
@@ -295,6 +319,15 @@ const breadcrumbSchema = {
     justify-content: center;
     border: 1px solid var(--line);
     box-shadow: 2px 2px 0px var(--line);
+    overflow: hidden;
+  }
+
+  .meta-author-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
   }
 
   .meta-info {

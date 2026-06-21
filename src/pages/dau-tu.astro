@@ -28,8 +28,8 @@ const gradients: Record<string, string> = {
 ---
 
 <BaseLayout
-  title="Đầu tư"
-  description="Kiến thức nền tảng về cổ phiếu, ETF, quỹ đầu tư và trái phiếu cho người mới."
+  title="Kiến thức Đầu tư Chứng khoán"
+  description="Hướng dẫn đầu tư cổ phiếu, ETF, quỹ mở, trái phiếu và phái sinh cho người mới (F0) tại Việt Nam. Từ nền tảng đến thực chiến, cập nhật 2026."
 >
   <section class="page-hero">
     <div class="container hero-grid">
@@ -244,7 +244,7 @@ const gradients: Record<string, string> = {
   }
 
   .cat-card {
-    grid-column: span 2;
+    grid-column: span 3;
     background: var(--surface);
     border: 1px solid var(--line);
     box-shadow: var(--shadow-md);
@@ -252,12 +252,6 @@ const gradients: Record<string, string> = {
     display: flex;
     flex-direction: column;
     transition: transform var(--transition-fast), box-shadow var(--transition-fast);
-  }
-
-  /* Responsive balance for 5 cards: 3 cards in first row, 2 in second row */
-  .cat-card:nth-child(4),
-  .cat-card:nth-child(5) {
-    grid-column: span 3;
   }
 
   .cat-card:hover {
@@ -469,9 +463,7 @@ const gradients: Record<string, string> = {
       gap: 20px;
     }
 
-    .cat-card,
-    .cat-card:nth-child(4),
-    .cat-card:nth-child(5) {
+    .cat-card {
       grid-column: span 1;
     }
   }
@@ -481,9 +473,7 @@ const gradients: Record<string, string> = {
       grid-template-columns: 1fr;
     }
 
-    .cat-card,
-    .cat-card:nth-child(4),
-    .cat-card:nth-child(5) {
+    .cat-card {
       grid-column: span 1;
     }
   }

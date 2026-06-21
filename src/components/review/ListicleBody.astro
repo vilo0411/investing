@@ -45,38 +45,253 @@ const rankedBrokers = [...brokers].sort((a, b) => {
   const rankB = rankingsBySlug.get(b.slug)?.rank ?? Number.MAX_SAFE_INTEGER;
   return rankA - rankB;
 });
+
+const metricKeys: { key: keyof Broker; label: string }[] = [
+  { key: "fee_rate", label: "Phí GD" },
+  { key: "margin_rate", label: "Margin" },
+  { key: "app_rating", label: "Đánh giá app" },
+  { key: "min_deposit", label: "Nạp tối thiểu" },
+];
 ---
 
 <div class="listicle-body">
+
+  <!-- Block 1: Quick Picks -->
+  <section id="chon-nhanh" class="quick-picks">
+    <p class="quick-picks-eyebrow">Chọn nhanh theo nhu cầu</p>
+    <ul class="quick-picks-list">
+      {rankedBrokers.map((broker) => {
+        const ranking = rankingsBySlug.get(broker.slug);
+        if (!ranking?.badge) return null;
+        const isWinner = ranking.rank === 1;
+        return (
+          <li class:list={["quick-pick-row", { "quick-pick-row--winner": isWinner }]}>
+            <span class="quick-pick-rank" aria-hidden="true">#{ranking.rank}</span>
+            <span class="quick-pick-need">{ranking.badge}</span>
+            <a class="quick-pick-chip" href={`#broker-${broker.slug}`}>{broker.name}</a>
+          </li>
+        );
+      })}
+    </ul>
+  </section>
+
+  <!-- Block 2: Comparison table + Methodology -->
   <section id="tong-quan">
     <h2>Tổng quan so sánh</h2>
     {rows.length > 0 && <ComparisonTable columns={columns} rows={rows} />}
+    <div class="methodology-note">
+      <p class="methodology-label">Phương pháp đánh giá</p>
+      <p>
+        Xếp hạng dựa trên 5 tiêu chí: biểu phí giao dịch (dữ liệu công khai từ bảng phí chính thức), lãi suất margin, điểm đánh giá ứng dụng trên App Store/Google Play, độ ổn định hệ thống vào phiên giao dịch cao điểm, và chất lượng dịch vụ khách hàng. Dữ liệu được kiểm tra thực tế bởi đội biên tập và cập nhật định kỳ theo quý.
+      </p>
+    </div>
   </section>
 
+  <!-- Block 3: Ranked cards với verdict + inline metrics -->
   <section id="xep-hang">
-    <h2>Bảng xếp hạng chi tiết</h2>
+    <h2>Đánh giá chi tiết từng công ty</h2>
     <div class="ranked-list">
       {rankedBrokers.map((broker) => {
         const ranking = rankingsBySlug.get(broker.slug);
         const isFirst = ranking?.rank === 1;
+        const metrics = metricKeys
+          .map((m) => ({ label: m.label, value: broker[m.key] as string | undefined }))
+          .filter((m) => m.value);
         return (
-          <div class:list={["ranked-card", { "ranked-card--winner": isFirst }]}>
+          <div id={`broker-${broker.slug}`} class:list={["ranked-card", { "ranked-card--winner": isFirst }]}>
             <div class="ranked-card-header">
               {ranking && <span class="rank-number">#{ranking.rank}</span>}
               <h3>{broker.name}</h3>
               {ranking?.badge && <span class="rank-badge">{ranking.badge}</span>}
             </div>
+
             <RatingBadge rating={broker.rating} />
+
+            {metrics.length > 0 && (
+              <div class="broker-metrics">
+                {metrics.map((m) => (
+                  <div class="broker-metric">
+                    <span class="broker-metric-label">{m.label}</span>
+                    <span class="broker-metric-value">{m.value}</span>
+                  </div>
+                ))}
+              </div>
+            )}
+
+            {broker.best_for && (
+              <p class="broker-best-for">
+                <span class="broker-best-for-label">Phù hợp nhất:</span> {broker.best_for}
+              </p>
+            )}
+
             <ProsConsBox pros={broker.pros} cons={broker.cons} />
+
+            {broker.verdict && (
+              <div class="verdict-box">
+                <p class="verdict-label">Nhận định của chúng tôi</p>
+                <p class="verdict-text">{broker.verdict}</p>
+              </div>
+            )}
+
             <ReviewCTA label={`Mở tài khoản ${broker.name}`} url={broker.ctaUrl ?? "#"} />
           </div>
         );
       })}
     </div>
   </section>
+
+  <!-- Block 4: Decision helper — Nên chọn ai? -->
+  <section id="nen-chon-ai" class="decision-helper">
+    <h2>Nên chọn công ty nào?</h2>
+    <p class="decision-intro">
+      Không có công ty chứng khoán nào là tốt nhất tuyệt đối — chỉ có công ty phù hợp nhất với nhu cầu cụ thể của bạn. Dưới đây là hướng dẫn quyết định theo từng profile nhà đầu tư.
+    </p>
+    <div class="decision-grid">
+      {rankedBrokers.map((broker) => (
+        <div class="decision-card">
+          <div class="decision-card-header">
+            <span class="decision-broker-name">{broker.name}</span>
+          </div>
+          <p class="decision-best-for">{broker.best_for}</p>
+          {broker.verdict && (
+            <p class="decision-hint">{broker.verdict.split(".")[0]}.</p>
+          )}
+          <a class="decision-link" href={`#broker-${broker.slug}`}>Xem đánh giá chi tiết ↓</a>
+        </div>
+      ))}
+    </div>
+  </section>
+
 </div>
 
 <style>
+  /* ── Quick Picks ─────────────────────────────── */
+  .quick-picks {
+    border: 1px solid var(--line);
+    background: var(--surface);
+    padding: var(--space-6);
+    margin: var(--space-6) 0;
+    box-shadow: 4px 4px 0px var(--line);
+  }
+
+  .quick-picks-eyebrow {
+    margin: 0 0 var(--space-4);
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+  }
+
+  .quick-picks-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 0;
+    border: 1px solid var(--line);
+  }
+
+  .quick-pick-row {
+    display: grid;
+    grid-template-columns: 32px 1fr auto;
+    align-items: center;
+    gap: var(--space-4);
+    padding: 14px var(--space-4);
+    background: var(--surface-alt);
+    border-bottom: 1px solid var(--line);
+    font-size: 0.92rem;
+    transition: background 0.12s;
+  }
+
+  .quick-pick-row:last-child {
+    border-bottom: none;
+  }
+
+  .quick-pick-row:nth-child(odd) {
+    background: var(--surface);
+  }
+
+  .quick-pick-row--winner {
+    background: var(--color-mint) !important;
+  }
+
+  .quick-pick-rank {
+    font-family: var(--font-serif);
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: var(--muted);
+    text-align: center;
+  }
+
+  .quick-pick-row--winner .quick-pick-rank {
+    color: var(--brand);
+  }
+
+  .quick-pick-need {
+    font-weight: 600;
+    color: var(--text);
+    line-height: 1.4;
+  }
+
+  .quick-pick-chip {
+    display: inline-block;
+    padding: 5px 12px;
+    border: 1px solid var(--line);
+    background: var(--surface);
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--brand);
+    text-decoration: none;
+    white-space: nowrap;
+    box-shadow: 2px 2px 0px var(--line);
+    transition: transform 0.1s, box-shadow 0.1s;
+  }
+
+  .quick-pick-chip:hover {
+    transform: translate(1px, 1px);
+    box-shadow: none;
+    color: var(--brand-strong);
+  }
+
+  .quick-pick-row--winner .quick-pick-chip {
+    background: var(--brand);
+    color: #fff;
+    border-color: var(--brand);
+  }
+
+  .quick-pick-row--winner .quick-pick-chip:hover {
+    background: var(--brand-strong);
+    border-color: var(--brand-strong);
+    color: #fff;
+  }
+
+  /* ── Methodology ─────────────────────────────── */
+  .methodology-note {
+    margin-top: var(--space-6);
+    padding: var(--space-4);
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--line);
+    background: var(--surface-alt);
+  }
+
+  .methodology-label {
+    margin: 0 0 6px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: var(--muted);
+  }
+
+  .methodology-note p:last-child {
+    margin: 0;
+    font-size: 0.86rem;
+    color: var(--muted);
+    line-height: 1.65;
+  }
+
+  /* ── Ranked list ─────────────────────────────── */
   .ranked-list {
     display: grid;
     gap: var(--space-6);
@@ -85,10 +300,10 @@ const rankedBrokers = [...brokers].sort((a, b) => {
 
   .ranked-card {
     border: 1px solid var(--line);
-    border-radius: 0px;
-    padding: var(--space-5);
+    padding: var(--space-6);
     box-shadow: var(--shadow-md);
     background: var(--surface);
+    scroll-margin-top: 132px;
   }
 
   .ranked-card--winner {
@@ -126,5 +341,195 @@ const rankedBrokers = [...brokers].sort((a, b) => {
     letter-spacing: 0.05em;
     padding: 4px 10px;
     box-shadow: 2px 2px 0px var(--line);
+  }
+
+  /* ── Broker metrics row ─────────────────────────────── */
+  .broker-metrics {
+    display: flex;
+    gap: var(--space-2);
+    flex-wrap: wrap;
+    margin: var(--space-3) 0;
+  }
+
+  .broker-metric {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    border: 1px solid var(--line);
+    background: var(--surface-alt);
+    padding: 8px 12px;
+    flex: 1;
+    min-width: 80px;
+  }
+
+  .broker-metric-label {
+    font-size: 0.68rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--muted);
+  }
+
+  .broker-metric-value {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--text);
+  }
+
+  /* ── Best for inline ─────────────────────────────── */
+  .broker-best-for {
+    margin: var(--space-2) 0 var(--space-4);
+    font-size: 0.9rem;
+    color: var(--text);
+    line-height: 1.5;
+  }
+
+  .broker-best-for-label {
+    font-weight: 700;
+    color: var(--muted);
+  }
+
+  /* ── Verdict box ─────────────────────────────── */
+  .verdict-box {
+    border: 1px solid var(--line);
+    border-left: 6px solid var(--brand);
+    background: var(--color-mint);
+    padding: var(--space-4) var(--space-6);
+    margin: var(--space-4) 0;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .verdict-label {
+    margin: 0 0 6px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--brand);
+  }
+
+  .verdict-text {
+    margin: 0;
+    font-size: 0.96rem;
+    line-height: 1.7;
+    color: var(--text);
+    font-weight: 500;
+  }
+
+  /* ── Decision helper ─────────────────────────────── */
+  .decision-helper {
+    margin-top: var(--space-8);
+    scroll-margin-top: 132px;
+  }
+
+  .decision-intro {
+    font-size: 0.96rem;
+    color: var(--muted);
+    line-height: 1.7;
+    margin: 0 0 var(--space-6);
+  }
+
+  .decision-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4);
+  }
+
+  .decision-card {
+    border: 1px solid var(--line);
+    background: var(--surface);
+    padding: var(--space-4) var(--space-6);
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+
+  .decision-card-header {
+    border-bottom: 1px solid var(--line);
+    padding-bottom: var(--space-2);
+    margin-bottom: var(--space-1);
+  }
+
+  .decision-broker-name {
+    font-family: var(--font-serif);
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: var(--text);
+  }
+
+  .decision-best-for {
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--brand);
+    line-height: 1.4;
+  }
+
+  .decision-hint {
+    margin: 0;
+    font-size: 0.84rem;
+    color: var(--muted);
+    line-height: 1.6;
+    flex: 1;
+  }
+
+  .decision-link {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--brand);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    margin-top: auto;
+  }
+
+  .decision-link:hover {
+    color: var(--brand-strong);
+  }
+
+  /* ── Prose override: undo global .prose ul styles inside listicle ── */
+  :global(.prose) .quick-picks-list {
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+
+  :global(.prose) .quick-picks-list li::before {
+    display: none;
+  }
+
+  :global(.prose) .quick-picks-list li {
+    margin-bottom: 0;
+    position: static;
+  }
+
+  /* ── Scroll anchors ─────────────────────────────── */
+  :global(#chon-nhanh),
+  :global(#tong-quan),
+  :global(#xep-hang),
+  :global(#nen-chon-ai) {
+    scroll-margin-top: 132px;
+  }
+
+  /* ── Responsive ─────────────────────────────── */
+  @media (max-width: 580px) {
+    .decision-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .broker-metrics {
+      gap: var(--space-2);
+    }
+
+    .broker-metric {
+      min-width: 70px;
+    }
+
+    .quick-pick-row {
+      flex-wrap: wrap;
+    }
+
+    .quick-pick-name {
+      text-align: left;
+    }
   }
 </style>

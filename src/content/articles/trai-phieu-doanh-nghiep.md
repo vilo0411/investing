@@ -5,6 +5,7 @@ category: trai-phieu
 heroImage: "/images/articles/trai-phieu-doanh-nghiep/hero.jpg"
 publishDate: "2026-06-09"
 updatedDate: "2026-06-15"
+factCheckedDate: "2026-06-21"
 readingTime: "6 phút đọc"
 featured: false
 order: 2

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 1200px;
+    height: 630px;
+    font-family: -apple-system, 'Helvetica Neue', Arial, sans-serif;
+    overflow: hidden;
+    background: #fff;
+  }
+
+  .wrap {
+    width: 1200px;
+    height: 630px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 780px 1fr;
+  }
+
+  /* ── LEFT PANEL ── */
+  .left {
+    background: #f7f7f5;
+    padding: 44px 52px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 1px solid #e2e2e0;
+  }
+
+  .badges {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 36px;
+  }
+
+  .badge-review {
+    background: #1a5c3a;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 5px 12px;
+    border-radius: 4px;
+  }
+
+  .badge-year {
+    color: #666;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 5px 12px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+
+  .company-type {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: #1a5c3a;
+    margin-bottom: 12px;
+  }
+
+  .company-abbr {
+    font-size: 100px;
+    font-weight: 900;
+    color: #111;
+    letter-spacing: -5px;
+    line-height: 1;
+    margin-bottom: 16px;
+  }
+
+  .company-subtitles {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .subtitle-vi {
+    font-size: 15px;
+    color: #999;
+    font-weight: 400;
+  }
+
+  .subtitle-en {
+    font-size: 15px;
+    color: #444;
+    font-weight: 600;
+  }
+
+  .divider {
+    width: 48px;
+    height: 2px;
+    background: #1a5c3a;
+    margin: 28px 0;
+    opacity: 0.4;
+  }
+
+  .stats {
+    display: flex;
+    gap: 0;
+  }
+
+  .stat-box {
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    margin-right: -1px;
+    background: #fff;
+  }
+
+  .stat-box:first-child { border-radius: 6px 0 0 6px; }
+  .stat-box:last-child  { border-radius: 0 6px 6px 0; margin-right: 0; }
+
+  .stat-label {
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #aaa;
+    margin-bottom: 4px;
+  }
+
+  .stat-value {
+    font-size: 13px;
+    font-weight: 700;
+    color: #1a1a1a;
+  }
+
+  /* ── RIGHT PANEL ── */
+  .right {
+    background: #163d2a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 44px 40px;
+    gap: 16px;
+  }
+
+  .logo-card {
+    width: 86px;
+    height: 86px;
+    background: #fff;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+  }
+
+  .logo-text {
+    font-size: 28px;
+    font-weight: 900;
+    color: #163d2a;
+    letter-spacing: -1px;
+  }
+
+  .company-name-right {
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .stars {
+    display: flex;
+    gap: 3px;
+    margin-top: 2px;
+  }
+
+  .star { font-size: 18px; }
+  .star.filled { color: #f0c040; }
+  .star.half   { color: #f0c040; opacity: 0.5; }
+  .star.empty  { color: rgba(255,255,255,0.2); }
+
+  .right-tagline {
+    font-size: 12.5px;
+    color: rgba(255,255,255,0.5);
+    text-align: center;
+    line-height: 1.7;
+    margin-top: 4px;
+  }
+
+  /* ── BOTTOM BAR ── */
+  .bottom-bar {
+    height: 50px;
+    background: #0c0c0c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-shrink: 0;
+  }
+
+  .bar-brand {
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+
+  .bar-dot {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: #1a5c3a;
+  }
+
+  .bar-url {
+    font-size: 12px;
+    color: rgba(255,255,255,0.4);
+  }
+
+  .bar-sep {
+    font-size: 12px;
+    color: rgba(255,255,255,0.15);
+  }
+
+  .bar-note {
+    font-size: 12px;
+    color: rgba(255,255,255,0.3);
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="main">
+
+    <!-- LEFT -->
+    <div class="left">
+      <div>
+        <div class="badges">
+          <span class="badge-review">Review</span>
+          <span class="badge-year">Cập nhật 2026</span>
+        </div>
+        <div class="company-type">Công ty Chứng khoán</div>
+        <div class="company-abbr">VPS</div>
+        <div class="company-subtitles">
+          <span class="subtitle-vi">Chứng khoán VPS</span>
+          <span class="subtitle-en">VPS Securities</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="divider"></div>
+        <div class="stats">
+          <div class="stat-box">
+            <div class="stat-label">Thị phần</div>
+            <div class="stat-value">Số 1</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-label">Phí giao dịch</div>
+            <div class="stat-value">Cạnh tranh</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-label">Phù hợp</div>
+            <div class="stat-value">Mọi nhà đầu tư</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="right">
+      <div class="logo-card">
+        <span class="logo-text">VPS</span>
+      </div>
+      <div class="company-name-right">VPS Securities</div>
+      <div class="stars"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star empty">★</span></div>
+      <div class="right-tagline">Ứng dụng SmartOne<br>Nền tảng số 1 thị phần Việt Nam</div>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM BAR -->
+  <div class="bottom-bar">
+    <span class="bar-brand">Value Investing</span>
+    <span class="bar-dot"></span>
+    <span class="bar-url">valueinvesting.com.vn</span>
+    <span class="bar-sep">·</span>
+    <span class="bar-note">Đánh giá độc lập</span>
+  </div>
+</div>
+</body>
+</html>

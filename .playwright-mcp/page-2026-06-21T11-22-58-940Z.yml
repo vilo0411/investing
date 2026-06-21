@@ -1,0 +1,783 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation "Menu chính" [ref=e3]:
+      - link "Value Investing" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - img [ref=e5]
+        - generic [ref=e8]: Value Investing
+      - generic [ref=e9]:
+        - link "Đầu tư" [ref=e11] [cursor=pointer]:
+          - /url: /dau-tu/
+          - text: Đầu tư
+          - img [ref=e12]
+        - link "Phân tích" [ref=e15] [cursor=pointer]:
+          - /url: /phan-tich/
+          - text: Phân tích
+          - img [ref=e16]
+        - link "Nhà đầu tư" [ref=e18] [cursor=pointer]:
+          - /url: /nha-dau-tu/
+        - link "Reviews" [ref=e19] [cursor=pointer]:
+          - /url: /reviews/
+      - button "Mở tìm kiếm" [ref=e21]:
+        - img [ref=e22]
+  - main [ref=e25]:
+    - generic [ref=e27]:
+      - generic [ref=e28]:
+        - img [ref=e30]
+        - generic [ref=e31]:
+          - heading "Nguyễn Viết Lộc" [level=1] [ref=e32]
+          - paragraph [ref=e33]: Người sáng lập & Phụ trách nội dung
+      - complementary "Chuyên môn tác giả" [ref=e34]:
+        - paragraph [ref=e35]: Chuyên môn
+        - list [ref=e36]:
+          - listitem [ref=e37]: Đầu tư giá trị
+          - listitem [ref=e38]: Đơn giản hóa thuật ngữ tài chính
+          - listitem [ref=e39]: Sản phẩm đầu tư cho người mới bắt đầu
+          - listitem [ref=e40]: Cấu trúc thông tin tài chính (SEO)
+    - generic [ref=e42]:
+      - main [ref=e43]:
+        - region "Quan điểm về tiền và đầu tư" [ref=e44]:
+          - paragraph [ref=e45]: Quan điểm về đầu tư
+          - blockquote [ref=e46]: “Đầu tư nên bắt đầu từ việc hiểu doanh nghiệp, biết giới hạn rủi ro của bản thân trước khi nhìn vào tỷ suất lợi nhuận kỳ vọng.”
+        - generic [ref=e47]:
+          - heading "Tiểu sử" [level=2] [ref=e48]
+          - paragraph [ref=e49]: Lộc Nguyễn hiện là Chuyên viên SEO tại Công ty Chứng khoán DSC. Với hơn 3 năm kinh nghiệm triển khai nội dung và tối ưu hiệu suất tìm kiếm cho các sản phẩm tài chính lớn, Lộc sáng lập Value Investing nhằm chia sẻ các kiến thức đầu tư thực chiến bằng ngôn ngữ bình dân, giúp F0 tự tin và an toàn hơn trên thị trường.
+        - generic [ref=e50]:
+          - paragraph [ref=e51]: Bài viết mới
+          - heading "Tất cả bài viết" [level=2] [ref=e52]
+          - generic [ref=e53]:
+            - link "Benjamin Graham là ai? Triết lý của cha đẻ đầu tư giá trị Nhà đầu tư 8 phút đọc Benjamin Graham là ai? Triết lý của cha đẻ đầu tư giá trị Benjamin Graham là ai? Tìm hiểu tiểu sử, 2 cuốn sách kinh điển Nhà đầu tư thông minh, Phân tích chứng khoán và triết lý đầu tư giá trị bất hủ. 21 tháng 6, 2026" [ref=e54] [cursor=pointer]:
+              - /url: /nha-dau-tu/benjamin-graham/
+              - img "Benjamin Graham là ai? Triết lý của cha đẻ đầu tư giá trị" [ref=e56]
+              - generic [ref=e57]:
+                - generic [ref=e58]:
+                  - generic [ref=e59]: Nhà đầu tư
+                  - generic [ref=e60]: 8 phút đọc
+                - heading "Benjamin Graham là ai? Triết lý của cha đẻ đầu tư giá trị" [level=3] [ref=e61]
+                - paragraph [ref=e62]: Benjamin Graham là ai? Tìm hiểu tiểu sử, 2 cuốn sách kinh điển Nhà đầu tư thông minh, Phân tích chứng khoán và triết lý đầu tư giá trị bất hủ.
+                - generic [ref=e63]: 21 tháng 6, 2026
+            - link "Cổ phiếu là gì? Bản chất và cách hoạt động dễ hiểu nhất Cổ phiếu 7 phút đọc Cổ phiếu là gì? Bản chất và cách hoạt động dễ hiểu nhất Cổ phiếu là gì? Giải thích bản chất cổ phiếu, cổ phần và cổ đông bằng ví dụ thực tế cực dễ hiểu. Hướng dẫn cách phân biệt các loại cổ phiếu và quyền lợi khi đầu tư. 21 tháng 6, 2026" [ref=e64] [cursor=pointer]:
+              - /url: /dau-tu/co-phieu/co-phieu-la-gi/
+              - img "Cổ phiếu là gì? Bản chất và cách hoạt động dễ hiểu nhất" [ref=e66]
+              - generic [ref=e67]:
+                - generic [ref=e68]:
+                  - generic [ref=e69]: Cổ phiếu
+                  - generic [ref=e70]: 7 phút đọc
+                - heading "Cổ phiếu là gì? Bản chất và cách hoạt động dễ hiểu nhất" [level=3] [ref=e71]
+                - paragraph [ref=e72]: Cổ phiếu là gì? Giải thích bản chất cổ phiếu, cổ phần và cổ đông bằng ví dụ thực tế cực dễ hiểu. Hướng dẫn cách phân biệt các loại cổ phiếu và quyền lợi khi đầu tư.
+                - generic [ref=e73]: 21 tháng 6, 2026
+            - link "Quỹ ETF là gì? Khái niệm và cách hoạt động dễ hiểu cho F0 Quỹ ETF 7 phút đọc Quỹ ETF là gì? Khái niệm và cách hoạt động dễ hiểu cho F0 Quỹ ETF là gì? Giải thích khái niệm chứng chỉ quỹ ETF và cơ chế hoạt động cực kỳ dễ hiểu cho người mới. So sánh chi tiết quỹ ETF và quỹ mở. 21 tháng 6, 2026" [ref=e74] [cursor=pointer]:
+              - /url: /dau-tu/etf/etf-la-gi/
+              - img "Quỹ ETF là gì? Khái niệm và cách hoạt động dễ hiểu cho F0" [ref=e76]
+              - generic [ref=e77]:
+                - generic [ref=e78]:
+                  - generic [ref=e79]: Quỹ ETF
+                  - generic [ref=e80]: 7 phút đọc
+                - heading "Quỹ ETF là gì? Khái niệm và cách hoạt động dễ hiểu cho F0" [level=3] [ref=e81]
+                - paragraph [ref=e82]: Quỹ ETF là gì? Giải thích khái niệm chứng chỉ quỹ ETF và cơ chế hoạt động cực kỳ dễ hiểu cho người mới. So sánh chi tiết quỹ ETF và quỹ mở.
+                - generic [ref=e83]: 21 tháng 6, 2026
+            - link "P/E là gì? Cách sử dụng chỉ số P/E định giá cổ phiếu từ A-Z Phân tích cơ bản 8 phút đọc P/E là gì? Cách sử dụng chỉ số P/E định giá cổ phiếu từ A-Z Chỉ số P/E là gì? Tìm hiểu công thức tính, ý nghĩa của P/E cao hay thấp và cách định giá cổ phiếu chính xác nhất cho người mới bắt đầu. 21 tháng 6, 2026" [ref=e84] [cursor=pointer]:
+              - /url: /phan-tich/co-ban/pe-la-gi/
+              - img "P/E là gì? Cách sử dụng chỉ số P/E định giá cổ phiếu từ A-Z" [ref=e86]
+              - generic [ref=e87]:
+                - generic [ref=e88]:
+                  - generic [ref=e89]: Phân tích cơ bản
+                  - generic [ref=e90]: 8 phút đọc
+                - heading "P/E là gì? Cách sử dụng chỉ số P/E định giá cổ phiếu từ A-Z" [level=3] [ref=e91]
+                - paragraph [ref=e92]: Chỉ số P/E là gì? Tìm hiểu công thức tính, ý nghĩa của P/E cao hay thấp và cách định giá cổ phiếu chính xác nhất cho người mới bắt đầu.
+                - generic [ref=e93]: 21 tháng 6, 2026
+            - link "Trái phiếu là gì? Giải thích dễ hiểu cho người mới bắt đầu Trái phiếu 8 phút đọc Trái phiếu là gì? Giải thích dễ hiểu cho người mới bắt đầu Trái phiếu là gì? Giải thích định nghĩa, bản chất và cách hoạt động của trái phiếu bằng ví dụ thực tế. So sánh chi tiết cổ phiếu và trái phiếu cho F0. 21 tháng 6, 2026" [ref=e94] [cursor=pointer]:
+              - /url: /dau-tu/trai-phieu/trai-phieu-la-gi/
+              - img "Trái phiếu là gì? Giải thích dễ hiểu cho người mới bắt đầu" [ref=e96]
+              - generic [ref=e97]:
+                - generic [ref=e98]:
+                  - generic [ref=e99]: Trái phiếu
+                  - generic [ref=e100]: 8 phút đọc
+                - heading "Trái phiếu là gì? Giải thích dễ hiểu cho người mới bắt đầu" [level=3] [ref=e101]
+                - paragraph [ref=e102]: Trái phiếu là gì? Giải thích định nghĩa, bản chất và cách hoạt động của trái phiếu bằng ví dụ thực tế. So sánh chi tiết cổ phiếu và trái phiếu cho F0.
+                - generic [ref=e103]: 21 tháng 6, 2026
+            - link "Warren Buffett là ai? Triết lý đầu tư của nhà hiền triết Omaha Nhà đầu tư 8 phút đọc Warren Buffett là ai? Triết lý đầu tư của nhà hiền triết Omaha Warren Buffett là ai? Tìm hiểu tiểu sử, quá trình xây dựng Berkshire Hathaway và các triết lý đầu tư dài hạn bất hủ của huyền thoại đầu tư. 21 tháng 6, 2026" [ref=e104] [cursor=pointer]:
+              - /url: /nha-dau-tu/warren-buffett/
+              - img "Warren Buffett là ai? Triết lý đầu tư của nhà hiền triết Omaha" [ref=e106]
+              - generic [ref=e107]:
+                - generic [ref=e108]:
+                  - generic [ref=e109]: Nhà đầu tư
+                  - generic [ref=e110]: 8 phút đọc
+                - heading "Warren Buffett là ai? Triết lý đầu tư của nhà hiền triết Omaha" [level=3] [ref=e111]
+                - paragraph [ref=e112]: Warren Buffett là ai? Tìm hiểu tiểu sử, quá trình xây dựng Berkshire Hathaway và các triết lý đầu tư dài hạn bất hủ của huyền thoại đầu tư.
+                - generic [ref=e113]: 21 tháng 6, 2026
+            - 'link "Review DSC Securities: Ưu nhược điểm & Có nên mở tài khoản không? Reviews 7 phút đọc Review DSC Securities: Ưu nhược điểm & Có nên mở tài khoản không? Đánh giá chi tiết Chứng khoán DSC năm 2026: phí giao dịch, lãi suất margin, giao diện ứng dụng, chất lượng hỗ trợ và hướng dẫn mở tài khoản từng bước. 16 tháng 6, 2026" [ref=e114] [cursor=pointer]':
+              - /url: /reviews/review-dsc-securities/
+              - 'img "Review DSC Securities: Ưu nhược điểm & Có nên mở tài khoản không?" [ref=e116]'
+              - generic [ref=e117]:
+                - generic [ref=e118]:
+                  - generic [ref=e119]: Reviews
+                  - generic [ref=e120]: 7 phút đọc
+                - 'heading "Review DSC Securities: Ưu nhược điểm & Có nên mở tài khoản không?" [level=3] [ref=e121]'
+                - paragraph [ref=e122]: "Đánh giá chi tiết Chứng khoán DSC năm 2026: phí giao dịch, lãi suất margin, giao diện ứng dụng, chất lượng hỗ trợ và hướng dẫn mở tài khoản từng bước."
+                - generic [ref=e123]: 16 tháng 6, 2026
+            - 'link "Review VPS Securities: Có nên mở tài khoản không? (2026) Reviews 6 phút đọc Review VPS Securities: Có nên mở tài khoản không? (2026) Đánh giá chi tiết VPS Securities năm 2026 — công ty chứng khoán số 1 về thị phần môi giới cá nhân. Phí, margin, ứng dụng SmartOne và hướng dẫn mở tài khoản. 16 tháng 6, 2026" [ref=e124] [cursor=pointer]':
+              - /url: /reviews/review-vps-securities/
+              - 'img "Review VPS Securities: Có nên mở tài khoản không? (2026)" [ref=e126]'
+              - generic [ref=e127]:
+                - generic [ref=e128]:
+                  - generic [ref=e129]: Reviews
+                  - generic [ref=e130]: 6 phút đọc
+                - 'heading "Review VPS Securities: Có nên mở tài khoản không? (2026)" [level=3] [ref=e131]'
+                - paragraph [ref=e132]: Đánh giá chi tiết VPS Securities năm 2026 — công ty chứng khoán số 1 về thị phần môi giới cá nhân. Phí, margin, ứng dụng SmartOne và hướng dẫn mở tài khoản.
+                - generic [ref=e133]: 16 tháng 6, 2026
+            - 'link "So sánh TCBS vs SSI: Nên chọn công ty chứng khoán nào năm 2026? Reviews 8 phút đọc So sánh TCBS vs SSI: Nên chọn công ty chứng khoán nào năm 2026? So sánh chi tiết TCBS và SSI năm 2026 theo 5 tiêu chí: phí giao dịch, lãi suất margin, giao diện ứng dụng, báo cáo phân tích và hỗ trợ khách hàng. Tìm hiểu nên chọn công ty nào phù hợp với bạn. 16 tháng 6, 2026" [ref=e134] [cursor=pointer]':
+              - /url: /reviews/so-sanh-tcbs-vs-ssi/
+              - 'img "So sánh TCBS vs SSI: Nên chọn công ty chứng khoán nào năm 2026?" [ref=e136]'
+              - generic [ref=e137]:
+                - generic [ref=e138]:
+                  - generic [ref=e139]: Reviews
+                  - generic [ref=e140]: 8 phút đọc
+                - 'heading "So sánh TCBS vs SSI: Nên chọn công ty chứng khoán nào năm 2026?" [level=3] [ref=e141]'
+                - paragraph [ref=e142]: "So sánh chi tiết TCBS và SSI năm 2026 theo 5 tiêu chí: phí giao dịch, lãi suất margin, giao diện ứng dụng, báo cáo phân tích và hỗ trợ khách hàng. Tìm hiểu nên chọn công ty nào phù hợp với bạn."
+                - generic [ref=e143]: 16 tháng 6, 2026
+            - link "Cách đầu tư chứng khoán phái sinh từ con số 0 Phái sinh 6 phút đọc Cách đầu tư chứng khoán phái sinh từ con số 0 Hướng dẫn cách đầu tư chứng khoán phái sinh tại Việt Nam. Tìm hiểu bản chất hợp đồng tương lai VN30, cơ chế ký quỹ và cách giao dịch cho người mới. 15 tháng 6, 2026" [ref=e144] [cursor=pointer]:
+              - /url: /dau-tu/phai-sinh/cach-dau-tu-chung-khoan-phai-sinh/
+              - img "Cách đầu tư chứng khoán phái sinh từ con số 0" [ref=e146]
+              - generic [ref=e147]:
+                - generic [ref=e148]:
+                  - generic [ref=e149]: Phái sinh
+                  - generic [ref=e150]: 6 phút đọc
+                - heading "Cách đầu tư chứng khoán phái sinh từ con số 0" [level=3] [ref=e151]
+                - paragraph [ref=e152]: Hướng dẫn cách đầu tư chứng khoán phái sinh tại Việt Nam. Tìm hiểu bản chất hợp đồng tương lai VN30, cơ chế ký quỹ và cách giao dịch cho người mới.
+                - generic [ref=e153]: 15 tháng 6, 2026
+            - link "Cách đầu tư quỹ ETF cho người mới tại Việt Nam Quỹ ETF 5 phút đọc Cách đầu tư quỹ ETF cho người mới tại Việt Nam Hướng dẫn chi tiết cách đầu tư quỹ ETF tại Việt Nam từ bước mở tài khoản, chọn mã quỹ đến chiến thuật tích lũy định kỳ hiệu quả cho người bận rộn. 15 tháng 6, 2026" [ref=e154] [cursor=pointer]:
+              - /url: /dau-tu/etf/cach-dau-tu-quy-etf/
+              - img "Cách đầu tư quỹ ETF cho người mới tại Việt Nam" [ref=e156]
+              - generic [ref=e157]:
+                - generic [ref=e158]:
+                  - generic [ref=e159]: Quỹ ETF
+                  - generic [ref=e160]: 5 phút đọc
+                - heading "Cách đầu tư quỹ ETF cho người mới tại Việt Nam" [level=3] [ref=e161]
+                - paragraph [ref=e162]: Hướng dẫn chi tiết cách đầu tư quỹ ETF tại Việt Nam từ bước mở tài khoản, chọn mã quỹ đến chiến thuật tích lũy định kỳ hiệu quả cho người bận rộn.
+                - generic [ref=e163]: 15 tháng 6, 2026
+            - link "Blue chip là gì? Khái niệm và cách đầu tư thông minh cho F0 Cổ phiếu 5 phút đọc Blue chip là gì? Khái niệm và cách đầu tư thông minh cho F0 Cổ phiếu Blue chip là gì? Tìm hiểu nguồn gốc, tiêu chí xác định nhóm cổ phiếu hàng đầu và nguyên tắc đầu tư an toàn cho người mới bắt đầu. 15 tháng 6, 2026" [ref=e164] [cursor=pointer]:
+              - /url: /dau-tu/co-phieu/blue-chip-la-gi/
+              - img "Blue chip là gì? Khái niệm và cách đầu tư thông minh cho F0" [ref=e166]
+              - generic [ref=e167]:
+                - generic [ref=e168]:
+                  - generic [ref=e169]: Cổ phiếu
+                  - generic [ref=e170]: 5 phút đọc
+                - heading "Blue chip là gì? Khái niệm và cách đầu tư thông minh cho F0" [level=3] [ref=e171]
+                - paragraph [ref=e172]: Cổ phiếu Blue chip là gì? Tìm hiểu nguồn gốc, tiêu chí xác định nhóm cổ phiếu hàng đầu và nguyên tắc đầu tư an toàn cho người mới bắt đầu.
+                - generic [ref=e173]: 15 tháng 6, 2026
+            - link "Cổ tức là gì? Hướng dẫn cách nhận cổ tức cho người mới Cổ phiếu 5 phút đọc Cổ tức là gì? Hướng dẫn cách nhận cổ tức cho người mới Cổ tức là gì? Phân biệt cổ tức tiền mặt và cổ tức cổ phiếu, cách tính toán ngày giao dịch không hưởng quyền để nhận cổ tức chuẩn xác nhất. 15 tháng 6, 2026" [ref=e174] [cursor=pointer]:
+              - /url: /dau-tu/co-phieu/co-tuc-la-gi/
+              - img "Cổ tức là gì? Hướng dẫn cách nhận cổ tức cho người mới" [ref=e176]
+              - generic [ref=e177]:
+                - generic [ref=e178]:
+                  - generic [ref=e179]: Cổ phiếu
+                  - generic [ref=e180]: 5 phút đọc
+                - heading "Cổ tức là gì? Hướng dẫn cách nhận cổ tức cho người mới" [level=3] [ref=e181]
+                - paragraph [ref=e182]: Cổ tức là gì? Phân biệt cổ tức tiền mặt và cổ tức cổ phiếu, cách tính toán ngày giao dịch không hưởng quyền để nhận cổ tức chuẩn xác nhất.
+                - generic [ref=e183]: 15 tháng 6, 2026
+            - link "EPS là gì? Ý nghĩa và cách tính chỉ số EPS chuẩn xác Phân tích cơ bản 5 phút đọc EPS là gì? Ý nghĩa và cách tính chỉ số EPS chuẩn xác Chỉ số EPS là gì? Hướng dẫn công thức tính EPS cơ bản và EPS pha loãng, ý nghĩa của EPS đối với việc lựa chọn cổ phiếu và tính định giá P/E. 15 tháng 6, 2026" [ref=e184] [cursor=pointer]:
+              - /url: /phan-tich/co-ban/eps-la-gi/
+              - img "EPS là gì? Ý nghĩa và cách tính chỉ số EPS chuẩn xác" [ref=e186]
+              - generic [ref=e187]:
+                - generic [ref=e188]:
+                  - generic [ref=e189]: Phân tích cơ bản
+                  - generic [ref=e190]: 5 phút đọc
+                - heading "EPS là gì? Ý nghĩa và cách tính chỉ số EPS chuẩn xác" [level=3] [ref=e191]
+                - paragraph [ref=e192]: Chỉ số EPS là gì? Hướng dẫn công thức tính EPS cơ bản và EPS pha loãng, ý nghĩa của EPS đối với việc lựa chọn cổ phiếu và tính định giá P/E.
+                - generic [ref=e193]: 15 tháng 6, 2026
+            - link "ETF VN30 là gì? Giải pháp tích sản đơn giản cho người bận rộn Quỹ ETF 5 phút đọc ETF VN30 là gì? Giải pháp tích sản đơn giản cho người bận rộn ETF VN30 là gì? Tìm hiểu cơ chế hoạt động của quỹ mô phỏng chỉ số VN30, danh sách các quỹ lớn tại Việt Nam và nguyên tắc đầu tư an toàn cho F0. 15 tháng 6, 2026" [ref=e194] [cursor=pointer]:
+              - /url: /dau-tu/etf/etf-vn30-la-gi/
+              - img "ETF VN30 là gì? Giải pháp tích sản đơn giản cho người bận rộn" [ref=e196]
+              - generic [ref=e197]:
+                - generic [ref=e198]:
+                  - generic [ref=e199]: Quỹ ETF
+                  - generic [ref=e200]: 5 phút đọc
+                - heading "ETF VN30 là gì? Giải pháp tích sản đơn giản cho người bận rộn" [level=3] [ref=e201]
+                - paragraph [ref=e202]: ETF VN30 là gì? Tìm hiểu cơ chế hoạt động của quỹ mô phỏng chỉ số VN30, danh sách các quỹ lớn tại Việt Nam và nguyên tắc đầu tư an toàn cho F0.
+                - generic [ref=e203]: 15 tháng 6, 2026
+            - link "Hợp đồng tương lai là gì? Cẩm nang phái sinh cho người mới Phái sinh 6 phút đọc Hợp đồng tương lai là gì? Cẩm nang phái sinh cho người mới Hợp đồng tương lai là gì? Tìm hiểu cơ chế giao dịch phái sinh VN30, tỷ lệ ký quỹ, cách kiếm tiền hai chiều và các rủi ro cần biết trước khi chơi. 15 tháng 6, 2026" [ref=e204] [cursor=pointer]:
+              - /url: /dau-tu/phai-sinh/hop-dong-tuong-lai-la-gi/
+              - img "Hợp đồng tương lai là gì? Cẩm nang phái sinh cho người mới" [ref=e206]
+              - generic [ref=e207]:
+                - generic [ref=e208]:
+                  - generic [ref=e209]: Phái sinh
+                  - generic [ref=e210]: 6 phút đọc
+                - heading "Hợp đồng tương lai là gì? Cẩm nang phái sinh cho người mới" [level=3] [ref=e211]
+                - paragraph [ref=e212]: Hợp đồng tương lai là gì? Tìm hiểu cơ chế giao dịch phái sinh VN30, tỷ lệ ký quỹ, cách kiếm tiền hai chiều và các rủi ro cần biết trước khi chơi.
+                - generic [ref=e213]: 15 tháng 6, 2026
+            - link "Margin là gì? Bản chất và cách sử dụng đòn bẩy ký quỹ an toàn Cổ phiếu 6 phút đọc Margin là gì? Bản chất và cách sử dụng đòn bẩy ký quỹ an toàn Margin là gì? Tìm hiểu cách hoạt động của giao dịch ký quỹ, hiện tượng call margin, force sell và những nguyên tắc quản trị rủi ro đòn bẩy chứng khoán. 15 tháng 6, 2026" [ref=e214] [cursor=pointer]:
+              - /url: /dau-tu/co-phieu/margin-la-gi/
+              - img "Margin là gì? Bản chất và cách sử dụng đòn bẩy ký quỹ an toàn" [ref=e216]
+              - generic [ref=e217]:
+                - generic [ref=e218]:
+                  - generic [ref=e219]: Cổ phiếu
+                  - generic [ref=e220]: 6 phút đọc
+                - heading "Margin là gì? Bản chất và cách sử dụng đòn bẩy ký quỹ an toàn" [level=3] [ref=e221]
+                - paragraph [ref=e222]: Margin là gì? Tìm hiểu cách hoạt động của giao dịch ký quỹ, hiện tượng call margin, force sell và những nguyên tắc quản trị rủi ro đòn bẩy chứng khoán.
+                - generic [ref=e223]: 15 tháng 6, 2026
+            - link "P/B là gì? Ý nghĩa và cách dùng chỉ số P/B định giá doanh nghiệp Phân tích cơ bản 5 phút đọc P/B là gì? Ý nghĩa và cách dùng chỉ số P/B định giá doanh nghiệp Chỉ số P/B là gì? Tìm hiểu công thức tính, ý nghĩa của P/B cao hay thấp và cách định giá cổ phiếu ngành ngân hàng tài chính chuẩn xác nhất. 15 tháng 6, 2026" [ref=e224] [cursor=pointer]:
+              - /url: /phan-tich/co-ban/pb-la-gi/
+              - img "P/B là gì? Ý nghĩa và cách dùng chỉ số P/B định giá doanh nghiệp" [ref=e226]
+              - generic [ref=e227]:
+                - generic [ref=e228]:
+                  - generic [ref=e229]: Phân tích cơ bản
+                  - generic [ref=e230]: 5 phút đọc
+                - heading "P/B là gì? Ý nghĩa và cách dùng chỉ số P/B định giá doanh nghiệp" [level=3] [ref=e231]
+                - paragraph [ref=e232]: Chỉ số P/B là gì? Tìm hiểu công thức tính, ý nghĩa của P/B cao hay thấp và cách định giá cổ phiếu ngành ngân hàng tài chính chuẩn xác nhất.
+                - generic [ref=e233]: 15 tháng 6, 2026
+            - 'link "Review công ty chứng khoán cho người mới: Chọn ở đâu tốt? Reviews 5 phút đọc Review công ty chứng khoán cho người mới: Chọn ở đâu tốt? Review chi tiết ưu và nhược điểm của các công ty chứng khoán lớn tại Việt Nam giúp người mới bắt đầu (F0) lựa chọn nơi mở tài khoản tốt nhất. 15 tháng 6, 2026" [ref=e234] [cursor=pointer]':
+              - /url: /reviews/review-cong-ty-chung-khoan-cho-nguoi-moi/
+              - 'img "Review công ty chứng khoán cho người mới: Chọn ở đâu tốt?" [ref=e236]'
+              - generic [ref=e237]:
+                - generic [ref=e238]:
+                  - generic [ref=e239]: Reviews
+                  - generic [ref=e240]: 5 phút đọc
+                - 'heading "Review công ty chứng khoán cho người mới: Chọn ở đâu tốt?" [level=3] [ref=e241]'
+                - paragraph [ref=e242]: Review chi tiết ưu và nhược điểm của các công ty chứng khoán lớn tại Việt Nam giúp người mới bắt đầu (F0) lựa chọn nơi mở tài khoản tốt nhất.
+                - generic [ref=e243]: 15 tháng 6, 2026
+            - link "ROA là gì? Ý nghĩa và cách phân biệt chỉ số ROA với ROE Phân tích cơ bản 5 phút đọc ROA là gì? Ý nghĩa và cách phân biệt chỉ số ROA với ROE Chỉ số ROA là gì? Hướng dẫn cách tính ROA, so sánh sự khác nhau giữa ROA và ROE giúp nhà đầu tư F0 đánh giá hiệu quả sử dụng tài sản. 15 tháng 6, 2026" [ref=e244] [cursor=pointer]:
+              - /url: /phan-tich/co-ban/roa-la-gi/
+              - img "ROA là gì? Ý nghĩa và cách phân biệt chỉ số ROA với ROE" [ref=e246]
+              - generic [ref=e247]:
+                - generic [ref=e248]:
+                  - generic [ref=e249]: Phân tích cơ bản
+                  - generic [ref=e250]: 5 phút đọc
+                - heading "ROA là gì? Ý nghĩa và cách phân biệt chỉ số ROA với ROE" [level=3] [ref=e251]
+                - paragraph [ref=e252]: Chỉ số ROA là gì? Hướng dẫn cách tính ROA, so sánh sự khác nhau giữa ROA và ROE giúp nhà đầu tư F0 đánh giá hiệu quả sử dụng tài sản.
+                - generic [ref=e253]: 15 tháng 6, 2026
+            - link "ROE là gì? Cách đọc chỉ số ROE để tìm doanh nghiệp siêu hạng Phân tích cơ bản 5 phút đọc ROE là gì? Cách đọc chỉ số ROE để tìm doanh nghiệp siêu hạng Chỉ số ROE là gì? Hướng dẫn cách tính ROE, ý nghĩa của ROE đối với hiệu quả sử dụng vốn và cách nhận biết rủi ro đòn bẩy tài chính. 15 tháng 6, 2026" [ref=e254] [cursor=pointer]:
+              - /url: /phan-tich/co-ban/roe-la-gi/
+              - img "ROE là gì? Cách đọc chỉ số ROE để tìm doanh nghiệp siêu hạng" [ref=e256]
+              - generic [ref=e257]:
+                - generic [ref=e258]:
+                  - generic [ref=e259]: Phân tích cơ bản
+                  - generic [ref=e260]: 5 phút đọc
+                - heading "ROE là gì? Cách đọc chỉ số ROE để tìm doanh nghiệp siêu hạng" [level=3] [ref=e261]
+                - paragraph [ref=e262]: Chỉ số ROE là gì? Hướng dẫn cách tính ROE, ý nghĩa của ROE đối với hiệu quả sử dụng vốn và cách nhận biết rủi ro đòn bẩy tài chính.
+                - generic [ref=e263]: 15 tháng 6, 2026
+            - link "RSI là gì? Hướng dẫn cách sử dụng chỉ báo RSI trong đầu tư Phân tích kỹ thuật 5 phút đọc RSI là gì? Hướng dẫn cách sử dụng chỉ báo RSI trong đầu tư Chỉ báo RSI là gì? Tìm hiểu cách tính rsi, vùng quá mua, quá bán và phương pháp giao dịch theo tín hiệu phân kỳ chuẩn xác nhất cho người mới. 15 tháng 6, 2026" [ref=e264] [cursor=pointer]:
+              - /url: /phan-tich/ky-thuat/rsi-la-gi/
+              - img "RSI là gì? Hướng dẫn cách sử dụng chỉ báo RSI trong đầu tư" [ref=e266]
+              - generic [ref=e267]:
+                - generic [ref=e268]:
+                  - generic [ref=e269]: Phân tích kỹ thuật
+                  - generic [ref=e270]: 5 phút đọc
+                - heading "RSI là gì? Hướng dẫn cách sử dụng chỉ báo RSI trong đầu tư" [level=3] [ref=e271]
+                - paragraph [ref=e272]: Chỉ báo RSI là gì? Tìm hiểu cách tính rsi, vùng quá mua, quá bán và phương pháp giao dịch theo tín hiệu phân kỳ chuẩn xác nhất cho người mới.
+                - generic [ref=e273]: 15 tháng 6, 2026
+            - link "Trái phiếu doanh nghiệp là gì? Hướng dẫn đầu tư an toàn cho F0 Trái phiếu 6 phút đọc Trái phiếu doanh nghiệp là gì? Hướng dẫn đầu tư an toàn cho F0 Trái phiếu doanh nghiệp là gì? Tìm hiểu cách hoạt động, so sánh với gửi tiết kiệm ngân hàng và các rủi ro tín dụng cần biết trước khi xuống tiền. 15 tháng 6, 2026" [ref=e274] [cursor=pointer]:
+              - /url: /dau-tu/trai-phieu/trai-phieu-doanh-nghiep/
+              - img "Trái phiếu doanh nghiệp là gì? Hướng dẫn đầu tư an toàn cho F0" [ref=e276]
+              - generic [ref=e277]:
+                - generic [ref=e278]:
+                  - generic [ref=e279]: Trái phiếu
+                  - generic [ref=e280]: 6 phút đọc
+                - heading "Trái phiếu doanh nghiệp là gì? Hướng dẫn đầu tư an toàn cho F0" [level=3] [ref=e281]
+                - paragraph [ref=e282]: Trái phiếu doanh nghiệp là gì? Tìm hiểu cách hoạt động, so sánh với gửi tiết kiệm ngân hàng và các rủi ro tín dụng cần biết trước khi xuống tiền.
+                - generic [ref=e283]: 15 tháng 6, 2026
+            - 'link "Cách đầu tư cổ phiếu: Hướng dẫn thực chiến từ con số 0 Cổ phiếu 5 phút đọc Cách đầu tư cổ phiếu: Hướng dẫn thực chiến từ con số 0 Hướng dẫn cách đầu tư cổ phiếu bài bản cho người mới. Quy trình từng bước mở tài khoản, nạp tiền, chọn mã tốt và quản trị rủi ro thực tế từ con số 0. 14 tháng 6, 2026" [ref=e284] [cursor=pointer]':
+              - /url: /dau-tu/co-phieu/cach-dau-tu-co-phieu/
+              - 'img "Cách đầu tư cổ phiếu: Hướng dẫn thực chiến từ con số 0" [ref=e286]'
+              - generic [ref=e287]:
+                - generic [ref=e288]:
+                  - generic [ref=e289]: Cổ phiếu
+                  - generic [ref=e290]: 5 phút đọc
+                - 'heading "Cách đầu tư cổ phiếu: Hướng dẫn thực chiến từ con số 0" [level=3] [ref=e291]'
+                - paragraph [ref=e292]: Hướng dẫn cách đầu tư cổ phiếu bài bản cho người mới. Quy trình từng bước mở tài khoản, nạp tiền, chọn mã tốt và quản trị rủi ro thực tế từ con số 0.
+                - generic [ref=e293]: 14 tháng 6, 2026
+            - 'link "Cách đầu tư trái phiếu cho người mới: 3 cách phổ biến Trái phiếu 7 phút đọc Cách đầu tư trái phiếu cho người mới: 3 cách phổ biến Cách đầu tư trái phiếu cho người mới bắt đầu tại Việt Nam, gồm 3 phương thức phổ biến, vốn tối thiểu, rủi ro cần biết và các bước thực hiện cụ thể. 14 tháng 6, 2026" [ref=e294] [cursor=pointer]':
+              - /url: /dau-tu/trai-phieu/cach-dau-tu-trai-phieu/
+              - 'img "Cách đầu tư trái phiếu cho người mới: 3 cách phổ biến" [ref=e296]'
+              - generic [ref=e297]:
+                - generic [ref=e298]:
+                  - generic [ref=e299]: Trái phiếu
+                  - generic [ref=e300]: 7 phút đọc
+                - 'heading "Cách đầu tư trái phiếu cho người mới: 3 cách phổ biến" [level=3] [ref=e301]'
+                - paragraph [ref=e302]: Cách đầu tư trái phiếu cho người mới bắt đầu tại Việt Nam, gồm 3 phương thức phổ biến, vốn tối thiểu, rủi ro cần biết và các bước thực hiện cụ thể.
+                - generic [ref=e303]: 14 tháng 6, 2026
+          - button "Tải thêm bài viết" [ref=e305] [cursor=pointer]
+      - complementary "Thông tin hồ sơ" [ref=e306]:
+        - generic [ref=e307]:
+          - heading "Kinh nghiệm nội dung" [level=2] [ref=e308]
+          - paragraph [ref=e309]: Hơn 3 năm kinh nghiệm thực tế triển khai nội dung tài chính và tối ưu hiệu suất tìm kiếm cho các sản phẩm tài chính lớn (hiện là Chuyên viên SEO tại Công ty Chứng khoán DSC). Chuyên sâu về nghiên cứu hành vi tìm kiếm của nhà đầu tư cá nhân và đơn giản hóa cấu trúc thông tin.
+        - generic [ref=e310]:
+          - heading "Học văn" [level=2] [ref=e311]
+          - paragraph [ref=e312]: Tự học và nghiên cứu thực chiến về SEO kỹ thuật, Marketing tài chính và các hệ thống tự động hóa nội dung.
+        - generic [ref=e313]:
+          - heading "Liên hệ" [level=2] [ref=e314]
+          - link "LinkedIn" [ref=e316] [cursor=pointer]:
+            - /url: https://www.linkedin.com/in/locnguyen0411/
+        - generic [ref=e317]:
+          - heading "Xuất hiện trên" [level=2] [ref=e318]
+          - generic [ref=e320]: Value Investing
+  - contentinfo [ref=e321]:
+    - generic [ref=e322]:
+      - generic [ref=e323]:
+        - strong [ref=e324]: Value Investing
+        - paragraph [ref=e325]: Kiến thức đầu tư giá trị cho người Việt, miễn phí, có nguồn, không khuyến nghị mua bán.
+      - generic [ref=e326]:
+        - heading "Đầu tư" [level=5] [ref=e327]
+        - link "Cổ phiếu" [ref=e328] [cursor=pointer]:
+          - /url: /dau-tu/co-phieu/
+        - link "Quỹ ETF" [ref=e329] [cursor=pointer]:
+          - /url: /dau-tu/etf/
+        - link "Trái phiếu" [ref=e330] [cursor=pointer]:
+          - /url: /dau-tu/trai-phieu/
+        - link "Phái sinh" [ref=e331] [cursor=pointer]:
+          - /url: /dau-tu/phai-sinh/
+      - generic [ref=e332]:
+        - heading "Phân tích & Review" [level=5] [ref=e333]
+        - link "Phân tích cơ bản" [ref=e334] [cursor=pointer]:
+          - /url: /phan-tich/co-ban/
+        - link "Phân tích kỹ thuật" [ref=e335] [cursor=pointer]:
+          - /url: /phan-tich/ky-thuat/
+        - link "Reviews" [ref=e336] [cursor=pointer]:
+          - /url: /reviews/
+        - link "Nhà đầu tư" [ref=e337] [cursor=pointer]:
+          - /url: /nha-dau-tu/
+      - generic [ref=e338]:
+        - heading "Về trang web" [level=5] [ref=e339]
+        - link "Về dự án" [ref=e340] [cursor=pointer]:
+          - /url: /about/
+        - link "Biên tập" [ref=e341] [cursor=pointer]:
+          - /url: /editorial-policy/
+        - link "Nguồn tham khảo" [ref=e342] [cursor=pointer]:
+          - /url: /sources-policy/
+        - link "Đính chính" [ref=e343] [cursor=pointer]:
+          - /url: /corrections-policy/
+        - link "Liên hệ" [ref=e344] [cursor=pointer]:
+          - /url: /contact/
+    - generic [ref=e345]: © 2026 Value Investing. Value Investing không cung cấp dịch vụ tư vấn đầu tư cá nhân, môi giới chứng khoán hoặc tín hiệu giao dịch. Nội dung chỉ nhằm mục đích giáo dục.
+  - generic [ref=e348]:
+    - button "Menu" [ref=e349]:
+      - img [ref=e351]
+      - generic: Menu
+    - button "Inspect" [ref=e355]:
+      - img [ref=e357]
+      - generic: Inspect
+    - button "Audit" [ref=e359]:
+      - img [ref=e361]
+      - generic: Audit
+    - button "Settings" [ref=e364]:
+      - img [ref=e366]
+      - generic: Settings
+  - generic [ref=e371]:
+    - generic [ref=e372]:
+      - checkbox "Use dark theme" [ref=e373]
+      - generic [ref=e374] [cursor=pointer]:
+        - img [ref=e375]
+        - img [ref=e379]
+        - generic [ref=e383]: Use dark theme
+    - banner [ref=e384]:
+      - generic [ref=e385]:
+        - heading "UnknownFilesystemError" [level=2] [ref=e386]
+        - heading "An unknown error occurred while reading or writing files to disk." [level=1] [ref=e387]
+      - img [ref=e390]
+    - generic [ref=e393]:
+      - generic [ref=e394]:
+        - img [ref=e396]
+        - link "See Docs Reference" [ref=e400] [cursor=pointer]:
+          - /url: https://docs.astro.build/en/reference/errors/unknown-filesystem-error/
+          - text: See Docs Reference
+          - img [ref=e401]
+      - generic [ref=e404]:
+        - img [ref=e406]
+        - generic [ref=e408]: It can be caused by many things, eg. missing permissions or a file not existing we attempt to read. Check the error cause for more details.
+    - generic [ref=e409]:
+      - generic [ref=e410]:
+        - heading "content/mutable-data-store.js:92:13" [level=2] [ref=e411]
+        - button "Open in editor" [ref=e413]:
+          - text: Open in editor
+          - img [ref=e414]
+      - code [ref=e419]:
+        - generic [ref=e420]: "import { existsSync, promises as fs } from \"node:fs\";"
+        - generic [ref=e421]: import * as devalue from "devalue";
+        - generic [ref=e422]: "import { Traverse } from \"neotraverse/modern\";"
+        - generic [ref=e423]: "import { imageSrcToImportId, importIdToSymbolName } from \"../assets/utils/resolveImports.js\";"
+        - generic [ref=e424]: "import { AstroError, AstroErrorData } from \"../core/errors/index.js\";"
+        - generic [ref=e425]: "import { IMAGE_IMPORT_PREFIX } from \"./consts.js\";"
+        - generic [ref=e426]: "import { ImmutableDataStore } from \"./data-store.js\";"
+        - generic [ref=e427]: "import { contentModuleToId } from \"./utils.js\";"
+        - generic [ref=e428]: const SAVE_DEBOUNCE_MS = 500;
+        - generic [ref=e429]: const MAX_DEPTH = 10;
+        - generic [ref=e430]: "class MutableDataStore extends ImmutableDataStore {"
+        - generic [ref=e431]: "#file;"
+        - generic [ref=e432]: "#assetsFile;"
+        - generic [ref=e433]: "#modulesFile;"
+        - generic [ref=e434]: "#saveTimeout;"
+        - generic [ref=e435]: "#assetsSaveTimeout;"
+        - generic [ref=e436]: "#modulesSaveTimeout;"
+        - generic [ref=e437]: "#savePromise;"
+        - generic [ref=e438]: "#savePromiseResolve;"
+        - generic [ref=e439]: "#dirty = false;"
+        - generic [ref=e440]: "#assetsDirty = false;"
+        - generic [ref=e441]: "#modulesDirty = false;"
+        - generic [ref=e442]: "#assetImports = /* @__PURE__ */ new Set();"
+        - generic [ref=e443]: "#moduleImports = /* @__PURE__ */ new Map();"
+        - generic [ref=e444]: "set(collectionName, key, value) {"
+        - generic [ref=e445]: const collection = this._collections.get(collectionName) ?? /* @__PURE__ */ new Map();
+        - generic [ref=e446]: collection.set(String(key), value);
+        - generic [ref=e447]: this._collections.set(collectionName, collection);
+        - generic [ref=e448]: this.#saveToDiskDebounced();
+        - generic [ref=e449]: "}"
+        - generic [ref=e450]: "delete(collectionName, key) {"
+        - generic [ref=e451]: const collection = this._collections.get(collectionName);
+        - generic [ref=e452]: "if (collection) {"
+        - generic [ref=e453]: collection.delete(String(key));
+        - generic [ref=e454]: this.#saveToDiskDebounced();
+        - generic [ref=e455]: "}"
+        - generic [ref=e456]: "}"
+        - generic [ref=e457]: "clear(collectionName) {"
+        - generic [ref=e458]: this._collections.delete(collectionName);
+        - generic [ref=e459]: this.#saveToDiskDebounced();
+        - generic [ref=e460]: "}"
+        - generic [ref=e461]: "clearAll() {"
+        - generic [ref=e462]: this._collections.clear();
+        - generic [ref=e463]: this.#saveToDiskDebounced();
+        - generic [ref=e464]: "}"
+        - generic [ref=e465]: "addAssetImport(assetImport, filePath) {"
+        - generic [ref=e466]: const id = imageSrcToImportId(assetImport, filePath);
+        - generic [ref=e467]: "if (id) {"
+        - generic [ref=e468]: this.#assetImports.add(id);
+        - generic [ref=e469]: this.#writeAssetsImportsDebounced();
+        - generic [ref=e470]: "}"
+        - generic [ref=e471]: "}"
+        - generic [ref=e472]: "addAssetImports(assets, filePath) {"
+        - generic [ref=e473]: assets.forEach((asset) => this.addAssetImport(asset, filePath));
+        - generic [ref=e474]: "}"
+        - generic [ref=e475]: "addModuleImport(fileName) {"
+        - generic [ref=e476]: const id = contentModuleToId(fileName);
+        - generic [ref=e477]: "if (id) {"
+        - generic [ref=e478]: this.#moduleImports.set(fileName, id);
+        - generic [ref=e479]: this.#writeModulesImportsDebounced();
+        - generic [ref=e480]: "}"
+        - generic [ref=e481]: "}"
+        - generic [ref=e482]: "async writeAssetImports(filePath) {"
+        - generic [ref=e483]: this.#assetsFile = filePath;
+        - generic [ref=e484]: "if (this.#assetImports.size === 0) {"
+        - generic [ref=e485]: "try {"
+        - generic [ref=e486]: await this.#writeFileAtomic(filePath, "export default new Map();");
+        - generic [ref=e487]: "} catch (err) {"
+        - generic [ref=e488]: "throw new AstroError(AstroErrorData.UnknownFilesystemError, { cause: err });"
+        - generic [ref=e489]: "}"
+        - generic [ref=e490]: "}"
+        - generic [ref=e491]: "if (!this.#assetsDirty && existsSync(filePath)) {"
+        - generic [ref=e492]: return;
+        - generic [ref=e493]: "}"
+        - generic [ref=e494]: const imports = [];
+        - generic [ref=e495]: const exports = [];
+        - generic [ref=e496]: "this.#assetImports.forEach((id) => {"
+        - generic [ref=e497]: const symbol = importIdToSymbolName(id);
+        - generic [ref=e498]: "imports.push(`import ${symbol} from ${JSON.stringify(id)};`);"
+        - generic [ref=e499]: "exports.push(`[${JSON.stringify(id)}, ${symbol}]`);"
+        - generic [ref=e500]: "});"
+        - generic [ref=e501]: const code = (
+        - generic [ref=e502]: /* js */
+        - generic [ref=e503]: "`"
+        - generic [ref=e504]: "${imports.join(\"\\n\")}"
+        - generic [ref=e505]: "export default new Map([${exports.join(\", \")}]);"
+        - generic [ref=e506]: "`"
+        - generic [ref=e507]: );
+        - generic [ref=e508]: "try {"
+        - generic [ref=e509]: await this.#writeFileAtomic(filePath, code);
+        - generic [ref=e510]: "} catch (err) {"
+        - generic [ref=e511]: "throw new AstroError(AstroErrorData.UnknownFilesystemError, { cause: err });"
+        - generic [ref=e512]: ^
+        - generic [ref=e513]: "}"
+        - generic [ref=e514]: this.#assetsDirty = false;
+        - generic [ref=e515]: "}"
+        - generic [ref=e516]: "async writeModuleImports(filePath) {"
+        - generic [ref=e517]: this.#modulesFile = filePath;
+        - generic [ref=e518]: "if (this.#moduleImports.size === 0) {"
+        - generic [ref=e519]: "try {"
+        - generic [ref=e520]: await this.#writeFileAtomic(filePath, "export default new Map();");
+        - generic [ref=e521]: "} catch (err) {"
+        - generic [ref=e522]: "throw new AstroError(AstroErrorData.UnknownFilesystemError, { cause: err });"
+        - generic [ref=e523]: "}"
+        - generic [ref=e524]: "}"
+        - generic [ref=e525]: "if (!this.#modulesDirty && existsSync(filePath)) {"
+        - generic [ref=e526]: return;
+        - generic [ref=e527]: "}"
+        - generic [ref=e528]: const lines = [];
+        - generic [ref=e529]: "for (const [fileName, specifier] of this.#moduleImports) {"
+        - generic [ref=e530]: "lines.push(`[${JSON.stringify(fileName)}, () => import(${JSON.stringify(specifier)})]`);"
+        - generic [ref=e531]: "}"
+        - generic [ref=e532]: "const code = `"
+        - generic [ref=e533]: export default new Map([
+        - generic [ref=e534]: "${lines.join(\",\\n\")}]);"
+        - generic [ref=e535]: "`;"
+        - generic [ref=e536]: "try {"
+        - generic [ref=e537]: await this.#writeFileAtomic(filePath, code);
+        - generic [ref=e538]: "} catch (err) {"
+        - generic [ref=e539]: "throw new AstroError(AstroErrorData.UnknownFilesystemError, { cause: err });"
+        - generic [ref=e540]: "}"
+        - generic [ref=e541]: this.#modulesDirty = false;
+        - generic [ref=e542]: "}"
+        - generic [ref=e543]: "#maybeResolveSavePromise() {"
+        - generic [ref=e544]: "if (!this.#saveTimeout && !this.#assetsSaveTimeout && !this.#modulesSaveTimeout && this.#savePromiseResolve) {"
+        - generic [ref=e545]: this.#savePromiseResolve();
+        - generic [ref=e546]: this.#savePromiseResolve = void 0;
+        - generic [ref=e547]: this.#savePromise = void 0;
+        - generic [ref=e548]: "}"
+        - generic [ref=e549]: "}"
+        - generic [ref=e550]: "#writeAssetsImportsDebounced() {"
+        - generic [ref=e551]: this.#assetsDirty = true;
+        - generic [ref=e552]: "if (this.#assetsFile) {"
+        - generic [ref=e553]: "if (this.#assetsSaveTimeout) {"
+        - generic [ref=e554]: clearTimeout(this.#assetsSaveTimeout);
+        - generic [ref=e555]: "}"
+        - generic [ref=e556]: "if (!this.#savePromise) {"
+        - generic [ref=e557]: "this.#savePromise = new Promise((resolve) => {"
+        - generic [ref=e558]: this.#savePromiseResolve = resolve;
+        - generic [ref=e559]: "});"
+        - generic [ref=e560]: "}"
+        - generic [ref=e561]: "this.#assetsSaveTimeout = setTimeout(async () => {"
+        - generic [ref=e562]: this.#assetsSaveTimeout = void 0;
+        - generic [ref=e563]: await this.writeAssetImports(this.#assetsFile);
+        - generic [ref=e564]: this.#maybeResolveSavePromise();
+        - generic [ref=e565]: "}, SAVE_DEBOUNCE_MS);"
+        - generic [ref=e566]: "}"
+        - generic [ref=e567]: "}"
+        - generic [ref=e568]: "#writeModulesImportsDebounced() {"
+        - generic [ref=e569]: this.#modulesDirty = true;
+        - generic [ref=e570]: "if (this.#modulesFile) {"
+        - generic [ref=e571]: "if (this.#modulesSaveTimeout) {"
+        - generic [ref=e572]: clearTimeout(this.#modulesSaveTimeout);
+        - generic [ref=e573]: "}"
+        - generic [ref=e574]: "if (!this.#savePromise) {"
+        - generic [ref=e575]: "this.#savePromise = new Promise((resolve) => {"
+        - generic [ref=e576]: this.#savePromiseResolve = resolve;
+        - generic [ref=e577]: "});"
+        - generic [ref=e578]: "}"
+        - generic [ref=e579]: "this.#modulesSaveTimeout = setTimeout(async () => {"
+        - generic [ref=e580]: this.#modulesSaveTimeout = void 0;
+        - generic [ref=e581]: await this.writeModuleImports(this.#modulesFile);
+        - generic [ref=e582]: this.#maybeResolveSavePromise();
+        - generic [ref=e583]: "}, SAVE_DEBOUNCE_MS);"
+        - generic [ref=e584]: "}"
+        - generic [ref=e585]: "}"
+        - generic [ref=e586]: // Skips the debounce and writes to disk immediately
+        - generic [ref=e587]: "async #saveToDiskNow() {"
+        - generic [ref=e588]: "if (this.#saveTimeout) {"
+        - generic [ref=e589]: clearTimeout(this.#saveTimeout);
+        - generic [ref=e590]: "}"
+        - generic [ref=e591]: this.#saveTimeout = void 0;
+        - generic [ref=e592]: "if (this.#file) {"
+        - generic [ref=e593]: await this.writeToDisk();
+        - generic [ref=e594]: "}"
+        - generic [ref=e595]: this.#maybeResolveSavePromise();
+        - generic [ref=e596]: "}"
+        - generic [ref=e597]: "#saveToDiskDebounced() {"
+        - generic [ref=e598]: this.#dirty = true;
+        - generic [ref=e599]: "if (this.#saveTimeout) {"
+        - generic [ref=e600]: clearTimeout(this.#saveTimeout);
+        - generic [ref=e601]: "}"
+        - generic [ref=e602]: "if (!this.#savePromise) {"
+        - generic [ref=e603]: "this.#savePromise = new Promise((resolve) => {"
+        - generic [ref=e604]: this.#savePromiseResolve = resolve;
+        - generic [ref=e605]: "});"
+        - generic [ref=e606]: "}"
+        - generic [ref=e607]: "this.#saveTimeout = setTimeout(async () => {"
+        - generic [ref=e608]: this.#saveTimeout = void 0;
+        - generic [ref=e609]: "if (this.#file) {"
+        - generic [ref=e610]: await this.writeToDisk();
+        - generic [ref=e611]: "}"
+        - generic [ref=e612]: this.#maybeResolveSavePromise();
+        - generic [ref=e613]: "}, SAVE_DEBOUNCE_MS);"
+        - generic [ref=e614]: "}"
+        - generic [ref=e615]: "#writing = /* @__PURE__ */ new Set();"
+        - generic [ref=e616]: "#pending = /* @__PURE__ */ new Set();"
+        - generic [ref=e617]: "async #writeFileAtomic(filePath, data, depth = 0) {"
+        - generic [ref=e618]: "if (depth > MAX_DEPTH) {"
+        - generic [ref=e619]: return;
+        - generic [ref=e620]: "}"
+        - generic [ref=e621]: const fileKey = filePath.toString();
+        - generic [ref=e622]: "if (this.#writing.has(fileKey)) {"
+        - generic [ref=e623]: this.#pending.add(fileKey);
+        - generic [ref=e624]: return;
+        - generic [ref=e625]: "}"
+        - generic [ref=e626]: this.#writing.add(fileKey);
+        - generic [ref=e627]: "const tempFile = filePath instanceof URL ? new URL(`${filePath.href}.tmp`) : `${filePath}.tmp`;"
+        - generic [ref=e628]: "try {"
+        - generic [ref=e629]: const oldData = await fs.readFile(filePath, "utf-8").catch(() => "");
+        - generic [ref=e630]: "if (oldData === data) {"
+        - generic [ref=e631]: return;
+        - generic [ref=e632]: "}"
+        - generic [ref=e633]: await fs.writeFile(tempFile, data);
+        - generic [ref=e634]: await fs.rename(tempFile, filePath);
+        - generic [ref=e635]: "} finally {"
+        - generic [ref=e636]: this.#writing.delete(fileKey);
+        - generic [ref=e637]: "if (this.#pending.has(fileKey)) {"
+        - generic [ref=e638]: this.#pending.delete(fileKey);
+        - generic [ref=e639]: await this.#writeFileAtomic(filePath, data, depth + 1);
+        - generic [ref=e640]: "}"
+        - generic [ref=e641]: "}"
+        - generic [ref=e642]: "}"
+        - generic [ref=e643]: "scopedStore(collectionName) {"
+        - generic [ref=e644]: "return {"
+        - generic [ref=e645]: "get: (key) => this.get(collectionName, key),"
+        - generic [ref=e646]: "entries: () => this.entries(collectionName),"
+        - generic [ref=e647]: "values: () => this.values(collectionName),"
+        - generic [ref=e648]: "keys: () => this.keys(collectionName),"
+        - generic [ref=e649]: "set: ({"
+        - generic [ref=e650]: "id: key,"
+        - generic [ref=e651]: data,
+        - generic [ref=e652]: body,
+        - generic [ref=e653]: filePath,
+        - generic [ref=e654]: deferredRender,
+        - generic [ref=e655]: digest,
+        - generic [ref=e656]: rendered,
+        - generic [ref=e657]: assetImports,
+        - generic [ref=e658]: legacyId
+        - generic [ref=e659]: "}) => {"
+        - generic [ref=e660]: "if (!key) {"
+        - generic [ref=e661]: "throw new Error(`ID must be a non-empty string`);"
+        - generic [ref=e662]: "}"
+        - generic [ref=e663]: const id = String(key);
+        - generic [ref=e664]: "if (digest) {"
+        - generic [ref=e665]: const existing = this.get(collectionName, id);
+        - generic [ref=e666]: "if (existing && existing.digest === digest) {"
+        - generic [ref=e667]: return false;
+        - generic [ref=e668]: "}"
+        - generic [ref=e669]: "}"
+        - generic [ref=e670]: const foundAssets = new Set(assetImports);
+        - generic [ref=e671]: "new Traverse(data).forEach((_, val) => {"
+        - generic [ref=e672]: "if (typeof val === \"string\" && val.startsWith(IMAGE_IMPORT_PREFIX)) {"
+        - generic [ref=e673]: const src = val.replace(IMAGE_IMPORT_PREFIX, "");
+        - generic [ref=e674]: foundAssets.add(src);
+        - generic [ref=e675]: "}"
+        - generic [ref=e676]: "});"
+        - generic [ref=e677]: "const entry = {"
+        - generic [ref=e678]: id,
+        - generic [ref=e679]: data
+        - generic [ref=e680]: "};"
+        - generic [ref=e681]: "if (body) {"
+        - generic [ref=e682]: entry.body = body;
+        - generic [ref=e683]: "}"
+        - generic [ref=e684]: "if (filePath) {"
+        - generic [ref=e685]: "if (filePath.startsWith(\"/\")) {"
+        - generic [ref=e686]: "throw new Error(`File path must be relative to the site root. Got: ${filePath}`);"
+        - generic [ref=e687]: "}"
+        - generic [ref=e688]: entry.filePath = filePath;
+        - generic [ref=e689]: "}"
+        - generic [ref=e690]: "if (foundAssets.size) {"
+        - generic [ref=e691]: entry.assetImports = Array.from(foundAssets);
+        - generic [ref=e692]: this.addAssetImports(entry.assetImports, filePath);
+        - generic [ref=e693]: "}"
+        - generic [ref=e694]: "if (digest) {"
+        - generic [ref=e695]: entry.digest = digest;
+        - generic [ref=e696]: "}"
+        - generic [ref=e697]: "if (rendered) {"
+        - generic [ref=e698]: entry.rendered = rendered;
+        - generic [ref=e699]: "}"
+        - generic [ref=e700]: "if (legacyId) {"
+        - generic [ref=e701]: entry.legacyId = legacyId;
+        - generic [ref=e702]: "}"
+        - generic [ref=e703]: "if (deferredRender) {"
+        - generic [ref=e704]: entry.deferredRender = deferredRender;
+        - generic [ref=e705]: "if (filePath) {"
+        - generic [ref=e706]: this.addModuleImport(filePath);
+        - generic [ref=e707]: "}"
+        - generic [ref=e708]: "}"
+        - generic [ref=e709]: this.set(collectionName, id, entry);
+        - generic [ref=e710]: return true;
+        - generic [ref=e711]: "},"
+        - generic [ref=e712]: "delete: (key) => this.delete(collectionName, key),"
+        - generic [ref=e713]: "clear: () => this.clear(collectionName),"
+        - generic [ref=e714]: "has: (key) => this.has(collectionName, key),"
+        - generic [ref=e715]: "addAssetImport: (assetImport, fileName) => this.addAssetImport(assetImport, fileName),"
+        - generic [ref=e716]: "addAssetImports: (assets, fileName) => this.addAssetImports(assets, fileName),"
+        - generic [ref=e717]: "addModuleImport: (fileName) => this.addModuleImport(fileName)"
+        - generic [ref=e718]: "};"
+        - generic [ref=e719]: "}"
+        - generic [ref=e720]: /**
+        - generic [ref=e721]: "* Returns a MetaStore for a given collection, or if no collection is provided, the default meta collection."
+        - generic [ref=e722]: "*/"
+        - generic [ref=e723]: "metaStore(collectionName = \":meta\") {"
+        - generic [ref=e724]: "const collectionKey = `meta:${collectionName}`;"
+        - generic [ref=e725]: "return {"
+        - generic [ref=e726]: "get: (key) => this.get(collectionKey, key),"
+        - generic [ref=e727]: "set: (key, data) => this.set(collectionKey, key, data),"
+        - generic [ref=e728]: "delete: (key) => this.delete(collectionKey, key),"
+        - generic [ref=e729]: "has: (key) => this.has(collectionKey, key)"
+        - generic [ref=e730]: "};"
+        - generic [ref=e731]: "}"
+        - generic [ref=e732]: /**
+        - generic [ref=e733]: "* Returns a promise that resolves when all pending saves are complete."
+        - generic [ref=e734]: "* This includes any in-progress debounced saves for the data store, asset imports, and module imports."
+        - generic [ref=e735]: "*/"
+        - generic [ref=e736]: "async waitUntilSaveComplete() {"
+        - generic [ref=e737]: "if (!this.#savePromise) {"
+        - generic [ref=e738]: return Promise.resolve();
+        - generic [ref=e739]: "}"
+        - generic [ref=e740]: await this.#saveToDiskNow();
+        - generic [ref=e741]: return this.#savePromise;
+        - generic [ref=e742]: "}"
+        - generic [ref=e743]: "toString() {"
+        - generic [ref=e744]: return devalue.stringify(this._collections);
+        - generic [ref=e745]: "}"
+        - generic [ref=e746]: "async writeToDisk() {"
+        - generic [ref=e747]: "if (!this.#dirty) {"
+        - generic [ref=e748]: return;
+        - generic [ref=e749]: "}"
+        - generic [ref=e750]: "if (!this.#file) {"
+        - generic [ref=e751]: throw new AstroError(AstroErrorData.UnknownFilesystemError);
+        - generic [ref=e752]: "}"
+        - generic [ref=e753]: "try {"
+        - generic [ref=e754]: this.#dirty = false;
+        - generic [ref=e755]: await this.#writeFileAtomic(this.#file, this.toString());
+        - generic [ref=e756]: "} catch (err) {"
+        - generic [ref=e757]: "throw new AstroError(AstroErrorData.UnknownFilesystemError, { cause: err });"
+        - generic [ref=e758]: "}"
+        - generic [ref=e759]: "}"
+        - generic [ref=e760]: /**
+        - generic [ref=e761]: "* Attempts to load a MutableDataStore from the virtual module."
+        - generic [ref=e762]: "* This only works in Vite."
+        - generic [ref=e763]: "*/"
+        - generic [ref=e764]: "static async fromModule() {"
+        - generic [ref=e765]: "try {"
+        - generic [ref=e766]: const data = await import("astro:data-layer-content");
+        - generic [ref=e767]: const map = devalue.unflatten(data.default);
+        - generic [ref=e768]: return MutableDataStore.fromMap(map);
+        - generic [ref=e769]: "} catch {"
+        - generic [ref=e770]: "}"
+        - generic [ref=e771]: return new MutableDataStore();
+        - generic [ref=e772]: "}"
+        - generic [ref=e773]: "static async fromMap(data) {"
+        - generic [ref=e774]: const store = new MutableDataStore();
+        - generic [ref=e775]: store._collections = data;
+        - generic [ref=e776]: return store;
+        - generic [ref=e777]: "}"
+        - generic [ref=e778]: "static async fromString(data) {"
+        - generic [ref=e779]: const map = devalue.parse(data);
+        - generic [ref=e780]: return MutableDataStore.fromMap(map);
+        - generic [ref=e781]: "}"
+        - generic [ref=e782]: "static async fromFile(filePath) {"
+        - generic [ref=e783]: "try {"
+        - generic [ref=e784]: "if (existsSync(filePath)) {"
+        - generic [ref=e785]: const data = await fs.readFile(filePath, "utf-8");
+        - generic [ref=e786]: const store2 = await MutableDataStore.fromString(data);
+        - generic [ref=e787]: store2.#file = filePath;
+        - generic [ref=e788]: return store2;
+        - generic [ref=e789]: "} else {"
+        - generic [ref=e790]: "await fs.mkdir(new URL(\"./\", filePath), { recursive: true });"
+        - generic [ref=e791]: "}"
+        - generic [ref=e792]: "} catch {"
+        - generic [ref=e793]: "}"
+        - generic [ref=e794]: const store = new MutableDataStore();
+        - generic [ref=e795]: store.#file = filePath;
+        - generic [ref=e796]: return store;
+        - generic [ref=e797]: "}"
+        - generic [ref=e798]: "}"
+        - generic [ref=e799]: "export {"
+        - generic [ref=e800]: MutableDataStore
+        - generic [ref=e801]: "};"
+    - generic [ref=e803]:
+      - generic [ref=e804]:
+        - heading "Stack Trace" [level=2] [ref=e805]
+        - img [ref=e807] [cursor=pointer]
+      - generic [ref=e811]: UnknownFilesystemError at MutableDataStore.writeAssetImports (file:///Users/nguyenvietloc/Documents/investing/node_modules/astro/dist/content/mutable-data-store.js:92:13) at async Timeout._onTimeout (file:///Users/nguyenvietloc/Documents/investing/node_modules/astro/dist/content/mutable-data-store.js:143:9)
+    - generic [ref=e812]:
+      - heading "Cause" [level=2] [ref=e813]
+      - generic [ref=e814]: "{ \"errno\": -2, \"code\": \"ENOENT\", \"syscall\": \"rename\", \"path\": \"/Users/nguyenvietloc/Documents/investing/.astro/content-assets.mjs.tmp\", \"dest\": \"/Users/nguyenvietloc/Documents/investing/.astro/content-assets.mjs\" }"

@@ -94,10 +94,13 @@ const openGraphExtra =
             "url": `${Astro.site}images/hero-investing.png`,
           },
           "email": site.email,
+          "areaServed": "VN",
+          "sameAs": [author.socialLinks?.linkedin].filter(Boolean),
           "founder": {
             "@type": "Person",
+            "@id": `${Astro.site}author/${author.slug}/#person`,
             "name": author.name,
-            "url": `${Astro.site}about/`,
+            "url": `${Astro.site}author/${author.slug}/`,
           },
         },
         {
@@ -108,6 +111,11 @@ const openGraphExtra =
           "description": site.description,
           "inLanguage": "vi",
           "publisher": { "@id": `${Astro.site}#organization` },
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": `${Astro.site}search/?q={search_term_string}`,
+            "query-input": "required name=search_term_string",
+          },
         },
       ],
     })} />

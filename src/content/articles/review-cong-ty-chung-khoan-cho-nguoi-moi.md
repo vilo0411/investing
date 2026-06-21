@@ -5,6 +5,7 @@ category: reviews
 heroImage: "/images/articles/review-cong-ty-chung-khoan-cho-nguoi-moi/hero.jpg"
 publishDate: "2026-06-09"
 updatedDate: "2026-06-15"
+factCheckedDate: "2026-06-21"
 readingTime: "5 phút đọc"
 featured: false
 order: 11

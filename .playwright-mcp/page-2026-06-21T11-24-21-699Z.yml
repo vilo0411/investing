@@ -1,0 +1,368 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation "Menu chính" [ref=e3]:
+      - link "Value Investing" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - img [ref=e5]
+        - generic [ref=e8]: Value Investing
+      - generic [ref=e9]:
+        - link "Đầu tư" [ref=e11] [cursor=pointer]:
+          - /url: /dau-tu/
+          - text: Đầu tư
+          - img [ref=e12]
+        - link "Phân tích" [ref=e15] [cursor=pointer]:
+          - /url: /phan-tich/
+          - text: Phân tích
+          - img [ref=e16]
+        - link "Nhà đầu tư" [ref=e18] [cursor=pointer]:
+          - /url: /nha-dau-tu/
+        - link "Reviews" [ref=e19] [cursor=pointer]:
+          - /url: /reviews/
+      - button "Mở tìm kiếm" [ref=e21]:
+        - img [ref=e22]
+  - main [ref=e25]:
+    - generic [ref=e27]:
+      - generic [ref=e28]:
+        - img [ref=e30]
+        - generic [ref=e31]:
+          - paragraph [ref=e32]: Tác giả
+          - heading "Nguyễn Viết Lộc" [level=1] [ref=e33]
+          - paragraph [ref=e34]: Người sáng lập & Phụ trách nội dung
+          - generic [ref=e35]:
+            - generic [ref=e36]: Đầu tư giá trị
+            - generic [ref=e37]: Đơn giản hóa thuật ngữ tài chính
+            - generic [ref=e38]: Sản phẩm đầu tư cho người mới bắt đầu
+            - generic [ref=e39]: Cấu trúc thông tin tài chính (SEO)
+          - link "LinkedIn →" [ref=e40] [cursor=pointer]:
+            - /url: https://www.linkedin.com/in/locnguyen0411/
+      - complementary "Chuyên môn tác giả" [ref=e41]:
+        - paragraph [ref=e42]: Kinh nghiệm nội dung
+        - paragraph [ref=e43]: Hơn 3 năm kinh nghiệm thực tế triển khai nội dung tài chính và tối ưu hiệu suất tìm kiếm cho các sản phẩm tài chính lớn (hiện là Chuyên viên SEO tại Công ty Chứng khoán DSC). Chuyên sâu về nghiên cứu hành vi tìm kiếm của nhà đầu tư cá nhân và đơn giản hóa cấu trúc thông tin.
+    - generic [ref=e45]:
+      - main [ref=e46]:
+        - region "Quan điểm về tiền và đầu tư" [ref=e47]:
+          - paragraph [ref=e48]: Quan điểm về đầu tư
+          - blockquote [ref=e49]: “Đầu tư nên bắt đầu từ việc hiểu doanh nghiệp, biết giới hạn rủi ro của bản thân trước khi nhìn vào tỷ suất lợi nhuận kỳ vọng.”
+        - generic [ref=e50]:
+          - heading "Tiểu sử" [level=2] [ref=e51]
+          - paragraph [ref=e52]: Lộc Nguyễn hiện là Chuyên viên SEO tại Công ty Chứng khoán DSC. Với hơn 3 năm kinh nghiệm triển khai nội dung và tối ưu hiệu suất tìm kiếm cho các sản phẩm tài chính lớn, Lộc sáng lập Value Investing nhằm chia sẻ các kiến thức đầu tư thực chiến bằng ngôn ngữ bình dân, giúp F0 tự tin và an toàn hơn trên thị trường.
+        - generic [ref=e53]:
+          - paragraph [ref=e54]: Bài viết mới
+          - heading "Tất cả bài viết" [level=2] [ref=e55]
+          - generic [ref=e56]:
+            - link "Benjamin Graham là ai? Triết lý của cha đẻ đầu tư giá trị Nhà đầu tư 8 phút đọc Benjamin Graham là ai? Triết lý của cha đẻ đầu tư giá trị Benjamin Graham là ai? Tìm hiểu tiểu sử, 2 cuốn sách kinh điển Nhà đầu tư thông minh, Phân tích chứng khoán và triết lý đầu tư giá trị bất hủ. 21 tháng 6, 2026" [ref=e57] [cursor=pointer]:
+              - /url: /nha-dau-tu/benjamin-graham/
+              - img "Benjamin Graham là ai? Triết lý của cha đẻ đầu tư giá trị" [ref=e59]
+              - generic [ref=e60]:
+                - generic [ref=e61]:
+                  - generic [ref=e62]: Nhà đầu tư
+                  - generic [ref=e63]: 8 phút đọc
+                - heading "Benjamin Graham là ai? Triết lý của cha đẻ đầu tư giá trị" [level=3] [ref=e64]
+                - paragraph [ref=e65]: Benjamin Graham là ai? Tìm hiểu tiểu sử, 2 cuốn sách kinh điển Nhà đầu tư thông minh, Phân tích chứng khoán và triết lý đầu tư giá trị bất hủ.
+                - generic [ref=e66]: 21 tháng 6, 2026
+            - link "Cổ phiếu là gì? Bản chất và cách hoạt động dễ hiểu nhất Cổ phiếu 7 phút đọc Cổ phiếu là gì? Bản chất và cách hoạt động dễ hiểu nhất Cổ phiếu là gì? Giải thích bản chất cổ phiếu, cổ phần và cổ đông bằng ví dụ thực tế cực dễ hiểu. Hướng dẫn cách phân biệt các loại cổ phiếu và quyền lợi khi đầu tư. 21 tháng 6, 2026" [ref=e67] [cursor=pointer]:
+              - /url: /dau-tu/co-phieu/co-phieu-la-gi/
+              - img "Cổ phiếu là gì? Bản chất và cách hoạt động dễ hiểu nhất" [ref=e69]
+              - generic [ref=e70]:
+                - generic [ref=e71]:
+                  - generic [ref=e72]: Cổ phiếu
+                  - generic [ref=e73]: 7 phút đọc
+                - heading "Cổ phiếu là gì? Bản chất và cách hoạt động dễ hiểu nhất" [level=3] [ref=e74]
+                - paragraph [ref=e75]: Cổ phiếu là gì? Giải thích bản chất cổ phiếu, cổ phần và cổ đông bằng ví dụ thực tế cực dễ hiểu. Hướng dẫn cách phân biệt các loại cổ phiếu và quyền lợi khi đầu tư.
+                - generic [ref=e76]: 21 tháng 6, 2026
+            - link "Quỹ ETF là gì? Khái niệm và cách hoạt động dễ hiểu cho F0 Quỹ ETF 7 phút đọc Quỹ ETF là gì? Khái niệm và cách hoạt động dễ hiểu cho F0 Quỹ ETF là gì? Giải thích khái niệm chứng chỉ quỹ ETF và cơ chế hoạt động cực kỳ dễ hiểu cho người mới. So sánh chi tiết quỹ ETF và quỹ mở. 21 tháng 6, 2026" [ref=e77] [cursor=pointer]:
+              - /url: /dau-tu/etf/etf-la-gi/
+              - img "Quỹ ETF là gì? Khái niệm và cách hoạt động dễ hiểu cho F0" [ref=e79]
+              - generic [ref=e80]:
+                - generic [ref=e81]:
+                  - generic [ref=e82]: Quỹ ETF
+                  - generic [ref=e83]: 7 phút đọc
+                - heading "Quỹ ETF là gì? Khái niệm và cách hoạt động dễ hiểu cho F0" [level=3] [ref=e84]
+                - paragraph [ref=e85]: Quỹ ETF là gì? Giải thích khái niệm chứng chỉ quỹ ETF và cơ chế hoạt động cực kỳ dễ hiểu cho người mới. So sánh chi tiết quỹ ETF và quỹ mở.
+                - generic [ref=e86]: 21 tháng 6, 2026
+            - link "P/E là gì? Cách sử dụng chỉ số P/E định giá cổ phiếu từ A-Z Phân tích cơ bản 8 phút đọc P/E là gì? Cách sử dụng chỉ số P/E định giá cổ phiếu từ A-Z Chỉ số P/E là gì? Tìm hiểu công thức tính, ý nghĩa của P/E cao hay thấp và cách định giá cổ phiếu chính xác nhất cho người mới bắt đầu. 21 tháng 6, 2026" [ref=e87] [cursor=pointer]:
+              - /url: /phan-tich/co-ban/pe-la-gi/
+              - img "P/E là gì? Cách sử dụng chỉ số P/E định giá cổ phiếu từ A-Z" [ref=e89]
+              - generic [ref=e90]:
+                - generic [ref=e91]:
+                  - generic [ref=e92]: Phân tích cơ bản
+                  - generic [ref=e93]: 8 phút đọc
+                - heading "P/E là gì? Cách sử dụng chỉ số P/E định giá cổ phiếu từ A-Z" [level=3] [ref=e94]
+                - paragraph [ref=e95]: Chỉ số P/E là gì? Tìm hiểu công thức tính, ý nghĩa của P/E cao hay thấp và cách định giá cổ phiếu chính xác nhất cho người mới bắt đầu.
+                - generic [ref=e96]: 21 tháng 6, 2026
+            - link "Trái phiếu là gì? Giải thích dễ hiểu cho người mới bắt đầu Trái phiếu 8 phút đọc Trái phiếu là gì? Giải thích dễ hiểu cho người mới bắt đầu Trái phiếu là gì? Giải thích định nghĩa, bản chất và cách hoạt động của trái phiếu bằng ví dụ thực tế. So sánh chi tiết cổ phiếu và trái phiếu cho F0. 21 tháng 6, 2026" [ref=e97] [cursor=pointer]:
+              - /url: /dau-tu/trai-phieu/trai-phieu-la-gi/
+              - img "Trái phiếu là gì? Giải thích dễ hiểu cho người mới bắt đầu" [ref=e99]
+              - generic [ref=e100]:
+                - generic [ref=e101]:
+                  - generic [ref=e102]: Trái phiếu
+                  - generic [ref=e103]: 8 phút đọc
+                - heading "Trái phiếu là gì? Giải thích dễ hiểu cho người mới bắt đầu" [level=3] [ref=e104]
+                - paragraph [ref=e105]: Trái phiếu là gì? Giải thích định nghĩa, bản chất và cách hoạt động của trái phiếu bằng ví dụ thực tế. So sánh chi tiết cổ phiếu và trái phiếu cho F0.
+                - generic [ref=e106]: 21 tháng 6, 2026
+            - link "Warren Buffett là ai? Triết lý đầu tư của nhà hiền triết Omaha Nhà đầu tư 8 phút đọc Warren Buffett là ai? Triết lý đầu tư của nhà hiền triết Omaha Warren Buffett là ai? Tìm hiểu tiểu sử, quá trình xây dựng Berkshire Hathaway và các triết lý đầu tư dài hạn bất hủ của huyền thoại đầu tư. 21 tháng 6, 2026" [ref=e107] [cursor=pointer]:
+              - /url: /nha-dau-tu/warren-buffett/
+              - img "Warren Buffett là ai? Triết lý đầu tư của nhà hiền triết Omaha" [ref=e109]
+              - generic [ref=e110]:
+                - generic [ref=e111]:
+                  - generic [ref=e112]: Nhà đầu tư
+                  - generic [ref=e113]: 8 phút đọc
+                - heading "Warren Buffett là ai? Triết lý đầu tư của nhà hiền triết Omaha" [level=3] [ref=e114]
+                - paragraph [ref=e115]: Warren Buffett là ai? Tìm hiểu tiểu sử, quá trình xây dựng Berkshire Hathaway và các triết lý đầu tư dài hạn bất hủ của huyền thoại đầu tư.
+                - generic [ref=e116]: 21 tháng 6, 2026
+            - 'link "Review DSC Securities: Ưu nhược điểm & Có nên mở tài khoản không? Reviews 7 phút đọc Review DSC Securities: Ưu nhược điểm & Có nên mở tài khoản không? Đánh giá chi tiết Chứng khoán DSC năm 2026: phí giao dịch, lãi suất margin, giao diện ứng dụng, chất lượng hỗ trợ và hướng dẫn mở tài khoản từng bước. 16 tháng 6, 2026" [ref=e117] [cursor=pointer]':
+              - /url: /reviews/review-dsc-securities/
+              - 'img "Review DSC Securities: Ưu nhược điểm & Có nên mở tài khoản không?" [ref=e119]'
+              - generic [ref=e120]:
+                - generic [ref=e121]:
+                  - generic [ref=e122]: Reviews
+                  - generic [ref=e123]: 7 phút đọc
+                - 'heading "Review DSC Securities: Ưu nhược điểm & Có nên mở tài khoản không?" [level=3] [ref=e124]'
+                - paragraph [ref=e125]: "Đánh giá chi tiết Chứng khoán DSC năm 2026: phí giao dịch, lãi suất margin, giao diện ứng dụng, chất lượng hỗ trợ và hướng dẫn mở tài khoản từng bước."
+                - generic [ref=e126]: 16 tháng 6, 2026
+            - 'link "Review VPS Securities: Có nên mở tài khoản không? (2026) Reviews 6 phút đọc Review VPS Securities: Có nên mở tài khoản không? (2026) Đánh giá chi tiết VPS Securities năm 2026 — công ty chứng khoán số 1 về thị phần môi giới cá nhân. Phí, margin, ứng dụng SmartOne và hướng dẫn mở tài khoản. 16 tháng 6, 2026" [ref=e127] [cursor=pointer]':
+              - /url: /reviews/review-vps-securities/
+              - 'img "Review VPS Securities: Có nên mở tài khoản không? (2026)" [ref=e129]'
+              - generic [ref=e130]:
+                - generic [ref=e131]:
+                  - generic [ref=e132]: Reviews
+                  - generic [ref=e133]: 6 phút đọc
+                - 'heading "Review VPS Securities: Có nên mở tài khoản không? (2026)" [level=3] [ref=e134]'
+                - paragraph [ref=e135]: Đánh giá chi tiết VPS Securities năm 2026 — công ty chứng khoán số 1 về thị phần môi giới cá nhân. Phí, margin, ứng dụng SmartOne và hướng dẫn mở tài khoản.
+                - generic [ref=e136]: 16 tháng 6, 2026
+            - 'link "So sánh TCBS vs SSI: Nên chọn công ty chứng khoán nào năm 2026? Reviews 8 phút đọc So sánh TCBS vs SSI: Nên chọn công ty chứng khoán nào năm 2026? So sánh chi tiết TCBS và SSI năm 2026 theo 5 tiêu chí: phí giao dịch, lãi suất margin, giao diện ứng dụng, báo cáo phân tích và hỗ trợ khách hàng. Tìm hiểu nên chọn công ty nào phù hợp với bạn. 16 tháng 6, 2026" [ref=e137] [cursor=pointer]':
+              - /url: /reviews/so-sanh-tcbs-vs-ssi/
+              - 'img "So sánh TCBS vs SSI: Nên chọn công ty chứng khoán nào năm 2026?" [ref=e139]'
+              - generic [ref=e140]:
+                - generic [ref=e141]:
+                  - generic [ref=e142]: Reviews
+                  - generic [ref=e143]: 8 phút đọc
+                - 'heading "So sánh TCBS vs SSI: Nên chọn công ty chứng khoán nào năm 2026?" [level=3] [ref=e144]'
+                - paragraph [ref=e145]: "So sánh chi tiết TCBS và SSI năm 2026 theo 5 tiêu chí: phí giao dịch, lãi suất margin, giao diện ứng dụng, báo cáo phân tích và hỗ trợ khách hàng. Tìm hiểu nên chọn công ty nào phù hợp với bạn."
+                - generic [ref=e146]: 16 tháng 6, 2026
+            - link "Cách đầu tư chứng khoán phái sinh từ con số 0 Phái sinh 6 phút đọc Cách đầu tư chứng khoán phái sinh từ con số 0 Hướng dẫn cách đầu tư chứng khoán phái sinh tại Việt Nam. Tìm hiểu bản chất hợp đồng tương lai VN30, cơ chế ký quỹ và cách giao dịch cho người mới. 15 tháng 6, 2026" [ref=e147] [cursor=pointer]:
+              - /url: /dau-tu/phai-sinh/cach-dau-tu-chung-khoan-phai-sinh/
+              - img "Cách đầu tư chứng khoán phái sinh từ con số 0" [ref=e149]
+              - generic [ref=e150]:
+                - generic [ref=e151]:
+                  - generic [ref=e152]: Phái sinh
+                  - generic [ref=e153]: 6 phút đọc
+                - heading "Cách đầu tư chứng khoán phái sinh từ con số 0" [level=3] [ref=e154]
+                - paragraph [ref=e155]: Hướng dẫn cách đầu tư chứng khoán phái sinh tại Việt Nam. Tìm hiểu bản chất hợp đồng tương lai VN30, cơ chế ký quỹ và cách giao dịch cho người mới.
+                - generic [ref=e156]: 15 tháng 6, 2026
+            - link "Cách đầu tư quỹ ETF cho người mới tại Việt Nam Quỹ ETF 5 phút đọc Cách đầu tư quỹ ETF cho người mới tại Việt Nam Hướng dẫn chi tiết cách đầu tư quỹ ETF tại Việt Nam từ bước mở tài khoản, chọn mã quỹ đến chiến thuật tích lũy định kỳ hiệu quả cho người bận rộn. 15 tháng 6, 2026" [ref=e157] [cursor=pointer]:
+              - /url: /dau-tu/etf/cach-dau-tu-quy-etf/
+              - img "Cách đầu tư quỹ ETF cho người mới tại Việt Nam" [ref=e159]
+              - generic [ref=e160]:
+                - generic [ref=e161]:
+                  - generic [ref=e162]: Quỹ ETF
+                  - generic [ref=e163]: 5 phút đọc
+                - heading "Cách đầu tư quỹ ETF cho người mới tại Việt Nam" [level=3] [ref=e164]
+                - paragraph [ref=e165]: Hướng dẫn chi tiết cách đầu tư quỹ ETF tại Việt Nam từ bước mở tài khoản, chọn mã quỹ đến chiến thuật tích lũy định kỳ hiệu quả cho người bận rộn.
+                - generic [ref=e166]: 15 tháng 6, 2026
+            - link "Blue chip là gì? Khái niệm và cách đầu tư thông minh cho F0 Cổ phiếu 5 phút đọc Blue chip là gì? Khái niệm và cách đầu tư thông minh cho F0 Cổ phiếu Blue chip là gì? Tìm hiểu nguồn gốc, tiêu chí xác định nhóm cổ phiếu hàng đầu và nguyên tắc đầu tư an toàn cho người mới bắt đầu. 15 tháng 6, 2026" [ref=e167] [cursor=pointer]:
+              - /url: /dau-tu/co-phieu/blue-chip-la-gi/
+              - img "Blue chip là gì? Khái niệm và cách đầu tư thông minh cho F0" [ref=e169]
+              - generic [ref=e170]:
+                - generic [ref=e171]:
+                  - generic [ref=e172]: Cổ phiếu
+                  - generic [ref=e173]: 5 phút đọc
+                - heading "Blue chip là gì? Khái niệm và cách đầu tư thông minh cho F0" [level=3] [ref=e174]
+                - paragraph [ref=e175]: Cổ phiếu Blue chip là gì? Tìm hiểu nguồn gốc, tiêu chí xác định nhóm cổ phiếu hàng đầu và nguyên tắc đầu tư an toàn cho người mới bắt đầu.
+                - generic [ref=e176]: 15 tháng 6, 2026
+            - link "Cổ tức là gì? Hướng dẫn cách nhận cổ tức cho người mới Cổ phiếu 5 phút đọc Cổ tức là gì? Hướng dẫn cách nhận cổ tức cho người mới Cổ tức là gì? Phân biệt cổ tức tiền mặt và cổ tức cổ phiếu, cách tính toán ngày giao dịch không hưởng quyền để nhận cổ tức chuẩn xác nhất. 15 tháng 6, 2026" [ref=e177] [cursor=pointer]:
+              - /url: /dau-tu/co-phieu/co-tuc-la-gi/
+              - img "Cổ tức là gì? Hướng dẫn cách nhận cổ tức cho người mới" [ref=e179]
+              - generic [ref=e180]:
+                - generic [ref=e181]:
+                  - generic [ref=e182]: Cổ phiếu
+                  - generic [ref=e183]: 5 phút đọc
+                - heading "Cổ tức là gì? Hướng dẫn cách nhận cổ tức cho người mới" [level=3] [ref=e184]
+                - paragraph [ref=e185]: Cổ tức là gì? Phân biệt cổ tức tiền mặt và cổ tức cổ phiếu, cách tính toán ngày giao dịch không hưởng quyền để nhận cổ tức chuẩn xác nhất.
+                - generic [ref=e186]: 15 tháng 6, 2026
+            - link "EPS là gì? Ý nghĩa và cách tính chỉ số EPS chuẩn xác Phân tích cơ bản 5 phút đọc EPS là gì? Ý nghĩa và cách tính chỉ số EPS chuẩn xác Chỉ số EPS là gì? Hướng dẫn công thức tính EPS cơ bản và EPS pha loãng, ý nghĩa của EPS đối với việc lựa chọn cổ phiếu và tính định giá P/E. 15 tháng 6, 2026" [ref=e187] [cursor=pointer]:
+              - /url: /phan-tich/co-ban/eps-la-gi/
+              - img "EPS là gì? Ý nghĩa và cách tính chỉ số EPS chuẩn xác" [ref=e189]
+              - generic [ref=e190]:
+                - generic [ref=e191]:
+                  - generic [ref=e192]: Phân tích cơ bản
+                  - generic [ref=e193]: 5 phút đọc
+                - heading "EPS là gì? Ý nghĩa và cách tính chỉ số EPS chuẩn xác" [level=3] [ref=e194]
+                - paragraph [ref=e195]: Chỉ số EPS là gì? Hướng dẫn công thức tính EPS cơ bản và EPS pha loãng, ý nghĩa của EPS đối với việc lựa chọn cổ phiếu và tính định giá P/E.
+                - generic [ref=e196]: 15 tháng 6, 2026
+            - link "ETF VN30 là gì? Giải pháp tích sản đơn giản cho người bận rộn Quỹ ETF 5 phút đọc ETF VN30 là gì? Giải pháp tích sản đơn giản cho người bận rộn ETF VN30 là gì? Tìm hiểu cơ chế hoạt động của quỹ mô phỏng chỉ số VN30, danh sách các quỹ lớn tại Việt Nam và nguyên tắc đầu tư an toàn cho F0. 15 tháng 6, 2026" [ref=e197] [cursor=pointer]:
+              - /url: /dau-tu/etf/etf-vn30-la-gi/
+              - img "ETF VN30 là gì? Giải pháp tích sản đơn giản cho người bận rộn" [ref=e199]
+              - generic [ref=e200]:
+                - generic [ref=e201]:
+                  - generic [ref=e202]: Quỹ ETF
+                  - generic [ref=e203]: 5 phút đọc
+                - heading "ETF VN30 là gì? Giải pháp tích sản đơn giản cho người bận rộn" [level=3] [ref=e204]
+                - paragraph [ref=e205]: ETF VN30 là gì? Tìm hiểu cơ chế hoạt động của quỹ mô phỏng chỉ số VN30, danh sách các quỹ lớn tại Việt Nam và nguyên tắc đầu tư an toàn cho F0.
+                - generic [ref=e206]: 15 tháng 6, 2026
+            - link "Hợp đồng tương lai là gì? Cẩm nang phái sinh cho người mới Phái sinh 6 phút đọc Hợp đồng tương lai là gì? Cẩm nang phái sinh cho người mới Hợp đồng tương lai là gì? Tìm hiểu cơ chế giao dịch phái sinh VN30, tỷ lệ ký quỹ, cách kiếm tiền hai chiều và các rủi ro cần biết trước khi chơi. 15 tháng 6, 2026" [ref=e207] [cursor=pointer]:
+              - /url: /dau-tu/phai-sinh/hop-dong-tuong-lai-la-gi/
+              - img "Hợp đồng tương lai là gì? Cẩm nang phái sinh cho người mới" [ref=e209]
+              - generic [ref=e210]:
+                - generic [ref=e211]:
+                  - generic [ref=e212]: Phái sinh
+                  - generic [ref=e213]: 6 phút đọc
+                - heading "Hợp đồng tương lai là gì? Cẩm nang phái sinh cho người mới" [level=3] [ref=e214]
+                - paragraph [ref=e215]: Hợp đồng tương lai là gì? Tìm hiểu cơ chế giao dịch phái sinh VN30, tỷ lệ ký quỹ, cách kiếm tiền hai chiều và các rủi ro cần biết trước khi chơi.
+                - generic [ref=e216]: 15 tháng 6, 2026
+            - link "Margin là gì? Bản chất và cách sử dụng đòn bẩy ký quỹ an toàn Cổ phiếu 6 phút đọc Margin là gì? Bản chất và cách sử dụng đòn bẩy ký quỹ an toàn Margin là gì? Tìm hiểu cách hoạt động của giao dịch ký quỹ, hiện tượng call margin, force sell và những nguyên tắc quản trị rủi ro đòn bẩy chứng khoán. 15 tháng 6, 2026" [ref=e217] [cursor=pointer]:
+              - /url: /dau-tu/co-phieu/margin-la-gi/
+              - img "Margin là gì? Bản chất và cách sử dụng đòn bẩy ký quỹ an toàn" [ref=e219]
+              - generic [ref=e220]:
+                - generic [ref=e221]:
+                  - generic [ref=e222]: Cổ phiếu
+                  - generic [ref=e223]: 6 phút đọc
+                - heading "Margin là gì? Bản chất và cách sử dụng đòn bẩy ký quỹ an toàn" [level=3] [ref=e224]
+                - paragraph [ref=e225]: Margin là gì? Tìm hiểu cách hoạt động của giao dịch ký quỹ, hiện tượng call margin, force sell và những nguyên tắc quản trị rủi ro đòn bẩy chứng khoán.
+                - generic [ref=e226]: 15 tháng 6, 2026
+            - link "P/B là gì? Ý nghĩa và cách dùng chỉ số P/B định giá doanh nghiệp Phân tích cơ bản 5 phút đọc P/B là gì? Ý nghĩa và cách dùng chỉ số P/B định giá doanh nghiệp Chỉ số P/B là gì? Tìm hiểu công thức tính, ý nghĩa của P/B cao hay thấp và cách định giá cổ phiếu ngành ngân hàng tài chính chuẩn xác nhất. 15 tháng 6, 2026" [ref=e227] [cursor=pointer]:
+              - /url: /phan-tich/co-ban/pb-la-gi/
+              - img "P/B là gì? Ý nghĩa và cách dùng chỉ số P/B định giá doanh nghiệp" [ref=e229]
+              - generic [ref=e230]:
+                - generic [ref=e231]:
+                  - generic [ref=e232]: Phân tích cơ bản
+                  - generic [ref=e233]: 5 phút đọc
+                - heading "P/B là gì? Ý nghĩa và cách dùng chỉ số P/B định giá doanh nghiệp" [level=3] [ref=e234]
+                - paragraph [ref=e235]: Chỉ số P/B là gì? Tìm hiểu công thức tính, ý nghĩa của P/B cao hay thấp và cách định giá cổ phiếu ngành ngân hàng tài chính chuẩn xác nhất.
+                - generic [ref=e236]: 15 tháng 6, 2026
+            - 'link "Review công ty chứng khoán cho người mới: Chọn ở đâu tốt? Reviews 5 phút đọc Review công ty chứng khoán cho người mới: Chọn ở đâu tốt? Review chi tiết ưu và nhược điểm của các công ty chứng khoán lớn tại Việt Nam giúp người mới bắt đầu (F0) lựa chọn nơi mở tài khoản tốt nhất. 15 tháng 6, 2026" [ref=e237] [cursor=pointer]':
+              - /url: /reviews/review-cong-ty-chung-khoan-cho-nguoi-moi/
+              - 'img "Review công ty chứng khoán cho người mới: Chọn ở đâu tốt?" [ref=e239]'
+              - generic [ref=e240]:
+                - generic [ref=e241]:
+                  - generic [ref=e242]: Reviews
+                  - generic [ref=e243]: 5 phút đọc
+                - 'heading "Review công ty chứng khoán cho người mới: Chọn ở đâu tốt?" [level=3] [ref=e244]'
+                - paragraph [ref=e245]: Review chi tiết ưu và nhược điểm của các công ty chứng khoán lớn tại Việt Nam giúp người mới bắt đầu (F0) lựa chọn nơi mở tài khoản tốt nhất.
+                - generic [ref=e246]: 15 tháng 6, 2026
+            - link "ROA là gì? Ý nghĩa và cách phân biệt chỉ số ROA với ROE Phân tích cơ bản 5 phút đọc ROA là gì? Ý nghĩa và cách phân biệt chỉ số ROA với ROE Chỉ số ROA là gì? Hướng dẫn cách tính ROA, so sánh sự khác nhau giữa ROA và ROE giúp nhà đầu tư F0 đánh giá hiệu quả sử dụng tài sản. 15 tháng 6, 2026" [ref=e247] [cursor=pointer]:
+              - /url: /phan-tich/co-ban/roa-la-gi/
+              - img "ROA là gì? Ý nghĩa và cách phân biệt chỉ số ROA với ROE" [ref=e249]
+              - generic [ref=e250]:
+                - generic [ref=e251]:
+                  - generic [ref=e252]: Phân tích cơ bản
+                  - generic [ref=e253]: 5 phút đọc
+                - heading "ROA là gì? Ý nghĩa và cách phân biệt chỉ số ROA với ROE" [level=3] [ref=e254]
+                - paragraph [ref=e255]: Chỉ số ROA là gì? Hướng dẫn cách tính ROA, so sánh sự khác nhau giữa ROA và ROE giúp nhà đầu tư F0 đánh giá hiệu quả sử dụng tài sản.
+                - generic [ref=e256]: 15 tháng 6, 2026
+            - link "ROE là gì? Cách đọc chỉ số ROE để tìm doanh nghiệp siêu hạng Phân tích cơ bản 5 phút đọc ROE là gì? Cách đọc chỉ số ROE để tìm doanh nghiệp siêu hạng Chỉ số ROE là gì? Hướng dẫn cách tính ROE, ý nghĩa của ROE đối với hiệu quả sử dụng vốn và cách nhận biết rủi ro đòn bẩy tài chính. 15 tháng 6, 2026" [ref=e257] [cursor=pointer]:
+              - /url: /phan-tich/co-ban/roe-la-gi/
+              - img "ROE là gì? Cách đọc chỉ số ROE để tìm doanh nghiệp siêu hạng" [ref=e259]
+              - generic [ref=e260]:
+                - generic [ref=e261]:
+                  - generic [ref=e262]: Phân tích cơ bản
+                  - generic [ref=e263]: 5 phút đọc
+                - heading "ROE là gì? Cách đọc chỉ số ROE để tìm doanh nghiệp siêu hạng" [level=3] [ref=e264]
+                - paragraph [ref=e265]: Chỉ số ROE là gì? Hướng dẫn cách tính ROE, ý nghĩa của ROE đối với hiệu quả sử dụng vốn và cách nhận biết rủi ro đòn bẩy tài chính.
+                - generic [ref=e266]: 15 tháng 6, 2026
+            - link "RSI là gì? Hướng dẫn cách sử dụng chỉ báo RSI trong đầu tư Phân tích kỹ thuật 5 phút đọc RSI là gì? Hướng dẫn cách sử dụng chỉ báo RSI trong đầu tư Chỉ báo RSI là gì? Tìm hiểu cách tính rsi, vùng quá mua, quá bán và phương pháp giao dịch theo tín hiệu phân kỳ chuẩn xác nhất cho người mới. 15 tháng 6, 2026" [ref=e267] [cursor=pointer]:
+              - /url: /phan-tich/ky-thuat/rsi-la-gi/
+              - img "RSI là gì? Hướng dẫn cách sử dụng chỉ báo RSI trong đầu tư" [ref=e269]
+              - generic [ref=e270]:
+                - generic [ref=e271]:
+                  - generic [ref=e272]: Phân tích kỹ thuật
+                  - generic [ref=e273]: 5 phút đọc
+                - heading "RSI là gì? Hướng dẫn cách sử dụng chỉ báo RSI trong đầu tư" [level=3] [ref=e274]
+                - paragraph [ref=e275]: Chỉ báo RSI là gì? Tìm hiểu cách tính rsi, vùng quá mua, quá bán và phương pháp giao dịch theo tín hiệu phân kỳ chuẩn xác nhất cho người mới.
+                - generic [ref=e276]: 15 tháng 6, 2026
+            - link "Trái phiếu doanh nghiệp là gì? Hướng dẫn đầu tư an toàn cho F0 Trái phiếu 6 phút đọc Trái phiếu doanh nghiệp là gì? Hướng dẫn đầu tư an toàn cho F0 Trái phiếu doanh nghiệp là gì? Tìm hiểu cách hoạt động, so sánh với gửi tiết kiệm ngân hàng và các rủi ro tín dụng cần biết trước khi xuống tiền. 15 tháng 6, 2026" [ref=e277] [cursor=pointer]:
+              - /url: /dau-tu/trai-phieu/trai-phieu-doanh-nghiep/
+              - img "Trái phiếu doanh nghiệp là gì? Hướng dẫn đầu tư an toàn cho F0" [ref=e279]
+              - generic [ref=e280]:
+                - generic [ref=e281]:
+                  - generic [ref=e282]: Trái phiếu
+                  - generic [ref=e283]: 6 phút đọc
+                - heading "Trái phiếu doanh nghiệp là gì? Hướng dẫn đầu tư an toàn cho F0" [level=3] [ref=e284]
+                - paragraph [ref=e285]: Trái phiếu doanh nghiệp là gì? Tìm hiểu cách hoạt động, so sánh với gửi tiết kiệm ngân hàng và các rủi ro tín dụng cần biết trước khi xuống tiền.
+                - generic [ref=e286]: 15 tháng 6, 2026
+            - 'link "Cách đầu tư cổ phiếu: Hướng dẫn thực chiến từ con số 0 Cổ phiếu 5 phút đọc Cách đầu tư cổ phiếu: Hướng dẫn thực chiến từ con số 0 Hướng dẫn cách đầu tư cổ phiếu bài bản cho người mới. Quy trình từng bước mở tài khoản, nạp tiền, chọn mã tốt và quản trị rủi ro thực tế từ con số 0. 14 tháng 6, 2026" [ref=e287] [cursor=pointer]':
+              - /url: /dau-tu/co-phieu/cach-dau-tu-co-phieu/
+              - 'img "Cách đầu tư cổ phiếu: Hướng dẫn thực chiến từ con số 0" [ref=e289]'
+              - generic [ref=e290]:
+                - generic [ref=e291]:
+                  - generic [ref=e292]: Cổ phiếu
+                  - generic [ref=e293]: 5 phút đọc
+                - 'heading "Cách đầu tư cổ phiếu: Hướng dẫn thực chiến từ con số 0" [level=3] [ref=e294]'
+                - paragraph [ref=e295]: Hướng dẫn cách đầu tư cổ phiếu bài bản cho người mới. Quy trình từng bước mở tài khoản, nạp tiền, chọn mã tốt và quản trị rủi ro thực tế từ con số 0.
+                - generic [ref=e296]: 14 tháng 6, 2026
+            - 'link "Cách đầu tư trái phiếu cho người mới: 3 cách phổ biến Trái phiếu 7 phút đọc Cách đầu tư trái phiếu cho người mới: 3 cách phổ biến Cách đầu tư trái phiếu cho người mới bắt đầu tại Việt Nam, gồm 3 phương thức phổ biến, vốn tối thiểu, rủi ro cần biết và các bước thực hiện cụ thể. 14 tháng 6, 2026" [ref=e297] [cursor=pointer]':
+              - /url: /dau-tu/trai-phieu/cach-dau-tu-trai-phieu/
+              - 'img "Cách đầu tư trái phiếu cho người mới: 3 cách phổ biến" [ref=e299]'
+              - generic [ref=e300]:
+                - generic [ref=e301]:
+                  - generic [ref=e302]: Trái phiếu
+                  - generic [ref=e303]: 7 phút đọc
+                - 'heading "Cách đầu tư trái phiếu cho người mới: 3 cách phổ biến" [level=3] [ref=e304]'
+                - paragraph [ref=e305]: Cách đầu tư trái phiếu cho người mới bắt đầu tại Việt Nam, gồm 3 phương thức phổ biến, vốn tối thiểu, rủi ro cần biết và các bước thực hiện cụ thể.
+                - generic [ref=e306]: 14 tháng 6, 2026
+          - button "Tải thêm bài viết" [ref=e308] [cursor=pointer]
+      - complementary "Thông tin hồ sơ" [ref=e309]:
+        - generic [ref=e310]:
+          - heading "Kinh nghiệm nội dung" [level=2] [ref=e311]
+          - paragraph [ref=e312]: Hơn 3 năm kinh nghiệm thực tế triển khai nội dung tài chính và tối ưu hiệu suất tìm kiếm cho các sản phẩm tài chính lớn (hiện là Chuyên viên SEO tại Công ty Chứng khoán DSC). Chuyên sâu về nghiên cứu hành vi tìm kiếm của nhà đầu tư cá nhân và đơn giản hóa cấu trúc thông tin.
+        - generic [ref=e313]:
+          - heading "Học văn" [level=2] [ref=e314]
+          - paragraph [ref=e315]: Tự học và nghiên cứu thực chiến về SEO kỹ thuật, Marketing tài chính và các hệ thống tự động hóa nội dung.
+        - generic [ref=e316]:
+          - heading "Liên hệ" [level=2] [ref=e317]
+          - link "LinkedIn" [ref=e319] [cursor=pointer]:
+            - /url: https://www.linkedin.com/in/locnguyen0411/
+        - generic [ref=e320]:
+          - heading "Xuất hiện trên" [level=2] [ref=e321]
+          - generic [ref=e323]: Value Investing
+  - contentinfo [ref=e324]:
+    - generic [ref=e325]:
+      - generic [ref=e326]:
+        - strong [ref=e327]: Value Investing
+        - paragraph [ref=e328]: Kiến thức đầu tư giá trị cho người Việt, miễn phí, có nguồn, không khuyến nghị mua bán.
+      - generic [ref=e329]:
+        - heading "Đầu tư" [level=5] [ref=e330]
+        - link "Cổ phiếu" [ref=e331] [cursor=pointer]:
+          - /url: /dau-tu/co-phieu/
+        - link "Quỹ ETF" [ref=e332] [cursor=pointer]:
+          - /url: /dau-tu/etf/
+        - link "Trái phiếu" [ref=e333] [cursor=pointer]:
+          - /url: /dau-tu/trai-phieu/
+        - link "Phái sinh" [ref=e334] [cursor=pointer]:
+          - /url: /dau-tu/phai-sinh/
+      - generic [ref=e335]:
+        - heading "Phân tích & Review" [level=5] [ref=e336]
+        - link "Phân tích cơ bản" [ref=e337] [cursor=pointer]:
+          - /url: /phan-tich/co-ban/
+        - link "Phân tích kỹ thuật" [ref=e338] [cursor=pointer]:
+          - /url: /phan-tich/ky-thuat/
+        - link "Reviews" [ref=e339] [cursor=pointer]:
+          - /url: /reviews/
+        - link "Nhà đầu tư" [ref=e340] [cursor=pointer]:
+          - /url: /nha-dau-tu/
+      - generic [ref=e341]:
+        - heading "Về trang web" [level=5] [ref=e342]
+        - link "Về dự án" [ref=e343] [cursor=pointer]:
+          - /url: /about/
+        - link "Biên tập" [ref=e344] [cursor=pointer]:
+          - /url: /editorial-policy/
+        - link "Nguồn tham khảo" [ref=e345] [cursor=pointer]:
+          - /url: /sources-policy/
+        - link "Đính chính" [ref=e346] [cursor=pointer]:
+          - /url: /corrections-policy/
+        - link "Liên hệ" [ref=e347] [cursor=pointer]:
+          - /url: /contact/
+    - generic [ref=e348]: © 2026 Value Investing. Value Investing không cung cấp dịch vụ tư vấn đầu tư cá nhân, môi giới chứng khoán hoặc tín hiệu giao dịch. Nội dung chỉ nhằm mục đích giáo dục.
+  - generic [ref=e351]:
+    - button "Menu" [ref=e352]:
+      - img [ref=e354]
+      - generic: Menu
+    - button "Inspect" [ref=e358]:
+      - img [ref=e360]
+      - generic: Inspect
+    - button "Audit" [ref=e362]:
+      - img [ref=e364]
+      - generic: Audit
+    - button "Settings" [ref=e367]:
+      - img [ref=e369]
+      - generic: Settings

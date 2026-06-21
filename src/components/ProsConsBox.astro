@@ -9,16 +9,26 @@ const { pros, cons } = Astro.props;
 
 <div class="pros-cons-box">
   <div class="pros-col">
-    <p class="pc-label">Ưu điểm</p>
-    <ul>
-      {pros.map((item) => <li>{item}</li>)}
-    </ul>
+    <div class="pc-label">Ưu điểm</div>
+    <div class="pc-list">
+      {pros.map((item) => (
+        <div class="pc-item pc-item--pro">
+          <span class="pc-icon" aria-hidden="true">✓</span>
+          <span class="pc-text">{item}</span>
+        </div>
+      ))}
+    </div>
   </div>
   <div class="cons-col">
-    <p class="pc-label">Nhược điểm</p>
-    <ul>
-      {cons.map((item) => <li>{item}</li>)}
-    </ul>
+    <div class="pc-label">Nhược điểm</div>
+    <div class="pc-list">
+      {cons.map((item) => (
+        <div class="pc-item pc-item--con">
+          <span class="pc-icon" aria-hidden="true">✕</span>
+          <span class="pc-text">{item}</span>
+        </div>
+      ))}
+    </div>
   </div>
 </div>
 
@@ -33,68 +43,58 @@ const { pros, cons } = Astro.props;
   .pros-col,
   .cons-col {
     border: 1px solid var(--line);
-    border-radius: 0px;
-    padding: var(--space-4) var(--space-5);
+    padding: var(--space-4);
     box-shadow: var(--shadow-sm);
   }
 
   .pros-col {
     background: var(--color-mint);
-    border-left: 6px solid var(--line);
+    border-left: 4px solid #1a7a4a;
   }
 
   .cons-col {
     background: var(--color-peach);
-    border-left: 6px solid var(--line);
+    border-left: 4px solid #b83232;
   }
 
   .pc-label {
-    margin: 0 0 var(--space-2);
-    font-size: 0.78rem;
+    font-size: 0.72rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.08em;
+    color: var(--muted);
+    margin-bottom: var(--space-3);
+  }
+
+  .pc-list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .pc-item {
+    display: flex;
+    align-items: baseline;
+    gap: 7px;
+    font-size: 0.84rem;
+    line-height: 1.55;
     color: var(--text);
   }
 
-  .pros-col ul,
-  .cons-col ul {
-    margin: 0;
-    padding-left: 1.25rem;
-    list-style: none;
-    display: grid;
-    gap: var(--space-2);
-  }
-
-  .pros-col li,
-  .cons-col li {
-    font-size: 0.94rem;
-    color: var(--text);
-    line-height: 1.6;
+  .pc-icon {
+    flex-shrink: 0;
+    font-size: 0.65rem;
+    font-weight: 900;
+    line-height: 1;
     position: relative;
-    font-weight: 500;
+    top: 1px;
   }
 
-  .pros-col li::before {
-    content: "✓";
-    position: absolute;
-    left: -1.4rem;
-    top: 0;
-    font-size: 0.9rem;
-    font-weight: 700;
-    color: #1a7a4a;
-    line-height: 1.6;
-  }
+  .pc-item--pro .pc-icon { color: #1a7a4a; }
+  .pc-item--con .pc-icon { color: #b83232; }
 
-  .cons-col li::before {
-    content: "✕";
-    position: absolute;
-    left: -1.4rem;
-    top: 0;
-    font-size: 0.9rem;
-    font-weight: 700;
-    color: #b83232;
-    line-height: 1.6;
+  .pc-text {
+    flex: 1;
   }
 
   @media (max-width: 580px) {

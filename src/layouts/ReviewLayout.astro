@@ -20,7 +20,7 @@ interface Props {
 }
 
 const { entry, headings = [] } = Astro.props;
-const { title, description, publishDate, updatedDate, readingTime, sources, heroImage } = entry.data;
+const { title, description, publishDate, updatedDate, readingTime, sources, heroImage, citations, factCheckedDate } = entry.data;
 
 // Merge each broker entry with central registry — article values override registry defaults.
 const mergedBrokers = (entry.data.brokers ?? []).map(
@@ -72,15 +72,46 @@ const sameAs = author.socialLinks
   ? [author.socialLinks.linkedin, author.socialLinks.twitter].filter((v): v is string => Boolean(v))
   : [];
 
+const structuredCitations = citations?.length
+  ? citations.map((c: { title: string; url?: string; publisher?: string; date?: string }) => ({
+      "@type": "CreativeWork",
+      "name": c.title,
+      ...(c.url ? { "url": c.url } : {}),
+      ...(c.publisher ? { "publisher": { "@type": "Organization", "name": c.publisher } } : {}),
+      ...(c.date ? { "datePublished": c.date } : {}),
+    }))
+  : sources;
+
+const isCompanyReview = entry.data.reviewType === "company";
+const primaryBroker = isCompanyReview ? mergedBrokers[0] : null;
+
 const articleSchema = {
   "@context": "https://schema.org",
-  "@type": "Article",
+  "@type": isCompanyReview ? ["Article", "Review"] : "Article",
+  "@id": `${articleUrl}#article`,
   "headline": title,
   "description": description,
   "url": articleUrl,
+  "mainEntityOfPage": { "@type": "WebPage", "@id": articleUrl },
   "datePublished": publishDate.toISOString(),
   "dateModified": updatedDate.toISOString(),
   "inLanguage": "vi",
+  "articleSection": categoryTitle,
+  "keywords": entry.data.tags?.join(", "),
+  ...(factCheckedDate ? { "dateReviewed": factCheckedDate.toISOString() } : {}),
+  ...(isCompanyReview && primaryBroker ? {
+    "itemReviewed": {
+      "@type": "FinancialService",
+      "name": primaryBroker.name,
+      ...(entry.data.companyInfo?.website ? { "url": entry.data.companyInfo.website } : {}),
+    },
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": primaryBroker.rating,
+      "bestRating": 5,
+      "worstRating": 0,
+    },
+  } : {}),
   "image": {
     "@type": "ImageObject",
     "url": ogImageUrl,
@@ -89,21 +120,27 @@ const articleSchema = {
   },
   "author": {
     "@type": "Person",
+    "@id": new URL(`/author/${author.slug}/#person`, Astro.site).toString(),
     "name": author.name,
     "url": new URL(`/author/${author.slug}/`, Astro.site).toString(),
     "jobTitle": author.role,
     "description": author.bio,
     "knowsAbout": author.expertise,
+    "image": {
+      "@type": "ImageObject",
+      "url": new URL(author.avatar, Astro.site).toString(),
+    },
     ...(sameAs.length > 0 ? { "sameAs": sameAs } : {}),
   },
   "reviewedBy": {
     "@type": "Organization",
+    "@id": `${Astro.site}#organization`,
     "name": site.editorialReviewer,
     "url": new URL("/editorial-policy/", Astro.site).toString(),
   },
   "publisher": { "@id": `${Astro.site}#organization` },
   "isPartOf": { "@id": `${Astro.site}#website` },
-  "citation": sources,
+  "citation": structuredCitations,
 };
 
 const faqSchema = entry.data.faq?.length
@@ -140,7 +177,7 @@ const breadcrumbSchema = {
 
 const reviewType = entry.data.reviewType as "company" | "comparison" | "listicle" | undefined;
 
-const navItemsByType: Record<string, { label: string; href: string }[]> = {
+const structuredNavByType: Record<string, { label: string; href: string }[]> = {
   company: [
     { label: "Tiêu chí đánh giá", href: "#tieu-chi-danh-gia" },
     { label: "Thông tin nhanh", href: "#thong-tin-nhanh" },
@@ -149,17 +186,29 @@ const navItemsByType: Record<string, { label: string; href: string }[]> = {
     { label: "Người dùng nói gì", href: "#phan-hoi-nguoi-dung" },
   ],
   comparison: [
-    { label: "So sánh", href: "#so-sanh" },
+    { label: "Kết luận", href: "#ket-luan-tong-the" },
+    { label: "So sánh nhanh", href: "#so-sanh" },
     { label: "Ưu nhược điểm", href: "#uu-nhuoc-diem" },
     { label: "Nên chọn ai", href: "#nen-chon-ai" },
   ],
   listicle: [
-    { label: "Tổng quan", href: "#tong-quan" },
+    { label: "Chọn nhanh", href: "#chon-nhanh" },
+    { label: "So sánh", href: "#tong-quan" },
     { label: "Xếp hạng", href: "#xep-hang" },
+    { label: "Nên chọn ai?", href: "#nen-chon-ai" },
   ],
 };
 
-const navItems = reviewType ? navItemsByType[reviewType] ?? [] : [];
+const proseHeadings = headings
+  .filter((h) => h.depth === 2)
+  .map((h) => ({ label: h.text, href: `#${h.slug}` }));
+
+const structuredItems = reviewType ? structuredNavByType[reviewType] ?? [] : [];
+
+// Merge: structured component sections first, then prose H2s (deduplicate by href)
+const structuredHrefs = new Set(structuredItems.map((i) => i.href));
+const proseOnly = proseHeadings.filter((h) => !structuredHrefs.has(h.href));
+const navItems = [...structuredItems, ...proseOnly];
 ---
 
 <BaseLayout
@@ -232,6 +281,7 @@ const navItems = reviewType ? navItemsByType[reviewType] ?? [] : [];
         <CompanyReviewBody
           companyInfo={mergedBrokers[0]?.companyInfo ?? entry.data.companyInfo}
           accountSteps={entry.data.accountSteps?.length ? entry.data.accountSteps : (mergedBrokers[0]?.accountSteps ?? [])}
+          officialResources={entry.data.officialResources ?? []}
           pros={mergedBrokers[0]?.pros ?? []}
           cons={mergedBrokers[0]?.cons ?? []}
           rating={mergedBrokers[0]?.rating ?? 0}
@@ -429,14 +479,19 @@ const navItems = reviewType ? navItemsByType[reviewType] ?? [] : [];
     box-shadow: none;
   }
 
+  /* Match article-container--toc width from ArticleLayout */
+  .article-container {
+    width: min(100% - 32px, calc(var(--article) + 240px + var(--space-12)));
+  }
+
   /* Hero Image Layout */
   .article-hero-wrapper {
-    width: min(100% - 32px, var(--article));
+    width: min(100% - 32px, calc(var(--article) + 240px + var(--space-12)));
     margin: 0 auto var(--space-8);
   }
 
   .article-hero {
-    border: 1px solid var(--line);
+    border: 2px solid var(--line);
     box-shadow: var(--shadow-lg);
     background: var(--surface-alt);
     line-height: 0;
@@ -445,14 +500,12 @@ const navItems = reviewType ? navItemsByType[reviewType] ?? [] : [];
   .article-hero img {
     width: 100%;
     height: auto;
-    aspect-ratio: 5 / 3;
-    object-fit: cover;
     display: block;
   }
 
   /* Article body: single column, no TOC sidebar for review pages */
   .article-body {
-    width: min(100% - 32px, var(--article));
+    width: min(100% - 32px, calc(var(--article) + 240px + var(--space-12)));
     margin-inline: auto;
     padding-bottom: var(--space-16);
   }

@@ -2,7 +2,7 @@ export const site = {
   name: "Value Investing",
   email: "hello@valueinvesting.com.vn",
   description:
-    "Đơn giản hóa kiến thức đầu tư tài chính dài hạn và sản phẩm tài chính cơ bản cho người mới bắt đầu (F0) tại Việt Nam bằng ngôn ngữ đời thường, thực chiến.",
+    "Tìm hiểu cổ phiếu, ETF, quỹ đầu tư và phân tích tài chính dành cho người mới (F0) tại Việt Nam. Kiến thức thực chiến, cập nhật 2026, ngôn ngữ đời thường.",
   editorialReviewer: "Ban biên tập Value Investing",
   trustStats: [
     "Nội dung giáo dục, không khuyến nghị mua bán",
@@ -27,7 +27,7 @@ export const categories = [
     group: "Đầu tư",
     groupPath: "/dau-tu/",
     description:
-      "Nền tảng về cổ phiếu, cổ tức, blue chip, margin và các khái niệm cần biết trước khi tham gia thị trường.",
+      "Tìm hiểu cổ phiếu là gì, cách mua bán, phân tích cổ tức, blue chip và margin cho người mới tại Việt Nam. Kiến thức nền tảng, cập nhật 2026.",
     path: "/dau-tu/co-phieu/",
   },
   {
@@ -36,7 +36,7 @@ export const categories = [
     group: "Đầu tư",
     groupPath: "/dau-tu/",
     description:
-      "Tìm hiểu ETF, quỹ mở, chứng chỉ quỹ — các loại quỹ đầu tư và cách chọn quỹ phù hợp cho chiến lược dài hạn.",
+      "Tất cả về quỹ ETF tại Việt Nam: cách hoạt động, danh sách ETF HOSE, so sánh với quỹ mở và hướng dẫn mua ETF lần đầu dành cho F0.",
     path: "/dau-tu/etf/",
   },
   {
@@ -45,7 +45,7 @@ export const categories = [
     group: "Đầu tư",
     groupPath: "/dau-tu/",
     description:
-      "Kiến thức cơ bản về trái phiếu chính phủ, trái phiếu doanh nghiệp, lợi suất và rủi ro tín dụng.",
+      "Kiến thức trái phiếu chính phủ và doanh nghiệp tại Việt Nam: lãi suất, rủi ro, cách mua và so sánh với cổ phiếu. Cập nhật 2026.",
     path: "/dau-tu/trai-phieu/",
   },
   {
@@ -54,7 +54,7 @@ export const categories = [
     group: "Đầu tư",
     groupPath: "/dau-tu/",
     description:
-      "Khái niệm hợp đồng tương lai, ký quỹ phái sinh, đòn bẩy và rủi ro trước khi giao dịch.",
+      "Hướng dẫn phái sinh cơ bản: hợp đồng tương lai VN30, ký quỹ, cách giao dịch và quản lý rủi ro cho người mới tìm hiểu phái sinh.",
     path: "/dau-tu/phai-sinh/",
   },
   {
@@ -62,7 +62,7 @@ export const categories = [
     slug: "co-ban",
     group: "Phân tích",
     description:
-      "Các chỉ số như P/E, P/B, ROE, ROA, EPS và phương pháp đọc báo cáo tài chính.",
+      "Phân tích cơ bản cho nhà đầu tư Việt Nam: P/E, P/B, ROE, EPS, định giá cổ phiếu và cách đọc báo cáo tài chính doanh nghiệp niêm yết.",
     path: "/phan-tich/co-ban/",
   },
   {
@@ -70,7 +70,7 @@ export const categories = [
     slug: "ky-thuat",
     group: "Phân tích",
     description:
-      "Đọc biểu đồ, xu hướng, hỗ trợ/kháng cự, các chỉ báo RSI, MACD và ứng dụng trong giao dịch.",
+      "Phân tích kỹ thuật cơ bản: đọc biểu đồ nến, RSI, MACD, Bollinger Bands, vùng hỗ trợ kháng cự cho nhà đầu tư chứng khoán Việt Nam.",
     path: "/phan-tich/ky-thuat/",
   },
   {
@@ -78,7 +78,7 @@ export const categories = [
     slug: "reviews",
     group: "Reviews",
     description:
-      "Đánh giá công ty chứng khoán, sản phẩm đầu tư và các so sánh hữu ích cho người mới.",
+      "Đánh giá khách quan công ty chứng khoán, quỹ đầu tư và ứng dụng tài chính Việt Nam. So sánh phí, tính năng và chất lượng dịch vụ 2026.",
     path: "/reviews/",
   },
   {
@@ -86,7 +86,7 @@ export const categories = [
     slug: "nha-dau-tu",
     group: "Nhà đầu tư",
     description:
-      "Bài học từ Warren Buffett, Benjamin Graham, Charlie Munger, Peter Lynch và các nhà đầu tư dài hạn.",
+      "Bài học từ nhà đầu tư huyền thoại: Warren Buffett, Benjamin Graham, Peter Lynch và triết lý đầu tư giá trị áp dụng cho thị trường Việt Nam.",
     path: "/nha-dau-tu/",
   },
 ];

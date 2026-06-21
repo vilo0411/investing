@@ -1,0 +1,255 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation "Menu chính" [ref=e3]:
+      - link "Value Investing" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - img [ref=e5]
+        - generic [ref=e8]: Value Investing
+      - generic [ref=e9]:
+        - link "Đầu tư" [ref=e11] [cursor=pointer]:
+          - /url: /dau-tu/
+          - text: Đầu tư
+          - img [ref=e12]
+        - link "Phân tích" [ref=e15] [cursor=pointer]:
+          - /url: /phan-tich/
+          - text: Phân tích
+          - img [ref=e16]
+        - link "Nhà đầu tư" [ref=e18] [cursor=pointer]:
+          - /url: /nha-dau-tu/
+        - link "Reviews" [ref=e19] [cursor=pointer]:
+          - /url: /reviews/
+      - button "Mở tìm kiếm" [ref=e21]:
+        - img [ref=e22]
+  - main [ref=e25]:
+    - generic [ref=e27]:
+      - navigation "Breadcrumb" [ref=e28]:
+        - list [ref=e29]:
+          - listitem [ref=e30]:
+            - link "Trang chủ" [ref=e31] [cursor=pointer]:
+              - /url: /
+            - generic [ref=e32]: /
+          - listitem [ref=e33]:
+            - link "Nhà đầu tư" [ref=e34] [cursor=pointer]:
+              - /url: /nha-dau-tu/
+            - generic [ref=e35]: /
+          - listitem [ref=e36]:
+            - generic [ref=e37]: Warren Buffett là ai? Triết lý đầu tư của nhà hiền triết Omaha
+      - generic [ref=e38]: Nhà đầu tư
+      - heading "Warren Buffett là ai? Triết lý đầu tư của nhà hiền triết Omaha" [level=1] [ref=e39]
+      - paragraph [ref=e40]: Warren Buffett là ai? Tìm hiểu tiểu sử, quá trình xây dựng Berkshire Hathaway và các triết lý đầu tư dài hạn bất hủ của huyền thoại đầu tư.
+      - generic [ref=e41]:
+        - generic [ref=e42]: L
+        - generic [ref=e43]:
+          - generic [ref=e44]:
+            - generic [ref=e45]: "Tác giả:"
+            - link "Nguyễn Viết Lộc" [ref=e46] [cursor=pointer]:
+              - /url: /author/nguyen-viet-loc/
+            - generic [ref=e47]: "|"
+            - generic [ref=e48]: "Cập nhật: 21/6/2026"
+            - generic [ref=e49]: "|"
+            - generic [ref=e50]: 8 phút đọc
+          - generic [ref=e52]:
+            - text: Rà soát theo
+            - link "chính sách biên tập" [ref=e53] [cursor=pointer]:
+              - /url: /editorial-policy/
+      - generic "Thông tin độ tin cậy của bài viết" [ref=e54]:
+        - generic [ref=e55]: Kiểm tra nguồn
+        - generic [ref=e56]: Không tư vấn cá nhân
+        - generic [ref=e57]: Có quy trình đính chính
+    - img "Warren Buffett là ai? Triết lý đầu tư của nhà hiền triết Omaha" [ref=e60]
+    - generic [ref=e61]:
+      - complementary "Mục lục bài viết" [ref=e62]:
+        - navigation "Mục lục" [ref=e63]:
+          - paragraph [ref=e64]: Mục lục
+          - list [ref=e65]:
+            - listitem [ref=e66]:
+              - link "Warren Buffett là ai? Từ cậu bé bán báo đến huyền thoại phố Wall" [ref=e67] [cursor=pointer]:
+                - /url: "#warren-buffett-là-ai-từ-cậu-bé-bán-báo-đến-huyền-thoại-phố-wall"
+            - listitem [ref=e68]:
+              - 'link "Triết lý 1: Mua doanh nghiệp tốt thay vì mua cổ phiếu rẻ" [ref=e69] [cursor=pointer]':
+                - /url: "#triết-lý-1-mua-doanh-nghiệp-tốt-thay-vì-mua-cổ-phiếu-rẻ"
+            - listitem [ref=e70]:
+              - 'link "Triết lý 2: Vòng tròn năng lực (Circle of Competence)" [ref=e71] [cursor=pointer]':
+                - /url: "#triết-lý-2-vòng-tròn-năng-lực-circle-of-competence"
+            - listitem [ref=e72]:
+              - 'link "Triết lý 3: Thời gian nắm giữ ưa thích là mãi mãi" [ref=e73] [cursor=pointer]':
+                - /url: "#triết-lý-3-thời-gian-nắm-giữ-ưa-thích-là-mãi-mãi"
+            - listitem [ref=e74]:
+              - 'link "Triết lý 4: Biên an toàn (Margin of Safety) và ngược chiều đám đông" [ref=e75] [cursor=pointer]':
+                - /url: "#triết-lý-4-biên-an-toàn-margin-of-safety-và-ngược-chiều-đám-đông"
+            - listitem [ref=e76]:
+              - link "Áp dụng triết lý Buffett ở Việt Nam như thế nào?" [ref=e77] [cursor=pointer]:
+                - /url: "#áp-dụng-triết-lý-buffett-ở-việt-nam-như-thế-nào"
+      - article [ref=e78]:
+        - complementary "Lưu ý tài chính" [ref=e79]:
+          - strong [ref=e80]: "Lưu ý trước khi đọc:"
+          - generic [ref=e81]: Value Investing không cung cấp dịch vụ tư vấn đầu tư cá nhân, môi giới chứng khoán hoặc tín hiệu giao dịch. Nội dung chỉ nhằm mục đích giáo dục.
+        - complementary "Tóm tắt nội dung chính" [ref=e82]:
+          - paragraph [ref=e83]: Tóm tắt nội dung chính
+          - list [ref=e84]:
+            - listitem [ref=e85]: Warren Buffett là một trong những nhà đầu tư thành công nhất mọi thời đại, chủ tịch kiêm CEO của tập đoàn Berkshire Hathaway.
+            - listitem [ref=e86]: "Triết lý cốt lõi: mua doanh nghiệp tốt với giá hợp lý, nắm giữ dài hạn — không phải mua cổ phiếu rẻ để lướt sóng."
+            - listitem [ref=e87]: Con hào kinh tế (Economic Moat) là lợi thế cạnh tranh bền vững giúp doanh nghiệp bảo vệ lợi nhuận trước đối thủ.
+            - listitem [ref=e88]: "Vòng tròn năng lực: chỉ đầu tư vào những gì bạn thực sự hiểu — không mua cổ phiếu hot theo đám đông."
+            - listitem [ref=e89]: "Biên an toàn (Margin of Safety): luôn mua cổ phiếu thấp hơn giá trị nội tại để có đệm bảo vệ nếu phân tích sai."
+        - paragraph [ref=e90]:
+          - text: Được mệnh danh là “Nhà hiền triết vùng Omaha”, Warren Buffett không chỉ là một trong những tỷ phú giàu nhất hành tinh mà còn là biểu tượng vĩ đại nhất của trường phái đầu tư giá trị. Hành trình biến một số vốn nhỏ thời trẻ thành tập đoàn Berkshire Hathaway khổng lồ đã truyền cảm hứng cho hàng triệu nhà đầu tư trên thế giới. Bài viết này từ
+          - strong [ref=e91]:
+            - link "Value Investing" [ref=e92] [cursor=pointer]:
+              - /url: /
+          - text: sẽ giúp bạn tìm hiểu
+          - strong [ref=e93]: Warren Buffett là ai
+          - text: ", bóc tách những nguyên tắc đầu tư kinh điển và cách ứng dụng triết lý đó vào thực tế."
+        - heading "Warren Buffett là ai? Từ cậu bé bán báo đến huyền thoại phố Wall" [level=2] [ref=e94]
+        - paragraph [ref=e95]: Warren Buffett sinh năm 1930 tại Omaha, Nebraska, Mỹ. Ngay từ khi còn là cậu bé, ông đã bộc lộ niềm đam mê với các con số và kinh doanh — từ bán nước ngọt, giao báo, đến lắp đặt máy chơi game.
+        - paragraph [ref=e96]: Bước ngoặt lớn nhất diễn ra khi ông đọc cuốn sách “Nhà đầu tư thông minh” của Benjamin Graham và quyết định nộp đơn vào Đại học Columbia để được trực tiếp học từ Graham.
+        - paragraph [ref=e97]:
+          - img "Bàn làm việc với sổ sách kế toán và tách trà biểu trưng cho sự điềm tĩnh của Buffett" [ref=e98]
+          - emphasis [ref=e99]: "Ảnh: Sean Pollock / Unsplash"
+        - paragraph [ref=e100]: Sau khi tích lũy kinh nghiệm và vốn liếng, Buffett mua lại Berkshire Hathaway — khi đó là một công ty dệt may đang gặp khó khăn — và từng bước chuyển đổi nó thành tập đoàn đầu tư đa ngành. Tính đến năm 2024, vốn hóa Berkshire Hathaway vượt 900 tỷ USD với các khoản đầu tư lớn vào Apple, Coca-Cola, American Express, Bank of America.
+        - 'heading "Triết lý 1: Mua doanh nghiệp tốt thay vì mua cổ phiếu rẻ" [level=2] [ref=e101]'
+        - paragraph [ref=e102]: Khác với người thầy Benjamin Graham vốn chỉ tập trung vào tài sản thanh lý giá rẻ, Buffett — dưới ảnh hưởng của người cộng sự Charlie Munger — phát triển triết lý của mình lên tầm cao mới.
+        - paragraph [ref=e103]: Ông chấp nhận mua một doanh nghiệp tuyệt vời với mức giá hợp lý, thay vì mua một doanh nghiệp trung bình với mức giá rẻ mạt.
+        - paragraph [ref=e104]: Doanh nghiệp tuyệt vời là những doanh nghiệp sở hữu con hào kinh tế (Economic Moat) rộng lớn. Đó là lợi thế cạnh tranh độc quyền giúp doanh nghiệp ngăn chặn sự xâm nhập của các đối thủ và bảo vệ biên lợi nhuận. Thương hiệu Coca-Cola, hệ sinh thái khép kín của Apple, hay mạng lưới thanh toán của Visa là những ví dụ điển hình.
+        - 'heading "Triết lý 2: Vòng tròn năng lực (Circle of Competence)" [level=2] [ref=e105]'
+        - paragraph [ref=e106]: "Buffett luôn khuyên: chỉ đầu tư vào những lĩnh vực và doanh nghiệp mà bạn thực sự hiểu rõ cách họ tạo ra tiền."
+        - paragraph [ref=e107]: Vòng tròn năng lực của mỗi người là có hạn. Nếu bạn làm việc trong ngành công nghệ thông tin, bạn hiểu các doanh nghiệp phần mềm hơn người khác. Nếu bạn làm trong ngành y tế, bạn hiểu các công ty dược phẩm hơn.
+        - paragraph [ref=e108]: Bước chân ra ngoài vòng tròn năng lực để mua những cổ phiếu hot theo lời đồn thổi là con đường dẫn đến thua lỗ. Buffett từng từ chối đầu tư vào các công ty công nghệ trong bong bóng Dot-com cuối thập niên 1990 vì ông không hiểu cách họ kiếm tiền. Quyết định đó giúp ông tránh được một trong những vụ sụp đổ tài chính lớn nhất lịch sử.
+        - 'heading "Triết lý 3: Thời gian nắm giữ ưa thích là mãi mãi" [level=2] [ref=e109]'
+        - paragraph [ref=e110]: Buffett nổi tiếng với tính kiên nhẫn tột độ. Ông coi việc mua cổ phiếu giống như mua lại một phần doanh nghiệp thực tế. Nếu doanh nghiệp liên tục tăng trưởng lợi nhuận, giá trị cổ phiếu chắc chắn sẽ tăng theo trong dài hạn.
+        - paragraph [ref=e111]: "Ông từng nói: “Nếu bạn không sẵn sàng sở hữu một cổ phiếu trong 10 năm, thì đừng nghĩ đến việc sở hữu nó trong 10 phút.”"
+        - paragraph [ref=e112]: Việc liên tục mua đi bán lại để lướt sóng ngắn hạn chỉ làm tốn phí giao dịch, thuế và dẫn đến các quyết định sai lầm theo cảm xúc đám đông.
+        - 'heading "Triết lý 4: Biên an toàn (Margin of Safety) và ngược chiều đám đông" [level=2] [ref=e113]'
+        - paragraph [ref=e114]: "Buffett kế thừa từ Graham một nguyên tắc cốt lõi: luôn mua cổ phiếu ở mức giá thấp hơn giá trị nội tại thực sự của doanh nghiệp. Khoảng chênh lệch đó gọi là biên an toàn."
+        - paragraph [ref=e115]: Biên an toàn đóng vai trò như đệm bảo vệ nếu phân tích của bạn sai — hoặc thị trường tiếp tục giảm sau khi bạn mua. Buffett thường mua khi thị trường hoảng loạn, người khác đang bán tháo.
+        - paragraph [ref=e116]: "Câu nói nổi tiếng nhất của ông: “Hãy tham lam khi người khác sợ hãi, và hãy sợ hãi khi người khác tham lam.” Đây không phải lời khuyên lướt sóng — mà là triết lý định giá. Khi thị trường sụt giảm mạnh, cổ phiếu của những doanh nghiệp tốt trở nên rẻ hơn giá trị thực của chúng. Đó là thời điểm Buffett mua."
+        - heading "Áp dụng triết lý Buffett ở Việt Nam như thế nào?" [level=2] [ref=e117]
+        - paragraph [ref=e118]: "Bạn không cần vốn hàng tỷ để bắt đầu. Bốn điều Buffett dạy bạn có thể áp dụng ngay:"
+        - paragraph [ref=e119]:
+          - strong [ref=e120]: 1. Chỉ mua cổ phiếu bạn hiểu.
+          - text: "Trước khi mua cổ phiếu VCB, FPT hay MWG, hãy đọc báo cáo thường niên và trả lời được: doanh nghiệp này kiếm tiền bằng cách nào, ai là khách hàng, và đối thủ của họ là ai."
+        - paragraph [ref=e121]:
+          - strong [ref=e122]: 2. Tìm con hào kinh tế ở thị trường VN.
+          - text: Thương hiệu mạnh (Vinamilk, Masan), mạng lưới phân phối độc quyền, chi phí chuyển đổi cao (phần mềm kế toán, ngân hàng) — đây là những dấu hiệu của con hào kinh tế tại Việt Nam.
+        - paragraph [ref=e123]:
+          - strong [ref=e124]: 3. Mua khi thị trường sợ hãi.
+          - text: VN-Index từng giảm 50% trong năm 2022. Những nhà đầu tư kiên nhẫn mua vào khoảng thời gian đó đã thu lợi đáng kể trong 18 tháng tiếp theo.
+        - paragraph [ref=e125]:
+          - strong [ref=e126]: 4. Nếu chưa có kỹ năng phân tích, mua ETF.
+          - text: Chính Buffett khuyên nhà đầu tư cá nhân không có thời gian phân tích nên mua quỹ chỉ số định kỳ. Tại VN, E1VFVN30 hoặc FUEVFVND là lựa chọn tương đương.
+        - separator [ref=e127]
+        - paragraph [ref=e128]: Warren Buffett không có công thức bí mật. Ông chỉ áp dụng nhất quán những nguyên tắc đơn giản trong suốt 70 năm — hiểu doanh nghiệp, mua khi rẻ, giữ khi tốt, bỏ qua tiếng ồn thị trường. Sự giàu có của ông là bằng chứng cho sức mạnh của lãi kép và kỷ luật dài hạn.
+        - paragraph [ref=e129]:
+          - text: Đọc thêm về
+          - link "Benjamin Graham" [ref=e130] [cursor=pointer]:
+            - /url: /nha-dau-tu/benjamin-graham/
+          - text: — người thầy đã định hình toàn bộ tư duy của Buffett từ thuở đầu.
+        - generic [ref=e131]:
+          - heading "Câu hỏi thường gặp" [level=2] [ref=e132]
+          - generic [ref=e133]:
+            - group [ref=e134]:
+              - generic "Nguyên tắc đầu tư số 1 và số 2 nổi tiếng của Warren Buffett là gì?" [ref=e135] [cursor=pointer]
+            - group [ref=e136]:
+              - generic "Khái niệm Con hào kinh tế (Economic Moat) của Buffett nghĩa là gì?" [ref=e137] [cursor=pointer]
+            - group [ref=e138]:
+              - generic "Warren Buffett khuyên nhà đầu tư cá nhân bình thường nên đầu tư vào đâu?" [ref=e139] [cursor=pointer]
+        - complementary "Nguồn tham khảo và kiểm tra" [ref=e140]:
+          - paragraph [ref=e141]: "Cập nhật lần cuối: 21/6/2026"
+          - heading "Nguồn tham khảo" [level=2] [ref=e142]
+          - list [ref=e143]:
+            - listitem [ref=e144]: Thư gửi cổ đông thường niên của Berkshire Hathaway
+            - listitem [ref=e145]: The Essays of Warren Buffett — Lawrence A. Cunningham
+            - listitem [ref=e146]: The Intelligent Investor — Benjamin Graham
+        - generic [ref=e147]:
+          - heading "Quy trình kiểm định nội dung" [level=2] [ref=e148]
+          - paragraph [ref=e149]:
+            - text: Nội dung được rà soát về tính chính xác, tính cập nhật và mức độ phù hợp với nhà đầu tư cá nhân. Nếu phát hiện lỗi có thể ảnh hưởng đến quyết định tài chính, bài viết sẽ được cập nhật và ghi nhận theo
+            - link "chính sách đính chính" [ref=e150] [cursor=pointer]:
+              - /url: /corrections-policy/
+            - text: .
+        - complementary [ref=e151]:
+          - img [ref=e153]
+          - generic [ref=e154]:
+            - generic [ref=e155]:
+              - generic [ref=e156]:
+                - paragraph [ref=e157]: Về tác giả
+                - link "Nguyễn Viết Lộc" [ref=e158] [cursor=pointer]:
+                  - /url: /author/nguyen-viet-loc
+              - link "Xem hồ sơ" [ref=e159] [cursor=pointer]:
+                - /url: /author/nguyen-viet-loc
+            - paragraph [ref=e160]: Người sáng lập & Phụ trách nội dung
+            - paragraph [ref=e161]: Lộc Nguyễn hiện là Chuyên viên SEO tại Công ty Chứng khoán DSC. Với hơn 3 năm kinh nghiệm triển khai nội dung và tối ưu hiệu suất tìm kiếm cho các sản phẩm tài chính lớn, Lộc sáng lập Value Investing nhằm chia sẻ các kiến thức đầu tư thực chiến bằng ngôn ngữ bình dân, giúp F0 tự tin và an toàn hơn trên thị trường.
+            - generic "Chuyên môn tác giả" [ref=e162]:
+              - generic [ref=e163]: Đầu tư giá trị
+              - generic [ref=e164]: Đơn giản hóa thuật ngữ tài chính
+              - generic [ref=e165]: Sản phẩm đầu tư cho người mới bắt đầu
+              - generic [ref=e166]: Cấu trúc thông tin tài chính (SEO)
+            - paragraph [ref=e167]: Hơn 3 năm kinh nghiệm thực tế triển khai nội dung tài chính và tối ưu hiệu suất tìm kiếm cho các sản phẩm tài chính lớn (hiện là Chuyên viên SEO tại Công ty Chứng khoán DSC). Chuyên sâu về nghiên cứu hành vi tìm kiếm của nhà đầu tư cá nhân và đơn giản hóa cấu trúc thông tin.
+            - paragraph [ref=e168]: Nội dung được viết cho mục đích giáo dục tài chính, ưu tiên nguồn chính thống và tiếp nhận phản hồi đính chính qua email công khai.
+        - generic [ref=e169]:
+          - generic [ref=e170]: Chia sẻ
+          - link "Chia sẻ lên Facebook" [ref=e171] [cursor=pointer]:
+            - /url: https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fvalueinvesting.com.vn%2Fnha-dau-tu%2Fwarren-buffett&quote=Warren%20Buffett%20l%C3%A0%20ai%3F%20Tri%E1%BA%BFt%20l%C3%BD%20%C4%91%E1%BA%A7u%20t%C6%B0%20c%E1%BB%A7a%20nh%C3%A0%20hi%E1%BB%81n%20tri%E1%BA%BFt%20Omaha
+            - img [ref=e172]
+            - text: Facebook
+          - button "Sao chép đường dẫn" [ref=e174] [cursor=pointer]:
+            - img [ref=e175]
+            - generic [ref=e178]: Sao chép link
+        - generic [ref=e179]:
+          - paragraph [ref=e180]: Bài viết liên quan
+          - link "Benjamin Graham là ai? Triết lý của cha đẻ đầu tư giá trị Benjamin Graham là ai? Tìm hiểu tiểu sử, 2 cuốn sách kinh điển Nhà đầu tư thông minh, Phân tích chứng khoán và triết lý đầu tư giá trị bất hủ. 8 phút đọc" [ref=e182] [cursor=pointer]:
+            - /url: /nha-dau-tu/benjamin-graham/
+            - strong [ref=e183]: Benjamin Graham là ai? Triết lý của cha đẻ đầu tư giá trị
+            - paragraph [ref=e184]: Benjamin Graham là ai? Tìm hiểu tiểu sử, 2 cuốn sách kinh điển Nhà đầu tư thông minh, Phân tích chứng khoán và triết lý đầu tư giá trị bất hủ.
+            - generic [ref=e185]: 8 phút đọc
+  - contentinfo [ref=e186]:
+    - generic [ref=e187]:
+      - generic [ref=e188]:
+        - strong [ref=e189]: Value Investing
+        - paragraph [ref=e190]: Kiến thức đầu tư giá trị cho người Việt, miễn phí, có nguồn, không khuyến nghị mua bán.
+      - generic [ref=e191]:
+        - heading "Đầu tư" [level=5] [ref=e192]
+        - link "Cổ phiếu" [ref=e193] [cursor=pointer]:
+          - /url: /dau-tu/co-phieu/
+        - link "Quỹ ETF" [ref=e194] [cursor=pointer]:
+          - /url: /dau-tu/etf/
+        - link "Trái phiếu" [ref=e195] [cursor=pointer]:
+          - /url: /dau-tu/trai-phieu/
+        - link "Phái sinh" [ref=e196] [cursor=pointer]:
+          - /url: /dau-tu/phai-sinh/
+      - generic [ref=e197]:
+        - heading "Phân tích & Review" [level=5] [ref=e198]
+        - link "Phân tích cơ bản" [ref=e199] [cursor=pointer]:
+          - /url: /phan-tich/co-ban/
+        - link "Phân tích kỹ thuật" [ref=e200] [cursor=pointer]:
+          - /url: /phan-tich/ky-thuat/
+        - link "Reviews" [ref=e201] [cursor=pointer]:
+          - /url: /reviews/
+        - link "Nhà đầu tư" [ref=e202] [cursor=pointer]:
+          - /url: /nha-dau-tu/
+      - generic [ref=e203]:
+        - heading "Về trang web" [level=5] [ref=e204]
+        - link "Về dự án" [ref=e205] [cursor=pointer]:
+          - /url: /about/
+        - link "Biên tập" [ref=e206] [cursor=pointer]:
+          - /url: /editorial-policy/
+        - link "Nguồn tham khảo" [ref=e207] [cursor=pointer]:
+          - /url: /sources-policy/
+        - link "Đính chính" [ref=e208] [cursor=pointer]:
+          - /url: /corrections-policy/
+        - link "Liên hệ" [ref=e209] [cursor=pointer]:
+          - /url: /contact/
+    - generic [ref=e210]: © 2026 Value Investing. Value Investing không cung cấp dịch vụ tư vấn đầu tư cá nhân, môi giới chứng khoán hoặc tín hiệu giao dịch. Nội dung chỉ nhằm mục đích giáo dục.
+  - generic [ref=e213]:
+    - button "Menu" [ref=e214]:
+      - img [ref=e216]
+      - generic: Menu
+    - button "Inspect" [ref=e220]:
+      - img [ref=e222]
+      - generic: Inspect
+    - button "Audit" [ref=e224]:
+      - img [ref=e226]
+      - generic: Audit
+    - button "Settings" [ref=e229]:
+      - img [ref=e231]
+      - generic: Settings

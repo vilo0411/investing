@@ -45,6 +45,23 @@ Tương đương với `Phase 1` và `Phase 2` của lệnh `/write`.
   - Alt text tiếng Việt (mô tả ảnh, tự nhiên, chứa từ khóa liên quan nếu hợp lý)
 - Ảnh sẽ được fetch & download thật ở bước `/drafting` — ở đây chỉ lập kế hoạch.
 
+### Bước 4b: [CHỈ CHO REVIEW] Official Resources Research
+> Áp dụng khi `layoutType: review` và `reviewType: company`.
+
+Thu thập tài nguyên chính thức từ doanh nghiệp được review để điền vào field `officialResources` của frontmatter:
+
+1. **YouTube**: Tìm kênh YouTube chính thức của công ty → lấy tối đa 3 video liên quan nhất (mở tài khoản, hướng dẫn giao dịch, nạp/rút tiền).
+2. **Blog/Guide trên website**: Tìm `site:[domain-cong-ty] hướng dẫn mở tài khoản` + `hướng dẫn giao dịch` → lấy 2–3 bài hữu ích nhất.
+3. Format mỗi resource theo schema:
+   ```yaml
+   - type: "video" | "article" | "guide"
+     title: "Tên video/bài viết"
+     url: "https://..."
+     description: "Mô tả ngắn 1 câu — nói rõ bài đó dạy gì"
+   ```
+4. Chỉ lấy resource từ nguồn chính thức của công ty (YouTube channel của họ, website của họ). Không dùng nguồn bên thứ ba.
+5. Ghi vào `officialResources:` trong frontmatter khi `/approve` sang drafting.
+
 ### 🚧 APPROVAL GATE:
 > Trình bày Outline + SERP summary cho người dùng.
 > **DỪNG LẠI. Chờ `/approve` trước khi tiếp tục sang drafting.**

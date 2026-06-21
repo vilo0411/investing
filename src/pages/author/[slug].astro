@@ -38,18 +38,28 @@ const pageSize = 6;
   <section class="author-hero">
     <div class="container author-hero-grid">
       <div class="author-identity">
-        <div class="author-avatar-large" aria-hidden="true">{authorInitial}</div>
-        <div>
+        <div class="author-avatar-large" aria-hidden="true">
+          {profileAuthor.avatar
+            ? <img src={profileAuthor.avatar} alt={profileAuthor.name} width="200" height="200" />
+            : authorInitial
+          }
+        </div>
+        <div class="author-meta">
+          <p class="author-label-top">Tác giả</p>
           <h1>{profileAuthor.name}</h1>
           <p class="author-role">{profileAuthor.role}</p>
+          <div class="author-expertise-inline">
+            {profileAuthor.expertise.map((item) => <span>{item}</span>)}
+          </div>
+          {profileAuthor.socialLinks?.linkedin && (
+            <a class="author-linkedin" href={profileAuthor.socialLinks.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn →</a>
+          )}
         </div>
       </div>
 
       <aside class="expertise-panel" aria-label="Chuyên môn tác giả">
-        <p class="panel-label">Chuyên môn</p>
-        <ul>
-          {profileAuthor.expertise.map((item) => <li>{item}</li>)}
-        </ul>
+        <p class="panel-label">Kinh nghiệm nội dung</p>
+        <p class="panel-body">{profileAuthor.experience}</p>
       </aside>
     </div>
   </section>
@@ -179,50 +189,106 @@ const pageSize = 6;
   .author-hero {
     background: var(--surface);
     border-bottom: 2px solid var(--line);
-    padding: 52px 0 34px;
+    padding: 52px 0 44px;
   }
 
   .author-hero-grid {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 320px;
+    grid-template-columns: minmax(0, 1fr) 300px;
     gap: 48px;
-    align-items: end;
+    align-items: center;
   }
 
   .author-identity {
-    display: grid;
-    grid-template-columns: 148px minmax(0, 1fr);
-    gap: 28px;
+    display: flex;
+    gap: 36px;
     align-items: center;
   }
 
   .author-avatar-large {
-    width: 148px;
-    aspect-ratio: 1;
-    border-radius: 0px;
-    border: 1px solid var(--line);
+    flex-shrink: 0;
+    width: 200px;
+    height: 200px;
+    border-radius: 0;
+    border: 2px solid var(--line);
     background: var(--brand);
     color: #fff;
     display: grid;
     place-items: center;
     font-family: var(--font-serif);
-    font-size: 4.4rem;
+    font-size: 5.5rem;
     line-height: 1;
     box-shadow: var(--shadow-md);
+    overflow: hidden;
+  }
+
+  .author-avatar-large img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+  }
+
+  .author-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .author-label-top {
+    margin: 0;
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--brand);
   }
 
   .author-identity h1 {
-    margin: 0 0 8px;
+    margin: 0;
     color: var(--text);
-    font-size: clamp(2.4rem, 5vw, 4.3rem);
+    font-size: clamp(2rem, 4vw, 3.4rem);
     font-weight: 700;
+    line-height: 1.1;
   }
 
   .author-role {
     margin: 0;
     color: var(--muted);
-    font-size: 1.05rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+  }
+
+  .author-expertise-inline {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 4px;
+  }
+
+  .author-expertise-inline span {
+    border: 1px solid var(--line);
+    border-radius: var(--radius-sm);
+    background: var(--color-mint);
+    color: var(--text);
+    font-size: 0.75rem;
     font-weight: 700;
+    padding: 4px 9px;
+  }
+
+  .author-linkedin {
+    display: inline-block;
+    margin-top: 4px;
+    color: var(--brand);
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .author-linkedin:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
   }
 
   .expertise-panel,
@@ -235,16 +301,25 @@ const pageSize = 6;
   }
 
   .expertise-panel {
-    padding: 22px;
+    padding: 24px 26px;
+    border-left: 4px solid var(--brand);
   }
 
   .panel-label {
-    margin: 0 0 12px;
+    margin: 0 0 10px;
     color: var(--brand);
-    font-size: 0.78rem;
+    font-size: 0.75rem;
     font-weight: 800;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.09em;
     text-transform: uppercase;
+  }
+
+  .panel-body {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.92rem;
+    line-height: 1.7;
+    font-weight: 500;
   }
 
   .expertise-panel ul,
@@ -393,16 +468,18 @@ const pageSize = 6;
 
   @media (max-width: 640px) {
     .author-hero {
-      padding-top: 34px;
+      padding: 32px 0 28px;
     }
 
     .author-identity {
-      grid-template-columns: 1fr;
+      flex-direction: column;
+      align-items: flex-start;
       gap: 20px;
     }
 
     .author-avatar-large {
-      width: 112px;
+      width: 120px;
+      height: 120px;
       font-size: 3.2rem;
     }
   }
