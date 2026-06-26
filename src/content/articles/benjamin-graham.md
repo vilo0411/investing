@@ -96,7 +96,7 @@ Graham viết cho thị trường Mỹ thập niên 1940, nhưng nguyên tắc c
 
 **Đọc BCTC trước khi mua.** Đừng mua cổ phiếu vì "nhìn chart đẹp" hay nghe người quen giới thiệu. Tải báo cáo tài chính quý gần nhất trên Cafef hoặc website tổ chức phát hành, đọc ít nhất phần dòng tiền từ hoạt động kinh doanh.
 
-**Tìm cổ phiếu P/B thấp trong ngành ngân hàng.** Ngân hàng là ngành mà P/B dưới 1 thường cho thấy thị trường đang định giá dưới giá trị sổ sách — đây là kiểu cơ hội Graham hay tìm kiếm. Một số mã ngân hàng VN giao dịch dưới P/B 1 trong giai đoạn thị trường điều chỉnh.
+**Tìm cổ phiếu P/B thấp trong ngành ngân hàng.** Ngân hàng là ngành mà [P/B](/phan-tich/co-ban/pb-la-gi/) dưới 1 thường cho thấy thị trường đang định giá dưới giá trị sổ sách — đây là kiểu cơ hội Graham hay tìm kiếm. Một số mã ngân hàng VN giao dịch dưới P/B 1 trong giai đoạn thị trường điều chỉnh.
 
 **Duy trì danh mục phòng thủ.** Graham khuyên nhà đầu tư thụ động nên giữ 50% cổ phiếu và 50% trái phiếu/tiết kiệm. Tái cân bằng mỗi năm một lần. Đây là chiến lược đơn giản nhưng bảo vệ bạn khỏi những sai lầm cảm xúc tốn kém nhất.
 

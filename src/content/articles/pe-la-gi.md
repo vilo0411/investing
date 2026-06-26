@@ -57,7 +57,7 @@ Con số 10 đó chính là chỉ số P/E.
 ![Một người dùng máy tính cầm bút tính toán các con số tài chính](./images/pe-la-gi/featured-01.jpg)
 *Ảnh: Adolfo Félix / Unsplash*
 
-Trong thị trường chứng khoán, P/E cũng mang ý nghĩa hoàn toàn tương tự. Chỉ số này phản ánh mối quan hệ giữa thị giá của cổ phiếu (Price) so với lợi nhuận trên mỗi cổ phiếu (Earnings Per Share — EPS). P/E trả lời câu hỏi: Bạn sẵn sàng trả bao nhiêu đồng cho mỗi đồng lợi nhuận của doanh nghiệp?
+Trong thị trường chứng khoán, P/E cũng mang ý nghĩa hoàn toàn tương tự. Chỉ số này phản ánh mối quan hệ giữa thị giá của cổ phiếu (Price) so với lợi nhuận trên mỗi cổ phiếu ([Earnings Per Share — EPS](/phan-tich/co-ban/eps-la-gi/)). P/E trả lời câu hỏi: Bạn sẵn sàng trả bao nhiêu đồng cho mỗi đồng lợi nhuận của doanh nghiệp?
 
 ## Công thức tính P/E và cách xác định các thành phần
 

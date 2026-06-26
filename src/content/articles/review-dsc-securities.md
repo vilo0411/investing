@@ -95,6 +95,14 @@ sources:
   - "Dữ liệu phí giao dịch và lãi suất margin từ website chính thức DSC Securities (tháng 6/2026)"
   - "Thông tin giấy phép từ Ủy ban Chứng khoán Nhà nước Việt Nam"
   - "Báo cáo thị phần môi giới HOSE quý 1/2026"
+citations:
+  - title: "Biểu phí giao dịch và lãi suất margin (cập nhật tháng 6/2026)"
+    publisher: "DSC Securities"
+    url: "https://www.dsc.com.vn"
+  - title: "Báo cáo thị phần giá trị giao dịch môi giới quý 1/2026"
+    publisher: "Sở Giao dịch Chứng khoán TP.HCM (HOSE)"
+  - title: "Giấy phép hoạt động kinh doanh chứng khoán"
+    publisher: "Ủy ban Chứng khoán Nhà nước"
 keyTakeaways:
   - "DSC Securities tiền thân là Chứng khoán Đà Nẵng (thành lập 2006), đổi tên thành DSC năm 2021, niêm yết HOSE năm 2024, được cấp phép đầy đủ bởi UBCK."
   - "Phí giao dịch từ 0.10% và lãi suất margin 9.9%/năm thuộc nhóm cạnh tranh nhất thị trường."
@@ -102,7 +110,7 @@ keyTakeaways:
   - "Phù hợp nhất với nhà đầu tư tự chủ muốn tối ưu chi phí, hoặc dùng song song với CTCK khác."
 ---
 
-Nếu bạn đang tìm một công ty chứng khoán có phí thấp và lãi suất margin cạnh tranh mà ít được nhắc đến trong các bảng so sánh thông thường, **DSC Securities** (Chứng khoán DSC) là cái tên đáng xem xét.
+Nếu bạn đang tìm một [công ty chứng khoán](/reviews/review-cong-ty-chung-khoan-cho-nguoi-moi/) có phí thấp và lãi suất margin cạnh tranh mà ít được nhắc đến trong các bảng so sánh thông thường, **DSC Securities** (Chứng khoán DSC) là cái tên đáng xem xét.
 
 Bài review này từ **[Value Investing](/)** sẽ đánh giá DSC một cách khách quan dựa trên các tiêu chí thực tế: chi phí, hệ thống giao dịch, ứng dụng và chất lượng hỗ trợ — để bạn có đủ thông tin trước khi quyết định mở tài khoản.
 
@@ -130,6 +138,6 @@ DSC vẫn duy trì mô hình môi giới truyền thống với đội ngũ tư 
 
 ## Ai nên chọn DSC Securities?
 
-DSC phù hợp nhất với **nhà đầu tư đã có kinh nghiệm**, tự chủ trong quyết định giao dịch và đang tìm cách tối giản chi phí. Nếu bạn đã có tài khoản tại TCBS hay SSI và muốn mở thêm tài khoản thứ hai để sử dụng margin với lãi suất thấp hơn, DSC là phương án hợp lý.
+DSC phù hợp nhất với **nhà đầu tư đã có kinh nghiệm**, tự chủ trong quyết định giao dịch và đang tìm cách tối giản chi phí. Nếu bạn đã có tài khoản tại [TCBS hay SSI](/reviews/so-sanh-tcbs-vs-ssi/) và muốn mở thêm tài khoản thứ hai để sử dụng margin với lãi suất thấp hơn, DSC là phương án hợp lý.
 
 Ngược lại, nếu bạn là F0 cần công cụ phân tích mạnh và giao diện trực quan, hãy cân nhắc TCBS hoặc VNDIRECT trước.

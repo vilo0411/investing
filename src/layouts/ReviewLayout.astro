@@ -236,12 +236,15 @@ const navItems = [...structuredItems, ...proseOnly];
 
       <div class="article-meta-block">
         <div class="meta-author-avatar" aria-hidden="true">
-          {author.name.split(" ").pop()?.charAt(0)}
+          {author.avatar
+            ? <img src={url(author.avatar)} alt={author.name} width="44" height="44" />
+            : author.name.split(" ").pop()?.charAt(0)
+          }
         </div>
         <div class="meta-info">
           <div class="meta-author-row">
             <span class="meta-author-label">Tác giả:</span>
-            <a class="meta-author-name" href={`/author/${author.slug}/`}>{author.name}</a>
+            <a class="meta-author-name" href={url(`/author/${author.slug}/`)}>{author.name}</a>
             <span class="meta-divider">|</span>
             <span class="meta-date">Cập nhật: {updatedDate.toLocaleDateString("vi-VN")}</span>
             <span class="meta-divider">|</span>
@@ -392,6 +395,15 @@ const navItems = [...structuredItems, ...proseOnly];
     justify-content: center;
     border: 1px solid var(--line);
     box-shadow: 2px 2px 0px var(--line);
+    overflow: hidden;
+  }
+
+  .meta-author-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
   }
 
   .meta-info {

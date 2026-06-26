@@ -24,6 +24,12 @@ faq:
 sources:
   - "Tài liệu đào tạo phân tích kỹ thuật của các công ty chứng khoán Việt Nam"
   - "Technical Analysis of the Financial Markets - John J. Murphy"
+citations:
+  - title: "New Concepts in Technical Trading Systems — J. Welles Wilder (tác giả gốc của chỉ báo RSI)"
+    publisher: "Trend Research"
+    date: "1978-01-01"
+  - title: "Technical Analysis of the Financial Markets — John J. Murphy"
+    publisher: "New York Institute of Finance"
 keyTakeaways:
   - "RSI (Relative Strength Index) là chỉ báo động lượng đo lường tốc độ và sự thay đổi của các chuyển động giá cổ phiếu."
   - "Chỉ số này dao động trong biên độ từ 0 đến 100, với hai mốc quan trọng là 30 (quá bán) và 70 (quá mua)."
@@ -31,7 +37,7 @@ keyTakeaways:
   - "Nhà đầu tư cần kết hợp phân tích RSI với xu hướng chung của thị trường để tránh bẫy mua bán quá sớm."
 ---
 
-Nếu phân tích cơ bản giúp bạn trả lời câu hỏi "nên mua cổ phiếu nào?" thì phân tích kỹ thuật sẽ giúp bạn tìm ra câu trả lời cho câu hỏi "khi nào nên mua hoặc bán?". Trong số các công cụ phân tích kỹ thuật kinh điển, RSI là chỉ báo động lượng được các nhà giao dịch yêu thích và sử dụng nhiều nhất. Bài viết này từ **[Value Investing](/)** sẽ giúp bạn bóc tách khái niệm **rsi là gì**, nguyên lý hoạt động và cách áp dụng chỉ báo này để xác định điểm mua bán tối ưu trên bảng điện tử.
+Nếu phân tích cơ bản giúp bạn trả lời câu hỏi "nên mua [cổ phiếu](/dau-tu/co-phieu/co-phieu-la-gi/) nào?" thì phân tích kỹ thuật sẽ giúp bạn tìm ra câu trả lời cho câu hỏi "khi nào nên mua hoặc bán?". Trong số các công cụ phân tích kỹ thuật kinh điển, RSI là chỉ báo động lượng được các nhà giao dịch yêu thích và sử dụng nhiều nhất. Bài viết này từ **[Value Investing](/)** sẽ giúp bạn bóc tách khái niệm **rsi là gì**, nguyên lý hoạt động và cách áp dụng chỉ báo này để xác định điểm mua bán tối ưu trên bảng điện tử.
 
 ## Bản chất chỉ báo RSI: Đo lường sức mạnh bên trong của giá
 

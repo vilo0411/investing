@@ -22,6 +22,12 @@ faq:
 sources:
   - "Ủy ban Chứng khoán Nhà nước"
   - "Sở Giao dịch Chứng khoán TP.HCM (HOSE)"
+citations:
+  - title: "Luật Chứng khoán số 54/2019/QH14"
+    publisher: "Quốc hội"
+    date: "2019-11-26"
+  - title: "The Intelligent Investor — Benjamin Graham"
+    publisher: "Harper & Brothers"
 keyTakeaways:
   - "Đầu tư cổ phiếu thực chất là góp vốn sở hữu doanh nghiệp để nhận cổ tức và chênh lệch giá."
   - "Người mới có thể mở tài khoản trực tuyến eKYC 100% bằng CCCD gắn chip chỉ trong vài phút."

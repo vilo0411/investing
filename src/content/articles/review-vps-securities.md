@@ -28,6 +28,11 @@ faq:
 sources:
   - "Báo cáo thị phần môi giới HOSE quý 1/2026"
   - "Dữ liệu phí giao dịch và margin từ website VPS Securities (tháng 6/2026)"
+citations:
+  - title: "Báo cáo thị phần giá trị giao dịch môi giới cổ phiếu, chứng chỉ quỹ và chứng quyền quý 1/2026"
+    publisher: "Sở Giao dịch Chứng khoán TP.HCM (HOSE)"
+  - title: "Biểu phí giao dịch và lãi suất margin (cập nhật tháng 6/2026)"
+    publisher: "VPS Securities"
 keyTakeaways:
   - "VPS là CTCK có thị phần môi giới cá nhân số 1 Việt Nam với đội ngũ môi giới hùng hậu nhất."
   - "Phí giao dịch cạnh tranh trong thời gian ưu đãi ban đầu, nhưng cần theo dõi sau khi hết ưu đãi."
@@ -49,7 +54,7 @@ VPS Securities (Công ty Cổ phần Chứng khoán VPS) được thành lập n
 
 SmartOne là ứng dụng giao dịch chính của VPS với giao diện trực quan, hỗ trợ nhiều loại lệnh và tích hợp biểu đồ kỹ thuật cơ bản. Ứng dụng nhận đánh giá tích cực từ người dùng nhờ tốc độ phản hồi tốt trong điều kiện thị trường bình thường.
 
-Tuy nhiên, VPS cũng nhận một số phản ánh về tình trạng nghẽn lệnh trong các phiên giao dịch biến động mạnh — vấn đề chung của nhiều công ty chứng khoán Việt Nam.
+Tuy nhiên, VPS cũng nhận một số phản ánh về tình trạng nghẽn lệnh trong các phiên giao dịch biến động mạnh — vấn đề chung của nhiều [công ty chứng khoán](/reviews/review-cong-ty-chung-khoan-cho-nguoi-moi/) Việt Nam.
 
 ### Chất lượng môi giới
 
@@ -61,4 +66,4 @@ Tuy nhiên, VPS cũng nhận một số phản ánh về tình trạng nghẽn l
 
 VPS phù hợp nhất với **nhà đầu tư F0** muốn có người dẫn dắt trong giai đoạn đầu, đặc biệt nếu bạn cảm thấy cần được tư vấn trực tiếp khi gặp tình huống khó xử lý qua ứng dụng.
 
-Nếu bạn đã có kinh nghiệm và tự chủ trong quyết định, hãy cân nhắc TCBS (phí 0%) thay vì VPS để tối ưu chi phí dài hạn.
+Nếu bạn đã có kinh nghiệm và tự chủ trong quyết định, hãy cân nhắc [TCBS](/reviews/so-sanh-tcbs-vs-ssi/) (phí 0%) thay vì VPS để tối ưu chi phí dài hạn.

@@ -23,6 +23,11 @@ faq:
 sources:
   - "Ủy ban Chứng khoán Nhà nước"
   - "Sở Giao dịch Chứng khoán TP.HCM (HOSE)"
+citations:
+  - title: "Thông tư 229/2012/TT-BTC hướng dẫn thành lập và quản lý quỹ hoán đổi danh mục (ETF)"
+    publisher: "Bộ Tài chính"
+  - title: "Danh sách quỹ ETF niêm yết trên thị trường chứng khoán Việt Nam"
+    publisher: "Sở Giao dịch Chứng khoán TP.HCM (HOSE)"
 keyTakeaways:
   - "Đầu tư quỹ ETF thực chất là mua một rổ cổ phiếu mô phỏng theo chỉ số thị trường."
   - "Bạn mua chứng chỉ quỹ ETF dễ dàng trên sàn chứng khoán thông qua tài khoản môi giới thông thường."

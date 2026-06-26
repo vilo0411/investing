@@ -1,11 +1,12 @@
 ---
 import { author } from "@/data/authors";
+import { url } from "@/data/site";
 ---
 
 <aside class="author-box">
   <div class="author-avatar" aria-hidden="true">
     {author.avatar
-      ? <img src={author.avatar} alt={author.name} width="52" height="52" />
+      ? <img src={url(author.avatar)} alt={author.name} width="52" height="52" />
       : author.name.split(" ").pop()?.charAt(0)
     }
   </div>
@@ -13,9 +14,9 @@ import { author } from "@/data/authors";
     <div class="author-heading">
       <div>
         <p class="author-label">Về tác giả</p>
-        <a class="author-name" href={`/author/${author.slug}`}>{author.name}</a>
+        <a class="author-name" href={url(`/author/${author.slug}`)}>{author.name}</a>
       </div>
-      <a class="author-profile-link" href={`/author/${author.slug}`}>Xem hồ sơ</a>
+      <a class="author-profile-link" href={url(`/author/${author.slug}`)}>Xem hồ sơ</a>
     </div>
     <p class="author-role">{author.role}</p>
     <p class="author-bio">{author.bio}</p>
@@ -31,9 +32,6 @@ import { author } from "@/data/authors";
       </div>
     )}
     <p class="author-experience">{author.experience}</p>
-    <p class="author-note">
-      Nội dung được viết cho mục đích giáo dục tài chính, ưu tiên nguồn chính thống và tiếp nhận phản hồi đính chính qua email công khai.
-    </p>
   </div>
 </aside>
 

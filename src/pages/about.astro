@@ -103,12 +103,17 @@ const editorialSteps = [
         </div>
       </div>
       <div class="author-preview-card">
-        <div class="author-avatar-small" aria-hidden="true">{authorInitial}</div>
+        <div class="author-avatar-small" aria-hidden="true">
+          {author.avatar
+            ? <img src={url(author.avatar)} alt={author.name} width="64" height="64" />
+            : authorInitial
+          }
+        </div>
         <div>
           <strong>{author.name}</strong>
           <span class="author-role-small">{author.role}</span>
           <p class="author-bio-excerpt">{author.bio}</p>
-          <a class="preview-cta" href={`/author/${author.slug}/`}>Xem hồ sơ đầy đủ</a>
+          <a class="preview-cta" href={url(`/author/${author.slug}/`)}>Xem hồ sơ đầy đủ</a>
         </div>
       </div>
     </div>
@@ -221,6 +226,15 @@ const editorialSteps = [
     font-size: 1.6rem;
     line-height: 1;
     box-shadow: 2px 2px 0px var(--line);
+    overflow: hidden;
+  }
+
+  .author-avatar-small img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
   }
 
   .author-preview-card strong {

@@ -93,6 +93,11 @@ sources:
   - "Biểu phí giao dịch chính thức của TCBS và SSI (tháng 6/2026)"
   - "Báo cáo thị phần môi giới HOSE quý 1/2026"
   - "Trải nghiệm thực tế hệ thống giao dịch hai nền tảng"
+citations:
+  - title: "Biểu phí giao dịch và lãi suất margin (cập nhật tháng 6/2026)"
+    publisher: "TCBS & SSI"
+  - title: "Báo cáo thị phần giá trị giao dịch môi giới quý 1/2026"
+    publisher: "Sở Giao dịch Chứng khoán TP.HCM (HOSE)"
 keyTakeaways:
   - "TCBS thắng rõ ràng về phí (0% vs 0.15–0.25%) và công cụ phân tích tích hợp TCInvest."
   - "SSI vượt trội về độ ổn định hệ thống, uy tín thương hiệu và chất lượng báo cáo phân tích."
@@ -119,7 +124,7 @@ Nếu bạn giao dịch 200 triệu đồng mỗi tháng, chênh lệch phí lê
 
 ### 2. Công cụ phân tích: TCBS dẫn về tích hợp, SSI dẫn về chuyên sâu
 
-**TCInvest** của TCBS tích hợp trực tiếp vào ứng dụng: báo cáo tài chính, định giá P/E, P/B, phân tích kỹ thuật đều có trên cùng một màn hình. Đây là lợi thế lớn cho nhà đầu tư cơ bản không muốn chuyển qua lại giữa nhiều công cụ.
+**TCInvest** của TCBS tích hợp trực tiếp vào ứng dụng: báo cáo tài chính, định giá [P/E](/phan-tich/co-ban/pe-la-gi/), [P/B](/phan-tich/co-ban/pb-la-gi/), phân tích kỹ thuật đều có trên cùng một màn hình. Đây là lợi thế lớn cho nhà đầu tư cơ bản không muốn chuyển qua lại giữa nhiều công cụ.
 
 Ngược lại, **báo cáo phân tích của SSI Research** được giới chuyên môn đánh giá cao hơn về mức độ chuyên sâu — đặc biệt với các phân tích ngành và định giá doanh nghiệp lớn.
 
@@ -133,7 +138,7 @@ TCBS không sử dụng môi giới truyền thống — toàn bộ hỗ trợ q
 
 ## Kết luận: Không có câu trả lời duy nhất
 
-Không có công ty chứng khoán nào "tốt hơn tuyệt đối" — chỉ có lựa chọn phù hợp hơn với từng người.
+Không có [công ty chứng khoán](/reviews/review-cong-ty-chung-khoan-cho-nguoi-moi/) nào "tốt hơn tuyệt đối" — chỉ có lựa chọn phù hợp hơn với từng người.
 
 Nếu bạn **tự chủ trong đầu tư** và muốn tối đa hóa lợi nhuận bằng cách tối thiểu hóa phí — **TCBS là lựa chọn rõ ràng**. Nếu bạn **ưu tiên sự an toàn tuyệt đối** và cần đội ngũ chuyên nghiệp hỗ trợ — **SSI xứng đáng với chi phí cao hơn**.
 

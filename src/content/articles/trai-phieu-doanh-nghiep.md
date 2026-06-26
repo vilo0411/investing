@@ -24,6 +24,15 @@ faq:
 sources:
   - "Bộ Tài chính Việt Nam"
   - "Ủy ban Chứng khoán Nhà nước"
+citations:
+  - title: "Nghị định 65/2022/NĐ-CP sửa đổi quy định về chào bán, giao dịch trái phiếu doanh nghiệp riêng lẻ"
+    publisher: "Chính phủ"
+    date: "2022-09-16"
+  - title: "Nghị định 153/2020/NĐ-CP về chào bán, giao dịch trái phiếu doanh nghiệp riêng lẻ"
+    publisher: "Chính phủ"
+    date: "2020-12-31"
+  - title: "Chuyên trang thông tin trái phiếu doanh nghiệp"
+    publisher: "Sở Giao dịch Chứng khoán Hà Nội (HNX)"
 keyTakeaways:
   - "Trái phiếu doanh nghiệp là công cụ nợ do doanh nghiệp phát hành để huy động vốn, cam kết trả lãi gốc đúng hạn."
   - "Người mua trái phiếu doanh nghiệp là chủ nợ, không phải chủ sở hữu doanh nghiệp và không có quyền biểu quyết."
@@ -44,7 +53,7 @@ Hãy tưởng tượng một kịch bản quen thuộc. Người hàng xóm củ
 ![Mọi người đang trao đổi và ký kết tài liệu tài chính trong văn phòng](./images/trai-phieu-doanh-nghiep/featured-01.jpg)
 *Ảnh: Cytonn Photography / Unsplash*
 
-Khi bạn mua trái phiếu, doanh nghiệp phát hành sẽ đóng vai trò là con nợ, còn bạn là chủ nợ. Doanh nghiệp có nghĩa vụ pháp lý phải trả lãi định kỳ (lãi suất coupon) và hoàn trả tiền gốc cho bạn khi trái phiếu đến ngày đáo hạn. Khác với cổ đông sở hữu cổ phiếu, chủ nợ không có quyền biểu quyết hay tham gia vào các quyết định quản trị của doanh nghiệp.
+Khi bạn mua [trái phiếu](/dau-tu/trai-phieu/trai-phieu-la-gi/), doanh nghiệp phát hành sẽ đóng vai trò là con nợ, còn bạn là chủ nợ. Doanh nghiệp có nghĩa vụ pháp lý phải trả lãi định kỳ (lãi suất coupon) và hoàn trả tiền gốc cho bạn khi trái phiếu đến ngày đáo hạn. Khác với cổ đông sở hữu cổ phiếu, chủ nợ không có quyền biểu quyết hay tham gia vào các quyết định quản trị của doanh nghiệp.
 
 ## Phân loại trái phiếu doanh nghiệp tại Việt Nam
 

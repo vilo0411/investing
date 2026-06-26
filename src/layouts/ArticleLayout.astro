@@ -179,14 +179,14 @@ const breadcrumbSchema = {
       <div class="article-meta-block">
         <div class="meta-author-avatar" aria-hidden="true">
           {author.avatar
-            ? <img src={author.avatar} alt={author.name} width="40" height="40" />
+            ? <img src={url(author.avatar)} alt={author.name} width="40" height="40" />
             : author.name.split(" ").pop()?.charAt(0)
           }
         </div>
         <div class="meta-info">
           <div class="meta-author-row">
             <span class="meta-author-label">Tác giả:</span>
-            <a class="meta-author-name" href={`/author/${author.slug}/`}>{author.name}</a>
+            <a class="meta-author-name" href={url(`/author/${author.slug}/`)}>{author.name}</a>
             <span class="meta-divider">|</span>
             <span class="meta-date">Cập nhật: {updatedDate.toLocaleDateString("vi-VN")}</span>
             <span class="meta-divider">|</span>

@@ -24,6 +24,11 @@ faq:
 sources:
   - "CFA Institute"
   - "Chuẩn mực Kế toán Việt Nam (VAS)"
+citations:
+  - title: "CFA Program Curriculum — Financial Reporting and Analysis"
+    publisher: "CFA Institute"
+  - title: "Chuẩn mực Kế toán Việt Nam số 30 (VAS 30) — Lãi trên cổ phiếu"
+    publisher: "Bộ Tài chính"
 keyTakeaways:
   - "Chỉ số EPS (Earnings Per Share) là phần lợi nhuận sau thuế của doanh nghiệp được phân bổ cho mỗi cổ phần phổ thông đang lưu hành."
   - "EPS là chỉ số cốt lõi phản ánh khả năng sinh lời của doanh nghiệp và là thành phần bắt buộc để tính chỉ số định giá P/E."
@@ -46,7 +51,7 @@ Con số 10 triệu đồng đó chính là EPS của quán phở.
 ![Những đồng xu và máy tính tính toán biểu thị lợi nhuận cổ phiếu](./images/eps-la-gi/featured-01.jpg)
 *Ảnh: Sean Pollock / Unsplash*
 
-Trong thị trường chứng khoán cũng hoạt động hoàn toàn tương tự. Khi bạn mua cổ phiếu của một doanh nghiệp niêm yết, EPS là số tiền lời sau thuế mà doanh nghiệp đó tạo ra trên mỗi cổ phiếu phổ thông mà bạn đang sở hữu.
+Trong thị trường chứng khoán cũng hoạt động hoàn toàn tương tự. Khi bạn mua cổ phiếu của một doanh nghiệp niêm yết, EPS là số tiền lời sau thuế mà doanh nghiệp đó tạo ra trên mỗi [cổ phiếu](/dau-tu/co-phieu/co-phieu-la-gi/) phổ thông mà bạn đang sở hữu.
 
 ## Công thức tính chỉ số EPS cơ bản
 

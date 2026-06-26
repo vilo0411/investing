@@ -23,6 +23,12 @@ faq:
 sources:
   - "Sở Giao dịch Chứng khoán Hà Nội (HNX)"
   - "Tổng công ty Lưu ký và Bù trừ Chứng khoán Việt Nam (VSDC)"
+citations:
+  - title: "Hướng dẫn giao dịch sản phẩm Hợp đồng tương lai chỉ số VN30"
+    publisher: "Sở Giao dịch Chứng khoán Hà Nội (HNX)"
+  - title: "Nghị định 158/2020/NĐ-CP về chứng khoán phái sinh và thị trường chứng khoán phái sinh"
+    publisher: "Chính phủ"
+    date: "2020-12-31"
 keyTakeaways:
   - "Chứng khoán phái sinh tại Việt Nam hiện tại phổ biến nhất là Hợp đồng tương lai chỉ số VN30."
   - "Phái sinh cho phép nhà đầu tư kiếm lời cả khi thị trường tăng (Long) và khi thị trường giảm (Short)."

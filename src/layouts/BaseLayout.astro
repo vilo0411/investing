@@ -161,7 +161,9 @@ const openGraphExtra =
       extend={{
         link: [
           { rel: "alternate", hreflang: "vi", href: canonicalUrl },
-          { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+          { rel: "icon", type: "image/x-icon", href: url("/favicon.ico"), sizes: "any" },
+          { rel: "icon", type: "image/svg+xml", href: url("/favicon.svg") },
+          { rel: "apple-touch-icon", href: url("/apple-touch-icon.png") },
         ],
         meta: [
           { name: "author", content: author.name },
@@ -180,8 +182,10 @@ const openGraphExtra =
         <a class="brand" href={url("/")}>
           <svg class="brand-mark" width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true">
             <rect width="26" height="26" fill="var(--brand)"/>
-            <path d="M6 19L13 7L20 19" stroke="#fff" stroke-width="2.2" stroke-linecap="square" stroke-linejoin="miter"/>
-            <line x1="9.5" y1="15.5" x2="16.5" y2="15.5" stroke="#fff" stroke-width="1.8" stroke-linecap="square"/>
+            <!-- Upward price line: dips then climbs to the top-right -->
+            <path d="M5 18L10 13L14 16L21 7" stroke="#fff" stroke-width="2.2" stroke-linecap="square" stroke-linejoin="miter"/>
+            <!-- Arrowhead pointing up-right -->
+            <path d="M15.5 7H21V12.5" stroke="#fff" stroke-width="2.2" stroke-linecap="square" stroke-linejoin="miter"/>
           </svg>
           <span class="brand-text">{site.name}</span>
         </a>

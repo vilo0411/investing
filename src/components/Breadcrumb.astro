@@ -1,9 +1,21 @@
 ---
+import { url } from "@/data/site";
+
 interface Props {
   items: { label: string; href?: string }[];
 }
 
 const { items } = Astro.props;
+
+// Prefix absolute internal hrefs with the configured `base` (e.g. /investing on
+// GitHub Pages). Idempotent: skips hrefs already prefixed, external, or anchors —
+// so callers can pass either raw paths ("/", "/dau-tu/") or already-prefixed ones.
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+const withBase = (href?: string) => {
+  if (!href || !href.startsWith("/") || href.startsWith("//")) return href;
+  if (base && (href === base || href.startsWith(`${base}/`))) return href;
+  return url(href);
+};
 ---
 
 <nav class="breadcrumb" aria-label="Breadcrumb">
@@ -15,7 +27,7 @@ const { items } = Astro.props;
         </li>
       ) : (
         <li>
-          <a href={item.href}>{item.label}</a>
+          <a href={withBase(item.href)}>{item.label}</a>
           <span class="separator" aria-hidden="true">/</span>
         </li>
       )

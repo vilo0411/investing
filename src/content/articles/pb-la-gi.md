@@ -24,6 +24,11 @@ faq:
 sources:
   - "CFA Institute"
   - "Báo cáo tài chính của các Ngân hàng thương mại Việt Nam"
+citations:
+  - title: "CFA Program Curriculum — Equity Valuation (Price Multiples)"
+    publisher: "CFA Institute"
+  - title: "Báo cáo tài chính kiểm toán của các ngân hàng thương mại niêm yết"
+    publisher: "Sở Giao dịch Chứng khoán TP.HCM (HOSE)"
 keyTakeaways:
   - "Chỉ số P/B (Price-to-Book Ratio) so sánh thị giá của cổ phiếu với giá trị sổ sách (vốn chủ sở hữu) trên mỗi cổ phần của doanh nghiệp."
   - "P/B cho biết bạn đang trả bao nhiêu lần giá trị tài sản ghi trên sổ sách kế toán để sở hữu cổ phiếu đó."
@@ -75,4 +80,4 @@ Sử dụng P/B để định giá đòi hỏi bạn phải có sự linh hoạt
 
 Nguyên tắc thứ nhất là chỉ áp dụng P/B cho các ngành phù hợp. P/B cực kỳ hiệu quả với nhóm Ngân hàng, Bảo hiểm và Bất động sản vì tài sản của họ chủ yếu là tiền, các khoản cho vay, hoặc đất đai có giá trị định giá rõ ràng. Ngược lại, P/B hầu như vô nghĩa với các công ty công nghệ (như FPT) hoặc dịch vụ du lịch — nơi tài sản lớn nhất là trí tuệ nhân tạo, phần mềm và con người, vốn không hiển thị đầy đủ trên bảng cân đối kế toán.
 
-Nguyên tắc thứ hai là luôn so sánh P/B đồng hành với chỉ số hiệu quả sử dụng vốn ROE. Một doanh nghiệp có P/B cao nhưng ROE cũng cực kỳ cao (trên 20%) thì vẫn đáng mua hơn nhiều so với một doanh nghiệp có P/B cực thấp nhưng ROE chỉ lẹt đẹt 2-3%.
+Nguyên tắc thứ hai là luôn so sánh P/B đồng hành với chỉ số hiệu quả sử dụng vốn [ROE](/phan-tich/co-ban/roe-la-gi/). Một doanh nghiệp có P/B cao nhưng ROE cũng cực kỳ cao (trên 20%) thì vẫn đáng mua hơn nhiều so với một doanh nghiệp có P/B cực thấp nhưng ROE chỉ lẹt đẹt 2-3%.

@@ -24,6 +24,11 @@ faq:
 sources:
   - "CFA Institute"
   - "Báo cáo tài chính kiểm toán của các doanh nghiệp niêm yết tại Việt Nam"
+citations:
+  - title: "CFA Program Curriculum — Financial Analysis Techniques (DuPont Analysis)"
+    publisher: "CFA Institute"
+  - title: "Báo cáo tài chính kiểm toán của doanh nghiệp niêm yết"
+    publisher: "Sở Giao dịch Chứng khoán TP.HCM (HOSE)"
 keyTakeaways:
   - "Chỉ số ROE (Return on Equity) đo lường mức độ hiệu quả của doanh nghiệp trong việc sử dụng vốn chủ sở hữu để tạo ra lợi nhuận."
   - "ROE được tính bằng lợi nhuận sau thuế chia cho vốn chủ sở hữu bình quân của doanh nghiệp."
@@ -31,7 +36,7 @@ keyTakeaways:
   - "Bắt buộc phải kết hợp phân tích ROE với tỷ lệ nợ (đòn bẩy) để đảm bảo lợi nhuận bền vững, không ảo."
 ---
 
-Một trong những thước đo quan trọng nhất để tỷ phú Warren Buffett lựa chọn các doanh nghiệp siêu hạng cho danh mục đầu tư của mình là chỉ số ROE. Đây là con số phản ánh trực tiếp năng lực "kiếm tiền" từ đồng vốn góp của cổ đông từ ban lãnh đạo. Bài viết này từ **[Value Investing](/)** sẽ giúp bạn hiểu rõ **roe là gì**, cách tính toán đơn giản và phương pháp phân biệt giữa một doanh nghiệp thực sự chất lượng với một doanh nghiệp dùng nợ để tô hồng báo cáo.
+Một trong những thước đo quan trọng nhất để tỷ phú [Warren Buffett](/nha-dau-tu/warren-buffett/) lựa chọn các doanh nghiệp siêu hạng cho danh mục đầu tư của mình là chỉ số ROE. Đây là con số phản ánh trực tiếp năng lực "kiếm tiền" từ đồng vốn góp của cổ đông từ ban lãnh đạo. Bài viết này từ **[Value Investing](/)** sẽ giúp bạn hiểu rõ **roe là gì**, cách tính toán đơn giản và phương pháp phân biệt giữa một doanh nghiệp thực sự chất lượng với một doanh nghiệp dùng nợ để tô hồng báo cáo.
 
 ## Bản chất chỉ số ROE: Hiệu suất sinh lời trên mỗi đồng vốn cổ đông
 

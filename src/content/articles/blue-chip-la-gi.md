@@ -23,6 +23,11 @@ faq:
 sources:
   - "Ủy ban Chứng khoán Nhà nước"
   - "Sở Giao dịch Chứng khoán TP.HCM (HOSE)"
+citations:
+  - title: "Quy tắc xây dựng và quản lý Bộ chỉ số HOSE-Index (VN30)"
+    publisher: "Sở Giao dịch Chứng khoán TP.HCM (HOSE)"
+  - title: "CFA Program Curriculum — Equity Investments"
+    publisher: "CFA Institute"
 keyTakeaways:
   - "Cổ phiếu Blue chip là cổ phiếu của các doanh nghiệp lớn, có thương hiệu mạnh, tình hình tài chính lành mạnh và lịch sử phát triển ổn định."
   - "Tại Việt Nam, nhóm cổ phiếu này thường nằm trong rổ VN30 với vốn hóa lớn và tính thanh khoản cao trên sàn giao dịch."
@@ -67,7 +72,7 @@ Về nhược điểm, tiềm năng tăng trưởng đột biến của Blue chi
 
 Nhiều người mới thường mắc sai lầm là nhắm mắt mua bừa cổ phiếu Blue chip vì nghĩ chúng an toàn tuyệt đối. Hãy nhớ kỹ ba nguyên tắc sau để tránh mất tiền oan.
 
-Thứ nhất là kiểm tra định giá. Một doanh nghiệp tốt đến mấy nhưng nếu bạn mua với giá quá đắt (chỉ số P/E hoặc P/B quá cao) thì vẫn có thể chịu lỗ lớn. Hãy kiên nhẫn chờ đợi các nhịp điều chỉnh của thị trường để mua được cổ phiếu với mức giá hợp lý.
+Thứ nhất là kiểm tra định giá. Một doanh nghiệp tốt đến mấy nhưng nếu bạn mua với giá quá đắt (chỉ số [P/E](/phan-tich/co-ban/pe-la-gi/) hoặc [P/B](/phan-tich/co-ban/pb-la-gi/) quá cao) thì vẫn có thể chịu lỗ lớn. Hãy kiên nhẫn chờ đợi các nhịp điều chỉnh của thị trường để mua được cổ phiếu với mức giá hợp lý.
 
 Thứ hai là theo dõi chu kỳ ngành. Một số doanh nghiệp lớn như ngành thép hay dầu khí có tính chu kỳ rất mạnh. Mua cổ phiếu thép ở đỉnh chu kỳ lợi nhuận có thể khiến tài khoản của bạn bị sụt giảm nghiêm trọng.
 

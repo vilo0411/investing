@@ -24,6 +24,12 @@ faq:
 sources:
   - "Luật Doanh nghiệp Việt Nam"
   - "Sở Giao dịch Chứng khoán TP.HCM (HOSE)"
+citations:
+  - title: "Luật Doanh nghiệp số 59/2020/QH14 — quy định về chi trả cổ tức"
+    publisher: "Quốc hội"
+    date: "2020-06-17"
+  - title: "Thông tin chi trả cổ tức và ngày giao dịch không hưởng quyền của doanh nghiệp niêm yết"
+    publisher: "Sở Giao dịch Chứng khoán TP.HCM (HOSE)"
 keyTakeaways:
   - "Cổ tức là phần lợi nhuận sau thuế của doanh nghiệp được chia lại cho các cổ đông tương ứng với số cổ phần nắm giữ."
   - "Doanh nghiệp tại Việt Nam thường chi trả cổ tức dưới hai hình thức chính: tiền mặt (chuyển vào tài khoản) và cổ phiếu mới."
@@ -72,6 +78,6 @@ Cột mốc thứ ba là Ngày thanh toán. Đây là ngày tiền mặt đượ
 
 Nhiều nhà đầu tư mới thường có tâm lý hào hứng chạy theo các doanh nghiệp chia cổ tức tỷ lệ cực khủng lên tới 50% hay 100%. Đây là cái bẫy Value trap cực kỳ nguy hiểm.
 
-Bạn cần nhớ rằng, vào ngày GDKHQ, giá cổ phiếu trên sàn sẽ bị điều chỉnh giảm kỹ thuật tương ứng với giá trị cổ tức bạn nhận được. Bản chất là tổng tài sản của bạn không hề tăng lên ngay lập tức. Bạn thậm chí còn phải tạm nộp 5% thuế thu nhập cá nhân cho khoản cổ tức tiền mặt nhận được.
+Bạn cần nhớ rằng, vào ngày GDKHQ, giá [cổ phiếu](/dau-tu/co-phieu/co-phieu-la-gi/) trên sàn sẽ bị điều chỉnh giảm kỹ thuật tương ứng với giá trị cổ tức bạn nhận được. Bản chất là tổng tài sản của bạn không hề tăng lên ngay lập tức. Bạn thậm chí còn phải tạm nộp 5% thuế thu nhập cá nhân cho khoản cổ tức tiền mặt nhận được.
 
 Vì vậy, thay vì chỉ nhìn vào con số tỷ lệ chia cổ tức, hãy đánh giá xem doanh nghiệp đó có thực sự làm ăn có lãi từ hoạt động cốt lõi hay không. Một doanh nghiệp đi vay nợ để chia cổ tức nhằm đánh bóng tên tuổi chắc chắn sẽ suy yếu trong dài hạn.

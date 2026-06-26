@@ -88,12 +88,12 @@ const contactReasons = [
         <div class="contact-person">
           <div class="contact-avatar" aria-hidden="true">
             {author.avatar
-              ? <img src={author.avatar} alt={author.name} width="80" height="80" />
+              ? <img src={url(author.avatar)} alt={author.name} width="80" height="80" />
               : author.name.split(" ").pop()?.charAt(0)
             }
           </div>
           <div>
-            <a class="contact-name" href={`/author/${author.slug}/`}>{author.name}</a>
+            <a class="contact-name" href={url(`/author/${author.slug}/`)}>{author.name}</a>
             <span class="contact-role">{author.role}</span>
           </div>
         </div>

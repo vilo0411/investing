@@ -1,4 +1,4 @@
 User-agent: *
-Disallow: /
+Allow: /
 
-Sitemap: https://valueinvesting.com.vn/sitemap-index.xml
+Sitemap: https://valueinvesting.com.vn/sitemap.xml

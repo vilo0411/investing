@@ -24,6 +24,11 @@ faq:
 sources:
   - "Sở Giao dịch Chứng khoán TP.HCM (HOSE)"
   - "Tài liệu công bố thông tin của Công ty Quản lý Quỹ Dragon Capital và SSIAM"
+citations:
+  - title: "Bộ chỉ số VN30 — Phương pháp tính và quy tắc cơ cấu danh mục"
+    publisher: "Sở Giao dịch Chứng khoán TP.HCM (HOSE)"
+  - title: "Bản cáo bạch quỹ ETF DCVFMVN30 và SSIAM VN30"
+    publisher: "Dragon Capital & SSIAM"
 keyTakeaways:
   - "ETF VN30 là quỹ hoán đổi danh mục mô phỏng theo chỉ số VN30, đại diện cho 30 doanh nghiệp lớn hàng đầu Việt Nam."
   - "Mua chứng chỉ quỹ ETF VN30 tương đương sở hữu một rổ gồm 30 cổ phiếu Blue chip mà không cần số vốn lớn."
@@ -54,7 +59,7 @@ Quỹ hoán đổi danh mục này sở hữu ba ưu điểm vượt trội giú
 
 Ưu điểm thứ nhất là tự động đa dạng hóa danh mục để phân tán rủi ro. Nếu bạn dồn toàn bộ vốn vào một cổ phiếu riêng lẻ và công ty đó gặp scandal hay thua lỗ, tài khoản của bạn sẽ sụt giảm nghiêm trọng. Nhưng với ETF VN30, sự sụt giảm của một vài mã sẽ được bù đắp bởi sự tăng trưởng của các doanh nghiệp khác trong rổ 30 cổ phiếu.
 
-Ưu điểm thứ hai là chi phí đầu tư cực kỳ thấp. Để mua đủ 30 cổ phiếu VN30 với lô tối thiểu trên sàn, bạn cần số vốn lên tới hàng chục triệu đồng. Nhưng với chứng chỉ quỹ ETF VN30, bạn có thể bắt đầu tích sản chỉ với vài trăm nghìn đồng. Phí quản lý quỹ cũng rất rẻ, thường dưới 1% mỗi năm.
+Ưu điểm thứ hai là chi phí đầu tư cực kỳ thấp. Để mua đủ 30 [cổ phiếu](/dau-tu/co-phieu/co-phieu-la-gi/) VN30 với lô tối thiểu trên sàn, bạn cần số vốn lên tới hàng chục triệu đồng. Nhưng với chứng chỉ quỹ ETF VN30, bạn có thể bắt đầu tích sản chỉ với vài trăm nghìn đồng. Phí quản lý quỹ cũng rất rẻ, thường dưới 1% mỗi năm.
 
 Ưu điểm cuối cùng là tiết kiệm thời gian. Bạn không cần thức đêm đọc báo cáo tài chính, cũng không cần bám bảng điện tử hàng ngày. Công việc của bạn chỉ là đều đặn trích một phần thu nhập để tích sản chứng chỉ quỹ hàng tháng.
 

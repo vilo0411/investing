@@ -126,6 +126,11 @@ faq:
 sources:
   - "Báo cáo thị phần môi giới của Sở Giao dịch Chứng khoán TP.HCM (HOSE)"
   - "Trải nghiệm thực tế hệ thống giao dịch của các CTCK lớn"
+citations:
+  - title: "Báo cáo thị phần giá trị giao dịch môi giới cổ phiếu, chứng chỉ quỹ và chứng quyền"
+    publisher: "Sở Giao dịch Chứng khoán TP.HCM (HOSE)"
+  - title: "Biểu phí giao dịch và điều kiện mở tài khoản công bố trên website chính thức"
+    publisher: "VPS, SSI, VNDIRECT, TCBS"
 keyTakeaways:
   - "Chọn công ty chứng khoán phù hợp là bước đi đầu tiên vô cùng quan trọng quyết định trải nghiệm giao dịch thực tế của F0."
   - "Bốn tiêu chí cốt lõi để chọn công ty chứng khoán: Độ ổn định hệ thống, chi phí giao dịch, giao diện ứng dụng và dịch vụ môi giới."
@@ -153,7 +158,7 @@ Tiêu chí thứ ba là giao diện ứng dụng trực quan, dễ sử dụng. 
 Dưới đây là phần đánh giá chi tiết ưu và nhược điểm thực tế của 4 ông lớn đang chiếm thị phần môi giới cá nhân lớn nhất tại Việt Nam.
 
 ### 1. Công ty Chứng khoán VPS
-*   **Ưu điểm:** Sở hữu thị phần môi giới số 1 Việt Nam. VPS có đội ngũ môi giới cực kỳ hùng hậu hỗ trợ khách hàng 24/7. Giao diện ứng dụng SmartOne tích hợp nhiều tính năng tiện ích, thao tác chuyển tiền và đặt lệnh rất nhanh chóng.
+*   **Ưu điểm:** Sở hữu thị phần môi giới số 1 Việt Nam. [VPS](/reviews/review-vps-securities/) có đội ngũ môi giới cực kỳ hùng hậu hỗ trợ khách hàng 24/7. Giao diện ứng dụng SmartOne tích hợp nhiều tính năng tiện ích, thao tác chuyển tiền và đặt lệnh rất nhanh chóng.
 *   **Nhược điểm:** Phí giao dịch ở mức trung bình cao (sau thời gian ưu đãi ban đầu). Đội ngũ môi giới quá đông dẫn đến chất lượng tư vấn không đồng đều, người mới dễ gặp phải môi giới thiếu kinh nghiệm.
 
 ### 2. Công ty Chứng khoán Techcom Securities (TCBS)
