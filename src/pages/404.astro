@@ -1,0 +1,104 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { url } from "@/data/site";
+---
+
+<BaseLayout
+  title="Không tìm thấy trang (404)"
+  description="Trang bạn tìm không tồn tại hoặc đã được di chuyển."
+>
+  <section class="error-page">
+    <div class="container error-grid">
+      <div class="error-code">404</div>
+      <h1>Không tìm thấy trang</h1>
+      <p class="lead">
+        Đường dẫn bạn truy cập không tồn tại hoặc đã được di chuyển. Hãy quay về trang chủ
+        hoặc tìm bài viết bạn cần.
+      </p>
+      <div class="error-actions">
+        <a class="primary-action" href={url("/")}>Về trang chủ</a>
+        <a class="secondary-action" href={url("/search/")}>Tìm bài viết</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .error-page {
+    padding: 6rem 0 7rem;
+  }
+
+  .error-grid {
+    max-width: 640px;
+    text-align: center;
+  }
+
+  .error-code {
+    font-family: var(--font-serif);
+    font-size: clamp(4rem, 12vw, 7rem);
+    line-height: 1;
+    color: var(--brand);
+    margin-bottom: 1rem;
+  }
+
+  .error-grid h1 {
+    margin: 0 0 1rem;
+  }
+
+  .error-grid .lead {
+    color: var(--muted);
+    margin: 0 auto 2rem;
+  }
+
+  .error-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* Mirror the hero action buttons (scoped to index.astro) */
+  .primary-action,
+  .secondary-action {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-sans);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.88rem;
+    letter-spacing: 0.05em;
+    padding: 12px 24px;
+    border: 1px solid var(--line);
+    border-radius: 0px;
+    cursor: pointer;
+    text-decoration: none;
+    line-height: 1.2;
+  }
+
+  .primary-action {
+    background: var(--brand);
+    color: #fff !important;
+    box-shadow: var(--shadow-md);
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  }
+
+  .primary-action:hover {
+    transform: translate(4px, 4px);
+    box-shadow: none;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .secondary-action {
+    color: var(--text) !important;
+    background: transparent;
+    box-shadow: none;
+    transition: background var(--transition-fast);
+  }
+
+  .secondary-action:hover {
+    background: var(--surface-alt);
+    text-decoration: none;
+  }
+</style>
