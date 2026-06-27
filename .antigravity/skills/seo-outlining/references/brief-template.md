@@ -154,7 +154,7 @@ Internal_Links:
 - [ ] Sapo dùng Story hook hoặc Contrarian hook — KHÔNG mở bằng định nghĩa khô
 - [ ] Có ít nhất 1 ví dụ đời thường Việt Nam (quán cà phê, xe máy, gửi tiết kiệm...)
 - [ ] Không có từ nào trong Anti_AI_Flags
-- [ ] Xưng hô: "Mình" (tác giả) — "Bạn" (độc giả)
+- [ ] Xưng hô: "Value Investing" (thương hiệu) — "Bạn" (độc giả); không xưng "chúng tôi", "mình"/"tôi"
 - [ ] Mọi claim có số liệu hoặc nguồn đi kèm
 - [ ] Kết bài = 1 insight + 1 hành động cụ thể
 

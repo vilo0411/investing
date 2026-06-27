@@ -55,7 +55,7 @@ Mỗi bài phải trả lời được: "Đọc xong thì tôi làm được gì
 |-------|-----------|-----------------|
 | Năng lượng | Điềm tĩnh, chắc chắn | Hype, kích động, "cơ hội vàng" |
 | Độ chính thức | Thân thiện như người anh/chị giải thích | Khô khan như giáo trình đại học |
-| Xưng hô | "Bạn" (độc giả) + "Mình" (tác giả) | "Quý độc giả", "chúng tôi" |
+| Xưng hô | "Bạn" (độc giả) + "Value Investing" (thương hiệu — dự án một người) | "Quý độc giả", "chúng tôi" (hàm ý tập thể), "Mình"/"Tôi" (ngôi cá nhân) |
 | Số liệu | Cụ thể, có nguồn — dùng để minh họa | Số liệu cảm xúc, không nguồn |
 | Rủi ro | Nói thẳng + hướng dẫn quản lý | Né tránh hoặc disclaimer có lệ |
 

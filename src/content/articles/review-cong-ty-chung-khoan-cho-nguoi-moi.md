@@ -11,7 +11,7 @@ featured: false
 order: 11
 layoutType: review
 reviewType: listicle
-reviewSummary: "Chúng tôi đánh giá 4 công ty chứng khoán hàng đầu Việt Nam dựa trên 5 tiêu chí: độ ổn định hệ thống, biểu phí giao dịch, lãi suất margin, giao diện ứng dụng và chất lượng hỗ trợ khách hàng. Dữ liệu được cập nhật tháng 6/2026."
+reviewSummary: "Value Investing đánh giá 4 công ty chứng khoán hàng đầu Việt Nam dựa trên 5 tiêu chí: độ ổn định hệ thống, biểu phí giao dịch, lãi suất margin, giao diện ứng dụng và chất lượng hỗ trợ khách hàng. Dữ liệu được cập nhật tháng 6/2026."
 rankings:
   - slug: "tcbs"
     rank: 1

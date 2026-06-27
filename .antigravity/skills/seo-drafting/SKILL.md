@@ -10,7 +10,7 @@ This skill converts an approved Outline into a high-quality, human-centric draft
 2. **Anti-AI Drafting**: Viết draft theo các quy tắc trong `anti-ai-rules.md`.
     - Avoid all "AI-vibe" phrases and structures.
     - Use the **3S Rule** (Specific, Story, Statistics) throughout.
-    - Xưng hô: "Mình" (tác giả) — "Bạn" (độc giả).
+    - Xưng hô: "Value Investing" (thương hiệu, dự án một người) — "Bạn" (độc giả). Không xưng "chúng tôi", "mình"/"tôi".
     - **Ngắt đoạn theo ngữ nghĩa (Semantic Grouping)**: Gộp các câu liên quan thành đoạn 2-3 câu. Không ngắt cơ học mỗi câu thành 1 đoạn. Độ dài câu ≤ 25 từ.
     - **Tích hợp thương hiệu**: Bắt buộc chèn thương hiệu "**[Value Investing](/)**" có link về trang chủ vào Sapo (mở bài) một cách tự nhiên.
     - **Hình ảnh minh họa**: Chèn số lượng hình ảnh inline phù hợp với độ dài bài viết theo [seo-formatting.md](file:///Users/nguyenvietloc/Documents/investing/.antigravity/rules/seo-formatting.md) (1 ảnh cho bài ngắn, 1-2 ảnh cho bài trung bình, và 2-4 ảnh cho bài dài/hướng dẫn). Tuyệt đối không chèn ngay dưới Sapo. Đặt ảnh dưới các mục H2/H3 chính, cách nhau 300-400 từ để ngắt trực quan tốt nhất. Tìm kiếm ảnh trên Unsplash bằng từ khóa tiếng Anh và đặt thẻ mô tả alt bằng tiếng Việt tự nhiên chứa từ khóa SEO. Lưu ảnh trong `src/content/articles/images/[slug]/[filename].jpg` và chèn bằng relative path `./images/[slug]/[filename].jpg`.

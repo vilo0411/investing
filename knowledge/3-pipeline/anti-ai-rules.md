@@ -46,7 +46,7 @@ Quy định bắt buộc về phong cách viết bài và loại bỏ "AI-vibe" 
 6. **Tuyên bố miễn trừ trách nhiệm:** Bắt buộc chèn ở cuối mọi bài viết phân tích hoặc đánh giá cổ phiếu/tài sản (bài kiến thức nền tảng chung thì không cần).
 
 ### Quy định Mobile-First & Dễ đọc
-- **Xưng xô:** Tác giả xưng "mình", gọi người đọc là "bạn" (tránh dùng "quý độc giả", "các bạn", "chúng tôi").
+- **Xưng hô:** Đây là dự án một người, nên thương hiệu xưng bằng tên "Value Investing", gọi người đọc là "bạn". Tránh "quý độc giả", "các bạn", "chúng tôi" (hàm ý tập thể) và ngôi cá nhân "mình"/"tôi". Lưu ý: "của mình", "tự mình" khi chỉ chính người đọc hoặc bên thứ ba thì vẫn dùng bình thường.
 - **Ví dụ bắt buộc:** Mỗi bài viết bắt buộc có ít nhất 1 ví dụ đời thường Việt Nam để giải thích thuật ngữ khó (quán cà phê, xe máy, gửi tiết kiệm...).
 - **Độ dài câu:** Tối đa 25 từ. Khi viết danh sách gạch đầu dòng có tiêu đề in đậm kèm dấu hai chấm `:`, hãy thay thế `:` bằng dấu chấm `. ` để tối ưu hóa đếm từ của script QA.
 - **Độ dài đoạn:** Tối đa 2-3 câu. Ngắt đoạn dựa trên sự liên kết ngữ nghĩa (semantic grouping), tránh ngắt cơ học làm đứt mạch ý.
@@ -62,7 +62,7 @@ Quy định bắt buộc về phong cách viết bài và loại bỏ "AI-vibe" 
 - [ ] Có ít nhất 1 ví dụ đời thường thực tế của Việt Nam?
 - [ ] Không chứa bất kỳ cụm từ nào trong danh sách Blacklist?
 - [ ] Không có công thức định dạng LaTeX?
-- [ ] Xưng hô đúng chuẩn "bạn" - "mình"?
+- [ ] Xưng hô đúng chuẩn "bạn" — "Value Investing" (không xưng "chúng tôi", "mình"/"tôi")?
 - [ ] Mọi con số, lãi suất, tỷ lệ đều có nguồn gốc trích dẫn?
 - [ ] Không có câu nào dài quá 25 từ?
 - [ ] Không có đoạn văn nào nhiều hơn 3 câu?

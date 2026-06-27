@@ -119,6 +119,6 @@ Khi thị trường tăng điểm, margin giúp bạn nhân đôi hoặc nhân b
 
 ## Hành trình đầu tư của bạn bắt đầu từ hôm nay
 
-Đầu tư cổ phiếu là hành trình tích lũy tài sản dài hạn. Cách tốt nhất là bạn hãy bắt đầu bằng số vốn nhỏ giống như chia sẻ của mình ở trên để làm quen nhịp thị trường và tích lũy thêm kinh nghiệm giao dịch.
+Đầu tư cổ phiếu là hành trình tích lũy tài sản dài hạn. Cách tốt nhất là bạn hãy bắt đầu bằng số vốn nhỏ giống như gợi ý ở trên để làm quen nhịp thị trường và tích lũy thêm kinh nghiệm giao dịch.
 
 Hãy xem thêm bài viết [cổ phiếu là gì](/dau-tu/co-phieu/co-phieu-la-gi/) để trang bị đầy đủ kiến thức cơ bản trước khi đặt lệnh mua đầu tiên.

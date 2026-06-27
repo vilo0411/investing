@@ -35,7 +35,7 @@ Tài liệu chuẩn hóa cách viết các thuật ngữ tài chính, chứng kh
 
 ## 3. Từ cấm và Từ khuyên dùng (Banned & Preferred)
 
-- **Xưng xô:** Tác giả xưng "mình", gọi người đọc là "bạn" (tránh dùng "quý độc giả", "các bạn", "chúng tôi").
+- **Xưng hô:** Dự án một người — thương hiệu xưng bằng tên "Value Investing", gọi người đọc là "bạn" (tránh "quý độc giả", "các bạn", "chúng tôi", và ngôi cá nhân "mình"/"tôi").
 - **Tên blog nội bộ:** "Value Investing" hoặc "blog này".
 - **Từ cấm dùng:** "Không thể bỏ lỡ", "Cơ hội vàng", "Siêu hot", "Đừng bỏ lỡ", "Hãy cùng chúng tôi khám phá", "Nên mua cổ phiếu X ngay", "chắc chắn thắng", "bao lỗ", "all-in", "tất tay", "múc", "sút", "phím hàng", "xương máu", "thua lỗ thảm hại", "cháy tài khoản".
 - **Từ khuyên dùng:** 

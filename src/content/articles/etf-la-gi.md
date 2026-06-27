@@ -129,6 +129,6 @@ Ba nguyên tắc DCA với ETF:
 
 ---
 
-Quỹ ETF là công cụ đầu tư nhàn nhã và bền vững cho hành trình tích lũy tài sản dài hạn. Bước tiếp theo mình gợi ý: tìm mã E1VFVN30 trên ứng dụng chứng khoán, xem biểu đồ giá 5 năm. Thử tính xem nếu mua đều 3 triệu/tháng từ 5 năm trước, hôm nay bạn có bao nhiêu.
+Quỹ ETF là công cụ đầu tư nhàn nhã và bền vững cho hành trình tích lũy tài sản dài hạn. Bước tiếp theo Value Investing gợi ý: tìm mã E1VFVN30 trên ứng dụng chứng khoán, xem biểu đồ giá 5 năm. Thử tính xem nếu mua đều 3 triệu/tháng từ 5 năm trước, hôm nay bạn có bao nhiêu.
 
 Đọc thêm hướng dẫn [cách đầu tư quỹ ETF](/dau-tu/etf/cach-dau-tu-quy-etf/) để biết cách mở lệnh và xây dựng kế hoạch DCA thực tế.
