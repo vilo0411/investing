@@ -47,7 +47,7 @@ location ~ ^(?<page>/.+)\.md$ {
     charset utf-8;
     charset_types text/markdown;   # BẮT BUỘC: để nginx gắn "; charset=utf-8" cho .md
     add_header Vary Accept;
-    add_header Content-Signal "ai-train=yes, search=yes, ai-input=yes";
+    add_header Content-Signal "ai-train=no, search=yes, ai-input=yes";
     add_header X-Robots-Tag "noindex" always;   # tránh trùng lặp SEO: không index bản .md
     try_files $uri ${page}/index.html =404;
 }
