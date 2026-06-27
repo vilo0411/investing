@@ -28,18 +28,19 @@ const yamlEscape = (value: string) => `"${value.replace(/"/g, '\\"')}"`;
 
 export const GET: APIRoute = ({ props, site }) => {
   const article = props.article as CollectionEntry<"articles">;
-  const { title, description, updatedDate } = article.data;
+  const { title, description, updatedDate, heroImage } = article.data;
 
   // Minimal, predictable frontmatter pointing back at the canonical HTML page.
-  const frontmatter = [
-    "---",
+  const fields = [
     `title: ${yamlEscape(title)}`,
     `description: ${yamlEscape(description)}`,
     `url: ${absolute(site, getArticlePath(article))}`,
     `updated: ${updatedDate.toISOString().slice(0, 10)}`,
-    "---",
-    "",
-  ].join("\n");
+  ];
+  // `image` only when the article has a hero, resolved to an absolute URL.
+  if (heroImage) fields.push(`image: ${absolute(site, heroImage)}`);
+
+  const frontmatter = ["---", ...fields, "---", ""].join("\n");
 
   // `article.body` is the raw, unrendered markdown source — no lossy HTML round-trip.
   return new Response(frontmatter + article.body, {
