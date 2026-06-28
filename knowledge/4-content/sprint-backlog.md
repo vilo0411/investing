@@ -28,10 +28,10 @@
 
 | # | Spoke Keyword | Slug | Status | Ghi chú |
 |---|---|---|---|---|
-| 1.1 | Cách chọn cổ phiếu tốt | `cach-chon-co-phieu-tot` | `Planned` | Sub-pillar |
+| 1.1 | Cách chọn cổ phiếu tốt | `cach-chon-co-phieu-tot` | `Finalized` | Sub-pillar |
 | 1.2 | Đầu tư cổ phiếu cần bao nhiêu tiền | `dau-tu-co-phieu-can-bao-nhieu-tien` | `Planned` | Rào cản tâm lý F0 |
-| 1.3 | Khi nào nên bán cổ phiếu | `khi-nao-nen-ban-co-phieu` | `Planned` | Gap lớn trên market |
-| 1.4 | Đầu tư cổ phiếu dài hạn | `dau-tu-co-phieu-dai-han` | `Planned` | Core value investing |
+| 1.3 | Khi nào nên bán cổ phiếu | `khi-nao-nen-ban-co-phieu` | `Finalized` | Gap lớn trên market |
+| 1.4 | Đầu tư chứng khoán dài hạn | `dau-tu-chung-khoan-dai-han` | `Finalized` | Core value investing |
 | 1.5 | Đầu tư tích sản cổ phiếu là gì | `dau-tu-tich-san-co-phieu-la-gi` | `Planned` | DCA concept |
 | 1.6 | Cách nhận biết cổ phiếu tiềm năng | `cach-nhan-biet-co-phieu-tiem-nang` | `Planned` | Backlog |
 
@@ -55,7 +55,7 @@
 |---|---|---|---|---|
 | 4.1 | Có nên đầu tư trái phiếu | `co-nen-dau-tu-trai-phieu` | `Planned` | Decision content |
 | 4.2 | Cách mua trái phiếu | `cach-mua-trai-phieu` | `Planned` | How-to thực hành |
-| 4.3 | Trái phiếu chính phủ là gì | `trai-phieu-chinh-phu-la-gi` | `Planned` | Kiến thức nền |
+| 4.3 | Trái phiếu chính phủ là gì | `trai-phieu-chinh-phu-la-gi` | `Finalized` | Kiến thức nền |
 | 4.4 | Bond yield là gì | `bond-yield-la-gi` | `Planned` | Nâng cao |
 
 ---
@@ -77,7 +77,7 @@
   ├── → co-phieu-la-gi (đã có)
   ├── → cach-chon-co-phieu-tot
   ├── → khi-nao-nen-ban-co-phieu
-  └── → dau-tu-co-phieu-dai-han
+  └── → dau-tu-chung-khoan-dai-han
 
 [cach-dau-tu-etf]            ← Hub C2
   ├── → etf-la-gi (đã có)
@@ -115,7 +115,7 @@
 
 ## Backlog chờ (sprint sau)
 
-- `cach-mo-tai-khoan-chung-khoan` — Cross-category, liên quan đến Reviews
-- `co-nen-dau-tu-chung-khoan-khong` — Gateway awareness
+- `cach-mo-tai-khoan-chung-khoan` (Finalized)
+- `co-nen-dau-tu-chung-khoan-khong` (Finalized)
 - `so-sanh-co-phieu-va-chung-chi-quy-dau-tu` — So sánh cross-product
 - `so-sanh-forex-va-chung-khoan` — So sánh cross-asset

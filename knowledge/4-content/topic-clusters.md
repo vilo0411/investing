@@ -47,7 +47,7 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 | Cổ tức là gì | `co-tuc-la-gi` | `Finalized` | ✅ Đã publish |
 | Cổ phiếu Blue Chip là gì | `blue-chip-la-gi` | `Finalized` | ✅ Đã publish |
 | Cổ phiếu OTC là gì | `co-phieu-otc-la-gi` | `Planned` | |
-| Cổ phiếu ưu đãi là gì | `co-phieu-uu-dai-la-gi` | `Planned` | |
+| Cổ phiếu ưu đãi là gì | `co-phieu-uu-dai-la-gi` | `Finalized` | |
 | Cổ phiếu thưởng là gì | `co-phieu-thuong-la-gi` | `Planned` | |
 | Cổ phiếu quỹ là gì | `co-phieu-quy-la-gi` | `Planned` | |
 | Cổ phiếu ESOP là gì | `co-phieu-esop-la-gi` | `Planned` | |
@@ -55,7 +55,7 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 | Cổ phiếu phòng thủ | `co-phieu-phong-thu` | `Planned` | |
 | Cổ phiếu trụ là gì | `co-phieu-tru-la-gi` | `Planned` | |
 | Pha loãng cổ phiếu là gì | `pha-loang-co-phieu-la-gi` | `Planned` | |
-| Chia tách cổ phiếu là gì | `chia-tach-co-phieu-la-gi` | `Planned` | |
+| Chia tách cổ phiếu là gì | `chia-tach-co-phieu-la-gi` | `Finalized` | |
 | Trả cổ tức bằng cổ phiếu | `tra-co-tuc-bang-co-phieu-la-gi` | `Planned` | |
 | Thị giá cổ phiếu là gì | `thi-gia-co-phieu-la-gi` | `Planned` | |
 | Cổ phiếu lô lẻ là gì | `co-phieu-lo-le-la-gi` | `Planned` | |
@@ -73,14 +73,14 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 
 | Keyword (Spoke) | Slug | Status | Ghi chú |
 |---|---|---|---|
-| Cách mở tài khoản chứng khoán | `cach-mo-tai-khoan-chung-khoan` | `Planned` | Sprint Wave 1 |
-| Đầu tư chứng khoán cần bao nhiêu tiền | `dau-tu-chung-khoan-can-bao-nhieu-tien` | `Planned` | Sprint Wave 1 |
-| Có nên đầu tư chứng khoán không | `co-nen-dau-tu-chung-khoan-khong` | `Planned` | Sprint Wave 1 |
+| Cách mở tài khoản chứng khoán | `cach-mo-tai-khoan-chung-khoan` | `Finalized` | Sprint Wave 1 |
+| Đầu tư chứng khoán cần bao nhiêu tiền | `dau-tu-chung-khoan-can-bao-nhieu-tien` | `Finalized` | Sprint Wave 1 |
+| Có nên đầu tư chứng khoán không | `co-nen-dau-tu-chung-khoan-khong` | `Finalized` | Sprint Wave 1 |
 | Cách đầu tư cổ phiếu | `cach-dau-tu-co-phieu` | `Finalized` | Sprint Wave 2 |
-| Cách chọn cổ phiếu tốt | `cach-chon-co-phieu-tot` | `Planned` | Sprint Wave 2 |
-| Đầu tư chứng khoán với số vốn nhỏ | `dau-tu-chung-khoan-von-nho` | `Planned` | Sprint Wave 2 |
-| Khi nào nên bán cổ phiếu | `khi-nao-nen-ban-co-phieu` | `Planned` | Sprint Wave 2 |
-| Đầu tư chứng khoán dài hạn | `dau-tu-chung-khoan-dai-han` | `Planned` | Sprint Wave 3 |
+| Cách chọn cổ phiếu tốt | `cach-chon-co-phieu-tot` | `Finalized` | Sprint Wave 2 |
+| Đầu tư chứng khoán với số vốn nhỏ | `dau-tu-chung-khoan-von-nho` | `Finalized` | Sprint Wave 2 |
+| Khi nào nên bán cổ phiếu | `khi-nao-nen-ban-co-phieu` | `Finalized` | Sprint Wave 2 |
+| Đầu tư chứng khoán dài hạn | `dau-tu-chung-khoan-dai-han` | `Finalized` | Sprint Wave 3 |
 | Đầu tư tích sản cổ phiếu là gì | `dau-tu-tich-san-co-phieu-la-gi` | `Planned` | Sprint Wave 3 |
 | Chiến lược đầu tư chứng khoán | `chien-luoc-dau-tu-chung-khoan` | `Planned` | Sprint Wave 3 |
 | Cách chơi chứng khoán trên điện thoại | `cach-choi-chung-khoan-tren-dien-thoai` | `Planned` | Sprint Wave 3 |
@@ -206,7 +206,7 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 | Keyword (Spoke) | Slug | Status | Ghi chú |
 |---|---|---|---|
 | Trái phiếu doanh nghiệp | `trai-phieu-doanh-nghiep` | `Finalized` | ✅ Đã publish |
-| Trái phiếu chính phủ là gì | `trai-phieu-chinh-phu-la-gi` | `Planned` | |
+| Trái phiếu chính phủ là gì | `trai-phieu-chinh-phu-la-gi` | `Finalized` | |
 | Trái phiếu chuyển đổi là gì | `trai-phieu-chuyen-doi-la-gi` | `Planned` | |
 | Trái phiếu ngân hàng là gì | `trai-phieu-ngan-hang-la-gi` | `Planned` | |
 | Cách mua trái phiếu | `cach-mua-trai-phieu` | `Planned` | |

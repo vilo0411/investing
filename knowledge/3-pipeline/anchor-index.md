@@ -2,7 +2,7 @@
 
 Index toàn bộ bài đã publish tại `src/content/articles/`. Dùng cho internal linking.
 
-> **Cập nhật:** 2026-06-14 | Rebuild từ codebase thực tế
+> **Cập nhật:** 2026-06-28 | +5 bài mới (Sprint Wave 2)
 > **URL Pattern:**
 > - Nhóm "Đầu tư": `/dau-tu/{category}/{slug}/`
 > - Nhóm "Phân tích": `/phan-tich/{category}/{slug}/`
@@ -20,6 +20,15 @@ Index toàn bộ bài đã publish tại `src/content/articles/`. Dùng cho inte
 | `co-tuc-la-gi` | Cổ tức là gì? | `/dau-tu/co-phieu/co-tuc-la-gi/` | cổ tức |
 | `margin-la-gi` | Margin là gì? | `/dau-tu/co-phieu/margin-la-gi/` | giao dịch ký quỹ (margin) |
 | `cach-dau-tu-co-phieu` | Cách đầu tư cổ phiếu | `/dau-tu/co-phieu/cach-dau-tu-co-phieu/` | cách đầu tư cổ phiếu |
+| `chia-tach-co-phieu-la-gi` | Chia tách cổ phiếu là gì? | `/dau-tu/co-phieu/chia-tach-co-phieu-la-gi/` | chia tách cổ phiếu |
+| `co-phieu-uu-dai-la-gi` | Cổ phiếu ưu đãi là gì? | `/dau-tu/co-phieu/co-phieu-uu-dai-la-gi/` | cổ phiếu ưu đãi |
+| `dau-tu-chung-khoan-can-bao-nhieu-tien` | Đầu tư chứng khoán cần bao nhiêu tiền? | `/dau-tu/co-phieu/dau-tu-chung-khoan-can-bao-nhieu-tien/` | đầu tư chứng khoán cần bao nhiêu tiền |
+| `co-nen-dau-tu-chung-khoan-khong` | Có nên đầu tư chứng khoán không? | `/dau-tu/co-phieu/co-nen-dau-tu-chung-khoan-khong/` | có nên đầu tư chứng khoán |
+| `cach-mo-tai-khoan-chung-khoan` | Cách mở tài khoản chứng khoán | `/dau-tu/co-phieu/cach-mo-tai-khoan-chung-khoan/` | cách mở tài khoản chứng khoán |
+| `cach-chon-co-phieu-tot` | Cách chọn cổ phiếu tốt | `/dau-tu/co-phieu/cach-chon-co-phieu-tot/` | cách chọn cổ phiếu tốt |
+| `dau-tu-chung-khoan-von-nho` | Đầu tư chứng khoán với số vốn nhỏ | `/dau-tu/co-phieu/dau-tu-chung-khoan-von-nho/` | đầu tư chứng khoán với số vốn nhỏ |
+| `khi-nao-nen-ban-co-phieu` | Khi nào nên bán cổ phiếu | `/dau-tu/co-phieu/khi-nao-nen-ban-co-phieu/` | khi nào nên bán cổ phiếu |
+| `dau-tu-chung-khoan-dai-han` | Đầu tư chứng khoán dài hạn | `/dau-tu/co-phieu/dau-tu-chung-khoan-dai-han/` | đầu tư chứng khoán dài hạn |
 
 ## Nhóm Đầu tư — Quỹ ETF (`/dau-tu/etf/`)
 
@@ -36,6 +45,7 @@ Index toàn bộ bài đã publish tại `src/content/articles/`. Dùng cho inte
 | `trai-phieu-la-gi` | Trái phiếu là gì? | `/dau-tu/trai-phieu/trai-phieu-la-gi/` | trái phiếu |
 | `trai-phieu-doanh-nghiep` | Trái phiếu doanh nghiệp là gì? | `/dau-tu/trai-phieu/trai-phieu-doanh-nghiep/` | trái phiếu doanh nghiệp |
 | `cach-dau-tu-trai-phieu` | Cách đầu tư trái phiếu cho người mới | `/dau-tu/trai-phieu/cach-dau-tu-trai-phieu/` | cách đầu tư trái phiếu |
+| `trai-phieu-chinh-phu-la-gi` | Trái phiếu chính phủ là gì? | `/dau-tu/trai-phieu/trai-phieu-chinh-phu-la-gi/` | trái phiếu chính phủ |
 
 ## Nhóm Đầu tư — Phái sinh (`/dau-tu/phai-sinh/`)
 
