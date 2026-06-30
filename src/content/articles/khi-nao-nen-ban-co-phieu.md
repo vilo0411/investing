@@ -77,4 +77,4 @@ Việc bán cổ phiếu cũng diễn ra khi bạn tìm thấy những cơ hội
 *Ảnh: Sebastian Herrmann / Unsplash*
 
 
-Hãy xây dựng một bảng danh sách nguyên tắc bán cho riêng mình và tuân thủ nó một cách nghiêm túc trong thực tế. Việc kiểm soát tốt kỷ luật bán sẽ giúp tài khoản của bạn sống sót qua những giai đoạn giông bão của thị trường tài chính.
+Hãy xây dựng một bảng danh sách nguyên tắc bán cho riêng mình và tuân thủ nó một cách nghiêm túc trong thực tế. Việc kiểm soát tốt kỷ luật bán sẽ giúp tài khoản của bạn sống sót qua những giai đoạn giông bão của thị trường tài chính. Bán đúng lúc chỉ là một nửa; nửa còn lại là **[cách đầu tư cổ phiếu](/dau-tu/co-phieu/cach-dau-tu-co-phieu/)** bài bản từ đầu.

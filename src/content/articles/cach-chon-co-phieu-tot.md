@@ -38,7 +38,7 @@ Bạn nhìn vào bảng điện chứng khoán với hàng trăm mã xanh đỏ 
 
 ## Xác định phong cách và mục tiêu đầu tư
 
-Trước khi bắt đầu sàng lọc bất kỳ cổ phiếu nào, bạn cần làm rõ phong cách và mục tiêu tài chính của cá nhân. Việc này giúp bạn tránh được sự xao nhãng trước các biến động ngắn hạn của thị trường.
+Trước khi bắt đầu sàng lọc bất kỳ **[cổ phiếu](/dau-tu/co-phieu/co-phieu-la-gi/)** nào, bạn cần làm rõ phong cách và mục tiêu tài chính của cá nhân. Việc này giúp bạn tránh được sự xao nhãng trước các biến động ngắn hạn của thị trường.
 
 
 Đầu tiên là nhóm nhà đầu tư tích sản giá trị. Họ tập trung vào việc tìm kiếm các doanh nghiệp lớn, có thương hiệu mạnh và chia cổ tức bằng tiền mặt đều đặn. Mục tiêu của họ là tích lũy tài sản dài hạn qua nhiều năm và nhận dòng tiền thụ động định kỳ. Đây là phong cách phù hợp cho những người bận rộn, không có nhiều thời gian bám bảng điện.

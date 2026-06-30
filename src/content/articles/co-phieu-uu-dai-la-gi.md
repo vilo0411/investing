@@ -103,7 +103,7 @@ Việc hiểu cổ phiếu ưu đãi quan trọng không phải vì bạn sẽ m
 
 Khi đọc Báo cáo thường niên của một doanh nghiệp, bạn sẽ thấy phần "Cơ cấu cổ phần" cho biết tỷ lệ cổ phần Nhà nước, cổ đông chiến lược nước ngoài và cổ đông phổ thông. Phần vốn của Nhà nước thường được nắm giữ qua cổ phiếu ưu đãi biểu quyết — điều này có nghĩa là dù Nhà nước chỉ giữ 36% cổ phần, họ vẫn có thể kiểm soát quyết định của doanh nghiệp.
 
-Hiểu điều này giúp bạn đánh giá chính xác hơn về rủi ro quản trị khi đầu tư vào các doanh nghiệp nhà nước cổ phần hóa.
+Hiểu điều này giúp bạn đánh giá chính xác hơn về rủi ro quản trị khi đầu tư vào các doanh nghiệp nhà nước cổ phần hóa. Nắm chắc **[cách đầu tư cổ phiếu](/dau-tu/co-phieu/cach-dau-tu-co-phieu/)** sẽ giúp bạn ra quyết định vững vàng hơn.
 
 ---
 

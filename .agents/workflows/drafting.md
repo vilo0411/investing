@@ -53,8 +53,9 @@ Dùng sau khi Outline đã được `/approve`. Chỉ thực hiện Phase 3 (Dra
 - Khi finalize (Step 2 trong `seo-drafting/SKILL.md`), set `heroImage: "/images/articles/[slug]/hero.jpg"` trong frontmatter — KHÔNG dùng ảnh mặc định category.
 
 ### Bước 2: Internal Linking
-- Kích hoạt skill `.antigravity/skills/internal-linking/SKILL.md` → Mode: Contextual Insertion.
-- Chèn tối thiểu 2 internal links từ `anchor-index.md` vào draft.
+- Kích hoạt skill `.antigravity/skills/internal-linking/SKILL.md` → **Mode: Link Wheel trước** (bắt buộc), rồi Mode: Contextual Insertion.
+- Link Wheel: chèn 2 nan hoa (Hub + bài "cách đầu tư" của category) + 2 link tới bài `Finalized` gần nhất cùng cluster. Tra `knowledge/3-pipeline/link-wheel.md`.
+- Việc khép vành 2 chiều (chèn backlink vào 2 bài cũ) thực hiện ở bước `/approve` khi bài chính thức Finalized.
 
 ### Bước 3: Quality Guardian (QA — BẮT BUỘC)
 - Kích hoạt agent `.antigravity/agents/quality-guardian.md`.

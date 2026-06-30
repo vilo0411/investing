@@ -80,4 +80,4 @@ Nhiều nhà đầu tư mới thường có tâm lý hào hứng chạy theo cá
 
 Bạn cần nhớ rằng, vào ngày GDKHQ, giá [cổ phiếu](/dau-tu/co-phieu/co-phieu-la-gi/) trên sàn sẽ bị điều chỉnh giảm kỹ thuật tương ứng với giá trị cổ tức bạn nhận được. Bản chất là tổng tài sản của bạn không hề tăng lên ngay lập tức. Bạn thậm chí còn phải tạm nộp 5% thuế thu nhập cá nhân cho khoản cổ tức tiền mặt nhận được.
 
-Vì vậy, thay vì chỉ nhìn vào con số tỷ lệ chia cổ tức, hãy đánh giá xem doanh nghiệp đó có thực sự làm ăn có lãi từ hoạt động cốt lõi hay không. Một doanh nghiệp đi vay nợ để chia cổ tức nhằm đánh bóng tên tuổi chắc chắn sẽ suy yếu trong dài hạn.
+Vì vậy, thay vì chỉ nhìn vào con số tỷ lệ chia cổ tức, hãy đánh giá xem doanh nghiệp đó có thực sự làm ăn có lãi từ hoạt động cốt lõi hay không. Một doanh nghiệp đi vay nợ để chia cổ tức nhằm đánh bóng tên tuổi chắc chắn sẽ suy yếu trong dài hạn. Khi đã quen, hãy học **[cách đầu tư cổ phiếu](/dau-tu/co-phieu/cach-dau-tu-co-phieu/)** để chọn doanh nghiệp trả cổ tức bền vững.

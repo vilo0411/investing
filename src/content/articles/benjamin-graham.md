@@ -98,7 +98,7 @@ Graham viết cho thị trường Mỹ thập niên 1940, nhưng nguyên tắc c
 
 **Tìm cổ phiếu P/B thấp trong ngành ngân hàng.** Ngân hàng là ngành mà [P/B](/phan-tich/co-ban/pb-la-gi/) dưới 1 thường cho thấy thị trường đang định giá dưới giá trị sổ sách — đây là kiểu cơ hội Graham hay tìm kiếm. Một số mã ngân hàng VN giao dịch dưới P/B 1 trong giai đoạn thị trường điều chỉnh.
 
-**Duy trì danh mục phòng thủ.** Graham khuyên nhà đầu tư thụ động nên giữ 50% cổ phiếu và 50% trái phiếu/tiết kiệm. Tái cân bằng mỗi năm một lần. Đây là chiến lược đơn giản nhưng bảo vệ bạn khỏi những sai lầm cảm xúc tốn kém nhất.
+**Duy trì danh mục phòng thủ.** Graham khuyên nhà đầu tư thụ động nên giữ 50% cổ phiếu và 50% trái phiếu/tiết kiệm. Tái cân bằng mỗi năm một lần. Đây là chiến lược đơn giản nhưng bảo vệ bạn khỏi những sai lầm cảm xúc tốn kém nhất. Áp dụng tư duy này vào **[cách đầu tư cổ phiếu](/dau-tu/co-phieu/cach-dau-tu-co-phieu/)** thực tế để biến lý thuyết thành hành động.
 
 ---
 

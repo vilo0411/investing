@@ -40,7 +40,7 @@ Thị trường chứng khoán cơ sở sụt giảm khiến danh mục cổ phi
 
 ## Bản chất của việc đầu tư chứng khoán phái sinh
 
-Chứng khoán phái sinh là các công cụ tài chính mà giá trị của chúng phụ thuộc vào một tài sản cơ sở. Tại thị trường Việt Nam hiện nay, sản phẩm phái sinh phổ biến nhất là Hợp đồng tương lai dựa trên chỉ số VN30.
+Chứng khoán phái sinh là các công cụ tài chính mà giá trị của chúng phụ thuộc vào một tài sản cơ sở. Tại thị trường Việt Nam hiện nay, sản phẩm phái sinh phổ biến nhất là **[Hợp đồng tương lai](/dau-tu/phai-sinh/hop-dong-tuong-lai-la-gi/)** dựa trên chỉ số VN30.
 
 Hãy hình dung việc này giống như bạn và một người bạn cùng tham gia dự báo điểm số của rổ chỉ số VN30 vào cuối ngày.
 
@@ -85,7 +85,7 @@ Rủi ro lớn nhất của F0 là rủi ro cháy tài khoản do không tuân t
 
 Nếu bạn không nộp thêm tiền kịp thời, công ty chứng khoán sẽ chủ động kích hoạt lệnh Force Sell để tự động đóng các vị thế của bạn nhằm bảo toàn vốn cho hệ thống.
 
-Bạn hãy bắt đầu tham gia bằng việc quan sát bảng điện phái sinh và chỉ giao dịch với số lượng 1 hợp đồng để làm quen với tốc độ khớp lệnh.
+Bạn hãy bắt đầu tham gia bằng việc quan sát bảng điện phái sinh và chỉ giao dịch với số lượng 1 hợp đồng để làm quen với tốc độ khớp lệnh. Trước hết hãy nắm tổng quan **[chứng khoán phái sinh là gì](/dau-tu/phai-sinh/phai-sinh-la-gi/)** để hiểu bức tranh chung.
 
 Sau khi làm quen với nhịp giao dịch nhanh, bạn nên kết hợp tham khảo thêm các kiến thức kỹ thuật cơ bản tại [cách đầu tư cổ phiếu](/dau-tu/co-phieu/cach-dau-tu-co-phieu/) để phân tích xu hướng thị trường chính xác hơn.
 

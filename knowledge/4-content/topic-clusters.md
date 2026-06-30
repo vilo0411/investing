@@ -81,7 +81,7 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 | Đầu tư chứng khoán với số vốn nhỏ | `dau-tu-chung-khoan-von-nho` | `Finalized` | Sprint Wave 2 |
 | Khi nào nên bán cổ phiếu | `khi-nao-nen-ban-co-phieu` | `Finalized` | Sprint Wave 2 |
 | Đầu tư chứng khoán dài hạn | `dau-tu-chung-khoan-dai-han` | `Finalized` | Sprint Wave 3 |
-| Đầu tư tích sản cổ phiếu là gì | `dau-tu-tich-san-co-phieu-la-gi` | `Planned` | Sprint Wave 3 |
+| Đầu tư tích sản cổ phiếu là gì | `dau-tu-tich-san-co-phieu-la-gi` | `Finalized` | Sprint Wave 3 |
 | Chiến lược đầu tư chứng khoán | `chien-luoc-dau-tu-chung-khoan` | `Planned` | Sprint Wave 3 |
 | Cách chơi chứng khoán trên điện thoại | `cach-choi-chung-khoan-tren-dien-thoai` | `Planned` | Sprint Wave 3 |
 | Tâm lý đầu tư chứng khoán | `tam-ly-dau-tu-chung-khoan` | `Planned` | Sprint Wave 4 |
@@ -181,7 +181,7 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 | ETF là gì | `etf-la-gi` | `Finalized` | ✅ Đã publish |
 | ETF VN30 là gì | `etf-vn30-la-gi` | `Finalized` | ✅ Đã publish |
 | ETF Diamond là gì | `etf-diamond-la-gi` | `Planned` | |
-| Nên đầu tư quỹ ETF nào | `nen-dau-tu-quy-etf-nao` | `Planned` | |
+| Nên đầu tư quỹ ETF nào | `nen-dau-tu-quy-etf-nao` | `Finalized` | |
 | Phân biệt quỹ ETF và quỹ tương hỗ | `phan-biet-quy-etf-va-quy-tuong-ho` | `Planned` | |
 | Quy trình hoán đổi danh mục ETF | `quy-trinh-hoan-doi-danh-muc-etf` | `Planned` | |
 
@@ -193,7 +193,7 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 | Chứng chỉ quỹ tốt nhất hiện nay | `chung-chi-quy-tot-nhat-hien-nay` | `Planned` | |
 | Quỹ chủ động là gì | `quy-chu-dong-la-gi` | `Planned` | |
 | Quỹ thụ động là gì | `quy-thu-dong-la-gi` | `Planned` | |
-| Nên đầu tư quỹ mở hay quỹ ETF | `nen-dau-tu-quy-mo-hay-quy-etf` | `Planned` | |
+| Nên đầu tư quỹ mở hay quỹ ETF | `nen-dau-tu-quy-mo-hay-quy-etf` | `Finalized` | |
 | NAV là gì | `nav-la-gi` | `Planned` | |
 | So sánh cổ phiếu và chứng chỉ quỹ | `so-sanh-co-phieu-va-chung-chi-quy-dau-tu` | `Planned` | |
 
@@ -211,21 +211,21 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 | Trái phiếu ngân hàng là gì | `trai-phieu-ngan-hang-la-gi` | `Planned` | |
 | Cách mua trái phiếu | `cach-mua-trai-phieu` | `Planned` | |
 | Cách đầu tư trái phiếu | `cach-dau-tu-trai-phieu` | `Finalized` | ✅ Đã publish |
-| Có nên đầu tư trái phiếu | `co-nen-dau-tu-trai-phieu` | `Planned` | |
+| Có nên đầu tư trái phiếu | `co-nen-dau-tu-trai-phieu` | `Finalized` | |
 | Bond yield là gì | `bond-yield-la-gi` | `Planned` | |
 
 ---
 
 ## CLUSTER C10 — Phái Sinh
 
-**Hub:** Phái sinh là gì | `/dau-tu/phai-sinh/phai-sinh-la-gi/` | `Planned`
+**Hub:** Phái sinh là gì | `/dau-tu/phai-sinh/phai-sinh-la-gi/` | `Finalized`
 
 | Keyword (Spoke) | Slug | Status | Ghi chú |
 |---|---|---|---|
 | Hợp đồng tương lai là gì | `hop-dong-tuong-lai-la-gi` | `Finalized` | ✅ Đã publish |
 | Cách đầu tư chứng khoán phái sinh | `cach-dau-tu-chung-khoan-phai-sinh` | `Planned` | |
 | Chứng khoán cơ sở và phái sinh | `chung-khoan-co-so-va-chung-khoan-phai-sinh` | `Planned` | |
-| Đáo hạn phái sinh là gì | `dao-han-phai-sinh-la-gi` | `Planned` | |
+| Đáo hạn phái sinh là gì | `dao-han-phai-sinh-la-gi` | `Finalized` | |
 | Quyền chọn là gì | `quyen-chon-la-gi` | `Planned` | |
 
 ---
@@ -267,7 +267,7 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 
 ## CLUSTER C13 — Phân Tích Cơ Bản (Chỉ Số Tài Chính)
 
-**Hub:** Phân tích cơ bản là gì | `/phan-tich/co-ban/phan-tich-co-ban-la-gi/` | `Planned`
+**Hub:** Phân tích cơ bản là gì | `/phan-tich/co-ban/phan-tich-co-ban-la-gi/` | `Finalized`
 
 ### Chỉ số Định giá
 | Keyword | Slug | Status | Ghi chú |
@@ -333,7 +333,7 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 
 ## CLUSTER C16 — Phân Tích Kỹ Thuật
 
-**Hub:** Phân tích kỹ thuật là gì | `/phan-tich/ky-thuat/phan-tich-ky-thuat-la-gi/` | `Planned`
+**Hub:** Phân tích kỹ thuật là gì | `/phan-tich/ky-thuat/phan-tich-ky-thuat-la-gi/` | `Finalized`
 
 ### Chỉ báo Momentum
 | Keyword | Slug | Status | Ghi chú |

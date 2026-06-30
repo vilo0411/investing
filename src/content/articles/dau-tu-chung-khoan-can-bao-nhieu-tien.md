@@ -45,7 +45,7 @@ Nhiều người nghĩ đầu tư chứng khoán chỉ dành cho người có ti
 
 Không có văn bản pháp lý nào quy định số tiền tối thiểu bạn phải có để bắt đầu đầu tư chứng khoán. Đây không phải như việc mở sổ tiết kiệm có hạn mức thấp nhất 100.000đ.
 
-Vốn tối thiểu thực tế của bạn phụ thuộc hoàn toàn vào giá của cổ phiếu bạn muốn mua và đơn vị giao dịch tối thiểu trên sàn.
+Vốn tối thiểu thực tế của bạn phụ thuộc hoàn toàn vào giá của **[cổ phiếu](/dau-tu/co-phieu/co-phieu-la-gi/)** bạn muốn mua và đơn vị giao dịch tối thiểu trên sàn.
 
 Theo quy định hiện hành, cả 3 sàn HOSE, HNX và UPCoM đều xác định một lô chẵn là 100 cổ phiếu. Bạn cũng có thể đặt lệnh lô lẻ (từ 1–99 cổ phiếu) trên bảng giao dịch riêng.
 

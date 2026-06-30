@@ -72,12 +72,12 @@ Thông thường, giới đầu tư sử dụng mốc P/B = 1 làm ranh giới t
 
 Khi P/B lớn hơn 1, thị trường đang đánh giá cao doanh nghiệp và chấp nhận trả mức giá đắt hơn giá trị sổ sách. Điều này hoàn toàn hợp lý nếu doanh nghiệp có năng lực kinh doanh xuất sắc, tạo ra mức lợi nhuận lớn trên tài sản.
 
-Khi P/B nhỏ hơn 1, giá cổ phiếu đang được bán rẻ hơn giá trị tài sản sổ sách của chính doanh nghiệp. Đây thường là "mỏ vàng" cho các nhà đầu tư giá trị nếu tài sản của doanh nghiệp là tài sản thật, dễ thanh lý. Tuy nhiên, nếu doanh nghiệp đang làm ăn thua lỗ triền miên hoặc sở hữu nhiều khoản nợ xấu khó đòi, P/B < 1 là dấu hiệu cảnh báo nguy hiểm.
+Khi P/B nhỏ hơn 1, giá cổ phiếu đang được bán rẻ hơn giá trị tài sản sổ sách của chính doanh nghiệp. Đây thường là "mỏ vàng" cho các nhà đầu tư giá trị nếu tài sản của doanh nghiệp là tài sản thật, dễ thanh lý. Tuy nhiên, nếu doanh nghiệp đang làm ăn thua lỗ triền miên hoặc sở hữu nhiều khoản nợ xấu khó đòi, P/B < 1 là dấu hiệu cảnh báo nguy hiểm. Bạn nên đối chiếu thêm **[chỉ số P/E](/phan-tich/co-ban/pe-la-gi/)** để định giá toàn diện hơn.
 
 ## Các lưu ý thực chiến khi ứng dụng P/B định giá cổ phiếu
 
-Sử dụng P/B để định giá đòi hỏi bạn phải có sự linh hoạt tùy thuộc vào từng nhóm ngành nghề cụ thể.
+Sử dụng P/B để định giá đòi hỏi bạn phải có sự linh hoạt tùy thuộc vào từng nhóm ngành nghề cụ thể. P/B là một công cụ trong **[phân tích cơ bản](/phan-tich/co-ban/phan-tich-co-ban-la-gi/)** doanh nghiệp.
 
-Nguyên tắc thứ nhất là chỉ áp dụng P/B cho các ngành phù hợp. P/B cực kỳ hiệu quả với nhóm Ngân hàng, Bảo hiểm và Bất động sản vì tài sản của họ chủ yếu là tiền, các khoản cho vay, hoặc đất đai có giá trị định giá rõ ràng. Ngược lại, P/B hầu như vô nghĩa với các công ty công nghệ (như FPT) hoặc dịch vụ du lịch — nơi tài sản lớn nhất là trí tuệ nhân tạo, phần mềm và con người, vốn không hiển thị đầy đủ trên bảng cân đối kế toán.
+Nguyên tắc thứ nhất là chỉ áp dụng P/B cho các ngành phù hợp. P/B cực kỳ hiệu quả với nhóm Ngân hàng, Bảo hiểm và Bất động sản vì tài sản của họ chủ yếu là tiền, các khoản cho vay, hoặc đất đai có giá trị định giá rõ ràng. Ngược lại, P/B hầu như vô nghĩa với các công ty công nghệ (như FPT) hoặc dịch vụ du lịch — nơi tài sản lớn nhất là trí tuệ nhân tạo, phần mềm và con người, vốn không hiển thị đầy đủ trên bảng cân đối kế toán. Khi đã quen định giá, hãy dùng **[cách chọn cổ phiếu tốt](/dau-tu/co-phieu/cach-chon-co-phieu-tot/)** để ra quyết định cuối cùng.
 
 Nguyên tắc thứ hai là luôn so sánh P/B đồng hành với chỉ số hiệu quả sử dụng vốn [ROE](/phan-tich/co-ban/roe-la-gi/). Một doanh nghiệp có P/B cao nhưng ROE cũng cực kỳ cao (trên 20%) thì vẫn đáng mua hơn nhiều so với một doanh nghiệp có P/B cực thấp nhưng ROE chỉ lẹt đẹt 2-3%.

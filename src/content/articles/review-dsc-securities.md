@@ -140,4 +140,4 @@ DSC vẫn duy trì mô hình môi giới truyền thống với đội ngũ tư 
 
 DSC phù hợp nhất với **nhà đầu tư đã có kinh nghiệm**, tự chủ trong quyết định giao dịch và đang tìm cách tối giản chi phí. Nếu bạn đã có tài khoản tại [TCBS hay SSI](/reviews/so-sanh-tcbs-vs-ssi/) và muốn mở thêm tài khoản thứ hai để sử dụng margin với lãi suất thấp hơn, DSC là phương án hợp lý.
 
-Ngược lại, nếu bạn là F0 cần công cụ phân tích mạnh và giao diện trực quan, hãy cân nhắc TCBS hoặc VNDIRECT trước.
+Ngược lại, nếu bạn là F0 cần công cụ phân tích mạnh và giao diện trực quan, hãy cân nhắc TCBS hoặc VNDIRECT trước. Khi đã chọn xong, làm theo **[cách mở tài khoản chứng khoán](/dau-tu/co-phieu/cach-mo-tai-khoan-chung-khoan/)** để bắt đầu giao dịch.

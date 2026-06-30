@@ -54,7 +54,7 @@ Tờ hợp đồng thỏa thuận này chính là một Hợp đồng tương la
 ![Màn hình máy tính hiển thị biểu đồ giao dịch phái sinh phức tạp](./images/hop-dong-tuong-lai-la-gi/featured-01.jpg)
 *Ảnh: Sean Pollock / Unsplash*
 
-Trong thị trường tài chính, tài sản cơ sở không còn là cà phê hay lúa mì, mà là các chỉ số tài chính. Tại Việt Nam, sản phẩm duy nhất đang giao dịch là Hợp đồng tương lai chỉ số VN30, mô phỏng điểm số của rổ 30 cổ phiếu lớn nhất sàn HOSE.
+Trong thị trường tài chính, tài sản cơ sở không còn là cà phê hay lúa mì, mà là các chỉ số tài chính. Tại Việt Nam, sản phẩm duy nhất đang giao dịch là Hợp đồng tương lai chỉ số VN30, mô phỏng điểm số của rổ 30 cổ phiếu lớn nhất sàn HOSE. Đây chỉ là một trong các loại **[chứng khoán phái sinh](/dau-tu/phai-sinh/phai-sinh-la-gi/)**; mỗi loại có cơ chế riêng.
 
 ## Cơ chế kiếm tiền hai chiều Long và Short hoạt động ra sao?
 

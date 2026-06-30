@@ -10,6 +10,9 @@ Tài liệu ghi nhận toàn bộ lịch sử chỉnh sửa bài viết dựa tr
 | :--- | :--- | :--- | :--- | :--- |
 | 2026-06-13 | *Khởi tạo* | Thiết lập hệ thống log | Khởi tạo file log hệ thống | **Hoàn thành** |
 | 2026-06-14 | `cach-dau-tu-co-phieu` | Người dùng duyệt Outline & Draft, không yêu cầu sửa đổi | Di chuyển bài viết sang Final, cập nhật topic-clusters và anchor-index | **Hoàn thành** |
+| 2026-06-30 | `phan-tich-co-ban-la-gi` | Người dùng duyệt Outline & Draft, không yêu cầu sửa đổi | Di chuyển bài viết sang Final, cập nhật topic-clusters và anchor-index | **Hoàn thành** |
+| 2026-06-30 | `phan-tich-ky-thuat-la-gi` | Người dùng duyệt Outline & Draft, không yêu cầu sửa đổi | Di chuyển bài viết sang Final, cập nhật topic-clusters và anchor-index | **Hoàn thành** |
+| 2026-06-30 | `phai-sinh-la-gi` | Người dùng duyệt Outline & Draft, không yêu cầu sửa đổi | Di chuyển bài viết sang Final, cập nhật topic-clusters và anchor-index | **Hoàn thành** |
 
 ---
 

@@ -77,4 +77,4 @@ Cuối cùng, đầu tư dài hạn mang lại sự bình tĩnh trong tâm lý. 
 *Ảnh: Jakub Żerdzicki / Unsplash*
 
 
-Tuân thủ các nguyên tắc này sẽ giúp bạn xây dựng một danh mục tài sản vững chắc và tăng trưởng an toàn qua các chu kỳ kinh tế. Bạn hãy bắt đầu tích lũy ngay hôm nay để nhận quả ngọt tài chính trong tương lai. Sự kiên nhẫn và kỷ luật chính là chìa khóa mở ra cánh cửa tự do tài chính bền vững cho bạn.
+Tuân thủ các nguyên tắc này sẽ giúp bạn xây dựng một danh mục tài sản vững chắc và tăng trưởng an toàn qua các chu kỳ kinh tế. Bạn hãy bắt đầu tích lũy ngay hôm nay để nhận quả ngọt tài chính trong tương lai. Tham khảo quy trình **[cách đầu tư cổ phiếu](/dau-tu/co-phieu/cach-dau-tu-co-phieu/)** để có lộ trình rõ ràng từ đầu. Sự kiên nhẫn và kỷ luật chính là chìa khóa mở ra cánh cửa tự do tài chính bền vững cho bạn.

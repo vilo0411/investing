@@ -43,7 +43,7 @@ Bạn có biết tên gọi "Blue chip" bắt nguồn từ đâu không?
 
 Thuật ngữ này được mượn từ trò chơi Poker trong các sòng bài casino. Trong đó, các thẻ nhựa (chip) màu xanh da trời (blue) luôn có giá trị quy đổi cao nhất. Vào năm 1923, Oliver Gingold - một nhân viên của hãng tin Dow Jones - đã dùng cụm từ này để chỉ những cổ phiếu có giá cao trên thị trường. Kể từ đó, thuật ngữ này trở nên phổ biến trên toàn cầu.
 
-Nói đơn giản hơn, cổ phiếu Blue chip là cổ phiếu của những doanh nghiệp có quy mô cực kỳ lớn. Đây là những doanh nghiệp có uy tín lâu đời, vị thế dẫn đầu trong ngành và tình hình tài chính vô cùng lành mạnh.
+Nói đơn giản hơn, cổ phiếu Blue chip là **[cổ phiếu](/dau-tu/co-phieu/co-phieu-la-gi/)** của những doanh nghiệp có quy mô cực kỳ lớn. Đây là những doanh nghiệp có uy tín lâu đời, vị thế dẫn đầu trong ngành và tình hình tài chính vô cùng lành mạnh.
 
 ![Bảng điện tử hiển thị thông tin thị trường tài chính](./images/blue-chip-la-gi/featured-01.jpg)
 *Ảnh: Isaac Smith / Unsplash*
@@ -70,7 +70,7 @@ Về nhược điểm, tiềm năng tăng trưởng đột biến của Blue chi
 
 ## Nguyên tắc vàng đầu tư Blue Chip hiệu quả cho người mới (F0)
 
-Nhiều người mới thường mắc sai lầm là nhắm mắt mua bừa cổ phiếu Blue chip vì nghĩ chúng an toàn tuyệt đối. Hãy nhớ kỹ ba nguyên tắc sau để tránh mất tiền oan.
+Nhiều người mới thường mắc sai lầm là nhắm mắt mua bừa cổ phiếu Blue chip vì nghĩ chúng an toàn tuyệt đối. Hãy nắm vững **[cách đầu tư cổ phiếu](/dau-tu/co-phieu/cach-dau-tu-co-phieu/)** bài bản và nhớ kỹ ba nguyên tắc sau để tránh mất tiền oan.
 
 Thứ nhất là kiểm tra định giá. Một doanh nghiệp tốt đến mấy nhưng nếu bạn mua với giá quá đắt (chỉ số [P/E](/phan-tich/co-ban/pe-la-gi/) hoặc [P/B](/phan-tich/co-ban/pb-la-gi/) quá cao) thì vẫn có thể chịu lỗ lớn. Hãy kiên nhẫn chờ đợi các nhịp điều chỉnh của thị trường để mua được cổ phiếu với mức giá hợp lý.
 

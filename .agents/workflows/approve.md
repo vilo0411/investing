@@ -31,11 +31,13 @@ Xác định file đang ở stage nào dựa trên tên file hoặc stage đang 
 - Cập nhật `knowledge/4-content/topic-clusters.md` → trạng thái `Finalized`.
 - Auto-trigger: Kích hoạt skill `.antigravity/skills/content-feedback-loop/SKILL.md` để tổng hợp bài học.
 - Cập nhật `knowledge/3-pipeline/anchor-index.md` — thêm entry mới cho bài vừa finalized.
+- **BẮT BUỘC — Khép vành Link Wheel 2 chiều:** kích hoạt `.antigravity/skills/internal-linking/SKILL.md` → Mode: Link Wheel trên bài vừa finalized. Đảm bảo (1) bài có 2 nan hoa + 2 link tới bài `Finalized` gần nhất cùng cluster; (2) mở đúng 2 bài cũ đó, chèn anchor trỏ ngược lên bài mới. Tham chiếu `knowledge/3-pipeline/link-wheel.md`.
 
 **Nếu stage là Optimize (`knowledge/4-content/2-drafts/Optimize-[slug].md`):**
 - Ghi đè bản nâng cấp lên file gốc: `knowledge/4-content/3-finalized/Final-[slug].md`.
 - Xóa file `Optimize-[slug].md` và file `Proposal-[slug].md` (nếu có) trong `2-drafts/`.
 - Cập nhật `knowledge/4-content/topic-clusters.md` → trạng thái `Finalized`.
+- **BẮT BUỘC — Khép vành Link Wheel 2 chiều:** như trên — chạy Mode: Link Wheel để bài giữ đủ 2 nan hoa + vành 2 chiều với 2 bài cùng cluster.
 
 ### Bước 3: Xác nhận
 Sau khi hoàn thành, báo cáo cho người dùng:

@@ -66,11 +66,11 @@ Ví dụ: Công ty nhựa Bình Minh (BMP) có vốn chủ sở hữu bình quâ
 
 ## Cách đánh giá chỉ số ROE: Bao nhiêu phần trăm là tốt?
 
-Giới phân tích tài chính chuyên nghiệp thường lấy mốc ROE từ 15% trở lên làm tiêu chuẩn để lọc các doanh nghiệp xuất sắc.
+Giới phân tích tài chính chuyên nghiệp thường lấy mốc ROE từ 15% trở lên làm tiêu chuẩn để lọc các doanh nghiệp xuất sắc. ROE là chỉ số sinh lời quan trọng trong **[phân tích cơ bản](/phan-tich/co-ban/phan-tich-co-ban-la-gi/)**.
 
 Một doanh nghiệp duy trì được ROE liên tục trên 15% trong nhiều năm chứng tỏ họ sở hữu lợi thế cạnh tranh rất bền vững (con hào kinh tế). Điều này giúp họ liên tục sinh lời mà không cần phải gọi thêm vốn mới từ cổ đông một cách liên tục.
 
-Ngược lại, nếu ROE của doanh nghiệp dưới 10%, điều đó cho thấy ban lãnh đạo đang sử dụng vốn kém hiệu quả. Hiệu suất đầu tư của doanh nghiệp lúc này thậm chí chỉ ngang ngửa hoặc cao hơn lãi suất gửi tiết kiệm ngân hàng một chút, trong khi cổ đông phải gánh chịu nhiều rủi ro kinh doanh hơn.
+Ngược lại, nếu ROE của doanh nghiệp dưới 10%, điều đó cho thấy ban lãnh đạo đang sử dụng vốn kém hiệu quả. Hiệu suất đầu tư của doanh nghiệp lúc này thậm chí chỉ ngang ngửa hoặc cao hơn lãi suất gửi tiết kiệm ngân hàng một chút, trong khi cổ đông phải gánh chịu nhiều rủi ro kinh doanh hơn. Hãy đối chiếu ROE với **[chỉ số P/E](/phan-tich/co-ban/pe-la-gi/)** để đánh giá cả hiệu quả lẫn định giá.
 
 ## Bẫy ROE ảo: Rủi ro đòn bẩy tài chính mà F0 cần tránh
 
@@ -78,4 +78,4 @@ Khi xem xét chỉ số ROE, nhà đầu tư F0 rất dễ mắc bẫy khi thấ
 
 Theo công thức phân rã Dupont, ROE phụ thuộc vào 3 yếu tố: Biên lợi nhuận ròng, Vòng quay tài sản và Đòn bẩy tài chính (tỷ lệ nợ). Một doanh nghiệp làm ăn kém hiệu quả nhưng đi vay nợ ngân hàng cực kỳ nhiều để tài trợ hoạt động vẫn có thể làm cho mẫu số vốn chủ sở hữu nhỏ đi và đẩy ROE lên rất cao.
 
-Khi gặp trường hợp ROE cao đột biến, bạn bắt buộc phải kiểm tra hệ số nợ/vốn chủ sở hữu của doanh nghiệp đó. Nếu nợ vay quá lớn, doanh nghiệp đang gánh chịu rủi ro mất thanh khoản rất nghiêm trọng khi thị trường gặp khó khăn dòng tiền.
+Khi gặp trường hợp ROE cao đột biến, bạn bắt buộc phải kiểm tra hệ số nợ/vốn chủ sở hữu của doanh nghiệp đó. Nếu nợ vay quá lớn, doanh nghiệp đang gánh chịu rủi ro mất thanh khoản rất nghiêm trọng khi thị trường gặp khó khăn dòng tiền. Hãy ghép ROE vào bộ tiêu chí **[cách chọn cổ phiếu tốt](/dau-tu/co-phieu/cach-chon-co-phieu-tot/)** để tránh mua phải doanh nghiệp dùng nợ tô hồng.

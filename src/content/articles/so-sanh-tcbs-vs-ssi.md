@@ -142,4 +142,4 @@ Không có [công ty chứng khoán](/reviews/review-cong-ty-chung-khoan-cho-ngu
 
 Nếu bạn **tự chủ trong đầu tư** và muốn tối đa hóa lợi nhuận bằng cách tối thiểu hóa phí — **TCBS là lựa chọn rõ ràng**. Nếu bạn **ưu tiên sự an toàn tuyệt đối** và cần đội ngũ chuyên nghiệp hỗ trợ — **SSI xứng đáng với chi phí cao hơn**.
 
-Giải pháp thực tế mà nhiều nhà đầu tư kinh nghiệm áp dụng: mở cả hai tài khoản, dùng TCBS để thực hiện lệnh (phí 0%) và đọc báo cáo SSI Research để nghiên cứu.
+Giải pháp thực tế mà nhiều nhà đầu tư kinh nghiệm áp dụng: mở cả hai tài khoản, dùng TCBS để thực hiện lệnh (phí 0%) và đọc báo cáo SSI Research để nghiên cứu. Dù chọn bên nào, hãy xem **[cách mở tài khoản chứng khoán](/dau-tu/co-phieu/cach-mo-tai-khoan-chung-khoan/)** để hoàn tất trong vài phút.

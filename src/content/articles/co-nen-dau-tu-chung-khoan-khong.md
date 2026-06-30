@@ -69,7 +69,7 @@ Lạm phát tại Việt Nam trung bình khoảng 3–4%/năm trong 10 năm qua.
 
 **Tiền đang nợ ngân hàng hoặc người thân.** Nếu lỡ thua lỗ, bạn không chỉ mất tiền đầu tư mà còn mất khả năng trả nợ. Áp lực kép này thường dẫn đến quyết định hoảng loạn tệ hơn.
 
-**Muốn lấy lại tiền nhanh sau khi thua lỗ.** Đây là tâm lý nguy hiểm nhất — thường dẫn đến đặt cược lớn hơn vào cổ phiếu rủi ro cao để "gỡ gạc". Kết quả thường là thua thêm.
+**Muốn lấy lại tiền nhanh sau khi thua lỗ.** Đây là tâm lý nguy hiểm nhất — thường dẫn đến đặt cược lớn hơn vào **[cổ phiếu](/dau-tu/co-phieu/co-phieu-la-gi/)** rủi ro cao để "gỡ gạc". Kết quả thường là thua thêm.
 
 **Đang vay margin để đầu tư.** Margin khuếch đại cả lợi nhuận lẫn thua lỗ. Với người mới, thua lỗ 30% tài khoản riêng đã đau — với margin, cùng mức giảm đó có thể xóa toàn bộ vốn và còn nợ thêm.
 

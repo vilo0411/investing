@@ -70,8 +70,8 @@ Hiện tượng phân kỳ âm (phân kỳ giảm giá) xảy ra trong xu hướ
 
 ## Những lưu ý sống còn để sử dụng RSI hiệu quả cho F0
 
-RSI là công cụ tuyệt vời nhưng nếu sử dụng máy móc, bạn sẽ rất dễ bị thị trường quét sạch tài khoản. Hãy lưu ý các nguyên tắc thực chiến sau.
+RSI là công cụ tuyệt vời nhưng nếu sử dụng máy móc, bạn sẽ rất dễ bị thị trường quét sạch tài khoản. RSI chỉ là một chỉ báo trong **[phân tích kỹ thuật](/phan-tich/ky-thuat/phan-tich-ky-thuat-la-gi/)** tổng thể. Hãy lưu ý các nguyên tắc thực chiến sau.
 
 Thứ nhất, tuyệt đối không mua bán mù quáng chỉ vì RSI vượt 70 hay dưới 30. Trong các đợt sóng tăng mạnh (Up-trend mạnh), RSI có thể duy trì ở vùng quá mua ($>$70) trong nhiều tuần liên tiếp và giá cổ phiếu vẫn tiếp tục tăng gấp đôi. Nếu bạn bán khống hoặc chốt lời quá sớm sẽ mất đi cơ hội lớn.
 
-Thứ hai, luôn kết hợp với xu hướng chung (Trend). Chỉ sử dụng tín hiệu mua quá bán khi thị trường chung đang đi ngang (Sideway) hoặc cổ phiếu đang trong xu hướng tăng dài hạn. Trong thị trường giảm giá mạnh (Down-trend), các cổ phiếu có RSI dưới 30 vẫn có thể tiếp tục giảm sâu hơn nữa.
+Thứ hai, luôn kết hợp với xu hướng chung (Trend). Chỉ sử dụng tín hiệu mua quá bán khi thị trường chung đang đi ngang (Sideway) hoặc cổ phiếu đang trong xu hướng tăng dài hạn. Trong thị trường giảm giá mạnh (Down-trend), các cổ phiếu có RSI dưới 30 vẫn có thể tiếp tục giảm sâu hơn nữa. RSI chỉ là một mảnh ghép; hãy kết hợp với **[cách đầu tư cổ phiếu](/dau-tu/co-phieu/cach-dau-tu-co-phieu/)** bài bản để ra quyết định.

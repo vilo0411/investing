@@ -1,7 +1,8 @@
 ---
 import { getCollection } from "astro:content";
 import BaseLayout from "@/layouts/BaseLayout.astro";
-import { categories, getCategoryPath, getArticlePath, url } from "@/data/site";
+import { categories, getCategoryPath, getArticlePath } from "@/data/site";
+import Breadcrumb from "@/components/Breadcrumb.astro";
 
 const articles = await getCollection("articles");
 
@@ -31,11 +32,7 @@ const gradients: Record<string, string> = {
   <section class="page-hero">
     <div class="container hero-grid">
       <div class="hero-content">
-        <nav class="breadcrumb" aria-label="Breadcrumb">
-          <a href={url("/")}>Trang chủ</a>
-          <span class="separator" aria-hidden="true">/</span>
-          <span aria-current="page">Phân tích</span>
-        </nav>
+        <Breadcrumb items={[{ label: "Trang chủ", href: "/" }, { label: "Phân tích" }]} />
         <div class="eyebrow">Hub nội dung</div>
         <h1>Phân tích</h1>
         <p class="lead">
@@ -45,7 +42,7 @@ const gradients: Record<string, string> = {
 
       <div class="hero-sidebar">
         <div class="hub-roadmap-card">
-          <h3 class="roadmap-card-title">Hành trình tự học</h3>
+          <h2 class="roadmap-card-title">Hành trình tự học</h2>
           <p class="roadmap-card-subtitle">Lộ trình bài học qua 2 phương pháp:</p>
           <ul class="roadmap-steps">
             {analysis.map((cat, i) => (
@@ -113,37 +110,9 @@ const gradients: Record<string, string> = {
 </BaseLayout>
 
 <style>
-  .breadcrumb {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    font-size: 0.85rem;
-    color: var(--muted);
+  /* Spacing for the shared Breadcrumb component (scoped styles live in the component) */
+  .hero-content :global(.breadcrumb) {
     margin-bottom: var(--space-4);
-    flex-wrap: wrap;
-  }
-
-  .breadcrumb a {
-    color: var(--text);
-    font-weight: 700;
-    text-decoration: none;
-    transition: color var(--transition-fast);
-  }
-
-  .breadcrumb a:hover {
-    color: var(--brand);
-    text-decoration: underline;
-    text-underline-offset: 2px;
-  }
-
-  .breadcrumb .separator {
-    color: var(--muted);
-    font-weight: 500;
-  }
-
-  .breadcrumb span[aria-current] {
-    color: var(--muted);
-    font-weight: 500;
   }
 
   /* ── Page Hero Grid ───────────────────────────────────────────────── */

@@ -73,12 +73,12 @@ Nhiều nhà đầu tư F0 thường mắc sai lầm nghiêm trọng khi chỉ n
 
 EPS pha loãng là chỉ số tính đến kịch bản trong tương lai khi doanh nghiệp phát hành thêm các công cụ tài chính có khả năng chuyển đổi thành cổ phiếu phổ thông. Các công cụ này bao gồm trái phiếu chuyển đổi, chứng quyền, quyền chọn mua cổ phiếu, hoặc chương trình phát hành cổ phiếu thưởng cho nhân viên (cổ phiếu ESOP).
 
-Khi các công cụ này được thực hiện, số lượng cổ phiếu lưu hành của doanh nghiệp sẽ tăng vọt lên, làm cho phần lợi nhuận chia cho mỗi cổ phiếu bị nhỏ lại. Do đó, việc theo dõi EPS pha loãng sẽ giúp bạn nhìn nhận chính xác hơn giá trị thực tế của cổ phiếu trong dài hạn.
+Khi các công cụ này được thực hiện, số lượng cổ phiếu lưu hành của doanh nghiệp sẽ tăng vọt lên, làm cho phần lợi nhuận chia cho mỗi cổ phiếu bị nhỏ lại. Do đó, việc theo dõi EPS pha loãng sẽ giúp bạn nhìn nhận chính xác hơn giá trị thực tế của cổ phiếu trong dài hạn. EPS cũng là mẫu số cốt lõi để tính **[chỉ số P/E](/phan-tich/co-ban/pe-la-gi/)** khi định giá.
 
 ## Cách ứng dụng EPS để chọn lọc cổ phiếu hiệu quả
 
-Để tìm kiếm các doanh nghiệp chất lượng cao bằng chỉ số EPS, bạn nên áp dụng các nguyên tắc sau.
+Để tìm kiếm các doanh nghiệp chất lượng cao bằng chỉ số EPS, bạn nên áp dụng các nguyên tắc sau. EPS là một mắt xích trong **[phân tích cơ bản](/phan-tich/co-ban/phan-tich-co-ban-la-gi/)** doanh nghiệp.
 
 Thứ nhất, ưu tiên các doanh nghiệp có chỉ số EPS tăng trưởng đều đặn qua các năm. Tốc độ tăng trưởng EPS tốt thường dao động từ 15% - 20%/năm. Điều này cho thấy doanh nghiệp đang mở rộng quy mô kinh doanh hiệu quả và tạo ra giá trị bền vững cho cổ đông.
 
-Thứ hai, đánh giá kỹ nguồn gốc tạo ra lợi nhuận của EPS. Nếu EPS tăng mạnh nhưng dòng tiền hoạt động kinh doanh cốt lõi bị âm, hoặc lợi nhuận đến từ việc bán đất, bán công ty con (lợi nhuận một lần), thì mức tăng đó không hề bền vững và có thể đảo chiều giảm sâu vào năm sau.
+Thứ hai, đánh giá kỹ nguồn gốc tạo ra lợi nhuận của EPS. Nếu EPS tăng mạnh nhưng dòng tiền hoạt động kinh doanh cốt lõi bị âm, hoặc lợi nhuận đến từ việc bán đất, bán công ty con (lợi nhuận một lần), thì mức tăng đó không hề bền vững và có thể đảo chiều giảm sâu vào năm sau. Hãy kết hợp EPS với bộ tiêu chí **[cách chọn cổ phiếu tốt](/dau-tu/co-phieu/cach-chon-co-phieu-tot/)** để sàng lọc doanh nghiệp.

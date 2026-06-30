@@ -44,7 +44,7 @@ Khi muốn bắt đầu đầu tư chứng khoán nhưng lại bận rộn với
 
 Thay vì phải đi từng gian hàng để chọn mua táo, cam, nho và trả tiền riêng cho từng quả, bạn chỉ cần mua một chiếc giỏ đã được đóng gói sẵn đầy đủ các loại quả ngon nhất.
 
-Quỹ ETF VN30 hoạt động theo đúng cơ chế như vậy.
+**[Quỹ ETF](/dau-tu/etf/etf-la-gi/)** VN30 hoạt động theo đúng cơ chế như vậy.
 
 ![Biểu đồ phân tích thị trường tài chính hiển thị xu hướng tăng trưởng](./images/etf-vn30-la-gi/featured-01.jpg)
 *Ảnh: Nicholas Cappello / Unsplash*
@@ -77,4 +77,4 @@ Dù là một sản phẩm an toàn, bạn vẫn cần lưu ý hai thông số k
 
 Thứ nhất là sai lệch so với chỉ số mục tiêu (Tracking Error). Một quỹ ETF tốt phải có sai lệch bám sát chỉ số càng nhỏ càng tốt. Nếu chỉ số VN30 tăng 10% nhưng quỹ ETF của bạn chỉ tăng 8%, điều đó cho thấy hiệu quả quản lý của quỹ chưa thực sự tối ưu.
 
-Thứ hai là tính thanh khoản trên sàn giao dịch. Bạn nên ưu tiên chọn các chứng chỉ quỹ có khối lượng giao dịch hàng ngày lớn. Điều này đảm bảo bạn có thể dễ dàng bán lại chứng chỉ quỹ để thu tiền mặt về bất cứ khi nào có nhu cầu đột xuất mà không bị mất giá sâu.
+Thứ hai là tính thanh khoản trên sàn giao dịch. Bạn nên ưu tiên chọn các chứng chỉ quỹ có khối lượng giao dịch hàng ngày lớn. Điều này đảm bảo bạn có thể dễ dàng bán lại chứng chỉ quỹ để thu tiền mặt về bất cứ khi nào có nhu cầu đột xuất mà không bị mất giá sâu. Khi đã hiểu bản chất, hãy xem **[cách đầu tư quỹ ETF](/dau-tu/etf/cach-dau-tu-quy-etf/)** để bắt đầu tích sản.

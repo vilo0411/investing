@@ -29,6 +29,7 @@ Index toàn bộ bài đã publish tại `src/content/articles/`. Dùng cho inte
 | `dau-tu-chung-khoan-von-nho` | Đầu tư chứng khoán với số vốn nhỏ | `/dau-tu/co-phieu/dau-tu-chung-khoan-von-nho/` | đầu tư chứng khoán với số vốn nhỏ |
 | `khi-nao-nen-ban-co-phieu` | Khi nào nên bán cổ phiếu | `/dau-tu/co-phieu/khi-nao-nen-ban-co-phieu/` | khi nào nên bán cổ phiếu |
 | `dau-tu-chung-khoan-dai-han` | Đầu tư chứng khoán dài hạn | `/dau-tu/co-phieu/dau-tu-chung-khoan-dai-han/` | đầu tư chứng khoán dài hạn |
+| `dau-tu-tich-san-co-phieu-la-gi` | Đầu tư tích sản cổ phiếu là gì? | `/dau-tu/co-phieu/dau-tu-tich-san-co-phieu-la-gi/` | tích sản cổ phiếu |
 
 ## Nhóm Đầu tư — Quỹ ETF (`/dau-tu/etf/`)
 
@@ -37,6 +38,8 @@ Index toàn bộ bài đã publish tại `src/content/articles/`. Dùng cho inte
 | `etf-la-gi` | ETF là gì? | `/dau-tu/etf/etf-la-gi/` | quỹ ETF |
 | `etf-vn30-la-gi` | ETF VN30 là gì? | `/dau-tu/etf/etf-vn30-la-gi/` | ETF VN30 |
 | `cach-dau-tu-quy-etf` | Cách đầu tư quỹ ETF cho người mới | `/dau-tu/etf/cach-dau-tu-quy-etf/` | cách đầu tư quỹ etf |
+| `nen-dau-tu-quy-etf-nao` | Nên đầu tư quỹ ETF nào? | `/dau-tu/etf/nen-dau-tu-quy-etf-nao/` | nên đầu tư quỹ ETF nào |
+| `nen-dau-tu-quy-mo-hay-quy-etf` | Nên đầu tư quỹ mở hay quỹ ETF? | `/dau-tu/etf/nen-dau-tu-quy-mo-hay-quy-etf/` | nên đầu tư quỹ mở hay quỹ ETF |
 
 ## Nhóm Đầu tư — Trái phiếu (`/dau-tu/trai-phieu/`)
 
@@ -46,6 +49,7 @@ Index toàn bộ bài đã publish tại `src/content/articles/`. Dùng cho inte
 | `trai-phieu-doanh-nghiep` | Trái phiếu doanh nghiệp là gì? | `/dau-tu/trai-phieu/trai-phieu-doanh-nghiep/` | trái phiếu doanh nghiệp |
 | `cach-dau-tu-trai-phieu` | Cách đầu tư trái phiếu cho người mới | `/dau-tu/trai-phieu/cach-dau-tu-trai-phieu/` | cách đầu tư trái phiếu |
 | `trai-phieu-chinh-phu-la-gi` | Trái phiếu chính phủ là gì? | `/dau-tu/trai-phieu/trai-phieu-chinh-phu-la-gi/` | trái phiếu chính phủ |
+| `co-nen-dau-tu-trai-phieu` | Có nên đầu tư trái phiếu không? | `/dau-tu/trai-phieu/co-nen-dau-tu-trai-phieu/` | có nên đầu tư trái phiếu |
 
 ## Nhóm Đầu tư — Phái sinh (`/dau-tu/phai-sinh/`)
 
@@ -53,6 +57,8 @@ Index toàn bộ bài đã publish tại `src/content/articles/`. Dùng cho inte
 |------|-------|----------|-------------------|
 | `hop-dong-tuong-lai-la-gi` | Hợp đồng tương lai là gì? | `/dau-tu/phai-sinh/hop-dong-tuong-lai-la-gi/` | hợp đồng tương lai |
 | `cach-dau-tu-chung-khoan-phai-sinh` | Cách đầu tư chứng khoán phái sinh từ con số 0 | `/dau-tu/phai-sinh/cach-dau-tu-chung-khoan-phai-sinh/` | cách đầu tư chứng khoán phái sinh |
+| `phai-sinh-la-gi` | Phái sinh là gì? | `/dau-tu/phai-sinh/phai-sinh-la-gi/` | chứng khoán phái sinh |
+| `dao-han-phai-sinh-la-gi` | Đáo hạn phái sinh là gì? | `/dau-tu/phai-sinh/dao-han-phai-sinh-la-gi/` | đáo hạn phái sinh |
 
 ## Nhóm Phân tích — Cơ bản (`/phan-tich/co-ban/`)
 
@@ -63,12 +69,14 @@ Index toàn bộ bài đã publish tại `src/content/articles/`. Dùng cho inte
 | `roe-la-gi` | ROE là gì? | `/phan-tich/co-ban/roe-la-gi/` | ROE |
 | `roa-la-gi` | ROA là gì? | `/phan-tich/co-ban/roa-la-gi/` | ROA |
 | `eps-la-gi` | EPS là gì? | `/phan-tich/co-ban/eps-la-gi/` | EPS |
+| `phan-tich-co-ban-la-gi` | Phân tích cơ bản là gì? | `/phan-tich/co-ban/phan-tich-co-ban-la-gi/` | phân tích cơ bản |
 
 ## Nhóm Phân tích — Kỹ thuật (`/phan-tich/ky-thuat/`)
 
 | Slug | Title | URL Path | Anchor Text gợi ý |
 |------|-------|----------|-------------------|
 | `rsi-la-gi` | RSI là gì? | `/phan-tich/ky-thuat/rsi-la-gi/` | chỉ báo RSI |
+| `phan-tich-ky-thuat-la-gi` | Phân tích kỹ thuật là gì? | `/phan-tich/ky-thuat/phan-tich-ky-thuat-la-gi/` | phân tích kỹ thuật |
 
 ## Nhóm Reviews (`/reviews/`)
 

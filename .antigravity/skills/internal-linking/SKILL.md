@@ -10,6 +10,17 @@ description: >
 
 ## 🛠️ Procedures
 
+### Mode: Link Wheel (BẮT BUỘC — chạy trước mọi mode khác)
+> Luật khép vòng deterministic. Nguồn chân lý: `knowledge/3-pipeline/link-wheel.md`.
+
+1. **Đọc `category`** ở frontmatter bài đang xử lý.
+2. **Tra 2 trục** trong bảng mapping của `link-wheel.md`: Hub định nghĩa + bài "cách đầu tư".
+3. **Bắt buộc chèn 2 link** tới 2 nan hoa đó (anchor tự nhiên, wrap cụm có sẵn, giữa/cuối bài).
+   - Nếu bài CHÍNH LÀ một nan hoa → bỏ qua nan hoa đó, chỉ link sang nan hoa còn lại.
+   - **Chỉ link tới bài `Finalized`** — không bao giờ link slug `Planned` (tránh 404).
+4. **Vành bánh xe (BẮT BUỘC)**: lấy **2 bài `Finalized` gần nhất cùng cluster** (theo `publishDate`, tra `topic-clusters.md`) → chèn 2 link trỏ tới chúng. Đây là cơ chế bài mới luôn nối bài viết hôm trước.
+5. **Khép vành 2 chiều (BẮT BUỘC)**: mở đúng 2 bài ở bước 4, chèn vào mỗi bài 1 anchor trỏ ngược lên bài mới. Bài cũ A và bài mới B nối nhau cả hai chiều.
+
 ### Mode: Contextual Insertion (During Drafting)
 1. **Identify Targets**: Scan `knowledge/3-pipeline/anchor-index.md` for pages relevant to the current topic.
 2. **Find Opportunities**: Look for natural mentions of target keywords in the draft.

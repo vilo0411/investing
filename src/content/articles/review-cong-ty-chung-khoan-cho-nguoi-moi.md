@@ -181,4 +181,4 @@ Nếu bạn muốn một nơi an toàn tuyệt đối, hệ thống chạy ổn 
 
 Nếu bạn là nhà đầu tư tự chủ quyết định mua bán, muốn tối ưu hóa chi phí giao dịch và yêu thích các công cụ phân tích biểu đồ hiện đại, TCBS chính là điểm đến phù hợp nhất.
 
-Nếu bạn ưu tiên giao diện ứng dụng dễ sử dụng và quy trình mở tài khoản đơn giản, hãy đăng ký trải nghiệm thử VNDIRECT hoặc VPS với một số vốn nhỏ trước khi đầu tư chính thức.
+Nếu bạn ưu tiên giao diện ứng dụng dễ sử dụng và quy trình mở tài khoản đơn giản, hãy đăng ký trải nghiệm thử VNDIRECT hoặc VPS với một số vốn nhỏ trước khi đầu tư chính thức. Xem trước **[cách mở tài khoản chứng khoán](/dau-tu/co-phieu/cach-mo-tai-khoan-chung-khoan/)** để hoàn tất eKYC trong 5 phút.
