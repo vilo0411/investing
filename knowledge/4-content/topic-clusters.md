@@ -89,7 +89,7 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 | Các sai lầm dẫn tới phá sản | `sai-lam-dau-tu-chung-khoan` | `Planned` | Sprint Wave 4 |
 | Cách đầu tư chứng chỉ quỹ | `cach-dau-tu-chung-chi-quy` | `Planned` | Backlog |
 | Nên đầu tư cổ phiếu nào | `nen-dau-tu-co-phieu-nao` | `Planned` | Backlog |
-| Cách nhận biết cổ phiếu tiềm năng | `cach-nhan-biet-co-phieu-tiem-nang` | `Planned` | Backlog |
+| Cách nhận biết cổ phiếu tiềm năng | `cach-nhan-biet-co-phieu-tiem-nang` | `Finalized` | Backlog |
 | Kinh nghiệm chơi chứng khoán | `kinh-nghiem-choi-chung-khoan` | `Planned` | Backlog |
 | Đầu tư giá trị là gì | `dau-tu-gia-tri-la-gi` | `Planned` | Backlog |
 | DCA là gì | `dca-la-gi` | `Planned` | Backlog |
@@ -191,8 +191,8 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 | Quỹ mở là gì | `quy-mo-la-gi` | `Finalized` | ✅ Đã publish |
 | Chứng chỉ quỹ là gì | `chung-chi-quy-la-gi` | `Finalized` | ✅ Đã publish |
 | Chứng chỉ quỹ tốt nhất hiện nay | `chung-chi-quy-tot-nhat-hien-nay` | `Planned` | |
-| Quỹ chủ động là gì | `quy-chu-dong-la-gi` | `Planned` | |
-| Quỹ thụ động là gì | `quy-thu-dong-la-gi` | `Planned` | |
+| Quỹ chủ động là gì | `quy-chu-dong-la-gi` | `Finalized` | |
+| Quỹ thụ động là gì | `quy-thu-dong-la-gi` | `Finalized` | |
 | Nên đầu tư quỹ mở hay quỹ ETF | `nen-dau-tu-quy-mo-hay-quy-etf` | `Finalized` | |
 | NAV là gì | `nav-la-gi` | `Planned` | |
 | So sánh cổ phiếu và chứng chỉ quỹ | `so-sanh-co-phieu-va-chung-chi-quy-dau-tu` | `Planned` | |
@@ -209,7 +209,7 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 | Trái phiếu chính phủ là gì | `trai-phieu-chinh-phu-la-gi` | `Finalized` | |
 | Trái phiếu chuyển đổi là gì | `trai-phieu-chuyen-doi-la-gi` | `Planned` | |
 | Trái phiếu ngân hàng là gì | `trai-phieu-ngan-hang-la-gi` | `Planned` | |
-| Cách mua trái phiếu | `cach-mua-trai-phieu` | `Planned` | |
+| Cách mua trái phiếu | `cach-mua-trai-phieu` | `Finalized` | |
 | Cách đầu tư trái phiếu | `cach-dau-tu-trai-phieu` | `Finalized` | ✅ Đã publish |
 | Có nên đầu tư trái phiếu | `co-nen-dau-tu-trai-phieu` | `Finalized` | |
 | Bond yield là gì | `bond-yield-la-gi` | `Planned` | |
@@ -226,7 +226,7 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 | Cách đầu tư chứng khoán phái sinh | `cach-dau-tu-chung-khoan-phai-sinh` | `Planned` | |
 | Chứng khoán cơ sở và phái sinh | `chung-khoan-co-so-va-chung-khoan-phai-sinh` | `Planned` | |
 | Đáo hạn phái sinh là gì | `dao-han-phai-sinh-la-gi` | `Finalized` | |
-| Quyền chọn là gì | `quyen-chon-la-gi` | `Planned` | |
+| Quyền chọn là gì | `quyen-chon-la-gi` | `Finalized` | |
 
 ---
 
@@ -416,9 +416,13 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 | Keyword (Spoke) | Slug | Status | Ghi chú |
 |---|---|---|---|
 | Công ty chứng khoán phí thấp | `cong-ty-chung-khoan-phi-thap` | `Finalized` | ✅ Đã publish |
-| Đánh giá VPS | `vps-review` | `Planned` | |
-| Đánh giá TCBS | `tcbs-review` | `Planned` | |
-| Đánh giá SSI | `ssi-review` | `Planned` | |
+| Đánh giá VPS | `review-vps-securities` | `Finalized` | ✅ Đã publish |
+| Đánh giá DSC | `review-dsc-securities` | `Finalized` | ✅ Đã publish |
+| Đánh giá TCBS | `review-tcbs-securities` | `Finalized` | ✅ Đã publish |
+| Đánh giá SSI | `review-ssi-securities` | `Finalized` | ✅ Đã publish |
+| Đánh giá VNDIRECT | `review-vndirect-securities` | `Finalized` | ✅ Đã publish |
+| Đánh giá DNSE | `review-dnse-securities` | `Finalized` | ✅ Đã publish |
+| Đánh giá MBS | `review-mbs-securities` | `Finalized` | ✅ Đã publish |
 | So sánh TCBS và VPS | `tcbs-vs-vps` | `Planned` | |
 | So sánh VPS và SSI | `vps-vs-ssi` | `Planned` | |
 | So sánh TCBS và VNDirect | `tcbs-vs-vndirect` | `Planned` | |

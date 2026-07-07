@@ -33,7 +33,7 @@
 | 1.3 | Khi nào nên bán cổ phiếu | `khi-nao-nen-ban-co-phieu` | `Finalized` | Gap lớn trên market |
 | 1.4 | Đầu tư chứng khoán dài hạn | `dau-tu-chung-khoan-dai-han` | `Finalized` | Core value investing |
 | 1.5 | Đầu tư tích sản cổ phiếu là gì | `dau-tu-tich-san-co-phieu-la-gi` | `Finalized` | DCA concept |
-| 1.6 | Cách nhận biết cổ phiếu tiềm năng | `cach-nhan-biet-co-phieu-tiem-nang` | `Planned` | Backlog |
+| 1.6 | Cách nhận biết cổ phiếu tiềm năng | `cach-nhan-biet-co-phieu-tiem-nang` | `Finalized` | Backlog |
 
 ---
 
@@ -46,15 +46,15 @@
 | 2.2 | ETF phù hợp người mới | `etf-phu-hop-nguoi-moi` | `Planned` | F0 entry point |
 | 2.3 | Nên đầu tư quỹ mở hay quỹ ETF | `nen-dau-tu-quy-mo-hay-quy-etf` | `Finalized` | So sánh 2 sản phẩm |
 | 2.4 | Chứng chỉ quỹ tốt nhất hiện nay | `chung-chi-quy-tot-nhat-hien-nay` | `Planned` | Commercial intent cao |
-| 2.5 | Quỹ chủ động là gì | `quy-chu-dong-la-gi` | `Planned` | Kiến thức nền |
-| 2.6 | Quỹ thụ động là gì | `quy-thu-dong-la-gi` | `Planned` | Kiến thức nền |
+| 2.5 | Quỹ chủ động là gì | `quy-chu-dong-la-gi` | `Finalized` | Kiến thức nền |
+| 2.6 | Quỹ thụ động là gì | `quy-thu-dong-la-gi` | `Finalized` | Kiến thức nền |
 
 ### Spoke — Bài 3: Cách đầu tư trái phiếu
 
 | # | Spoke Keyword | Slug | Status | Ghi chú |
 |---|---|---|---|---|
 | 4.1 | Có nên đầu tư trái phiếu | `co-nen-dau-tu-trai-phieu` | `Finalized` | Decision content |
-| 4.2 | Cách mua trái phiếu | `cach-mua-trai-phieu` | `Planned` | How-to thực hành |
+| 4.2 | Cách mua trái phiếu | `cach-mua-trai-phieu` | `Finalized` | How-to thực hành |
 | 4.3 | Trái phiếu chính phủ là gì | `trai-phieu-chinh-phu-la-gi` | `Finalized` | Kiến thức nền |
 | 4.4 | Bond yield là gì | `bond-yield-la-gi` | `Planned` | Nâng cao |
 
@@ -66,7 +66,7 @@
 |---|---|---|---|---|
 | 5.1 | Phái sinh là gì | `phai-sinh-la-gi` | `Finalized` | Kiến thức nền bắt buộc |
 | 5.2 | Đáo hạn phái sinh là gì | `dao-han-phai-sinh-la-gi` | `Finalized` | Khái niệm cốt lõi |
-| 5.3 | Quyền chọn là gì | `quyen-chon-la-gi` | `Planned` | Mở rộng |
+| 5.3 | Quyền chọn là gì | `quyen-chon-la-gi` | `Finalized` | Mở rộng |
 
 ---
 

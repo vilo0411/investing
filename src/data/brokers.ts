@@ -441,6 +441,133 @@ export const brokerRegistry: Record<string, BrokerProfile> = {
       },
     ],
   },
+
+  dnse: {
+    slug: "dnse",
+    name: "DNSE Securities",
+    shortName: "DNSE",
+    rating: 4.3,
+    best_for: "Nhà đầu tư tự chủ, muốn quản lý margin theo từng giao dịch và miễn phí trọn đời",
+    fee_rate: "0% (miễn phí trọn đời)",
+    margin_rate: "9.9% – 13.9%/năm",
+    app_rating: "4.2/5",
+    min_deposit: "Không yêu cầu",
+    ctaUrl: "https://www.dnse.com.vn",
+    pros: [
+      "Miễn 100% phí giao dịch cổ phiếu trọn đời trên Entrade X",
+      "Tính năng Margin X cho phép quản lý và vay margin độc lập theo từng deal",
+      "Giao diện Entrade X hiện đại, mượt mà và trực quan cho thế hệ mới",
+      "Quy trình nạp rút tiền nhanh, liên kết ngân hàng sâu",
+    ],
+    cons: [
+      "Không có môi giới tư vấn truyền thống 1-1",
+      "Báo cáo phân tích doanh nghiệp còn ở mức cơ bản",
+      "Thị phần môi giới nhỏ hơn so với VPS hay SSI",
+    ],
+    verdict:
+      "DNSE là lựa chọn tuyệt vời cho nhà đầu tư thích tự chủ và tối ưu chi phí. Tính năng Margin X độc đáo giúp quản lý rủi ro từng lệnh tách biệt là điểm cộng lớn, đi kèm chính sách miễn phí giao dịch trọn đời.",
+    ratingBreakdown: {
+      fee: 5.0,
+      app: 4.5,
+      support: 3.5,
+      stability: 4.0,
+      products: 3.8,
+    },
+    companyInfo: {
+      founded: "2007",
+      hq: "Tầng 6, Tòa nhà Pax Sky, 63-65 Ngô Thì Nhậm, Hai Bà Trưng, Hà Nội",
+      license: "Giấy phép KDCK số 62/UBCK-GPHĐKD",
+      website: "https://www.dnse.com.vn",
+      products: [
+        "Môi giới cổ phiếu, ETF, chứng chỉ quỹ",
+        "Giao dịch phái sinh (Entrade X)",
+        "Cho vay ký quỹ Margin X",
+        "Tích lũy tài sản tự động",
+      ],
+    },
+    accountSteps: [
+      {
+        title: "Tải ứng dụng Entrade X",
+        desc: "Tải Entrade X từ App Store hoặc Google Play để đăng ký mở tài khoản online.",
+      },
+      {
+        title: "Xác minh danh tính eKYC",
+        desc: "Chụp ảnh CCCD và quét nhận diện khuôn mặt. Tài khoản được phê duyệt tự động chỉ sau vài phút.",
+      },
+      {
+        title: "Liên kết tài khoản ngân hàng",
+        desc: "Thiết lập liên kết chuyển/nút tiền nhanh với ngân hàng để giao dịch thuận tiện.",
+      },
+      {
+        title: "Nạp tiền và giao dịch",
+        desc: "Chuyển tiền vào tài khoản DNSE theo hướng dẫn và bắt đầu mua cổ phiếu đầu tiên.",
+      },
+    ],
+  },
+
+  mbs: {
+    slug: "mbs",
+    name: "MBS (Chứng khoán MB)",
+    shortName: "MBS",
+    rating: 4.4,
+    best_for: "Nhà đầu tư muốn sự an toàn từ ngân hàng quân đội và ứng dụng giao dịch hiện đại",
+    fee_rate: "0.10% – 0.15%",
+    margin_rate: "10.5% – 12.5%/năm",
+    app_rating: "4.3/5",
+    min_deposit: "Không yêu cầu",
+    ctaUrl: "https://mbs.com.vn",
+    pros: [
+      "Bảo trợ bởi Ngân hàng Quân đội (MBBank) — uy tín và an toàn tài chính cực cao",
+      "Ứng dụng MBS Mobile mới thiết kế trực quan, hiện đại, tích hợp phân tích tốt",
+      "Hệ thống khuyến nghị đầu tư Pro Advice chuyên sâu và cập nhật liên tục",
+      "Chuyển tiền liên thông tức thì giữa MBBank và MBS hoàn toàn không mất phí",
+    ],
+    cons: [
+      "Phí giao dịch và lãi suất margin ở mức trung bình, không quá rẻ",
+      "Chất lượng môi giới hỗ trợ không đồng đều ở các chi nhánh",
+      "Hệ thống đôi lúc chậm phản hồi khi thị trường biến động quá mạnh",
+    ],
+    verdict:
+      "MBS đem lại cảm giác yên tâm tuyệt đối cho nhà đầu tư nhờ thương hiệu ngân hàng MBBank. Ứng dụng MBS Mobile được đầu tư mạnh mẽ kết hợp cùng các tư vấn chất lượng giúp MBS là lựa chọn an toàn cho cả người mới lẫn người có kinh nghiệm.",
+    ratingBreakdown: {
+      fee: 3.8,
+      app: 4.4,
+      support: 4.0,
+      stability: 4.2,
+      products: 4.1,
+    },
+    companyInfo: {
+      founded: "2000",
+      hq: "Tòa nhà MB, 21 Cát Linh, Đống Đa, Hà Nội",
+      license: "Giấy phép KDCK số 116/GP-UBCK",
+      website: "https://mbs.com.vn",
+      products: [
+        "Môi giới cổ phiếu, ETF, chứng chỉ quỹ",
+        "Giao dịch hợp đồng tương lai",
+        "Dịch vụ cho vay margin",
+        "Phân tích báo cáo Pro Advice",
+        "Dịch vụ quản lý tài sản",
+      ],
+    },
+    accountSteps: [
+      {
+        title: "Tải ứng dụng MBS Mobile",
+        desc: "Tải ứng dụng MBS Mobile trên App Store hoặc Google Play.",
+      },
+      {
+        title: "Đăng ký eKYC trực tuyến",
+        desc: "Cung cấp ảnh CCCD và quét nhận diện khuôn mặt online qua eKYC. Xác minh nhanh trong vài phút.",
+      },
+      {
+        title: "Liên kết tài khoản MBBank",
+        desc: "Dễ dàng liên kết với tài khoản ngân hàng MBBank (nếu có) để nạp rút tiền tự động không tốn phí.",
+      },
+      {
+        title: "Nạp tiền và bắt đầu giao dịch",
+        desc: "Chuyển tiền vào tài khoản chứng khoán MBS và thực hiện giao dịch mua bán cổ phiếu.",
+      },
+    ],
+  },
 };
 
 /** Look up a broker profile by slug. Returns undefined if not found. */

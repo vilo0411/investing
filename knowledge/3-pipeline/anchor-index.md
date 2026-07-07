@@ -2,7 +2,7 @@
 
 Index toàn bộ bài đã publish tại `src/content/articles/`. Dùng cho internal linking.
 
-> **Cập nhật:** 2026-06-28 | +5 bài mới (Sprint Wave 2)
+> **Cập nhật:** 2026-07-07 | +5 bài mới (Sprint Wave 3 / Backlog)
 > **URL Pattern:**
 > - Nhóm "Đầu tư": `/dau-tu/{category}/{slug}/`
 > - Nhóm "Phân tích": `/phan-tich/{category}/{slug}/`
@@ -30,6 +30,7 @@ Index toàn bộ bài đã publish tại `src/content/articles/`. Dùng cho inte
 | `khi-nao-nen-ban-co-phieu` | Khi nào nên bán cổ phiếu | `/dau-tu/co-phieu/khi-nao-nen-ban-co-phieu/` | khi nào nên bán cổ phiếu |
 | `dau-tu-chung-khoan-dai-han` | Đầu tư chứng khoán dài hạn | `/dau-tu/co-phieu/dau-tu-chung-khoan-dai-han/` | đầu tư chứng khoán dài hạn |
 | `dau-tu-tich-san-co-phieu-la-gi` | Đầu tư tích sản cổ phiếu là gì? | `/dau-tu/co-phieu/dau-tu-tich-san-co-phieu-la-gi/` | tích sản cổ phiếu |
+| `cach-nhan-biet-co-phieu-tiem-nang` | Cách nhận biết cổ phiếu tiềm năng cho người mới | `/dau-tu/co-phieu/cach-nhan-biet-co-phieu-tiem-nang/` | cách nhận biết cổ phiếu tiềm năng |
 
 ## Nhóm Đầu tư — Quỹ ETF (`/dau-tu/etf/`)
 
@@ -40,6 +41,8 @@ Index toàn bộ bài đã publish tại `src/content/articles/`. Dùng cho inte
 | `cach-dau-tu-quy-etf` | Cách đầu tư quỹ ETF cho người mới | `/dau-tu/etf/cach-dau-tu-quy-etf/` | cách đầu tư quỹ etf |
 | `nen-dau-tu-quy-etf-nao` | Nên đầu tư quỹ ETF nào? | `/dau-tu/etf/nen-dau-tu-quy-etf-nao/` | nên đầu tư quỹ ETF nào |
 | `nen-dau-tu-quy-mo-hay-quy-etf` | Nên đầu tư quỹ mở hay quỹ ETF? | `/dau-tu/etf/nen-dau-tu-quy-mo-hay-quy-etf/` | nên đầu tư quỹ mở hay quỹ ETF |
+| `quy-chu-dong-la-gi` | Quỹ chủ động là gì? Ưu nhược điểm và lưu ý cho F0 | `/dau-tu/etf/quy-chu-dong-la-gi/` | quỹ chủ động là gì |
+| `quy-thu-dong-la-gi` | Quỹ thụ động là gì? Hướng dẫn đầu tư cho F0 | `/dau-tu/etf/quy-thu-dong-la-gi/` | quỹ thụ động là gì |
 
 ## Nhóm Đầu tư — Trái phiếu (`/dau-tu/trai-phieu/`)
 
@@ -50,6 +53,7 @@ Index toàn bộ bài đã publish tại `src/content/articles/`. Dùng cho inte
 | `cach-dau-tu-trai-phieu` | Cách đầu tư trái phiếu cho người mới | `/dau-tu/trai-phieu/cach-dau-tu-trai-phieu/` | cách đầu tư trái phiếu |
 | `trai-phieu-chinh-phu-la-gi` | Trái phiếu chính phủ là gì? | `/dau-tu/trai-phieu/trai-phieu-chinh-phu-la-gi/` | trái phiếu chính phủ |
 | `co-nen-dau-tu-trai-phieu` | Có nên đầu tư trái phiếu không? | `/dau-tu/trai-phieu/co-nen-dau-tu-trai-phieu/` | có nên đầu tư trái phiếu |
+| `cach-mua-trai-phieu` | Cách mua trái phiếu doanh nghiệp an toàn cho F0 | `/dau-tu/trai-phieu/cach-mua-trai-phieu/` | cách mua trái phiếu |
 
 ## Nhóm Đầu tư — Phái sinh (`/dau-tu/phai-sinh/`)
 
@@ -59,6 +63,7 @@ Index toàn bộ bài đã publish tại `src/content/articles/`. Dùng cho inte
 | `cach-dau-tu-chung-khoan-phai-sinh` | Cách đầu tư chứng khoán phái sinh từ con số 0 | `/dau-tu/phai-sinh/cach-dau-tu-chung-khoan-phai-sinh/` | cách đầu tư chứng khoán phái sinh |
 | `phai-sinh-la-gi` | Phái sinh là gì? | `/dau-tu/phai-sinh/phai-sinh-la-gi/` | chứng khoán phái sinh |
 | `dao-han-phai-sinh-la-gi` | Đáo hạn phái sinh là gì? | `/dau-tu/phai-sinh/dao-han-phai-sinh-la-gi/` | đáo hạn phái sinh |
+| `quyen-chon-la-gi` | Quyền chọn là gì? Khái niệm và hướng dẫn giao dịch | `/dau-tu/phai-sinh/quyen-chon-la-gi/` | quyền chọn là gì |
 
 ## Nhóm Phân tích — Cơ bản (`/phan-tich/co-ban/`)
 

@@ -36,9 +36,20 @@ tự làm trên VPS + nginx (FlashPanel), không tốn phí.
 Trong FlashPanel: mở site `valueinvesting.com.vn` → phần **Config / Nginx**
 (khu vực cho phép thêm directive tùy chỉnh bên trong khối `server`).
 
-Dán đoạn sau vào:
+Thay đổi/thêm đoạn cấu hình sau vào:
 
 ```nginx
+# === Cấu hình sửa lỗi 404 cho trang tĩnh (Astro) ===
+# Khai báo trang 404 tùy chỉnh
+error_page 404 /404.html;
+
+# Sửa khối location / mặc định của FlashPanel:
+# Thay vì fallback về /index.html (gây lỗi hiển thị trang chủ khi vào link không tồn tại),
+# ta trả về lỗi 404 để Nginx hiển thị trang 404.html.
+location / {
+    try_files $uri $uri/ =404;
+}
+
 # === Markdown for Agents — self-hosted, $0 ===
 
 # 1) Phục vụ file .md dưới dạng markdown; nếu không có .md thì fallback về HTML.
@@ -63,8 +74,7 @@ location ~ ^(?<page>/.+)/$ {
 
 **Lưu ý quan trọng:**
 
-- Giữ nguyên khối `location / { ... }` mà FlashPanel đã tạo sẵn. Hai khối regex
-  ở trên sẽ được nginx ưu tiên đúng cho URL có `/` cuối và file `.md`.
+- Phải thay thế hoặc sửa đổi khối `location / { try_files $uri $uri/ /index.html; }` mặc định của FlashPanel thành `try_files $uri $uri/ =404;`. Nếu giữ nguyên cấu hình cũ, mọi URL không tồn tại (ví dụ các link đuôi `.html` cũ hoặc link gõ sai) sẽ tiếp tục bị rewrite về trang chủ `/index.html` với status code 200, ảnh hưởng xấu tới SEO và trải nghiệm người dùng.
 - **Không** dùng `map` ở đây — `map` chỉ đặt được trong context `http`, còn block
   tùy chỉnh của FlashPanel nằm trong `server`. Vì vậy ta dùng biến built-in
   `$http_accept` trực tiếp.

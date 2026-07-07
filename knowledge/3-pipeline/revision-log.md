@@ -13,6 +13,11 @@ Tài liệu ghi nhận toàn bộ lịch sử chỉnh sửa bài viết dựa tr
 | 2026-06-30 | `phan-tich-co-ban-la-gi` | Người dùng duyệt Outline & Draft, không yêu cầu sửa đổi | Di chuyển bài viết sang Final, cập nhật topic-clusters và anchor-index | **Hoàn thành** |
 | 2026-06-30 | `phan-tich-ky-thuat-la-gi` | Người dùng duyệt Outline & Draft, không yêu cầu sửa đổi | Di chuyển bài viết sang Final, cập nhật topic-clusters và anchor-index | **Hoàn thành** |
 | 2026-06-30 | `phai-sinh-la-gi` | Người dùng duyệt Outline & Draft, không yêu cầu sửa đổi | Di chuyển bài viết sang Final, cập nhật topic-clusters và anchor-index | **Hoàn thành** |
+| 2026-07-07 | `cach-nhan-biet-co-phieu-tiem-nang` | Người dùng duyệt Draft, không yêu cầu sửa đổi | Di chuyển bài viết sang Final, cập nhật topic-clusters và anchor-index | **Hoàn thành** |
+| 2026-07-07 | `quy-chu-dong-la-gi` | Người dùng duyệt Draft, không yêu cầu sửa đổi | Di chuyển bài viết sang Final, cập nhật topic-clusters và anchor-index | **Hoàn thành** |
+| 2026-07-07 | `quy-thu-dong-la-gi` | Người dùng duyệt Draft, không yêu cầu sửa đổi | Di chuyển bài viết sang Final, cập nhật topic-clusters và anchor-index | **Hoàn thành** |
+| 2026-07-07 | `cach-mua-trai-phieu` | Người dùng duyệt Draft, không yêu cầu sửa đổi | Di chuyển bài viết sang Final, cập nhật topic-clusters và anchor-index | **Hoàn thành** |
+| 2026-07-07 | `quyen-chon-la-gi` | Người dùng duyệt Draft, không yêu cầu sửa đổi | Di chuyển bài viết sang Final, cập nhật topic-clusters và anchor-index | **Hoàn thành** |
 
 ---
 

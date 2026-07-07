@@ -16,6 +16,7 @@
     "typescript": "^5.8.3"
   },
   "devDependencies": {
-    "gray-matter": "^4.0.3"
+    "gray-matter": "^4.0.3",
+    "playwright": "^1.61.1"
   }
 }
