@@ -79,6 +79,7 @@ None yet.
 | # | Description | Date | Commit | Directory |
 |---|-------------|------|--------|-----------|
 | 260615-u57 | Xây dựng layout riêng cho trang Reviews (reviewType schema, 4 shared components, 3 body layouts, ReviewLayout dispatcher, migrate listicle mẫu) | 2026-06-16 | f17fae8 | [260615-u57-...](./quick/260615-u57-x-y-d-ng-layout-ri-ng-cho-trang-reviews-/) |
+| 260710-9lc | Tắt deploy GitHub Pages (xoá deploy.yml) để ngừng bản trùng vilo0411.github.io/investing — còn bước thủ công tắt Pages trong Settings | 2026-07-09 | f48fcd7 | [260710-9lc-...](./quick/260710-9lc-t-t-deploy-github-pages/) |
 
 ### Blockers/Concerns
 
@@ -96,7 +97,7 @@ Items acknowledged and carried forward from previous milestone close:
 
 ## Session Continuity
 
-Last activity: 2026-06-16 - Completed quick task 260615-u57: Reviews layout system (schema + components + layouts + migrate listicle mẫu)
+Last activity: 2026-07-09 - Completed quick task 260710-9lc: Tắt deploy GitHub Pages (xoá deploy.yml)
 
 Last session: 2026-06-13T03:49:28.759Z
 Stopped at: Phase 6 context gathered
