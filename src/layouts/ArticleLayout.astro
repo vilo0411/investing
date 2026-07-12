@@ -3,6 +3,7 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 import AuthorBox from "@/components/AuthorBox.astro";
 import RelatedArticles from "@/components/RelatedArticles.astro";
 import ShareBar from "@/components/ShareBar.astro";
+import AISummaryBar from "@/components/AISummaryBar.astro";
 import TOC from "@/components/TOC.astro";
 import { categories, getCategoryPath, site, url } from "@/data/site";
 import { author } from "@/data/authors";
@@ -263,6 +264,7 @@ const breadcrumbSchema = {
         </p>
       </section>
       <AuthorBox />
+      <AISummaryBar title={title} url={articleUrl} />
       <ShareBar title={title} url={articleUrl} />
       <RelatedArticles category={entry.data.category} currentSlug={entry.slug} />
     </article>
