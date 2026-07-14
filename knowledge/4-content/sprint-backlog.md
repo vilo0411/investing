@@ -45,7 +45,7 @@
 | 2.1 | Nên đầu tư quỹ ETF nào | `nen-dau-tu-quy-etf-nao` | `Finalized` | So sánh + khuyến nghị |
 | 2.2 | ETF phù hợp người mới | `etf-phu-hop-nguoi-moi` | `Planned` | F0 entry point |
 | 2.3 | Nên đầu tư quỹ mở hay quỹ ETF | `nen-dau-tu-quy-mo-hay-quy-etf` | `Finalized` | So sánh 2 sản phẩm |
-| 2.4 | Chứng chỉ quỹ tốt nhất hiện nay | `chung-chi-quy-tot-nhat-hien-nay` | `Planned` | Commercial intent cao |
+| 2.4 | Chứng chỉ quỹ tốt nhất hiện nay | `chung-chi-quy-tot-nhat-hien-nay` | `Finalized` | Commercial intent cao |
 | 2.5 | Quỹ chủ động là gì | `quy-chu-dong-la-gi` | `Finalized` | Kiến thức nền |
 | 2.6 | Quỹ thụ động là gì | `quy-thu-dong-la-gi` | `Finalized` | Kiến thức nền |
 

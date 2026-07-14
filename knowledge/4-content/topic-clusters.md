@@ -88,7 +88,7 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 | Đầu tư chứng khoán có những rủi ro gì | `rui-ro-dau-tu-chung-khoan` | `Planned` | Sprint Wave 4 |
 | Các sai lầm dẫn tới phá sản | `sai-lam-dau-tu-chung-khoan` | `Planned` | Sprint Wave 4 |
 | Cách đầu tư chứng chỉ quỹ | `cach-dau-tu-chung-chi-quy` | `Planned` | Backlog |
-| Nên đầu tư cổ phiếu nào | `nen-dau-tu-co-phieu-nao` | `Planned` | Backlog |
+| Nên đầu tư cổ phiếu nào | `nen-dau-tu-co-phieu-nao` | `Finalized` | Backlog |
 | Cách nhận biết cổ phiếu tiềm năng | `cach-nhan-biet-co-phieu-tiem-nang` | `Finalized` | Backlog |
 | Kinh nghiệm chơi chứng khoán | `kinh-nghiem-choi-chung-khoan` | `Planned` | Backlog |
 | Đầu tư giá trị là gì | `dau-tu-gia-tri-la-gi` | `Planned` | Backlog |
@@ -102,7 +102,7 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 
 | Keyword (Spoke) | Slug | Status | Ghi chú |
 |---|---|---|---|
-| Mở tài khoản chứng khoán có mất phí không | `mo-tai-khoan-chung-khoan-co-mat-phi-khong` | `Planned` | |
+| Mở tài khoản chứng khoán có mất phí không | `mo-tai-khoan-chung-khoan-co-mat-phi-khong` | `Finalized` | |
 | Mở tài khoản chứng khoán online có an toàn không | `mo-tai-khoan-chung-khoan-online-co-an-toan-khong` | `Planned` | |
 | Các loại tài khoản chứng khoán | `cac-loai-tai-khoan-chung-khoan` | `Planned` | |
 | Một người được mở bao nhiêu tài khoản | `mot-nguoi-duoc-mo-bao-nhieu-tai-khoan-chung-khoan` | `Planned` | |
@@ -190,7 +190,7 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 |---|---|---|---|
 | Quỹ mở là gì | `quy-mo-la-gi` | `Finalized` | ✅ Đã publish |
 | Chứng chỉ quỹ là gì | `chung-chi-quy-la-gi` | `Finalized` | ✅ Đã publish |
-| Chứng chỉ quỹ tốt nhất hiện nay | `chung-chi-quy-tot-nhat-hien-nay` | `Planned` | |
+| Chứng chỉ quỹ tốt nhất hiện nay | `chung-chi-quy-tot-nhat-hien-nay` | `Finalized` | |
 | Quỹ chủ động là gì | `quy-chu-dong-la-gi` | `Finalized` | |
 | Quỹ thụ động là gì | `quy-thu-dong-la-gi` | `Finalized` | |
 | Nên đầu tư quỹ mở hay quỹ ETF | `nen-dau-tu-quy-mo-hay-quy-etf` | `Finalized` | |
@@ -339,14 +339,14 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 | Keyword | Slug | Status | Ghi chú |
 |---|---|---|---|
 | RSI là gì | `rsi-la-gi` | `Finalized` | ✅ Đã publish |
-| MACD là gì | `macd-la-gi` | `Planned` | |
+| MACD là gì | `macd-la-gi` | `Finalized` | |
 | Stochastic RSI là gì | `chi-bao-stochastic-rsi-la-gi` | `Planned` | |
 | Phân kỳ RSI | `phan-ky-rsi` | `Planned` | |
 
 ### Đường MA
 | Keyword | Slug | Status |
 |---|---|---|
-| Đường MA là gì | `duong-ma-la-gi` | `Planned` |
+| Đường MA là gì | `duong-ma-la-gi` | `Finalized` |
 | Đường EMA | `duong-ema` | `Planned` |
 | Đường MA200 | `duong-ma200` | `Planned` |
 | Golden Cross là gì | `golden-cross-la-gi` | `Planned` |

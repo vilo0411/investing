@@ -31,6 +31,8 @@ Index toàn bộ bài đã publish tại `src/content/articles/`. Dùng cho inte
 | `dau-tu-chung-khoan-dai-han` | Đầu tư chứng khoán dài hạn | `/dau-tu/co-phieu/dau-tu-chung-khoan-dai-han/` | đầu tư chứng khoán dài hạn |
 | `dau-tu-tich-san-co-phieu-la-gi` | Đầu tư tích sản cổ phiếu là gì? | `/dau-tu/co-phieu/dau-tu-tich-san-co-phieu-la-gi/` | tích sản cổ phiếu |
 | `cach-nhan-biet-co-phieu-tiem-nang` | Cách nhận biết cổ phiếu tiềm năng cho người mới | `/dau-tu/co-phieu/cach-nhan-biet-co-phieu-tiem-nang/` | cách nhận biết cổ phiếu tiềm năng |
+| `mo-tai-khoan-chung-khoan-co-mat-phi-khong` | Mở tài khoản chứng khoán có mất phí không? | `/dau-tu/co-phieu/mo-tai-khoan-chung-khoan-co-mat-phi-khong/` | mở tài khoản chứng khoán có mất phí không |
+| `nen-dau-tu-co-phieu-nao` | Nên đầu tư cổ phiếu nào? | `/dau-tu/co-phieu/nen-dau-tu-co-phieu-nao/` | nên đầu tư cổ phiếu nào |
 
 ## Nhóm Đầu tư — Quỹ ETF (`/dau-tu/etf/`)
 
@@ -43,6 +45,7 @@ Index toàn bộ bài đã publish tại `src/content/articles/`. Dùng cho inte
 | `nen-dau-tu-quy-mo-hay-quy-etf` | Nên đầu tư quỹ mở hay quỹ ETF? | `/dau-tu/etf/nen-dau-tu-quy-mo-hay-quy-etf/` | nên đầu tư quỹ mở hay quỹ ETF |
 | `quy-chu-dong-la-gi` | Quỹ chủ động là gì? Ưu nhược điểm và lưu ý cho F0 | `/dau-tu/etf/quy-chu-dong-la-gi/` | quỹ chủ động là gì |
 | `quy-thu-dong-la-gi` | Quỹ thụ động là gì? Hướng dẫn đầu tư cho F0 | `/dau-tu/etf/quy-thu-dong-la-gi/` | quỹ thụ động là gì |
+| `chung-chi-quy-tot-nhat-hien-nay` | Chứng chỉ quỹ tốt nhất hiện nay: Gợi ý các quỹ uy tín cho F0 | `/dau-tu/etf/chung-chi-quy-tot-nhat-hien-nay/` | chứng chỉ quỹ tốt nhất hiện nay |
 
 ## Nhóm Đầu tư — Trái phiếu (`/dau-tu/trai-phieu/`)
 
@@ -82,6 +85,8 @@ Index toàn bộ bài đã publish tại `src/content/articles/`. Dùng cho inte
 |------|-------|----------|-------------------|
 | `rsi-la-gi` | RSI là gì? | `/phan-tich/ky-thuat/rsi-la-gi/` | chỉ báo RSI |
 | `phan-tich-ky-thuat-la-gi` | Phân tích kỹ thuật là gì? | `/phan-tich/ky-thuat/phan-tich-ky-thuat-la-gi/` | phân tích kỹ thuật |
+| `duong-ma-la-gi` | Đường MA là gì? Hướng dẫn cách dùng đường trung bình động | `/phan-tich/ky-thuat/duong-ma-la-gi/` | đường MA là gì |
+| `macd-la-gi` | Chỉ báo MACD là gì? Cách sử dụng MACD hiệu quả cho F0 | `/phan-tich/ky-thuat/macd-la-gi/` | chỉ báo MACD |
 
 ## Nhóm Reviews (`/reviews/`)
 
