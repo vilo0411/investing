@@ -1,0 +1,216 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { author } from "@/data/authors";
+import { categories, getArticlePath, getCategoryPath, url } from "@/data/site";
+
+// Load every article once, then bucket by category preserving the
+// canonical category order defined in src/data/site.ts.
+const allArticles = await getCollection("articles");
+
+const sortArticles = (a: (typeof allArticles)[number], b: (typeof allArticles)[number]) =>
+  a.data.order - b.data.order || a.data.title.localeCompare(b.data.title, "vi");
+
+const sections = categories
+  .map((category) => {
+    const articles = allArticles
+      .filter((article) => article.data.category === category.slug)
+      .sort(sortArticles);
+    return { category, articles };
+  })
+  .filter((section) => section.articles.length > 0);
+
+const totalArticles = allArticles.length;
+
+// Static / trust pages that should also be crawlable from one hub.
+const utilityPages = [
+  { label: "Trang chủ", href: url("/") },
+  { label: "Về Value Investing", href: url("/about/") },
+  { label: "Hồ sơ tác giả", href: url(`/author/${author.slug}/`) },
+  { label: "Chính sách biên tập", href: url("/editorial-policy/") },
+  { label: "Chính sách nguồn tham khảo", href: url("/sources-policy/") },
+  { label: "Chính sách đính chính", href: url("/corrections-policy/") },
+  { label: "Tuyên bố miễn trừ trách nhiệm", href: url("/disclaimer/") },
+  { label: "Tìm kiếm", href: url("/search/") },
+  { label: "Liên hệ", href: url("/contact/") },
+];
+---
+
+<BaseLayout
+  title="Sơ đồ trang | Toàn bộ bài viết & danh mục"
+  description="Sơ đồ trang Value Investing — danh sách đầy đủ các danh mục và bài viết về cổ phiếu, ETF, trái phiếu, phái sinh và phân tích tài chính, giúp bạn tra cứu nhanh."
+>
+  <section class="page-hero">
+    <div class="container">
+      <div class="eyebrow">Sơ đồ trang</div>
+      <h1>Toàn bộ nội dung Value Investing</h1>
+      <p class="lead">
+        Một trang duy nhất liệt kê tất cả {totalArticles} bài viết theo {sections.length} danh mục,
+        cùng các trang giới thiệu và chính sách. Dùng nó để tra cứu nhanh hoặc duyệt qua toàn bộ thư viện.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <!-- Jump nav: lets readers skip straight to a category no matter how long the page grows -->
+      <nav class="sitemap-jump" aria-label="Nhảy tới danh mục">
+        {sections.map((section) => (
+          <a href={`#cat-${section.category.slug}`}>
+            {section.category.title}
+            <span class="sitemap-count">{section.articles.length}</span>
+          </a>
+        ))}
+      </nav>
+
+      {sections.map((section) => (
+        <div class="sitemap-block" id={`cat-${section.category.slug}`}>
+          <h2 class="sitemap-cat">
+            <a href={getCategoryPath(section.category)}>{section.category.title}</a>
+            <span class="sitemap-count">{section.articles.length}</span>
+          </h2>
+          <!-- Multi-column flow keeps long categories wide instead of endlessly tall -->
+          <ul class="sitemap-list sitemap-list--cols">
+            {section.articles.map((article) => (
+              <li>
+                <a href={getArticlePath(article)}>{article.data.title}</a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <div class="eyebrow">Trang chức năng</div>
+          <h2 class="section-title">Giới thiệu & chính sách</h2>
+        </div>
+      </div>
+      <ul class="sitemap-list sitemap-list--inline">
+        {utilityPages.map((page) => (
+          <li><a href={page.href}>{page.label}</a></li>
+        ))}
+      </ul>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  /* Jump nav — compact chips linking to each category anchor */
+  .sitemap-jump {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 32px;
+  }
+
+  .sitemap-jump a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 14px;
+    border: 1px solid var(--line);
+    background: var(--surface);
+    color: var(--text);
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  }
+
+  .sitemap-jump a:hover {
+    transform: translate(2px, 2px);
+    box-shadow: none;
+    color: var(--brand);
+  }
+
+  .sitemap-block {
+    border: 1px solid var(--line);
+    border-radius: var(--radius-md);
+    background: var(--surface);
+    padding: 24px 28px;
+    box-shadow: var(--shadow-sm);
+    /* Offset so the sticky header doesn't cover the heading on anchor jump */
+    scroll-margin-top: 90px;
+  }
+
+  .sitemap-block + .sitemap-block {
+    margin-top: 24px;
+  }
+
+  .sitemap-cat {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 0 0 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--line);
+    font-size: 1.15rem;
+    font-weight: 700;
+  }
+
+  .sitemap-cat a {
+    color: var(--text);
+    text-decoration: none;
+  }
+
+  .sitemap-cat a:hover {
+    color: var(--brand);
+  }
+
+  .sitemap-count {
+    flex-shrink: 0;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--brand);
+    background: var(--surface-alt);
+    border: 1px solid var(--line);
+    padding: 2px 8px;
+  }
+
+  .sitemap-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Flow items into as many ~260px columns as fit — long categories grow wide, not tall */
+  .sitemap-list--cols {
+    column-width: 260px;
+    column-gap: 32px;
+  }
+
+  .sitemap-list--cols li {
+    break-inside: avoid;
+    margin-bottom: 10px;
+  }
+
+  .sitemap-list li {
+    line-height: 1.5;
+  }
+
+  .sitemap-list a {
+    color: var(--muted);
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .sitemap-list a:hover {
+    color: var(--brand);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  /* Utility page list — simple responsive grid */
+  .sitemap-list--inline {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+</style>

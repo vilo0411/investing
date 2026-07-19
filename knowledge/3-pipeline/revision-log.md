@@ -18,6 +18,8 @@ Tài liệu ghi nhận toàn bộ lịch sử chỉnh sửa bài viết dựa tr
 | 2026-07-07 | `quy-thu-dong-la-gi` | Người dùng duyệt Draft, không yêu cầu sửa đổi | Di chuyển bài viết sang Final, cập nhật topic-clusters và anchor-index | **Hoàn thành** |
 | 2026-07-07 | `cach-mua-trai-phieu` | Người dùng duyệt Draft, không yêu cầu sửa đổi | Di chuyển bài viết sang Final, cập nhật topic-clusters và anchor-index | **Hoàn thành** |
 | 2026-07-07 | `quyen-chon-la-gi` | Người dùng duyệt Draft, không yêu cầu sửa đổi | Di chuyển bài viết sang Final, cập nhật topic-clusters và anchor-index | **Hoàn thành** |
+| 2026-07-18 | `cach-mo-tai-khoan-chung-khoan-vps` | Bài brand → đặt vào category `reviews`; duyệt Outline & Draft | Finalize vào `/reviews/`, Link Wheel 2 chiều với review-vps & bài generic, cập nhật cluster + anchor-index | **Hoàn thành** |
+| 2026-07-19 | `cach-mo-tai-khoan-chung-khoan-ssi` | Bài brand how-to SSI (category `reviews`); duyệt Outline & Draft | Finalize vào `/reviews/`, Link Wheel 2 chiều với review-ssi & bài generic, cập nhật cluster + anchor-index | **Hoàn thành** |
 
 ---
 

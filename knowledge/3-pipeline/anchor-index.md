@@ -94,6 +94,8 @@ Index toàn bộ bài đã publish tại `src/content/articles/`. Dùng cho inte
 |------|-------|----------|-------------------|
 | `cong-ty-chung-khoan-phi-thap` | Công ty chứng khoán phí thấp | `/reviews/cong-ty-chung-khoan-phi-thap/` | công ty chứng khoán phí thấp |
 | `review-cong-ty-chung-khoan-cho-nguoi-moi` | Công ty chứng khoán cho người mới | `/reviews/review-cong-ty-chung-khoan-cho-nguoi-moi/` | chọn công ty chứng khoán cho người mới |
+| `cach-mo-tai-khoan-chung-khoan-vps` | Cách mở tài khoản chứng khoán VPS | `/reviews/cach-mo-tai-khoan-chung-khoan-vps/` | cách mở tài khoản chứng khoán VPS |
+| `cach-mo-tai-khoan-chung-khoan-ssi` | Cách mở tài khoản chứng khoán SSI | `/reviews/cach-mo-tai-khoan-chung-khoan-ssi/` | cách mở tài khoản chứng khoán SSI |
 
 ## Nhóm Nhà đầu tư (`/nha-dau-tu/`)
 

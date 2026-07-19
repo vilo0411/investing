@@ -14,6 +14,7 @@ export const GET: APIRoute = ({ site }) => {
     "/corrections-policy/",
     "/sources-policy/",
     "/disclaimer/",
+    "/so-do-trang/",
     "/search/",
     `/author/${author.slug}/`,
   ];

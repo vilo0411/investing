@@ -170,6 +170,12 @@ Mỗi khi người dùng đưa ra phản hồi chỉnh sửa, hãy trích xuất
 - **Bản năng:** Đối với các thẻ H2 trong Outline dự kiến sẽ chứa các thẻ H3 con trong Draft (như phần Câu hỏi thường gặp FAQ), tuyệt đối không đặt target từ bằng con số ở Outline (ví dụ: **Target: 150 từ**). Thay vào đó, mô tả bằng chữ (ví dụ: **Target: Mỗi câu trả lời 40-80 từ**) để tránh script QA count_words.py parsing số và tính sai từ của H2.
 - **Phạm vi:** Global
 
+### Không chèn FAQ vào body — Layout tự render từ frontmatter
+- **Trạng thái:** ACTIVE
+- **Nguồn:** cach-mo-tai-khoan-chung-khoan-vps
+- **Bản năng:** ArticleLayout và ReviewLayout tự render mục "Câu hỏi thường gặp" từ trường `faq[]` trong frontmatter (giống `keyTakeaways`). Khi finalize, tuyệt đối KHÔNG để lại H2 `## Câu hỏi thường gặp` với các H3 câu hỏi trong body — sẽ bị trùng lặp. Đưa toàn bộ Q&A vào frontmatter `faq[]`; `sources` cũng để frontmatter (CitationBox tự render). CTA/disclosure cuối bài thì giữ trong body.
+- **Phạm vi:** Global
+
 *(Agent tự động append bản năng mới vào section "Bản năng Active" sau mỗi vòng viết.)*
 
 

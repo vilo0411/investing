@@ -1,7 +1,7 @@
 ---
 title: "So sánh TCBS vs SSI: Nên chọn công ty chứng khoán nào năm 2026?"
 description: "So sánh chi tiết TCBS và SSI năm 2026 theo 5 tiêu chí: phí giao dịch, lãi suất margin, giao diện ứng dụng, báo cáo phân tích và hỗ trợ khách hàng. Tìm hiểu nên chọn công ty nào phù hợp với bạn."
-category: reviews
+category: reviews 
 heroImage: "/images/articles/so-sanh-tcbs-vs-ssi/hero.jpg"
 publishDate: "2026-06-16"
 updatedDate: "2026-06-16"

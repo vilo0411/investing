@@ -1,5 +1,5 @@
 ---
-title: "Review công ty chứng khoán VNDIRECT"
+title: "Review VNDIRECT: Có nên mở tài khoản chứng khoán VNDIRECT không? (2026)"
 description: "Đánh giá chi tiết Chứng khoán VNDIRECT năm 2026. Review tính năng bảng giá Dboard, ứng dụng di động, phí giao dịch và các biện pháp bảo mật sau sự cố."
 category: reviews
 heroImage: "/images/articles/review-vndirect-securities/hero.jpg"

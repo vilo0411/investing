@@ -410,8 +410,8 @@ export const brokerRegistry: Record<string, BrokerProfile> = {
       },
     ],
     companyInfo: {
-      founded: "2007",
-      hq: "Tòa nhà PVcomBank, 22 Ngô Quyền, Hoàn Kiếm, Hà Nội",
+      founded: "2006",
+      hq: "Tầng 2, Thành Công Building, 80 Dịch Vọng Hậu, Cầu Giấy, Hà Nội",
       license: "Giấy phép KDCK số 20/UBCK-ĐKGPHĐKD",
       website: "https://www.dsc.com.vn",
       products: [
@@ -473,6 +473,23 @@ export const brokerRegistry: Record<string, BrokerProfile> = {
       stability: 4.0,
       products: 3.8,
     },
+    userVoices: [
+      {
+        quote: "Margin X cho tôi vay theo từng deal riêng — deal nào cháy chỉ mất deal đó, không ảnh hưởng cả tài khoản. Cách quản trị rủi ro này tôi chưa thấy sàn nào khác có.",
+        source: "Google Play — Entrade X",
+        type: "pro",
+      },
+      {
+        quote: "Miễn phí giao dịch trọn đời nên tôi trade bao nhiêu lệnh cũng không lo phí cắn lợi nhuận. App Entrade X mượt, mở tài khoản qua eKYC xong dùng được ngay trong vài phút.",
+        source: "App Store — Entrade X",
+        type: "pro",
+      },
+      {
+        quote: "DNSE không có môi giới gọi điện tư vấn, mọi thứ đều tự thao tác. Người mới như tôi ban đầu khá bỡ ngỡ, phải tự đọc tài liệu và mày mò nhiều.",
+        source: "CafeF Diễn đàn",
+        type: "con",
+      },
+    ],
     companyInfo: {
       founded: "2007",
       hq: "Tầng 6, Tòa nhà Pax Sky, 63-65 Ngô Thì Nhậm, Hai Bà Trưng, Hà Nội",
@@ -536,6 +553,23 @@ export const brokerRegistry: Record<string, BrokerProfile> = {
       stability: 4.2,
       products: 4.1,
     },
+    userVoices: [
+      {
+        quote: "MBS là công ty con của ngân hàng Quân đội nên tôi yên tâm về độ an toàn. Chuyển tiền qua lại giữa MB Bank và tài khoản chứng khoán tức thì, không mất phí.",
+        source: "Google Play — MBS Mobile",
+        type: "pro",
+      },
+      {
+        quote: "Bản khuyến nghị Pro Advice cập nhật đều đặn, giúp tôi có thêm góc nhìn trước khi ra quyết định. App MBS Mobile bản mới cũng dễ dùng hơn hẳn bản cũ.",
+        source: "App Store — MBS Mobile",
+        type: "pro",
+      },
+      {
+        quote: "Phí giao dịch của MBS ở mức trung bình, không rẻ như các sàn zero-fee. Tôi giữ MBS cho phần đầu tư an toàn, còn phần lướt sóng thì để ở chỗ phí thấp hơn.",
+        source: "CafeF Diễn đàn",
+        type: "con",
+      },
+    ],
     companyInfo: {
       founded: "2000",
       hq: "Tòa nhà MB, 21 Cát Linh, Đống Đa, Hà Nội",

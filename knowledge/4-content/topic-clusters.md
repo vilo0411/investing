@@ -32,7 +32,7 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 | C20 | Đường MA là gì | ~6 spoke | `/phan-tich/ky-thuat/` | ⭐⭐ |
 | C21 | GDP là gì | ~12 spoke | `/kinh-te-vi-mo/` | ⭐⭐ |
 | C22 | Lạm phát là gì | ~8 spoke | `/kinh-te-vi-mo/` | ⭐⭐ |
-| C23 | Đánh giá CTCK | ~8 spoke | `/reviews/` | ⭐⭐⭐ |
+| C23 | Đánh giá CTCK (Branded) | ~35 spoke | `/reviews/` | ⭐⭐⭐ |
 | C24 | Warren Buffett là ai | ~5 spoke | `/nha-dau-tu/` | ⭐⭐ |
 | C25 | Tâm lý & Chiến lược đầu tư | ~8 spoke | `/dau-tu/co-phieu/` | ⭐⭐⭐ |
 
@@ -409,25 +409,72 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 
 ---
 
-## CLUSTER C19 — Reviews & Đánh Giá CTCK
+## CLUSTER C19 — Reviews & Đánh Giá CTCK (Branded)
 
-**Hub:** Đánh giá CTCK cho người mới | `/reviews/review-cong-ty-chung-khoan-cho-nguoi-moi/` | `Finalized`
+> **Chiến lược branded keyword.** Mỗi broker "X" có **1 review pillar là HUB** hút cả chùm biến thể
+> qua các H2 — KHÔNG tách bài riêng cho: "X có tốt không", "có nên mở tài khoản X không",
+> "phí giao dịch X", "lãi margin X", "app X". Chỉ tách spoke riêng khi intent khác hẳn:
+> `cách mở tài khoản X` (how-to có ảnh) và `so sánh X và Y` (comparison).
+> Với keyword giao dịch thuần ("mở tài khoản X") → trang chính chủ luôn thắng, ta đấu ở nhóm
+> "review / có nên / so sánh / phí" nơi người dùng cố tình tìm nguồn bên thứ 3.
 
-| Keyword (Spoke) | Slug | Status | Ghi chú |
+### Tầng 1 — Hub thương mại (top-of-funnel, link xuống mọi review)
+
+| Keyword (Hub) | Slug | Status | Ghi chú |
 |---|---|---|---|
+| Đánh giá CTCK cho người mới | `review-cong-ty-chung-khoan-cho-nguoi-moi` | `Finalized` | ✅ Hub chính |
 | Công ty chứng khoán phí thấp | `cong-ty-chung-khoan-phi-thap` | `Finalized` | ✅ Đã publish |
-| Đánh giá VPS | `review-vps-securities` | `Finalized` | ✅ Đã publish |
-| Đánh giá DSC | `review-dsc-securities` | `Finalized` | ✅ Đã publish |
-| Đánh giá TCBS | `review-tcbs-securities` | `Finalized` | ✅ Đã publish |
-| Đánh giá SSI | `review-ssi-securities` | `Finalized` | ✅ Đã publish |
-| Đánh giá VNDIRECT | `review-vndirect-securities` | `Finalized` | ✅ Đã publish |
-| Đánh giá DNSE | `review-dnse-securities` | `Finalized` | ✅ Đã publish |
-| Đánh giá MBS | `review-mbs-securities` | `Finalized` | ✅ Đã publish |
-| So sánh TCBS và VPS | `tcbs-vs-vps` | `Planned` | |
-| So sánh VPS và SSI | `vps-vs-ssi` | `Planned` | |
-| So sánh TCBS và VNDirect | `tcbs-vs-vndirect` | `Planned` | |
+| Công ty chứng khoán nào tốt nhất | `cong-ty-chung-khoan-tot-nhat` | `Planned` | Hub "nên mở sàn nào" |
+| App đầu tư chứng khoán tốt nhất | `app-dau-tu-chung-khoan` | `Planned` | Hub app |
 | App theo dõi chứng khoán | `app-theo-doi-chung-khoan` | `Planned` | |
-| App đầu tư chứng khoán | `app-dau-tu-chung-khoan` | `Planned` | |
+
+### Tầng 2 — Broker Pillars (mỗi bài = HUB branded của 1 sàn)
+
+| Broker | Slug pillar | Status | Ưu tiên |
+|---|---|---|---|
+| VPS | `review-vps-securities` | `Finalized` | ✅ |
+| SSI | `review-ssi-securities` | `Finalized` | ✅ |
+| TCBS | `review-tcbs-securities` | `Finalized` | ✅ |
+| VNDIRECT | `review-vndirect-securities` | `Finalized` | ✅ |
+| DNSE | `review-dnse-securities` | `Finalized` | ✅ |
+| MBS | `review-mbs-securities` | `Finalized` | ✅ |
+| DSC | `review-dsc-securities` | `Finalized` | ✅ |
+| HSC | `review-hsc-securities` | `Planned` | ⭐⭐⭐ Tier A |
+| Mirae Asset | `review-mirae-asset-securities` | `Planned` | ⭐⭐⭐ Tier A |
+| Vietcap (VCI) | `review-vietcap-securities` | `Planned` | ⭐⭐⭐ Tier A |
+| VCBS | `review-vcbs-securities` | `Planned` | ⭐⭐⭐ Tier A |
+| FPTS | `review-fpts-securities` | `Planned` | ⭐⭐⭐ Tier A |
+| Pinetree | `review-pinetree-securities` | `Planned` | ⭐⭐⭐ Tier A |
+| KIS | `review-kis-securities` | `Planned` | ⭐⭐⭐ Tier A |
+| KB (KBSV) | `review-kb-securities` | `Planned` | ⭐⭐ Tier B |
+| SHS | `review-shs-securities` | `Planned` | ⭐⭐ Tier B |
+| BSC | `review-bsc-securities` | `Planned` | ⭐⭐ Tier B |
+| Yuanta | `review-yuanta-securities` | `Planned` | ⭐⭐ Tier B |
+| ACBS | `review-acbs-securities` | `Planned` | ⭐⭐ Tier B |
+| TPS | `review-tps-securities` | `Planned` | ⭐⭐ Tier B |
+| BVSC | `review-bvsc-securities` | `Planned` | ⭐⭐ Tier B |
+
+*(Mỗi pillar bắt buộc có H2: Ưu/nhược điểm · Bảng phí + margin thực tế · Trải nghiệm app · "Ai nên / không nên mở tài khoản X" · Hướng dẫn mở nhanh · So sánh nhanh 1–2 đối thủ.)*
+
+### Tầng 3 — How-to spokes (`cách mở tài khoản X` — transactional, ảnh từng bước)
+
+| Keyword (Spoke) | Slug | Status | Ưu tiên |
+|---|---|---|---|
+| Cách mở tài khoản chứng khoán VPS | `cach-mo-tai-khoan-chung-khoan-vps` | `Finalized` | ✅ Đã publish |
+| Cách mở tài khoản chứng khoán SSI | `cach-mo-tai-khoan-chung-khoan-ssi` | `Finalized` | ✅ Đã publish |
+| Cách mở tài khoản chứng khoán TCBS | `cach-mo-tai-khoan-chung-khoan-tcbs` | `Planned` | ⭐⭐⭐ |
+| Cách mở tài khoản chứng khoán VNDIRECT | `cach-mo-tai-khoan-chung-khoan-vndirect` | `Planned` | ⭐⭐ |
+| Cách mở tài khoản chứng khoán DNSE | `cach-mo-tai-khoan-chung-khoan-dnse` | `Planned` | ⭐⭐ |
+
+### Tầng 4 — Comparison spokes (`so sánh X và Y` — intent phân vân)
+
+| Keyword (Spoke) | Slug | Status | Ưu tiên |
+|---|---|---|---|
+| So sánh TCBS và VPS | `tcbs-vs-vps` | `Planned` | ⭐⭐⭐ |
+| So sánh VPS và SSI | `vps-vs-ssi` | `Planned` | ⭐⭐⭐ |
+| So sánh TCBS và VNDIRECT | `tcbs-vs-vndirect` | `Planned` | ⭐⭐ |
+| So sánh SSI và TCBS | `ssi-vs-tcbs` | `Planned` | ⭐⭐ |
+| So sánh DNSE và TCBS | `dnse-vs-tcbs` | `Planned` | ⭐⭐ |
 
 ---
 
