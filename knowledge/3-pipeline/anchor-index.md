@@ -33,6 +33,10 @@ Index toàn bộ bài đã publish tại `src/content/articles/`. Dùng cho inte
 | `cach-nhan-biet-co-phieu-tiem-nang` | Cách nhận biết cổ phiếu tiềm năng cho người mới | `/dau-tu/co-phieu/cach-nhan-biet-co-phieu-tiem-nang/` | cách nhận biết cổ phiếu tiềm năng |
 | `mo-tai-khoan-chung-khoan-co-mat-phi-khong` | Mở tài khoản chứng khoán có mất phí không? | `/dau-tu/co-phieu/mo-tai-khoan-chung-khoan-co-mat-phi-khong/` | mở tài khoản chứng khoán có mất phí không |
 | `nen-dau-tu-co-phieu-nao` | Nên đầu tư cổ phiếu nào? | `/dau-tu/co-phieu/nen-dau-tu-co-phieu-nao/` | nên đầu tư cổ phiếu nào |
+| `dau-tu-gia-tri-la-gi` | Đầu tư giá trị là gì? Triết lý đầu tư bền vững cho F0 | `/dau-tu/co-phieu/dau-tu-gia-tri-la-gi/` | đầu tư giá trị |
+| `dca-la-gi` | DCA là gì? Cách áp dụng chiến lược trung bình giá hiệu quả cho F0 | `/dau-tu/co-phieu/dca-la-gi/` | trung bình giá |
+| `chien-luoc-dau-tu-chung-khoan` | Chiến lược đầu tư chứng khoán hiệu quả và bền vững cho F0 | `/dau-tu/co-phieu/chien-luoc-dau-tu-chung-khoan/` | chiến lược đầu tư chứng khoán |
+| `rui-ro-dau-tu-chung-khoan` | Rủi ro đầu tư chứng khoán: Nhận diện và cách quản trị cho F0 | `/dau-tu/co-phieu/rui-ro-dau-tu-chung-khoan/` | rủi ro đầu tư chứng khoán |
 
 ## Nhóm Đầu tư — Quỹ ETF (`/dau-tu/etf/`)
 
@@ -78,6 +82,7 @@ Index toàn bộ bài đã publish tại `src/content/articles/`. Dùng cho inte
 | `roa-la-gi` | ROA là gì? | `/phan-tich/co-ban/roa-la-gi/` | ROA |
 | `eps-la-gi` | EPS là gì? | `/phan-tich/co-ban/eps-la-gi/` | EPS |
 | `phan-tich-co-ban-la-gi` | Phân tích cơ bản là gì? | `/phan-tich/co-ban/phan-tich-co-ban-la-gi/` | phân tích cơ bản |
+| `cach-dinh-gia-co-phieu` | Cách định giá cổ phiếu đơn giản và thực chiến nhất cho F0 | `/phan-tich/co-ban/cach-dinh-gia-co-phieu/` | cách định giá cổ phiếu |
 
 ## Nhóm Phân tích — Kỹ thuật (`/phan-tich/ky-thuat/`)
 

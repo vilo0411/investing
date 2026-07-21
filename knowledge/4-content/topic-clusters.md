@@ -82,17 +82,17 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 | Khi nào nên bán cổ phiếu | `khi-nao-nen-ban-co-phieu` | `Finalized` | Sprint Wave 2 |
 | Đầu tư chứng khoán dài hạn | `dau-tu-chung-khoan-dai-han` | `Finalized` | Sprint Wave 3 |
 | Đầu tư tích sản cổ phiếu là gì | `dau-tu-tich-san-co-phieu-la-gi` | `Finalized` | Sprint Wave 3 |
-| Chiến lược đầu tư chứng khoán | `chien-luoc-dau-tu-chung-khoan` | `Planned` | Sprint Wave 3 |
+| Chiến lược đầu tư chứng khoán | `chien-luoc-dau-tu-chung-khoan` | `Finalized` | Sprint Wave 3 |
 | Cách chơi chứng khoán trên điện thoại | `cach-choi-chung-khoan-tren-dien-thoai` | `Planned` | Sprint Wave 3 |
 | Tâm lý đầu tư chứng khoán | `tam-ly-dau-tu-chung-khoan` | `Planned` | Sprint Wave 4 |
-| Đầu tư chứng khoán có những rủi ro gì | `rui-ro-dau-tu-chung-khoan` | `Planned` | Sprint Wave 4 |
+| Đầu tư chứng khoán có những rủi ro gì | `rui-ro-dau-tu-chung-khoan` | `Finalized` | Sprint Wave 3 |
 | Các sai lầm dẫn tới phá sản | `sai-lam-dau-tu-chung-khoan` | `Planned` | Sprint Wave 4 |
 | Cách đầu tư chứng chỉ quỹ | `cach-dau-tu-chung-chi-quy` | `Planned` | Backlog |
 | Nên đầu tư cổ phiếu nào | `nen-dau-tu-co-phieu-nao` | `Finalized` | Backlog |
 | Cách nhận biết cổ phiếu tiềm năng | `cach-nhan-biet-co-phieu-tiem-nang` | `Finalized` | Backlog |
 | Kinh nghiệm chơi chứng khoán | `kinh-nghiem-choi-chung-khoan` | `Planned` | Backlog |
-| Đầu tư giá trị là gì | `dau-tu-gia-tri-la-gi` | `Planned` | Backlog |
-| DCA là gì | `dca-la-gi` | `Planned` | Backlog |
+| Đầu tư giá trị là gì | `dau-tu-gia-tri-la-gi` | `Finalized` | Sprint Wave 3 |
+| DCA là gì | `dca-la-gi` | `Finalized` | Sprint Wave 3 |
 
 ---
 
@@ -276,7 +276,7 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 | P/B là gì | `pb-la-gi` | `Finalized` | ✅ Đã publish |
 | EPS là gì | `eps-la-gi` | `Finalized` | ✅ Đã publish |
 | Giá trị nội tại của cổ phiếu | `gia-tri-noi-tai-cua-co-phieu` | `Planned` | |
-| Cách định giá cổ phiếu | `cach-dinh-gia-co-phieu` | `Planned` | |
+| Cách định giá cổ phiếu | `cach-dinh-gia-co-phieu` | `Finalized` | Sprint Wave 3 |
 | Mô hình CAPM là gì | `mo-hinh-capm-la-gi` | `Planned` | |
 
 ### Chỉ số Sinh lời

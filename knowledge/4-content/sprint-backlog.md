@@ -1,11 +1,26 @@
 # Sprint Backlog — Value Investing
 
-> **Cập nhật:** 2026-06-14
+> **Cập nhật:** 2026-07-21
 > **Trạng thái có thể dùng:** `Planned` | `In Progress` | `Outline-Approved` | `Drafting` | `Finalized`
 
 ---
 
-## 🏃 Sprint hiện tại: Cách Đầu Tư Theo Sản Phẩm
+## 🏃 Sprint: 5 Bài Mới Hệ Thống (Hiện tại)
+
+**Mục tiêu:** Viết 5 bài viết mới thuộc các nhóm chủ đề cốt lõi (Đầu tư giá trị, DCA, Định giá, Chiến lược, Rủi ro) phục vụ độc giả F0.
+**Thời gian dự kiến:** Sprint 1 tuần
+
+| # | Keyword | Slug | Category | Status | URL đích |
+|---|---|---|---|---|---|
+| 1 | Đầu tư giá trị là gì | `dau-tu-gia-tri-la-gi` | `co-phieu` | `Finalized` | `/dau-tu/co-phieu/dau-tu-gia-tri-la-gi/` |
+| 2 | DCA là gì | `dca-la-gi` | `co-phieu` | `Finalized` | `/dau-tu/co-phieu/dca-la-gi/` |
+| 3 | Cách định giá cổ phiếu | `cach-dinh-gia-co-phieu` | `co-ban` | `Finalized` | `/phan-tich/co-ban/cach-dinh-gia-co-phieu/` |
+| 4 | Chiến lược đầu tư chứng khoán | `chien-luoc-dau-tu-chung-khoan` | `co-phieu` | `Finalized` | `/dau-tu/co-phieu/chien-luoc-dau-tu-chung-khoan/` |
+| 5 | Rủi ro đầu tư chứng khoán | `rui-ro-dau-tu-chung-khoan` | `co-phieu` | `Finalized` | `/dau-tu/co-phieu/rui-ro-dau-tu-chung-khoan/` |
+
+---
+
+## 🏃 Sprint cũ: Cách Đầu Tư Theo Sản Phẩm
 
 **Mục tiêu:** Mỗi category sản phẩm đầu tư có 1 bài hub "Cách đầu tư [sản phẩm]" làm cổng vào — đúng với cấu trúc điều hướng hiện tại của site.
 **Persona chính:** Persona 1 (F0 Minh Anh) — người đã biết muốn đầu tư, đang tìm hiểu từng sản phẩm cụ thể.

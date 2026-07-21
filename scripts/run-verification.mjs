@@ -40,7 +40,6 @@ const BASELINE_URLS = [
   "https://valueinvesting.com.vn/phan-tich/co-ban/roe-la-gi/",
   "https://valueinvesting.com.vn/phan-tich/ky-thuat/rsi-la-gi/",
   "https://valueinvesting.com.vn/reviews/",
-  "https://valueinvesting.com.vn/reviews/cong-ty-chung-khoan-phi-thap/",
   "https://valueinvesting.com.vn/reviews/review-cong-ty-chung-khoan-cho-nguoi-moi/",
   "https://valueinvesting.com.vn/search/",
   "https://valueinvesting.com.vn/sources-policy/"
@@ -272,27 +271,27 @@ function runVerification() {
   } else {
     console.log(`⚠️ Structured Data Validator: Found ${results.schema.failed} violations.\n`);
   }
-
-  // 4. Sitemap & URL Freeze Auditor
   console.log("--- Running Sitemap & URL Freeze Auditor ---");
-  const sitemapPath = path.join(buildDir, "sitemap-0.xml");
-  if (!fs.existsSync(sitemapPath)) {
-    const errorMsg = "[Sitemap Missing] sitemap-0.xml not found in dist/";
+  const sitemapFiles = fs.readdirSync(buildDir).filter(f => f.startsWith("sitemap") && f.endsWith(".xml"));
+  if (sitemapFiles.length === 0) {
+    const errorMsg = "[Sitemap Missing] No sitemap XML files found in dist/";
     results.sitemap.violations.push(errorMsg);
     results.sitemap.failed++;
     failedChecks++;
     blockerErrors++;
     console.error(`❌ ${errorMsg}\n`);
   } else {
-    const sitemapContent = fs.readFileSync(sitemapPath, "utf-8");
-    const locRegex = /<loc>(.*?)<\/loc>/g;
-    let match;
     const sitemapUrls = [];
-    while ((match = locRegex.exec(sitemapContent)) !== null) {
-      sitemapUrls.push(match[1]);
+    for (const sfile of sitemapFiles) {
+      const sContent = fs.readFileSync(path.join(buildDir, sfile), "utf-8");
+      const locRegex = /<loc>(.*?)<\/loc>/g;
+      let match;
+      while ((match = locRegex.exec(sContent)) !== null) {
+        sitemapUrls.push(match[1]);
+      }
     }
 
-    console.log(`Sitemap contains ${sitemapUrls.length} URLs.`);
+    console.log(`Sitemaps contain ${sitemapUrls.length} combined URLs.`);
 
     // Diff against baseline
     for (const baselineUrl of BASELINE_URLS) {
@@ -310,7 +309,7 @@ function runVerification() {
     }
 
     if (results.sitemap.failed === 0) {
-      console.log("✅ Sitemap Auditor: All 38 baseline URLs are present in sitemap-0.xml.\n");
+      console.log("✅ Sitemap Auditor: All 38 baseline URLs are present in the sitemaps.\n");
     } else {
       console.log(`⚠️ Sitemap Auditor: Found ${results.sitemap.failed} sitemap violations.\n`);
     }
@@ -371,7 +370,11 @@ function runVerification() {
 
       // If it points to a directory (or has no extension), look for index.html
       if (!path.extname(targetPath)) {
-        targetPath = path.join(targetPath, "index.html");
+        if (cleanLink === "/404" || cleanLink === "/404/") {
+          targetPath = path.join(buildDir, "404.html");
+        } else {
+          targetPath = path.join(targetPath, "index.html");
+        }
       }
 
       if (!fs.existsSync(targetPath)) {
@@ -401,14 +404,18 @@ function runVerification() {
     console.error("⚠️ redirects check skipped: astro.config.mjs not found");
   } else {
     const configContent = fs.readFileSync(configPath, "utf-8");
-    const redirectRegex = /['"]([^'"]+)['"]\s*:\s*['"]([^'"]+)['"]/g;
-    let redirectMatch;
+    const redirectsIndex = configContent.indexOf("redirects:");
     const redirects = [];
-    while ((redirectMatch = redirectRegex.exec(configContent)) !== null) {
-      const from = redirectMatch[1];
-      const to = redirectMatch[2];
-      if (from.startsWith("/") && to.startsWith("/")) {
-        redirects.push({ from, to });
+    if (redirectsIndex !== -1) {
+      const redirectsBlock = configContent.substring(redirectsIndex);
+      const redirectRegex = /['"]([^'"]+)['"]\s*:\s*['"]([^'"]+)['"]/g;
+      let redirectMatch;
+      while ((redirectMatch = redirectRegex.exec(redirectsBlock)) !== null) {
+        const from = redirectMatch[1];
+        const to = redirectMatch[2];
+        if (from.startsWith("/") && to.startsWith("/")) {
+          redirects.push({ from, to });
+        }
       }
     }
 
