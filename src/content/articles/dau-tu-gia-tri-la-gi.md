@@ -2,7 +2,7 @@
 title: "Đầu tư giá trị là gì? Triết lý đầu tư bền vững cho F0"
 description: "Đầu tư giá trị là gì? Khám phá triết lý săn cổ phiếu dưới giá trị nội tại, biên an toàn của Benjamin Graham và cách F0 áp dụng thực chiến."
 category: "co-phieu"
-heroImage: "/images/articles/dau-tu-gia-tri-la-gi/hero.jpg"
+heroImage: "/images/articles/dau-tu-gia-tri-la-gi/dau-tu-gia-tri-la-gi.jpg"
 publishDate: "2026-07-21"
 updatedDate: "2026-07-21"
 readingTime: "5 phút đọc"

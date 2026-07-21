@@ -2,7 +2,7 @@
 title: "Đầu tư tích sản cổ phiếu là gì? Cẩm nang tích lũy dài hạn cho F0"
 description: "Đầu tư tích sản cổ phiếu là gì? Tìm hiểu cách tích lũy cổ phiếu định kỳ dài hạn, an toàn và tận dụng lãi suất kép để xây dựng tài sản bền vững cho F0."
 category: co-phieu
-heroImage: "/images/articles/dau-tu-tich-san-co-phieu-la-gi/hero.jpg"
+heroImage: "/images/articles/dau-tu-tich-san-co-phieu-la-gi/dau-tu-tich-san-co-phieu-la-gi.jpg"
 publishDate: "2026-06-30"
 updatedDate: "2026-06-30"
 readingTime: "5 phút đọc"

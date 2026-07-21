@@ -2,7 +2,7 @@
 title: "Có nên đầu tư chứng khoán không? Câu trả lời thành thật"
 description: "Có nên đầu tư chứng khoán không? Value Investing phân tích thẳng thắn 5 điều kiện để biết chứng khoán có phù hợp với bạn lúc này không — không thiên vị."
 category: co-phieu
-heroImage: "/images/articles/co-nen-dau-tu-chung-khoan-khong/hero.jpg"
+heroImage: "/images/articles/co-nen-dau-tu-chung-khoan-khong/co-nen-dau-tu-chung-khoan-khong.jpg"
 publishDate: "2026-06-28"
 updatedDate: "2026-06-28"
 factCheckedDate: "2026-06-28"

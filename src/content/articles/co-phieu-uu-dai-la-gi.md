@@ -2,7 +2,7 @@
 title: "Cổ phiếu ưu đãi là gì? So sánh với cổ phiếu thường"
 description: "Cổ phiếu ưu đãi là gì? Phân biệt 3 loại cổ phiếu ưu đãi theo Luật Doanh nghiệp 2020, quyền lợi và hạn chế so với cổ phiếu thường trên thị trường VN."
 category: co-phieu
-heroImage: "/images/articles/co-phieu-uu-dai-la-gi/hero.jpg"
+heroImage: "/images/articles/co-phieu-uu-dai-la-gi/co-phieu-uu-dai-la-gi.jpg"
 publishDate: "2026-06-28"
 updatedDate: "2026-06-28"
 factCheckedDate: "2026-06-28"

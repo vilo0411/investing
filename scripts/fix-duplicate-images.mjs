@@ -46,6 +46,25 @@ const slugKeywords = {
   "cach-dau-tu-quy-etf": "long term saving piggy bank growth",
   "cach-dau-tu-trai-phieu": "fixed income coupon rate interest",
   "cach-dau-tu-chung-khoan-phai-sinh": "risk management hedge derivative strategy",
+  "cach-chon-co-phieu-tot": "stock research analyst screen",
+  "chia-tach-co-phieu-la-gi": "stock split percentage diagram",
+  "duong-ma-la-gi": "moving average technical indicator chart",
+  "quy-thu-dong-la-gi": "passive income saving wealth growth",
+  "nen-dau-tu-quy-etf-nao": "top index funds performance comparison",
+  "cach-mo-tai-khoan-chung-khoan": "brokerage account registration form",
+  "cach-mo-tai-khoan-chung-khoan-vps": "mobile stocks trading app screen",
+  "cach-mua-trai-phieu": "bond certificate purchase document",
+  "cach-nhan-biet-co-phieu-tiem-nang": "magnifying glass stock market data chart",
+  "nen-dau-tu-co-phieu-nao": "best stocks comparison table analysis",
+  "phan-tich-ky-thuat-la-gi": "technical analysis candlestick chart patterns",
+  "co-nen-dau-tu-chung-khoan-khong": "office desk calculator money calendar",
+  "dau-tu-chung-khoan-dai-han": "long term investment clock growth plant",
+  "rui-ro-dau-tu-chung-khoan": "financial risk downward arrow chart",
+  "phan-tich-co-ban-la-gi": "financial fundamental analysis reports valuation",
+  "cach-dinh-gia-co-phieu": "stock valuation formula excel chart",
+  "dao-han-phai-sinh-la-gi": "derivatives expiration calendar clock",
+  "dca-la-gi": "dollar cost averaging piggy bank scale investment",
+  "co-nen-dau-tu-trai-phieu": "bond vs stock decision balance scale",
 };
 
 function getMD5(filePath) {
@@ -136,12 +155,10 @@ async function fixDuplicates() {
     process.exit(1);
   }
 
-  console.log("=== Đang quét tìm ảnh trùng lặp để sửa tự động ===");
-  const publicDir = resolve(projectRoot, "public/images/articles");
+  console.log("=== Đang quét tìm ảnh trùng lặp để sửa tự động (Ảnh minh họa nội dung) ===");
   const contentDir = resolve(projectRoot, "src/content/articles/images");
 
   const allImages = [
-    ...scanImages(publicDir),
     ...scanImages(contentDir)
   ];
 

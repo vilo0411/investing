@@ -2,7 +2,7 @@
 title: "RSI là gì? Hướng dẫn cách sử dụng chỉ báo RSI trong đầu tư"
 description: "Chỉ báo RSI là gì? Tìm hiểu cách tính rsi, vùng quá mua, quá bán và phương pháp giao dịch theo tín hiệu phân kỳ chuẩn xác nhất cho người mới."
 category: ky-thuat
-heroImage: "/images/articles/rsi-la-gi/hero.jpg"
+heroImage: "/images/articles/rsi-la-gi/rsi-la-gi.jpg"
 publishDate: "2026-06-09"
 updatedDate: "2026-06-15"
 factCheckedDate: "2026-06-21"
@@ -70,7 +70,7 @@ Hiện tượng phân kỳ âm (phân kỳ giảm giá) xảy ra trong xu hướ
 
 ## Những lưu ý sống còn để sử dụng RSI hiệu quả cho F0
 
-RSI là công cụ tuyệt vời nhưng nếu sử dụng máy móc, bạn sẽ rất dễ bị thị trường quét sạch tài khoản. RSI chỉ là một chỉ báo trong **[phân tích kỹ thuật](/phan-tich/ky-thuat/phan-tich-ky-thuat-la-gi/)** tổng thể. Hãy lưu ý các nguyên tắc thực chiến sau.
+RSI là công cụ tuyệt vời nhưng nếu sử dụng máy móc, bạn sẽ rất dễ bị thị trường quét sạch tài khoản. Để tăng độ chính xác, bạn nên kết hợp RSI với các chỉ báo xu hướng khác như **[chỉ báo MACD](/phan-tich/ky-thuat/macd-la-gi/)**. RSI chỉ là một chỉ báo trong **[phân tích kỹ thuật](/phan-tich/ky-thuat/phan-tich-ky-thuat-la-gi/)** tổng thể. Hãy lưu ý các nguyên tắc thực chiến sau.
 
 Thứ nhất, tuyệt đối không mua bán mù quáng chỉ vì RSI vượt 70 hay dưới 30. Trong các đợt sóng tăng mạnh (Up-trend mạnh), RSI có thể duy trì ở vùng quá mua ($>$70) trong nhiều tuần liên tiếp và giá cổ phiếu vẫn tiếp tục tăng gấp đôi. Nếu bạn bán khống hoặc chốt lời quá sớm sẽ mất đi cơ hội lớn.
 

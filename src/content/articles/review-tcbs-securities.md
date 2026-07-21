@@ -2,7 +2,7 @@
 title: "Review TCBS Securities: Có nên mở tài khoản TCBS không? (2026)"
 description: "Đánh giá chi tiết Chứng khoán TCBS (Techcom Securities) năm 2026. Review phí giao dịch 0%, lãi suất margin, app TCInvest và hướng dẫn mở tài khoản online."
 category: reviews
-heroImage: "/images/articles/review-tcbs-securities/hero.jpg"
+heroImage: "/images/articles/review-tcbs-securities/review-tcbs-securities.jpg"
 publishDate: "2026-07-07"
 updatedDate: "2026-07-07"
 factCheckedDate: "2026-07-07"

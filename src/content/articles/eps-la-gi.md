@@ -2,7 +2,7 @@
 title: "EPS là gì? Ý nghĩa và cách tính chỉ số EPS chuẩn xác"
 description: "Chỉ số EPS là gì? Hướng dẫn công thức tính EPS cơ bản và EPS pha loãng, ý nghĩa của EPS đối với việc lựa chọn cổ phiếu và tính định giá P/E."
 category: co-ban
-heroImage: "/images/articles/eps-la-gi/hero.jpg"
+heroImage: "/images/articles/eps-la-gi/eps-la-gi.jpg"
 publishDate: "2026-06-09"
 updatedDate: "2026-06-15"
 factCheckedDate: "2026-06-21"

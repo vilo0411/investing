@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<!-- Google Fonts: Space Grotesk + Outfit -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&family=Outfit:wght@400;500;700&display=swap" rel="stylesheet" />
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1200px;
+    height: 630px;
+    font-family: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    overflow: hidden;
+    background: #0f1c15;
+    color: #ffffff;
+  }
+  .container {
+    width: 1200px;
+    height: 630px;
+    position: relative;
+    padding: 60px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(135deg, #0e2016 0%, #153524 50%, #0c1a12 100%);
+  }
+  /* Decorative elements */
+  .grid-bg {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: 
+      linear-gradient(rgba(37, 161, 101, 0.07) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(37, 161, 101, 0.07) 1px, transparent 1px);
+    background-size: 40px 40px;
+    pointer-events: none;
+  }
+  .glow-1 {
+    position: absolute;
+    bottom: -150px; right: -150px;
+    width: 600px; height: 600px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(37, 161, 101, 0.25) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .glow-2 {
+    position: absolute;
+    top: -200px; left: -100px;
+    width: 500px; height: 500px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(26, 92, 58, 0.15) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+  }
+  .logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .brand-logo-mark {
+    display: block;
+    flex-shrink: 0;
+    border: 1px solid #121212;
+    box-shadow: 2px 2px 0px #121212;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .logo-text {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+  }
+  .logo-text span {
+    color: #b4eee3; /* Mapped to the --color-mint accent */
+  }
+  .category-badge {
+    background: rgba(37, 161, 101, 0.15);
+    border: 1px solid rgba(37, 161, 101, 0.3);
+    color: #37d68a;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 6px 18px;
+    border-radius: 20px;
+  }
+  .content {
+    margin-top: 20px;
+    max-width: 880px;
+    z-index: 10;
+  }
+  .title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 1.25;
+    color: #ffffff;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+    word-wrap: break-word;
+  }
+  .tagline {
+    font-size: 17px;
+    color: #a0aec0;
+    font-weight: 400;
+    line-height: 1.6;
+    border-left: 4px solid #25a165;
+    padding-left: 20px;
+    max-height: 110px;
+    overflow: hidden;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding-top: 24px;
+    z-index: 10;
+  }
+  .meta-info {
+    display: flex;
+    gap: 24px;
+    color: #718096;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .meta-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .meta-icon {
+    color: #25a165;
+    font-size: 16px;
+  }
+  .url {
+    font-size: 14px;
+    font-weight: 600;
+    color: #718096;
+    letter-spacing: 0.5px;
+  }
+  /* Decorative chart line on the right */
+  .chart-overlay {
+    position: absolute;
+    right: 60px;
+    bottom: 90px;
+    width: 280px;
+    height: 180px;
+    opacity: 0.25;
+    pointer-events: none;
+    z-index: 1;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="grid-bg"></div>
+  <div class="glow-1"></div>
+  <div class="glow-2"></div>
+  
+  <div class="header">
+    <div class="logo">
+      <svg class="brand-logo-mark" width="32" height="32" viewBox="0 0 26 26" fill="none" aria-hidden="true">
+        <rect width="26" height="26" fill="#2a625a"/>
+        <path d="M5 18L10 13L14 16L21 7" stroke="#fff" stroke-width="2.2" stroke-linecap="square" stroke-linejoin="miter"/>
+        <path d="M15.5 7H21V12.5" stroke="#fff" stroke-width="2.2" stroke-linecap="square" stroke-linejoin="miter"/>
+      </svg>
+      <div class="logo-text">Value<span>Investing</span></div>
+    </div>
+    <div class="category-badge">{{CATEGORY}}</div>
+  </div>
+  
+  <div class="content">
+    <h1 class="title">{{TITLE}}</h1>
+    <p class="tagline">{{DESCRIPTION}}</p>
+  </div>
+  
+  <div class="footer">
+    <div class="meta-info">
+      <div class="meta-item">
+        <span class="meta-icon">⏱</span>
+        <span>{{READ_TIME}}</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-icon">✓</span>
+        <span>Kiểm chứng bởi Chuyên gia</span>
+      </div>
+    </div>
+    <div class="url">valueinvesting.com.vn</div>
+  </div>
+
+  <svg class="chart-overlay" viewBox="0 0 200 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 80C30 80 40 50 70 60C100 70 110 20 140 30C170 40 180 10 200 5" stroke="#25a165" stroke-width="4" stroke-linecap="round"/>
+    <path d="M0 80C30 80 40 50 70 60C100 70 110 20 140 30C170 40 180 10 200 5V100H0V80Z" fill="url(#paint0_linear)" opacity="0.1"/>
+    <defs>
+      <linearGradient id="paint0_linear" x1="100" y1="5" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#25a165"/>
+        <stop offset="1" stop-color="#25a165" stop-opacity="0"/>
+      </linearGradient>
+    </defs>
+  </svg>
+</div>
+</body>
+</html>

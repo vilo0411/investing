@@ -2,7 +2,7 @@
 title: "Benjamin Graham là ai? Triết lý của cha đẻ đầu tư giá trị"
 description: "Benjamin Graham là ai? Tìm hiểu tiểu sử, 2 cuốn sách kinh điển Nhà đầu tư thông minh, Phân tích chứng khoán và triết lý đầu tư giá trị bất hủ."
 category: nha-dau-tu
-heroImage: "/images/articles/benjamin-graham/hero.jpg"
+heroImage: "/images/articles/benjamin-graham/benjamin-graham.jpg"
 publishDate: "2026-06-09"
 updatedDate: "2026-06-21"
 factCheckedDate: "2026-06-21"

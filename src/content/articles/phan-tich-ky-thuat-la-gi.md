@@ -2,7 +2,7 @@
 title: "Phân tích kỹ thuật là gì? Hướng dẫn đọc biểu đồ từ số 0"
 description: "Phân tích kỹ thuật là gì? Tìm hiểu 3 nguyên lý cốt lõi, các công cụ chỉ báo phổ biến (RSI, MA) và cách đọc biểu đồ kỹ thuật cho người mới bắt đầu."
 category: "ky-thuat"
-heroImage: "/images/articles/phan-tich-ky-thuat-la-gi/hero.jpg"
+heroImage: "/images/articles/phan-tich-ky-thuat-la-gi/phan-tich-ky-thuat-la-gi.jpg"
 publishDate: "2026-06-30"
 updatedDate: "2026-06-30"
 readingTime: "6 phút đọc"

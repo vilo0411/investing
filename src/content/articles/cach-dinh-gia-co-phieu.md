@@ -2,7 +2,7 @@
 title: "Cách định giá cổ phiếu đơn giản và thực chiến nhất cho F0"
 description: "Cách định giá cổ phiếu là gì? Hướng dẫn chi tiết phương pháp định giá P/E, P/B và chiết khấu dòng tiền DCF dễ hiểu nhất cho nhà đầu tư F0."
 category: "co-ban"
-heroImage: "/images/articles/cach-dinh-gia-co-phieu/hero.jpg"
+heroImage: "/images/articles/cach-dinh-gia-co-phieu/cach-dinh-gia-co-phieu.jpg"
 publishDate: "2026-07-21"
 updatedDate: "2026-07-21"
 readingTime: "5 phút đọc"

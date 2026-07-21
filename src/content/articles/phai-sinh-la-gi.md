@@ -2,7 +2,7 @@
 title: "Phái sinh là gì? Tìm hiểu chứng khoán phái sinh từ A-Z"
 description: "Phái sinh là gì? Tìm hiểu chứng khoán phái sinh, 4 loại hợp đồng phổ biến, cách thức hoạt động và những rủi ro đòn bẩy nhà đầu tư F0 cần tránh."
 category: "phai-sinh"
-heroImage: "/images/articles/phai-sinh-la-gi/hero.jpg"
+heroImage: "/images/articles/phai-sinh-la-gi/phai-sinh-la-gi.jpg"
 publishDate: "2026-06-30"
 updatedDate: "2026-06-30"
 readingTime: "6 phút đọc"

@@ -2,7 +2,7 @@
 title: "Hướng dẫn đầu tư chứng khoán với số vốn nhỏ hiệu quả"
 description: "Đầu tư chứng khoán với số vốn nhỏ thế nào cho hiệu quả? Hướng dẫn cách mua cổ phiếu lô lẻ, đầu tư quỹ ETF và chiến lược tích sản định kỳ cho F0."
 category: "co-phieu"
-heroImage: "/images/articles/dau-tu-chung-khoan-von-nho/hero.jpg"
+heroImage: "/images/articles/dau-tu-chung-khoan-von-nho/dau-tu-chung-khoan-von-nho.jpg"
 publishDate: "2026-06-28"
 updatedDate: "2026-06-28"
 readingTime: "5 phút đọc"

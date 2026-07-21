@@ -2,7 +2,7 @@
 title: "Có nên đầu tư trái phiếu không? Đánh giá rủi ro và lợi nhuận"
 description: "Có nên đầu tư trái phiếu doanh nghiệp hay Chính phủ hiện nay không? Phân tích chi tiết rủi ro vỡ nợ, thanh khoản và cách chọn mua trái phiếu an toàn cho F0."
 category: trai-phieu
-heroImage: "/images/articles/co-nen-dau-tu-trai-phieu/hero.jpg"
+heroImage: "/images/articles/co-nen-dau-tu-trai-phieu/co-nen-dau-tu-trai-phieu.jpg"
 publishDate: "2026-06-30"
 updatedDate: "2026-06-30"
 readingTime: "6 phút đọc"

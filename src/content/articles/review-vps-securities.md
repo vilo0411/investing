@@ -2,7 +2,7 @@
 title: "Review VPS Securities: Có nên mở tài khoản VPS không? (2026)"
 description: "Đánh giá chi tiết VPS Securities năm 2026 — công ty chứng khoán số 1 về thị phần môi giới cá nhân. Phí, margin, ứng dụng SmartOne và hướng dẫn mở tài khoản."
 category: reviews
-heroImage: "/images/articles/review-vps-securities/hero.jpg"
+heroImage: "/images/articles/review-vps-securities/review-vps-securities.jpg"
 publishDate: "2026-06-16"
 updatedDate: "2026-07-18"
 factCheckedDate: "2026-07-18"

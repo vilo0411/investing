@@ -2,7 +2,7 @@
 title: "Margin là gì? Bản chất và cách sử dụng đòn bẩy ký quỹ an toàn"
 description: "Margin là gì? Tìm hiểu cách hoạt động của giao dịch ký quỹ, hiện tượng call margin, force sell và những nguyên tắc quản trị rủi ro đòn bẩy chứng khoán."
 category: co-phieu
-heroImage: "/images/articles/margin-la-gi/hero.jpg"
+heroImage: "/images/articles/margin-la-gi/margin-la-gi.jpg"
 publishDate: "2026-06-09"
 updatedDate: "2026-06-15"
 factCheckedDate: "2026-06-21"

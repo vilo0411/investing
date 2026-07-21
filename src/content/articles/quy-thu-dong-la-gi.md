@@ -2,7 +2,7 @@
 title: "Quỹ thụ động là gì? Hướng dẫn đầu tư cho F0"
 description: "Quỹ thụ động là gì? Cẩm nang chi tiết về đặc điểm, ưu nhược điểm, các hình thức phổ biến ở Việt Nam và so sánh chi tiết với quỹ chủ động."
 category: "etf"
-heroImage: "/images/articles/quy-thu-dong-la-gi/hero.jpg"
+heroImage: "/images/articles/quy-thu-dong-la-gi/quy-thu-dong-la-gi.jpg"
 publishDate: "2026-07-07"
 updatedDate: "2026-07-07"
 readingTime: "5 phút đọc"

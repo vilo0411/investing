@@ -2,7 +2,7 @@
 title: "Review SSI Securities: Có nên mở tài khoản SSI không? (2026)"
 description: "Đánh giá chi tiết Chứng khoán SSI năm 2026. Review phí giao dịch, lãi suất margin, chất lượng tư vấn, app iSSI và hướng dẫn mở tài khoản online."
 category: reviews
-heroImage: "/images/articles/review-ssi-securities/hero.jpg"
+heroImage: "/images/articles/review-ssi-securities/review-ssi-securities.jpg"
 publishDate: "2026-07-07"
 updatedDate: "2026-07-07"
 factCheckedDate: "2026-07-07"

@@ -2,7 +2,7 @@
 title: "Chiến lược đầu tư chứng khoán hiệu quả và bền vững cho F0"
 description: "Chiến lược đầu tư chứng khoán là gì? Tìm hiểu các chiến lược mua nắm giữ, đầu tư giá trị và các bước xây dựng kế hoạch phân bổ vốn thực chiến cho F0."
 category: "co-phieu"
-heroImage: "/images/articles/chien-luoc-dau-tu-chung-khoan/hero.jpg"
+heroImage: "/images/articles/chien-luoc-dau-tu-chung-khoan/chien-luoc-dau-tu-chung-khoan.jpg"
 publishDate: "2026-07-21"
 updatedDate: "2026-07-21"
 readingTime: "5 phút đọc"

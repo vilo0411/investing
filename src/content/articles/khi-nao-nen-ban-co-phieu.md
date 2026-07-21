@@ -2,7 +2,7 @@
 title: "Khi nào nên bán cổ phiếu? Quyết định khó nhất khi đầu tư"
 description: "Khi nào nên bán cổ phiếu để tối ưu hóa lợi nhuận? Tìm hiểu 3 thời điểm chốt lời, cắt lỗ và cơ cấu lại danh mục đầu tư sòng phẳng cho F0."
 category: "co-phieu"
-heroImage: "/images/articles/khi-nao-nen-ban-co-phieu/hero.jpg"
+heroImage: "/images/articles/khi-nao-nen-ban-co-phieu/khi-nao-nen-ban-co-phieu.jpg"
 publishDate: "2026-06-28"
 updatedDate: "2026-06-28"
 readingTime: "5 phút đọc"

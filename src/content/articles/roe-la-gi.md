@@ -2,7 +2,7 @@
 title: "ROE là gì? Cách đọc chỉ số ROE để tìm doanh nghiệp siêu hạng"
 description: "Chỉ số ROE là gì? Hướng dẫn cách tính ROE, ý nghĩa của ROE đối với hiệu quả sử dụng vốn và cách nhận biết rủi ro đòn bẩy tài chính."
 category: co-ban
-heroImage: "/images/articles/roe-la-gi/hero.jpg"
+heroImage: "/images/articles/roe-la-gi/roe-la-gi.jpg"
 publishDate: "2026-06-09"
 updatedDate: "2026-06-15"
 factCheckedDate: "2026-06-21"

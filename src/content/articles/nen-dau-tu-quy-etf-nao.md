@@ -2,7 +2,7 @@
 title: "Nên đầu tư quỹ ETF nào? Top 3 quỹ ETF tiềm năng nhất Việt Nam"
 description: "Nên đầu tư quỹ ETF nào tại Việt Nam hiện nay? Phân tích chi tiết 3 quỹ ETF nổi bật nhất (Diamond, VN30, VNFIN Lead) giúp F0 đầu tư hiệu quả."
 category: etf
-heroImage: "/images/articles/nen-dau-tu-quy-etf-nao/hero.jpg"
+heroImage: "/images/articles/nen-dau-tu-quy-etf-nao/nen-dau-tu-quy-etf-nao.jpg"
 publishDate: "2026-06-30"
 updatedDate: "2026-06-30"
 readingTime: "6 phút đọc"

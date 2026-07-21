@@ -2,7 +2,7 @@
 title: "Cách mở tài khoản chứng khoán SSI online 2026: Hướng dẫn eKYC & VNeID"
 description: "Hướng dẫn cách mở tài khoản chứng khoán SSI online năm 2026 — chuẩn bị, xác thực eKYC bằng VNeID hoặc CCCD gắn chip, app iBoard, xử lý lỗi và lưu ý phí."
 category: reviews
-heroImage: "/images/articles/cach-mo-tai-khoan-chung-khoan-ssi/hero.jpg"
+heroImage: "/images/articles/cach-mo-tai-khoan-chung-khoan-ssi/cach-mo-tai-khoan-chung-khoan-ssi.jpg"
 publishDate: "2026-07-19"
 updatedDate: "2026-07-19"
 factCheckedDate: "2026-07-19"

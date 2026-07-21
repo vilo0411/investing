@@ -61,6 +61,7 @@ export const categories = [
     title: "Phân tích cơ bản",
     slug: "co-ban",
     group: "Phân tích",
+    groupPath: "/phan-tich/",
     description:
       "Phân tích cơ bản cho nhà đầu tư Việt Nam: P/E, P/B, ROE, EPS, định giá cổ phiếu và cách đọc báo cáo tài chính doanh nghiệp niêm yết.",
     path: "/phan-tich/co-ban/",
@@ -69,6 +70,7 @@ export const categories = [
     title: "Phân tích kỹ thuật",
     slug: "ky-thuat",
     group: "Phân tích",
+    groupPath: "/phan-tich/",
     description:
       "Phân tích kỹ thuật cơ bản: đọc biểu đồ nến, RSI, MACD, Bollinger Bands, vùng hỗ trợ kháng cự cho nhà đầu tư chứng khoán Việt Nam.",
     path: "/phan-tich/ky-thuat/",

@@ -2,7 +2,7 @@
 title: "Warren Buffett là ai? Triết lý đầu tư của nhà hiền triết Omaha"
 description: "Warren Buffett là ai? Tìm hiểu tiểu sử, quá trình xây dựng Berkshire Hathaway và các triết lý đầu tư dài hạn bất hủ của huyền thoại đầu tư."
 category: nha-dau-tu
-heroImage: "/images/articles/warren-buffett/hero.jpg"
+heroImage: "/images/articles/warren-buffett/warren-buffett.jpg"
 publishDate: "2026-06-09"
 updatedDate: "2026-06-21"
 factCheckedDate: "2026-06-21"

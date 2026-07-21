@@ -2,7 +2,7 @@
 title: "Chứng chỉ quỹ tốt nhất hiện nay: Gợi ý các quỹ uy tín cho F0"
 description: "Mua chứng chỉ quỹ nào tốt nhất hiện nay? Đánh giá chi tiết top quỹ mở cổ phiếu, quỹ trái phiếu và quỹ ETF uy tín của Dragon Capital, VinaCapital, VCBF."
 category: etf
-heroImage: "/images/articles/chung-chi-quy-tot-nhat-hien-nay/hero.jpg"
+heroImage: "/images/articles/chung-chi-quy-tot-nhat-hien-nay/chung-chi-quy-tot-nhat-hien-nay.jpg"
 publishDate: "2026-07-14"
 updatedDate: "2026-07-14"
 readingTime: "5 phút đọc"

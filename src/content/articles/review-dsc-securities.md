@@ -2,7 +2,7 @@
 title: "Review DSC Securities: Có nên mở tài khoản chứng khoán DSC không?"
 description: "Đánh giá chi tiết Chứng khoán DSC năm 2026: phí giao dịch, lãi suất margin, giao diện ứng dụng, chất lượng hỗ trợ và hướng dẫn mở tài khoản từng bước."
 category: reviews
-heroImage: "/images/articles/review-dsc-securities/hero.jpg"
+heroImage: "/images/articles/review-dsc-securities/review-dsc-securities.jpg"
 publishDate: "2026-06-16"
 updatedDate: "2026-07-18"
 factCheckedDate: "2026-07-18"

@@ -2,7 +2,7 @@
 title: "Trái phiếu là gì? Giải thích dễ hiểu cho người mới bắt đầu"
 description: "Trái phiếu là gì? Giải thích định nghĩa, bản chất và cách hoạt động của trái phiếu bằng ví dụ thực tế. So sánh chi tiết cổ phiếu và trái phiếu cho F0."
 category: trai-phieu
-heroImage: "/images/articles/trai-phieu-la-gi/hero.jpg"
+heroImage: "/images/articles/trai-phieu-la-gi/trai-phieu-la-gi.jpg"
 publishDate: "2026-06-09"
 updatedDate: "2026-06-21"
 factCheckedDate: "2026-06-21"

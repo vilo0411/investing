@@ -2,7 +2,7 @@
 title: "Chia tách cổ phiếu là gì? Nhà đầu tư cần làm gì khi cổ phiếu bị tách?"
 description: "Chia tách cổ phiếu (Stock Split) là gì? Hiểu cách doanh nghiệp VN thực hiện, ảnh hưởng đến P/E, EPS và nhà đầu tư cần làm gì khi cổ phiếu đang giữ bị tách."
 category: co-phieu
-heroImage: "/images/articles/chia-tach-co-phieu-la-gi/hero.jpg"
+heroImage: "/images/articles/chia-tach-co-phieu-la-gi/chia-tach-co-phieu-la-gi.jpg"
 publishDate: "2026-06-28"
 updatedDate: "2026-06-28"
 factCheckedDate: "2026-06-28"

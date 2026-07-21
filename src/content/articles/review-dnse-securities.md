@@ -2,7 +2,7 @@
 title: "Review DNSE: Có nên mở tài khoản chứng khoán DNSE không? (2026)"
 description: "Đánh giá chi tiết Chứng khoán DNSE năm 2026. Review app Entrade X, tính năng cho vay Margin X theo từng deal, phí giao dịch 0% và hướng dẫn mở tài khoản."
 category: reviews
-heroImage: "/images/articles/review-dnse-securities/hero.jpg"
+heroImage: "/images/articles/review-dnse-securities/review-dnse-securities.jpg"
 publishDate: "2026-07-07"
 updatedDate: "2026-07-07"
 factCheckedDate: "2026-07-07"

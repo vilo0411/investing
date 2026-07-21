@@ -2,7 +2,7 @@
 title: "P/E là gì? Cách sử dụng chỉ số P/E định giá cổ phiếu từ A-Z"
 description: "Chỉ số P/E là gì? Tìm hiểu công thức tính, ý nghĩa của P/E cao hay thấp và cách định giá cổ phiếu chính xác nhất cho người mới bắt đầu."
 category: co-ban
-heroImage: "/images/articles/pe-la-gi/hero.jpg"
+heroImage: "/images/articles/pe-la-gi/pe-la-gi.jpg"
 publishDate: "2026-06-09"
 updatedDate: "2026-06-21"
 factCheckedDate: "2026-06-21"

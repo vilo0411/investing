@@ -2,7 +2,7 @@
 title: "Phân tích cơ bản là gì? Hướng dẫn thực chiến cho người mới"
 description: "Phân tích cơ bản là gì? Hướng dẫn cách phân tích định tính, định lượng và đọc chỉ số tài chính cơ bản để định giá cổ phiếu chính xác cho nhà đầu tư F0."
 category: "co-ban"
-heroImage: "/images/articles/phan-tich-co-ban-la-gi/hero.jpg"
+heroImage: "/images/articles/phan-tich-co-ban-la-gi/phan-tich-co-ban-la-gi.jpg"
 publishDate: "2026-06-30"
 updatedDate: "2026-06-30"
 readingTime: "6 phút đọc"

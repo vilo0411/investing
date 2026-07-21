@@ -2,7 +2,7 @@
 title: "Cách đầu tư quỹ ETF cho người mới tại Việt Nam"
 description: "Hướng dẫn chi tiết cách đầu tư quỹ ETF tại Việt Nam từ bước mở tài khoản, chọn mã quỹ đến chiến thuật tích lũy định kỳ hiệu quả cho người bận rộn."
 category: etf
-heroImage: "/images/articles/cach-dau-tu-quy-etf/hero.jpg"
+heroImage: "/images/articles/cach-dau-tu-quy-etf/cach-dau-tu-quy-etf.jpg"
 publishDate: "2026-06-15"
 updatedDate: "2026-06-15"
 factCheckedDate: "2026-06-21"

@@ -2,7 +2,7 @@
 title: "Đầu tư chứng khoán dài hạn: Chiến lược kiến tạo thịnh vượng"
 description: "Đầu tư chứng khoán dài hạn là gì? Tìm hiểu các nguyên tắc vàng, sức mạnh lãi kép và cách xây dựng danh mục tích sản cổ phiếu bền vững cho người mới."
 category: "co-phieu"
-heroImage: "/images/articles/dau-tu-chung-khoan-dai-han/hero.jpg"
+heroImage: "/images/articles/dau-tu-chung-khoan-dai-han/dau-tu-chung-khoan-dai-han.jpg"
 publishDate: "2026-06-28"
 updatedDate: "2026-06-28"
 readingTime: "5 phút đọc"

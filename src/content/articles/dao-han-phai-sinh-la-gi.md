@@ -2,7 +2,7 @@
 title: "Đáo hạn phái sinh là gì? Ảnh hưởng đến thị trường chứng khoán ra sao"
 description: "Đáo hạn phái sinh là gì? Hướng dẫn cách tính giá thanh toán ngày đáo hạn hợp đồng tương lai VN30 và những ảnh hưởng cụ thể đến thị trường cơ sở HOSE."
 category: phai-sinh
-heroImage: "/images/articles/dao-han-phai-sinh-la-gi/hero.jpg"
+heroImage: "/images/articles/dao-han-phai-sinh-la-gi/dao-han-phai-sinh-la-gi.jpg"
 publishDate: "2026-06-30"
 updatedDate: "2026-06-30"
 readingTime: "5 phút đọc"

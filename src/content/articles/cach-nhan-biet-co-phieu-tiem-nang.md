@@ -2,7 +2,7 @@
 title: "Cách nhận biết cổ phiếu tiềm năng cho người mới"
 description: "Cách nhận biết cổ phiếu tiềm năng cho người mới. Hướng dẫn chi tiết bộ tiêu chí định lượng (P/E, P/B, ROE) và định tính thực tế tại thị trường Việt Nam."
 category: "co-phieu"
-heroImage: "/images/articles/cach-nhan-biet-co-phieu-tiem-nang/hero.jpg"
+heroImage: "/images/articles/cach-nhan-biet-co-phieu-tiem-nang/cach-nhan-biet-co-phieu-tiem-nang.jpg"
 publishDate: "2026-07-07"
 updatedDate: "2026-07-07"
 readingTime: "5 phút đọc"

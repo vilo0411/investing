@@ -2,7 +2,7 @@
 title: "Mở tài khoản chứng khoán có mất phí không?"
 description: "Mở tài khoản chứng khoán có mất phí không? Bài viết giải đáp chi tiết quy định mở tài khoản miễn phí và các loại phí thực tế phát sinh khi giao dịch."
 category: co-phieu
-heroImage: "/images/articles/mo-tai-khoan-chung-khoan-co-mat-phi-khong/hero.jpg"
+heroImage: "/images/articles/mo-tai-khoan-chung-khoan-co-mat-phi-khong/mo-tai-khoan-chung-khoan-co-mat-phi-khong.jpg"
 publishDate: "2026-07-14"
 updatedDate: "2026-07-14"
 readingTime: "4 phút đọc"

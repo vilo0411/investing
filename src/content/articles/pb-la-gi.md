@@ -2,7 +2,7 @@
 title: "P/B là gì? Ý nghĩa và cách dùng chỉ số P/B định giá doanh nghiệp"
 description: "Chỉ số P/B là gì? Tìm hiểu công thức tính, ý nghĩa của P/B cao hay thấp và cách định giá cổ phiếu ngành ngân hàng tài chính chuẩn xác nhất."
 category: co-ban
-heroImage: "/images/articles/pb-la-gi/hero.jpg"
+heroImage: "/images/articles/pb-la-gi/pb-la-gi.jpg"
 publishDate: "2026-06-09"
 updatedDate: "2026-06-15"
 factCheckedDate: "2026-06-21"

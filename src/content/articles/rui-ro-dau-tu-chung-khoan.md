@@ -2,7 +2,7 @@
 title: "Rủi ro đầu tư chứng khoán: Nhận diện và cách quản trị cho F0"
 description: "Rủi ro đầu tư chứng khoán là gì? Tìm hiểu rủi ro hệ thống, rủi ro phi hệ thống, rủi ro thanh khoản và các chiến lược quản trị rủi ro thực chiến cho F0."
 category: "co-phieu"
-heroImage: "/images/articles/rui-ro-dau-tu-chung-khoan/hero.jpg"
+heroImage: "/images/articles/rui-ro-dau-tu-chung-khoan/rui-ro-dau-tu-chung-khoan.jpg"
 publishDate: "2026-07-21"
 updatedDate: "2026-07-21"
 readingTime: "5 phút đọc"

@@ -2,7 +2,7 @@
 title: "Nên đầu tư quỹ mở hay quỹ ETF? So sánh chi tiết cho F0"
 description: "Nên đầu tư quỹ mở hay quỹ ETF? Bảng so sánh chi tiết về cách thức giao dịch, chi phí, và phương pháp quản lý giúp nhà đầu tư F0 đưa ra lựa chọn phù hợp."
 category: etf
-heroImage: "/images/articles/nen-dau-tu-quy-mo-hay-quy-etf/hero.jpg"
+heroImage: "/images/articles/nen-dau-tu-quy-mo-hay-quy-etf/nen-dau-tu-quy-mo-hay-quy-etf.jpg"
 publishDate: "2026-06-30"
 updatedDate: "2026-06-30"
 readingTime: "6 phút đọc"

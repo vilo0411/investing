@@ -33,7 +33,7 @@ keyTakeaways:
   - "Người mới có thể mở tài khoản trực tuyến eKYC 100% bằng CCCD gắn chip chỉ trong vài phút."
   - "Nên kết hợp phân tích cơ bản để chọn mã tốt và phân tích kỹ thuật để tìm điểm giao dịch."
   - "Hạn chế sử dụng đòn bẩy margin và đa dạng hóa danh mục để bảo vệ nguồn vốn tích lũy."
-heroImage: "/images/articles/cach-dau-tu-co-phieu/hero.jpg"
+heroImage: "/images/articles/cach-dau-tu-co-phieu/cach-dau-tu-co-phieu.jpg"
 ---
 
 Nhiều người nghĩ đầu tư cổ phiếu cần vốn lớn hoặc phải theo dõi bảng điện liên tục. Sự thật là bạn hoàn toàn có thể bắt đầu tích lũy chỉ từ vài trăm nghìn đồng. Bài viết này từ **[Value Investing](/)** sẽ hướng dẫn bạn **cách đầu tư cổ phiếu** chi tiết và thực tiễn nhất.

@@ -2,7 +2,7 @@
 title: "Trái phiếu chính phủ là gì? Cách mua và lãi suất 2026"
 description: "Trái phiếu chính phủ là gì? Lãi suất TPCP Việt Nam 2026, cách cá nhân mua trái phiếu kho bạc, so sánh với trái phiếu doanh nghiệp và tiết kiệm ngân hàng."
 category: trai-phieu
-heroImage: "/images/articles/trai-phieu-chinh-phu-la-gi/hero.jpg"
+heroImage: "/images/articles/trai-phieu-chinh-phu-la-gi/trai-phieu-chinh-phu-la-gi.jpg"
 publishDate: "2026-06-28"
 updatedDate: "2026-06-28"
 factCheckedDate: "2026-06-28"

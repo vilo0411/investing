@@ -2,7 +2,7 @@
 title: "Hợp đồng tương lai là gì? Cẩm nang phái sinh cho người mới"
 description: "Hợp đồng tương lai là gì? Tìm hiểu cơ chế giao dịch phái sinh VN30, tỷ lệ ký quỹ, cách kiếm tiền hai chiều và các rủi ro cần biết trước khi chơi."
 category: phai-sinh
-heroImage: "/images/articles/hop-dong-tuong-lai-la-gi/hero.jpg"
+heroImage: "/images/articles/hop-dong-tuong-lai-la-gi/hop-dong-tuong-lai-la-gi.jpg"
 publishDate: "2026-06-09"
 updatedDate: "2026-06-15"
 factCheckedDate: "2026-06-21"

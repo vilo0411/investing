@@ -2,7 +2,7 @@
 title: "Quỹ chủ động là gì? Ưu nhược điểm và lưu ý cho F0"
 description: "Quỹ chủ động là gì? Tìm hiểu chi tiết đặc điểm, cơ chế hoạt động, ưu nhược điểm của quỹ chủ động và cách đầu tư hiệu quả cho người mới."
 category: "etf"
-heroImage: "/images/articles/quy-chu-dong-la-gi/hero.jpg"
+heroImage: "/images/articles/quy-chu-dong-la-gi/quy-chu-dong-la-gi.jpg"
 publishDate: "2026-07-07"
 updatedDate: "2026-07-07"
 readingTime: "5 phút đọc"

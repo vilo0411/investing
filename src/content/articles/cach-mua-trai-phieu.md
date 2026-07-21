@@ -2,7 +2,7 @@
 title: "Cách mua trái phiếu doanh nghiệp an toàn cho F0"
 description: "Cách mua trái phiếu doanh nghiệp an toàn cho F0. Hướng dẫn chi tiết quy trình mua online qua sàn chứng khoán, điều kiện nhà đầu tư chuyên nghiệp."
 category: "trai-phieu"
-heroImage: "/images/articles/cach-mua-trai-phieu/hero.jpg"
+heroImage: "/images/articles/cach-mua-trai-phieu/cach-mua-trai-phieu.jpg"
 publishDate: "2026-07-07"
 updatedDate: "2026-07-07"
 readingTime: "5 phút đọc"

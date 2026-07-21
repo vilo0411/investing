@@ -2,7 +2,7 @@
 title: "Review MBS Securities: Có nên mở tài khoản chứng khoán MBS không? (2026)"
 description: "Đánh giá chi tiết Chứng khoán MBS năm 2026. Review ứng dụng MBS Mobile, dịch vụ Pro Advice, lãi suất margin, phí giao dịch và hướng dẫn mở tài khoản."
 category: reviews
-heroImage: "/images/articles/review-mbs-securities/hero.jpg"
+heroImage: "/images/articles/review-mbs-securities/review-mbs-securities.jpg"
 publishDate: "2026-07-07"
 updatedDate: "2026-07-07"
 factCheckedDate: "2026-07-07"

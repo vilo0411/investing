@@ -2,7 +2,7 @@
 title: "Chỉ báo MACD là gì? Cách sử dụng MACD hiệu quả cho F0"
 description: "Chỉ báo MACD là gì? Khám phá cấu tạo đường MACD, đường tín hiệu, Histogram và 3 chiến lược giao dịch MACD hiệu quả nhất trong chứng khoán."
 category: ky-thuat
-heroImage: "/images/articles/macd-la-gi/hero.jpg"
+heroImage: "/images/articles/macd-la-gi/macd-la-gi.jpg"
 publishDate: "2026-07-14"
 updatedDate: "2026-07-14"
 readingTime: "5 phút đọc"
@@ -34,9 +34,9 @@ Nhiều nhà đầu tư mới khi học phân tích đồ thị thường nghe n
 
 ## Chỉ báo MACD là gì? Lịch sử ra đời
 
-MACD là viết tắt của cụm từ Moving Average Convergence Divergence, trong tiếng Việt gọi là Đường trung bình động hội tụ phân kỳ. Đây là một công cụ phân tích kỹ thuật vô cùng phổ biến được phát minh bởi Gerald Appel vào cuối những năm 1970. Chỉ báo này được thiết kế để đo lường cường độ động lượng và định hướng xu hướng của giá cổ phiếu.
+MACD là viết tắt của cụm từ Moving Average Convergence Divergence, trong tiếng Việt gọi là Đường trung bình động hội tụ phân kỳ. Đây là một công cụ **[phân tích kỹ thuật](/phan-tich/ky-thuat/phan-tich-ky-thuat-la-gi/)** vô cùng phổ biến được phát minh bởi Gerald Appel vào cuối những năm 1970. Chỉ báo này được thiết kế để đo lường cường độ động lượng và định hướng xu hướng của giá cổ phiếu.
 
-Mục tiêu chính của MACD là giúp bạn nhận biết liệu thị trường đang nằm trong xu hướng tăng mạnh hay giảm sâu. Bằng cách quan sát sự hội tụ và phân kỳ của hai đường trung bình động, bạn có thể đưa ra quyết định giao dịch hợp lý. Hiện nay, hầu hết các phần mềm phân tích kỹ thuật tại Việt Nam đều tích hợp sẵn công cụ này.
+Mục tiêu chính của MACD là giúp bạn nhận biết liệu thị trường đang nằm trong xu hướng tăng mạnh hay giảm sâu. Bằng cách quan sát sự hội tụ và phân kỳ của hai **[đường trung bình động](/phan-tich/ky-thuat/duong-ma-la-gi/)**, bạn có thể đưa ra quyết định giao dịch hợp lý. Hiện nay, hầu hết các phần mềm phân tích kỹ thuật tại Việt Nam đều tích hợp sẵn công cụ này.
 
 
 ## Cấu tạo chi tiết của chỉ báo MACD
@@ -73,7 +73,7 @@ Bạn có thể ứng dụng chỉ báo MACD vào thực tế giao dịch thông
 
 Mặc dù rất mạnh mẽ, MACD vẫn có điểm yếu chí tử là tạo ra nhiều tín hiệu giả khi thị trường đi vào giai đoạn sideway. Khi giá cổ phiếu dao động lên xuống không rõ xu hướng, đường MACD và đường tín hiệu sẽ cắt nhau liên tục. Điều này khiến bạn dễ rơi vào bẫy mua đỉnh bán đáy và chịu tổn thất phí giao dịch không đáng có.
 
-Để khắc phục nhược điểm này, bạn tuyệt đối không nên sử dụng MACD một cách độc lập khi ra quyết định. Hãy kết hợp MACD với chỉ báo RSI hoặc chỉ báo khối lượng giao dịch để xác nhận độ tin cậy của xu hướng trước khi đặt lệnh. Ngoài ra, việc thiết lập mức dừng lỗ kỷ luật là bắt buộc để bảo vệ nguồn vốn của bạn.
+Để khắc phục nhược điểm này, bạn tuyệt đối không nên sử dụng MACD một cách độc lập khi ra quyết định. Hãy kết hợp MACD với **[chỉ báo RSI](/phan-tich/ky-thuat/rsi-la-gi/)** hoặc chỉ báo khối lượng giao dịch để xác nhận độ tin cậy của xu hướng trước khi đặt lệnh. Ngoài ra, việc thiết lập mức dừng lỗ kỷ luật là bắt buộc để bảo vệ nguồn vốn của bạn.
 
 
 ## Câu hỏi thường gặp
@@ -84,4 +84,4 @@ Tín hiệu phân kỳ MACD có độ chính xác cao nhất khi bạn quan sát
 ### Biểu đồ cột Histogram đổi màu có ý nghĩa gì trong giao dịch?
 Sự đổi màu hoặc thay đổi độ cao của cột Histogram báo hiệu động lượng của xu hướng hiện tại đang tăng hay giảm dần. Khi cột Histogram màu đỏ ngắn lại và hướng về đường Zero, đó là dấu hiệu lực bán đang yếu đi đáng kể.
 
-Hiểu rõ cấu tạo và cách đọc chỉ báo MACD giúp bạn nâng cao năng lực phân tích đồ thị đáng kể. Hãy bắt đầu luyện tập quan sát chỉ báo này trên các đồ thị lịch sử của cổ phiếu.
+Hiểu rõ cấu tạo và cách đọc chỉ báo MACD giúp bạn nâng cao năng lực phân tích đồ thị đáng kể khi học **[cách đầu tư cổ phiếu](/dau-tu/co-phieu/cach-dau-tu-co-phieu/)**. Hãy bắt đầu luyện tập quan sát chỉ báo này trên các đồ thị lịch sử.

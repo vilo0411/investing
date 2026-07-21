@@ -2,7 +2,7 @@
 title: "Review công ty chứng khoán cho người mới: Chọn ở đâu tốt?"
 description: "Review chi tiết ưu và nhược điểm của các công ty chứng khoán lớn tại Việt Nam giúp người mới bắt đầu (F0) lựa chọn nơi mở tài khoản tốt nhất."
 category: reviews
-heroImage: "/images/articles/review-cong-ty-chung-khoan-cho-nguoi-moi/hero.jpg"
+heroImage: "/images/articles/review-cong-ty-chung-khoan-cho-nguoi-moi/review-cong-ty-chung-khoan-cho-nguoi-moi.jpg"
 publishDate: "2026-06-09"
 updatedDate: "2026-06-15"
 factCheckedDate: "2026-06-21"

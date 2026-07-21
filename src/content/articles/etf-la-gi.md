@@ -2,7 +2,7 @@
 title: "Quỹ ETF là gì? Khái niệm và cách hoạt động dễ hiểu cho F0"
 description: "Quỹ ETF là gì? Giải thích khái niệm chứng chỉ quỹ ETF và cơ chế hoạt động cực kỳ dễ hiểu cho người mới. So sánh chi tiết quỹ ETF và quỹ mở."
 category: etf
-heroImage: "/images/articles/etf-la-gi/hero.jpg"
+heroImage: "/images/articles/etf-la-gi/etf-la-gi.jpg"
 publishDate: "2026-06-09"
 updatedDate: "2026-06-21"
 factCheckedDate: "2026-06-21"

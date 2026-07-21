@@ -2,7 +2,7 @@
 title: "Trái phiếu doanh nghiệp là gì? Hướng dẫn đầu tư an toàn cho F0"
 description: "Trái phiếu doanh nghiệp là gì? Tìm hiểu cách hoạt động, so sánh với gửi tiết kiệm ngân hàng và các rủi ro tín dụng cần biết trước khi xuống tiền."
 category: trai-phieu
-heroImage: "/images/articles/trai-phieu-doanh-nghiep/hero.jpg"
+heroImage: "/images/articles/trai-phieu-doanh-nghiep/trai-phieu-doanh-nghiep.jpg"
 publishDate: "2026-06-09"
 updatedDate: "2026-06-15"
 factCheckedDate: "2026-06-21"

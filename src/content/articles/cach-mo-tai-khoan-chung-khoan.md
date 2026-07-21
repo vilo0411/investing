@@ -2,7 +2,7 @@
 title: "Cách mở tài khoản chứng khoán online cho người mới"
 description: "Hướng dẫn chi tiết cách mở tài khoản chứng khoán online qua eKYC chỉ trong 5 phút. Cần chuẩn bị những gì và nên mở tài khoản chứng khoán ở đâu tốt nhất?"
 category: "co-phieu"
-heroImage: "/images/articles/cach-mo-tai-khoan-chung-khoan/hero.jpg"
+heroImage: "/images/articles/cach-mo-tai-khoan-chung-khoan/cach-mo-tai-khoan-chung-khoan.jpg"
 publishDate: "2026-06-28"
 updatedDate: "2026-06-28"
 readingTime: "5 phút đọc"

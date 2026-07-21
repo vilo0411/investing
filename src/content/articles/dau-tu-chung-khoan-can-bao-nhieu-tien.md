@@ -2,7 +2,7 @@
 title: "Đầu tư chứng khoán cần bao nhiêu tiền? Bảng vốn thực tế 2026"
 description: "Đầu tư chứng khoán cần bao nhiêu tiền? Từ 50.000đ đến hàng trăm triệu — hướng dẫn chọn kênh phù hợp theo mức vốn cho người mới bắt đầu năm 2026."
 category: co-phieu
-heroImage: "/images/articles/dau-tu-chung-khoan-can-bao-nhieu-tien/hero.jpg"
+heroImage: "/images/articles/dau-tu-chung-khoan-can-bao-nhieu-tien/dau-tu-chung-khoan-can-bao-nhieu-tien.jpg"
 publishDate: "2026-06-28"
 updatedDate: "2026-06-28"
 factCheckedDate: "2026-06-28"

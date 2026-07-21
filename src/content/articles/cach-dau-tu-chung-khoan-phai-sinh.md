@@ -2,7 +2,7 @@
 title: "Cách đầu tư chứng khoán phái sinh từ con số 0"
 description: "Hướng dẫn cách đầu tư chứng khoán phái sinh tại Việt Nam. Tìm hiểu bản chất hợp đồng tương lai VN30, cơ chế ký quỹ và cách giao dịch cho người mới."
 category: phai-sinh
-heroImage: "/images/articles/cach-dau-tu-chung-khoan-phai-sinh/hero.jpg"
+heroImage: "/images/articles/cach-dau-tu-chung-khoan-phai-sinh/cach-dau-tu-chung-khoan-phai-sinh.jpg"
 publishDate: "2026-06-15"
 updatedDate: "2026-06-15"
 factCheckedDate: "2026-06-21"

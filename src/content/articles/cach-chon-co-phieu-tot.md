@@ -2,7 +2,7 @@
 title: "Cách chọn cổ phiếu tốt cho người mới: Bộ tiêu chí thực chiến"
 description: "Cách chọn cổ phiếu tốt để đầu tư dài hạn. Hướng dẫn chi tiết bộ tiêu chí đánh giá định tính và chỉ số định lượng (P/E, ROE) cực dễ hiểu cho F0."
 category: "co-phieu"
-heroImage: "/images/articles/cach-chon-co-phieu-tot/hero.jpg"
+heroImage: "/images/articles/cach-chon-co-phieu-tot/cach-chon-co-phieu-tot.jpg"
 publishDate: "2026-06-28"
 updatedDate: "2026-06-28"
 readingTime: "5 phút đọc"

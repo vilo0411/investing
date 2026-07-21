@@ -2,7 +2,7 @@
 title: "Cách đầu tư trái phiếu cho người mới: 3 cách phổ biến"
 description: "Cách đầu tư trái phiếu cho người mới bắt đầu tại Việt Nam, gồm 3 phương thức phổ biến, vốn tối thiểu, rủi ro cần biết và các bước thực hiện cụ thể."
 category: "trai-phieu"
-heroImage: "/images/articles/cach-dau-tu-trai-phieu/hero.jpg"
+heroImage: "/images/articles/cach-dau-tu-trai-phieu/cach-dau-tu-trai-phieu.jpg"
 publishDate: "2026-06-14"
 updatedDate: "2026-06-14"
 factCheckedDate: "2026-06-21"

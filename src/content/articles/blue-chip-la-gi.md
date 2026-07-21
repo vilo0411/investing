@@ -2,7 +2,7 @@
 title: "Blue chip là gì? Khái niệm và cách đầu tư thông minh cho F0"
 description: "Cổ phiếu Blue chip là gì? Tìm hiểu nguồn gốc, tiêu chí xác định nhóm cổ phiếu hàng đầu và nguyên tắc đầu tư an toàn cho người mới bắt đầu."
 category: co-phieu
-heroImage: "/images/articles/blue-chip-la-gi/hero.jpg"
+heroImage: "/images/articles/blue-chip-la-gi/blue-chip-la-gi.jpg"
 publishDate: "2026-06-09"
 updatedDate: "2026-06-15"
 factCheckedDate: "2026-06-21"

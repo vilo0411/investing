@@ -2,7 +2,7 @@
 title: "Quyền chọn là gì? Khái niệm và hướng dẫn giao dịch"
 description: "Quyền chọn là gì? Tìm hiểu chi tiết khái niệm, phân loại quyền chọn mua/bán, các yếu tố cấu thành hợp đồng và so sánh với hợp đồng tương lai."
 category: "phai-sinh"
-heroImage: "/images/articles/quyen-chon-la-gi/hero.jpg"
+heroImage: "/images/articles/quyen-chon-la-gi/quyen-chon-la-gi.jpg"
 publishDate: "2026-07-07"
 updatedDate: "2026-07-07"
 readingTime: "5 phút đọc"

@@ -2,7 +2,7 @@
 title: "ETF VN30 là gì? Giải pháp tích sản đơn giản cho người bận rộn"
 description: "ETF VN30 là gì? Tìm hiểu cơ chế hoạt động của quỹ mô phỏng chỉ số VN30, danh sách các quỹ lớn tại Việt Nam và nguyên tắc đầu tư an toàn cho F0."
 category: etf
-heroImage: "/images/articles/etf-vn30-la-gi/hero.jpg"
+heroImage: "/images/articles/etf-vn30-la-gi/etf-vn30-la-gi.jpg"
 publishDate: "2026-06-09"
 updatedDate: "2026-06-15"
 factCheckedDate: "2026-06-21"

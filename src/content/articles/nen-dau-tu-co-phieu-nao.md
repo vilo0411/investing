@@ -2,7 +2,7 @@
 title: "Nên đầu tư cổ phiếu nào?"
 description: "Nên đầu tư cổ phiếu nào năm 2026? Hướng dẫn cách phân loại cổ phiếu tiềm năng và thiết lập danh mục đầu tư an toàn cho người mới."
 category: co-phieu
-heroImage: "/images/articles/nen-dau-tu-co-phieu-nao/hero.jpg"
+heroImage: "/images/articles/nen-dau-tu-co-phieu-nao/nen-dau-tu-co-phieu-nao.jpg"
 publishDate: "2026-07-14"
 updatedDate: "2026-07-14"
 readingTime: "5 phút đọc"

@@ -2,7 +2,7 @@
 title: "ROA là gì? Ý nghĩa và cách phân biệt chỉ số ROA với ROE"
 description: "Chỉ số ROA là gì? Hướng dẫn cách tính ROA, so sánh sự khác nhau giữa ROA và ROE giúp nhà đầu tư F0 đánh giá hiệu quả sử dụng tài sản."
 category: co-ban
-heroImage: "/images/articles/roa-la-gi/hero.jpg"
+heroImage: "/images/articles/roa-la-gi/roa-la-gi.jpg"
 publishDate: "2026-06-09"
 updatedDate: "2026-06-15"
 factCheckedDate: "2026-06-21"

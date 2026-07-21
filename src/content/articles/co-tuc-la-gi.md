@@ -2,7 +2,7 @@
 title: "Cổ tức là gì? Hướng dẫn cách nhận cổ tức cho người mới"
 description: "Cổ tức là gì? Phân biệt cổ tức tiền mặt và cổ tức cổ phiếu, cách tính toán ngày giao dịch không hưởng quyền để nhận cổ tức chuẩn xác nhất."
 category: co-phieu
-heroImage: "/images/articles/co-tuc-la-gi/hero.jpg"
+heroImage: "/images/articles/co-tuc-la-gi/co-tuc-la-gi.jpg"
 publishDate: "2026-06-09"
 updatedDate: "2026-06-15"
 factCheckedDate: "2026-06-21"

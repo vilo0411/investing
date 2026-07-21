@@ -2,7 +2,7 @@
 title: "DCA là gì? Cách áp dụng chiến lược trung bình giá hiệu quả cho F0"
 description: "DCA là gì? Tìm hiểu chiến lược trung bình giá (Dollar Cost Averaging), ưu nhược điểm và cách thiết lập kế hoạch DCA tích sản chứng khoán cho F0 bận rộn."
 category: "co-phieu"
-heroImage: "/images/articles/dca-la-gi/hero.jpg"
+heroImage: "/images/articles/dca-la-gi/dca-la-gi.jpg"
 publishDate: "2026-07-21"
 updatedDate: "2026-07-21"
 readingTime: "5 phút đọc"

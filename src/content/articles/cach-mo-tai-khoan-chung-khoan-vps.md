@@ -2,7 +2,7 @@
 title: "Cách mở tài khoản chứng khoán VPS online 2026: Hướng dẫn eKYC từng bước"
 description: "Hướng dẫn cách mở tài khoản chứng khoán VPS online bằng eKYC năm 2026 — chuẩn bị, các bước SmartOne, xử lý lỗi và lưu ý về mã giới thiệu, phí giao dịch."
 category: reviews
-heroImage: "/images/articles/cach-mo-tai-khoan-chung-khoan-vps/hero.jpg"
+heroImage: "/images/articles/cach-mo-tai-khoan-chung-khoan-vps/cach-mo-tai-khoan-chung-khoan-vps.jpg"
 publishDate: "2026-07-18"
 updatedDate: "2026-07-18"
 factCheckedDate: "2026-07-18"

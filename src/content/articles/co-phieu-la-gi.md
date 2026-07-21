@@ -2,7 +2,7 @@
 title: "Cổ phiếu là gì? Bản chất và cách hoạt động dễ hiểu nhất"
 description: "Cổ phiếu là gì? Giải thích bản chất cổ phiếu, cổ phần và cổ đông bằng ví dụ thực tế cực dễ hiểu. Hướng dẫn cách phân biệt các loại cổ phiếu và quyền lợi khi đầu tư."
 category: co-phieu
-heroImage: "/images/articles/co-phieu-la-gi/hero.jpg"
+heroImage: "/images/articles/co-phieu-la-gi/co-phieu-la-gi.jpg"
 publishDate: "2026-06-09"
 updatedDate: "2026-06-21"
 factCheckedDate: "2026-06-21"
