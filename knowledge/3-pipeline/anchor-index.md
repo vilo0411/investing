@@ -38,6 +38,9 @@ Index toàn bộ bài đã publish tại `src/content/articles/`. Dùng cho inte
 | `chien-luoc-dau-tu-chung-khoan` | Chiến lược đầu tư chứng khoán hiệu quả và bền vững cho F0 | `/dau-tu/co-phieu/chien-luoc-dau-tu-chung-khoan/` | chiến lược đầu tư chứng khoán |
 | `rui-ro-dau-tu-chung-khoan` | Rủi ro đầu tư chứng khoán: Nhận diện và cách quản trị cho F0 | `/dau-tu/co-phieu/rui-ro-dau-tu-chung-khoan/` | rủi ro đầu tư chứng khoán |
 | `dau-tu-co-phieu-can-bao-nhieu-tien` | Đầu tư cổ phiếu cần bao nhiêu tiền? Con số tối thiểu cho F0 | `/dau-tu/co-phieu/dau-tu-co-phieu-can-bao-nhieu-tien/` | đầu tư cổ phiếu cần bao nhiêu tiền |
+| `call-margin-la-gi` | Call Margin Là Gì? Cách Xử Lý Khi Bị Gọi Ký Quỹ | `/dau-tu/co-phieu/call-margin-la-gi/` | call margin |
+| `tam-ly-dau-tu-chung-khoan` | Tâm Lý Đầu Tư Chứng Khoán: 5 Bẫy Cảm Xúc Và Cách Vượt Qua | `/dau-tu/co-phieu/tam-ly-dau-tu-chung-khoan/` | tâm lý đầu tư chứng khoán |
+| `sai-lam-dau-tu-chung-khoan` | 7 Sai Lầm Đầu Tư Chứng Khoán Phổ Biến Nhất Ở Người Mới | `/dau-tu/co-phieu/sai-lam-dau-tu-chung-khoan/` | sai lầm đầu tư chứng khoán |
 
 ## Nhóm Đầu tư — Quỹ ETF (`/dau-tu/etf/`)
 
@@ -62,6 +65,7 @@ Index toàn bộ bài đã publish tại `src/content/articles/`. Dùng cho inte
 | `trai-phieu-chinh-phu-la-gi` | Trái phiếu chính phủ là gì? | `/dau-tu/trai-phieu/trai-phieu-chinh-phu-la-gi/` | trái phiếu chính phủ |
 | `co-nen-dau-tu-trai-phieu` | Có nên đầu tư trái phiếu không? | `/dau-tu/trai-phieu/co-nen-dau-tu-trai-phieu/` | có nên đầu tư trái phiếu |
 | `cach-mua-trai-phieu` | Cách mua trái phiếu doanh nghiệp an toàn cho F0 | `/dau-tu/trai-phieu/cach-mua-trai-phieu/` | cách mua trái phiếu |
+| `bond-yield-la-gi` | Bond Yield Là Gì? Cách Đọc Lợi Suất Trái Phiếu Cho F0 | `/dau-tu/trai-phieu/bond-yield-la-gi/` | bond yield |
 
 ## Nhóm Đầu tư — Phái sinh (`/dau-tu/phai-sinh/`)
 

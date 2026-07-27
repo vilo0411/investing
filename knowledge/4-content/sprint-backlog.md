@@ -70,7 +70,7 @@
 | 4.1 | Có nên đầu tư trái phiếu | `co-nen-dau-tu-trai-phieu` | `Finalized` | Decision content |
 | 4.2 | Cách mua trái phiếu | `cach-mua-trai-phieu` | `Finalized` | How-to thực hành |
 | 4.3 | Trái phiếu chính phủ là gì | `trai-phieu-chinh-phu-la-gi` | `Finalized` | Kiến thức nền |
-| 4.4 | Bond yield là gì | `bond-yield-la-gi` | `Planned` | Nâng cao |
+| 4.4 | Bond yield là gì | `bond-yield-la-gi` | `Finalized` | Nâng cao |
 
 ---
 

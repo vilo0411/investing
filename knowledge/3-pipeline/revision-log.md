@@ -25,6 +25,11 @@ Tài liệu ghi nhận toàn bộ lịch sử chỉnh sửa bài viết dựa tr
 | 2026-07-27 | `vps-vs-ssi` | Người dùng duyệt Outline & Draft, không yêu cầu sửa đổi | Di chuyển bài viết sang Final, cập nhật topic-clusters và anchor-index, link wheel | **Hoàn thành** |
 | 2026-07-27 | `tcbs-vs-vndirect` | Người dùng duyệt Outline & Draft, không yêu cầu sửa đổi | Di chuyển bài viết sang Final, cập nhật topic-clusters và anchor-index, link wheel | **Hoàn thành** |
 | 2026-07-27 | `dnse-vs-tcbs` | Người dùng duyệt Outline & Draft, không yêu cầu sửa đổi | Di chuyển bài viết sang Final, cập nhật topic-clusters và anchor-index, link wheel | **Hoàn thành** |
+| 2026-07-28 | `bond-yield-la-gi` | Người dùng duyệt `/approve` (Auto Pipeline) | Finalize bài viết, generate hero image Playwright, xóa file tạm, cập nhật anchor-index & topic-clusters | **Hoàn thành** |
+| 2026-07-28 | `call-margin-la-gi` | Người dùng duyệt `/approve` (Auto Pipeline) | Finalize bài viết, generate hero image Playwright, xóa file tạm, cập nhật anchor-index & topic-clusters | **Hoàn thành** |
+| 2026-07-28 | `tam-ly-dau-tu-chung-khoan` | Người dùng duyệt `/approve` (Auto Pipeline) | Finalize bài viết, generate hero image Playwright, xóa file tạm, cập nhật anchor-index & topic-clusters | **Hoàn thành** |
+| 2026-07-28 | `sai-lam-dau-tu-chung-khoan` | Người dùng duyệt `/approve` (Auto Pipeline) | Finalize bài viết, generate hero image Playwright, xóa file tạm, cập nhật anchor-index & topic-clusters | **Hoàn thành** |
+| 2026-07-28 | `chu-ky-kinh-te-la-gi` | Người dùng duyệt `/approve` (Auto Pipeline) | Finalize bài viết, generate hero image Playwright, xóa file tạm, cập nhật anchor-index & topic-clusters | **Hoàn thành** |
 
 ---
 
