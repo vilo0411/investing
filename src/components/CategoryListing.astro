@@ -24,8 +24,12 @@ const byNewest = [...articles].sort(
   (a, b) => b.data.updatedDate.getTime() - a.data.updatedDate.getTime()
 );
 
-const featuredArticle = byNewest[0];
-const restArticles = byNewest.slice(1);
+const featuredArticle =
+  articles.find((a) => a.data.featured) ??
+  articles.find((a) => a.data.order === 1) ??
+  byNewest[0];
+
+const restArticles = byNewest.filter((a) => a.slug !== featuredArticle?.slug);
 const pageSize = 3; // Number of cards to show initially in the grid and load per click
 
 const meta = categoryMeta[category.slug] ?? {

@@ -4,7 +4,7 @@ description: "So sánh chi tiết TCBS và VPS năm 2026 về phí giao dịch, 
 category: reviews
 heroImage: "/images/articles/tcbs-vs-vps/tcbs-vs-vps.jpg"
 publishDate: "2026-07-27"
-updatedDate: "2026-07-27"
+updatedDate: "2026-07-26"
 factCheckedDate: "2026-07-27"
 readingTime: "7 phút đọc"
 featured: false

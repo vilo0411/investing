@@ -27,7 +27,8 @@ Xác định file đang ở stage nào dựa trên tên file hoặc stage đang 
 - **BẮT BUỘC — Hỏi trước khi finalize:**
   > *"Ngoài các chỉnh sửa đã trao đổi trong chat, bạn có tự sửa thêm gì trong file không? Mô tả ngắn để tôi ghi log. (Gõ 'không' để bỏ qua.)"*
 - Tổng hợp **toàn bộ** những gì đã sửa trong session này (từ chat + file trực tiếp nếu user khai báo) → ghi vào `knowledge/3-pipeline/revision-log.md` theo format chuẩn.
-- **BẮT BUỘC**: Di chuyển file sang `knowledge/4-content/3-finalized/Final-[slug].md`.
+- **BẮT BUỘC**: Di chuyển file sang `src/content/articles/[slug].md` (hoặc `knowledge/4-content/3-finalized/Final-[slug].md`).
+- **BẮT BUỘC — TỰ ĐỘNG DỌN DẸP**: Xóa `knowledge/4-content/1-outlines/[slug].md`, `knowledge/4-content/2-drafts/Draft-[slug].md`, `knowledge/4-content/2-drafts/[slug]-cover.html` (nếu có), `knowledge/4-content/2-drafts/[slug]-image-prompts.md` (nếu có).
 - Cập nhật `knowledge/4-content/topic-clusters.md` → trạng thái `Finalized`.
 - Auto-trigger: Kích hoạt skill `.antigravity/skills/content-feedback-loop/SKILL.md` để tổng hợp bài học.
 - Cập nhật `knowledge/3-pipeline/anchor-index.md` — thêm entry mới cho bài vừa finalized.

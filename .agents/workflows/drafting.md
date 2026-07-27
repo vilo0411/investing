@@ -37,11 +37,11 @@ Dùng sau khi Outline đã được `/approve`. Chỉ thực hiện Phase 3 (Dra
     - Điền các thông tin: `COMPANY_A`, `TICKER_A`, `TAGLINE_A`, `COMPANY_B`, `TICKER_B`, `TAGLINE_B`, và `YEAR` (ví dụ: `2026`).
     - Lưu file HTML đã điền vào `knowledge/4-content/2-drafts/[slug]-cover.html`.
   - **Bài đánh giá công ty (`reviewType: company`)**:
-    - Sử dụng template `knowledge/4-content/2-drafts/company-cover-template.html`.
+    - Sử dụng template `.antigravity/skills/seo-image/assets/templates/company-cover-template.html`.
     - Điền các thông tin công ty tương ứng.
     - Lưu file HTML đã điền vào `knowledge/4-content/2-drafts/[slug]-cover.html`.
   - **Bài kiến thức/blog thông thường**:
-    - Không cần sinh file cover HTML riêng. Script sẽ tự động sử dụng `article-cover-template.html`.
+    - Không cần sinh file cover HTML riêng. Script sẽ tự động sử dụng `.antigravity/skills/seo-image/assets/templates/article-cover-template.html`.
 - **Chụp ảnh bìa**:
   - Chạy lệnh:
     ```bash

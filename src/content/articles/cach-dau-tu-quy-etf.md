@@ -7,8 +7,8 @@ publishDate: "2026-06-15"
 updatedDate: "2026-06-15"
 factCheckedDate: "2026-06-21"
 readingTime: "5 phút đọc"
-featured: false
-order: 5
+featured: true
+order: 1
 tags:
   - cách đầu tư quỹ etf
   - đầu tư etf

@@ -7,8 +7,8 @@ publishDate: "2026-06-14"
 updatedDate: "2026-06-14"
 factCheckedDate: "2026-06-21"
 readingTime: "7 phút đọc"
-featured: false
-order: 100
+featured: true
+order: 1
 tags:
   - "trái phiếu"
   - "đầu tư trái phiếu"

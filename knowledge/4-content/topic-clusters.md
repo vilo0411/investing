@@ -182,10 +182,8 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 | ETF là gì | `etf-la-gi` | `Finalized` | ✅ Đã publish |
 | ETF VN30 là gì | `etf-vn30-la-gi` | `Finalized` | ✅ Đã publish |
 | ETF Diamond là gì | `etf-diamond-la-gi` | `Planned` | |
-| ETF phù hợp cho người mới | `etf-phu-hop-nguoi-moi` | `Planned` | |
 | Nên đầu tư quỹ ETF nào | `nen-dau-tu-quy-etf-nao` | `Finalized` | |
 | Phân biệt quỹ ETF và quỹ tương hỗ | `phan-biet-quy-etf-va-quy-tuong-ho` | `Planned` | |
-| Quy trình hoán đổi danh mục ETF | `quy-trinh-hoan-doi-danh-muc-etf` | `Planned` | |
 
 ### Quỹ mở & Chứng chỉ quỹ
 | Keyword (Spoke) | Slug | Status | Ghi chú |
@@ -464,9 +462,9 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 |---|---|---|---|
 | Cách mở tài khoản chứng khoán VPS | `cach-mo-tai-khoan-chung-khoan-vps` | `Finalized` | ✅ Đã publish |
 | Cách mở tài khoản chứng khoán SSI | `cach-mo-tai-khoan-chung-khoan-ssi` | `Finalized` | ✅ Đã publish |
-| Cách mở tài khoản chứng khoán TCBS | `cach-mo-tai-khoan-chung-khoan-tcbs` | `Planned` | ⭐⭐⭐ |
-| Cách mở tài khoản chứng khoán VNDIRECT | `cach-mo-tai-khoan-chung-khoan-vndirect` | `Planned` | ⭐⭐ |
-| Cách mở tài khoản chứng khoán DNSE | `cach-mo-tai-khoan-chung-khoan-dnse` | `Planned` | ⭐⭐ |
+| Cách mở tài khoản chứng khoán TCBS | `cach-mo-tai-khoan-chung-khoan-tcbs` | `Finalized` | ⭐⭐⭐ |
+| Cách mở tài khoản chứng khoán VNDIRECT | `cach-mo-tai-khoan-chung-khoan-vndirect` | `Finalized` | ⭐⭐ |
+| Cách mở tài khoản chứng khoán DNSE | `cach-mo-tai-khoan-chung-khoan-dnse` | `Finalized` | ⭐⭐ |
 
 ### Tầng 4 — Comparison spokes (`so sánh X và Y` — intent phân vân)
 

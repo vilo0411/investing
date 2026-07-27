@@ -100,8 +100,14 @@ Index toàn bộ bài đã publish tại `src/content/articles/`. Dùng cho inte
 |------|-------|----------|-------------------|
 | `cong-ty-chung-khoan-phi-thap` | Công ty chứng khoán phí thấp | `/reviews/cong-ty-chung-khoan-phi-thap/` | công ty chứng khoán phí thấp |
 | `review-cong-ty-chung-khoan-cho-nguoi-moi` | Công ty chứng khoán cho người mới | `/reviews/review-cong-ty-chung-khoan-cho-nguoi-moi/` | chọn công ty chứng khoán cho người mới |
+| `review-tcbs-securities` | Đánh giá chứng khoán TCBS | `/reviews/review-tcbs-securities/` | đánh giá TCBS |
+| `review-vndirect-securities` | Đánh giá chứng khoán VNDIRECT | `/reviews/review-vndirect-securities/` | đánh giá VNDIRECT |
+| `review-dnse-securities` | Đánh giá chứng khoán DNSE | `/reviews/review-dnse-securities/` | đánh giá DNSE |
 | `cach-mo-tai-khoan-chung-khoan-vps` | Cách mở tài khoản chứng khoán VPS | `/reviews/cach-mo-tai-khoan-chung-khoan-vps/` | cách mở tài khoản chứng khoán VPS |
 | `cach-mo-tai-khoan-chung-khoan-ssi` | Cách mở tài khoản chứng khoán SSI | `/reviews/cach-mo-tai-khoan-chung-khoan-ssi/` | cách mở tài khoản chứng khoán SSI |
+| `cach-mo-tai-khoan-chung-khoan-tcbs` | Cách mở tài khoản chứng khoán TCBS | `/reviews/cach-mo-tai-khoan-chung-khoan-tcbs/` | cách mở tài khoản chứng khoán TCBS |
+| `cach-mo-tai-khoan-chung-khoan-vndirect` | Cách mở tài khoản chứng khoán VNDIRECT | `/reviews/cach-mo-tai-khoan-chung-khoan-vndirect/` | cách mở tài khoản chứng khoán VNDIRECT |
+| `cach-mo-tai-khoan-chung-khoan-dnse` | Cách mở tài khoản chứng khoán DNSE | `/reviews/cach-mo-tai-khoan-chung-khoan-dnse/` | cách mở tài khoản chứng khoán DNSE |
 | `tcbs-vs-vps` | So sánh TCBS và VPS | `/reviews/tcbs-vs-vps/` | so sánh TCBS và VPS |
 | `vps-vs-ssi` | So sánh VPS và SSI | `/reviews/vps-vs-ssi/` | so sánh VPS và SSI |
 | `tcbs-vs-vndirect` | So sánh TCBS và VNDIRECT | `/reviews/tcbs-vs-vndirect/` | so sánh TCBS và VNDIRECT |

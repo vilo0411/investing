@@ -69,11 +69,11 @@ Trước khi làm bất cứ việc gì, hệ thống phải đọc:
     - Điền các thông tin: `COMPANY_A`, `TICKER_A`, `TAGLINE_A`, `COMPANY_B`, `TICKER_B`, `TAGLINE_B`, và `YEAR` (ví dụ: `2026`).
     - Lưu file HTML đã điền vào `knowledge/4-content/2-drafts/[slug]-cover.html`.
   - **Bài đánh giá công ty (`reviewType: company`)**:
-    - Sử dụng template `knowledge/4-content/2-drafts/company-cover-template.html`.
+    - Sử dụng template `.antigravity/skills/seo-image/assets/templates/company-cover-template.html`.
     - Điền các thông tin công ty tương ứng.
     - Lưu file HTML đã điền vào `knowledge/4-content/2-drafts/[slug]-cover.html`.
   - **Bài kiến thức/blog thông thường**:
-    - Không cần sinh file cover HTML riêng. Script sẽ tự động sử dụng `article-cover-template.html`.
+    - Không cần sinh file cover HTML riêng. Script sẽ tự động sử dụng `.antigravity/skills/seo-image/assets/templates/article-cover-template.html`.
 - **Chụp ảnh bìa**:
   - Chạy lệnh:
     ```bash
@@ -116,10 +116,14 @@ Trước khi làm bất cứ việc gì, hệ thống phải đọc:
 ### ⚙️ Giai đoạn 3: Finalize & Learn
 **Agent phụ trách:** Main Agent + Content Feedback Loop
 
-**Bước 3.1 — File Management (BẮT BUỘC):**
+**Bước 3.1 — File Management & Automatic Cleanup (BẮT BUỘC):**
 - Lấy nội dung từ `knowledge/4-content/2-drafts/Draft-[slug].md`.
-- Thêm frontmatter Astro chuẩn (xem template dưới) và lưu vào `src/content/articles/[slug].md`. **BẮT BUỘC** phải điền trường `heroImage` trỏ đến ảnh bìa riêng của bài viết (tỷ lệ 5:3, đã tải và crop tại `public/images/articles/[slug]/hero.jpg` ở bước `/drafting`), không dùng chung ảnh mặc định của category.
-- Xóa file draft tạm: `knowledge/4-content/2-drafts/Draft-[slug].md`.
+- Thêm frontmatter Astro chuẩn (xem template dưới) và lưu vào `src/content/articles/[slug].md`. **BẮT BUỘC** phải điền trường `heroImage` trỏ đến ảnh bìa riêng của bài viết (`/images/articles/[slug]/[slug].jpg`), không dùng chung ảnh mặc định của category.
+- **TỰ ĐỘNG DỌN DẸP FILE TẠM**:
+  - Xóa file outline: `knowledge/4-content/1-outlines/[slug].md`.
+  - Xóa file draft tạm: `knowledge/4-content/2-drafts/Draft-[slug].md` (hoặc `Optimize-[slug].md`).
+  - Xóa file cover HTML tạm: `knowledge/4-content/2-drafts/[slug]-cover.html` (nếu có).
+  - Xóa file image prompts tạm: `knowledge/4-content/2-drafts/[slug]-image-prompts.md` (nếu có).
 - Cập nhật `knowledge/4-content/topic-clusters.md` → trạng thái `Finalized`.
 
 **Frontmatter Astro bắt buộc:**

@@ -7,7 +7,7 @@ publishDate: "2026-06-15"
 updatedDate: "2026-06-15"
 factCheckedDate: "2026-06-21"
 readingTime: "6 phút đọc"
-featured: false
+featured: true
 order: 1
 tags:
   - cách đầu tư chứng khoán phái sinh

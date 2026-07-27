@@ -4,7 +4,7 @@ description: "So sánh chi tiết TCBS và VNDIRECT năm 2026 về phí giao d�
 category: reviews
 heroImage: "/images/articles/tcbs-vs-vndirect/tcbs-vs-vndirect.jpg"
 publishDate: "2026-07-27"
-updatedDate: "2026-07-27"
+updatedDate: "2026-07-26"
 factCheckedDate: "2026-07-27"
 readingTime: "7 phút đọc"
 featured: false

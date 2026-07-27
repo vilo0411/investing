@@ -77,6 +77,23 @@ Toàn bộ quy trình thực hiện trên app iBoard hoặc website SSI, mất k
 
 * **Bước 5**. Ký hợp đồng điện tử để kích hoạt tài khoản.
 
+### Video hướng dẫn mở tài khoản SSI qua app iBoard
+
+Để trực quan hóa các thao tác trên app SSI iBoard cũng như quy trình kết nối định danh VNeID, bạn có thể xem video hướng dẫn từng bước:
+
+<div class="official-video-card">
+  <div class="video-badge">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+    VIDEO HƯỚNG DẪN TRỰC QUAN
+  </div>
+  <h4>Hướng dẫn mở tài khoản chứng khoán SSI iBoard eKYC & VNeID</h4>
+  <p>Xem toàn bộ quy trình xác thực sinh trắc học eKYC và đồng bộ tài khoản định danh VNeID mức 2 trên ứng dụng SSI iBoard.</p>
+  <a href="https://www.youtube.com/results?search_query=huong+dan+mo+tai+khoan+ssi+iboard+ekyc" target="_blank" rel="noopener noreferrer" class="video-play-btn">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+    Xem Video Hướng Dẫn Trực Tiếp Trên YouTube ↗
+  </a>
+</div>
+
 ### Nên xác thực bằng VNeID hay CCCD gắn chip?
 
 SSI cho bạn hai cách định danh, mỗi cách hợp với một nhóm người khác nhau. Bảng dưới đây giúp bạn chọn nhanh.

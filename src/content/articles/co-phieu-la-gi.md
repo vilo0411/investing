@@ -7,8 +7,8 @@ publishDate: "2026-06-09"
 updatedDate: "2026-06-21"
 factCheckedDate: "2026-06-21"
 readingTime: "7 phút đọc"
-featured: true
-order: 1
+featured: false
+order: 2
 tags:
   - cổ phiếu
   - chứng khoán cho người mới

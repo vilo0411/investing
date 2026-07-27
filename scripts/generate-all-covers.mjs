@@ -7,7 +7,7 @@ import matter from 'gray-matter';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.resolve(__dirname, '..');
 
-const generalTemplatePath = path.join(projectRoot, 'knowledge/4-content/2-drafts/article-cover-template.html');
+const generalTemplatePath = path.join(projectRoot, '.antigravity/skills/seo-image/assets/templates/article-cover-template.html');
 const generalTemplateHtml = fs.readFileSync(generalTemplatePath, 'utf-8');
 
 const articlesDir = path.join(projectRoot, 'src/content/articles');
@@ -55,7 +55,7 @@ async function generateAllCovers() {
   const browser = await chromium.launch();
   const page = await browser.newPage({
     viewport: { width: 1200, height: 630 },
-    deviceScaleFactor: 2
+    deviceScaleFactor: 1
   });
 
   const tempHtmlPath = path.join(draftsDir, 'temp-render.html');
@@ -108,7 +108,7 @@ async function generateAllCovers() {
     const imgPath = path.join(imgDir, imgName);
 
     console.log(`  - 📸 Chụp ảnh bìa -> ${imgPath}`);
-    await page.screenshot({ path: imgPath, type: 'jpeg', quality: 95 });
+    await page.screenshot({ path: imgPath, type: 'jpeg', quality: 85 });
 
     // Update markdown frontmatter
     const updatedContent = updateFrontmatterHeroImage(fileContent, slug);

@@ -8,13 +8,13 @@ import { categories, getCategoryPath, site, url } from "@/data/site";
 
 const articles = await getCollection("articles");
 
-// Per-category: first 3 latest articles (sorted by updatedDate descending)
+// Per-category: first 3 articles (curated order first, then updatedDate descending)
 const byCategory = categories
   .map((cat) => ({
     ...cat,
     articles: articles
       .filter((a) => a.data.category === cat.slug)
-      .sort((a, b) => b.data.updatedDate.getTime() - a.data.updatedDate.getTime())
+      .sort((a, b) => a.data.order - b.data.order || b.data.updatedDate.getTime() - a.data.updatedDate.getTime())
       .slice(0, 3),
   }))
   .filter((cat) => cat.articles.length > 0);

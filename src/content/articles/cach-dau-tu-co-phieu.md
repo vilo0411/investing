@@ -6,7 +6,7 @@ publishDate: "2026-06-14"
 updatedDate: "2026-06-14"
 factCheckedDate: "2026-06-21"
 readingTime: "5 phút đọc"
-featured: false
+featured: true
 order: 1
 tags:
   - cách đầu tư cổ phiếu

@@ -76,6 +76,24 @@ Quy trình định danh điện tử eKYC giúp loại bỏ hoàn toàn các th�
 Hệ thống máy chủ sẽ tự động phê duyệt hồ sơ và gửi thông tin số tài khoản của bạn qua email trong vài phút. Có tài khoản rồi, bước kế tiếp là học **[cách đầu tư cổ phiếu](/dau-tu/co-phieu/cach-dau-tu-co-phieu/)** một cách bài bản.
 
 
+### Video minh họa quy trình mở tài khoản chứng khoán eKYC
+
+Dưới đây là video hướng dẫn trực quan quy trình mở tài khoản chứng khoán online qua eKYC trên điện thoại thông minh:
+
+<div class="official-video-card">
+  <div class="video-badge">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+    VIDEO HƯỚNG DẪN TRỰC QUAN
+  </div>
+  <h4>Hướng dẫn quy trình 5 bước mở tài khoản chứng khoán online eKYC</h4>
+  <p>Xem video hướng dẫn minh họa toàn bộ các bước mở tài khoản chứng khoán qua định danh eKYC trên smartphone cho người mới.</p>
+  <a href="https://www.youtube.com/results?search_query=huong+dan+mo+tai+khoan+chung+khoan+online+ekyc" target="_blank" rel="noopener noreferrer" class="video-play-btn">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+    Xem Video Hướng Dẫn Trực Tiếp Trên YouTube ↗
+  </a>
+</div>
+
+
 ![Xác thực định danh eKYC khi mở tài khoản chứng khoán](./images/cach-mo-tai-khoan-chung-khoan/featured-01.jpg)
 *Ảnh: Dan Nelson / Unsplash*
 

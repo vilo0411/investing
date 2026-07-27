@@ -7,7 +7,7 @@ publishDate: "2026-06-30"
 updatedDate: "2026-06-30"
 readingTime: "6 phút đọc"
 featured: false
-order: 1
+order: 2
 tags:
   - phái sinh là gì
   - phai sinh la gi

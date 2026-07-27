@@ -88,8 +88,8 @@ Mỗi bài viết mới PHẢI có ảnh hero/ảnh bìa RIÊNG, KHÔNG dùng �
 
 - **Nguồn ảnh**: Được tự động tạo từ HTML template thông qua script Playwright:
   - Nếu là bài so sánh (`reviewType: comparison`), điền template `.antigravity/skills/seo-image/assets/templates/comparison-cover.html` và lưu vào `knowledge/4-content/2-drafts/[slug]-cover.html`.
-  - Nếu là bài đánh giá CTCK (`reviewType: company`), điền template `knowledge/4-content/2-drafts/company-cover-template.html` và lưu vào `knowledge/4-content/2-drafts/[slug]-cover.html`.
-  - Nếu là bài blog/kiến thức thông thường, script sẽ tự động dùng `article-cover-template.html`.
+  - Nếu là bài đánh giá CTCK (`reviewType: company`), điền template `.antigravity/skills/seo-image/assets/templates/company-cover-template.html` và lưu vào `knowledge/4-content/2-drafts/[slug]-cover.html`.
+  - Nếu là bài blog/kiến thức thông thường, script sẽ tự động dùng `.antigravity/skills/seo-image/assets/templates/article-cover-template.html`.
 - **Thực thi tạo ảnh**: Chạy lệnh `node scripts/generate-all-covers.mjs [slug]` để render và chụp ảnh, lưu kết quả tại `public/images/articles/[slug]/[slug].jpg`.
 - **Frontmatter**: Set `heroImage: "/images/articles/[slug]/[slug].jpg"` trong frontmatter — BẮT BUỘC dùng đúng tên file `[slug].jpg`. Dọn dẹp bất kỳ file `hero.jpg` cũ nào trong thư mục ảnh của bài viết.
 
@@ -129,10 +129,14 @@ Sau frontmatter, body bài viết theo thứ tự:
 
 **Không có sapo trong frontmatter** — Sapo là đoạn văn đầu tiên ngay sau dấu `---` đóng của frontmatter.
 
-### 2.3 — File Management (BẮT BUỘC)
+### 2.3 — File Management & Automatic Cleanup (BẮT BUỘC)
 
 1. Viết file final: `src/content/articles/[slug].md` với frontmatter đầy đủ
-2. Xóa draft tạm: `knowledge/4-content/2-drafts/Draft-[slug].md`
+2. **Dọn dẹp file tạm (TỰ ĐỘNG)**:
+   - Xóa file outline: `knowledge/4-content/1-outlines/[slug].md`
+   - Xóa file draft tạm: `knowledge/4-content/2-drafts/Draft-[slug].md` (hoặc `Optimize-[slug].md`)
+   - Xóa file cover HTML tạm: `knowledge/4-content/2-drafts/[slug]-cover.html` (nếu có)
+   - Xóa file image prompts: `knowledge/4-content/2-drafts/[slug]-image-prompts.md` (nếu có)
 3. Thêm vào anchor-index: `knowledge/3-pipeline/anchor-index.md` — bổ sung dòng mới cho bài vừa publish
 4. Cập nhật status: `knowledge/4-content/topic-clusters.md` → `Finalized`
 
