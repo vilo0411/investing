@@ -243,6 +243,7 @@ const breadcrumbSchema = {
       )}
 
       <slot />
+      <AISummaryBar title={title} url={articleUrl} />
       {entry.data.faq?.length ? (
         <section class="faq-section">
           <h2>Câu hỏi thường gặp</h2>
@@ -266,11 +267,25 @@ const breadcrumbSchema = {
         </p>
       </section>
       <AuthorBox />
-      <AISummaryBar title={title} url={articleUrl} />
       <ShareBar title={title} url={articleUrl} />
       <RelatedArticles category={entry.data.category} currentSlug={entry.slug} />
     </article>
   </div>
+
+  {/* Move the AI summary bar to the middle of the body: readers who bounce at
+      the end no longer need a summary, and at the top it cannibalises the read.
+      Inline (non-deferred) so the move happens before first paint. */}
+  <script is:inline>
+    (function () {
+      var article = document.querySelector(".article-content");
+      var bar = article && article.querySelector(".ai-bar");
+      if (!article || !bar) return;
+      // Only markdown H2s are direct children; FAQ/editorial H2s sit inside <section>.
+      var headings = article.querySelectorAll(":scope > h2");
+      if (headings.length < 3) return;
+      article.insertBefore(bar, headings[Math.floor(headings.length / 2)]);
+    })();
+  </script>
 </BaseLayout>
 
 <style>

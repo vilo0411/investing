@@ -44,7 +44,7 @@ Nhiều người mới bắt đầu thường lo lắng rằng họ cần phải
 Các quy định giao dịch mới tại Việt Nam hiện nay cho phép mua bán cổ phiếu theo lô lẻ từ 1 đến 99 cổ phiếu trên các sàn HOSE và HNX. Điều này có nghĩa là nếu một cổ phiếu lớn có thị giá 30,000 đồng, bạn chỉ cần bỏ ra đúng 30,000 đồng là đã sở hữu được một **[cổ phiếu](/dau-tu/co-phieu/co-phieu-la-gi/)** của doanh nghiệp đó.
 
 
-Hầu hết các công ty chứng khoán hiện nay cũng không áp dụng quy định về số vốn tối thiểu khi mở tài khoản trực tuyến. Bạn có thể nạp vào tài khoản chỉ từ vài chục nghìn đồng để bắt đầu trải nghiệm bảng điện thực tế. Hãy tham khảo thêm cẩm nang [đầu tư chứng khoán cần bao nhiêu tiền](/dau-tu/co-phieu/dau-tu-chung-khoan-can-bao-nhieu-tien/) để hiểu rõ hơn về các chi phí ban đầu khi giao dịch.
+Hầu hết các công ty chứng khoán hiện nay cũng không áp dụng quy định về số vốn tối thiểu khi mở tài khoản trực tuyến. Bạn có thể nạp vào tài khoản chỉ từ vài chục nghìn đồng để bắt đầu trải nghiệm bảng điện thực tế. Hãy tham khảo thêm cẩm nang **[đầu tư cổ phiếu cần bao nhiêu tiền](/dau-tu/co-phieu/dau-tu-co-phieu-can-bao-nhieu-tien/)** để hiểu rõ hơn về các chi phí ban đầu khi giao dịch.
 
 
 ## Lợi ích của việc bắt đầu bằng số vốn nhỏ

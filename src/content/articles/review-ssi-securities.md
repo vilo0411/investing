@@ -91,4 +91,4 @@ Quy trình đăng ký tài khoản online tại SSI diễn ra nhanh chóng thôn
 
 SSI cực kỳ phù hợp với nhà đầu tư có quy mô vốn lớn và ưu tiên tính an toàn. Những ai cần báo cáo phân tích chuyên sâu và môi giới hỗ trợ cũng nên chọn SSI.
 
-Nếu bạn chỉ có số vốn nhỏ và muốn tối ưu chi phí lướt sóng, hãy cân nhắc kỹ. Bạn nên tham khảo bài so sánh [so sánh TCBS và SSI](/reviews/so-sanh-tcbs-vs-ssi/) để có lựa chọn thích hợp.
+Nếu bạn chỉ có số vốn nhỏ và muốn tối ưu chi phí lướt sóng, hãy cân nhắc kỹ. Bạn nên tham khảo bài so sánh [so sánh TCBS và SSI](/reviews/so-sanh-tcbs-vs-ssi/) hoặc bài **[so sánh VPS và SSI](/reviews/vps-vs-ssi/)** để có lựa chọn thích hợp.

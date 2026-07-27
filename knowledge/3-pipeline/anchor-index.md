@@ -37,6 +37,7 @@ Index toàn bộ bài đã publish tại `src/content/articles/`. Dùng cho inte
 | `dca-la-gi` | DCA là gì? Cách áp dụng chiến lược trung bình giá hiệu quả cho F0 | `/dau-tu/co-phieu/dca-la-gi/` | trung bình giá |
 | `chien-luoc-dau-tu-chung-khoan` | Chiến lược đầu tư chứng khoán hiệu quả và bền vững cho F0 | `/dau-tu/co-phieu/chien-luoc-dau-tu-chung-khoan/` | chiến lược đầu tư chứng khoán |
 | `rui-ro-dau-tu-chung-khoan` | Rủi ro đầu tư chứng khoán: Nhận diện và cách quản trị cho F0 | `/dau-tu/co-phieu/rui-ro-dau-tu-chung-khoan/` | rủi ro đầu tư chứng khoán |
+| `dau-tu-co-phieu-can-bao-nhieu-tien` | Đầu tư cổ phiếu cần bao nhiêu tiền? Con số tối thiểu cho F0 | `/dau-tu/co-phieu/dau-tu-co-phieu-can-bao-nhieu-tien/` | đầu tư cổ phiếu cần bao nhiêu tiền |
 
 ## Nhóm Đầu tư — Quỹ ETF (`/dau-tu/etf/`)
 
@@ -101,6 +102,10 @@ Index toàn bộ bài đã publish tại `src/content/articles/`. Dùng cho inte
 | `review-cong-ty-chung-khoan-cho-nguoi-moi` | Công ty chứng khoán cho người mới | `/reviews/review-cong-ty-chung-khoan-cho-nguoi-moi/` | chọn công ty chứng khoán cho người mới |
 | `cach-mo-tai-khoan-chung-khoan-vps` | Cách mở tài khoản chứng khoán VPS | `/reviews/cach-mo-tai-khoan-chung-khoan-vps/` | cách mở tài khoản chứng khoán VPS |
 | `cach-mo-tai-khoan-chung-khoan-ssi` | Cách mở tài khoản chứng khoán SSI | `/reviews/cach-mo-tai-khoan-chung-khoan-ssi/` | cách mở tài khoản chứng khoán SSI |
+| `tcbs-vs-vps` | So sánh TCBS và VPS | `/reviews/tcbs-vs-vps/` | so sánh TCBS và VPS |
+| `vps-vs-ssi` | So sánh VPS và SSI | `/reviews/vps-vs-ssi/` | so sánh VPS và SSI |
+| `tcbs-vs-vndirect` | So sánh TCBS và VNDIRECT | `/reviews/tcbs-vs-vndirect/` | so sánh TCBS và VNDIRECT |
+| `dnse-vs-tcbs` | So sánh DNSE và TCBS | `/reviews/dnse-vs-tcbs/` | so sánh DNSE và TCBS |
 
 ## Nhóm Nhà đầu tư (`/nha-dau-tu/`)
 

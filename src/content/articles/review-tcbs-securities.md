@@ -87,4 +87,4 @@ Bạn có thể đăng ký tài khoản trực tuyến hoàn toàn mà không c�
 
 TCBS là lựa chọn tuyệt vời cho các nhà đầu tư đã có kinh nghiệm và thích tự chủ. Nếu bạn tự tin phân tích và muốn tối ưu chi phí giao dịch, đây là điểm đến lý tưởng.
 
-Ngược lại, nếu bạn là người mới cần có người kèm cặp hướng dẫn mua bán, hãy cân nhắc. Bạn có thể tham khảo thêm [cách mở tài khoản chứng khoán](/dau-tu/co-phieu/cach-mo-tai-khoan-chung-khoan/) để so sánh thêm.
+Ngược lại, nếu bạn là người mới cần có người kèm cặp hướng dẫn mua bán, hãy cân nhắc. Bạn có thể tham khảo thêm [cách mở tài khoản chứng khoán](/dau-tu/co-phieu/cach-mo-tai-khoan-chung-khoan/) để so sánh thêm. Bạn cũng có thể xem các bài đối chiếu chi tiết như **[so sánh TCBS và VPS](/reviews/tcbs-vs-vps/)**, **[so sánh TCBS và VNDIRECT](/reviews/tcbs-vs-vndirect/)**, hoặc **[so sánh DNSE và TCBS](/reviews/dnse-vs-tcbs/)** để chọn được sàn giao dịch ưng ý nhất.

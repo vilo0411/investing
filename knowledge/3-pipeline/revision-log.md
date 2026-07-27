@@ -19,7 +19,12 @@ Tài liệu ghi nhận toàn bộ lịch sử chỉnh sửa bài viết dựa tr
 | 2026-07-07 | `cach-mua-trai-phieu` | Người dùng duyệt Draft, không yêu cầu sửa đổi | Di chuyển bài viết sang Final, cập nhật topic-clusters và anchor-index | **Hoàn thành** |
 | 2026-07-07 | `quyen-chon-la-gi` | Người dùng duyệt Draft, không yêu cầu sửa đổi | Di chuyển bài viết sang Final, cập nhật topic-clusters và anchor-index | **Hoàn thành** |
 | 2026-07-18 | `cach-mo-tai-khoan-chung-khoan-vps` | Bài brand → đặt vào category `reviews`; duyệt Outline & Draft | Finalize vào `/reviews/`, Link Wheel 2 chiều với review-vps & bài generic, cập nhật cluster + anchor-index | **Hoàn thành** |
-| 2026-07-19 | `cach-mo-tai-khoan-chung-khoan-ssi` | Bài brand how-to SSI (category `reviews`); duyệt Outline & Draft | Finalize vào `/reviews/`, Link Wheel 2 chiều với review-ssi & bài generic, cập nhật cluster + anchor-index | **Hoàn thành** |
+| 2026-07-19 | `review-ssi-securities` | Bài brand how-to SSI (category `reviews`); duyệt Outline & Draft | Finalize vào `/reviews/`, Link Wheel 2 chiều với review-ssi & bài generic, cập nhật cluster + anchor-index | **Hoàn thành** |
+| 2026-07-27 | `dau-tu-co-phieu-can-bao-nhieu-tien` | Người dùng duyệt Outline & Draft, không yêu cầu sửa đổi | Finalize vào `src/content/articles/`, Link Wheel 2 chiều với dau-tu-chung-khoan-von-nho & dau-tu-tich-san-co-phieu-la-gi, cập nhật cluster + anchor-index | **Hoàn thành** |
+| 2026-07-27 | `tcbs-vs-vps` | Người dùng duyệt Outline & Draft, không yêu cầu sửa đổi | Di chuyển bài viết sang Final, cập nhật topic-clusters và anchor-index, link wheel | **Hoàn thành** |
+| 2026-07-27 | `vps-vs-ssi` | Người dùng duyệt Outline & Draft, không yêu cầu sửa đổi | Di chuyển bài viết sang Final, cập nhật topic-clusters và anchor-index, link wheel | **Hoàn thành** |
+| 2026-07-27 | `tcbs-vs-vndirect` | Người dùng duyệt Outline & Draft, không yêu cầu sửa đổi | Di chuyển bài viết sang Final, cập nhật topic-clusters và anchor-index, link wheel | **Hoàn thành** |
+| 2026-07-27 | `dnse-vs-tcbs` | Người dùng duyệt Outline & Draft, không yêu cầu sửa đổi | Di chuyển bài viết sang Final, cập nhật topic-clusters và anchor-index, link wheel | **Hoàn thành** |
 
 ---
 

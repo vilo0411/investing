@@ -38,12 +38,16 @@ Tương đương với `Phase 1` và `Phase 2` của lệnh `/write`.
 - Lưu tại: `knowledge/4-content/1-outlines/[slug].md`.
 - Cập nhật `topic-clusters.md` → trạng thái `Outlining`.
 
-### Bước 4: Image Manifest (Unsplash)
-- Dựa trên cấu trúc H2 vừa tạo, chọn 1–3 vị trí chèn ảnh photo/editorial (đầu bài + 1–2 section quan trọng).
-- Với mỗi vị trí, điền vào **Section 5 (Image Manifest)** của outline:
-  - Search query tiếng Anh (ngắn, cụ thể — concept ảnh cho Unsplash)
-  - Alt text tiếng Việt (mô tả ảnh, tự nhiên, chứa từ khóa liên quan nếu hợp lý)
-- Ảnh sẽ được fetch & download thật ở bước `/drafting` — ở đây chỉ lập kế hoạch.
+### Bước 4: Image Manifest & Cover Image Planning
+- **Ảnh bìa (Hero/Cover Image)**:
+  - Nếu bài viết là bài so sánh (`reviewType: comparison`) hoặc đánh giá sàn (`reviewType: company`), ảnh bìa sẽ được dựng từ template HTML (không dùng Unsplash). Đánh dấu ở mục ảnh bìa là "HTML Cover Template".
+  - Nếu là bài blog/kiến thức thông thường, ảnh bìa sẽ tự động render bằng template mặc định (`article-cover-template.html`), không cần tìm ảnh Unsplash.
+- **Ảnh inline (Thân bài)**:
+  - Dựa trên cấu trúc H2 vừa tạo, chọn 1–3 vị trí chèn ảnh photo/editorial trong thân bài.
+  - Với mỗi vị trí inline, điền vào **Section 5 (Image Manifest)** của outline:
+    - Search query tiếng Anh (ngắn, cụ thể — concept ảnh cho Unsplash).
+    - Alt text tiếng Việt (mô tả ảnh, tự nhiên, chứa từ khóa liên quan nếu hợp lý).
+  - Ảnh inline sẽ được tìm và tải thực tế ở bước `/drafting`.
 
 ### Bước 4b: [CHỈ CHO REVIEW] Official Resources Research
 > Áp dụng khi `layoutType: review` và `reviewType: company`.

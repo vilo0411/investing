@@ -86,10 +86,12 @@ Giá trị `category` phải là một trong các slug sau (xem `src/data/site.t
 
 Mỗi bài viết mới PHẢI có ảnh hero/ảnh bìa RIÊNG, KHÔNG dùng ảnh mặc định chung của category.
 
-- Nguồn ảnh: ảnh `featured` đã tải qua Unsplash ở Bước 1.5 của drafting (`src/content/articles/images/[slug]/featured-[slug].jpg`).
-- **Tỷ lệ chuẩn (thống nhất toàn site): 5:3 (≈1000×600)** — khi search Unsplash cho ảnh bìa/ảnh inline, ưu tiên chọn ảnh có tỷ lệ ngang gần 5:3 để hiển thị đồng nhất trên card trang chủ/danh mục (dùng `object-fit: cover` nên lệch nhẹ vẫn ok, nhưng tránh ảnh dọc hoặc vuông).
-- Copy ảnh đó vào `public/images/articles/[slug]/hero.jpg` (đây là bước BẮT BUỘC trong Bước 1.5 — xem `drafting.md`).
-- Set `heroImage: "/images/articles/[slug]/hero.jpg"` trong frontmatter.
+- **Nguồn ảnh**: Được tự động tạo từ HTML template thông qua script Playwright:
+  - Nếu là bài so sánh (`reviewType: comparison`), điền template `.antigravity/skills/seo-image/assets/templates/comparison-cover.html` và lưu vào `knowledge/4-content/2-drafts/[slug]-cover.html`.
+  - Nếu là bài đánh giá CTCK (`reviewType: company`), điền template `knowledge/4-content/2-drafts/company-cover-template.html` và lưu vào `knowledge/4-content/2-drafts/[slug]-cover.html`.
+  - Nếu là bài blog/kiến thức thông thường, script sẽ tự động dùng `article-cover-template.html`.
+- **Thực thi tạo ảnh**: Chạy lệnh `node scripts/generate-all-covers.mjs [slug]` để render và chụp ảnh, lưu kết quả tại `public/images/articles/[slug]/[slug].jpg`.
+- **Frontmatter**: Set `heroImage: "/images/articles/[slug]/[slug].jpg"` trong frontmatter — BẮT BUỘC dùng đúng tên file `[slug].jpg`. Dọn dẹp bất kỳ file `hero.jpg` cũ nào trong thư mục ảnh của bài viết.
 
 > Fallback: `/images/hero-{category}.png` (trong `categoryDefaultImages` của `ArticleLayout.astro`) chỉ dùng cho các bài CŨ chưa có ảnh riêng, KHÔNG dùng cho bài mới.
 

@@ -89,5 +89,5 @@ Mở tài khoản giao dịch tại DNSE hoàn toàn được số hóa và hoà
 
 DNSE là sự lựa chọn lý tưởng cho các nhà đầu tư trẻ thích công nghệ và muốn quản trị margin thông minh. Chính sách miễn phí giao dịch giúp bạn tối ưu chi phí tối đa.
 
-Nếu bạn thích nhận lời khuyên đầu tư trực tiếp từ môi giới, hãy cân nhắc thêm các bên khác. Bạn có thể tham khảo [cách mở tài khoản chứng khoán](/dau-tu/co-phieu/cach-mo-tai-khoan-chung-khoan/) để tìm hiểu thêm.
+Nếu bạn thích nhận lời khuyên đầu tư trực tiếp từ môi giới, hãy cân nhắc thêm các bên khác. Bạn có thể tham khảo [cách mở tài khoản chứng khoán](/dau-tu/co-phieu/cach-mo-tai-khoan-chung-khoan/) để tìm hiểu thêm. Ngoài ra, hãy đọc bài **[so sánh DNSE và TCBS](/reviews/dnse-vs-tcbs/)** để xem phân tích chi tiết giữa hai sàn zero-fee này.
 ---

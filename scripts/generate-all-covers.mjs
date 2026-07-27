@@ -37,8 +37,19 @@ function updateFrontmatterHeroImage(content, slug) {
 async function generateAllCovers() {
   console.log('=== Khởi động tiến trình tạo ảnh bìa tối ưu SEO ===');
   
-  const files = fs.readdirSync(articlesDir).filter(f => f.endsWith('.md'));
-  console.log(`Tìm thấy ${files.length} bài viết cần xử lý.`);
+  const targetSlug = process.argv[2];
+  let files = fs.readdirSync(articlesDir).filter(f => f.endsWith('.md'));
+  
+  if (targetSlug) {
+    files = files.filter(f => f.replace('.md', '') === targetSlug);
+    if (files.length === 0) {
+      console.log(`Không tìm thấy bài viết nào có slug: ${targetSlug}`);
+      return;
+    }
+    console.log(`Chỉ tạo ảnh bìa cho bài viết: [${targetSlug}]`);
+  } else {
+    console.log(`Tìm thấy ${files.length} bài viết cần xử lý.`);
+  }
 
   console.log('Đang khởi động trình duyệt Playwright...');
   const browser = await chromium.launch();

@@ -66,4 +66,4 @@ Tuy nhiên, VPS cũng nhận một số phản ánh về tình trạng nghẽn l
 
 VPS phù hợp nhất với **nhà đầu tư F0** muốn có người dẫn dắt trong giai đoạn đầu, đặc biệt nếu bạn cảm thấy cần được tư vấn trực tiếp khi gặp tình huống khó xử lý qua ứng dụng.
 
-Nếu bạn đã có kinh nghiệm và tự chủ trong quyết định, hãy cân nhắc [TCBS](/reviews/so-sanh-tcbs-vs-ssi/) (phí 0%) thay vì VPS để tối ưu chi phí dài hạn. Quyết định rồi thì xem **[cách mở tài khoản chứng khoán VPS](/reviews/cach-mo-tai-khoan-chung-khoan-vps/)** để mở online nhanh bằng eKYC.
+Nếu bạn đã có kinh nghiệm và tự chủ trong quyết định, hãy cân nhắc [TCBS](/reviews/so-sanh-tcbs-vs-ssi/) (phí 0%) thay vì VPS để tối ưu chi phí dài hạn. Bạn cũng nên đọc thêm bài **[so sánh TCBS và VPS](/reviews/tcbs-vs-vps/)** hoặc **[so sánh VPS và SSI](/reviews/vps-vs-ssi/)** để so sánh chi tiết các quyền lợi. Quyết định rồi thì xem **[cách mở tài khoản chứng khoán VPS](/reviews/cach-mo-tai-khoan-chung-khoan-vps/)** để mở online nhanh bằng eKYC.

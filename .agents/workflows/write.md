@@ -59,13 +59,34 @@ Trước khi làm bất cứ việc gì, hệ thống phải đọc:
 - **Bắt buộc** chèn tên thương hiệu "**[Value Investing](/)**" (có link về trang chủ `/`) một cách tự nhiên trong Sapo (đoạn mở đầu, ngay dưới H1).
 - Lưu draft tại: `knowledge/4-content/2-drafts/Draft-[slug].md`.
 
-**Bước 2.1.5 — Chèn ảnh Unsplash (Image Manifest & Hero Image):**
-- **Bắt buộc** có ít nhất 1 hình ảnh inline trong thân bài và 1 ảnh bìa heroImage riêng biệt được crop tỉ lệ 5:3. Đọc **Section 5 (Image Manifest)** trong outline.
-- Với mỗi dòng trong manifest:
+**Bước 2.1.5 — Tạo Ảnh Bìa HTML và Chèn Ảnh Inline (Unsplash):**
+- **Bắt buộc** có ít nhất 1 hình ảnh inline trong thân bài và 1 ảnh bìa riêng biệt được tạo từ HTML template.
+
+**1. Tạo Ảnh Bìa (Hero Image - BẮT BUỘC):**
+- Kiểm tra loại bài viết (`reviewType` trong frontmatter hoặc outline):
+  - **Bài so sánh (`reviewType: comparison`)**:
+    - Sử dụng template `.antigravity/skills/seo-image/assets/templates/comparison-cover.html`.
+    - Điền các thông tin: `COMPANY_A`, `TICKER_A`, `TAGLINE_A`, `COMPANY_B`, `TICKER_B`, `TAGLINE_B`, và `YEAR` (ví dụ: `2026`).
+    - Lưu file HTML đã điền vào `knowledge/4-content/2-drafts/[slug]-cover.html`.
+  - **Bài đánh giá công ty (`reviewType: company`)**:
+    - Sử dụng template `knowledge/4-content/2-drafts/company-cover-template.html`.
+    - Điền các thông tin công ty tương ứng.
+    - Lưu file HTML đã điền vào `knowledge/4-content/2-drafts/[slug]-cover.html`.
+  - **Bài kiến thức/blog thông thường**:
+    - Không cần sinh file cover HTML riêng. Script sẽ tự động sử dụng `article-cover-template.html`.
+- **Chụp ảnh bìa**:
+  - Chạy lệnh:
+    ```bash
+    node scripts/generate-all-covers.mjs [slug]
+    ```
+    Lệnh này sẽ tự khởi động Playwright, chụp ảnh render của HTML cover và lưu vào `public/images/articles/[slug]/[slug].jpg`. Đồng thời nó sẽ tự động cập nhật frontmatter `heroImage: "/images/articles/[slug]/[slug].jpg"` và dọn dẹp file `hero.jpg` cũ nếu có.
+
+**2. Chèn Ảnh Inline (Thân bài - Unsplash):**
+- Xem danh sách ảnh inline trong Section 5 (Image Manifest) của outline. Với mỗi ảnh inline:
   1. Chạy `node .antigravity/skills/seo-image/scripts/unsplash.mjs search "<search query>"` → trả về 3 ảnh (thumb, mô tả, tác giả).
   2. **Chọn ảnh:**
      - Pipeline_Mode `Auto` hoặc cờ `--auto`: tự động chọn ảnh đầu tiên (top-1), không hỏi người dùng.
-     - Mặc định (Guided/Express): hiển thị 3 lựa chọn cho người dùng (thumbnail URL + mô tả + tác giả) để chọn 1.
+     - Mặc định (Guided/Express): hiển thị 3 lựa chọn cho người dùng để chọn 1.
   3. Chạy `node .antigravity/skills/seo-image/scripts/unsplash.mjs download <photoId> <slug> <filename>` với ảnh đã chọn — lưu vào `src/content/articles/images/[slug]/[filename].jpg`.
   4. Chèn vào draft tại đúng vị trí trong manifest:
      ```markdown
@@ -73,15 +94,7 @@ Trước khi làm bất cứ việc gì, hệ thống phải đọc:
      *Ảnh: <photographer> / Unsplash*
      ```
      Không gắn link — chỉ ghi tên nguồn.
-- Nếu thiếu `UNSPLASH_ACCESS_KEY` (trong `.env`): báo người dùng và bỏ qua bước này, tiếp tục draft không ảnh.
-
-**Hero Image (BẮT BUỘC):**
-- Dùng ảnh `featured-01` đã chọn ở trên (cùng `photoId`), chạy thêm:
-  ```bash
-  node .antigravity/skills/seo-image/scripts/unsplash.mjs hero <photoId> <slug>
-  ```
-  Lệnh này tự crop ảnh về tỷ lệ chuẩn 5:3 (1000×600, entropy crop) và lưu vào `public/images/articles/[slug]/hero.jpg`.
-- **Lưu ý chọn ảnh**: nếu ảnh `featured-01` có chữ/text lớn trong khung hình (dễ bị cắt mất khi crop về thumbnail nhỏ trên card), nên search thêm 1 query khác không có chữ (ví dụ "finance growth chart") và dùng ảnh đó cho `hero`, thay vì ảnh featured trong bài.
+- Nếu thiếu `UNSPLASH_ACCESS_KEY` (trong `.env`): báo người dùng và bỏ qua bước tải ảnh inline này, tiếp tục draft không ảnh.
 
 **Bước 2.2 — Internal Linking:**
 - Kích hoạt skill `.antigravity/skills/internal-linking/SKILL.md` → Mode: Contextual Insertion.

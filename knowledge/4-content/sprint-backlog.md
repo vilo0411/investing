@@ -44,7 +44,7 @@
 | # | Spoke Keyword | Slug | Status | Ghi chú |
 |---|---|---|---|---|
 | 1.1 | Cách chọn cổ phiếu tốt | `cach-chon-co-phieu-tot` | `Finalized` | Sub-pillar |
-| 1.2 | Đầu tư cổ phiếu cần bao nhiêu tiền | `dau-tu-co-phieu-can-bao-nhieu-tien` | `Planned` | Rào cản tâm lý F0 |
+| 1.2 | Đầu tư cổ phiếu cần bao nhiêu tiền | `dau-tu-co-phieu-can-bao-nhieu-tien` | `Finalized` | Rào cản tâm lý F0 |
 | 1.3 | Khi nào nên bán cổ phiếu | `khi-nao-nen-ban-co-phieu` | `Finalized` | Gap lớn trên market |
 | 1.4 | Đầu tư chứng khoán dài hạn | `dau-tu-chung-khoan-dai-han` | `Finalized` | Core value investing |
 | 1.5 | Đầu tư tích sản cổ phiếu là gì | `dau-tu-tich-san-co-phieu-la-gi` | `Finalized` | DCA concept |

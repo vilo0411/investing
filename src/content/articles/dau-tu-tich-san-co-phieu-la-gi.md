@@ -29,7 +29,7 @@ Nhiều người mới tham gia thị trường thường mua cổ phiếu theo 
 
 ## Đầu tư tích sản cổ phiếu là gì?
 
-Tích sản cổ phiếu là phương pháp đầu tư dài hạn mà bạn sẽ mua đều đặn một lượng cổ phiếu định kỳ. Số vốn này có thể trích từ tiền lương hàng tháng hoặc lợi nhuận kinh doanh rảnh rỗi của bạn. Phương pháp này đặc biệt phù hợp với những người bận rộn hoặc F0 chưa có nhiều kinh nghiệm.
+Tích sản cổ phiếu là phương pháp đầu tư dài hạn mà bạn sẽ mua đều đặn một lượng cổ phiếu định kỳ. Số vốn này có thể trích từ tiền lương hàng tháng hoặc lợi nhuận kinh doanh rảnh rỗi của bạn. Phương pháp này đặc biệt phù hợp với những người bận rộn hoặc F0 chưa có nhiều kinh nghiệm. Bạn có thể tìm hiểu thêm về **[đầu tư cổ phiếu cần bao nhiêu tiền](/dau-tu/co-phieu/dau-tu-co-phieu-can-bao-nhieu-tien/)** để lên kế hoạch phân bổ vốn hàng tháng hợp lý.
 
 Đoạn văn dưới đây mô tả bản chất của phương pháp này cho người mới bắt đầu dễ dàng hình dung trong thực tế.
 

@@ -92,5 +92,5 @@ Quy trình đăng ký tài khoản trực tuyến hoàn toàn qua công nghệ e
 
 VNDIRECT vẫn là lựa chọn tốt nếu bạn chuộng giao diện trực quan và muốn dùng biểu đồ kỹ thuật mượt mà. Tệp tài liệu học tập phong phú của họ rất đáng để trải nghiệm.
 
-Nếu bạn có tâm lý lo ngại về bảo mật hoặc muốn tối ưu chi phí, hãy cân nhắc thêm. Đăng ký tài khoản phụ tại đây là giải pháp được nhiều người lựa chọn.
+Nếu bạn có tâm lý lo ngại về bảo mật hoặc muốn tối ưu chi phí, hãy cân nhắc thêm. Bạn có thể tham khảo thêm bài **[so sánh TCBS và VNDIRECT](/reviews/tcbs-vs-vndirect/)** để so sánh chi tiết giữa hai bên. Đăng ký tài khoản phụ tại đây là giải pháp được nhiều người lựa chọn.
 ---

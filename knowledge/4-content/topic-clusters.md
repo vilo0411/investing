@@ -79,6 +79,7 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 | Cách đầu tư cổ phiếu | `cach-dau-tu-co-phieu` | `Finalized` | Sprint Wave 2 |
 | Cách chọn cổ phiếu tốt | `cach-chon-co-phieu-tot` | `Finalized` | Sprint Wave 2 |
 | Đầu tư chứng khoán với số vốn nhỏ | `dau-tu-chung-khoan-von-nho` | `Finalized` | Sprint Wave 2 |
+| Đầu tư cổ phiếu cần bao nhiêu tiền | `dau-tu-co-phieu-can-bao-nhieu-tien` | `Finalized` | |
 | Khi nào nên bán cổ phiếu | `khi-nao-nen-ban-co-phieu` | `Finalized` | Sprint Wave 2 |
 | Đầu tư chứng khoán dài hạn | `dau-tu-chung-khoan-dai-han` | `Finalized` | Sprint Wave 3 |
 | Đầu tư tích sản cổ phiếu là gì | `dau-tu-tich-san-co-phieu-la-gi` | `Finalized` | Sprint Wave 3 |
@@ -181,6 +182,7 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 | ETF là gì | `etf-la-gi` | `Finalized` | ✅ Đã publish |
 | ETF VN30 là gì | `etf-vn30-la-gi` | `Finalized` | ✅ Đã publish |
 | ETF Diamond là gì | `etf-diamond-la-gi` | `Planned` | |
+| ETF phù hợp cho người mới | `etf-phu-hop-nguoi-moi` | `Planned` | |
 | Nên đầu tư quỹ ETF nào | `nen-dau-tu-quy-etf-nao` | `Finalized` | |
 | Phân biệt quỹ ETF và quỹ tương hỗ | `phan-biet-quy-etf-va-quy-tuong-ho` | `Planned` | |
 | Quy trình hoán đổi danh mục ETF | `quy-trinh-hoan-doi-danh-muc-etf` | `Planned` | |
@@ -470,11 +472,11 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 
 | Keyword (Spoke) | Slug | Status | Ưu tiên |
 |---|---|---|---|
-| So sánh TCBS và VPS | `tcbs-vs-vps` | `Planned` | ⭐⭐⭐ |
-| So sánh VPS và SSI | `vps-vs-ssi` | `Planned` | ⭐⭐⭐ |
-| So sánh TCBS và VNDIRECT | `tcbs-vs-vndirect` | `Planned` | ⭐⭐ |
-| So sánh SSI và TCBS | `ssi-vs-tcbs` | `Planned` | ⭐⭐ |
-| So sánh DNSE và TCBS | `dnse-vs-tcbs` | `Planned` | ⭐⭐ |
+| So sánh TCBS và VPS | `tcbs-vs-vps` | `Finalized` | ⭐⭐⭐ |
+| So sánh VPS và SSI | `vps-vs-ssi` | `Finalized` | ⭐⭐⭐ |
+| So sánh TCBS và VNDIRECT | `tcbs-vs-vndirect` | `Finalized` | ⭐⭐ |
+| So sánh SSI và TCBS | `ssi-vs-tcbs` | `Finalized` | ⭐⭐ |
+| So sánh DNSE và TCBS | `dnse-vs-tcbs` | `Finalized` | ⭐⭐ |
 
 ---
 
