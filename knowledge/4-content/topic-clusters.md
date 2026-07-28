@@ -46,12 +46,12 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 |---|---|---|---|
 | Cổ tức là gì | `co-tuc-la-gi` | `Finalized` | ✅ Đã publish |
 | Cổ phiếu Blue Chip là gì | `blue-chip-la-gi` | `Finalized` | ✅ Đã publish |
-| Cổ phiếu OTC là gì | `co-phieu-otc-la-gi` | `Planned` | |
+| Cổ phiếu OTC là gì | `co-phieu-otc-la-gi` | `Finalized` | ✅ Đã publish |
 | Cổ phiếu ưu đãi là gì | `co-phieu-uu-dai-la-gi` | `Finalized` | |
-| Cổ phiếu thưởng là gì | `co-phieu-thuong-la-gi` | `Planned` | |
-| Cổ phiếu quỹ là gì | `co-phieu-quy-la-gi` | `Planned` | |
-| Cổ phiếu ESOP là gì | `co-phieu-esop-la-gi` | `Planned` | |
-| Cổ phiếu penny là gì | `co-phieu-penny-la-gi` | `Planned` | |
+| Cổ phiếu thưởng là gì | `co-phieu-thuong-la-gi` | `Finalized` | ✅ Đã publish |
+| Cổ phiếu quỹ là gì | `co-phieu-quy-la-gi` | `Finalized` | ✅ Đã publish |
+| Cổ phiếu ESOP là gì | `co-phieu-esop-la-gi` | `Finalized` | ✅ Đã publish |
+| Cổ phiếu penny là gì | `co-phieu-penny-la-gi` | `Finalized` | ✅ Đã publish |
 | Cổ phiếu phòng thủ | `co-phieu-phong-thu` | `Planned` | |
 | Cổ phiếu trụ là gì | `co-phieu-tru-la-gi` | `Planned` | |
 | Pha loãng cổ phiếu là gì | `pha-loang-co-phieu-la-gi` | `Planned` | |

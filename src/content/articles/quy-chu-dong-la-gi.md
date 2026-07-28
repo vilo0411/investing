@@ -1,11 +1,13 @@
 ---
-title: "Quỹ chủ động là gì? Ưu nhược điểm và lưu ý cho F0"
-description: "Quỹ chủ động là gì? Tìm hiểu chi tiết đặc điểm, cơ chế hoạt động, ưu nhược điểm của quỹ chủ động và cách đầu tư hiệu quả cho người mới."
-category: "etf"
-heroImage: "/images/articles/quy-chu-dong-la-gi/quy-chu-dong-la-gi.jpg"
-publishDate: "2026-07-07"
-updatedDate: "2026-07-07"
-readingTime: "5 phút đọc"
+title: Quỹ chủ động là gì? Ưu nhược điểm và lưu ý cho F0
+description: >-
+  Quỹ chủ động là gì? Tìm hiểu chi tiết đặc điểm, cơ chế hoạt động, ưu nhược
+  điểm của quỹ chủ động và cách đầu tư hiệu quả cho người mới.
+category: etf
+heroImage: /images/articles/quy-chu-dong-la-gi/quy-chu-dong-la-gi.jpg
+publishDate: '2026-07-07'
+updatedDate: '2026-07-07'
+readingTime: 5 phút đọc
 featured: false
 order: 100
 tags:
@@ -14,17 +16,29 @@ tags:
   - chứng chỉ quỹ
   - đầu tư tài chính
 faq:
-  - question: "Phí quản lý quỹ chủ động ở Việt Nam có đắt không?"
-    answer: "Mức phí này thường nằm trong khoảng 1.5% đến 2.5% trên tổng tài sản quản lý mỗi năm. Ngoài ra bạn có thể chịu thêm phí mua hoặc phí bán chứng chỉ quỹ."
-  - question: "Lợi nhuận của quỹ chủ động có chắc chắn thắng được VN-Index không?"
-    answer: "Không chắc chắn. Hiệu suất đầu tư phụ thuộc lớn vào năng lực của từng công ty quản lý và chu kỳ thị trường, có những năm hiệu suất thấp hơn chỉ số chung."
+  - question: Phí quản lý quỹ chủ động ở Việt Nam có đắt không?
+    answer: >-
+      Mức phí này thường nằm trong khoảng 1.5% đến 2.5% trên tổng tài sản quản
+      lý mỗi năm. Ngoài ra bạn có thể chịu thêm phí mua hoặc phí bán chứng chỉ
+      quỹ.
+  - question: Lợi nhuận của quỹ chủ động có chắc chắn thắng được VN-Index không?
+    answer: >-
+      Không chắc chắn. Hiệu suất đầu tư phụ thuộc lớn vào năng lực của từng công
+      ty quản lý và chu kỳ thị trường, có những năm hiệu suất thấp hơn chỉ số
+      chung.
 sources:
-  - "Ủy ban Chứng khoán Nhà nước (UBCKNN)"
-  - "Fmarket - Nền tảng phân phối chứng chỉ quỹ"
+  - Ủy ban Chứng khoán Nhà nước (UBCKNN)
+  - Fmarket - Nền tảng phân phối chứng chỉ quỹ
 keyTakeaways:
-  - "Quỹ chủ động được quản lý bởi các chuyên gia tài chính nhằm tìm kiếm lợi nhuận cao hơn chỉ số tham chiếu."
-  - "Ưu thế lớn nhất là tính linh hoạt và tiềm năng sinh lời vượt trội, nhưng đi kèm chi phí quản lý cao hơn."
-  - "Phù hợp với nhà đầu tư bận rộn muốn đa dạng hóa danh mục dưới sự dẫn dắt của đội ngũ chuyên gia."
+  - >-
+    Quỹ chủ động được quản lý bởi các chuyên gia tài chính nhằm tìm kiếm lợi
+    nhuận cao hơn chỉ số tham chiếu.
+  - >-
+    Ưu thế lớn nhất là tính linh hoạt và tiềm năng sinh lời vượt trội, nhưng đi
+    kèm chi phí quản lý cao hơn.
+  - >-
+    Phù hợp với nhà đầu tư bận rộn muốn đa dạng hóa danh mục dưới sự dẫn dắt của
+    đội ngũ chuyên gia.
 ---
 
 Bạn bận rộn với công việc văn phòng 8 tiếng mỗi ngày và muốn đầu tư chứng khoán nhưng không có thời gian theo dõi sát thị trường. Một người bạn khuyên bạn nên gửi tiền vào một quỹ đầu tư tại Việt Nam để các chuyên gia quản lý hộ. Bạn tò mò muốn biết cách thức hoạt động của họ ra sao và liệu có an toàn không. Hãy cùng tìm hiểu khái niệm quỹ chủ động qua blog **[Value Investing](/)** để đưa ra quyết định tài chính sáng suốt nhất.
@@ -81,3 +95,4 @@ Mức phí này thường nằm trong khoảng 1.5% đến 2.5% trên tổng tà
 Không chắc chắn. Hiệu suất đầu tư phụ thuộc lớn vào năng lực của từng công ty quản lý và chu kỳ thị trường. Có những năm quỹ tăng trưởng vượt trội, nhưng cũng có những năm hiệu suất thấp hơn chỉ số chung.
 
 Quỹ chủ động là giải pháp đầu tư nhàn nhã hiệu quả cho F0. Bạn hãy bắt đầu bằng việc truy cập vào nền tảng Fmarket để so sánh hiệu suất 3 năm gần nhất của các quỹ mở lớn tại Việt Nam. Hành động nhỏ này sẽ giúp bạn có cái nhìn thực tế trước khi chính thức xuống tiền.
+ Để hiểu rõ hơn về chủ đề này, bạn có thể tham khảo thêm hướng dẫn **[cách đầu tư quỹ ETF](/dau-tu/etf/cach-dau-tu-quy-etf/)**.

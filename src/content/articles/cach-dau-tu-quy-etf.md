@@ -1,12 +1,14 @@
 ---
-title: "Cách đầu tư quỹ ETF cho người mới tại Việt Nam"
-description: "Hướng dẫn chi tiết cách đầu tư quỹ ETF tại Việt Nam từ bước mở tài khoản, chọn mã quỹ đến chiến thuật tích lũy định kỳ hiệu quả cho người bận rộn."
+title: Cách đầu tư quỹ ETF cho người mới tại Việt Nam
+description: >-
+  Hướng dẫn chi tiết cách đầu tư quỹ ETF tại Việt Nam từ bước mở tài khoản, chọn
+  mã quỹ đến chiến thuật tích lũy định kỳ hiệu quả cho người bận rộn.
 category: etf
-heroImage: "/images/articles/cach-dau-tu-quy-etf/cach-dau-tu-quy-etf.jpg"
-publishDate: "2026-06-15"
-updatedDate: "2026-06-15"
-factCheckedDate: "2026-06-21"
-readingTime: "5 phút đọc"
+heroImage: /images/articles/cach-dau-tu-quy-etf/cach-dau-tu-quy-etf.jpg
+publishDate: '2026-06-15'
+updatedDate: '2026-06-15'
+factCheckedDate: '2026-06-21'
+readingTime: 5 phút đọc
 featured: true
 order: 1
 tags:
@@ -14,25 +16,45 @@ tags:
   - đầu tư etf
   - chứng chỉ quỹ
 faq:
-  - question: "Nên đầu tư quỹ ETF nào ở Việt Nam hiện nay?"
-    answer: "Với người mới, hai quỹ ETF mô phỏng chỉ số VN30 (như E1VFVN30) hoặc chỉ số VN-Diamond (như FUEVFVND) là lựa chọn phổ biến nhất nhờ tính thanh khoản cao và danh mục gồm các doanh nghiệp hàng đầu."
-  - question: "Mua chứng chỉ quỹ ETF ở đâu và vốn tối thiểu bao nhiêu?"
-    answer: "Bạn mua trực tiếp trên tài khoản chứng khoán của các công ty môi giới (như SSI, VPS, TCBS). Vốn tối thiểu chỉ từ vài chục nghìn đồng cho 1 chứng chỉ quỹ, nhưng bạn nên mua theo lô tối thiểu 100 chứng chỉ (khoảng 2-3 triệu đồng)."
-  - question: "Đầu tư quỹ ETF có mất phí quản lý không?"
-    answer: "Có, phí quản lý được công ty quản lý quỹ trừ trực tiếp vào giá trị tài sản ròng (NAV) của quỹ. Mức phí này đối với quỹ ETF thường rất thấp, chỉ khoảng 0,5% đến 0,8% mỗi năm."
+  - question: Nên đầu tư quỹ ETF nào ở Việt Nam hiện nay?
+    answer: >-
+      Với người mới, hai quỹ ETF mô phỏng chỉ số VN30 (như E1VFVN30) hoặc chỉ số
+      VN-Diamond (như FUEVFVND) là lựa chọn phổ biến nhất nhờ tính thanh khoản
+      cao và danh mục gồm các doanh nghiệp hàng đầu.
+  - question: Mua chứng chỉ quỹ ETF ở đâu và vốn tối thiểu bao nhiêu?
+    answer: >-
+      Bạn mua trực tiếp trên tài khoản chứng khoán của các công ty môi giới (như
+      SSI, VPS, TCBS). Vốn tối thiểu chỉ từ vài chục nghìn đồng cho 1 chứng chỉ
+      quỹ, nhưng bạn nên mua theo lô tối thiểu 100 chứng chỉ (khoảng 2-3 triệu
+      đồng).
+  - question: Đầu tư quỹ ETF có mất phí quản lý không?
+    answer: >-
+      Có, phí quản lý được công ty quản lý quỹ trừ trực tiếp vào giá trị tài sản
+      ròng (NAV) của quỹ. Mức phí này đối với quỹ ETF thường rất thấp, chỉ
+      khoảng 0,5% đến 0,8% mỗi năm.
 sources:
-  - "Ủy ban Chứng khoán Nhà nước"
-  - "Sở Giao dịch Chứng khoán TP.HCM (HOSE)"
+  - Ủy ban Chứng khoán Nhà nước
+  - Sở Giao dịch Chứng khoán TP.HCM (HOSE)
 citations:
-  - title: "Thông tư 229/2012/TT-BTC hướng dẫn thành lập và quản lý quỹ hoán đổi danh mục (ETF)"
-    publisher: "Bộ Tài chính"
-  - title: "Danh sách quỹ ETF niêm yết trên thị trường chứng khoán Việt Nam"
-    publisher: "Sở Giao dịch Chứng khoán TP.HCM (HOSE)"
+  - title: >-
+      Thông tư 229/2012/TT-BTC hướng dẫn thành lập và quản lý quỹ hoán đổi danh
+      mục (ETF)
+    publisher: Bộ Tài chính
+  - title: Danh sách quỹ ETF niêm yết trên thị trường chứng khoán Việt Nam
+    publisher: Sở Giao dịch Chứng khoán TP.HCM (HOSE)
 keyTakeaways:
-  - "Đầu tư quỹ ETF thực chất là mua một rổ cổ phiếu mô phỏng theo chỉ số thị trường."
-  - "Bạn mua chứng chỉ quỹ ETF dễ dàng trên sàn chứng khoán thông qua tài khoản môi giới thông thường."
-  - "Chiến thuật tích sản định kỳ (DCA) là cách tối ưu nhất giúp người bận rộn tích lũy tài sản dài hạn."
-  - "Nên ưu tiên các quỹ lớn như E1VFVN30 hoặc FUEVFVND để đảm bảo tính thanh khoản tốt."
+  - >-
+    Đầu tư quỹ ETF thực chất là mua một rổ cổ phiếu mô phỏng theo chỉ số thị
+    trường.
+  - >-
+    Bạn mua chứng chỉ quỹ ETF dễ dàng trên sàn chứng khoán thông qua tài khoản
+    môi giới thông thường.
+  - >-
+    Chiến thuật tích sản định kỳ (DCA) là cách tối ưu nhất giúp người bận rộn
+    tích lũy tài sản dài hạn.
+  - >-
+    Nên ưu tiên các quỹ lớn như E1VFVN30 hoặc FUEVFVND để đảm bảo tính thanh
+    khoản tốt.
 ---
 
 Bạn muốn đầu tư tài chính nhưng không có nhiều thời gian phân tích từng mã doanh nghiệp riêng lẻ. Quỹ ETF chính là giải pháp tối ưu giúp bạn sở hữu hàng chục cổ phiếu hàng đầu chỉ với một giao dịch. Bài viết này từ **[Value Investing](/)** sẽ hướng dẫn bạn **cách đầu tư quỹ etf** tại Việt Nam một cách đơn giản và an toàn nhất.
@@ -87,3 +109,4 @@ So với việc mua [trái phiếu](/dau-tu/trai-phieu/trai-phieu-la-gi/) nhận
 Hãy bắt đầu bằng một số vốn nhỏ để làm quen với nhịp biến động của bảng điện tử trước khi tăng dần số tiền đầu tư định kỳ.
 
 Sau khi nắm rõ cách mua, bạn có thể tham khảo thêm hướng dẫn [cách đầu tư cổ phiếu](/dau-tu/co-phieu/cach-dau-tu-co-phieu/) để nâng cao kiến thức phân tích của mình.
+ Bên cạnh đó, bạn cũng nên đọc thêm bài viết phân tích về [Nên đầu tư quỹ ETF nào? Top 3 quỹ ETF tiềm năng nhất Việt Nam](/dau-tu/etf/nen-dau-tu-quy-etf-nao/) để trang bị kiến thức đầy đủ nhất.

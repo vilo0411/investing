@@ -1,11 +1,13 @@
 ---
-title: "Cách định giá cổ phiếu đơn giản và thực chiến nhất cho F0"
-description: "Cách định giá cổ phiếu là gì? Hướng dẫn chi tiết phương pháp định giá P/E, P/B và chiết khấu dòng tiền DCF dễ hiểu nhất cho nhà đầu tư F0."
-category: "co-ban"
-heroImage: "/images/articles/cach-dinh-gia-co-phieu/cach-dinh-gia-co-phieu.jpg"
-publishDate: "2026-07-21"
-updatedDate: "2026-07-21"
-readingTime: "5 phút đọc"
+title: Cách định giá cổ phiếu đơn giản và thực chiến nhất cho F0
+description: >-
+  Cách định giá cổ phiếu là gì? Hướng dẫn chi tiết phương pháp định giá P/E, P/B
+  và chiết khấu dòng tiền DCF dễ hiểu nhất cho nhà đầu tư F0.
+category: co-ban
+heroImage: /images/articles/cach-dinh-gia-co-phieu/cach-dinh-gia-co-phieu.jpg
+publishDate: '2026-07-21'
+updatedDate: '2026-07-21'
+readingTime: 5 phút đọc
 featured: false
 order: 100
 tags:
@@ -13,17 +15,29 @@ tags:
   - phân tích cơ bản
   - chỉ số định giá
 faq:
-  - question: "Định giá cổ phiếu âm (doanh nghiệp thua lỗ) thì dùng phương pháp nào?"
-    answer: "Khi doanh nghiệp bị thua lỗ dẫn đến EPS âm, bạn không thể sử dụng phương pháp định giá P/E. Lúc này, phương pháp P/B hoặc định giá dựa trên doanh thu P/S sẽ phù hợp hơn để đánh giá tài sản còn lại."
-  - question: "Lấy dữ liệu tài chính (P/E, P/B, EPS) ở đâu uy tín tại Việt Nam?"
-    answer: "Bạn có thể truy cập trang công bố thông tin của các Sở giao dịch chứng khoán HOSE và HNX. Ngoài ra, bảng giá của các công ty chứng khoán lớn cũng cung cấp đầy đủ các chỉ số tài chính cơ bản."
+  - question: Định giá cổ phiếu âm (doanh nghiệp thua lỗ) thì dùng phương pháp nào?
+    answer: >-
+      Khi doanh nghiệp bị thua lỗ dẫn đến EPS âm, bạn không thể sử dụng phương
+      pháp định giá P/E. Lúc này, phương pháp P/B hoặc định giá dựa trên doanh
+      thu P/S sẽ phù hợp hơn để đánh giá tài sản còn lại.
+  - question: 'Lấy dữ liệu tài chính (P/E, P/B, EPS) ở đâu uy tín tại Việt Nam?'
+    answer: >-
+      Bạn có thể truy cập trang công bố thông tin của các Sở giao dịch chứng
+      khoán HOSE và HNX. Ngoài ra, bảng giá của các công ty chứng khoán lớn cũng
+      cung cấp đầy đủ các chỉ số tài chính cơ bản.
 sources:
-  - "Vietstock Financial Platform"
-  - "HOSE & HNX Disclosures"
+  - Vietstock Financial Platform
+  - HOSE & HNX Disclosures
 keyTakeaways:
-  - "Định giá cổ phiếu giúp xác định giá trị nội tại để so sánh với thị giá hiện tại, từ đó tìm kiếm cơ hội mua bán."
-  - "Hai phương pháp so sánh đơn giản nhất cho F0 là định giá P/E (dành cho doanh nghiệp tăng trưởng ổn định) và P/B (dành cho ngân hàng, sản xuất)."
-  - "Không có phương pháp nào chính xác tuyệt đối; nhà đầu tư nên sử dụng một khoảng giá hợp lý kết hợp với biên an toàn."
+  - >-
+    Định giá cổ phiếu giúp xác định giá trị nội tại để so sánh với thị giá hiện
+    tại, từ đó tìm kiếm cơ hội mua bán.
+  - >-
+    Hai phương pháp so sánh đơn giản nhất cho F0 là định giá P/E (dành cho doanh
+    nghiệp tăng trưởng ổn định) và P/B (dành cho ngân hàng, sản xuất).
+  - >-
+    Không có phương pháp nào chính xác tuyệt đối; nhà đầu tư nên sử dụng một
+    khoảng giá hợp lý kết hợp với biên an toàn.
 ---
 
 Làm thế nào để biết một cổ phiếu đang quá đắt hay quá rẻ so với giá trị thực? Câu trả lời nằm ở kỹ năng định giá. Định giá không phải là một bộ môn toán học phức tạp xa vời, mà là công cụ thực chiến giúp bạn tránh mua hớ cổ phiếu. **[Value Investing](/)** sẽ hướng dẫn bạn các cách định giá cổ phiếu dễ hiểu và áp dụng được ngay trên thị trường Việt Nam.
@@ -123,3 +137,4 @@ Hãy luôn cập nhật và điều chỉnh các biến số định giá khi c�
 
 
 Định giá cổ phiếu là kỹ năng cần thời gian rèn luyện liên tục qua nhiều chu kỳ thị trường. Hãy bắt đầu thực hành định giá với các doanh nghiệp đơn giản trước khi nâng cao dần trình độ.
+ Để hiểu rõ hơn về chủ đề này, bạn có thể tham khảo thêm hướng dẫn **[phân tích cơ bản là gì](/phan-tich/co-ban/phan-tich-co-ban-la-gi/)**. Để hiểu rõ hơn về chủ đề này, bạn có thể tham khảo thêm hướng dẫn **[cách chọn cổ phiếu tốt](/dau-tu/co-phieu/cach-chon-co-phieu-tot/)**. Bên cạnh đó, bạn cũng nên đọc thêm bài viết phân tích về [Chu Kỳ Kinh Tế Là Gì? 4 Giai Đoạn Và Cách Đầu Tư Theo Chu Kỳ](/phan-tich/co-ban/chu-ky-kinh-te-la-gi/) để trang bị kiến thức đầy đủ nhất.

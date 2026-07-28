@@ -1,11 +1,13 @@
 ---
-title: "Đường MA là gì? Hướng dẫn cách dùng đường trung bình động"
-description: "Đường MA là gì trong chứng khoán? Tìm hiểu định nghĩa đường trung bình động SMA, EMA, ý nghĩa và cách sử dụng chi tiết trong giao dịch cho người mới."
+title: Đường MA là gì? Hướng dẫn cách dùng đường trung bình động
+description: >-
+  Đường MA là gì trong chứng khoán? Tìm hiểu định nghĩa đường trung bình động
+  SMA, EMA, ý nghĩa và cách sử dụng chi tiết trong giao dịch cho người mới.
 category: ky-thuat
-heroImage: "/images/articles/duong-ma-la-gi/duong-ma-la-gi.jpg"
-publishDate: "2026-07-14"
-updatedDate: "2026-07-14"
-readingTime: "5 phút đọc"
+heroImage: /images/articles/duong-ma-la-gi/duong-ma-la-gi.jpg
+publishDate: '2026-07-14'
+updatedDate: '2026-07-14'
+readingTime: 5 phút đọc
 featured: false
 order: 100
 tags:
@@ -13,26 +15,38 @@ tags:
   - phân tích kỹ thuật
   - chỉ báo MA
 faq:
-  - question: "Nên dùng SMA hay EMA tốt hơn khi giao dịch ngắn hạn?"
-    answer: "Đối với giao dịch ngắn hạn, đường EMA là lựa chọn phù hợp hơn nhờ khả năng phản ứng nhanh nhạy với giá. Tốc độ phản hồi nhanh giúp bạn sớm đưa ra quyết định mua hoặc bán để tối ưu lợi nhuận lướt sóng."
-  - question: "Tại sao giá vượt qua đường MA mà xu hướng vẫn không đảo chiều?"
-    answer: "Hiện tượng này gọi là tín hiệu nhiễu hoặc bẫy giá trên thị trường. Bạn cần kiên nhẫn chờ phiên xác nhận hoặc kết hợp thêm khối lượng giao dịch để tránh các bẫy này."
+  - question: Nên dùng SMA hay EMA tốt hơn khi giao dịch ngắn hạn?
+    answer: >-
+      Đối với giao dịch ngắn hạn, đường EMA là lựa chọn phù hợp hơn nhờ khả năng
+      phản ứng nhanh nhạy với giá. Tốc độ phản hồi nhanh giúp bạn sớm đưa ra
+      quyết định mua hoặc bán để tối ưu lợi nhuận lướt sóng.
+  - question: Tại sao giá vượt qua đường MA mà xu hướng vẫn không đảo chiều?
+    answer: >-
+      Hiện tượng này gọi là tín hiệu nhiễu hoặc bẫy giá trên thị trường. Bạn cần
+      kiên nhẫn chờ phiên xác nhận hoặc kết hợp thêm khối lượng giao dịch để
+      tránh các bẫy này.
 sources:
-  - "Ủy ban Chứng khoán Nhà nước"
-  - "CFA Institute"
+  - Ủy ban Chứng khoán Nhà nước
+  - CFA Institute
 citations:
-  - title: "Technical Analysis of the Financial Markets"
-    publisher: "New York Institute of Finance"
+  - title: Technical Analysis of the Financial Markets
+    publisher: New York Institute of Finance
 keyTakeaways:
-  - "Đường MA là đường nối các mức giá đóng cửa trung bình của cổ phiếu trong một khoảng thời gian nhất định."
-  - "SMA là trung bình động giản đơn tính đều trọng số, còn EMA phản ứng nhanh hơn nhờ gán trọng số lớn hơn cho giá gần nhất."
-  - "Các mốc thời gian phổ biến nhất bao gồm ngắn hạn (MA10, MA20), trung hạn (MA50), và dài hạn (MA200)."
+  - >-
+    Đường MA là đường nối các mức giá đóng cửa trung bình của cổ phiếu trong một
+    khoảng thời gian nhất định.
+  - >-
+    SMA là trung bình động giản đơn tính đều trọng số, còn EMA phản ứng nhanh
+    hơn nhờ gán trọng số lớn hơn cho giá gần nhất.
+  - >-
+    Các mốc thời gian phổ biến nhất bao gồm ngắn hạn (MA10, MA20), trung hạn
+    (MA50), và dài hạn (MA200).
 ---
 
 Nhìn vào bảng đồ thị chứng khoán đầy những đường xanh đỏ vẽ ngoằn ngoèo, nhiều người mới bắt đầu cảm thấy rất hoa mắt. Thực chất, trong các đường đó, đường MA (Moving Average) hay đường trung bình động là công cụ đơn giản và dễ hiểu nhất. **[Value Investing](/)** sẽ giúp bạn nắm bắt công cụ này một cách trực quan nhất.
 
 
-## Khái niệm đường MA trong phân tích kỹ thuật
+## Khái niệm đường MA trong **[phân tích kỹ thuật](/phan-tich/ky-thuat/phan-tich-ky-thuat-la-gi/)**
 
 Đường MA là đường nối các mức giá đóng cửa trung bình của một cổ phiếu trong một khoảng thời gian nhất định. Chỉ báo này hoạt động như một công cụ giúp "làm mượt" các biến động giá ngắn hạn, giảm thiểu độ nhiễu trên đồ thị. Nhờ đó, bạn có thể nhìn nhận rõ nét hơn xu hướng vận động chính của cổ phiếu đó.
 
@@ -98,3 +112,4 @@ Khi đã hiểu rõ phân loại và chu kỳ, bạn có thể áp dụng đư�
 Hiện tượng này gọi là tín hiệu nhiễu hoặc bẫy giá trên thị trường. Bạn cần kiên nhẫn chờ phiên xác nhận hoặc kết hợp thêm khối lượng giao dịch để tránh các bẫy này.
 
 Sử dụng đường trung bình động là phương pháp đơn giản nhưng vô cùng hiệu quả để định hình xu hướng. Hãy kiên nhẫn luyện tập quan sát đường MA trên các mã cổ phiếu bạn quan tâm.
+ Để hiểu rõ hơn về chủ đề này, bạn có thể tham khảo thêm hướng dẫn **[cách đầu tư cổ phiếu](/dau-tu/co-phieu/cach-dau-tu-co-phieu/)**.

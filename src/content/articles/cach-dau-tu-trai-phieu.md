@@ -1,38 +1,58 @@
 ---
-title: "Cách đầu tư trái phiếu cho người mới: 3 cách phổ biến"
-description: "Cách đầu tư trái phiếu cho người mới bắt đầu tại Việt Nam, gồm 3 phương thức phổ biến, vốn tối thiểu, rủi ro cần biết và các bước thực hiện cụ thể."
-category: "trai-phieu"
-heroImage: "/images/articles/cach-dau-tu-trai-phieu/cach-dau-tu-trai-phieu.jpg"
-publishDate: "2026-06-14"
-updatedDate: "2026-06-14"
-factCheckedDate: "2026-06-21"
-readingTime: "7 phút đọc"
+title: 'Cách đầu tư trái phiếu cho người mới: 3 cách phổ biến'
+description: >-
+  Cách đầu tư trái phiếu cho người mới bắt đầu tại Việt Nam, gồm 3 phương thức
+  phổ biến, vốn tối thiểu, rủi ro cần biết và các bước thực hiện cụ thể.
+category: trai-phieu
+heroImage: /images/articles/cach-dau-tu-trai-phieu/cach-dau-tu-trai-phieu.jpg
+publishDate: '2026-06-14'
+updatedDate: '2026-06-14'
+factCheckedDate: '2026-06-21'
+readingTime: 7 phút đọc
 featured: true
 order: 1
 tags:
-  - "trái phiếu"
-  - "đầu tư trái phiếu"
-  - "quỹ trái phiếu"
+  - trái phiếu
+  - đầu tư trái phiếu
+  - quỹ trái phiếu
 faq:
-  - question: "Đầu tư trái phiếu cần bao nhiêu tiền?"
-    answer: "Qua quỹ trái phiếu, bạn có thể bắt đầu với 1-2 triệu đồng. Mua trái phiếu niêm yết qua công ty chứng khoán thường cần vài triệu đến vài chục triệu. Trái phiếu riêng lẻ phát hành sơ cấp đòi hỏi vốn lớn hơn và chỉ dành cho nhà đầu tư chuyên nghiệp."
-  - question: "Trái phiếu có an toàn hơn gửi tiết kiệm không?"
-    answer: "Không hẳn. Tiền gửi tiết kiệm được bảo hiểm tiền gửi đến một hạn mức nhất định, còn trái phiếu không có cơ chế này. Trái phiếu chính phủ thường an toàn hơn tiết kiệm về mặt lợi suất dài hạn, nhưng trái phiếu doanh nghiệp phụ thuộc vào khả năng trả nợ của bên phát hành."
-  - question: "Mua trái phiếu doanh nghiệp riêng lẻ ở đâu?"
-    answer: "Trái phiếu doanh nghiệp phát hành riêng lẻ chỉ bán cho nhà đầu tư chứng khoán chuyên nghiệp theo Luật Chứng khoán 2019. Nếu bạn chưa đáp ứng điều kiện này, cách tiếp cận phù hợp hơn là mua trái phiếu niêm yết qua công ty chứng khoán hoặc đầu tư qua quỹ trái phiếu."
+  - question: Đầu tư trái phiếu cần bao nhiêu tiền?
+    answer: >-
+      Qua quỹ trái phiếu, bạn có thể bắt đầu với 1-2 triệu đồng. Mua trái phiếu
+      niêm yết qua công ty chứng khoán thường cần vài triệu đến vài chục triệu.
+      Trái phiếu riêng lẻ phát hành sơ cấp đòi hỏi vốn lớn hơn và chỉ dành cho
+      nhà đầu tư chuyên nghiệp.
+  - question: Trái phiếu có an toàn hơn gửi tiết kiệm không?
+    answer: >-
+      Không hẳn. Tiền gửi tiết kiệm được bảo hiểm tiền gửi đến một hạn mức nhất
+      định, còn trái phiếu không có cơ chế này. Trái phiếu chính phủ thường an
+      toàn hơn tiết kiệm về mặt lợi suất dài hạn, nhưng trái phiếu doanh nghiệp
+      phụ thuộc vào khả năng trả nợ của bên phát hành.
+  - question: Mua trái phiếu doanh nghiệp riêng lẻ ở đâu?
+    answer: >-
+      Trái phiếu doanh nghiệp phát hành riêng lẻ chỉ bán cho nhà đầu tư chứng
+      khoán chuyên nghiệp theo Luật Chứng khoán 2019. Nếu bạn chưa đáp ứng điều
+      kiện này, cách tiếp cận phù hợp hơn là mua trái phiếu niêm yết qua công ty
+      chứng khoán hoặc đầu tư qua quỹ trái phiếu.
 sources:
-  - "Ủy ban Chứng khoán Nhà nước"
-  - "Luật Chứng khoán 2019"
+  - Ủy ban Chứng khoán Nhà nước
+  - Luật Chứng khoán 2019
 citations:
-  - title: "Luật Chứng khoán số 54/2019/QH14"
-    publisher: "Quốc hội"
-    date: "2019-11-26"
+  - title: Luật Chứng khoán số 54/2019/QH14
+    publisher: Quốc hội
+    date: '2019-11-26'
 keyTakeaways:
-  - "Trái phiếu là khoản vay có kỳ hạn, đổi lại bạn nhận lãi suất cố định hoặc thả nổi."
-  - "3 cách đầu tư: mua sơ cấp, mua qua công ty chứng khoán, hoặc qua quỹ trái phiếu."
-  - "Quỹ trái phiếu phù hợp người mới, vốn từ 1-2 triệu đồng."
-  - "Trái phiếu riêng lẻ lãi cao nhưng chỉ nhà đầu tư chuyên nghiệp được mua."
-  - "Rủi ro lớn nhất là bên phát hành mất khả năng trả nợ, không phải biến động giá."
+  - >-
+    Trái phiếu là khoản vay có kỳ hạn, đổi lại bạn nhận lãi suất cố định hoặc
+    thả nổi.
+  - >-
+    3 cách đầu tư: mua sơ cấp, mua qua công ty chứng khoán, hoặc qua quỹ trái
+    phiếu.
+  - 'Quỹ trái phiếu phù hợp người mới, vốn từ 1-2 triệu đồng.'
+  - Trái phiếu riêng lẻ lãi cao nhưng chỉ nhà đầu tư chuyên nghiệp được mua.
+  - >-
+    Rủi ro lớn nhất là bên phát hành mất khả năng trả nợ, không phải biến động
+    giá.
 ---
 
 Bạn có một khoản tiền nhàn rỗi, gửi tiết kiệm thì lãi suất ngân hàng cứ giảm dần qua từng năm. Nghe nói đầu tư trái phiếu lãi cao hơn, nhưng không biết bắt đầu từ đâu và mua ở đâu mới đúng. Bài viết này từ **[Value Investing](/)** sẽ chỉ cho bạn cách đầu tư trái phiếu theo 3 cách phổ biến nhất tại Việt Nam, kèm các bước thực hiện cụ thể.
@@ -105,3 +125,4 @@ Ba loại rủi ro cần lưu ý:
 ---
 
 *Nội dung trong bài chỉ mang tính chất tham khảo và giáo dục, không phải lời khuyên đầu tư cho một sản phẩm cụ thể. Trước khi đầu tư, bạn nên tìm hiểu kỹ bản cáo bạch và xếp hạng tín nhiệm của tổ chức phát hành.*
+ Bên cạnh đó, bạn cũng nên đọc thêm bài viết phân tích về [Bond Yield Là Gì? Cách Đọc Lợi Suất Trái Phiếu Cho F0](/dau-tu/trai-phieu/bond-yield-la-gi/) để trang bị kiến thức đầy đủ nhất.

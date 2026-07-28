@@ -1,11 +1,13 @@
 ---
-title: "Nên đầu tư cổ phiếu nào?"
-description: "Nên đầu tư cổ phiếu nào năm 2026? Hướng dẫn cách phân loại cổ phiếu tiềm năng và thiết lập danh mục đầu tư an toàn cho người mới."
+title: Nên đầu tư cổ phiếu nào?
+description: >-
+  Nên đầu tư cổ phiếu nào năm 2026? Hướng dẫn cách phân loại cổ phiếu tiềm năng
+  và thiết lập danh mục đầu tư an toàn cho người mới.
 category: co-phieu
-heroImage: "/images/articles/nen-dau-tu-co-phieu-nao/nen-dau-tu-co-phieu-nao.jpg"
-publishDate: "2026-07-14"
-updatedDate: "2026-07-14"
-readingTime: "5 phút đọc"
+heroImage: /images/articles/nen-dau-tu-co-phieu-nao/nen-dau-tu-co-phieu-nao.jpg
+publishDate: '2026-07-14'
+updatedDate: '2026-07-14'
+readingTime: 5 phút đọc
 featured: false
 order: 100
 tags:
@@ -13,26 +15,38 @@ tags:
   - kinh nghiệm đầu tư
   - cổ phiếu tiềm năng
 faq:
-  - question: "F0 mới tham gia thị trường có nên mua cổ phiếu Penny không?"
-    answer: "Cổ phiếu Penny có thị giá nhỏ và thường biến động trần sàn liên tục rất khó lường. Người mới bắt đầu chưa có kinh nghiệm quản trị rủi ro nên tránh xa nhóm này để hạn chế thua lỗ lớn."
-  - question: "Nên nắm giữ bao nhiêu mã cổ phiếu trong một danh mục?"
-    answer: "Đối với cá nhân, danh mục tối ưu nhất là nắm giữ từ 3 đến 5 cổ phiếu thuộc các ngành khác nhau. Nắm giữ quá nhiều mã sẽ khiến bạn không đủ thời gian theo dõi sát sao tình hình doanh nghiệp."
+  - question: F0 mới tham gia thị trường có nên mua cổ phiếu Penny không?
+    answer: >-
+      Cổ phiếu Penny có thị giá nhỏ và thường biến động trần sàn liên tục rất
+      khó lường. Người mới bắt đầu chưa có kinh nghiệm quản trị rủi ro nên tránh
+      xa nhóm này để hạn chế thua lỗ lớn.
+  - question: Nên nắm giữ bao nhiêu mã cổ phiếu trong một danh mục?
+    answer: >-
+      Đối với cá nhân, danh mục tối ưu nhất là nắm giữ từ 3 đến 5 cổ phiếu thuộc
+      các ngành khác nhau. Nắm giữ quá nhiều mã sẽ khiến bạn không đủ thời gian
+      theo dõi sát sao tình hình doanh nghiệp.
 sources:
-  - "Sở Giao dịch Chứng khoán TP.HCM (HOSE)"
-  - "CFA Institute"
+  - Sở Giao dịch Chứng khoán TP.HCM (HOSE)
+  - CFA Institute
 citations:
-  - title: "Phân tích và lựa chọn cổ phiếu cho nhà đầu tư cá nhân"
-    publisher: "Sở Giao dịch Chứng khoán Hà Nội (HNX)"
+  - title: Phân tích và lựa chọn cổ phiếu cho nhà đầu tư cá nhân
+    publisher: Sở Giao dịch Chứng khoán Hà Nội (HNX)
 keyTakeaways:
-  - "Tránh việc mua cổ phiếu theo tin đồn hoặc phím hàng ngắn hạn không rõ căn cứ."
-  - "Phân loại cổ phiếu thành 3 nhóm chính: Cổ phiếu phòng thủ (cổ tức), Cổ phiếu tăng trưởng, và Cổ phiếu đầu chu kỳ kinh tế."
-  - "Xây dựng danh mục tối đa 3-5 mã thuộc các ngành khác nhau để phân tán rủi ro hiệu quả."
+  - >-
+    Tránh việc mua cổ phiếu theo tin đồn hoặc phím hàng ngắn hạn không rõ căn
+    cứ.
+  - >-
+    Phân loại cổ phiếu thành 3 nhóm chính: Cổ phiếu phòng thủ (cổ tức), Cổ phiếu
+    tăng trưởng, và Cổ phiếu đầu chu kỳ kinh tế.
+  - >-
+    Xây dựng danh mục tối đa 3-5 mã thuộc các ngành khác nhau để phân tán rủi ro
+    hiệu quả.
 ---
 
 Rất nhiều người khi mới tham gia thị trường thường hỏi han các hội nhóm xem nên đầu tư cổ phiếu nào để nhanh kiếm lời. Việc mong muốn có kết quả nhanh chóng là một trạng thái tâm lý hoàn toàn bình thường của đa số nhà đầu tư F0. **[Value Investing](/)** sẽ chia sẻ cách phân loại và chọn cổ phiếu phù hợp nhất với tài chính của bạn.
 
 
-## Quan niệm sai lầm: Đi tìm một "mã siêu cổ phiếu"
+## Quan niệm sai lầm: Đi tìm một "mã siêu **[cổ phiếu](/dau-tu/co-phieu/co-phieu-la-gi/)**"
 
 Nhiều người mới tham gia thường dành phần lớn thời gian để tìm kiếm các mã cổ phiếu đầu cơ được phím trên các diễn đàn trực tuyến. Họ hy vọng tài khoản sẽ nhân đôi hoặc nhân ba chỉ trong vài tuần dựa vào các tin đồn. Sự thật là, không có một mã cổ phiếu nào tốt cho tất cả mọi người vì mỗi người có một năng lực tài chính và mục tiêu tích lũy khác nhau.
 
@@ -91,3 +105,4 @@ Cổ phiếu Penny có thị giá nhỏ và thường biến động trần sàn
 Đối với cá nhân, danh mục tối ưu nhất là nắm giữ từ 3 đến 5 cổ phiếu thuộc các ngành khác nhau. Nắm giữ quá nhiều mã sẽ khiến bạn không đủ thời gian theo dõi sát sao tình hình doanh nghiệp.
 
 Đầu tư chứng khoán hiệu quả là một hành trình dài hạn đòi hỏi sự kỷ luật và kiên nhẫn tích lũy. Bạn hãy bắt đầu bằng việc lọc ra các doanh nghiệp uy tín đầu ngành để tích lũy.
+ Để hiểu rõ hơn về chủ đề này, bạn có thể tham khảo thêm hướng dẫn **[cách đầu tư cổ phiếu](/dau-tu/co-phieu/cach-dau-tu-co-phieu/)**.

@@ -1,11 +1,13 @@
 ---
-title: "Cách đầu tư cổ phiếu: Hướng dẫn thực chiến từ con số 0"
-description: "Hướng dẫn cách đầu tư cổ phiếu bài bản cho người mới. Quy trình từng bước mở tài khoản, nạp tiền, chọn mã tốt và quản trị rủi ro thực tế từ con số 0."
+title: 'Cách đầu tư cổ phiếu: Hướng dẫn thực chiến từ con số 0'
+description: >-
+  Hướng dẫn cách đầu tư cổ phiếu bài bản cho người mới. Quy trình từng bước mở
+  tài khoản, nạp tiền, chọn mã tốt và quản trị rủi ro thực tế từ con số 0.
 category: co-phieu
-publishDate: "2026-06-14"
-updatedDate: "2026-06-14"
-factCheckedDate: "2026-06-21"
-readingTime: "5 phút đọc"
+publishDate: '2026-06-14'
+updatedDate: '2026-06-14'
+factCheckedDate: '2026-06-21'
+readingTime: 5 phút đọc
 featured: true
 order: 1
 tags:
@@ -13,27 +15,41 @@ tags:
   - chứng khoán cho người mới
   - mở tài khoản chứng khoán
 faq:
-  - question: "Đầu tư cổ phiếu cần tối thiểu bao nhiêu tiền?"
-    answer: "Theo quy định lô tối thiểu 100 cổ phiếu, nếu mua mã giá 15.000 đồng, bạn cần số vốn thấp nhất là 1,5 triệu đồng."
-  - question: "Mở tài khoản chứng khoán có mất phí không và mất bao lâu?"
-    answer: "Đăng ký mở tài khoản là hoàn toàn miễn phí, chỉ mất từ 3 đến 5 phút trực tuyến qua định danh eKYC bằng CCCD gắn chip."
-  - question: "Tôi có thể rút tiền từ tài khoản chứng khoán về bất cứ lúc nào không?"
-    answer: "Bạn có thể rút số dư khả dụng về ngân hàng liên kết vào mọi ngày làm việc khi chu kỳ thanh toán T+1.5 hoàn tất."
+  - question: Đầu tư cổ phiếu cần tối thiểu bao nhiêu tiền?
+    answer: >-
+      Theo quy định lô tối thiểu 100 cổ phiếu, nếu mua mã giá 15.000 đồng, bạn
+      cần số vốn thấp nhất là 1,5 triệu đồng.
+  - question: Mở tài khoản chứng khoán có mất phí không và mất bao lâu?
+    answer: >-
+      Đăng ký mở tài khoản là hoàn toàn miễn phí, chỉ mất từ 3 đến 5 phút trực
+      tuyến qua định danh eKYC bằng CCCD gắn chip.
+  - question: Tôi có thể rút tiền từ tài khoản chứng khoán về bất cứ lúc nào không?
+    answer: >-
+      Bạn có thể rút số dư khả dụng về ngân hàng liên kết vào mọi ngày làm việc
+      khi chu kỳ thanh toán T+1.5 hoàn tất.
 sources:
-  - "Ủy ban Chứng khoán Nhà nước"
-  - "Sở Giao dịch Chứng khoán TP.HCM (HOSE)"
+  - Ủy ban Chứng khoán Nhà nước
+  - Sở Giao dịch Chứng khoán TP.HCM (HOSE)
 citations:
-  - title: "Luật Chứng khoán số 54/2019/QH14"
-    publisher: "Quốc hội"
-    date: "2019-11-26"
-  - title: "The Intelligent Investor — Benjamin Graham"
-    publisher: "Harper & Brothers"
+  - title: Luật Chứng khoán số 54/2019/QH14
+    publisher: Quốc hội
+    date: '2019-11-26'
+  - title: The Intelligent Investor — Benjamin Graham
+    publisher: Harper & Brothers
 keyTakeaways:
-  - "Đầu tư cổ phiếu thực chất là góp vốn sở hữu doanh nghiệp để nhận cổ tức và chênh lệch giá."
-  - "Người mới có thể mở tài khoản trực tuyến eKYC 100% bằng CCCD gắn chip chỉ trong vài phút."
-  - "Nên kết hợp phân tích cơ bản để chọn mã tốt và phân tích kỹ thuật để tìm điểm giao dịch."
-  - "Hạn chế sử dụng đòn bẩy margin và đa dạng hóa danh mục để bảo vệ nguồn vốn tích lũy."
-heroImage: "/images/articles/cach-dau-tu-co-phieu/cach-dau-tu-co-phieu.jpg"
+  - >-
+    Đầu tư cổ phiếu thực chất là góp vốn sở hữu doanh nghiệp để nhận cổ tức và
+    chênh lệch giá.
+  - >-
+    Người mới có thể mở tài khoản trực tuyến eKYC 100% bằng CCCD gắn chip chỉ
+    trong vài phút.
+  - >-
+    Nên kết hợp phân tích cơ bản để chọn mã tốt và phân tích kỹ thuật để tìm
+    điểm giao dịch.
+  - >-
+    Hạn chế sử dụng đòn bẩy margin và đa dạng hóa danh mục để bảo vệ nguồn vốn
+    tích lũy.
+heroImage: /images/articles/cach-dau-tu-co-phieu/cach-dau-tu-co-phieu.jpg
 ---
 
 Nhiều người nghĩ đầu tư cổ phiếu cần vốn lớn hoặc phải theo dõi bảng điện liên tục. Sự thật là bạn hoàn toàn có thể bắt đầu tích lũy chỉ từ vài trăm nghìn đồng. Bài viết này từ **[Value Investing](/)** sẽ hướng dẫn bạn **cách đầu tư cổ phiếu** chi tiết và thực tiễn nhất.
@@ -122,3 +138,4 @@ Khi thị trường tăng điểm, margin giúp bạn nhân đôi hoặc nhân b
 Đầu tư cổ phiếu là hành trình tích lũy tài sản dài hạn. Cách tốt nhất là bạn hãy bắt đầu bằng số vốn nhỏ giống như gợi ý ở trên để làm quen nhịp thị trường và tích lũy thêm kinh nghiệm giao dịch.
 
 Hãy xem thêm bài viết [cổ phiếu là gì](/dau-tu/co-phieu/co-phieu-la-gi/) để trang bị đầy đủ kiến thức cơ bản trước khi đặt lệnh mua đầu tiên.
+ Bên cạnh đó, bạn cũng nên đọc thêm bài viết phân tích về [Cổ Phiếu ESOP Là Gì? Lợi Ích Doanh Nghiệp Và Rủi Ro Với Cổ Đông](/dau-tu/co-phieu/co-phieu-esop-la-gi/) để trang bị kiến thức đầy đủ nhất.

@@ -1,11 +1,13 @@
 ---
-title: "Cách chọn cổ phiếu tốt cho người mới: Bộ tiêu chí thực chiến"
-description: "Cách chọn cổ phiếu tốt để đầu tư dài hạn. Hướng dẫn chi tiết bộ tiêu chí đánh giá định tính và chỉ số định lượng (P/E, ROE) cực dễ hiểu cho F0."
-category: "co-phieu"
-heroImage: "/images/articles/cach-chon-co-phieu-tot/cach-chon-co-phieu-tot.jpg"
-publishDate: "2026-06-28"
-updatedDate: "2026-06-28"
-readingTime: "5 phút đọc"
+title: 'Cách chọn cổ phiếu tốt cho người mới: Bộ tiêu chí thực chiến'
+description: >-
+  Cách chọn cổ phiếu tốt để đầu tư dài hạn. Hướng dẫn chi tiết bộ tiêu chí đánh
+  giá định tính và chỉ số định lượng (P/E, ROE) cực dễ hiểu cho F0.
+category: co-phieu
+heroImage: /images/articles/cach-chon-co-phieu-tot/cach-chon-co-phieu-tot.jpg
+publishDate: '2026-06-28'
+updatedDate: '2026-06-28'
+readingTime: 5 phút đọc
 featured: false
 order: 15
 tags:
@@ -14,23 +16,43 @@ tags:
   - tiêu chí chọn cổ phiếu
   - F0 chứng khoán
 faq:
-  - question: "Có nên mua cổ phiếu đang giảm giá sâu vì nghĩ nó rẻ không?"
-    answer: "Không nên vội vàng. Một cổ phiếu giảm sâu có thể do doanh nghiệp đang gặp khủng hoảng nghiêm trọng hoặc mô hình kinh doanh bị thoái trào (còn gọi là bẫy giá trị). Bạn cần phân tích kỹ xem các yếu tố cốt lõi của doanh nghiệp có bị thay đổi tiêu cực không trước khi quyết định mua."
-  - question: "Cổ phiếu tốt có chắc chắn mang lại lợi nhuận không?"
-    answer: "Không có gì là chắc chắn 100% trong đầu tư. Một cổ phiếu tốt đại diện cho một doanh nghiệp hoạt động hiệu quả, nhưng nếu bạn mua nó với mức giá quá đắt (chỉ số P/E quá cao), bạn vẫn có nguy cơ thua lỗ. Hãy kiên nhẫn mua ở vùng giá hợp lý."
-  - question: "Làm thế nào để lấy các chỉ số ROE, P/E của doanh nghiệp Việt Nam?"
-    answer: "Bạn có thể dễ dàng tìm thấy các chỉ số này trên ứng dụng của các công ty chứng khoán (như TCBS, VPS, SSI) hoặc các trang web thông tin tài chính uy tín tại Việt Nam như CafeF, Vietstock, hay Fiintrade trong mục chỉ số tài chính của doanh nghiệp."
+  - question: Có nên mua cổ phiếu đang giảm giá sâu vì nghĩ nó rẻ không?
+    answer: >-
+      Không nên vội vàng. Một cổ phiếu giảm sâu có thể do doanh nghiệp đang gặp
+      khủng hoảng nghiêm trọng hoặc mô hình kinh doanh bị thoái trào (còn gọi là
+      bẫy giá trị). Bạn cần phân tích kỹ xem các yếu tố cốt lõi của doanh nghiệp
+      có bị thay đổi tiêu cực không trước khi quyết định mua.
+  - question: Cổ phiếu tốt có chắc chắn mang lại lợi nhuận không?
+    answer: >-
+      Không có gì là chắc chắn 100% trong đầu tư. Một cổ phiếu tốt đại diện cho
+      một doanh nghiệp hoạt động hiệu quả, nhưng nếu bạn mua nó với mức giá quá
+      đắt (chỉ số P/E quá cao), bạn vẫn có nguy cơ thua lỗ. Hãy kiên nhẫn mua ở
+      vùng giá hợp lý.
+  - question: 'Làm thế nào để lấy các chỉ số ROE, P/E của doanh nghiệp Việt Nam?'
+    answer: >-
+      Bạn có thể dễ dàng tìm thấy các chỉ số này trên ứng dụng của các công ty
+      chứng khoán (như TCBS, VPS, SSI) hoặc các trang web thông tin tài chính uy
+      tín tại Việt Nam như CafeF, Vietstock, hay Fiintrade trong mục chỉ số tài
+      chính của doanh nghiệp.
 sources:
-  - "Sở Giao dịch Chứng khoán TP.HCM (HOSE)"
-  - "Ủy ban Chứng khoán Nhà nước (UBCKNN)"
+  - Sở Giao dịch Chứng khoán TP.HCM (HOSE)
+  - Ủy ban Chứng khoán Nhà nước (UBCKNN)
 citations:
-  - title: "Cẩm nang hướng dẫn phân tích doanh nghiệp dành cho nhà đầu tư"
-    publisher: "Sở Giao dịch Chứng khoán TP.HCM (HOSE)"
+  - title: Cẩm nang hướng dẫn phân tích doanh nghiệp dành cho nhà đầu tư
+    publisher: Sở Giao dịch Chứng khoán TP.HCM (HOSE)
 keyTakeaways:
-  - "Đầu tiên hãy xác định rõ mục tiêu đầu tư cá nhân là tích sản dài hạn nhận cổ tức hay đầu tư tăng trưởng."
-  - "Lợi thế cạnh tranh và tính minh bạch của ban lãnh đạo là hai yếu tố định tính quan trọng nhất."
-  - "Sàng lọc định lượng qua 4 chỉ số cơ bản: ROE > 15%, nợ vay/vốn chủ sở hữu < 1, tăng trưởng doanh thu/lợi nhuận tốt và P/E hợp lý."
-  - "Luôn lập bảng so sánh các doanh nghiệp trong cùng một ngành để chọn ra cổ phiếu xuất sắc nhất."
+  - >-
+    Đầu tiên hãy xác định rõ mục tiêu đầu tư cá nhân là tích sản dài hạn nhận cổ
+    tức hay đầu tư tăng trưởng.
+  - >-
+    Lợi thế cạnh tranh và tính minh bạch của ban lãnh đạo là hai yếu tố định
+    tính quan trọng nhất.
+  - >-
+    Sàng lọc định lượng qua 4 chỉ số cơ bản: ROE > 15%, nợ vay/vốn chủ sở hữu <
+    1, tăng trưởng doanh thu/lợi nhuận tốt và P/E hợp lý.
+  - >-
+    Luôn lập bảng so sánh các doanh nghiệp trong cùng một ngành để chọn ra cổ
+    phiếu xuất sắc nhất.
 ---
 
 Bạn nhìn vào bảng điện chứng khoán với hàng trăm mã xanh đỏ và tự hỏi: Làm sao để chọn ra một mã cổ phiếu tốt thực sự? Sự thật là, đầu tư không phải là trò may rủi — luôn có một bộ tiêu chí khoa học qua blog **[Value Investing](/)** giúp bạn lọc ra những doanh nghiệp xuất sắc nhất.
@@ -83,3 +105,4 @@ Số liệu tài chính trên các báo cáo kế toán là tấm gương phản
 
 
 Bạn nên lập bảng thống kê so sánh các doanh nghiệp trong cùng một ngành để dễ dàng tìm ra cổ phiếu nổi bật nhất. Việc này giúp bạn đưa ra các quyết định khách quan dựa trên những số liệu thực tế thay vì cảm xúc nhất thời.
+ Bên cạnh đó, bạn cũng nên đọc thêm bài viết phân tích về [Call Margin Là Gì? Cách Xử Lý Khi Bị Gọi Ký Quỹ](/dau-tu/co-phieu/call-margin-la-gi/) để trang bị kiến thức đầy đủ nhất.

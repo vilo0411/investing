@@ -1,11 +1,13 @@
 ---
-title: "Đáo hạn phái sinh là gì? Ảnh hưởng đến thị trường chứng khoán ra sao"
-description: "Đáo hạn phái sinh là gì? Hướng dẫn cách tính giá thanh toán ngày đáo hạn hợp đồng tương lai VN30 và những ảnh hưởng cụ thể đến thị trường cơ sở HOSE."
+title: Đáo hạn phái sinh là gì? Ảnh hưởng đến thị trường chứng khoán ra sao
+description: >-
+  Đáo hạn phái sinh là gì? Hướng dẫn cách tính giá thanh toán ngày đáo hạn hợp
+  đồng tương lai VN30 và những ảnh hưởng cụ thể đến thị trường cơ sở HOSE.
 category: phai-sinh
-heroImage: "/images/articles/dao-han-phai-sinh-la-gi/dao-han-phai-sinh-la-gi.jpg"
-publishDate: "2026-06-30"
-updatedDate: "2026-06-30"
-readingTime: "5 phút đọc"
+heroImage: /images/articles/dao-han-phai-sinh-la-gi/dao-han-phai-sinh-la-gi.jpg
+publishDate: '2026-06-30'
+updatedDate: '2026-06-30'
+readingTime: 5 phút đọc
 featured: false
 order: 100
 tags:
@@ -13,17 +15,27 @@ tags:
   - ngày đáo hạn phái sinh
   - ảnh hưởng đáo hạn phái sinh
 faq:
-  - question: "Phí giao dịch chứng khoán phái sinh vào ngày đáo hạn có tăng không?"
-    answer: "Không. Mức phí giao dịch phái sinh và phí quản lý vị thế được áp dụng cố định theo quy định của CTCK và HNX, không thay đổi vào ngày đáo hạn."
-  - question: "Hợp đồng tương lai của tháng tiếp theo được mở giao dịch khi nào?"
-    answer: "Ngay vào ngày làm việc tiếp theo sau ngày đáo hạn (thường là thứ Sáu), hợp đồng tương lai tháng mới sẽ chính thức được mở để nhà đầu tư giao dịch."
+  - question: Phí giao dịch chứng khoán phái sinh vào ngày đáo hạn có tăng không?
+    answer: >-
+      Không. Mức phí giao dịch phái sinh và phí quản lý vị thế được áp dụng cố
+      định theo quy định của CTCK và HNX, không thay đổi vào ngày đáo hạn.
+  - question: Hợp đồng tương lai của tháng tiếp theo được mở giao dịch khi nào?
+    answer: >-
+      Ngay vào ngày làm việc tiếp theo sau ngày đáo hạn (thường là thứ Sáu), hợp
+      đồng tương lai tháng mới sẽ chính thức được mở để nhà đầu tư giao dịch.
 sources:
-  - "Sở Giao dịch Chứng khoán Hà Nội (HNX)"
-  - "Sở Giao dịch Chứng khoán TP.HCM (HOSE)"
+  - Sở Giao dịch Chứng khoán Hà Nội (HNX)
+  - Sở Giao dịch Chứng khoán TP.HCM (HOSE)
 keyTakeaways:
-  - "Đáo hạn phái sinh là ngày cuối cùng hợp đồng tương lai chỉ số VN30 còn hiệu lực giao dịch."
-  - "Tại Việt Nam, ngày đáo hạn phái sinh diễn ra vào ngày thứ Năm lần thứ ba của tháng."
-  - "Phiên đáo hạn thường có biến động mạnh trên thị trường cơ sở do các tổ chức cơ cấu lại vị thế."
+  - >-
+    Đáo hạn phái sinh là ngày cuối cùng hợp đồng tương lai chỉ số VN30 còn hiệu
+    lực giao dịch.
+  - >-
+    Tại Việt Nam, ngày đáo hạn phái sinh diễn ra vào ngày thứ Năm lần thứ ba của
+    tháng.
+  - >-
+    Phiên đáo hạn thường có biến động mạnh trên thị trường cơ sở do các tổ chức
+    cơ cấu lại vị thế.
 ---
 
 Nhiều nhà đầu tư cá nhân trên thị trường cơ sở thường lo ngại các phiên biến động thất thường và đặt câu hỏi **dao han phai sinh la gi** vào mỗi tuần thứ ba hàng tháng. Blog **[Value Investing](/)** sẽ giúp bạn bóc tách cơ chế hoạt động của ngày đáo hạn và đưa ra những chiến lược bảo vệ tài sản hiệu quả nhất.
@@ -59,3 +71,4 @@ Nguyên nhân chính đến từ hoạt động cơ cấu vị thế quy mô l�
 Sự tác động chéo giữa hai thị trường tạo ra các phiên ATC biến động bất ngờ khiến nhà đầu tư cá nhân khó lòng lường trước được xu hướng. Do đó, lời khuyên thực chiến cho F0 là nên hạn chế mở vị thế mới hoặc tránh giao dịch cổ phiếu cơ sở quá sát ngày đáo hạn để bảo vệ nguồn vốn tích lũy của mình.
 
 Hãy trang bị thêm kiến thức qua bài viết [cách đầu tư chứng khoán phái sinh](/dau-tu/phai-sinh/cach-dau-tu-chung-khoan-phai-sinh/) để hiểu rõ hơn về các chiến lược quản trị rủi ro trên thị trường.
+ Bên cạnh đó, bạn cũng nên đọc thêm bài viết phân tích về [Quyền chọn là gì? Khái niệm và hướng dẫn giao dịch](/dau-tu/phai-sinh/quyen-chon-la-gi/) để trang bị kiến thức đầy đủ nhất.

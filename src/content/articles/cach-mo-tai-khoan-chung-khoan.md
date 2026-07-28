@@ -1,11 +1,14 @@
 ---
-title: "Cách mở tài khoản chứng khoán online cho người mới"
-description: "Hướng dẫn chi tiết cách mở tài khoản chứng khoán online qua eKYC chỉ trong 5 phút. Cần chuẩn bị những gì và nên mở tài khoản chứng khoán ở đâu tốt nhất?"
-category: "co-phieu"
-heroImage: "/images/articles/cach-mo-tai-khoan-chung-khoan/cach-mo-tai-khoan-chung-khoan.jpg"
-publishDate: "2026-06-28"
-updatedDate: "2026-06-28"
-readingTime: "5 phút đọc"
+title: Cách mở tài khoản chứng khoán online cho người mới
+description: >-
+  Hướng dẫn chi tiết cách mở tài khoản chứng khoán online qua eKYC chỉ trong 5
+  phút. Cần chuẩn bị những gì và nên mở tài khoản chứng khoán ở đâu tốt nhất?
+category: co-phieu
+heroImage: >-
+  /images/articles/cach-mo-tai-khoan-chung-khoan/cach-mo-tai-khoan-chung-khoan.jpg
+publishDate: '2026-06-28'
+updatedDate: '2026-06-28'
+readingTime: 5 phút đọc
 featured: false
 order: 14
 tags:
@@ -14,23 +17,43 @@ tags:
   - mở tài khoản chứng khoán ở đâu
   - eKYC chứng khoán
 faq:
-  - question: "Mở tài khoản chứng khoán có mất phí không?"
-    answer: "Không. Việc mở tài khoản chứng khoán tại Việt Nam hiện nay hoàn toàn miễn phí 100% ở mọi công ty chứng khoán. Bạn chỉ phải trả phí khi thực hiện các giao dịch mua bán cổ phiếu thực tế (thường từ 0% đến 0.15% giá trị giao dịch)."
-  - question: "Một người có thể mở bao nhiêu tài khoản chứng khoán?"
-    answer: "Bạn có thể mở nhiều tài khoản chứng khoán ở các công ty khác nhau (ví dụ: một tài khoản ở TCBS và một tài khoản ở VPS). Tuy nhiên, tại mỗi công ty chứng khoán, quy định của UBCKNN chỉ cho phép bạn mở duy nhất một tài khoản giao dịch chính chủ."
-  - question: "Mở tài khoản chứng khoán online có an toàn không?"
-    answer: "Có. Quy trình eKYC sử dụng Căn cước công dân gắn chip và nhận diện sinh trắc học đã được Bộ Công an và UBCKNN cấp phép. Hãy chắc chắn bạn tải ứng dụng chính thức từ App Store/Google Play hoặc truy cập đúng trang web của công ty để tránh các đường link lừa đảo."
+  - question: Mở tài khoản chứng khoán có mất phí không?
+    answer: >-
+      Không. Việc mở tài khoản chứng khoán tại Việt Nam hiện nay hoàn toàn miễn
+      phí 100% ở mọi công ty chứng khoán. Bạn chỉ phải trả phí khi thực hiện các
+      giao dịch mua bán cổ phiếu thực tế (thường từ 0% đến 0.15% giá trị giao
+      dịch).
+  - question: Một người có thể mở bao nhiêu tài khoản chứng khoán?
+    answer: >-
+      Bạn có thể mở nhiều tài khoản chứng khoán ở các công ty khác nhau (ví dụ:
+      một tài khoản ở TCBS và một tài khoản ở VPS). Tuy nhiên, tại mỗi công ty
+      chứng khoán, quy định của UBCKNN chỉ cho phép bạn mở duy nhất một tài
+      khoản giao dịch chính chủ.
+  - question: Mở tài khoản chứng khoán online có an toàn không?
+    answer: >-
+      Có. Quy trình eKYC sử dụng Căn cước công dân gắn chip và nhận diện sinh
+      trắc học đã được Bộ Công an và UBCKNN cấp phép. Hãy chắc chắn bạn tải ứng
+      dụng chính thức từ App Store/Google Play hoặc truy cập đúng trang web của
+      công ty để tránh các đường link lừa đảo.
 sources:
-  - "Ủy ban Chứng khoán Nhà nước (UBCKNN)"
-  - "Luật Doanh nghiệp 2020"
+  - Ủy ban Chứng khoán Nhà nước (UBCKNN)
+  - Luật Doanh nghiệp 2020
 citations:
-  - title: "Quy chế hướng dẫn mở tài khoản giao dịch trực tuyến"
-    publisher: "Ủy ban Chứng khoán Nhà nước (UBCKNN)"
+  - title: Quy chế hướng dẫn mở tài khoản giao dịch trực tuyến
+    publisher: Ủy ban Chứng khoán Nhà nước (UBCKNN)
 keyTakeaways:
-  - "Mở tài khoản chứng khoán online qua định danh eKYC chỉ mất khoảng 5 phút và hoàn toàn miễn phí."
-  - "Giấy tờ duy nhất cần thiết là Căn cước công dân gắn chip còn hiệu lực và một chiếc điện thoại có camera."
-  - "Một người có thể sở hữu nhiều tài khoản chứng khoán tại các công ty khác nhau nhưng chỉ có một tại mỗi công ty."
-  - "Nên chọn công ty miễn phí giao dịch và có giao diện ứng dụng dễ sử dụng như TCBS hoặc DNSE khi mới bắt đầu."
+  - >-
+    Mở tài khoản chứng khoán online qua định danh eKYC chỉ mất khoảng 5 phút và
+    hoàn toàn miễn phí.
+  - >-
+    Giấy tờ duy nhất cần thiết là Căn cước công dân gắn chip còn hiệu lực và một
+    chiếc điện thoại có camera.
+  - >-
+    Một người có thể sở hữu nhiều tài khoản chứng khoán tại các công ty khác
+    nhau nhưng chỉ có một tại mỗi công ty.
+  - >-
+    Nên chọn công ty miễn phí giao dịch và có giao diện ứng dụng dễ sử dụng như
+    TCBS hoặc DNSE khi mới bắt đầu.
 ---
 
 Bạn muốn tham gia thị trường chứng khoán nhưng ngần ngại các thủ tục giấy tờ phức tạp? Sự thật là, hiện nay bạn chỉ cần một chiếc điện thoại và 5 phút là đã có thể sở hữu một tài khoản chính chủ qua blog **[Value Investing](/)**. Quy trình này hoàn toàn miễn phí và thực hiện trực tuyến mọi lúc mọi nơi.
@@ -124,3 +147,4 @@ Hệ thống sẽ tự động hiển thị tên người thụ hưởng là tê
 
 
 Với người mới giao dịch lần đầu, bạn nên bắt đầu bằng một số tiền nhỏ từ vài trăm nghìn đồng để trải nghiệm thực tế bảng điện. Khi đã hiểu rõ cách vận hành của các loại lệnh, bạn mới nên gia tăng quy mô vốn đầu tư của mình. Hãy đọc thêm bài [đầu tư chứng khoán cần bao nhiêu tiền](/dau-tu/co-phieu/dau-tu-chung-khoan-can-bao-nhieu-tien/) để biết cách phân bổ nguồn vốn hợp lý và an toàn.
+ Bên cạnh đó, bạn cũng nên đọc thêm bài viết phân tích về [Cổ Phiếu OTC Là Gì? Rủi Ro Và Cách Giao Dịch An Toàn Cho F0](/dau-tu/co-phieu/co-phieu-otc-la-gi/) để trang bị kiến thức đầy đủ nhất.

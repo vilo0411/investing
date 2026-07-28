@@ -1,11 +1,13 @@
 ---
-title: "Đầu tư giá trị là gì? Triết lý đầu tư bền vững cho F0"
-description: "Đầu tư giá trị là gì? Khám phá triết lý săn cổ phiếu dưới giá trị nội tại, biên an toàn của Benjamin Graham và cách F0 áp dụng thực chiến."
-category: "co-phieu"
-heroImage: "/images/articles/dau-tu-gia-tri-la-gi/dau-tu-gia-tri-la-gi.jpg"
-publishDate: "2026-07-21"
-updatedDate: "2026-07-21"
-readingTime: "5 phút đọc"
+title: Đầu tư giá trị là gì? Triết lý đầu tư bền vững cho F0
+description: >-
+  Đầu tư giá trị là gì? Khám phá triết lý săn cổ phiếu dưới giá trị nội tại,
+  biên an toàn của Benjamin Graham và cách F0 áp dụng thực chiến.
+category: co-phieu
+heroImage: /images/articles/dau-tu-gia-tri-la-gi/dau-tu-gia-tri-la-gi.jpg
+publishDate: '2026-07-21'
+updatedDate: '2026-07-21'
+readingTime: 5 phút đọc
 featured: false
 order: 100
 tags:
@@ -13,17 +15,29 @@ tags:
   - triết lý đầu tư
   - tích sản cổ phiếu
 faq:
-  - question: "Đầu tư giá trị có phù hợp với số vốn nhỏ không?"
-    answer: "Có. Bạn hoàn toàn có thể bắt đầu đầu tư giá trị chỉ với vài trăm nghìn đồng bằng cách mua lô lẻ cổ phiếu trên sàn. Quan trọng là tỷ lệ sinh lời và thói quen tích lũy đều đặn."
-  - question: "Làm sao để tránh bẫy giá trị khi đầu tư?"
-    answer: "Bẫy giá trị xảy ra khi cổ phiếu rẻ nhưng doanh nghiệp đang suy thoái nghiêm trọng. Bạn cần kiểm tra xem doanh thu và lợi nhuận có bị sụt giảm liên tục nhiều năm hay không."
+  - question: Đầu tư giá trị có phù hợp với số vốn nhỏ không?
+    answer: >-
+      Có. Bạn hoàn toàn có thể bắt đầu đầu tư giá trị chỉ với vài trăm nghìn
+      đồng bằng cách mua lô lẻ cổ phiếu trên sàn. Quan trọng là tỷ lệ sinh lời
+      và thói quen tích lũy đều đặn.
+  - question: Làm sao để tránh bẫy giá trị khi đầu tư?
+    answer: >-
+      Bẫy giá trị xảy ra khi cổ phiếu rẻ nhưng doanh nghiệp đang suy thoái
+      nghiêm trọng. Bạn cần kiểm tra xem doanh thu và lợi nhuận có bị sụt giảm
+      liên tục nhiều năm hay không.
 sources:
-  - "CFA Institute"
-  - "Warren Buffett Letters to Shareholders"
+  - CFA Institute
+  - Warren Buffett Letters to Shareholders
 keyTakeaways:
-  - "Đầu tư giá trị là phương pháp mua tài sản/cổ phiếu với giá thấp hơn đáng kể so với giá trị nội tại của doanh nghiệp."
-  - "Biên an toàn (Margin of Safety) là nguyên tắc cốt lõi giúp bảo vệ nhà đầu tư khỏi các sai số phân tích và biến động thị trường."
-  - "Chiến lược này yêu cầu sự kiên nhẫn cao, tập trung vào phân tích cơ bản thay vì chạy theo biến động giá ngắn hạn."
+  - >-
+    Đầu tư giá trị là phương pháp mua tài sản/cổ phiếu với giá thấp hơn đáng kể
+    so với giá trị nội tại của doanh nghiệp.
+  - >-
+    Biên an toàn (Margin of Safety) là nguyên tắc cốt lõi giúp bảo vệ nhà đầu tư
+    khỏi các sai số phân tích và biến động thị trường.
+  - >-
+    Chiến lược này yêu cầu sự kiên nhẫn cao, tập trung vào phân tích cơ bản thay
+    vì chạy theo biến động giá ngắn hạn.
 ---
 
 Nhiều người mới tham gia thị trường thường xem chứng khoán như một trò chơi may rủi hoặc phím hàng ngắn hạn. Tuy nhiên, có một chiến lược điềm tĩnh hơn, bền vững hơn đã giúp nhiều huyền thoại trở thành tỷ phú. Đó chính là đầu tư giá trị. Vậy **[Value Investing](/)** sẽ giúp bạn hiểu rõ phương pháp này và cách áp dụng hiệu quả tại Việt Nam.
@@ -126,3 +140,4 @@ Sự kiên nhẫn chờ đợi điểm mua phù hợp là chìa khóa quyết đ
 
 
 Đầu tư giá trị không giúp bạn giàu lên sau một đêm mà yêu cầu tính kỷ luật thép. Hãy kiên trì tích lũy kiến thức và lựa chọn những doanh nghiệp thực sự chất lượng cho danh mục.
+ Để hiểu rõ hơn về chủ đề này, bạn có thể tham khảo thêm hướng dẫn **[cách đầu tư cổ phiếu](/dau-tu/co-phieu/cach-dau-tu-co-phieu/)**.

@@ -1,11 +1,13 @@
 ---
-title: "Call Margin Là Gì? Cách Xử Lý Khi Bị Gọi Ký Quỹ"
-description: "Call margin là cảnh báo bổ sung ký quỹ khi tài sản trong tài khoản margin giảm dưới ngưỡng. Tìm hiểu cách xử lý và phòng tránh bị call margin hiệu quả."
+title: Call Margin Là Gì? Cách Xử Lý Khi Bị Gọi Ký Quỹ
+description: >-
+  Call margin là cảnh báo bổ sung ký quỹ khi tài sản trong tài khoản margin giảm
+  dưới ngưỡng. Tìm hiểu cách xử lý và phòng tránh bị call margin hiệu quả.
 category: co-phieu
-heroImage: "/images/articles/call-margin-la-gi/call-margin-la-gi.jpg"
-publishDate: "2026-07-28"
-updatedDate: "2026-07-28"
-readingTime: "6 phút đọc"
+heroImage: /images/articles/call-margin-la-gi/call-margin-la-gi.jpg
+publishDate: '2026-07-28'
+updatedDate: '2026-07-28'
+readingTime: 6 phút đọc
 featured: false
 order: 100
 tags:
@@ -14,26 +16,37 @@ tags:
   - ký quỹ chứng khoán
   - bán giải chấp
 faq:
-  - question: "Call margin có mất tiền không hay chỉ là cảnh báo?"
-    answer: "Call margin là cảnh báo, chưa mất tiền ngay. Nhưng nếu bạn không bổ sung ký quỹ trong thời hạn quy định (thường 1–3 ngày làm việc), CTCK sẽ tự động bán cổ phiếu trong tài khoản để thu hồi nợ — lúc đó bạn mới thực sự chịu lỗ."
-  - question: "Thời hạn bổ sung ký quỹ sau khi bị call là bao lâu?"
-    answer: "Tùy CTCK, thông thường từ T+1 đến T+3 ngày làm việc. Một số CTCK cho thời hạn ngắn hơn nếu tỷ lệ ký quỹ giảm quá sâu dưới ngưỡng xử lý (force-sell)."
-  - question: "Bán giải chấp có nghĩa là mất hết tiền không?"
-    answer: "Không nhất thiết mất hết. CTCK chỉ bán đủ số cổ phiếu để đưa tỷ lệ ký quỹ về mức an toàn. Tuy nhiên, họ thường bán ở giá sàn nên bạn chịu lỗ nặng hơn so với tự bán chủ động."
+  - question: Call margin có mất tiền không hay chỉ là cảnh báo?
+    answer: >-
+      Call margin là cảnh báo, chưa mất tiền ngay. Nhưng nếu bạn không bổ sung
+      ký quỹ trong thời hạn quy định (thường 1–3 ngày làm việc), CTCK sẽ tự động
+      bán cổ phiếu trong tài khoản để thu hồi nợ — lúc đó bạn mới thực sự chịu
+      lỗ.
+  - question: Thời hạn bổ sung ký quỹ sau khi bị call là bao lâu?
+    answer: >-
+      Tùy CTCK, thông thường từ T+1 đến T+3 ngày làm việc. Một số CTCK cho thời
+      hạn ngắn hơn nếu tỷ lệ ký quỹ giảm quá sâu dưới ngưỡng xử lý (force-sell).
+  - question: Bán giải chấp có nghĩa là mất hết tiền không?
+    answer: >-
+      Không nhất thiết mất hết. CTCK chỉ bán đủ số cổ phiếu để đưa tỷ lệ ký quỹ
+      về mức an toàn. Tuy nhiên, họ thường bán ở giá sàn nên bạn chịu lỗ nặng
+      hơn so với tự bán chủ động.
 sources:
-  - "Ủy ban Chứng khoán Nhà nước (UBCKNN)"
-  - "Nghị định 153/2020/NĐ-CP"
+  - Ủy ban Chứng khoán Nhà nước (UBCKNN)
+  - Nghị định 153/2020/NĐ-CP
 citations:
-  - title: "Quy định về giao dịch ký quỹ chứng khoán"
-    publisher: "UBCKNN"
-  - title: "Nghị định 153/2020/NĐ-CP về phát hành và giao dịch chứng khoán"
-    publisher: "Chính phủ Việt Nam"
-    date: "2020-12-31"
+  - title: Quy định về giao dịch ký quỹ chứng khoán
+    publisher: UBCKNN
+  - title: Nghị định 153/2020/NĐ-CP về phát hành và giao dịch chứng khoán
+    publisher: Chính phủ Việt Nam
+    date: '2020-12-31'
 keyTakeaways:
-  - "Call margin là yêu cầu bổ sung tài sản khi tỷ lệ ký quỹ giảm dưới mức duy trì"
-  - "Không bổ sung đúng hạn sẽ bị CTCK bán giải chấp cổ phiếu"
-  - "Tỷ lệ ký quỹ duy trì phổ biến tại Việt Nam là 30–40%"
-  - "Không dùng đòn bẩy tối đa và đặt stop-loss là cách phòng tránh hiệu quả nhất"
+  - >-
+    Call margin là yêu cầu bổ sung tài sản khi tỷ lệ ký quỹ giảm dưới mức duy
+    trì
+  - Không bổ sung đúng hạn sẽ bị CTCK bán giải chấp cổ phiếu
+  - Tỷ lệ ký quỹ duy trì phổ biến tại Việt Nam là 30–40%
+  - Không dùng đòn bẩy tối đa và đặt stop-loss là cách phòng tránh hiệu quả nhất
 ---
 
 Bạn mua cổ phiếu bằng tiền vay từ công ty chứng khoán, ngày hôm sau thị trường giảm 5% và bạn nhận được thông báo phải nộp thêm tiền trong 2 ngày — đó là call margin. **[Value Investing](/)** giải thích call margin là gì, khi nào xảy ra, và cách xử lý để tránh bị bán giải chấp.
@@ -42,7 +55,7 @@ Bạn mua cổ phiếu bằng tiền vay từ công ty chứng khoán, ngày hô
 
 Call margin (hay margin call) là thông báo từ công ty chứng khoán (CTCK) yêu cầu bạn bổ sung tiền hoặc chứng khoán vào tài khoản [giao dịch ký quỹ (margin)](/dau-tu/co-phieu/margin-la-gi/). Nguyên nhân: giá trị tài sản trong tài khoản đã giảm xuống dưới ngưỡng an toàn quy định.
 
-Một ví dụ thực tế: bạn có 50 triệu tiền mặt và vay thêm 50 triệu margin từ CTCK để mua 4.000 cổ phiếu HPG giá 25.000 đồng/cp. Tổng tài sản ban đầu = 100 triệu. Tỷ lệ ký quỹ = 50 triệu (vốn tự có) / 100 triệu (tổng tài sản) = 50%.
+Một ví dụ thực tế: bạn có 50 triệu tiền mặt và vay thêm 50 triệu margin từ CTCK để mua 4.000 **[cổ phiếu](/dau-tu/co-phieu/co-phieu-la-gi/)** HPG giá 25.000 đồng/cp. Tổng tài sản ban đầu = 100 triệu. Tỷ lệ ký quỹ = 50 triệu (vốn tự có) / 100 triệu (tổng tài sản) = 50%.
 
 HPG giảm về 20.000 đồng/cp. Tổng tài sản = 80 triệu. Vốn tự có = 80 triệu − 50 triệu (nợ margin) = 30 triệu. Tỷ lệ ký quỹ mới = 30/80 = 37,5%.
 
@@ -91,3 +104,4 @@ Phòng bệnh tốt hơn chữa bệnh. 5 nguyên tắc giúp bạn giảm thi�
 Call margin không phải tai nạn bất ngờ — nó là hệ quả tất yếu khi dùng đòn bẩy quá mức mà không có kế hoạch quản trị rủi ro. Kiểm tra tỷ lệ ký quỹ hiện tại trên app CTCK bạn đang dùng, đảm bảo con số luôn ở trên 50%.
 
 Đọc thêm bài [cách đầu tư cổ phiếu](/dau-tu/co-phieu/cach-dau-tu-co-phieu/) để xây dựng phương pháp đầu tư bài bản từ đầu.
+ Bên cạnh đó, bạn cũng nên đọc thêm bài viết phân tích về [Cổ Phiếu Quỹ Là Gì? Quy Định Mới Và Tác Động Tới Giá Cổ Phiếu](/dau-tu/co-phieu/co-phieu-quy-la-gi/) để trang bị kiến thức đầy đủ nhất.

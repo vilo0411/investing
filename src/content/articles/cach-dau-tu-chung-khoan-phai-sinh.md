@@ -1,12 +1,15 @@
 ---
-title: "Cách đầu tư chứng khoán phái sinh từ con số 0"
-description: "Hướng dẫn cách đầu tư chứng khoán phái sinh tại Việt Nam. Tìm hiểu bản chất hợp đồng tương lai VN30, cơ chế ký quỹ và cách giao dịch cho người mới."
+title: Cách đầu tư chứng khoán phái sinh từ con số 0
+description: >-
+  Hướng dẫn cách đầu tư chứng khoán phái sinh tại Việt Nam. Tìm hiểu bản chất
+  hợp đồng tương lai VN30, cơ chế ký quỹ và cách giao dịch cho người mới.
 category: phai-sinh
-heroImage: "/images/articles/cach-dau-tu-chung-khoan-phai-sinh/cach-dau-tu-chung-khoan-phai-sinh.jpg"
-publishDate: "2026-06-15"
-updatedDate: "2026-06-15"
-factCheckedDate: "2026-06-21"
-readingTime: "6 phút đọc"
+heroImage: >-
+  /images/articles/cach-dau-tu-chung-khoan-phai-sinh/cach-dau-tu-chung-khoan-phai-sinh.jpg
+publishDate: '2026-06-15'
+updatedDate: '2026-06-15'
+factCheckedDate: '2026-06-21'
+readingTime: 6 phút đọc
 featured: true
 order: 1
 tags:
@@ -14,26 +17,45 @@ tags:
   - chứng khoán phái sinh
   - hợp đồng tương lai
 faq:
-  - question: "Vốn tối thiểu để đầu tư chứng khoán phái sinh là bao nhiêu?"
-    answer: "Để giao dịch 1 hợp đồng tương lai chỉ số VN30, bạn cần ký quỹ một khoản tiền bằng khoảng 17% đến 22% giá trị hợp đồng. Với điểm chỉ số khoảng 1.200 điểm, số vốn ký quỹ tối thiểu cần có khoảng 20 đến 25 triệu đồng."
-  - question: "Giao dịch T+0 trong phái sinh nghĩa là gì?"
-    answer: "T+0 nghĩa là bạn có thể mua và bán hợp đồng tương lai ngay lập tức trong cùng một phiên giao dịch để chốt lãi hoặc cắt lỗ, không cần đợi cổ phiếu về tài khoản sau 1,5 ngày như chứng khoán cơ sở."
-  - question: "Ký quỹ trong chứng khoán phái sinh là gì?"
-    answer: "Ký quỹ là khoản tiền đặt cọc bắt buộc bạn phải nộp vào công ty chứng khoán trước khi đặt lệnh. Khoản này đảm bảo khả năng thanh toán cho các khoản lãi/lỗ phát sinh từ vị thế giao dịch của bạn."
+  - question: Vốn tối thiểu để đầu tư chứng khoán phái sinh là bao nhiêu?
+    answer: >-
+      Để giao dịch 1 hợp đồng tương lai chỉ số VN30, bạn cần ký quỹ một khoản
+      tiền bằng khoảng 17% đến 22% giá trị hợp đồng. Với điểm chỉ số khoảng
+      1.200 điểm, số vốn ký quỹ tối thiểu cần có khoảng 20 đến 25 triệu đồng.
+  - question: Giao dịch T+0 trong phái sinh nghĩa là gì?
+    answer: >-
+      T+0 nghĩa là bạn có thể mua và bán hợp đồng tương lai ngay lập tức trong
+      cùng một phiên giao dịch để chốt lãi hoặc cắt lỗ, không cần đợi cổ phiếu
+      về tài khoản sau 1,5 ngày như chứng khoán cơ sở.
+  - question: Ký quỹ trong chứng khoán phái sinh là gì?
+    answer: >-
+      Ký quỹ là khoản tiền đặt cọc bắt buộc bạn phải nộp vào công ty chứng khoán
+      trước khi đặt lệnh. Khoản này đảm bảo khả năng thanh toán cho các khoản
+      lãi/lỗ phát sinh từ vị thế giao dịch của bạn.
 sources:
-  - "Sở Giao dịch Chứng khoán Hà Nội (HNX)"
-  - "Tổng công ty Lưu ký và Bù trừ Chứng khoán Việt Nam (VSDC)"
+  - Sở Giao dịch Chứng khoán Hà Nội (HNX)
+  - Tổng công ty Lưu ký và Bù trừ Chứng khoán Việt Nam (VSDC)
 citations:
-  - title: "Hướng dẫn giao dịch sản phẩm Hợp đồng tương lai chỉ số VN30"
-    publisher: "Sở Giao dịch Chứng khoán Hà Nội (HNX)"
-  - title: "Nghị định 158/2020/NĐ-CP về chứng khoán phái sinh và thị trường chứng khoán phái sinh"
-    publisher: "Chính phủ"
-    date: "2020-12-31"
+  - title: Hướng dẫn giao dịch sản phẩm Hợp đồng tương lai chỉ số VN30
+    publisher: Sở Giao dịch Chứng khoán Hà Nội (HNX)
+  - title: >-
+      Nghị định 158/2020/NĐ-CP về chứng khoán phái sinh và thị trường chứng
+      khoán phái sinh
+    publisher: Chính phủ
+    date: '2020-12-31'
 keyTakeaways:
-  - "Chứng khoán phái sinh tại Việt Nam hiện tại phổ biến nhất là Hợp đồng tương lai chỉ số VN30."
-  - "Phái sinh cho phép nhà đầu tư kiếm lời cả khi thị trường tăng (Long) và khi thị trường giảm (Short)."
-  - "Giao dịch phái sinh áp dụng tỷ lệ đòn bẩy cao và cơ chế thanh toán T+0 linh hoạt."
-  - "Người mới bắt đầu cần đặc biệt cẩn trọng với rủi ro biến động giá nhanh và rủi ro lệnh gọi ký quỹ."
+  - >-
+    Chứng khoán phái sinh tại Việt Nam hiện tại phổ biến nhất là Hợp đồng tương
+    lai chỉ số VN30.
+  - >-
+    Phái sinh cho phép nhà đầu tư kiếm lời cả khi thị trường tăng (Long) và khi
+    thị trường giảm (Short).
+  - >-
+    Giao dịch phái sinh áp dụng tỷ lệ đòn bẩy cao và cơ chế thanh toán T+0 linh
+    hoạt.
+  - >-
+    Người mới bắt đầu cần đặc biệt cẩn trọng với rủi ro biến động giá nhanh và
+    rủi ro lệnh gọi ký quỹ.
 ---
 
 Thị trường chứng khoán cơ sở sụt giảm khiến danh mục cổ phiếu của bạn liên tục đỏ lửa. Nhiều nhà đầu tư đã tìm đến thị trường phái sinh như một công cụ phòng vệ và tìm kiếm lợi nhuận hai chiều. Bài viết này từ **[Value Investing](/)** sẽ hướng dẫn chi tiết **cách đầu tư chứng khoán phái sinh** cho người mới bắt đầu tại Việt Nam.
@@ -91,3 +113,4 @@ Sau khi làm quen với nhịp giao dịch nhanh, bạn nên kết hợp tham kh
 
 ---
 *Nội dung bài viết chỉ mang tính chất tham khảo giáo dục kiến thức tài chính, không cấu thành lời khuyên đầu tư trực tiếp.*
+ Bên cạnh đó, bạn cũng nên đọc thêm bài viết phân tích về [Đáo hạn phái sinh là gì? Ảnh hưởng đến thị trường chứng khoán ra sao](/dau-tu/phai-sinh/dao-han-phai-sinh-la-gi/) để trang bị kiến thức đầy đủ nhất.

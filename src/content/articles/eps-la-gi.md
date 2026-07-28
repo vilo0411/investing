@@ -1,12 +1,14 @@
 ---
-title: "EPS là gì? Ý nghĩa và cách tính chỉ số EPS chuẩn xác"
-description: "Chỉ số EPS là gì? Hướng dẫn công thức tính EPS cơ bản và EPS pha loãng, ý nghĩa của EPS đối với việc lựa chọn cổ phiếu và tính định giá P/E."
+title: EPS là gì? Ý nghĩa và cách tính chỉ số EPS chuẩn xác
+description: >-
+  Chỉ số EPS là gì? Hướng dẫn công thức tính EPS cơ bản và EPS pha loãng, ý
+  nghĩa của EPS đối với việc lựa chọn cổ phiếu và tính định giá P/E.
 category: co-ban
-heroImage: "/images/articles/eps-la-gi/eps-la-gi.jpg"
-publishDate: "2026-06-09"
-updatedDate: "2026-06-15"
-factCheckedDate: "2026-06-21"
-readingTime: "5 phút đọc"
+heroImage: /images/articles/eps-la-gi/eps-la-gi.jpg
+publishDate: '2026-06-09'
+updatedDate: '2026-06-15'
+factCheckedDate: '2026-06-21'
+readingTime: 5 phút đọc
 featured: false
 order: 7
 tags:
@@ -15,25 +17,43 @@ tags:
   - lợi nhuận trên mỗi cổ phiếu
   - phân tích cơ bản
 faq:
-  - question: "Sự khác biệt lớn nhất giữa EPS cơ bản và EPS pha loãng là gì?"
-    answer: "EPS cơ bản chỉ tính trên số lượng cổ phiếu đang lưu hành thực tế. EPS pha loãng tính thêm cả số cổ phiếu có thể phát sinh trong tương lai từ trái phiếu chuyển đổi, quyền chọn mua hoặc cổ phiếu phát hành cho nhân viên (ESOP)."
-  - question: "Tại sao chỉ số EPS của doanh nghiệp tăng nhưng giá cổ phiếu vẫn giảm?"
-    answer: "EPS tăng có thể là do doanh nghiệp ghi nhận lợi nhuận đột biến một lần từ bán tài sản hoặc đánh giá lại tài sản, vốn không bền vững. Thị trường thường nhận diện điều này và định giá thấp đi."
-  - question: "Có nên đầu tư vào những doanh nghiệp có chỉ số EPS bị âm không?"
-    answer: "EPS âm nghĩa là doanh nghiệp đang bị thua lỗ ròng. Nhà đầu tư F0 nên tránh xa trừ khi bạn hiểu rất rõ lộ trình tái cấu trúc hoặc phục hồi lợi nhuận của doanh nghiệp đó."
+  - question: Sự khác biệt lớn nhất giữa EPS cơ bản và EPS pha loãng là gì?
+    answer: >-
+      EPS cơ bản chỉ tính trên số lượng cổ phiếu đang lưu hành thực tế. EPS pha
+      loãng tính thêm cả số cổ phiếu có thể phát sinh trong tương lai từ trái
+      phiếu chuyển đổi, quyền chọn mua hoặc cổ phiếu phát hành cho nhân viên
+      (ESOP).
+  - question: Tại sao chỉ số EPS của doanh nghiệp tăng nhưng giá cổ phiếu vẫn giảm?
+    answer: >-
+      EPS tăng có thể là do doanh nghiệp ghi nhận lợi nhuận đột biến một lần từ
+      bán tài sản hoặc đánh giá lại tài sản, vốn không bền vững. Thị trường
+      thường nhận diện điều này và định giá thấp đi.
+  - question: Có nên đầu tư vào những doanh nghiệp có chỉ số EPS bị âm không?
+    answer: >-
+      EPS âm nghĩa là doanh nghiệp đang bị thua lỗ ròng. Nhà đầu tư F0 nên tránh
+      xa trừ khi bạn hiểu rất rõ lộ trình tái cấu trúc hoặc phục hồi lợi nhuận
+      của doanh nghiệp đó.
 sources:
-  - "CFA Institute"
-  - "Chuẩn mực Kế toán Việt Nam (VAS)"
+  - CFA Institute
+  - Chuẩn mực Kế toán Việt Nam (VAS)
 citations:
-  - title: "CFA Program Curriculum — Financial Reporting and Analysis"
-    publisher: "CFA Institute"
-  - title: "Chuẩn mực Kế toán Việt Nam số 30 (VAS 30) — Lãi trên cổ phiếu"
-    publisher: "Bộ Tài chính"
+  - title: CFA Program Curriculum — Financial Reporting and Analysis
+    publisher: CFA Institute
+  - title: Chuẩn mực Kế toán Việt Nam số 30 (VAS 30) — Lãi trên cổ phiếu
+    publisher: Bộ Tài chính
 keyTakeaways:
-  - "Chỉ số EPS (Earnings Per Share) là phần lợi nhuận sau thuế của doanh nghiệp được phân bổ cho mỗi cổ phần phổ thông đang lưu hành."
-  - "EPS là chỉ số cốt lõi phản ánh khả năng sinh lời của doanh nghiệp và là thành phần bắt buộc để tính chỉ số định giá P/E."
-  - "Cần phân biệt rõ EPS cơ bản và EPS pha loãng để tránh đánh giá sai lệch giá trị thực tế của cổ phiếu."
-  - "Luôn xem xét xu hướng tăng trưởng của EPS trong 3-5 năm liên tiếp thay vì chỉ nhìn vào số liệu của một vài quý đơn lẻ."
+  - >-
+    Chỉ số EPS (Earnings Per Share) là phần lợi nhuận sau thuế của doanh nghiệp
+    được phân bổ cho mỗi cổ phần phổ thông đang lưu hành.
+  - >-
+    EPS là chỉ số cốt lõi phản ánh khả năng sinh lời của doanh nghiệp và là
+    thành phần bắt buộc để tính chỉ số định giá P/E.
+  - >-
+    Cần phân biệt rõ EPS cơ bản và EPS pha loãng để tránh đánh giá sai lệch giá
+    trị thực tế của cổ phiếu.
+  - >-
+    Luôn xem xét xu hướng tăng trưởng của EPS trong 3-5 năm liên tiếp thay vì
+    chỉ nhìn vào số liệu của một vài quý đơn lẻ.
 ---
 
 Trên bảng điện tử chứng khoán hoặc các trang tin tài chính, bên cạnh giá cổ phiếu, EPS luôn là con số được hiển thị nổi bật nhất. Đây là chỉ số nền tảng phản ánh khả năng sinh lợi trực tiếp trên từng cổ phần bạn nắm giữ. Bài viết này từ **[Value Investing](/)** sẽ giúp bạn hiểu rõ **eps là gì**, công thức tính toán đơn giản và cách dùng EPS để tìm kiếm những doanh nghiệp đang tăng trưởng mạnh mẽ nhất.

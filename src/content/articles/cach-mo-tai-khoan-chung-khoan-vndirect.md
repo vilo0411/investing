@@ -1,11 +1,14 @@
 ---
-title: "Cách mở tài khoản chứng khoán VNDIRECT online"
-description: "Hướng dẫn chi tiết cách mở tài khoản chứng khoán VNDIRECT online 100% bằng eKYC. Cập nhật quy định xác thực VNeID mới nhất cho F0 năm 2026."
+title: Cách mở tài khoản chứng khoán VNDIRECT online
+description: >-
+  Hướng dẫn chi tiết cách mở tài khoản chứng khoán VNDIRECT online 100% bằng
+  eKYC. Cập nhật quy định xác thực VNeID mới nhất cho F0 năm 2026.
 category: reviews
-heroImage: "/images/articles/cach-mo-tai-khoan-chung-khoan-vndirect/cach-mo-tai-khoan-chung-khoan-vndirect.jpg"
-publishDate: "2026-07-27"
-updatedDate: "2026-07-27"
-readingTime: "5 phút đọc"
+heroImage: >-
+  /images/articles/cach-mo-tai-khoan-chung-khoan-vndirect/cach-mo-tai-khoan-chung-khoan-vndirect.jpg
+publishDate: '2026-07-27'
+updatedDate: '2026-07-27'
+readingTime: 5 phút đọc
 featured: false
 order: 2
 tags:
@@ -14,24 +17,42 @@ tags:
   - ekyc vndirect
   - vneid vndirect
 faq:
-  - question: "Mở tài khoản VNDIRECT online mất bao lâu thì giao dịch được?"
-    answer: "Quy trình eKYC mất khoảng 3–5 phút. Nếu hồ sơ hoàn tất trước 15h50 các ngày làm việc, tài khoản thường được kích hoạt để giao dịch ngay trong ngày."
-  - question: "Xác thực VNeID tại VNDIRECT có an toàn không?"
-    answer: "Có, việc xác thực qua VNeID liên kết trực tiếp với dữ liệu dân cư quốc gia của Bộ Công An, đảm bảo an toàn tuyệt đối và bảo mật thông tin cá nhân của bạn."
-  - question: "Đăng ký tài khoản xong chưa nộp tiền có bị khóa không?"
-    answer: "Không, VNDIRECT không khóa tài khoản chưa nạp tiền và không yêu cầu số dư tối thiểu để duy trì tài khoản."
+  - question: Mở tài khoản VNDIRECT online mất bao lâu thì giao dịch được?
+    answer: >-
+      Quy trình eKYC mất khoảng 3–5 phút. Nếu hồ sơ hoàn tất trước 15h50 các
+      ngày làm việc, tài khoản thường được kích hoạt để giao dịch ngay trong
+      ngày.
+  - question: Xác thực VNeID tại VNDIRECT có an toàn không?
+    answer: >-
+      Có, việc xác thực qua VNeID liên kết trực tiếp với dữ liệu dân cư quốc gia
+      của Bộ Công An, đảm bảo an toàn tuyệt đối và bảo mật thông tin cá nhân của
+      bạn.
+  - question: Đăng ký tài khoản xong chưa nộp tiền có bị khóa không?
+    answer: >-
+      Không, VNDIRECT không khóa tài khoản chưa nạp tiền và không yêu cầu số dư
+      tối thiểu để duy trì tài khoản.
 sources:
-  - "Quy trình hướng dẫn mở tài khoản trực tuyến từ cổng thông tin hỗ trợ khách hàng VNDIRECT (tháng 7/2026)"
-  - "Thông báo hướng dẫn xác thực định danh qua tài khoản định danh điện tử VNeID của VNDIRECT"
+  - >-
+    Quy trình hướng dẫn mở tài khoản trực tuyến từ cổng thông tin hỗ trợ khách
+    hàng VNDIRECT (tháng 7/2026)
+  - >-
+    Thông báo hướng dẫn xác thực định danh qua tài khoản định danh điện tử VNeID
+    của VNDIRECT
 citations:
-  - title: "Hướng dẫn mở tài khoản và định danh khách hàng trực tuyến"
-    publisher: "Công ty Cổ phần Chứng khoán VNDIRECT"
-    url: "https://www.vndirect.com.vn"
+  - title: Hướng dẫn mở tài khoản và định danh khách hàng trực tuyến
+    publisher: Công ty Cổ phần Chứng khoán VNDIRECT
+    url: 'https://www.vndirect.com.vn'
 keyTakeaways:
-  - "Mở tài khoản VNDIRECT trực tuyến 100% qua website MyDGO hoặc ứng dụng di động VNDIRECT DGO."
-  - "Chuẩn bị CCCD còn hạn và tài khoản ngân hàng chính chủ để liên kết rút tiền."
-  - "Bắt buộc xác thực định danh qua tài khoản VNeID (cập nhật từ ngày 01/01/2026)."
-  - "Hoàn tất trước 15h50 các ngày làm việc để tài khoản được kích hoạt ngay trong ngày."
+  - >-
+    Mở tài khoản VNDIRECT trực tuyến 100% qua website MyDGO hoặc ứng dụng di
+    động VNDIRECT DGO.
+  - Chuẩn bị CCCD còn hạn và tài khoản ngân hàng chính chủ để liên kết rút tiền.
+  - >-
+    Bắt buộc xác thực định danh qua tài khoản VNeID (cập nhật từ ngày
+    01/01/2026).
+  - >-
+    Hoàn tất trước 15h50 các ngày làm việc để tài khoản được kích hoạt ngay
+    trong ngày.
 ---
 
 Bạn đang tìm kiếm **cách mở tài khoản chứng khoán VNDIRECT** để bắt đầu tham gia thị trường đầu tư? VNDIRECT là một trong những công ty chứng khoán hàng đầu với hệ thống giao dịch chuyên nghiệp. Bài viết này từ **[Value Investing](/)** sẽ hướng dẫn bạn từng bước đăng ký trực tuyến nhanh chóng nhất.
@@ -117,3 +138,7 @@ Dưới đây là bảng so sánh nhanh các chỉ số cơ bản giữa VNDIREC
 Nếu bạn đang cân nhắc giữa các nền tảng, việc tham khảo bài viết [so sánh TCBS và VNDIRECT](/reviews/tcbs-vs-vndirect/) sẽ giúp bạn có cái nhìn chi tiết hơn.
 
 Hãy chắc chắn rằng bạn hiểu rõ việc [mở tài khoản chứng khoán có mất phí không](/dau-tu/co-phieu/mo-tai-khoan-chung-khoan-co-mat-phi-khong/) trước khi nạp vốn. Chúc bạn có những quyết định đầu tư đúng đắn và hiệu quả.
+
+
+> **Xem hướng dẫn tổng quan:** Đọc bài viết **[Cách mở tài khoản chứng khoán](/dau-tu/co-phieu/cach-mo-tai-khoan-chung-khoan/)** để biết chi tiết các bước thực hiện.
+ Để hiểu rõ hơn về chủ đề này, bạn có thể tham khảo thêm hướng dẫn **[đánh giá các công ty chứng khoán](/reviews/review-cong-ty-chung-khoan-cho-nguoi-moi/)**. Bên cạnh đó, bạn cũng nên đọc thêm bài viết phân tích về [Review MBS Securities: Có nên mở tài khoản chứng khoán MBS không? (2026)](/reviews/review-mbs-securities/) để trang bị kiến thức đầy đủ nhất.

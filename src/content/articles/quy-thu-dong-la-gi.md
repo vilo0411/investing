@@ -1,11 +1,13 @@
 ---
-title: "Quỹ thụ động là gì? Hướng dẫn đầu tư cho F0"
-description: "Quỹ thụ động là gì? Cẩm nang chi tiết về đặc điểm, ưu nhược điểm, các hình thức phổ biến ở Việt Nam và so sánh chi tiết với quỹ chủ động."
-category: "etf"
-heroImage: "/images/articles/quy-thu-dong-la-gi/quy-thu-dong-la-gi.jpg"
-publishDate: "2026-07-07"
-updatedDate: "2026-07-07"
-readingTime: "5 phút đọc"
+title: Quỹ thụ động là gì? Hướng dẫn đầu tư cho F0
+description: >-
+  Quỹ thụ động là gì? Cẩm nang chi tiết về đặc điểm, ưu nhược điểm, các hình
+  thức phổ biến ở Việt Nam và so sánh chi tiết với quỹ chủ động.
+category: etf
+heroImage: /images/articles/quy-thu-dong-la-gi/quy-thu-dong-la-gi.jpg
+publishDate: '2026-07-07'
+updatedDate: '2026-07-07'
+readingTime: 5 phút đọc
 featured: false
 order: 100
 tags:
@@ -14,17 +16,27 @@ tags:
   - quỹ ETF
   - tích sản dài hạn
 faq:
-  - question: "Quỹ thụ động có chia cổ tức cho nhà đầu tư không?"
-    answer: "Có. Cổ tức từ các doanh nghiệp trong rổ chỉ số sẽ được quỹ tự động tái đầu tư để tăng giá trị NAV hoặc chi trả lại cho bạn tùy theo điều lệ quỹ."
-  - question: "Tại sao phí quản lý của quỹ thụ động lại rẻ hơn quỹ chủ động?"
-    answer: "Vì quỹ thụ động vận hành tự động theo thuật toán bám sát rổ chỉ số có sẵn, không cần đội ngũ chuyên gia phân tích doanh nghiệp cồng kềnh."
+  - question: Quỹ thụ động có chia cổ tức cho nhà đầu tư không?
+    answer: >-
+      Có. Cổ tức từ các doanh nghiệp trong rổ chỉ số sẽ được quỹ tự động tái đầu
+      tư để tăng giá trị NAV hoặc chi trả lại cho bạn tùy theo điều lệ quỹ.
+  - question: Tại sao phí quản lý của quỹ thụ động lại rẻ hơn quỹ chủ động?
+    answer: >-
+      Vì quỹ thụ động vận hành tự động theo thuật toán bám sát rổ chỉ số có sẵn,
+      không cần đội ngũ chuyên gia phân tích doanh nghiệp cồng kềnh.
 sources:
-  - "Ủy ban Chứng khoán Nhà nước (UBCKNN)"
-  - "Sở Giao dịch Chứng khoán TP.HCM (HOSE)"
+  - Ủy ban Chứng khoán Nhà nước (UBCKNN)
+  - Sở Giao dịch Chứng khoán TP.HCM (HOSE)
 keyTakeaways:
-  - "Quỹ thụ động hướng tới mục tiêu mô phỏng nguyên vẹn hiệu suất của chỉ số tham chiếu với chi phí tối ưu nhất."
-  - "Ưu điểm lớn nhất là mức phí cực thấp (0.5% - 0.8% mỗi năm) và tính minh bạch tuyệt đối của danh mục đầu tư."
-  - "Hạn chế là không thể đạt lợi nhuận vượt trội và thiếu linh hoạt phòng thủ khi thị trường có biến động xấu."
+  - >-
+    Quỹ thụ động hướng tới mục tiêu mô phỏng nguyên vẹn hiệu suất của chỉ số
+    tham chiếu với chi phí tối ưu nhất.
+  - >-
+    Ưu điểm lớn nhất là mức phí cực thấp (0.5% - 0.8% mỗi năm) và tính minh bạch
+    tuyệt đối của danh mục đầu tư.
+  - >-
+    Hạn chế là không thể đạt lợi nhuận vượt trội và thiếu linh hoạt phòng thủ
+    khi thị trường có biến động xấu.
 ---
 
 Bạn là nhân viên văn phòng bận rộn với công việc 8 tiếng mỗi ngày và muốn đầu tư tích sản dài hạn. Bạn không muốn tốn nhiều thời gian đọc báo cáo tài chính phức tạp hoặc bám sát bảng điện tử hàng ngày. Hãy cùng tìm hiểu khái niệm quỹ thụ động qua blog **[Value Investing](/)** để khám phá một giải pháp đầu tư an nhàn, chi phí thấp nhưng mang lại hiệu quả bền vững.
@@ -79,3 +91,4 @@ Có. Các khoản cổ tức bằng tiền mặt từ các doanh nghiệp trong 
 Quỹ thụ động vận hành tự động theo thuật toán bám sát rổ chỉ số có sẵn. Công ty quản lý quỹ không cần duy trì một đội ngũ chuyên gia phân tích cồng kềnh và đắt đỏ để nghiên cứu từng doanh nghiệp riêng lẻ.
 
 Quỹ thụ động là công cụ tích sản lý tưởng cho nhà đầu tư F0 hướng tới sự an nhàn dài hạn. Bạn hãy bắt đầu bằng việc lập một kế hoạch phân bổ 10% thu nhập hàng tháng để mua chứng chỉ quỹ ETF VN30. Hành động kỷ luật này sẽ giúp bạn xây dựng nền móng tài chính vững chắc cho tương lai.
+ Để hiểu rõ hơn về chủ đề này, bạn có thể tham khảo thêm hướng dẫn **[cách đầu tư quỹ ETF](/dau-tu/etf/cach-dau-tu-quy-etf/)**.

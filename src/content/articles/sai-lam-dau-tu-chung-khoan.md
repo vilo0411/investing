@@ -1,11 +1,13 @@
 ---
-title: "7 Sai Lầm Đầu Tư Chứng Khoán Phổ Biến Nhất Ở Người Mới"
-description: "7 sai lầm đầu tư chứng khoán phổ biến nhất ở người mới: mua theo tin đồn, không cắt lỗ, dùng margin quá mức. Kèm cách khắc phục thực tế cho từng lỗi."
+title: 7 Sai Lầm Đầu Tư Chứng Khoán Phổ Biến Nhất Ở Người Mới
+description: >-
+  7 sai lầm đầu tư chứng khoán phổ biến nhất ở người mới: mua theo tin đồn,
+  không cắt lỗ, dùng margin quá mức. Kèm cách khắc phục thực tế cho từng lỗi.
 category: co-phieu
-heroImage: "/images/articles/sai-lam-dau-tu-chung-khoan/sai-lam-dau-tu-chung-khoan.jpg"
-publishDate: "2026-07-28"
-updatedDate: "2026-07-28"
-readingTime: "8 phút đọc"
+heroImage: /images/articles/sai-lam-dau-tu-chung-khoan/sai-lam-dau-tu-chung-khoan.jpg
+publishDate: '2026-07-28'
+updatedDate: '2026-07-28'
+readingTime: 8 phút đọc
 featured: false
 order: 100
 tags:
@@ -14,33 +16,42 @@ tags:
   - quản trị rủi ro
   - nhật ký giao dịch
 faq:
-  - question: "Đầu tư chứng khoán có phải ai cũng thua lỗ ban đầu không?"
-    answer: "Không nhất thiết, nhưng tỷ lệ thua lỗ trong năm đầu tiên ước tính 70–80% theo nhiều khảo sát từ CTCK. Nguyên nhân chính không phải thị trường xấu mà là thiếu kiến thức nền tảng và kỷ luật giao dịch."
-  - question: "Bao lâu thì người mới có thể có lợi nhuận ổn định?"
-    answer: "Trung bình 2–3 năm nếu bạn học nghiêm túc, ghi nhật ký giao dịch và rút kinh nghiệm từ mỗi lệnh. Nhà đầu tư giỏi không phải người không sai — mà là người không lặp lại sai lầm cũ."
-  - question: "Nên bắt đầu với bao nhiêu tiền để giảm rủi ro sai lầm?"
-    answer: "Bắt đầu với 5–10 triệu đồng là đủ để học kinh nghiệm thực chiến mà không ảnh hưởng tài chính cá nhân. Khi đã có phương pháp ổn định sau 6–12 tháng, tăng dần số vốn."
+  - question: Đầu tư chứng khoán có phải ai cũng thua lỗ ban đầu không?
+    answer: >-
+      Không nhất thiết, nhưng tỷ lệ thua lỗ trong năm đầu tiên ước tính 70–80%
+      theo nhiều khảo sát từ CTCK. Nguyên nhân chính không phải thị trường xấu
+      mà là thiếu kiến thức nền tảng và kỷ luật giao dịch.
+  - question: Bao lâu thì người mới có thể có lợi nhuận ổn định?
+    answer: >-
+      Trung bình 2–3 năm nếu bạn học nghiêm túc, ghi nhật ký giao dịch và rút
+      kinh nghiệm từ mỗi lệnh. Nhà đầu tư giỏi không phải người không sai — mà
+      là người không lặp lại sai lầm cũ.
+  - question: Nên bắt đầu với bao nhiêu tiền để giảm rủi ro sai lầm?
+    answer: >-
+      Bắt đầu với 5–10 triệu đồng là đủ để học kinh nghiệm thực chiến mà không
+      ảnh hưởng tài chính cá nhân. Khi đã có phương pháp ổn định sau 6–12 tháng,
+      tăng dần số vốn.
 sources:
-  - "Trung tâm Lưu ký Chứng khoán Việt Nam (VSD)"
-  - "Benjamin Graham — The Intelligent Investor"
+  - Trung tâm Lưu ký Chứng khoán Việt Nam (VSD)
+  - Benjamin Graham — The Intelligent Investor
 citations:
-  - title: "Báo cáo số liệu tài khoản nhà đầu tư 2025"
-    publisher: "VSD"
-  - title: "The Intelligent Investor"
-    publisher: "Harper Business"
-    date: "1949-01-01"
+  - title: Báo cáo số liệu tài khoản nhà đầu tư 2025
+    publisher: VSD
+  - title: The Intelligent Investor
+    publisher: Harper Business
+    date: '1949-01-01'
 keyTakeaways:
-  - "Đầu tư theo tin đồn/group tín hiệu là sai lầm phổ biến nhất ở F0"
-  - "Không đặt stop-loss trước khi mua gây thua lỗ nặng nhất"
-  - "Đa dạng hóa quá mức cũng là sai lầm, không chỉ tập trung 1 mã"
-  - "Mỗi sai lầm đều có phương pháp khắc phục cụ thể và thực hành ngay"
+  - Đầu tư theo tin đồn/group tín hiệu là sai lầm phổ biến nhất ở F0
+  - Không đặt stop-loss trước khi mua gây thua lỗ nặng nhất
+  - 'Đa dạng hóa quá mức cũng là sai lầm, không chỉ tập trung 1 mã'
+  - Mỗi sai lầm đều có phương pháp khắc phục cụ thể và thực hành ngay
 ---
 
 Một người bạn mở tài khoản chứng khoán, mua theo gợi ý trong group Zalo, lãi 15% tuần đầu rồi lỗ 40% tháng sau. Câu chuyện này lặp lại ở hàng nghìn nhà đầu tư F0 mỗi năm. **[Value Investing](/)** tổng hợp 7 sai lầm đầu tư chứng khoán phổ biến nhất — mỗi sai lầm đi kèm cách khắc phục cụ thể.
 
 ## Sai lầm 1 — Mua bán theo tin đồn và group tín hiệu
 
-Đây là sai lầm phổ biến nhất ở nhà đầu tư mới. Group Facebook, Zalo có hàng chục nghìn thành viên chia sẻ mã cổ phiếu. Ai cũng nói đang lãi, ai cũng có tín hiệu vàng.
+Đây là sai lầm phổ biến nhất ở nhà đầu tư mới. Group Facebook, Zalo có hàng chục nghìn thành viên chia sẻ mã **[cổ phiếu](/dau-tu/co-phieu/co-phieu-la-gi/)**. Ai cũng nói đang lãi, ai cũng có tín hiệu vàng.
 
 Sự thật là đa số group tín hiệu hoạt động theo mô hình: người đi trước mua sẵn → phím mã cho đám đông → giá tăng nhờ đám đông mua vào → người đi trước bán chốt lời → đám đông kẹp hàng. Cổ phiếu penny bị thổi giá từ 5.000 lên 8.000 đồng trong 1 tuần, rồi giảm về 3.000 đồng trong tuần sau.
 
@@ -93,3 +104,4 @@ Thua lỗ không phải vấn đề lớn nhất — lặp lại sai lầm cũ m
 Sai lầm không phải thất bại — sai lầm lặp lại mới là thất bại. Nhận diện được 7 sai lầm trên là bạn đã đi trước 80% nhà đầu tư F0. Đọc lại danh sách, đánh dấu những sai lầm bạn đang mắc phải, và áp dụng 1 cách sửa ngay từ lệnh giao dịch tiếp theo.
 
 Xây dựng phương pháp phân tích bài bản với bài [cách chọn cổ phiếu tốt](/dau-tu/co-phieu/cach-chon-co-phieu-tot/) để giảm thiểu sai lầm từ gốc.
+ Để hiểu rõ hơn về chủ đề này, bạn có thể tham khảo thêm hướng dẫn **[cách đầu tư cổ phiếu](/dau-tu/co-phieu/cach-dau-tu-co-phieu/)**.

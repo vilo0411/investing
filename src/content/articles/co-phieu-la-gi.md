@@ -1,12 +1,15 @@
 ---
-title: "Cổ phiếu là gì? Bản chất và cách hoạt động dễ hiểu nhất"
-description: "Cổ phiếu là gì? Giải thích bản chất cổ phiếu, cổ phần và cổ đông bằng ví dụ thực tế cực dễ hiểu. Hướng dẫn cách phân biệt các loại cổ phiếu và quyền lợi khi đầu tư."
+title: Cổ phiếu là gì? Bản chất và cách hoạt động dễ hiểu nhất
+description: >-
+  Cổ phiếu là gì? Giải thích bản chất cổ phiếu, cổ phần và cổ đông bằng ví dụ
+  thực tế cực dễ hiểu. Hướng dẫn cách phân biệt các loại cổ phiếu và quyền lợi
+  khi đầu tư.
 category: co-phieu
-heroImage: "/images/articles/co-phieu-la-gi/co-phieu-la-gi.jpg"
-publishDate: "2026-06-09"
-updatedDate: "2026-06-21"
-factCheckedDate: "2026-06-21"
-readingTime: "7 phút đọc"
+heroImage: /images/articles/co-phieu-la-gi/co-phieu-la-gi.jpg
+publishDate: '2026-06-09'
+updatedDate: '2026-06-21'
+factCheckedDate: '2026-06-21'
+readingTime: 7 phút đọc
 featured: false
 order: 2
 tags:
@@ -16,30 +19,48 @@ tags:
   - cổ đông
   - cổ phiếu phổ thông
 faq:
-  - question: "Người nắm giữ cổ phiếu gọi là gì?"
-    answer: "Người nắm giữ cổ phiếu được gọi là cổ đông. Dù sở hữu một cổ phiếu duy nhất trên sàn, bạn đã trở thành cổ đông nhỏ của doanh nghiệp đó."
-  - question: "Có phải cứ mua cổ phiếu là chắc chắn nhận cổ tức không?"
-    answer: "Không. Việc chi trả cổ tức phụ thuộc vào kết quả kinh doanh thực tế và quyết định của Đại hội đồng cổ đông. Nếu doanh nghiệp thua lỗ hoặc giữ lại toàn bộ lợi nhuận để tái đầu tư, bạn sẽ không nhận được cổ tức."
-  - question: "Sự khác nhau giữa cổ phiếu và trái phiếu là gì?"
-    answer: "Cổ phiếu xác nhận quyền sở hữu và bạn là chủ doanh nghiệp, cùng chia sẻ rủi ro. Còn trái phiếu xác nhận một khoản nợ, bạn là chủ nợ và doanh nghiệp bắt buộc phải trả gốc và lãi suất cho bạn."
+  - question: Người nắm giữ cổ phiếu gọi là gì?
+    answer: >-
+      Người nắm giữ cổ phiếu được gọi là cổ đông. Dù sở hữu một cổ phiếu duy
+      nhất trên sàn, bạn đã trở thành cổ đông nhỏ của doanh nghiệp đó.
+  - question: Có phải cứ mua cổ phiếu là chắc chắn nhận cổ tức không?
+    answer: >-
+      Không. Việc chi trả cổ tức phụ thuộc vào kết quả kinh doanh thực tế và
+      quyết định của Đại hội đồng cổ đông. Nếu doanh nghiệp thua lỗ hoặc giữ lại
+      toàn bộ lợi nhuận để tái đầu tư, bạn sẽ không nhận được cổ tức.
+  - question: Sự khác nhau giữa cổ phiếu và trái phiếu là gì?
+    answer: >-
+      Cổ phiếu xác nhận quyền sở hữu và bạn là chủ doanh nghiệp, cùng chia sẻ
+      rủi ro. Còn trái phiếu xác nhận một khoản nợ, bạn là chủ nợ và doanh
+      nghiệp bắt buộc phải trả gốc và lãi suất cho bạn.
 sources:
-  - "Ủy ban Chứng khoán Nhà nước (UBCKNN)"
-  - "Sở Giao dịch Chứng khoán TP.HCM (HOSE)"
-  - "Luật Doanh nghiệp 2020 — Điều 121, Khoản 1"
+  - Ủy ban Chứng khoán Nhà nước (UBCKNN)
+  - Sở Giao dịch Chứng khoán TP.HCM (HOSE)
+  - 'Luật Doanh nghiệp 2020 — Điều 121, Khoản 1'
 citations:
-  - title: "Luật Doanh nghiệp 2020 — Điều 121"
-    publisher: "Quốc hội Việt Nam"
-    date: "2020-06-17"
-  - title: "Quy chế giao dịch cổ phiếu tại HOSE"
-    publisher: "Sở Giao dịch Chứng khoán TP.HCM (HOSE)"
-  - title: "Hệ thống lưu ký và thanh toán bù trừ chứng khoán"
-    publisher: "Tổng công ty Lưu ký và Bù trừ Chứng khoán Việt Nam (VSDC)"
+  - title: Luật Doanh nghiệp 2020 — Điều 121
+    publisher: Quốc hội Việt Nam
+    date: '2020-06-17'
+  - title: Quy chế giao dịch cổ phiếu tại HOSE
+    publisher: Sở Giao dịch Chứng khoán TP.HCM (HOSE)
+  - title: Hệ thống lưu ký và thanh toán bù trừ chứng khoán
+    publisher: Tổng công ty Lưu ký và Bù trừ Chứng khoán Việt Nam (VSDC)
 keyTakeaways:
-  - "Cổ phiếu là chứng chỉ xác nhận quyền sở hữu hợp pháp của bạn đối với một phần vốn điều lệ của doanh nghiệp (Luật Doanh nghiệp 2020, Điều 121)."
-  - "Người sở hữu cổ phiếu được gọi là cổ đông và có quyền nhận cổ tức khi doanh nghiệp kinh doanh có lãi."
-  - "Có hai loại cổ phiếu phổ biến là cổ phiếu phổ thông (có quyền biểu quyết) và cổ phiếu ưu đãi (được ưu tiên nhận cổ tức)."
-  - "Khác với trái phiếu (bản chất là nợ), cổ phiếu đại diện cho phần vốn góp chủ sở hữu trực tiếp vào doanh nghiệp."
-  - "Giá cổ phiếu trên HOSE có thể biến động tối đa ±7%/phiên — hiểu rủi ro này trước khi bắt đầu."
+  - >-
+    Cổ phiếu là chứng chỉ xác nhận quyền sở hữu hợp pháp của bạn đối với một
+    phần vốn điều lệ của doanh nghiệp (Luật Doanh nghiệp 2020, Điều 121).
+  - >-
+    Người sở hữu cổ phiếu được gọi là cổ đông và có quyền nhận cổ tức khi doanh
+    nghiệp kinh doanh có lãi.
+  - >-
+    Có hai loại cổ phiếu phổ biến là cổ phiếu phổ thông (có quyền biểu quyết) và
+    cổ phiếu ưu đãi (được ưu tiên nhận cổ tức).
+  - >-
+    Khác với trái phiếu (bản chất là nợ), cổ phiếu đại diện cho phần vốn góp chủ
+    sở hữu trực tiếp vào doanh nghiệp.
+  - >-
+    Giá cổ phiếu trên HOSE có thể biến động tối đa ±7%/phiên — hiểu rủi ro này
+    trước khi bắt đầu.
 ---
 
 Nhiều người khi mới nghe đến cổ phiếu thường nghĩ ngay đến những biểu đồ xanh đỏ phức tạp hoặc trò chơi may rủi trên sàn chứng khoán. Sự thật là, cổ phiếu đại diện cho một thứ rất thực tế: quyền sở hữu một phần doanh nghiệp của bạn. Bài viết này từ **[Value Investing](/)** sẽ giúp bạn bóc tách khái niệm **cổ phiếu là gì** bằng những ví dụ đời thường nhất. Bạn sẽ hiểu rõ mình đang nắm giữ tài sản gì khi quyết định đầu tư.
@@ -134,3 +155,4 @@ Bước đầu tiên đơn giản hơn bạn nghĩ. Value Investing tóm gọn l
 Cổ phiếu đại diện cho tài sản của doanh nghiệp thực tế, không phải những con số nhảy múa trên bảng điện tử. Hiểu đúng bản chất là nền tảng để đưa ra quyết định đầu tư lý trí thay vì chạy theo cảm xúc thị trường.
 
 Bước tiếp theo: đọc hướng dẫn [cách đầu tư cổ phiếu](/dau-tu/co-phieu/cach-dau-tu-co-phieu/) để biết cách chọn mã, đặt lệnh và xây dựng danh mục từ đầu.
+ Bên cạnh đó, bạn cũng nên đọc thêm bài viết phân tích về [Nên đầu tư cổ phiếu nào?](/dau-tu/co-phieu/nen-dau-tu-co-phieu-nao/) để trang bị kiến thức đầy đủ nhất.

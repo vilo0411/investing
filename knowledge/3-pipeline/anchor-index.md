@@ -41,6 +41,11 @@ Index toàn bộ bài đã publish tại `src/content/articles/`. Dùng cho inte
 | `call-margin-la-gi` | Call Margin Là Gì? Cách Xử Lý Khi Bị Gọi Ký Quỹ | `/dau-tu/co-phieu/call-margin-la-gi/` | call margin |
 | `tam-ly-dau-tu-chung-khoan` | Tâm Lý Đầu Tư Chứng Khoán: 5 Bẫy Cảm Xúc Và Cách Vượt Qua | `/dau-tu/co-phieu/tam-ly-dau-tu-chung-khoan/` | tâm lý đầu tư chứng khoán |
 | `sai-lam-dau-tu-chung-khoan` | 7 Sai Lầm Đầu Tư Chứng Khoán Phổ Biến Nhất Ở Người Mới | `/dau-tu/co-phieu/sai-lam-dau-tu-chung-khoan/` | sai lầm đầu tư chứng khoán |
+| `co-phieu-otc-la-gi` | Cổ Phiếu OTC Là Gì? Rủi Ro Và Cách Giao Dịch An Toàn Cho F0 | `/dau-tu/co-phieu/co-phieu-otc-la-gi/` | cổ phiếu OTC |
+| `co-phieu-thuong-la-gi` | Cổ Phiếu Thưởng Là Gì? Bản Chất Và Tác Động Giá Cổ Phiếu | `/dau-tu/co-phieu/co-phieu-thuong-la-gi/` | cổ phiếu thưởng |
+| `co-phieu-esop-la-gi` | Cổ Phiếu ESOP Là Gì? Lợi Ích Doanh Nghiệp Và Rủi Ro Với Cổ Đông | `/dau-tu/co-phieu/co-phieu-esop-la-gi/` | cổ phiếu ESOP |
+| `co-phieu-penny-la-gi` | Cổ Phiếu Penny Là Gì? Bẫy Giá Rẻ Và Rủi Ro Phá Sản Cho F0 | `/dau-tu/co-phieu/co-phieu-penny-la-gi/` | cổ phiếu penny |
+| `co-phieu-quy-la-gi` | Cổ Phiếu Quỹ Là Gì? Quy Định Mới Và Tác Động Tới Giá Cổ Phiếu | `/dau-tu/co-phieu/co-phieu-quy-la-gi/` | cổ phiếu quỹ |
 
 ## Nhóm Đầu tư — Quỹ ETF (`/dau-tu/etf/`)
 

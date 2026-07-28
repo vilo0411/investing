@@ -1,34 +1,50 @@
 ---
-title: "Đầu tư cổ phiếu cần bao nhiêu tiền? Con số tối thiểu cho F0"
-description: "Đầu tư cổ phiếu cần bao nhiêu tiền? Tìm hiểu quy định lô 100 cổ phiếu, cơ chế lô lẻ và cách phân bổ 1-5 triệu đồng cho người mới bắt đầu."
-category: "co-phieu"
-heroImage: "/images/articles/dau-tu-co-phieu-can-bao-nhieu-tien/dau-tu-co-phieu-can-bao-nhieu-tien.jpg"
-publishDate: "2026-07-27"
-updatedDate: "2026-07-27"
-readingTime: "5 phút đọc"
+title: Đầu tư cổ phiếu cần bao nhiêu tiền? Con số tối thiểu cho F0
+description: >-
+  Đầu tư cổ phiếu cần bao nhiêu tiền? Tìm hiểu quy định lô 100 cổ phiếu, cơ chế
+  lô lẻ và cách phân bổ 1-5 triệu đồng cho người mới bắt đầu.
+category: co-phieu
+heroImage: >-
+  /images/articles/dau-tu-co-phieu-can-bao-nhieu-tien/dau-tu-co-phieu-can-bao-nhieu-tien.jpg
+publishDate: '2026-07-27'
+updatedDate: '2026-07-27'
+readingTime: 5 phút đọc
 featured: false
 order: 100
 tags:
-  - "cổ phiếu"
-  - "đầu tư"
-  - "cho người mới"
+  - cổ phiếu
+  - đầu tư
+  - cho người mới
 faq:
-  - question: "Mở tài khoản chứng khoán xong chưa nạp tiền có bị khóa hoặc phạt không?"
-    answer: "Không. Việc mở tài khoản chứng khoán hoàn toàn miễn phí và không bắt buộc bạn phải nạp tiền ngay. Tài khoản của bạn sẽ ở trạng thái chờ hoạt động và không phát sinh bất kỳ khoản phí phạt nào nếu chưa giao dịch."
-  - question: "Vốn nhỏ dưới 2 triệu thì nên mua cổ phiếu trực tiếp hay mua chứng chỉ quỹ?"
-    answer: "Nếu muốn chủ động học hỏi cách đặt lệnh và tìm hiểu doanh nghiệp, bạn nên mua cổ phiếu trực tiếp bằng lô lẻ. Trường hợp bận rộn và muốn an toàn, bạn nên chọn mua chứng chỉ quỹ mở để các chuyên gia quản lý vốn giúp bạn."
-  - question: "Có nên vay ký quỹ khi tài khoản có số vốn ít dưới 10 triệu không?"
-    answer: "Không. Vay ký quỹ là công cụ đòn bẩy tài chính đi kèm rủi ro rất cao. Khi có số vốn nhỏ và chưa có kinh nghiệm, việc dùng margin có thể khiến tài khoản của bạn bị giải chấp rất nhanh khi thị trường sụt giảm."
+  - question: Mở tài khoản chứng khoán xong chưa nạp tiền có bị khóa hoặc phạt không?
+    answer: >-
+      Không. Việc mở tài khoản chứng khoán hoàn toàn miễn phí và không bắt buộc
+      bạn phải nạp tiền ngay. Tài khoản của bạn sẽ ở trạng thái chờ hoạt động và
+      không phát sinh bất kỳ khoản phí phạt nào nếu chưa giao dịch.
+  - question: Vốn nhỏ dưới 2 triệu thì nên mua cổ phiếu trực tiếp hay mua chứng chỉ quỹ?
+    answer: >-
+      Nếu muốn chủ động học hỏi cách đặt lệnh và tìm hiểu doanh nghiệp, bạn nên
+      mua cổ phiếu trực tiếp bằng lô lẻ. Trường hợp bận rộn và muốn an toàn, bạn
+      nên chọn mua chứng chỉ quỹ mở để các chuyên gia quản lý vốn giúp bạn.
+  - question: Có nên vay ký quỹ khi tài khoản có số vốn ít dưới 10 triệu không?
+    answer: >-
+      Không. Vay ký quỹ là công cụ đòn bẩy tài chính đi kèm rủi ro rất cao. Khi
+      có số vốn nhỏ và chưa có kinh nghiệm, việc dùng margin có thể khiến tài
+      khoản của bạn bị giải chấp rất nhanh khi thị trường sụt giảm.
 sources:
-  - "Ủy ban Chứng khoán Nhà nước"
-  - "Sở Giao dịch Chứng khoán TP.HCM (HOSE)"
+  - Ủy ban Chứng khoán Nhà nước
+  - Sở Giao dịch Chứng khoán TP.HCM (HOSE)
 citations:
-  - title: "Quy định giao dịch trên Sở Giao dịch Chứng khoán"
-    publisher: "Sở Giao dịch Chứng khoán TP.HCM"
+  - title: Quy định giao dịch trên Sở Giao dịch Chứng khoán
+    publisher: Sở Giao dịch Chứng khoán TP.HCM
 keyTakeaways:
-  - "Không có số vốn tối thiểu bắt buộc để mở tài khoản chứng khoán tại Việt Nam."
-  - "Số tiền mua tối thiểu phụ thuộc vào giá cổ phiếu và quy định lô 100 cổ phiếu (lô chẵn) hoặc lô lẻ (1-99 cổ phiếu)."
-  - "F0 nên bắt đầu thực hành với số vốn từ 1 - 2 triệu đồng để làm quen giao diện và kiểm soát tâm lý trước khi nâng dần vốn."
+  - Không có số vốn tối thiểu bắt buộc để mở tài khoản chứng khoán tại Việt Nam.
+  - >-
+    Số tiền mua tối thiểu phụ thuộc vào giá cổ phiếu và quy định lô 100 cổ phiếu
+    (lô chẵn) hoặc lô lẻ (1-99 cổ phiếu).
+  - >-
+    F0 nên bắt đầu thực hành với số vốn từ 1 - 2 triệu đồng để làm quen giao
+    diện và kiểm soát tâm lý trước khi nâng dần vốn.
 ---
 
 Nhiều người trẻ thường trì hoãn việc đầu tư vì nghĩ rằng cần phải có hàng chục hay hàng trăm triệu đồng trong tay. Thực tế, rào cản gia nhập thị trường chứng khoán ngày nay đã thấp hơn bao giờ hết. Bài viết này từ **[Value Investing](/)** sẽ chỉ ra số vốn tối thiểu thực tế để bạn có thể tự tin đặt lệnh mua cổ phiếu đầu tiên của mình.
@@ -147,3 +163,4 @@ Không. Vay ký quỹ là công cụ đòn bẩy tài chính đi kèm rủi ro r
 Đầu tư chứng khoán không phải là đặc quyền của riêng những người có vốn lớn. Sự thật là thói quen đầu tư kỷ luật và kiến thức thực tế mới là yếu tố quyết định sự thành bại của bạn trong dài hạn.
 
 Hãy bắt đầu mở tài khoản chứng khoán miễn phí ngay hôm nay. Bạn có thể nạp thử 500.000 đồng để tự đặt lệnh mua những cổ phiếu lẻ đầu tiên nhằm trải nghiệm nhịp đập của thị trường.
+ Để hiểu rõ hơn về chủ đề này, bạn có thể tham khảo thêm hướng dẫn **[cách đầu tư cổ phiếu](/dau-tu/co-phieu/cach-dau-tu-co-phieu/)**.

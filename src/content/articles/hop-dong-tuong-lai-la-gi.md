@@ -1,12 +1,14 @@
 ---
-title: "Hợp đồng tương lai là gì? Cẩm nang phái sinh cho người mới"
-description: "Hợp đồng tương lai là gì? Tìm hiểu cơ chế giao dịch phái sinh VN30, tỷ lệ ký quỹ, cách kiếm tiền hai chiều và các rủi ro cần biết trước khi chơi."
+title: Hợp đồng tương lai là gì? Cẩm nang phái sinh cho người mới
+description: >-
+  Hợp đồng tương lai là gì? Tìm hiểu cơ chế giao dịch phái sinh VN30, tỷ lệ ký
+  quỹ, cách kiếm tiền hai chiều và các rủi ro cần biết trước khi chơi.
 category: phai-sinh
-heroImage: "/images/articles/hop-dong-tuong-lai-la-gi/hop-dong-tuong-lai-la-gi.jpg"
-publishDate: "2026-06-09"
-updatedDate: "2026-06-15"
-factCheckedDate: "2026-06-21"
-readingTime: "6 phút đọc"
+heroImage: /images/articles/hop-dong-tuong-lai-la-gi/hop-dong-tuong-lai-la-gi.jpg
+publishDate: '2026-06-09'
+updatedDate: '2026-06-15'
+factCheckedDate: '2026-06-21'
+readingTime: 6 phút đọc
 featured: false
 order: 12
 tags:
@@ -15,26 +17,45 @@ tags:
   - hợp đồng tương lai vn30
   - học đầu tư chứng khoán
 faq:
-  - question: "Giao dịch Hợp đồng tương lai VN30 cần tối thiểu bao nhiêu tiền?"
-    answer: "Mức ký quỹ tối thiểu theo quy định thường dao động từ 15 triệu đến 25 triệu đồng cho một hợp đồng, tùy thuộc vào điểm số của chỉ số VN30 và yêu cầu ký quỹ của từng công ty chứng khoán."
-  - question: "Bản chất kiếm tiền hai chiều (Long/Short) trên thị trường phái sinh là gì?"
-    answer: "Bạn mở vị thế Mua (Long) nếu kỳ vọng thị trường tăng điểm để ăn chênh lệch giá lên. Hoặc mở vị thế Bán (Short) nếu kỳ vọng thị trường giảm điểm để kiếm lời khi giá đi xuống."
-  - question: "Ngày đáo hạn hợp đồng tương lai phái sinh diễn ra khi nào?"
-    answer: "Ngày đáo hạn của hợp đồng tương lai chỉ số VN30 tại Việt Nam được quy định là ngày thứ Năm lần thứ ba của tháng đáo hạn hợp đồng đó."
+  - question: Giao dịch Hợp đồng tương lai VN30 cần tối thiểu bao nhiêu tiền?
+    answer: >-
+      Mức ký quỹ tối thiểu theo quy định thường dao động từ 15 triệu đến 25
+      triệu đồng cho một hợp đồng, tùy thuộc vào điểm số của chỉ số VN30 và yêu
+      cầu ký quỹ của từng công ty chứng khoán.
+  - question: Bản chất kiếm tiền hai chiều (Long/Short) trên thị trường phái sinh là gì?
+    answer: >-
+      Bạn mở vị thế Mua (Long) nếu kỳ vọng thị trường tăng điểm để ăn chênh lệch
+      giá lên. Hoặc mở vị thế Bán (Short) nếu kỳ vọng thị trường giảm điểm để
+      kiếm lời khi giá đi xuống.
+  - question: Ngày đáo hạn hợp đồng tương lai phái sinh diễn ra khi nào?
+    answer: >-
+      Ngày đáo hạn của hợp đồng tương lai chỉ số VN30 tại Việt Nam được quy định
+      là ngày thứ Năm lần thứ ba của tháng đáo hạn hợp đồng đó.
 sources:
-  - "Sở Giao dịch Chứng khoán Hà Nội (HNX)"
-  - "Tổng công ty Lưu ký và Bù trừ Chứng khoán Việt Nam (VSDC)"
+  - Sở Giao dịch Chứng khoán Hà Nội (HNX)
+  - Tổng công ty Lưu ký và Bù trừ Chứng khoán Việt Nam (VSDC)
 citations:
-  - title: "Đặc tả Hợp đồng tương lai chỉ số VN30"
-    publisher: "Sở Giao dịch Chứng khoán Hà Nội (HNX)"
-  - title: "Nghị định 158/2020/NĐ-CP về chứng khoán phái sinh và thị trường chứng khoán phái sinh"
-    publisher: "Chính phủ"
-    date: "2020-12-31"
+  - title: Đặc tả Hợp đồng tương lai chỉ số VN30
+    publisher: Sở Giao dịch Chứng khoán Hà Nội (HNX)
+  - title: >-
+      Nghị định 158/2020/NĐ-CP về chứng khoán phái sinh và thị trường chứng
+      khoán phái sinh
+    publisher: Chính phủ
+    date: '2020-12-31'
 keyTakeaways:
-  - "Hợp đồng tương lai là một loại chứng khoán phái sinh xác nhận cam kết mua hoặc bán một tài sản cơ sở vào một thời điểm trong tương lai với mức giá định trước."
-  - "Tại Việt Nam, sản phẩm phái sinh phổ biến nhất là Hợp đồng tương lai chỉ số VN30, giao dịch khớp lệnh trực tiếp trên sàn HNX."
-  - "Đặc thù của phái sinh là cho phép kiếm tiền cả khi thị trường tăng lẫn thị trường giảm nhờ cơ chế giao dịch hai chiều Long/Short."
-  - "Sản phẩm sử dụng đòn bẩy tài chính cực cao nên rủi ro thua lỗ lớn, không phù hợp với nhà đầu tư F0 chưa có kinh nghiệm."
+  - >-
+    Hợp đồng tương lai là một loại chứng khoán phái sinh xác nhận cam kết mua
+    hoặc bán một tài sản cơ sở vào một thời điểm trong tương lai với mức giá
+    định trước.
+  - >-
+    Tại Việt Nam, sản phẩm phái sinh phổ biến nhất là Hợp đồng tương lai chỉ số
+    VN30, giao dịch khớp lệnh trực tiếp trên sàn HNX.
+  - >-
+    Đặc thù của phái sinh là cho phép kiếm tiền cả khi thị trường tăng lẫn thị
+    trường giảm nhờ cơ chế giao dịch hai chiều Long/Short.
+  - >-
+    Sản phẩm sử dụng đòn bẩy tài chính cực cao nên rủi ro thua lỗ lớn, không phù
+    hợp với nhà đầu tư F0 chưa có kinh nghiệm.
 ---
 
 Nếu thị trường chứng khoán cơ sở gặp khó khăn và liên tục sụt giảm, các nhà đầu tư thông thường chỉ có thể đứng ngoài quan sát hoặc chịu lỗ. Tuy nhiên, trên thị trường chứng khoán phái sinh, bạn vẫn có cơ hội tìm kiếm lợi nhuận ngay cả khi giá cổ phiếu lao dốc. Công cụ phổ biến nhất giúp thực hiện điều này chính là Hợp đồng tương lai. Bài viết này từ **[Value Investing](/)** sẽ giải thích chi tiết **hợp đồng tương lai là gì**, cơ chế giao dịch Long/Short và những cảnh báo rủi ro sống còn cho người mới.

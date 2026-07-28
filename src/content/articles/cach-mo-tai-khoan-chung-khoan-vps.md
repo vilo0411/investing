@@ -1,12 +1,15 @@
 ---
-title: "Cách mở tài khoản chứng khoán VPS online 2026: Hướng dẫn eKYC từng bước"
-description: "Hướng dẫn cách mở tài khoản chứng khoán VPS online bằng eKYC năm 2026 — chuẩn bị, các bước SmartOne, xử lý lỗi và lưu ý về mã giới thiệu, phí giao dịch."
+title: 'Cách mở tài khoản chứng khoán VPS online 2026: Hướng dẫn eKYC từng bước'
+description: >-
+  Hướng dẫn cách mở tài khoản chứng khoán VPS online bằng eKYC năm 2026 — chuẩn
+  bị, các bước SmartOne, xử lý lỗi và lưu ý về mã giới thiệu, phí giao dịch.
 category: reviews
-heroImage: "/images/articles/cach-mo-tai-khoan-chung-khoan-vps/cach-mo-tai-khoan-chung-khoan-vps.jpg"
-publishDate: "2026-07-18"
-updatedDate: "2026-07-18"
-factCheckedDate: "2026-07-18"
-readingTime: "7 phút đọc"
+heroImage: >-
+  /images/articles/cach-mo-tai-khoan-chung-khoan-vps/cach-mo-tai-khoan-chung-khoan-vps.jpg
+publishDate: '2026-07-18'
+updatedDate: '2026-07-18'
+factCheckedDate: '2026-07-18'
+readingTime: 7 phút đọc
 featured: false
 order: 30
 tags:
@@ -16,29 +19,52 @@ tags:
   - ekyc vps
   - mã giới thiệu vps
 faq:
-  - question: "Mở tài khoản chứng khoán VPS mất bao lâu?"
-    answer: "Toàn bộ quy trình đăng ký trên app SmartOne mất khoảng 3–5 phút. VPS có tốc độ phê duyệt eKYC nhanh nhất thị trường, nhiều trường hợp kích hoạt gần như tức thì. Sau khi nhận số tài khoản, bạn có thể nạp tiền và giao dịch ngay trong ngày."
-  - question: "Mở tài khoản VPS có cần căn cước gắn chip không?"
-    answer: "Có, bạn nên dùng căn cước công dân gắn chip còn hạn để quá trình eKYC thuận lợi. Chip cho phép app quét NFC và xác thực nhanh hơn, hạn chế sai sót thông tin. Giấy tờ hết hạn hoặc mờ hỏng sẽ khiến hồ sơ bị từ chối."
-  - question: "Có bắt buộc nhập mã giới thiệu VPS không?"
-    answer: "Không bắt buộc. Mã giới thiệu chỉ gán một môi giới hỗ trợ cho tài khoản của bạn, bạn có thể bỏ trống nếu chưa quen ai. Nếu có người quen làm môi giới VPS đáng tin, nhập mã của họ để được hỗ trợ trực tiếp là hợp lý."
-  - question: "Mở tài khoản VPS rồi có mở thêm ở công ty chứng khoán khác được không?"
-    answer: "Được. Một người có thể mở tài khoản ở nhiều công ty chứng khoán khác nhau cùng lúc. Nhiều nhà đầu tư dùng một tài khoản chính để giao dịch. Tài khoản phụ để dùng margin hoặc dự phòng khi hệ thống nghẽn lệnh."
+  - question: Mở tài khoản chứng khoán VPS mất bao lâu?
+    answer: >-
+      Toàn bộ quy trình đăng ký trên app SmartOne mất khoảng 3–5 phút. VPS có
+      tốc độ phê duyệt eKYC nhanh nhất thị trường, nhiều trường hợp kích hoạt
+      gần như tức thì. Sau khi nhận số tài khoản, bạn có thể nạp tiền và giao
+      dịch ngay trong ngày.
+  - question: Mở tài khoản VPS có cần căn cước gắn chip không?
+    answer: >-
+      Có, bạn nên dùng căn cước công dân gắn chip còn hạn để quá trình eKYC
+      thuận lợi. Chip cho phép app quét NFC và xác thực nhanh hơn, hạn chế sai
+      sót thông tin. Giấy tờ hết hạn hoặc mờ hỏng sẽ khiến hồ sơ bị từ chối.
+  - question: Có bắt buộc nhập mã giới thiệu VPS không?
+    answer: >-
+      Không bắt buộc. Mã giới thiệu chỉ gán một môi giới hỗ trợ cho tài khoản
+      của bạn, bạn có thể bỏ trống nếu chưa quen ai. Nếu có người quen làm môi
+      giới VPS đáng tin, nhập mã của họ để được hỗ trợ trực tiếp là hợp lý.
+  - question: Mở tài khoản VPS rồi có mở thêm ở công ty chứng khoán khác được không?
+    answer: >-
+      Được. Một người có thể mở tài khoản ở nhiều công ty chứng khoán khác nhau
+      cùng lúc. Nhiều nhà đầu tư dùng một tài khoản chính để giao dịch. Tài
+      khoản phụ để dùng margin hoặc dự phòng khi hệ thống nghẽn lệnh.
 sources:
-  - "Quy trình mở tài khoản và biểu phí từ website chính thức VPS Securities (tháng 7/2026)"
-  - "Báo cáo thị phần môi giới HOSE quý 1/2026"
-  - "Quy định mở tài khoản chứng khoán qua eKYC (UBCKNN / VSDC)"
+  - >-
+    Quy trình mở tài khoản và biểu phí từ website chính thức VPS Securities
+    (tháng 7/2026)
+  - Báo cáo thị phần môi giới HOSE quý 1/2026
+  - Quy định mở tài khoản chứng khoán qua eKYC (UBCKNN / VSDC)
 citations:
-  - title: "Hướng dẫn mở tài khoản và biểu phí giao dịch (cập nhật tháng 7/2026)"
-    publisher: "VPS Securities"
-    url: "https://www.vps.com.vn"
-  - title: "Báo cáo thị phần giá trị giao dịch môi giới quý 1/2026"
-    publisher: "Sở Giao dịch Chứng khoán TP.HCM (HOSE)"
+  - title: Hướng dẫn mở tài khoản và biểu phí giao dịch (cập nhật tháng 7/2026)
+    publisher: VPS Securities
+    url: 'https://www.vps.com.vn'
+  - title: Báo cáo thị phần giá trị giao dịch môi giới quý 1/2026
+    publisher: Sở Giao dịch Chứng khoán TP.HCM (HOSE)
 keyTakeaways:
-  - "Mở tài khoản VPS online qua app SmartOne bằng eKYC, mất khoảng 3–5 phút và hoàn toàn miễn phí."
-  - "Chỉ cần căn cước gắn chip còn hạn và điện thoại thông minh, không yêu cầu số dư tối thiểu."
-  - "Mã giới thiệu không bắt buộc, nhưng nó gán một môi giới hỗ trợ cho tài khoản của bạn."
-  - "Mở tài khoản miễn phí, song phí giao dịch tăng sau thời gian ưu đãi — cần cân nhắc dài hạn."
+  - >-
+    Mở tài khoản VPS online qua app SmartOne bằng eKYC, mất khoảng 3–5 phút và
+    hoàn toàn miễn phí.
+  - >-
+    Chỉ cần căn cước gắn chip còn hạn và điện thoại thông minh, không yêu cầu số
+    dư tối thiểu.
+  - >-
+    Mã giới thiệu không bắt buộc, nhưng nó gán một môi giới hỗ trợ cho tài khoản
+    của bạn.
+  - >-
+    Mở tài khoản miễn phí, song phí giao dịch tăng sau thời gian ưu đãi — cần
+    cân nhắc dài hạn.
 ---
 
 Mở tài khoản chứng khoán VPS chỉ mất vài phút. Nhưng vài lựa chọn nhỏ lúc đăng ký lại quyết định trải nghiệm phí và hỗ trợ về sau. Bài hướng dẫn **cách mở tài khoản chứng khoán VPS** này từ **[Value Investing](/)** đi thẳng vào từng bước eKYC trên app SmartOne.
@@ -140,6 +166,6 @@ Tuy nhiên, phí giao dịch mới là khoản đáng quan tâm dài hạn. VPS 
 
 Nếu bạn giao dịch thường xuyên, khoản phí này cộng dồn không nhỏ. Bạn nên đọc kỹ [Review VPS Securities](/reviews/review-vps-securities/) và bài [mở tài khoản chứng khoán có mất phí không](/dau-tu/co-phieu/mo-tai-khoan-chung-khoan-co-mat-phi-khong/) trước khi quyết định gắn bó.
 
-Mở tài khoản VPS rất nhanh, nhưng giá trị dài hạn nằm ở việc bạn hiểu rõ phí và chọn đúng người hỗ trợ. Bước tiếp theo bạn có thể làm ngay là tải app SmartOne và chuẩn bị sẵn căn cước gắn chip. Trước khi giao dịch thật, hãy đọc [Review VPS Securities](/reviews/review-vps-securities/) để biết sàn này có hợp với bạn không.
+Mở tài khoản VPS rất nhanh, nhưng giá trị dài hạn nằm ở việc bạn hiểu rõ phí và chọn đúng người hỗ trợ. Bước tiếp theo bạn có thể làm ngay là tải app SmartOne và chuẩn bị sẵn căn cước gắn chip. Trước khi giao dịch thật, hãy đọc [Review VPS Securities](/reviews/review-vps-securities/) để biết sàn này có hợp với bạn không. Để hiểu rõ hơn về chủ đề này, bạn có thể tham khảo thêm hướng dẫn **[đánh giá các công ty chứng khoán](/reviews/review-cong-ty-chung-khoan-cho-nguoi-moi/)**.
 
 > **Miễn trừ trách nhiệm & Công khai tài trợ:** Bài viết mang tính hướng dẫn tham khảo, không phải lời khuyên đầu tư. Value Investing có thể nhận hoa hồng giới thiệu khi bạn mở tài khoản qua một số liên kết, nhưng điều này không làm thay đổi tính khách quan của nội dung.

@@ -1,12 +1,14 @@
 ---
-title: "Review VNDIRECT: Có nên mở tài khoản chứng khoán VNDIRECT không? (2026)"
-description: "Đánh giá chi tiết Chứng khoán VNDIRECT năm 2026. Review tính năng bảng giá Dboard, ứng dụng di động, phí giao dịch và các biện pháp bảo mật sau sự cố."
+title: 'Review VNDIRECT: Có nên mở tài khoản chứng khoán VNDIRECT không? (2026)'
+description: >-
+  Đánh giá chi tiết Chứng khoán VNDIRECT năm 2026. Review tính năng bảng giá
+  Dboard, ứng dụng di động, phí giao dịch và các biện pháp bảo mật sau sự cố.
 category: reviews
-heroImage: "/images/articles/review-vndirect-securities/review-vndirect-securities.jpg"
-publishDate: "2026-07-07"
-updatedDate: "2026-07-07"
-factCheckedDate: "2026-07-07"
-readingTime: "6 phút đọc"
+heroImage: /images/articles/review-vndirect-securities/review-vndirect-securities.jpg
+publishDate: '2026-07-07'
+updatedDate: '2026-07-07'
+factCheckedDate: '2026-07-07'
+readingTime: 6 phút đọc
 featured: false
 order: 26
 layoutType: review
@@ -19,24 +21,40 @@ tags:
 brokers:
   - slug: vndirect
 faq:
-  - question: "Sự cố bảo mật của VNDIRECT năm 2024 đã xử lý xong chưa?"
-    answer: "Có. Hệ thống đã hoạt động bình thường trở lại và được nâng cấp bảo mật toàn diện dưới sự giám sát của cơ quan chức năng. Tuy nhiên, khách hàng vẫn nên chủ động quản lý mật khẩu của mình."
-  - question: "Phí giao dịch tại VNDIRECT là bao nhiêu?"
-    answer: "Phí giao dịch dao động từ 0.15% đến 0.20% giá trị lệnh giao dịch trực tuyến. Mức phí này có thể thương lượng giảm thêm nếu bạn giao dịch với khối lượng lớn."
+  - question: Sự cố bảo mật của VNDIRECT năm 2024 đã xử lý xong chưa?
+    answer: >-
+      Có. Hệ thống đã hoạt động bình thường trở lại và được nâng cấp bảo mật
+      toàn diện dưới sự giám sát của cơ quan chức năng. Tuy nhiên, khách hàng
+      vẫn nên chủ động quản lý mật khẩu của mình.
+  - question: Phí giao dịch tại VNDIRECT là bao nhiêu?
+    answer: >-
+      Phí giao dịch dao động từ 0.15% đến 0.20% giá trị lệnh giao dịch trực
+      tuyến. Mức phí này có thể thương lượng giảm thêm nếu bạn giao dịch với
+      khối lượng lớn.
 sources:
-  - "Dữ liệu phí giao dịch và lãi suất margin từ website chính thức VNDIRECT (tháng 7/2026)"
-  - "Báo cáo thị phần môi giới HOSE quý 1/2026"
+  - >-
+    Dữ liệu phí giao dịch và lãi suất margin từ website chính thức VNDIRECT
+    (tháng 7/2026)
+  - Báo cáo thị phần môi giới HOSE quý 1/2026
 citations:
-  - title: "Biểu phí giao dịch và lãi suất margin (cập nhật tháng 7/2026)"
-    publisher: "VNDIRECT"
-    url: "https://www.vndirect.com.vn"
-  - title: "Báo cáo thị phần giá trị giao dịch môi giới quý 1/2026"
-    publisher: "Sở Giao dịch Chứng khoán TP.HCM (HOSE)"
+  - title: Biểu phí giao dịch và lãi suất margin (cập nhật tháng 7/2026)
+    publisher: VNDIRECT
+    url: 'https://www.vndirect.com.vn'
+  - title: Báo cáo thị phần giá trị giao dịch môi giới quý 1/2026
+    publisher: Sở Giao dịch Chứng khoán TP.HCM (HOSE)
 keyTakeaways:
-  - "Bảng giá Dboard và hệ thống biểu đồ kỹ thuật của VNDIRECT thuộc hàng trực quan và dễ dùng nhất thị trường."
-  - "Cung cấp lộ trình đào tạo, nội dung giáo dục và tài liệu hướng dẫn đầu tư phong phú cho người mới."
-  - "Điểm trừ lớn nhất là lịch sử sự cố bị hack hệ thống năm 2024 gây gián đoạn giao dịch dài ngày."
-  - "Phí giao dịch (0.15% - 0.20%) ở mức trung bình, không quá cạnh tranh so với các CTCK công nghệ mới."
+  - >-
+    Bảng giá Dboard và hệ thống biểu đồ kỹ thuật của VNDIRECT thuộc hàng trực
+    quan và dễ dùng nhất thị trường.
+  - >-
+    Cung cấp lộ trình đào tạo, nội dung giáo dục và tài liệu hướng dẫn đầu tư
+    phong phú cho người mới.
+  - >-
+    Điểm trừ lớn nhất là lịch sử sự cố bị hack hệ thống năm 2024 gây gián đoạn
+    giao dịch dài ngày.
+  - >-
+    Phí giao dịch (0.15% - 0.20%) ở mức trung bình, không quá cạnh tranh so với
+    các CTCK công nghệ mới.
 ---
 
 VNDIRECT từ lâu đã nổi tiếng với bảng giá trực quan và là lựa chọn quen thuộc trong các bài viết [review công ty chứng khoán](/reviews/review-cong-ty-chung-khoan-cho-nguoi-moi/) cho người mới. Tuy thế, sự cố bảo mật nghiêm trọng năm ngoái đã khiến nhiều người lo ngại. Bài viết này từ **[Value Investing](/)** sẽ cung cấp góc nhìn thực tế về **VNDIRECT** hiện nay để bạn tự cân nhắc việc mở tài khoản.
@@ -94,3 +112,4 @@ VNDIRECT vẫn là lựa chọn tốt nếu bạn chuộng giao diện trực qu
 
 Nếu bạn có tâm lý lo ngại về bảo mật hoặc muốn tối ưu chi phí, hãy cân nhắc thêm. Bạn có thể tham khảo thêm bài **[so sánh TCBS và VNDIRECT](/reviews/tcbs-vs-vndirect/)** để so sánh chi tiết giữa hai bên. Đăng ký tài khoản phụ tại đây là giải pháp được nhiều người lựa chọn.
 ---
+ Để hiểu rõ hơn về chủ đề này, bạn có thể tham khảo thêm hướng dẫn **[cách mở tài khoản chứng khoán](/dau-tu/co-phieu/cach-mo-tai-khoan-chung-khoan/)**.

@@ -1,11 +1,14 @@
 ---
-title: "Bond Yield Là Gì? Cách Đọc Lợi Suất Trái Phiếu Cho F0"
-description: "Bond yield là lợi suất trái phiếu — chỉ số đo lường tỷ suất sinh lời thực tế khi đầu tư trái phiếu. Tìm hiểu cách tính, các loại yield và tác động đến thị trường VN."
+title: Bond Yield Là Gì? Cách Đọc Lợi Suất Trái Phiếu Cho F0
+description: >-
+  Bond yield là lợi suất trái phiếu — chỉ số đo lường tỷ suất sinh lời thực tế
+  khi đầu tư trái phiếu. Tìm hiểu cách tính, các loại yield và tác động đến thị
+  trường VN.
 category: trai-phieu
-heroImage: "/images/articles/bond-yield-la-gi/bond-yield-la-gi.jpg"
-publishDate: "2026-07-28"
-updatedDate: "2026-07-28"
-readingTime: "7 phút đọc"
+heroImage: /images/articles/bond-yield-la-gi/bond-yield-la-gi.jpg
+publishDate: '2026-07-28'
+updatedDate: '2026-07-28'
+readingTime: 7 phút đọc
 featured: false
 order: 100
 tags:
@@ -14,25 +17,36 @@ tags:
   - trái phiếu chính phủ
   - YTM
 faq:
-  - question: "Bond yield và lãi suất ngân hàng có giống nhau không?"
-    answer: "Không giống nhau. Lãi suất ngân hàng cố định khi gửi tiền. Bond yield thay đổi mỗi ngày theo giá trái phiếu trên thị trường. Khi giá trái phiếu giảm, yield tăng và ngược lại."
-  - question: "Tại sao giá trái phiếu giảm thì bond yield lại tăng?"
-    answer: "Vì coupon trả cố định mỗi năm. Khi giá mua trái phiếu thấp hơn mệnh giá, cùng số tiền coupon nhưng chia cho giá mua thấp hơn sẽ cho ra tỷ lệ phần trăm cao hơn — tức yield tăng."
-  - question: "Nhà đầu tư F0 có cần quan tâm đến bond yield không?"
-    answer: "Có. Bond yield ảnh hưởng đến lãi suất vay, chi phí vốn doanh nghiệp và hướng đi của thị trường cổ phiếu. Theo dõi yield TPCP kỳ hạn 10 năm giúp bạn nhận biết xu hướng lãi suất."
+  - question: Bond yield và lãi suất ngân hàng có giống nhau không?
+    answer: >-
+      Không giống nhau. Lãi suất ngân hàng cố định khi gửi tiền. Bond yield thay
+      đổi mỗi ngày theo giá trái phiếu trên thị trường. Khi giá trái phiếu giảm,
+      yield tăng và ngược lại.
+  - question: Tại sao giá trái phiếu giảm thì bond yield lại tăng?
+    answer: >-
+      Vì coupon trả cố định mỗi năm. Khi giá mua trái phiếu thấp hơn mệnh giá,
+      cùng số tiền coupon nhưng chia cho giá mua thấp hơn sẽ cho ra tỷ lệ phần
+      trăm cao hơn — tức yield tăng.
+  - question: Nhà đầu tư F0 có cần quan tâm đến bond yield không?
+    answer: >-
+      Có. Bond yield ảnh hưởng đến lãi suất vay, chi phí vốn doanh nghiệp và
+      hướng đi của thị trường cổ phiếu. Theo dõi yield TPCP kỳ hạn 10 năm giúp
+      bạn nhận biết xu hướng lãi suất.
 sources:
-  - "Kho bạc Nhà nước Việt Nam"
-  - "Sở Giao dịch Chứng khoán Hà Nội (HNX)"
+  - Kho bạc Nhà nước Việt Nam
+  - Sở Giao dịch Chứng khoán Hà Nội (HNX)
 citations:
-  - title: "Dữ liệu đấu thầu trái phiếu Chính phủ"
-    publisher: "Kho bạc Nhà nước Việt Nam"
-  - title: "Thị trường trái phiếu Việt Nam"
-    publisher: "HNX"
+  - title: Dữ liệu đấu thầu trái phiếu Chính phủ
+    publisher: Kho bạc Nhà nước Việt Nam
+  - title: Thị trường trái phiếu Việt Nam
+    publisher: HNX
 keyTakeaways:
-  - "Bond yield là tỷ suất sinh lời thực tế từ trái phiếu, thay đổi theo giá thị trường"
-  - "Giá trái phiếu và bond yield luôn di chuyển ngược chiều nhau"
-  - "Bond yield tăng thường tạo áp lực giảm lên thị trường cổ phiếu"
-  - "YTM là chỉ số phổ biến nhất để so sánh các trái phiếu khác nhau"
+  - >-
+    Bond yield là tỷ suất sinh lời thực tế từ trái phiếu, thay đổi theo giá thị
+    trường
+  - Giá trái phiếu và bond yield luôn di chuyển ngược chiều nhau
+  - Bond yield tăng thường tạo áp lực giảm lên thị trường cổ phiếu
+  - YTM là chỉ số phổ biến nhất để so sánh các trái phiếu khác nhau
 ---
 
 Bạn gửi tiết kiệm 12 tháng, ngân hàng trả 5%/năm — con số đó cố định từ ngày gửi đến ngày đáo hạn. Nhưng khi chuyển sang [trái phiếu](/dau-tu/trai-phieu/trai-phieu-la-gi/), mọi thứ phức tạp hơn vì lợi suất thay đổi mỗi ngày theo giá thị trường. **[Value Investing](/)** sẽ giải thích bond yield là gì bằng ví dụ đời thường — và tại sao con số này ảnh hưởng trực tiếp đến túi tiền của bạn.
@@ -104,3 +118,4 @@ Một khái niệm nâng cao bạn nên biết: đường cong lợi suất (yie
 Bước tiếp theo bạn có thể làm ngay: vào trang hnx.vn, tìm mục trái phiếu chính phủ, kiểm tra yield kỳ hạn 10 năm hiện tại. So sánh với lãi suất tiết kiệm ngân hàng bạn đang gửi — chênh lệch giữa hai con số đó cho bạn biết thị trường đang đánh giá rủi ro ở mức nào.
 
 Nếu muốn bắt đầu đầu tư trái phiếu, đọc bài hướng dẫn chi tiết [cách đầu tư trái phiếu](/dau-tu/trai-phieu/cach-dau-tu-trai-phieu/) dành riêng cho người mới.
+ Bên cạnh đó, bạn cũng nên đọc thêm bài viết phân tích về [Cách mua trái phiếu doanh nghiệp an toàn cho F0](/dau-tu/trai-phieu/cach-mua-trai-phieu/) để trang bị kiến thức đầy đủ nhất.

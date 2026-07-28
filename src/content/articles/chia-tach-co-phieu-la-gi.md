@@ -1,12 +1,14 @@
 ---
-title: "Chia tách cổ phiếu là gì? Nhà đầu tư cần làm gì khi cổ phiếu bị tách?"
-description: "Chia tách cổ phiếu (Stock Split) là gì? Hiểu cách doanh nghiệp VN thực hiện, ảnh hưởng đến P/E, EPS và nhà đầu tư cần làm gì khi cổ phiếu đang giữ bị tách."
+title: Chia tách cổ phiếu là gì? Nhà đầu tư cần làm gì khi cổ phiếu bị tách?
+description: >-
+  Chia tách cổ phiếu (Stock Split) là gì? Hiểu cách doanh nghiệp VN thực hiện,
+  ảnh hưởng đến P/E, EPS và nhà đầu tư cần làm gì khi cổ phiếu đang giữ bị tách.
 category: co-phieu
-heroImage: "/images/articles/chia-tach-co-phieu-la-gi/chia-tach-co-phieu-la-gi.jpg"
-publishDate: "2026-06-28"
-updatedDate: "2026-06-28"
-factCheckedDate: "2026-06-28"
-readingTime: "6 phút đọc"
+heroImage: /images/articles/chia-tach-co-phieu-la-gi/chia-tach-co-phieu-la-gi.jpg
+publishDate: '2026-06-28'
+updatedDate: '2026-06-28'
+factCheckedDate: '2026-06-28'
+readingTime: 6 phút đọc
 featured: false
 order: 10
 tags:
@@ -15,29 +17,49 @@ tags:
   - kiến thức cổ phiếu
   - học đầu tư chứng khoán
 faq:
-  - question: "Chia tách cổ phiếu có làm tài sản của tôi tăng lên không?"
-    answer: "Không. Chia tách chỉ tăng số lượng cổ phiếu, đồng thời giảm giá theo đúng tỷ lệ. Tổng giá trị tài sản bạn đang nắm giữ không thay đổi — giống như đổi tờ 500.000đ thành 5 tờ 100.000đ."
-  - question: "Giá cổ phiếu có tự động giảm sau khi tách không?"
-    answer: "Có. Sở Giao dịch Chứng khoán sẽ tự động điều chỉnh giá tham chiếu vào ngày giao dịch đầu tiên sau khi tách theo đúng tỷ lệ. Ví dụ tách 2:1 thì giá giảm còn một nửa."
-  - question: "Tôi có cần bán trước rồi mua lại sau khi tách không?"
-    answer: "Không cần. Số lượng cổ phiếu trong tài khoản sẽ tự động được cập nhật sau ngày giao dịch không hưởng quyền. Bạn không cần thực hiện bất kỳ thao tác nào."
-  - question: "Tỷ lệ chia tách phổ biến tại Việt Nam là bao nhiêu?"
-    answer: "Phổ biến nhất là 1:1 (mỗi cổ phiếu cũ nhận thêm 1 cổ phiếu mới, tức gấp đôi số lượng). Ngoài ra còn có các tỷ lệ 2:1, 3:1 hoặc tỷ lệ chia cổ tức bằng cổ phiếu như 10:3 (100 cp nhận thêm 30 cp)."
+  - question: Chia tách cổ phiếu có làm tài sản của tôi tăng lên không?
+    answer: >-
+      Không. Chia tách chỉ tăng số lượng cổ phiếu, đồng thời giảm giá theo đúng
+      tỷ lệ. Tổng giá trị tài sản bạn đang nắm giữ không thay đổi — giống như
+      đổi tờ 500.000đ thành 5 tờ 100.000đ.
+  - question: Giá cổ phiếu có tự động giảm sau khi tách không?
+    answer: >-
+      Có. Sở Giao dịch Chứng khoán sẽ tự động điều chỉnh giá tham chiếu vào ngày
+      giao dịch đầu tiên sau khi tách theo đúng tỷ lệ. Ví dụ tách 2:1 thì giá
+      giảm còn một nửa.
+  - question: Tôi có cần bán trước rồi mua lại sau khi tách không?
+    answer: >-
+      Không cần. Số lượng cổ phiếu trong tài khoản sẽ tự động được cập nhật sau
+      ngày giao dịch không hưởng quyền. Bạn không cần thực hiện bất kỳ thao tác
+      nào.
+  - question: Tỷ lệ chia tách phổ biến tại Việt Nam là bao nhiêu?
+    answer: >-
+      Phổ biến nhất là 1:1 (mỗi cổ phiếu cũ nhận thêm 1 cổ phiếu mới, tức gấp
+      đôi số lượng). Ngoài ra còn có các tỷ lệ 2:1, 3:1 hoặc tỷ lệ chia cổ tức
+      bằng cổ phiếu như 10:3 (100 cp nhận thêm 30 cp).
 sources:
-  - "Sở Giao dịch Chứng khoán Hà Nội (HNX)"
-  - "Sở Giao dịch Chứng khoán TP.HCM (HOSE)"
-  - "Luật Doanh nghiệp số 59/2020/QH14"
+  - Sở Giao dịch Chứng khoán Hà Nội (HNX)
+  - Sở Giao dịch Chứng khoán TP.HCM (HOSE)
+  - Luật Doanh nghiệp số 59/2020/QH14
 citations:
-  - title: "Luật Doanh nghiệp số 59/2020/QH14 — Điều 4, khoản 3 về cổ tức"
-    publisher: "Quốc hội Việt Nam"
-    date: "2020-06-17"
-  - title: "Quy chế giao dịch chứng khoán tại HOSE và HNX"
-    publisher: "Ủy ban Chứng khoán Nhà nước"
+  - title: 'Luật Doanh nghiệp số 59/2020/QH14 — Điều 4, khoản 3 về cổ tức'
+    publisher: Quốc hội Việt Nam
+    date: '2020-06-17'
+  - title: Quy chế giao dịch chứng khoán tại HOSE và HNX
+    publisher: Ủy ban Chứng khoán Nhà nước
 keyTakeaways:
-  - "Chia tách cổ phiếu làm tăng số lượng nhưng không thay đổi tổng giá trị tài sản bạn đang nắm giữ."
-  - "Giá cổ phiếu giảm theo đúng tỷ lệ tách — vốn hóa doanh nghiệp không đổi, chỉ số P/E không đổi."
-  - "Mục đích chính của chia tách là tăng thanh khoản và thu hút nhà đầu tư nhỏ lẻ khi giá cổ phiếu quá cao."
-  - "Khi cổ phiếu bạn đang giữ bị tách, không cần làm gì — số lượng cổ phiếu tự cập nhật sau ngày giao dịch không hưởng quyền."
+  - >-
+    Chia tách cổ phiếu làm tăng số lượng nhưng không thay đổi tổng giá trị tài
+    sản bạn đang nắm giữ.
+  - >-
+    Giá cổ phiếu giảm theo đúng tỷ lệ tách — vốn hóa doanh nghiệp không đổi, chỉ
+    số P/E không đổi.
+  - >-
+    Mục đích chính của chia tách là tăng thanh khoản và thu hút nhà đầu tư nhỏ
+    lẻ khi giá cổ phiếu quá cao.
+  - >-
+    Khi cổ phiếu bạn đang giữ bị tách, không cần làm gì — số lượng cổ phiếu tự
+    cập nhật sau ngày giao dịch không hưởng quyền.
 ---
 
 Sáng hôm sau mở app chứng khoán, tài khoản bạn đột nhiên có thêm cổ phiếu. Nhưng tổng giá trị vẫn y nguyên. **[Value Investing](/)** sẽ giải thích tại sao — và **chia tách cổ phiếu là gì** thực ra không phức tạp như bạn nghĩ.
@@ -128,3 +150,4 @@ Quyết định mua hay không dựa trên giá trị nội tại của doanh ng
 Chia tách cổ phiếu là sự kiện tốt khi doanh nghiệp đang trên đà tăng trưởng và muốn mở rộng cơ sở cổ đông. Nhưng đừng mua cổ phiếu chỉ vì sắp tách — tín hiệu quan trọng hơn là doanh nghiệp đó đang kiếm được bao nhiêu tiền thực sự.
 
 Danh mục của bạn đang có cổ phiếu nào giao dịch ở mức giá rất cao? Đó có thể là ứng viên tiếp theo cho một đợt chia tách — và giờ bạn đã biết điều gì sẽ xảy ra. Tìm hiểu thêm về cách đánh giá cổ phiếu tại [cách đầu tư cổ phiếu](/dau-tu/co-phieu/cach-dau-tu-co-phieu/).
+ Bên cạnh đó, bạn cũng nên đọc thêm bài viết phân tích về [Cổ Phiếu Thưởng Là Gì? Bản Chất Và Tác Động Giá Cổ Phiếu](/dau-tu/co-phieu/co-phieu-thuong-la-gi/) để trang bị kiến thức đầy đủ nhất.

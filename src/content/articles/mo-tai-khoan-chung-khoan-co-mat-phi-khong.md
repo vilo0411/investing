@@ -1,11 +1,14 @@
 ---
-title: "Mở tài khoản chứng khoán có mất phí không?"
-description: "Mở tài khoản chứng khoán có mất phí không? Bài viết giải đáp chi tiết quy định mở tài khoản miễn phí và các loại phí thực tế phát sinh khi giao dịch."
+title: Mở tài khoản chứng khoán có mất phí không?
+description: >-
+  Mở tài khoản chứng khoán có mất phí không? Bài viết giải đáp chi tiết quy định
+  mở tài khoản miễn phí và các loại phí thực tế phát sinh khi giao dịch.
 category: co-phieu
-heroImage: "/images/articles/mo-tai-khoan-chung-khoan-co-mat-phi-khong/mo-tai-khoan-chung-khoan-co-mat-phi-khong.jpg"
-publishDate: "2026-07-14"
-updatedDate: "2026-07-14"
-readingTime: "4 phút đọc"
+heroImage: >-
+  /images/articles/mo-tai-khoan-chung-khoan-co-mat-phi-khong/mo-tai-khoan-chung-khoan-co-mat-phi-khong.jpg
+publishDate: '2026-07-14'
+updatedDate: '2026-07-14'
+readingTime: 4 phút đọc
 featured: false
 order: 100
 tags:
@@ -13,20 +16,32 @@ tags:
   - phí giao dịch
   - kiến thức tài chính
 faq:
-  - question: "Không sử dụng tài khoản trong 1 năm có bị phạt tiền không?"
-    answer: "Tài khoản chứng khoán không hoạt động sẽ không bị tính bất kỳ khoản phí phạt nào. Phía công ty chứng khoán chỉ tạm thời khóa trạng thái giao dịch để bảo mật tài sản cho đến khi bạn yêu cầu mở lại."
-  - question: "Cần tối thiểu bao nhiêu tiền trong tài khoản để bắt đầu đầu tư?"
-    answer: "Số dư tối thiểu để mở tài khoản chứng khoán là 0 đồng. Bạn chỉ cần nộp tiền khi bắt đầu muốn thực hiện giao dịch mua cổ phiếu thực tế với số vốn tối thiểu chỉ từ vài chục nghìn đồng."
+  - question: Không sử dụng tài khoản trong 1 năm có bị phạt tiền không?
+    answer: >-
+      Tài khoản chứng khoán không hoạt động sẽ không bị tính bất kỳ khoản phí
+      phạt nào. Phía công ty chứng khoán chỉ tạm thời khóa trạng thái giao dịch
+      để bảo mật tài sản cho đến khi bạn yêu cầu mở lại.
+  - question: Cần tối thiểu bao nhiêu tiền trong tài khoản để bắt đầu đầu tư?
+    answer: >-
+      Số dư tối thiểu để mở tài khoản chứng khoán là 0 đồng. Bạn chỉ cần nộp
+      tiền khi bắt đầu muốn thực hiện giao dịch mua cổ phiếu thực tế với số vốn
+      tối thiểu chỉ từ vài chục nghìn đồng.
 sources:
-  - "Ủy ban Chứng khoán Nhà nước"
-  - "Sở Giao dịch Chứng khoán TP.HCM (HOSE)"
+  - Ủy ban Chứng khoán Nhà nước
+  - Sở Giao dịch Chứng khoán TP.HCM (HOSE)
 citations:
-  - title: "Quy định về phí và lệ phí trong hoạt động chứng khoán"
-    publisher: "Bộ Tài chính"
+  - title: Quy định về phí và lệ phí trong hoạt động chứng khoán
+    publisher: Bộ Tài chính
 keyTakeaways:
-  - "Mở tài khoản chứng khoán hoàn toàn miễn phí theo quy định chung của các sàn HOSE và HNX."
-  - "Phí duy trì tài khoản thường được miễn phí ở hầu hết các công ty chứng khoán hiện nay."
-  - "Bạn chỉ cần trả phí khi phát sinh giao dịch thực tế như phí mua bán, thuế và phí lưu ký."
+  - >-
+    Mở tài khoản chứng khoán hoàn toàn miễn phí theo quy định chung của các sàn
+    HOSE và HNX.
+  - >-
+    Phí duy trì tài khoản thường được miễn phí ở hầu hết các công ty chứng khoán
+    hiện nay.
+  - >-
+    Bạn chỉ cần trả phí khi phát sinh giao dịch thực tế như phí mua bán, thuế và
+    phí lưu ký.
 ---
 
 Nhiều người mới bắt đầu thường ngập ngừng không dám bấm nút đăng ký tài khoản vì sợ phát sinh các chi phí ẩn. Nỗi sợ này hoàn toàn tự nhiên khi bạn chuẩn bị tham gia vào một lĩnh vực tài chính mới. **[Value Investing](/)** sẽ giải thích chi tiết các quy định về phí mở tài khoản chứng khoán để bạn tự tin bắt đầu.
@@ -86,3 +101,4 @@ Tài khoản chứng khoán không hoạt động sẽ không bị tính bất k
 Số dư tối thiểu để mở tài khoản chứng khoán là 0 đồng. Bạn chỉ cần nộp tiền khi bắt đầu muốn thực hiện giao dịch mua cổ phiếu thực tế với số vốn tối thiểu chỉ từ vài chục nghìn đồng.
 
 Để bắt đầu hành trình tích lũy, việc đăng ký tài khoản là bước đi đầu tiên hoàn toàn miễn phí. Hãy dành 3 phút hôm nay để thiết lập công cụ đầu tư tài chính cho bản thân mình. Bước tiếp theo, bạn nên tham khảo biểu phí và [chọn công ty chứng khoán cho người mới](/reviews/review-cong-ty-chung-khoan-cho-nguoi-moi/) phù hợp với nhu cầu giao dịch nhất.
+ Để hiểu rõ hơn về chủ đề này, bạn có thể tham khảo thêm hướng dẫn **[cổ phiếu là gì](/dau-tu/co-phieu/co-phieu-la-gi/)**. Để hiểu rõ hơn về chủ đề này, bạn có thể tham khảo thêm hướng dẫn **[cách đầu tư cổ phiếu](/dau-tu/co-phieu/cach-dau-tu-co-phieu/)**.
