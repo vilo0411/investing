@@ -84,7 +84,7 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 | Đầu tư chứng khoán dài hạn | `dau-tu-chung-khoan-dai-han` | `Finalized` | Sprint Wave 3 |
 | Đầu tư tích sản cổ phiếu là gì | `dau-tu-tich-san-co-phieu-la-gi` | `Finalized` | Sprint Wave 3 |
 | Chiến lược đầu tư chứng khoán | `chien-luoc-dau-tu-chung-khoan` | `Finalized` | Sprint Wave 3 |
-| Cách chơi chứng khoán trên điện thoại | `cach-choi-chung-khoan-tren-dien-thoai` | `Planned` | Sprint Wave 3 |
+| Cách chơi chứng khoán trên điện thoại | `cach-choi-chung-khoan-tren-dien-thoai` | `Finalized` | Sprint Wave 3 |
 | Tâm lý đầu tư chứng khoán | `tam-ly-dau-tu-chung-khoan` | `Planned` | Sprint Wave 4 |
 | Đầu tư chứng khoán có những rủi ro gì | `rui-ro-dau-tu-chung-khoan` | `Finalized` | Sprint Wave 3 |
 | Các sai lầm dẫn tới phá sản | `sai-lam-dau-tu-chung-khoan` | `Planned` | Sprint Wave 4 |
@@ -181,7 +181,7 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 |---|---|---|---|
 | ETF là gì | `etf-la-gi` | `Finalized` | ✅ Đã publish |
 | ETF VN30 là gì | `etf-vn30-la-gi` | `Finalized` | ✅ Đã publish |
-| ETF Diamond là gì | `etf-diamond-la-gi` | `Planned` | |
+| ETF Diamond là gì | `etf-diamond-la-gi` | `Finalized` | ✅ Đã publish |
 | Nên đầu tư quỹ ETF nào | `nen-dau-tu-quy-etf-nao` | `Finalized` | |
 | Phân biệt quỹ ETF và quỹ tương hỗ | `phan-biet-quy-etf-va-quy-tuong-ho` | `Planned` | |
 
@@ -439,9 +439,9 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 | DNSE | `review-dnse-securities` | `Finalized` | ✅ |
 | MBS | `review-mbs-securities` | `Finalized` | ✅ |
 | DSC | `review-dsc-securities` | `Finalized` | ✅ |
-| HSC | `review-hsc-securities` | `Planned` | ⭐⭐⭐ Tier A |
-| Mirae Asset | `review-mirae-asset-securities` | `Planned` | ⭐⭐⭐ Tier A |
-| Vietcap (VCI) | `review-vietcap-securities` | `Planned` | ⭐⭐⭐ Tier A |
+| HSC | `review-hsc-securities` | `Finalized` | ✅ |
+| Mirae Asset | `review-mirae-asset-securities` | `Finalized` | ✅ |
+| Vietcap (VCI) | `review-vietcap-securities` | `Finalized` | ✅ |
 | VCBS | `review-vcbs-securities` | `Planned` | ⭐⭐⭐ Tier A |
 | FPTS | `review-fpts-securities` | `Planned` | ⭐⭐⭐ Tier A |
 | Pinetree | `review-pinetree-securities` | `Planned` | ⭐⭐⭐ Tier A |

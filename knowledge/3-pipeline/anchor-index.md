@@ -46,6 +46,7 @@ Index toàn bộ bài đã publish tại `src/content/articles/`. Dùng cho inte
 | `co-phieu-esop-la-gi` | Cổ Phiếu ESOP Là Gì? Lợi Ích Doanh Nghiệp Và Rủi Ro Với Cổ Đông | `/dau-tu/co-phieu/co-phieu-esop-la-gi/` | cổ phiếu ESOP |
 | `co-phieu-penny-la-gi` | Cổ Phiếu Penny Là Gì? Bẫy Giá Rẻ Và Rủi Ro Phá Sản Cho F0 | `/dau-tu/co-phieu/co-phieu-penny-la-gi/` | cổ phiếu penny |
 | `co-phieu-quy-la-gi` | Cổ Phiếu Quỹ Là Gì? Quy Định Mới Và Tác Động Tới Giá Cổ Phiếu | `/dau-tu/co-phieu/co-phieu-quy-la-gi/` | cổ phiếu quỹ |
+| `cach-choi-chung-khoan-tren-dien-thoai` | Hướng dẫn chơi chứng khoán trên điện thoại từ A-Z | `/dau-tu/co-phieu/cach-choi-chung-khoan-tren-dien-thoai/` | chơi chứng khoán trên điện thoại |
 
 ## Nhóm Đầu tư — Quỹ ETF (`/dau-tu/etf/`)
 
@@ -59,6 +60,7 @@ Index toàn bộ bài đã publish tại `src/content/articles/`. Dùng cho inte
 | `quy-chu-dong-la-gi` | Quỹ chủ động là gì? Ưu nhược điểm và lưu ý cho F0 | `/dau-tu/etf/quy-chu-dong-la-gi/` | quỹ chủ động là gì |
 | `quy-thu-dong-la-gi` | Quỹ thụ động là gì? Hướng dẫn đầu tư cho F0 | `/dau-tu/etf/quy-thu-dong-la-gi/` | quỹ thụ động là gì |
 | `chung-chi-quy-tot-nhat-hien-nay` | Chứng chỉ quỹ tốt nhất hiện nay: Gợi ý các quỹ uy tín cho F0 | `/dau-tu/etf/chung-chi-quy-tot-nhat-hien-nay/` | chứng chỉ quỹ tốt nhất hiện nay |
+| `etf-diamond-la-gi` | Quỹ ETF Diamond là gì? Đánh giá tiềm năng đầu tư FUEVFVND | `/dau-tu/etf/etf-diamond-la-gi/` | ETF Diamond |
 
 ## Nhóm Đầu tư — Trái phiếu (`/dau-tu/trai-phieu/`)
 
@@ -121,6 +123,9 @@ Index toàn bộ bài đã publish tại `src/content/articles/`. Dùng cho inte
 | `vps-vs-ssi` | So sánh VPS và SSI | `/reviews/vps-vs-ssi/` | so sánh VPS và SSI |
 | `tcbs-vs-vndirect` | So sánh TCBS và VNDIRECT | `/reviews/tcbs-vs-vndirect/` | so sánh TCBS và VNDIRECT |
 | `dnse-vs-tcbs` | So sánh DNSE và TCBS | `/reviews/dnse-vs-tcbs/` | so sánh DNSE và TCBS |
+| `review-hsc-securities` | Đánh giá chứng khoán HSC | `/reviews/review-hsc-securities/` | đánh giá HSC |
+| `review-mirae-asset-securities` | Đánh giá chứng khoán Mirae Asset | `/reviews/review-mirae-asset-securities/` | đánh giá Mirae Asset |
+| `review-vietcap-securities` | Đánh giá chứng khoán Vietcap | `/reviews/review-vietcap-securities/` | đánh giá Vietcap |
 
 ## Nhóm Nhà đầu tư (`/nha-dau-tu/`)
 
