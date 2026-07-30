@@ -106,3 +106,4 @@ Số liệu tài chính trên các báo cáo kế toán là tấm gương phản
 
 Bạn nên lập bảng thống kê so sánh các doanh nghiệp trong cùng một ngành để dễ dàng tìm ra cổ phiếu nổi bật nhất. Việc này giúp bạn đưa ra các quyết định khách quan dựa trên những số liệu thực tế thay vì cảm xúc nhất thời.
  Bên cạnh đó, bạn cũng nên đọc thêm bài viết phân tích về [Call Margin Là Gì? Cách Xử Lý Khi Bị Gọi Ký Quỹ](/dau-tu/co-phieu/call-margin-la-gi/) để trang bị kiến thức đầy đủ nhất.
+ Bên cạnh đó, bạn cũng nên đọc thêm bài viết phân tích về [Vốn Hóa Thị Trường Là Gì? Thước Đo Định Quy Mô Doanh Nghiệp Cho F0](/dau-tu/co-phieu/von-hoa-thi-truong-la-gi/) để trang bị kiến thức đầy đủ nhất.

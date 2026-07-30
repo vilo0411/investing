@@ -47,6 +47,10 @@ Index toàn bộ bài đã publish tại `src/content/articles/`. Dùng cho inte
 | `co-phieu-penny-la-gi` | Cổ Phiếu Penny Là Gì? Bẫy Giá Rẻ Và Rủi Ro Phá Sản Cho F0 | `/dau-tu/co-phieu/co-phieu-penny-la-gi/` | cổ phiếu penny |
 | `co-phieu-quy-la-gi` | Cổ Phiếu Quỹ Là Gì? Quy Định Mới Và Tác Động Tới Giá Cổ Phiếu | `/dau-tu/co-phieu/co-phieu-quy-la-gi/` | cổ phiếu quỹ |
 | `cach-choi-chung-khoan-tren-dien-thoai` | Hướng dẫn chơi chứng khoán trên điện thoại từ A-Z | `/dau-tu/co-phieu/cach-choi-chung-khoan-tren-dien-thoai/` | chơi chứng khoán trên điện thoại |
+| `co-phieu-phong-thu` | Cổ Phiếu Phòng Thủ Là Gì? Lá Chắn An Toàn Cho F0 | `/dau-tu/co-phieu/co-phieu-phong-thu/` | cổ phiếu phòng thủ |
+| `co-phieu-tru-la-gi` | Cổ Phiếu Trụ Là Gì? Giải Mã Thuật Ngữ Kéo Trụ Đạp Trụ | `/dau-tu/co-phieu/co-phieu-tru-la-gi/` | cổ phiếu trụ |
+| `von-hoa-thi-truong-la-gi` | Vốn Hóa Thị Trường Là Gì? Thước Đo Định Quy Mô Doanh Nghiệp | `/dau-tu/co-phieu/von-hoa-thi-truong-la-gi/` | vốn hóa thị trường |
+| `cac-loai-lenh-trong-chung-khoan` | Các Loại Lệnh Trong Chứng Khoán: Hướng Dẫn Chi Tiết Từ A-Z | `/dau-tu/co-phieu/cac-loai-lenh-trong-chung-khoan/` | các loại lệnh trong chứng khoán |
 
 ## Nhóm Đầu tư — Quỹ ETF (`/dau-tu/etf/`)
 
@@ -95,6 +99,7 @@ Index toàn bộ bài đã publish tại `src/content/articles/`. Dùng cho inte
 | `eps-la-gi` | EPS là gì? | `/phan-tich/co-ban/eps-la-gi/` | EPS |
 | `phan-tich-co-ban-la-gi` | Phân tích cơ bản là gì? | `/phan-tich/co-ban/phan-tich-co-ban-la-gi/` | phân tích cơ bản |
 | `cach-dinh-gia-co-phieu` | Cách định giá cổ phiếu đơn giản và thực chiến nhất cho F0 | `/phan-tich/co-ban/cach-dinh-gia-co-phieu/` | cách định giá cổ phiếu |
+| `gia-tri-noi-tai-cua-co-phieu` | Giá Trị Nội Tại Của Cổ Phiếu Là Gì? Chìa Khóa Đầu Tư Giá Trị | `/phan-tich/co-ban/gia-tri-noi-tai-cua-co-phieu/` | giá trị nội tại |
 
 ## Nhóm Phân tích — Kỹ thuật (`/phan-tich/ky-thuat/`)
 

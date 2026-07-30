@@ -110,3 +110,4 @@ Hãy bắt đầu bằng một số vốn nhỏ để làm quen với nhịp bi�
 
 Sau khi nắm rõ cách mua, bạn có thể tham khảo thêm hướng dẫn [cách đầu tư cổ phiếu](/dau-tu/co-phieu/cach-dau-tu-co-phieu/) để nâng cao kiến thức phân tích của mình.
  Bên cạnh đó, bạn cũng nên đọc thêm bài viết phân tích về [Nên đầu tư quỹ ETF nào? Top 3 quỹ ETF tiềm năng nhất Việt Nam](/dau-tu/etf/nen-dau-tu-quy-etf-nao/) để trang bị kiến thức đầy đủ nhất.
+ Bên cạnh đó, bạn cũng nên đọc thêm bài viết phân tích về [Quỹ ETF Diamond Là Gì? Đánh Giá Tiềm Năng Đầu Tư Chứng Chỉ Quỹ FUEVFVND](/dau-tu/etf/etf-diamond-la-gi/) để trang bị kiến thức đầy đủ nhất.

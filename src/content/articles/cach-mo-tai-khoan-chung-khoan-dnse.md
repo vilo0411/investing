@@ -147,3 +147,4 @@ Chính sách miễn phí trọn đời giúp DNSE trở thành một đối th�
 
 > **Xem hướng dẫn tổng quan:** Đọc bài viết **[Cách mở tài khoản chứng khoán](/dau-tu/co-phieu/cach-mo-tai-khoan-chung-khoan/)** để biết chi tiết các bước thực hiện.
  Để hiểu rõ hơn về chủ đề này, bạn có thể tham khảo thêm hướng dẫn **[đánh giá các công ty chứng khoán](/reviews/review-cong-ty-chung-khoan-cho-nguoi-moi/)**. Bên cạnh đó, bạn cũng nên đọc thêm bài viết phân tích về [Cách mở tài khoản chứng khoán VNDIRECT online](/reviews/cach-mo-tai-khoan-chung-khoan-vndirect/) để trang bị kiến thức đầy đủ nhất.
+ Bên cạnh đó, bạn cũng nên đọc thêm bài viết phân tích về [Đánh giá Công ty Chứng khoán HSC (HCM): Phí, App và Dịch Vụ Tư Vấn](/reviews/review-hsc-securities/) để trang bị kiến thức đầy đủ nhất.

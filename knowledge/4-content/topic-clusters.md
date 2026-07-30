@@ -52,8 +52,8 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 | Cổ phiếu quỹ là gì | `co-phieu-quy-la-gi` | `Finalized` | ✅ Đã publish |
 | Cổ phiếu ESOP là gì | `co-phieu-esop-la-gi` | `Finalized` | ✅ Đã publish |
 | Cổ phiếu penny là gì | `co-phieu-penny-la-gi` | `Finalized` | ✅ Đã publish |
-| Cổ phiếu phòng thủ | `co-phieu-phong-thu` | `Planned` | |
-| Cổ phiếu trụ là gì | `co-phieu-tru-la-gi` | `Planned` | |
+| Cổ phiếu phòng thủ | `co-phieu-phong-thu` | `Finalized` | ✅ Đã publish |
+| Cổ phiếu trụ là gì | `co-phieu-tru-la-gi` | `Finalized` | ✅ Đã publish |
 | Pha loãng cổ phiếu là gì | `pha-loang-co-phieu-la-gi` | `Planned` | |
 | Chia tách cổ phiếu là gì | `chia-tach-co-phieu-la-gi` | `Finalized` | |
 | Trả cổ tức bằng cổ phiếu | `tra-co-tuc-bang-co-phieu-la-gi` | `Planned` | |
@@ -62,7 +62,7 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 | So sánh cổ phiếu thường và ưu đãi | `so-sanh-co-phieu-thuong-va-co-phieu-uu-dai` | `Planned` | |
 | Cổ phiếu bị hủy niêm yết | `co-phieu-bi-huy-niem-yet` | `Planned` | |
 | Mid cap là gì | `mid-cap-la-gi` | `Planned` | |
-| Vốn hóa thị trường là gì | `von-hoa-thi-truong-la-gi` | `Planned` | |
+| Vốn hóa thị trường là gì | `von-hoa-thi-truong-la-gi` | `Finalized` | ✅ Đã publish |
 | IPO là gì | `ipo-la-gi` | `Planned` | |
 
 ---
@@ -241,7 +241,7 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 | Full margin là gì | `full-margin-la-gi` | `Planned` | |
 | Bán giải chấp cổ phiếu là gì | `ban-giai-chap-co-phieu-la-gi` | `Planned` | |
 | Cắt lỗ là gì | `cat-lo-la-gi` | `Planned` | |
-| Các loại lệnh trong chứng khoán | `cac-loai-lenh-trong-chung-khoan` | `Planned` | |
+| Các loại lệnh trong chứng khoán | `cac-loai-lenh-trong-chung-khoan` | `Finalized` | ✅ Đã publish |
 | Giờ giao dịch chứng khoán | `gio-giao-dich-chung-khoan` | `Planned` | |
 | Giá trần giá sàn là gì | `gia-tran-gia-san` | `Planned` | |
 | Biên độ giao dịch chứng khoán | `bien-do-giao-dich-chung-khoan` | `Planned` | |
@@ -275,7 +275,7 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 | P/E là gì | `pe-la-gi` | `Finalized` | ✅ Đã publish |
 | P/B là gì | `pb-la-gi` | `Finalized` | ✅ Đã publish |
 | EPS là gì | `eps-la-gi` | `Finalized` | ✅ Đã publish |
-| Giá trị nội tại của cổ phiếu | `gia-tri-noi-tai-cua-co-phieu` | `Planned` | |
+| Giá trị nội tại của cổ phiếu | `gia-tri-noi-tai-cua-co-phieu` | `Finalized` | ✅ Đã publish |
 | Cách định giá cổ phiếu | `cach-dinh-gia-co-phieu` | `Finalized` | Sprint Wave 3 |
 | Mô hình CAPM là gì | `mo-hinh-capm-la-gi` | `Planned` | |
 

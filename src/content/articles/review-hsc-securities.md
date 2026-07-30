@@ -1,28 +1,42 @@
 ---
-title: "Đánh giá Công ty Chứng khoán HSC (HCM): Phí, App và Dịch Vụ Tư Vấn"
-description: "Đánh giá công ty chứng khoán HSC chi tiết 2026. Phân tích biểu phí, lãi suất margin, ứng dụng HSC ONE và so sánh trực tiếp với SSI, TCBS."
-category: "reviews"
-heroImage: "/images/articles/review-hsc-securities/review-hsc-securities.jpg"
-publishDate: "2026-07-29"
-updatedDate: "2026-07-29"
-readingTime: "7 phút đọc"
+title: 'Đánh giá Công ty Chứng khoán HSC (HCM): Phí, App và Dịch Vụ Tư Vấn'
+description: >-
+  Đánh giá công ty chứng khoán HSC chi tiết 2026. Phân tích biểu phí, lãi suất
+  margin, ứng dụng HSC ONE và so sánh trực tiếp với SSI, TCBS.
+category: reviews
+heroImage: /images/articles/review-hsc-securities/review-hsc-securities.jpg
+publishDate: '2026-07-29'
+updatedDate: '2026-07-29'
+readingTime: 7 phút đọc
 featured: false
 order: 8
 sources:
-  - "Báo cáo thường niên HSC 2025 - Công ty Cổ phần Chứng khoán TP.HCM"
-  - "Công bố thông tin thị phần môi giới cổ phiếu năm 2025 - HOSE"
+  - Báo cáo thường niên HSC 2025 - Công ty Cổ phần Chứng khoán TP.HCM
+  - Công bố thông tin thị phần môi giới cổ phiếu năm 2025 - HOSE
 keyTakeaways:
-  - "HSC thuộc Top 5 CTCK có thị phần môi giới lớn nhất Việt Nam với tiềm lực tài chính vững chắc."
-  - "Biểu phí giao dịch dao động từ 0.15% - 0.35%, đổi lại chất lượng tư vấn và báo cáo phân tích thuộc top đầu."
-  - "Lãi suất cho vay margin duy trì ở mức 13.0% - 13.5%/năm."
-  - "Ứng dụng HSC ONE vận hành mượt mà, bảo mật cao và ít gặp sự cố gián đoạn khi thị trường giao dịch biến động mạnh."
+  - >-
+    HSC thuộc Top 5 CTCK có thị phần môi giới lớn nhất Việt Nam với tiềm lực tài
+    chính vững chắc.
+  - >-
+    Biểu phí giao dịch dao động từ 0.15% - 0.35%, đổi lại chất lượng tư vấn và
+    báo cáo phân tích thuộc top đầu.
+  - Lãi suất cho vay margin duy trì ở mức 13.0% - 13.5%/năm.
+  - >-
+    Ứng dụng HSC ONE vận hành mượt mà, bảo mật cao và ít gặp sự cố gián đoạn khi
+    thị trường giao dịch biến động mạnh.
 faq:
-  - question: "Mở tài khoản chứng khoán HSC có mất phí không?"
-    answer: "Mở tài khoản tại HSC hoàn toàn miễn phí 100% qua quy trình eKYC trực tuyến trên điện thoại."
-  - question: "Phí giao dịch chứng khoán HSC là bao nhiêu?"
-    answer: "Phí giao dịch chủ động online là 0.15%, còn nếu có nhân viên môi giới hỗ trợ tư vấn phí dao động từ 0.2% - 0.35%."
-  - question: "Mã chứng khoán của HSC trên sàn HOSE là gì?"
-    answer: "Mã cổ phiếu của Công ty Cổ phần Chứng khoán TP.HCM niêm yết trên sàn HOSE là HCM."
+  - question: Mở tài khoản chứng khoán HSC có mất phí không?
+    answer: >-
+      Mở tài khoản tại HSC hoàn toàn miễn phí 100% qua quy trình eKYC trực tuyến
+      trên điện thoại.
+  - question: Phí giao dịch chứng khoán HSC là bao nhiêu?
+    answer: >-
+      Phí giao dịch chủ động online là 0.15%, còn nếu có nhân viên môi giới hỗ
+      trợ tư vấn phí dao động từ 0.2% - 0.35%.
+  - question: Mã chứng khoán của HSC trên sàn HOSE là gì?
+    answer: >-
+      Mã cổ phiếu của Công ty Cổ phần Chứng khoán TP.HCM niêm yết trên sàn HOSE
+      là HCM.
 ---
 
 # Đánh giá Công ty Chứng khoán HSC (HCM): Phí, App và Dịch Vụ Tư Vấn
@@ -88,6 +102,6 @@ Nếu bạn cần tham khảo thêm danh sách các sàn phù hợp cho F0, hãy
 
 HSC sẽ là lựa chọn tuyệt vời cho những nhà đầu tư cá nhân có quy mô vốn vừa và lớn. Nếu bạn coi trọng sự an toàn tài sản, cần sự hỗ trợ tư vấn từ chuyên viên và muốn đọc báo cáo phân tích chuyên sâu thì HSC rất phù hợp.
 
-Ngược lại, nếu bạn là người mới bắt đầu với số vốn nhỏ dưới 10 triệu đồng, ưu tiên giao dịch tần suất cao và muốn tìm kiếm mức phí rẻ nhất thì các nền tảng như TCBS hay DNSE sẽ là sự thay thế đáng cân nhắc hơn.
+Ngược lại, nếu bạn là người mới bắt đầu với số vốn nhỏ dưới 10 triệu đồng, ưu tiên giao dịch tần suất cao và muốn tìm kiếm mức phí rẻ nhất thì các nền tảng như TCBS hay DNSE sẽ là sự thay thế đáng cân nhắc hơn. Để hiểu rõ hơn về chủ đề này, bạn có thể tham khảo thêm hướng dẫn **[cách mở tài khoản chứng khoán](/dau-tu/co-phieu/cach-mo-tai-khoan-chung-khoan/)**.
 
 > **Tuyên bố miễn trừ trách nhiệm:** Thông tin trong bài viết được tổng hợp từ nguồn công khai và trải nghiệm thực tế mang tính trung lập. Bài viết không chứa liên kết tài trợ ẩn và không cấu thành lời khuyên đầu tư tài chính.

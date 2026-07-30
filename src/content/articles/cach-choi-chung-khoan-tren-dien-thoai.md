@@ -1,28 +1,46 @@
 ---
-title: "Hướng Dẫn Cách Chơi Chứng Khoán Trên Điện Thoại Từ A-Z Cho Người Mới"
-description: "Hướng dẫn cách chơi chứng khoán trên điện thoại chi tiết từ A-Z cho người mới. Quy trình mở tài khoản eKYC, nạp tiền, đọc bảng giá và đặt lệnh mua bán cổ phiếu."
-category: "co-phieu"
-heroImage: "/images/articles/cach-choi-chung-khoan-tren-dien-thoai/cach-choi-chung-khoan-tren-dien-thoai.jpg"
-publishDate: "2026-07-29"
-updatedDate: "2026-07-29"
-readingTime: "8 phút đọc"
+title: Hướng Dẫn Cách Chơi Chứng Khoán Trên Điện Thoại Từ A-Z Cho Người Mới
+description: >-
+  Hướng dẫn cách chơi chứng khoán trên điện thoại chi tiết từ A-Z cho người mới.
+  Quy trình mở tài khoản eKYC, nạp tiền, đọc bảng giá và đặt lệnh mua bán cổ
+  phiếu.
+category: co-phieu
+heroImage: >-
+  /images/articles/cach-choi-chung-khoan-tren-dien-thoai/cach-choi-chung-khoan-tren-dien-thoai.jpg
+publishDate: '2026-07-29'
+updatedDate: '2026-07-29'
+readingTime: 8 phút đọc
 featured: false
 order: 15
 sources:
-  - "Hướng dẫn mở tài khoản giao dịch chứng khoán trực tuyến eKYC - UBCKNN"
-  - "Quy định về thời gian và phương thức giao dịch chứng khoán - HOSE & HNX"
+  - Hướng dẫn mở tài khoản giao dịch chứng khoán trực tuyến eKYC - UBCKNN
+  - Quy định về thời gian và phương thức giao dịch chứng khoán - HOSE & HNX
 keyTakeaways:
-  - "100% quy trình từ mở tài khoản eKYC, nạp rút tiền đến đặt lệnh giao dịch cổ phiếu hiện nay đều thực hiện được trên smartphone."
-  - "Người mới chỉ cần chuẩn bị Căn cước công dân gắn chip và điện thoại thông minh kết nối Internet."
-  - "Nên bắt đầu trải nghiệm với số vốn nhỏ từ 500.000 đến 1.000.000 VNĐ để làm quen với thao tác ứng dụng."
-  - "Tuân thủ nghiêm ngặt các quy tắc bảo mật Smart OTP và sinh trắc học để bảo vệ tài sản trên điện thoại."
+  - >-
+    100% quy trình từ mở tài khoản eKYC, nạp rút tiền đến đặt lệnh giao dịch cổ
+    phiếu hiện nay đều thực hiện được trên smartphone.
+  - >-
+    Người mới chỉ cần chuẩn bị Căn cước công dân gắn chip và điện thoại thông
+    minh kết nối Internet.
+  - >-
+    Nên bắt đầu trải nghiệm với số vốn nhỏ từ 500.000 đến 1.000.000 VNĐ để làm
+    quen với thao tác ứng dụng.
+  - >-
+    Tuân thủ nghiêm ngặt các quy tắc bảo mật Smart OTP và sinh trắc học để bảo
+    vệ tài sản trên điện thoại.
 faq:
-  - question: "Chơi chứng khoán trên điện thoại có an toàn không?"
-    answer: "Rất an toàn nếu bạn chọn ứng dụng từ các công ty chứng khoán uy tín được UBCKNN cấp phép và bật bảo mật 2 lớp Smart OTP."
-  - question: "Không có máy tính có đầu tư chứng khoán lâu dài được không?"
-    answer: "Hoàn toàn được. Các ứng dụng di động hiện nay cung cấp đầy đủ bảng giá, tin tức, đồ thị phân tích kỹ thuật và báo cáo tài chính."
-  - question: "Đặt lệnh xong trên điện thoại làm sao biết cổ phiếu đã về tài khoản?"
-    answer: "Sau khi lệnh khớp, cổ phiếu sẽ tự động về tài khoản chứng khoán của bạn theo chu kỳ thanh toán T+1.5."
+  - question: Chơi chứng khoán trên điện thoại có an toàn không?
+    answer: >-
+      Rất an toàn nếu bạn chọn ứng dụng từ các công ty chứng khoán uy tín được
+      UBCKNN cấp phép và bật bảo mật 2 lớp Smart OTP.
+  - question: Không có máy tính có đầu tư chứng khoán lâu dài được không?
+    answer: >-
+      Hoàn toàn được. Các ứng dụng di động hiện nay cung cấp đầy đủ bảng giá,
+      tin tức, đồ thị phân tích kỹ thuật và báo cáo tài chính.
+  - question: Đặt lệnh xong trên điện thoại làm sao biết cổ phiếu đã về tài khoản?
+    answer: >-
+      Sau khi lệnh khớp, cổ phiếu sẽ tự động về tài khoản chứng khoán của bạn
+      theo chu kỳ thanh toán T+1.5.
 ---
 
 # Hướng Dẫn Cách Chơi Chứng Khoán Trên Điện Thoại Từ A-Z Cho Người Mới
@@ -63,7 +81,7 @@ Bạn tiến hành chụp rõ nét 2 mặt CCCD và quay video khuôn mặt theo
 
 ### Bước 2. Nạp tiền vào tài khoản chứng khoán
 
-Sau khi tài khoản được kích hoạt, bạn tiến hành nạp tiền để chuẩn bị mua cổ phiếu.
+Sau khi tài khoản được kích hoạt, bạn tiến hành nạp tiền để chuẩn bị mua **[cổ phiếu](/dau-tu/co-phieu/co-phieu-la-gi/)**.
 
 Mở ứng dụng ngân hàng của bạn và chuyển khoản tới số tài khoản định danh tại công ty chứng khoán. Với F0 mới bắt đầu, bạn nên nạp số vốn nhỏ từ 500.000 đến 1.000.000 VNĐ để thử nghiệm thao tác.
 
@@ -102,3 +120,4 @@ Nếu bạn chưa biết chọn ứng dụng nào, hãy tham khảo các gợi �
 * **SSI iBoard**. Độ ổn định cao, dữ liệu bảng giá cập nhật tức thì, uy tín lâu năm.
 
 Bạn có thể đọc thêm bài đánh giá [chọn công ty chứng khoán cho người mới](/reviews/review-cong-ty-chung-khoan-cho-nguoi-moi/) để đưa ra lựa chọn phù hợp nhất với nhu cầu cá nhân.
+ Để hiểu rõ hơn về chủ đề này, bạn có thể tham khảo thêm hướng dẫn **[cách đầu tư cổ phiếu](/dau-tu/co-phieu/cach-dau-tu-co-phieu/)**. Bên cạnh đó, bạn cũng nên đọc thêm bài viết phân tích về [Cổ Phiếu Trụ Là Gì? Giải Mã Thuật Ngữ Kéo Trụ Đạp Trụ Cho F0](/dau-tu/co-phieu/co-phieu-tru-la-gi/) để trang bị kiến thức đầy đủ nhất.

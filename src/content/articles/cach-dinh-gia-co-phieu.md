@@ -138,3 +138,4 @@ Hãy luôn cập nhật và điều chỉnh các biến số định giá khi c�
 
 Định giá cổ phiếu là kỹ năng cần thời gian rèn luyện liên tục qua nhiều chu kỳ thị trường. Hãy bắt đầu thực hành định giá với các doanh nghiệp đơn giản trước khi nâng cao dần trình độ.
  Để hiểu rõ hơn về chủ đề này, bạn có thể tham khảo thêm hướng dẫn **[phân tích cơ bản là gì](/phan-tich/co-ban/phan-tich-co-ban-la-gi/)**. Để hiểu rõ hơn về chủ đề này, bạn có thể tham khảo thêm hướng dẫn **[cách chọn cổ phiếu tốt](/dau-tu/co-phieu/cach-chon-co-phieu-tot/)**. Bên cạnh đó, bạn cũng nên đọc thêm bài viết phân tích về [Chu Kỳ Kinh Tế Là Gì? 4 Giai Đoạn Và Cách Đầu Tư Theo Chu Kỳ](/phan-tich/co-ban/chu-ky-kinh-te-la-gi/) để trang bị kiến thức đầy đủ nhất.
+ Bên cạnh đó, bạn cũng nên đọc thêm bài viết phân tích về [Giá Trị Nội Tại Của Cổ Phiếu Là Gì? Chìa Khóa Đầu Tư Giá Trị Bền Vững](/phan-tich/co-ban/gia-tri-noi-tai-cua-co-phieu/) để trang bị kiến thức đầy đủ nhất.

@@ -148,3 +148,4 @@ Trước khi đưa ra quyết định cuối cùng, việc nghiên cứu kỹ c�
 
 Ngoài ra, bạn cũng cần hiểu rõ việc [mở tài khoản chứng khoán có mất phí không](/dau-tu/co-phieu/mo-tai-khoan-chung-khoan-co-mat-phi-khong/) để lên kế hoạch tài chính phù hợp. Việc thử nghiệm với một số vốn nhỏ luôn là lời khuyên hữu ích cho người mới bắt đầu.
  Bên cạnh đó, bạn cũng nên đọc thêm bài viết phân tích về [Review DSC Securities: Có nên mở tài khoản chứng khoán DSC không?](/reviews/review-dsc-securities/) để trang bị kiến thức đầy đủ nhất.
+ Bên cạnh đó, bạn cũng nên đọc thêm bài viết phân tích về [Đánh giá Công ty Chứng khoán Vietcap (VCI): Phí, App và Chất Lượng Phân Tích](/reviews/review-vietcap-securities/) để trang bị kiến thức đầy đủ nhất.

@@ -97,3 +97,4 @@ Thứ hai là theo dõi chu kỳ ngành. Một số doanh nghiệp lớn như ng
 
 Thứ ba là luôn đa dạng hóa danh mục. Dù tin tưởng đến đâu, bạn cũng không nên dồn toàn bộ số tiền tiết kiệm vào một cổ phiếu duy nhất. Việc chia vốn vào 3-5 mã Blue chip thuộc các ngành khác nhau sẽ giúp tối ưu hóa rủi ro cho bạn.
  Bên cạnh đó, bạn cũng nên đọc thêm bài viết phân tích về [Cách nhận biết cổ phiếu tiềm năng cho người mới](/dau-tu/co-phieu/cach-nhan-biet-co-phieu-tiem-nang/) để trang bị kiến thức đầy đủ nhất.
+ Bên cạnh đó, bạn cũng nên đọc thêm bài viết phân tích về [Các Loại Lệnh Trong Chứng Khoán: Hướng Dẫn Chi Tiết Từ A-Z Cho F0](/dau-tu/co-phieu/cac-loai-lenh-trong-chung-khoan/) để trang bị kiến thức đầy đủ nhất.
