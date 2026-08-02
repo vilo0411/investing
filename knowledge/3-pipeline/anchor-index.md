@@ -51,6 +51,11 @@ Index toàn bộ bài đã publish tại `src/content/articles/`. Dùng cho inte
 | `co-phieu-tru-la-gi` | Cổ Phiếu Trụ Là Gì? Giải Mã Thuật Ngữ Kéo Trụ Đạp Trụ | `/dau-tu/co-phieu/co-phieu-tru-la-gi/` | cổ phiếu trụ |
 | `von-hoa-thi-truong-la-gi` | Vốn Hóa Thị Trường Là Gì? Thước Đo Định Quy Mô Doanh Nghiệp | `/dau-tu/co-phieu/von-hoa-thi-truong-la-gi/` | vốn hóa thị trường |
 | `cac-loai-lenh-trong-chung-khoan` | Các Loại Lệnh Trong Chứng Khoán: Hướng Dẫn Chi Tiết Từ A-Z | `/dau-tu/co-phieu/cac-loai-lenh-trong-chung-khoan/` | các loại lệnh trong chứng khoán |
+| `pha-loang-co-phieu-la-gi` | Pha loãng cổ phiếu là gì? Nguyên nhân, Tác động & Cách phòng ngừa | `/dau-tu/co-phieu/pha-loang-co-phieu-la-gi/` | pha loãng cổ phiếu |
+| `tra-co-tuc-bang-co-phieu-la-gi` | Trả cổ tức bằng cổ phiếu là gì? Được hay Mất so với tiền mặt? | `/dau-tu/co-phieu/tra-co-tuc-bang-co-phieu-la-gi/` | trả cổ tức bằng cổ phiếu |
+| `thi-gia-co-phieu-la-gi` | Thị giá cổ phiếu là gì? Yếu tố ảnh hưởng & Phân biệt với BVPS | `/dau-tu/co-phieu/thi-gia-co-phieu-la-gi/` | thị giá cổ phiếu |
+| `co-phieu-lo-le-la-gi` | Cổ phiếu lô lẻ là gì? Hướng dẫn cách bán lô lẻ mới nhất | `/dau-tu/co-phieu/co-phieu-lo-le-la-gi/` | cổ phiếu lô lẻ |
+| `so-sanh-co-phieu-thuong-va-co-phieu-uu-dai` | So sánh cổ phiếu thường và cổ phiếu ưu đãi: Nên mua loại nào? | `/dau-tu/co-phieu/so-sanh-co-phieu-thuong-va-co-phieu-uu-dai/` | so sánh cổ phiếu thường và cổ phiếu ưu đãi |
 
 ## Nhóm Đầu tư — Quỹ ETF (`/dau-tu/etf/`)
 

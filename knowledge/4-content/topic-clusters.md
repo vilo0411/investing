@@ -54,12 +54,12 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 | Cổ phiếu penny là gì | `co-phieu-penny-la-gi` | `Finalized` | ✅ Đã publish |
 | Cổ phiếu phòng thủ | `co-phieu-phong-thu` | `Finalized` | ✅ Đã publish |
 | Cổ phiếu trụ là gì | `co-phieu-tru-la-gi` | `Finalized` | ✅ Đã publish |
-| Pha loãng cổ phiếu là gì | `pha-loang-co-phieu-la-gi` | `Planned` | |
+| Pha loãng cổ phiếu là gì | `pha-loang-co-phieu-la-gi` | `Finalized` | ✅ Đã publish |
 | Chia tách cổ phiếu là gì | `chia-tach-co-phieu-la-gi` | `Finalized` | |
-| Trả cổ tức bằng cổ phiếu | `tra-co-tuc-bang-co-phieu-la-gi` | `Planned` | |
-| Thị giá cổ phiếu là gì | `thi-gia-co-phieu-la-gi` | `Planned` | |
-| Cổ phiếu lô lẻ là gì | `co-phieu-lo-le-la-gi` | `Planned` | |
-| So sánh cổ phiếu thường và ưu đãi | `so-sanh-co-phieu-thuong-va-co-phieu-uu-dai` | `Planned` | |
+| Trả cổ tức bằng cổ phiếu | `tra-co-tuc-bang-co-phieu-la-gi` | `Finalized` | ✅ Đã publish |
+| Thị giá cổ phiếu là gì | `thi-gia-co-phieu-la-gi` | `Finalized` | ✅ Đã publish |
+| Cổ phiếu lô lẻ là gì | `co-phieu-lo-le-la-gi` | `Finalized` | ✅ Đã publish |
+| So sánh cổ phiếu thường và ưu đãi | `so-sanh-co-phieu-thuong-va-co-phieu-uu-dai` | `Finalized` | ✅ Đã publish |
 | Cổ phiếu bị hủy niêm yết | `co-phieu-bi-huy-niem-yet` | `Planned` | |
 | Mid cap là gì | `mid-cap-la-gi` | `Planned` | |
 | Vốn hóa thị trường là gì | `von-hoa-thi-truong-la-gi` | `Finalized` | ✅ Đã publish |
