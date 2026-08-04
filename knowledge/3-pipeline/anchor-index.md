@@ -56,6 +56,11 @@ Index toàn bộ bài đã publish tại `src/content/articles/`. Dùng cho inte
 | `thi-gia-co-phieu-la-gi` | Thị giá cổ phiếu là gì? Yếu tố ảnh hưởng & Phân biệt với BVPS | `/dau-tu/co-phieu/thi-gia-co-phieu-la-gi/` | thị giá cổ phiếu |
 | `co-phieu-lo-le-la-gi` | Cổ phiếu lô lẻ là gì? Hướng dẫn cách bán lô lẻ mới nhất | `/dau-tu/co-phieu/co-phieu-lo-le-la-gi/` | cổ phiếu lô lẻ |
 | `so-sanh-co-phieu-thuong-va-co-phieu-uu-dai` | So sánh cổ phiếu thường và cổ phiếu ưu đãi: Nên mua loại nào? | `/dau-tu/co-phieu/so-sanh-co-phieu-thuong-va-co-phieu-uu-dai/` | so sánh cổ phiếu thường và cổ phiếu ưu đãi |
+| `co-phieu-bi-huy-niem-yet` | Cổ Phiếu Bị Hủy Niêm Yết Là Gì? Nguyên Nhân & Cách Xử Lý Cho F0 | `/dau-tu/co-phieu/co-phieu-bi-huy-niem-yet/` | cổ phiếu bị hủy niêm yết |
+| `mid-cap-la-gi` | Mid Cap Là Gì? Đặc Điểm & Chiến Lược Đầu Tư Cổ Phiếu Vốn Hóa Vừa | `/dau-tu/co-phieu/mid-cap-la-gi/` | cổ phiếu mid cap |
+| `ipo-la-gi` | IPO Là Gì? Quy Trình Đăng Ký Mua Cổ Phiếu IPO An Toàn Cho F0 | `/dau-tu/co-phieu/ipo-la-gi/` | IPO là gì |
+| `mo-tai-khoan-chung-khoan-online-co-an-toan-khong` | Mở Tài Khoản Chứng Khoán Online Có An Toàn Không? Giải Đáp Cho F0 | `/dau-tu/co-phieu/mo-tai-khoan-chung-khoan-online-co-an-toan-khong/` | mở tài khoản chứng khoán online có an toàn không |
+| `cac-loai-tai-khoan-chung-khoan` | Các Loại Tài Khoản Chứng Khoán: Phân Biệt Thường, Margin & Phái Sinh | `/dau-tu/co-phieu/cac-loai-tai-khoan-chung-khoan/` | các loại tài khoản chứng khoán |
 
 ## Nhóm Đầu tư — Quỹ ETF (`/dau-tu/etf/`)
 

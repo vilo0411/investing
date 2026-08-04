@@ -60,10 +60,10 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 | Thị giá cổ phiếu là gì | `thi-gia-co-phieu-la-gi` | `Finalized` | ✅ Đã publish |
 | Cổ phiếu lô lẻ là gì | `co-phieu-lo-le-la-gi` | `Finalized` | ✅ Đã publish |
 | So sánh cổ phiếu thường và ưu đãi | `so-sanh-co-phieu-thuong-va-co-phieu-uu-dai` | `Finalized` | ✅ Đã publish |
-| Cổ phiếu bị hủy niêm yết | `co-phieu-bi-huy-niem-yet` | `Planned` | |
-| Mid cap là gì | `mid-cap-la-gi` | `Planned` | |
+| Cổ phiếu bị hủy niêm yết | `co-phieu-bi-huy-niem-yet` | `Finalized` | ✅ Đã publish |
+| Mid cap là gì | `mid-cap-la-gi` | `Finalized` | ✅ Đã publish |
 | Vốn hóa thị trường là gì | `von-hoa-thi-truong-la-gi` | `Finalized` | ✅ Đã publish |
-| IPO là gì | `ipo-la-gi` | `Planned` | |
+| IPO là gì | `ipo-la-gi` | `Finalized` | ✅ Đã publish |
 
 ---
 
@@ -104,8 +104,8 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 | Keyword (Spoke) | Slug | Status | Ghi chú |
 |---|---|---|---|
 | Mở tài khoản chứng khoán có mất phí không | `mo-tai-khoan-chung-khoan-co-mat-phi-khong` | `Finalized` | |
-| Mở tài khoản chứng khoán online có an toàn không | `mo-tai-khoan-chung-khoan-online-co-an-toan-khong` | `Planned` | |
-| Các loại tài khoản chứng khoán | `cac-loai-tai-khoan-chung-khoan` | `Planned` | |
+| Mở tài khoản chứng khoán online có an toàn không | `mo-tai-khoan-chung-khoan-online-co-an-toan-khong` | `Finalized` | ✅ Đã publish |
+| Các loại tài khoản chứng khoán | `cac-loai-tai-khoan-chung-khoan` | `Finalized` | ✅ Đã publish |
 | Một người được mở bao nhiêu tài khoản | `mot-nguoi-duoc-mo-bao-nhieu-tai-khoan-chung-khoan` | `Planned` | |
 | Hợp đồng mở tài khoản chứng khoán | `hop-dong-mo-tai-khoan-chung-khoan` | `Planned` | |
 
