@@ -105,7 +105,7 @@ Bảng so sánh sau đây giúp bạn đối chiếu MAS với các thương hi�
 | Lãi suất Margin | 8.0% - 12.5%/năm | 12.5% - 14.0%/năm | 10.5% - 12.0%/năm |
 | Phí giao dịch | 0.15% | 0.13% - 0.15% | 0.10% |
 
-Để tìm hiểu thêm về tiêu chí chọn sàn phù hợp, bạn có thể đọc bài hướng dẫn [chọn công ty chứng khoán cho người mới](/reviews/review-cong-ty-chung-khoan-cho-nguoi-moi/) hoặc tham khảo các lựa chọn trong nhóm [công ty chứng khoán phí thấp](/reviews/cong-ty-chung-khoan-phi-thap/).
+Để tìm hiểu thêm về tiêu chí chọn sàn phù hợp, bạn có thể đọc bài hướng dẫn [chọn công ty chứng khoán cho người mới](/reviews/review-cong-ty-chung-khoan-cho-nguoi-moi/).
 
 ## Ai nên chọn mở tài khoản tại Mirae Asset?
 

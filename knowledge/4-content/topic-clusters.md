@@ -91,7 +91,7 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 | Cách đầu tư chứng chỉ quỹ | `cach-dau-tu-chung-chi-quy` | `Planned` | Backlog |
 | Nên đầu tư cổ phiếu nào | `nen-dau-tu-co-phieu-nao` | `Finalized` | Backlog |
 | Cách nhận biết cổ phiếu tiềm năng | `cach-nhan-biet-co-phieu-tiem-nang` | `Finalized` | Backlog |
-| Kinh nghiệm chơi chứng khoán | `kinh-nghiem-choi-chung-khoan` | `Planned` | Backlog |
+| Kinh nghiệm chơi chứng khoán | `kinh-nghiem-choi-chung-khoan` | `Finalized` | Backlog |
 | Đầu tư giá trị là gì | `dau-tu-gia-tri-la-gi` | `Finalized` | Sprint Wave 3 |
 | DCA là gì | `dca-la-gi` | `Finalized` | Sprint Wave 3 |
 
@@ -194,7 +194,7 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 | Quỹ chủ động là gì | `quy-chu-dong-la-gi` | `Finalized` | |
 | Quỹ thụ động là gì | `quy-thu-dong-la-gi` | `Finalized` | |
 | Nên đầu tư quỹ mở hay quỹ ETF | `nen-dau-tu-quy-mo-hay-quy-etf` | `Finalized` | |
-| NAV là gì | `nav-la-gi` | `Planned` | |
+| NAV là gì | `nav-la-gi` | `Finalized` | |
 | So sánh cổ phiếu và chứng chỉ quỹ | `so-sanh-co-phieu-va-chung-chi-quy-dau-tu` | `Planned` | |
 
 ---
@@ -242,7 +242,7 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 | Bán giải chấp cổ phiếu là gì | `ban-giai-chap-co-phieu-la-gi` | `Planned` | |
 | Cắt lỗ là gì | `cat-lo-la-gi` | `Planned` | |
 | Các loại lệnh trong chứng khoán | `cac-loai-lenh-trong-chung-khoan` | `Finalized` | ✅ Đã publish |
-| Giờ giao dịch chứng khoán | `gio-giao-dich-chung-khoan` | `Planned` | |
+| Giờ giao dịch chứng khoán | `gio-giao-dich-chung-khoan` | `Finalized` | |
 | Giá trần giá sàn là gì | `gia-tran-gia-san` | `Planned` | |
 | Biên độ giao dịch chứng khoán | `bien-do-giao-dich-chung-khoan` | `Planned` | |
 
@@ -285,7 +285,7 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 | ROE là gì | `roe-la-gi` | `Finalized` | ✅ Đã publish |
 | ROA là gì | `roa-la-gi` | `Finalized` | ✅ Đã publish |
 | ROIC là gì | `roic-la-gi` | `Planned` | |
-| EBITDA là gì | `ebitda-la-gi` | `Planned` | |
+| EBITDA là gì | `ebitda-la-gi` | `Finalized` | |
 | Biên lợi nhuận gộp là gì | `bien-loi-nhuan-gop-la-gi` | `Planned` | |
 | Biên lợi nhuận ròng | `bien-loi-nhuan-rong` | `Planned` | |
 
@@ -404,7 +404,7 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 | Cán cân thương mại là gì | `can-can-thuong-mai-la-gi` | `Finalized` | ✅ |
 | Nợ công là gì | `no-cong-la-gi` | `Finalized` | ✅ |
 | PMI là gì | `pmi-la-gi` | `Finalized` | ✅ |
-| Chu kỳ kinh tế là gì | `chu-ky-kinh-te-la-gi` | `Planned` | |
+| Chu kỳ kinh tế là gì | `chu-ky-kinh-te-la-gi` | `Finalized` | |
 | Suy thoái kinh tế là gì | `suy-thoai-kinh-te-la-gi` | `Planned` | |
 
 ---

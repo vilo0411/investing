@@ -107,7 +107,7 @@ Bảng so sánh sau đây thể hiện vị thế của Vietcap bên cạnh các
 | Lãi suất Margin | ~12.5% - 13.5%/năm | ~13.5%/năm | ~13.0%/năm |
 | Chất lượng Báo cáo | Cực kỳ xuất sắc | Rất tốt | Rất tốt |
 
-Bạn cũng có thể tham khảo thêm hướng dẫn chi tiết bài [chọn công ty chứng khoán cho người mới](/reviews/review-cong-ty-chung-khoan-cho-nguoi-moi/) hoặc xem lại danh sách các [công ty chứng khoán phí thấp](/reviews/cong-ty-chung-khoan-phi-thap/).
+Bạn cũng có thể tham khảo thêm hướng dẫn chi tiết bài [chọn công ty chứng khoán cho người mới](/reviews/review-cong-ty-chung-khoan-cho-nguoi-moi/).
 
 ## Có nên mở tài khoản chứng khoán Vietcap không?
 

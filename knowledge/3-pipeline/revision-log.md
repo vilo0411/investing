@@ -30,6 +30,11 @@ Tài liệu ghi nhận toàn bộ lịch sử chỉnh sửa bài viết dựa tr
 | 2026-07-28 | `tam-ly-dau-tu-chung-khoan` | Người dùng duyệt `/approve` (Auto Pipeline) | Finalize bài viết, generate hero image Playwright, xóa file tạm, cập nhật anchor-index & topic-clusters | **Hoàn thành** |
 | 2026-07-28 | `sai-lam-dau-tu-chung-khoan` | Người dùng duyệt `/approve` (Auto Pipeline) | Finalize bài viết, generate hero image Playwright, xóa file tạm, cập nhật anchor-index & topic-clusters | **Hoàn thành** |
 | 2026-07-28 | `chu-ky-kinh-te-la-gi` | Người dùng duyệt `/approve` (Auto Pipeline) | Finalize bài viết, generate hero image Playwright, xóa file tạm, cập nhật anchor-index & topic-clusters | **Hoàn thành** |
+| 2026-08-09 | `kinh-nghiem-choi-chung-khoan` | Người dùng duyệt `/approve` (Batch 5 bài) | Finalize bài viết, tải ảnh Unsplash, tạo ảnh bìa Playwright, dọn dẹp file tạm, cập nhật anchor-index & topic-clusters | **Hoàn thành** |
+| 2026-08-09 | `nav-la-gi` | Người dùng duyệt `/approve` (Batch 5 bài) | Finalize bài viết, tải ảnh Unsplash, tạo ảnh bìa Playwright, dọn dẹp file tạm, cập nhật anchor-index & topic-clusters | **Hoàn thành** |
+| 2026-08-09 | `ebitda-la-gi` | Người dùng duyệt `/approve` (Batch 5 bài) | Finalize bài viết, tải ảnh Unsplash, tạo ảnh bìa Playwright, dọn dẹp file tạm, cập nhật anchor-index & topic-clusters | **Hoàn thành** |
+| 2026-08-09 | `gio-giao-dich-chung-khoan` | Người dùng duyệt `/approve` (Batch 5 bài) | Finalize bài viết, tải ảnh Unsplash, tạo ảnh bìa Playwright, dọn dẹp file tạm, cập nhật anchor-index & topic-clusters | **Hoàn thành** |
+| 2026-08-09 | `chu-ky-kinh-te-la-gi` | Người dùng duyệt `/approve` (Batch 5 bài) | Tối ưu hóa bài viết, tải ảnh Unsplash, tạo ảnh bìa Playwright, dọn dẹp file tạm, cập nhật anchor-index & topic-clusters | **Hoàn thành** |
 
 ---
 

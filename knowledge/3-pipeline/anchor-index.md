@@ -61,6 +61,8 @@ Index toàn bộ bài đã publish tại `src/content/articles/`. Dùng cho inte
 | `ipo-la-gi` | IPO Là Gì? Quy Trình Đăng Ký Mua Cổ Phiếu IPO An Toàn Cho F0 | `/dau-tu/co-phieu/ipo-la-gi/` | IPO là gì |
 | `mo-tai-khoan-chung-khoan-online-co-an-toan-khong` | Mở Tài Khoản Chứng Khoán Online Có An Toàn Không? Giải Đáp Cho F0 | `/dau-tu/co-phieu/mo-tai-khoan-chung-khoan-online-co-an-toan-khong/` | mở tài khoản chứng khoán online có an toàn không |
 | `cac-loai-tai-khoan-chung-khoan` | Các Loại Tài Khoản Chứng Khoán: Phân Biệt Thường, Margin & Phái Sinh | `/dau-tu/co-phieu/cac-loai-tai-khoan-chung-khoan/` | các loại tài khoản chứng khoán |
+| `kinh-nghiem-choi-chung-khoan` | Kinh Nghiệm Chơi Chứng Khoán: 7 Bài Học Thực Chiến Cho F0 | `/dau-tu/co-phieu/kinh-nghiem-choi-chung-khoan/` | kinh nghiệm chơi chứng khoán |
+| `gio-giao-dich-chung-khoan` | Giờ Giao Dịch Chứng Khoán Việt Nam: HOSE, HNX & UPCoM | `/dau-tu/co-phieu/gio-giao-dich-chung-khoan/` | giờ giao dịch chứng khoán |
 
 ## Nhóm Đầu tư — Quỹ ETF (`/dau-tu/etf/`)
 
@@ -75,6 +77,7 @@ Index toàn bộ bài đã publish tại `src/content/articles/`. Dùng cho inte
 | `quy-thu-dong-la-gi` | Quỹ thụ động là gì? Hướng dẫn đầu tư cho F0 | `/dau-tu/etf/quy-thu-dong-la-gi/` | quỹ thụ động là gì |
 | `chung-chi-quy-tot-nhat-hien-nay` | Chứng chỉ quỹ tốt nhất hiện nay: Gợi ý các quỹ uy tín cho F0 | `/dau-tu/etf/chung-chi-quy-tot-nhat-hien-nay/` | chứng chỉ quỹ tốt nhất hiện nay |
 | `etf-diamond-la-gi` | Quỹ ETF Diamond là gì? Đánh giá tiềm năng đầu tư FUEVFVND | `/dau-tu/etf/etf-diamond-la-gi/` | ETF Diamond |
+| `nav-la-gi` | NAV Là Gì? Cách Đọc Giá Trị Tài Sản Ròng Quỹ Đầu Tư | `/dau-tu/etf/nav-la-gi/` | NAV là gì |
 
 ## Nhóm Đầu tư — Trái phiếu (`/dau-tu/trai-phieu/`)
 
@@ -110,6 +113,8 @@ Index toàn bộ bài đã publish tại `src/content/articles/`. Dùng cho inte
 | `phan-tich-co-ban-la-gi` | Phân tích cơ bản là gì? | `/phan-tich/co-ban/phan-tich-co-ban-la-gi/` | phân tích cơ bản |
 | `cach-dinh-gia-co-phieu` | Cách định giá cổ phiếu đơn giản và thực chiến nhất cho F0 | `/phan-tich/co-ban/cach-dinh-gia-co-phieu/` | cách định giá cổ phiếu |
 | `gia-tri-noi-tai-cua-co-phieu` | Giá Trị Nội Tại Của Cổ Phiếu Là Gì? Chìa Khóa Đầu Tư Giá Trị | `/phan-tich/co-ban/gia-tri-noi-tai-cua-co-phieu/` | giá trị nội tại |
+| `ebitda-la-gi` | EBITDA Là Gì? Công Thức, Ý Nghĩa Và Cách Tính Cho F0 | `/phan-tich/co-ban/ebitda-la-gi/` | EBITDA là gì |
+| `chu-ky-kinh-te-la-gi` | Chu Kỳ Kinh Tế Là Gì? 4 Giai Đoạn & Cách Đầu Tư Cho F0 | `/phan-tich/co-ban/chu-ky-kinh-te-la-gi/` | chu kỳ kinh tế |
 
 ## Nhóm Phân tích — Kỹ thuật (`/phan-tich/ky-thuat/`)
 

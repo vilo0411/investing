@@ -96,7 +96,7 @@ Dưới đây là bảng so sánh trực tiếp HSC với hai đối thủ lớn
 | Môi giới tư vấn | Rất tốt | Rất tốt | Không có (Thuần App) |
 | Công nghệ App | HSC ONE ổn định | iBoard hiện đại | TCBS Mobile nhiều tính năng |
 
-Nếu bạn cần tham khảo thêm danh sách các sàn phù hợp cho F0, hãy xem bài hướng dẫn [chọn công ty chứng khoán cho người mới](/reviews/review-cong-ty-chung-khoan-cho-nguoi-moi/). Ngoài ra bạn cũng có thể so sánh chi phí với các [công ty chứng khoán phí thấp](/reviews/cong-ty-chung-khoan-phi-thap/) hoặc xem bài [đánh giá SSI](/reviews/review-ssi-securities/).
+Nếu bạn cần tham khảo thêm danh sách các sàn phù hợp cho F0, hãy xem bài hướng dẫn [chọn công ty chứng khoán cho người mới](/reviews/review-cong-ty-chung-khoan-cho-nguoi-moi/) hoặc xem bài [đánh giá SSI](/reviews/review-ssi-securities/).
 
 ## Ai nên và không nên mở tài khoản chứng khoán HSC?
 
