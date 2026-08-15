@@ -58,7 +58,7 @@ Vietcap từ lâu đã khẳng định thế mạnh vượt trội trong lĩnh v
 
 Mặc dù có định thế mạnh ở mảng tổ chức, Vietcap vẫn cung cấp chính sách giá cạnh tranh cho nhà đầu tư cá nhân.
 
-Đối với khách hàng tự giao dịch qua ứng dụng di động, mức phí cố định là 0.15%. Nếu sử dụng dịch vụ tư vấn môi giới trực tiếp, phí giao dịch sẽ từ 0.20% đến 0.30%.
+Đối với khách hàng tự giao dịch qua ứng dụng di động, mức phí cố định là 0.15% (mức phí tương đương với chính sách ở bài [đánh giá VCBS](/reviews/review-vcbs-securities/)). Nếu sử dụng dịch vụ tư vấn môi giới trực tiếp, phí giao dịch sẽ từ 0.20% đến 0.30%.
 
 | Dịch vụ | Phí tự giao dịch Online | Phí có Môi giới chăm sóc |
 |---|---|---|
@@ -94,7 +94,7 @@ Dưới đây là tổng hợp những góc nhìn khách quan về Chứng khoá
 * **Báo cáo nghiên cứu phân tích xuất sắc**. Đem lại giá trị thông tin rất cao cho nhà đầu tư thích đọc báo cáo tài chính.
 * **Uy tín thương hiệu và mảng IB dẫn đầu**. Đóng vai trò là tư vấn chính cho nhiều cổ phiếu blue-chip trên sàn.
 * **Ứng dụng di động mượt mà**. Tích hợp đầy đủ công cụ cho cả nhà đầu tư mới và chuyên nghiệp.
-* **Chính sách ưu đãi phí chưa quá bùng nổ**. Không theo đuổi cuộc đua miễn phí giao dịch zero-fee.
+* **Chính sách ưu đãi phí chưa quá bùng nổ**. Không theo đuổi cuộc đua zero-fee như một số sàn công nghệ nêu trong bài [đánh giá FPTS](/reviews/review-fpts-securities/).
 
 ## So sánh Vietcap với SSI và HSC
 

@@ -91,7 +91,7 @@ Dưới đây là tổng hợp những điểm cộng và điểm trừ của MA
 
 * **Kho margin cực lớn và đa dạng**. Tỷ lệ cho vay cao, danh mục hỗ trợ margin rộng và hiếm khi bị cạn room cho vay.
 * **Lãi suất margin cạnh tranh**. Thường xuyên tung ra các gói margin ưu đãi dưới 10%/năm cho nhà đầu tư mới.
-* **Độ an toàn tài chính tuyệt đối**. Nhờ sự bảo trợ vững chắc từ tập đoàn tài chính toàn cầu Mirae Asset.
+* **Độ an toàn tài chính tuyệt đối**. Nhờ sự bảo trợ vững chắc từ tập đoàn tài chính toàn cầu Mirae Asset, có mức độ uy tín vững bền tương tự như mô hình ngân hàng lớn tại bài [đánh giá VCBS](/reviews/review-vcbs-securities/).
 * **Chăm sóc khách hàng cá nhân chưa quá rầm rộ**. Hoạt động marketing và hỗ trợ cộng đồng tại Việt Nam còn khá trầm lắng so với VPS hay TCBS.
 
 ## So sánh Mirae Asset với VPS và TCBS

@@ -146,6 +146,11 @@ Index toàn bộ bài đã publish tại `src/content/articles/`. Dùng cho inte
 | `review-hsc-securities` | Đánh giá chứng khoán HSC | `/reviews/review-hsc-securities/` | đánh giá HSC |
 | `review-mirae-asset-securities` | Đánh giá chứng khoán Mirae Asset | `/reviews/review-mirae-asset-securities/` | đánh giá Mirae Asset |
 | `review-vietcap-securities` | Đánh giá chứng khoán Vietcap | `/reviews/review-vietcap-securities/` | đánh giá Vietcap |
+| `review-vcbs-securities` | Đánh giá chứng khoán VCBS | `/reviews/review-vcbs-securities/` | đánh giá VCBS |
+| `review-fpts-securities` | Đánh giá chứng khoán FPTS | `/reviews/review-fpts-securities/` | đánh giá FPTS |
+| `review-pinetree-securities` | Đánh giá chứng khoán Pinetree | `/reviews/review-pinetree-securities/` | đánh giá Pinetree |
+| `review-kis-securities` | Đánh giá chứng khoán KIS | `/reviews/review-kis-securities/` | đánh giá KIS |
+| `review-kb-securities` | Đánh giá chứng khoán KB | `/reviews/review-kb-securities/` | đánh giá KB |
 
 ## Nhóm Nhà đầu tư (`/nha-dau-tu/`)
 

@@ -105,7 +105,7 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 |---|---|---|---|
 | Mở tài khoản chứng khoán có mất phí không | `mo-tai-khoan-chung-khoan-co-mat-phi-khong` | `Finalized` | |
 | Mở tài khoản chứng khoán online có an toàn không | `mo-tai-khoan-chung-khoan-online-co-an-toan-khong` | `Finalized` | ✅ Đã publish |
-| Các loại tài khoản chứng khoán | `cac-loai-tai-khoan-chung-khoan` | `Finalized` | ✅ Đã publish |
+| Các loại tài khoản chứng khoán | `cac-loai-tai-khoan-chung-khoan` | `Optimizing` | ✅ Đã publish |
 | Một người được mở bao nhiêu tài khoản | `mot-nguoi-duoc-mo-bao-nhieu-tai-khoan-chung-khoan` | `Planned` | |
 | Hợp đồng mở tài khoản chứng khoán | `hop-dong-mo-tai-khoan-chung-khoan` | `Planned` | |
 
@@ -442,11 +442,11 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 | HSC | `review-hsc-securities` | `Finalized` | ✅ |
 | Mirae Asset | `review-mirae-asset-securities` | `Finalized` | ✅ |
 | Vietcap (VCI) | `review-vietcap-securities` | `Finalized` | ✅ |
-| VCBS | `review-vcbs-securities` | `Planned` | ⭐⭐⭐ Tier A |
-| FPTS | `review-fpts-securities` | `Planned` | ⭐⭐⭐ Tier A |
-| Pinetree | `review-pinetree-securities` | `Planned` | ⭐⭐⭐ Tier A |
-| KIS | `review-kis-securities` | `Planned` | ⭐⭐⭐ Tier A |
-| KB (KBSV) | `review-kb-securities` | `Planned` | ⭐⭐ Tier B |
+| VCBS | `review-vcbs-securities` | `Finalized` | ✅ |
+| FPTS | `review-fpts-securities` | `Finalized` | ✅ |
+| Pinetree | `review-pinetree-securities` | `Finalized` | ✅ |
+| KIS | `review-kis-securities` | `Finalized` | ✅ |
+| KB (KBSV) | `review-kb-securities` | `Finalized` | ✅ |
 | SHS | `review-shs-securities` | `Planned` | ⭐⭐ Tier B |
 | BSC | `review-bsc-securities` | `Planned` | ⭐⭐ Tier B |
 | Yuanta | `review-yuanta-securities` | `Planned` | ⭐⭐ Tier B |
