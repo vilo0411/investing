@@ -96,7 +96,7 @@ const hasBreakdown = brokers.some((b) => b.ratingBreakdown);
           )}
           <div class="winner-score-summary">
             Thắng {overallWinner.wins}/{totalCriteria} tiêu chí so sánh
-            · Điểm tổng: {overallWinner.broker.rating.toFixed(1)}/5
+            · Điểm tổng: {(overallWinner.broker.rating ?? 0).toFixed(1)}/5
           </div>
         </div>
         {overallWinner.broker.ctaUrl && (
@@ -151,7 +151,7 @@ const hasBreakdown = brokers.some((b) => b.ratingBreakdown);
             return (
               <div class:list={["scorecard-cell", { "scorecard-cell--winner": isWinner }]}>
                 <span class:list={["scorecard-value", "scorecard-value--total", { "scorecard-value--winner": isWinner }]}>
-                  {b.rating.toFixed(1)}
+                  {(b.rating ?? 0).toFixed(1)}
                 </span>
               </div>
             );
@@ -196,7 +196,7 @@ const hasBreakdown = brokers.some((b) => b.ratingBreakdown);
         <div class="broker-card">
           <div class="broker-card-header">
             <span class="broker-card-name">{broker.name}</span>
-            <span class="broker-card-rating">{broker.rating.toFixed(1)}/5</span>
+            <span class="broker-card-rating">{(broker.rating ?? 0).toFixed(1)}/5</span>
           </div>
           {broker.best_for && (
             <p class="broker-card-best-for">Tốt cho: {broker.best_for}</p>

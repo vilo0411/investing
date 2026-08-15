@@ -8,6 +8,10 @@ updatedDate: "2026-08-15"
 readingTime: "6 phút đọc"
 featured: false
 order: 30
+layoutType: review
+reviewType: company
+brokers:
+  - slug: pinetree
 sources:
   - "Ủy ban Chứng khoán Nhà nước"
   - "Biểu phí chính thức Pinetree năm 2025"

@@ -54,8 +54,8 @@ const {
   appRating,
 } = Astro.props;
 
-const ratingDisplay = rating.toFixed(1);
-const stars = Array.from({ length: 5 }, (_, i) => i < Math.round(rating));
+const ratingDisplay = (rating ?? 0).toFixed(1);
+const stars = Array.from({ length: 5 }, (_, i) => i < Math.round(rating ?? 0));
 
 function getYouTubeId(url: string): string | null {
   const m = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([^&\s]+)/);
@@ -142,7 +142,7 @@ const dimensions: { key: keyof RatingDimension; label: string; desc: string }[] 
       </p>
       <div class="dimension-list">
         {dimensions.map((dim) => {
-          const score = ratingBreakdown[dim.key];
+          const score = ratingBreakdown[dim.key] ?? 0;
           const pct = (score / 5) * 100;
           const scoreClass = score >= 4.5 ? "score-excellent" : score >= 3.5 ? "score-good" : "score-fair";
           return (

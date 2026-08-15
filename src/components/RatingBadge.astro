@@ -5,8 +5,8 @@ interface Props {
 }
 
 const { rating, label } = Astro.props;
-const ratingDisplay = rating.toFixed(1);
-const starCount = Math.round(rating);
+const ratingDisplay = (rating ?? 0).toFixed(1);
+const starCount = Math.round(rating ?? 0);
 const stars = Array.from({ length: 5 }, (_, i) => i < starCount);
 ---
 

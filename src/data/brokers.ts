@@ -602,6 +602,80 @@ export const brokerRegistry: Record<string, BrokerProfile> = {
       },
     ],
   },
+
+  pinetree: {
+    slug: "pinetree",
+    name: "Chứng khoán Pinetree",
+    shortName: "Pinetree",
+    rating: 4.4,
+    best_for: "Nhà đầu tư cá nhân tự chủ, muốn tối ưu chi phí giao dịch và margin",
+    fee_rate: "0% (miễn phí trọn đời)",
+    margin_rate: "9.9%/năm cố định",
+    app_rating: "4.1/5",
+    min_deposit: "Không yêu cầu",
+    ctaUrl: "https://www.pinetree.com.vn",
+    pros: [
+      "Miễn 100% phí giao dịch cổ phiếu trọn đời cho mọi tài khoản tự giao dịch",
+      "Lãi suất vay margin cố định dài hạn chỉ 9.9%/năm, không đi kèm điều kiện ẩn",
+      "Hệ sinh thái ứng dụng đa dạng (PineX, Stock123, AlphaTrading) hỗ trợ tốt cho việc tự học và giao dịch",
+      "Mở tài khoản online nhanh chóng 100% qua eKYC",
+    ],
+    cons: [
+      "Không có đội ngũ môi giới tư vấn truyền thống 1-1",
+      "Hỗ trợ chăm sóc khách hàng qua hotline/email phản hồi đôi khi chậm trong giờ cao điểm",
+      "Tiền bán chứng khoán cần chờ T+2 để rút hoặc phải trả phí nếu muốn ứng trước",
+    ],
+    verdict:
+      "Pinetree là lựa chọn lý tưởng cho các nhà đầu tư tự chủ, có kinh nghiệm hoặc các nhà đầu tư lướt sóng tần suất cao muốn triệt tiêu hoàn toàn chi phí giao dịch. Tuy nhiên, việc thiếu môi giới đồng hành đòi hỏi bạn phải tự trang bị kiến thức và chịu trách nhiệm cho các quyết định của mình.",
+    ratingBreakdown: {
+      fee: 5.0,
+      app: 4.3,
+      support: 3.2,
+      stability: 4.2,
+      products: 3.8,
+    },
+    userVoices: [
+      {
+        quote: "Miễn phí giao dịch trọn đời giúp tôi tiết kiệm được khoản tiền đáng kể mỗi năm. Ứng dụng mượt mà, đặt lệnh nhanh.",
+        source: "App Store — AlphaTrading",
+        type: "pro",
+      },
+      {
+        quote: "Không có môi giới tư vấn nên người mới như tôi phải tự tìm hiểu mọi thứ. Những hôm thị trường biến động gọi hotline hỗ trợ rất khó.",
+        source: "CafeF Diễn đàn",
+        type: "con",
+      },
+    ],
+    companyInfo: {
+      founded: "2003",
+      hq: "Tầng 20, Tòa nhà ROX Tower, số 54A Nguyễn Chí Thanh, Láng Thượng, Đống Đa, Hà Nội",
+      license: "Giấy phép KDCK số 10/GPHĐKD",
+      website: "https://www.pinetree.com.vn",
+      products: [
+        "Môi giới cổ phiếu, chứng chỉ quỹ, ETF",
+        "Giao dịch ký quỹ Margin (lãi suất 9.9%/năm)",
+        "Dịch vụ tài chính và quản lý tài sản",
+      ],
+    },
+    accountSteps: [
+      {
+        title: "Tải ứng dụng AlphaTrading",
+        desc: "Tải ứng dụng AlphaTrading từ App Store hoặc Google Play để bắt đầu đăng ký.",
+      },
+      {
+        title: "Xác minh danh tính eKYC",
+        desc: "Chụp ảnh CCCD và quét khuôn mặt để mở tài khoản online tự động trong 5 phút.",
+      },
+      {
+        title: "Nạp tiền vào tài khoản",
+        desc: "Chuyển khoản định danh vào Pinetree theo hướng dẫn trên ứng dụng.",
+      },
+      {
+        title: "Bắt đầu giao dịch 0% phí",
+        desc: "Đặt lệnh mua bán cổ phiếu trên app hoàn toàn miễn phí giao dịch.",
+      },
+    ],
+  },
 };
 
 /** Look up a broker profile by slug. Returns undefined if not found. */
