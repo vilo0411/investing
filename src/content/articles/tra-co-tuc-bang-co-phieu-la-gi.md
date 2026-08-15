@@ -1,28 +1,48 @@
 ---
-title: "Trả cổ tức bằng cổ phiếu là gì? Được hay Mất so với tiền mặt?"
-description: "Trả cổ tức bằng cổ phiếu là gì? Phân tích ưu nhược điểm, cách tính giá điều chỉnh, nghĩa vụ thuế 5% và so sánh chi tiết với cổ tức tiền mặt cho F0."
-category: "co-phieu"
-heroImage: "/images/articles/tra-co-tuc-bang-co-phieu-la-gi/tra-co-tuc-bang-co-phieu-la-gi.jpg"
-publishDate: "2026-08-02"
-updatedDate: "2026-08-02"
-readingTime: "8 phút đọc"
+title: Trả cổ tức bằng cổ phiếu là gì? Được hay Mất so với tiền mặt?
+description: >-
+  Trả cổ tức bằng cổ phiếu là gì? Phân tích ưu nhược điểm, cách tính giá điều
+  chỉnh, nghĩa vụ thuế 5% và so sánh chi tiết với cổ tức tiền mặt cho F0.
+category: co-phieu
+heroImage: >-
+  /images/articles/tra-co-tuc-bang-co-phieu-la-gi/tra-co-tuc-bang-co-phieu-la-gi.jpg
+publishDate: '2026-08-02'
+updatedDate: '2026-08-02'
+readingTime: 8 phút đọc
 featured: false
 order: 69
 keyTakeaways:
-  - "Trả cổ tức bằng cổ phiếu là việc doanh nghiệp chuyển lợi nhuận sau thuế giữ lại thành vốn điều lệ và phát hành thêm cổ phiếu cho cổ đông."
-  - "Vào ngày giao dịch không hưởng quyền, giá cổ phiếu sẽ bị điều chỉnh giảm tương ứng với tỷ lệ cổ tức, khiến tổng tài sản ban đầu giữ nguyên."
-  - "Lợi ích lớn nhất là doanh nghiệp giữ lại tiền để mở rộng kinh doanh, giúp cổ phiếu tăng giá trong dài hạn nếu làm ăn hiệu quả."
-  - "Nhà đầu tư chịu 5% thuế TNCN khi bán cổ phiếu thưởng/cổ tức và phải chờ cổ phiếu về tài khoản (thường 1–2 tháng)."
+  - >-
+    Trả cổ tức bằng cổ phiếu là việc doanh nghiệp chuyển lợi nhuận sau thuế giữ
+    lại thành vốn điều lệ và phát hành thêm cổ phiếu cho cổ đông.
+  - >-
+    Vào ngày giao dịch không hưởng quyền, giá cổ phiếu sẽ bị điều chỉnh giảm
+    tương ứng với tỷ lệ cổ tức, khiến tổng tài sản ban đầu giữ nguyên.
+  - >-
+    Lợi ích lớn nhất là doanh nghiệp giữ lại tiền để mở rộng kinh doanh, giúp cổ
+    phiếu tăng giá trong dài hạn nếu làm ăn hiệu quả.
+  - >-
+    Nhà đầu tư chịu 5% thuế TNCN khi bán cổ phiếu thưởng/cổ tức và phải chờ cổ
+    phiếu về tài khoản (thường 1–2 tháng).
 faq:
-  - question: "Nhận cổ tức bằng cổ phiếu có bị mất phí hay thuế gì không?"
-    answer: "Nhà đầu tư không bị trừ tiền khi cổ phiếu thưởng về tài khoản. Tuy nhiên, khi thực hiện bán số cổ phiếu cổ tức này, bạn sẽ bị công ty chứng khoán khấu trừ 5% thuế TNCN trên mệnh giá hoặc giá bán."
-  - question: "Bao lâu thì cổ phiếu cổ tức mới về tài khoản để giao dịch?"
-    answer: "Thời gian cổ phiếu cổ tức hoàn tất đăng ký lưu ký tại VSDC và đổ về tài khoản giao dịch thường mất từ 30 đến 60 ngày kể từ ngày chốt danh sách cổ đông."
-  - question: "Nếu nhận cổ tức bị lẻ cổ phiếu thì xử lý thế nào?"
-    answer: "Phần cổ phiếu lẻ phát sinh do tỷ lệ chia sẽ được doanh nghiệp quy đổi trả bằng tiền mặt cho cổ đông hoặc nhà đầu tư có thể chủ động bán lô lẻ trên sàn HOSE/HNX."
+  - question: Nhận cổ tức bằng cổ phiếu có bị mất phí hay thuế gì không?
+    answer: >-
+      Nhà đầu tư không bị trừ tiền khi cổ phiếu thưởng về tài khoản. Tuy nhiên,
+      khi thực hiện bán số cổ phiếu cổ tức này, bạn sẽ bị công ty chứng khoán
+      khấu trừ 5% thuế TNCN trên mệnh giá hoặc giá bán.
+  - question: Bao lâu thì cổ phiếu cổ tức mới về tài khoản để giao dịch?
+    answer: >-
+      Thời gian cổ phiếu cổ tức hoàn tất đăng ký lưu ký tại VSDC và đổ về tài
+      khoản giao dịch thường mất từ 30 đến 60 ngày kể từ ngày chốt danh sách cổ
+      đông.
+  - question: Nếu nhận cổ tức bị lẻ cổ phiếu thì xử lý thế nào?
+    answer: >-
+      Phần cổ phiếu lẻ phát sinh do tỷ lệ chia sẽ được doanh nghiệp quy đổi trả
+      bằng tiền mặt cho cổ đông hoặc nhà đầu tư có thể chủ động bán lô lẻ trên
+      sàn HOSE/HNX.
 sources:
-  - "Nghị định 126/2020/NĐ-CP hướng dẫn Luật Quản lý thuế"
-  - "Ủy ban Chứng khoán Nhà nước (UBCKNN)"
+  - Nghị định 126/2020/NĐ-CP hướng dẫn Luật Quản lý thuế
+  - Ủy ban Chứng khoán Nhà nước (UBCKNN)
 ---
 
 Nhận tài khoản tăng thêm 20% số lượng cổ phiếu nhưng tổng giá trị tài sản lại không thay đổi, thậm chí còn bị trừ 5% thuế khi bán? Đây là thắc mắc kinh điển của hầu hết F0 khi lần đầu trải qua kỳ trả cổ tức bằng cổ phiếu. **[Value Investing](/)** sẽ giúp bạn bóc tách bản chất thực sự của hình thức này.
@@ -97,3 +117,9 @@ Trả cổ tức bằng cổ phiếu là hình thức tuyệt vời nếu bạn 
 Ngược lại, nếu doanh nghiệp kinh doanh trì trệ, không có dự án mới nhưng năm nào cũng trả cổ tức bằng cổ phiếu chỉ để giữ tiền, hiện tượng [pha loãng cổ phiếu](/dau-tu/co-phieu/pha-loang-co-phieu-la-gi/) sẽ làm giảm giá trị cổ phiếu của bạn trong dài hạn.
 
 Hãy luôn tìm hiểu kỹ nền tảng doanh nghiệp và đọc thêm khái niệm [cổ tức là gì](/dau-tu/co-phieu/co-tuc-la-gi/) để xây dựng chiến lược tích sản bền vững.
+
+
+> **Xem hướng dẫn tổng quan:** Đọc bài viết **[Cổ phiếu là gì](/dau-tu/co-phieu/co-phieu-la-gi/)** để biết chi tiết các bước thực hiện.
+
+
+> **Xem hướng dẫn tổng quan:** Đọc bài viết **[Cách đầu tư cổ phiếu](/dau-tu/co-phieu/cach-dau-tu-co-phieu/)** để biết chi tiết các bước thực hiện.

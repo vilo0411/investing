@@ -1,28 +1,44 @@
 ---
-title: "Cổ phiếu lô lẻ là gì? Hướng dẫn cách bán lô lẻ mới nhất"
-description: "Cổ phiếu lô lẻ là gì? Nguyên nhân phát sinh, quy định giao dịch mới nhất trên HOSE, HNX và hướng dẫn các bước bán cổ phiếu lô lẻ trên app TCBS, VPS."
-category: "co-phieu"
-heroImage: "/images/articles/co-phieu-lo-le-la-gi/co-phieu-lo-le-la-gi.jpg"
-publishDate: "2026-08-02"
-updatedDate: "2026-08-02"
-readingTime: "7 phút đọc"
+title: Cổ phiếu lô lẻ là gì? Hướng dẫn cách bán lô lẻ mới nhất
+description: >-
+  Cổ phiếu lô lẻ là gì? Nguyên nhân phát sinh, quy định giao dịch mới nhất trên
+  HOSE, HNX và hướng dẫn các bước bán cổ phiếu lô lẻ trên app TCBS, VPS.
+category: co-phieu
+heroImage: /images/articles/co-phieu-lo-le-la-gi/co-phieu-lo-le-la-gi.jpg
+publishDate: '2026-08-02'
+updatedDate: '2026-08-02'
+readingTime: 7 phút đọc
 featured: false
 order: 71
 keyTakeaways:
-  - "Cổ phiếu lô lẻ là số lượng cổ phiếu nhỏ hơn 100 đơn vị (từ 1 đến 99 cổ phiếu)."
-  - "Phát sinh chủ yếu từ việc nhận cổ tức bằng cổ phiếu, cổ phiếu thưởng, thực hiện quyền mua hoặc chia tách cổ phiếu."
-  - "Hiện nay sàn HOSE và HNX đã hỗ trợ giao dịch khớp lệnh trực tiếp cổ phiếu lô lẻ trên bảng điện thông qua lệnh giới hạn (LO)."
-  - "Nhà đầu tư cũng có thể bán lại cổ phiếu lô lẻ cho công ty chứng khoán theo khung giá quy định."
+  - >-
+    Cổ phiếu lô lẻ là số lượng cổ phiếu nhỏ hơn 100 đơn vị (từ 1 đến 99 cổ
+    phiếu).
+  - >-
+    Phát sinh chủ yếu từ việc nhận cổ tức bằng cổ phiếu, cổ phiếu thưởng, thực
+    hiện quyền mua hoặc chia tách cổ phiếu.
+  - >-
+    Hiện nay sàn HOSE và HNX đã hỗ trợ giao dịch khớp lệnh trực tiếp cổ phiếu lô
+    lẻ trên bảng điện thông qua lệnh giới hạn (LO).
+  - >-
+    Nhà đầu tư cũng có thể bán lại cổ phiếu lô lẻ cho công ty chứng khoán theo
+    khung giá quy định.
 faq:
-  - question: "Phí giao dịch cổ phiếu lô lẻ có cao hơn lô tròn không?"
-    answer: "Mức phí giao dịch niêm yết của các công ty chứng khoán áp dụng hoàn toàn như nhau cho cả lô tròn (100 cổ phiếu) và lô lẻ (từ 1 đến 99 cổ phiếu)."
-  - question: "Tôi có thể mua thêm cổ phiếu lô lẻ để gom cho đủ lô tròn 100 được không?"
-    answer: "Hoàn toàn được. Nhà đầu tư có thể đặt lệnh mua thêm từ 1 đến 99 cổ phiếu trên bảng điện lô lẻ để làm tròn tài khoản đủ số lượng lô 100."
-  - question: "Bán cổ phiếu lô lẻ trực tiếp trên bảng điện mất bao lâu thì khớp?"
-    answer: "Thời gian khớp lệnh phụ thuộc vào thanh khoản của mã cổ phiếu đó và mức giá bạn đặt lệnh so với giá chào mua hiện có trên bảng điện lô lẻ."
+  - question: Phí giao dịch cổ phiếu lô lẻ có cao hơn lô tròn không?
+    answer: >-
+      Mức phí giao dịch niêm yết của các công ty chứng khoán áp dụng hoàn toàn
+      như nhau cho cả lô tròn (100 cổ phiếu) và lô lẻ (từ 1 đến 99 cổ phiếu).
+  - question: Tôi có thể mua thêm cổ phiếu lô lẻ để gom cho đủ lô tròn 100 được không?
+    answer: >-
+      Hoàn toàn được. Nhà đầu tư có thể đặt lệnh mua thêm từ 1 đến 99 cổ phiếu
+      trên bảng điện lô lẻ để làm tròn tài khoản đủ số lượng lô 100.
+  - question: Bán cổ phiếu lô lẻ trực tiếp trên bảng điện mất bao lâu thì khớp?
+    answer: >-
+      Thời gian khớp lệnh phụ thuộc vào thanh khoản của mã cổ phiếu đó và mức
+      giá bạn đặt lệnh so với giá chào mua hiện có trên bảng điện lô lẻ.
 sources:
-  - "Sở Giao dịch Chứng khoán TP.HCM (HOSE)"
-  - "Tổng công ty Lưu ký và Bù trừ Chứng khoán Việt Nam (VSDC)"
+  - Sở Giao dịch Chứng khoán TP.HCM (HOSE)
+  - Tổng công ty Lưu ký và Bù trừ Chứng khoán Việt Nam (VSDC)
 ---
 
 Bạn thấy trong tài khoản có 15 hoặc 73 cổ phiếu dư ra sau đợt trả cổ tức và đặt lệnh bán thì app báo không hợp lệ? Đừng lo lắng, đây chính là số cổ phiếu lô lẻ. **[Value Investing](/)** sẽ hướng dẫn bạn toàn bộ quy định và cách bán sạch cổ phiếu lô lẻ nhanh chóng nhất.
@@ -84,3 +100,9 @@ Nếu cổ phiếu lô lẻ của bạn thuộc các mã thanh khoản thấp kh
 * **Bước 3:** Xác nhận giao dịch. Tiền bán cổ phiếu lô lẻ sẽ được công ty chứng khoán chi trả vào tài khoản sau khi hoàn tất thủ tục.
 
 Việc giải quyết sạch cổ phiếu lô lẻ giúp tài khoản của bạn gọn gàng và tối ưu nguồn vốn tốt hơn khi [chơi chứng khoán trên điện thoại](/dau-tu/co-phieu/cach-choi-chung-khoan-tren-dien-thoai/).
+
+
+> **Xem hướng dẫn tổng quan:** Đọc bài viết **[Cổ phiếu là gì](/dau-tu/co-phieu/co-phieu-la-gi/)** để biết chi tiết các bước thực hiện.
+
+
+> **Xem hướng dẫn tổng quan:** Đọc bài viết **[Cách đầu tư cổ phiếu](/dau-tu/co-phieu/cach-dau-tu-co-phieu/)** để biết chi tiết các bước thực hiện.

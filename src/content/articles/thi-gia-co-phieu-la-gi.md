@@ -1,28 +1,46 @@
 ---
-title: "Thị giá cổ phiếu là gì? Yếu tố ảnh hưởng & Phân biệt với BVPS"
-description: "Thị giá cổ phiếu là gì? Tìm hiểu định nghĩa, các yếu tố quyết định thị giá, phân biệt thị giá với mệnh giá, giá trị sổ sách (BVPS) và giá trị nội tại."
-category: "co-phieu"
-heroImage: "/images/articles/thi-gia-co-phieu-la-gi/thi-gia-co-phieu-la-gi.jpg"
-publishDate: "2026-08-02"
-updatedDate: "2026-08-02"
-readingTime: "7 phút đọc"
+title: Thị giá cổ phiếu là gì? Yếu tố ảnh hưởng & Phân biệt với BVPS
+description: >-
+  Thị giá cổ phiếu là gì? Tìm hiểu định nghĩa, các yếu tố quyết định thị giá,
+  phân biệt thị giá với mệnh giá, giá trị sổ sách (BVPS) và giá trị nội tại.
+category: co-phieu
+heroImage: /images/articles/thi-gia-co-phieu-la-gi/thi-gia-co-phieu-la-gi.jpg
+publishDate: '2026-08-02'
+updatedDate: '2026-08-02'
+readingTime: 7 phút đọc
 featured: false
 order: 70
 keyTakeaways:
-  - "Thị giá cổ phiếu (Market Price) là mức giá mà cổ phiếu được mua bán thực tế trên thị trường tại một thời điểm nhất định."
-  - "Thị giá biến động liên tục theo quy luật cung cầu, kết quả kinh doanh của doanh nghiệp, yếu tố vĩ mô và tâm lý đám đông."
-  - "Thị giá cao không đồng nghĩa với cổ phiếu đắt, thị giá thấp không có nghĩa là cổ phiếu rẻ nếu không so sánh với chỉ số P/E hoặc P/B."
-  - "Đầu tư thành công là tìm kiếm cổ phiếu có thị giá thấp hơn giá trị nội tại của doanh nghiệp."
+  - >-
+    Thị giá cổ phiếu (Market Price) là mức giá mà cổ phiếu được mua bán thực tế
+    trên thị trường tại một thời điểm nhất định.
+  - >-
+    Thị giá biến động liên tục theo quy luật cung cầu, kết quả kinh doanh của
+    doanh nghiệp, yếu tố vĩ mô và tâm lý đám đông.
+  - >-
+    Thị giá cao không đồng nghĩa với cổ phiếu đắt, thị giá thấp không có nghĩa
+    là cổ phiếu rẻ nếu không so sánh với chỉ số P/E hoặc P/B.
+  - >-
+    Đầu tư thành công là tìm kiếm cổ phiếu có thị giá thấp hơn giá trị nội tại
+    của doanh nghiệp.
 faq:
-  - question: "Thị giá cổ phiếu thay đổi khi nào?"
-    answer: "Thị giá cổ phiếu thay đổi liên tục trong phiên giao dịch khi có sự khớp lệnh thành công giữa bên mua và bên bán trên bảng điện tử."
-  - question: "Tại sao thị giá lại khác so với mệnh giá 10.000 VNĐ?"
-    answer: "Mệnh giá 10.000 VNĐ chỉ là con số quy ước kế toán khi doanh nghiệp phát hành cổ phiếu lần đầu. Thị giá phản ánh giá trị kỳ vọng của toàn thị trường về tiềm năng sinh lời của doanh nghiệp trong tương lai."
-  - question: "Làm sao biết thị giá hiện tại đang đắt hay rẻ?"
-    answer: "Nhà đầu tư không nên nhìn vào thị giá tuyệt đối mà cần sử dụng các chỉ số định giá như P/E (so sánh thị giá với lợi nhuận) và P/B (so sánh thị giá với giá trị sổ sách) để đánh giá đắt rẻ."
+  - question: Thị giá cổ phiếu thay đổi khi nào?
+    answer: >-
+      Thị giá cổ phiếu thay đổi liên tục trong phiên giao dịch khi có sự khớp
+      lệnh thành công giữa bên mua và bên bán trên bảng điện tử.
+  - question: Tại sao thị giá lại khác so với mệnh giá 10.000 VNĐ?
+    answer: >-
+      Mệnh giá 10.000 VNĐ chỉ là con số quy ước kế toán khi doanh nghiệp phát
+      hành cổ phiếu lần đầu. Thị giá phản ánh giá trị kỳ vọng của toàn thị
+      trường về tiềm năng sinh lời của doanh nghiệp trong tương lai.
+  - question: Làm sao biết thị giá hiện tại đang đắt hay rẻ?
+    answer: >-
+      Nhà đầu tư không nên nhìn vào thị giá tuyệt đối mà cần sử dụng các chỉ số
+      định giá như P/E (so sánh thị giá với lợi nhuận) và P/B (so sánh thị giá
+      với giá trị sổ sách) để đánh giá đắt rẻ.
 sources:
-  - "Sở Giao dịch Chứng khoán TP.HCM (HOSE)"
-  - "Luật Chứng khoán 2019"
+  - Sở Giao dịch Chứng khoán TP.HCM (HOSE)
+  - Luật Chứng khoán 2019
 ---
 
 Mở bảng điện ra thấy cổ phiếu A giá 15.000 VNĐ, cổ phiếu B giá 150.000 VNĐ. Có phải cổ phiếu A rẻ hơn cổ phiếu B? Thị giá cổ phiếu là con số nhảy múa hàng ngày trên sàn chứng khoán, nhưng rất nhiều F0 nhầm lẫn giữa thị giá và giá trị thực sự của doanh nghiệp. **[Value Investing](/)** sẽ giúp bạn hiểu đúng bản chất thị giá.
@@ -82,3 +100,9 @@ Ví dụ:
 Như nhà đầu tư huyền thoại Warren Buffett từng nói: *"Price is what you pay. Value is what you get"* (Giá cả là thứ bạn trả, Giá trị là thứ bạn nhận được).
 
 Đầu tư giá trị thành công là việc bạn tìm kiếm những cổ phiếu có thị giá hiện tại thấp hơn nhiều so với [giá trị nội tại](/phan-tich/co-ban/gia-tri-noi-tai-cua-co-phieu/) của doanh nghiệp đó.
+
+
+> **Xem hướng dẫn tổng quan:** Đọc bài viết **[Cổ phiếu là gì](/dau-tu/co-phieu/co-phieu-la-gi/)** để biết chi tiết các bước thực hiện.
+
+
+> **Xem hướng dẫn tổng quan:** Đọc bài viết **[Cách đầu tư cổ phiếu](/dau-tu/co-phieu/cach-dau-tu-co-phieu/)** để biết chi tiết các bước thực hiện.

@@ -133,3 +133,8 @@
 - `co-nen-dau-tu-chung-khoan-khong` (Finalized)
 - `so-sanh-co-phieu-va-chung-chi-quy-dau-tu` — So sánh cross-product
 - `so-sanh-forex-va-chung-khoan` — So sánh cross-asset
+- `dsc-vs-tcbs` (Finalized) — Tuyến bài so sánh DSC
+- `dsc-vs-vps` (Finalized) — Tuyến bài so sánh DSC
+- `dsc-vs-dnse` (Finalized) — Tuyến bài so sánh DSC
+- `dsc-vs-pinetree` (Finalized) — Tuyến bài so sánh DSC
+- `dsc-vs-ssi` (Finalized) — Tuyến bài so sánh DSC

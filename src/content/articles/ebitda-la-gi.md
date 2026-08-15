@@ -1,35 +1,51 @@
 ---
-title: "EBITDA Là Gì? Công Thức, Ý Nghĩa Và Cách Tính Cho F0"
-description: "EBITDA là gì? Tìm hiểu công thức tính EBITDA từ báo cáo tài chính, ý nghĩa trong định giá doanh nghiệp và các hạn chế quan trọng cần biết."
-category: "co-ban"
-heroImage: "/images/articles/ebitda-la-gi/ebitda-la-gi.jpg"
-publishDate: "2026-08-09"
-updatedDate: "2026-08-09"
-readingTime: "8 phút đọc"
+title: 'EBITDA Là Gì? Công Thức, Ý Nghĩa Và Cách Tính Cho F0'
+description: >-
+  EBITDA là gì? Tìm hiểu công thức tính EBITDA từ báo cáo tài chính, ý nghĩa
+  trong định giá doanh nghiệp và các hạn chế quan trọng cần biết.
+category: co-ban
+heroImage: /images/articles/ebitda-la-gi/ebitda-la-gi.jpg
+publishDate: '2026-08-09'
+updatedDate: '2026-08-09'
+readingTime: 8 phút đọc
 featured: false
 order: 87
 tags:
-  - "EBITDA"
-  - "phân tích cơ bản"
-  - "chỉ số tài chính"
-  - "báo cáo tài chính"
-  - "EBIT"
+  - EBITDA
+  - phân tích cơ bản
+  - chỉ số tài chính
+  - báo cáo tài chính
+  - EBIT
 faq:
-  - question: "EBITDA và EBIT khác nhau ở điểm nào?"
-    answer: "EBIT là lợi nhuận trước lãi vay và thuế. EBITDA bằng EBIT cộng thêm chi phí khấu hao tài sản hữu hình và vô hình."
-  - question: "EBITDA âm có ý nghĩa gì?"
-    answer: "EBITDA âm cho thấy hoạt động kinh doanh cốt lõi của doanh nghiệp đang thua lỗ ngay cả trước khi tính đến các chi phí tài chính và thuế."
-  - question: "Tại sao không nên chỉ dựa vào EBITDA để định giá cổ phiếu?"
-    answer: "Vì EBITDA bỏ qua chi phí tái đầu tư tài sản cố định (CAPEX) và không phản ánh dòng tiền thực tế, nên cần kết hợp với CFO và lợi nhuận sau thuế."
+  - question: EBITDA và EBIT khác nhau ở điểm nào?
+    answer: >-
+      EBIT là lợi nhuận trước lãi vay và thuế. EBITDA bằng EBIT cộng thêm chi
+      phí khấu hao tài sản hữu hình và vô hình.
+  - question: EBITDA âm có ý nghĩa gì?
+    answer: >-
+      EBITDA âm cho thấy hoạt động kinh doanh cốt lõi của doanh nghiệp đang thua
+      lỗ ngay cả trước khi tính đến các chi phí tài chính và thuế.
+  - question: Tại sao không nên chỉ dựa vào EBITDA để định giá cổ phiếu?
+    answer: >-
+      Vì EBITDA bỏ qua chi phí tái đầu tư tài sản cố định (CAPEX) và không phản
+      ánh dòng tiền thực tế, nên cần kết hợp với CFO và lợi nhuận sau thuế.
 sources:
-  - "Ủy ban Chứng khoán Nhà nước (UBCKNN)"
-  - "CFA Institute"
-  - "Sở Giao dịch Chứng khoán TP.HCM (HOSE)"
+  - Ủy ban Chứng khoán Nhà nước (UBCKNN)
+  - CFA Institute
+  - Sở Giao dịch Chứng khoán TP.HCM (HOSE)
 keyTakeaways:
-  - "EBITDA là lợi nhuận trước lãi vay, thuế và khấu hao, phản ánh hiệu quả kinh doanh cốt lõi của công ty."
-  - "Chỉ số này giúp so sánh công bằng giữa các doanh nghiệp có cấu trúc nợ vay và chính sách khấu hao khác nhau."
-  - "Biên EBITDA (EBITDA Margin) càng cao cho thấy khả năng sinh lời từ hoạt động vận hành càng tốt."
-  - "EBITDA không thể thay thế dòng tiền thuần vì đã loại bỏ chi phí vốn đầu tư thiết yếu (CAPEX)."
+  - >-
+    EBITDA là lợi nhuận trước lãi vay, thuế và khấu hao, phản ánh hiệu quả kinh
+    doanh cốt lõi của công ty.
+  - >-
+    Chỉ số này giúp so sánh công bằng giữa các doanh nghiệp có cấu trúc nợ vay
+    và chính sách khấu hao khác nhau.
+  - >-
+    Biên EBITDA (EBITDA Margin) càng cao cho thấy khả năng sinh lời từ hoạt động
+    vận hành càng tốt.
+  - >-
+    EBITDA không thể thay thế dòng tiền thuần vì đã loại bỏ chi phí vốn đầu tư
+    thiết yếu (CAPEX).
 ---
 
 Nhiều F0 chỉ nhìn lợi nhuận sau thuế trên báo cáo tài chính để đánh giá doanh nghiệp tốt hay xấu. Nhưng con số đó có thể bị méo bởi chính sách thuế, lãi vay và phương pháp khấu hao khác nhau giữa các công ty. EBITDA là chỉ số giúp bạn nhìn thấu sức khỏe kinh doanh cốt lõi — không bị nhiễu bởi các yếu tố kế toán. **[Value Investing](/)** giải thích EBITDA là gì, cách tính và cách đọc chỉ số này khi phân tích cổ phiếu.
@@ -135,3 +151,6 @@ Nên sử dụng EBITDA kết hợp với lợi nhuận ròng, [EPS](/phan-tich/
 EBITDA cho bạn thấy doanh nghiệp kiếm tiền giỏi cỡ nào từ hoạt động chính — nhưng đừng bao giờ dùng mỗi chỉ số này. Mở BCTC FPT hoặc Vinamilk trên CafeF ngay bây giờ, tự tính EBITDA theo công thức trong bài này. Đó là cách nhanh nhất để biến kiến thức thành kỹ năng phân tích thực tế.
 
 Bước tiếp theo: [Phân tích cơ bản là gì](/phan-tich/co-ban/phan-tich-co-ban-la-gi/) — nắm toàn bộ framework phân tích doanh nghiệp cho F0.
+
+
+> **Xem hướng dẫn tổng quan:** Đọc bài viết **[Cách chọn cổ phiếu tốt](/dau-tu/co-phieu/cach-chon-co-phieu-tot/)** để biết chi tiết các bước thực hiện.

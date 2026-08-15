@@ -124,3 +124,6 @@ Bạn hoàn toàn có thể bán và rút tiền từ chứng chỉ quỹ vào c
 
 Đầu tư chứng chỉ quỹ là phương pháp tích lũy tài sản thông minh và nhàn hạ cho người bận rộn. Hãy bắt đầu ngay hôm nay với số vốn nhỏ để trải nghiệm thực tế thị trường.
  Để hiểu rõ hơn về chủ đề này, bạn có thể tham khảo thêm hướng dẫn **[quỹ ETF là gì](/dau-tu/etf/etf-la-gi/)**. Để hiểu rõ hơn về chủ đề này, bạn có thể tham khảo thêm hướng dẫn **[cách đầu tư quỹ ETF](/dau-tu/etf/cach-dau-tu-quy-etf/)**. Bên cạnh đó, bạn cũng nên đọc thêm bài viết phân tích về [Quỹ thụ động là gì? Hướng dẫn đầu tư cho F0](/dau-tu/etf/quy-thu-dong-la-gi/) để trang bị kiến thức đầy đủ nhất.
+
+
+> **Bài viết cùng chủ đề:** Tìm hiểu thêm về **[NAV Là Gì? Cách Đọc Giá Trị Tài Sản Ròng Quỹ Đầu Tư](/dau-tu/etf/nav-la-gi/)** để có góc nhìn toàn diện hơn.

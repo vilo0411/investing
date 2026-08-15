@@ -475,6 +475,11 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 | So sánh TCBS và VNDIRECT | `tcbs-vs-vndirect` | `Finalized` | ⭐⭐ |
 | So sánh SSI và TCBS | `ssi-vs-tcbs` | `Finalized` | ⭐⭐ |
 | So sánh DNSE và TCBS | `dnse-vs-tcbs` | `Finalized` | ⭐⭐ |
+| So sánh DSC và TCBS | `dsc-vs-tcbs` | `Finalized` | ⭐⭐ |
+| So sánh DSC và VPS | `dsc-vs-vps` | `Finalized` | ⭐⭐ |
+| So sánh DSC và DNSE | `dsc-vs-dnse` | `Finalized` | ⭐⭐ |
+| So sánh DSC và Pinetree | `dsc-vs-pinetree` | `Finalized` | ⭐⭐ |
+| So sánh DSC và SSI | `dsc-vs-ssi` | `Finalized` | ⭐⭐ |
 
 ---
 

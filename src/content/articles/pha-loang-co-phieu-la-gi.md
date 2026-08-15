@@ -1,28 +1,48 @@
 ---
-title: "Pha loãng cổ phiếu là gì? Nguyên nhân, Tác động & Cách phòng ngừa"
-description: "Pha loãng cổ phiếu là gì? Tìm hiểu nguyên nhân, công thức tính EPS pha loãng, tác động tới túi tiền nhà đầu tư và cách bảo vệ tài sản hiệu quả cho F0."
-category: "co-phieu"
-heroImage: "/images/articles/pha-loang-co-phieu-la-gi/pha-loang-co-phieu-la-gi.jpg"
-publishDate: "2026-08-02"
-updatedDate: "2026-08-02"
-readingTime: "8 phút đọc"
+title: 'Pha loãng cổ phiếu là gì? Nguyên nhân, Tác động & Cách phòng ngừa'
+description: >-
+  Pha loãng cổ phiếu là gì? Tìm hiểu nguyên nhân, công thức tính EPS pha loãng,
+  tác động tới túi tiền nhà đầu tư và cách bảo vệ tài sản hiệu quả cho F0.
+category: co-phieu
+heroImage: /images/articles/pha-loang-co-phieu-la-gi/pha-loang-co-phieu-la-gi.jpg
+publishDate: '2026-08-02'
+updatedDate: '2026-08-02'
+readingTime: 8 phút đọc
 featured: false
 order: 68
 keyTakeaways:
-  - "Pha loãng cổ phiếu xảy ra khi doanh nghiệp phát hành thêm cổ phiếu, làm giảm tỷ lệ sở hữu và EPS trên mỗi cổ phiếu cũ."
-  - "Các nguyên nhân phổ biến gồm phát hành quyền mua, trả cổ tức bằng cổ phiếu, chia cổ phiếu ESOP và chuyển đổi trái phiếu."
-  - "Pha loãng làm giảm EPS và quyền biểu quyết nhưng không phải lúc nào cũng xấu nếu nguồn vốn mới được tái đầu tư hiệu quả."
-  - "F0 cần theo dõi lịch phát hành, đánh giá mục đích sử dụng vốn và tính toán EPS pha loãng trước khi quyết định nộp thêm tiền."
+  - >-
+    Pha loãng cổ phiếu xảy ra khi doanh nghiệp phát hành thêm cổ phiếu, làm giảm
+    tỷ lệ sở hữu và EPS trên mỗi cổ phiếu cũ.
+  - >-
+    Các nguyên nhân phổ biến gồm phát hành quyền mua, trả cổ tức bằng cổ phiếu,
+    chia cổ phiếu ESOP và chuyển đổi trái phiếu.
+  - >-
+    Pha loãng làm giảm EPS và quyền biểu quyết nhưng không phải lúc nào cũng xấu
+    nếu nguồn vốn mới được tái đầu tư hiệu quả.
+  - >-
+    F0 cần theo dõi lịch phát hành, đánh giá mục đích sử dụng vốn và tính toán
+    EPS pha loãng trước khi quyết định nộp thêm tiền.
 faq:
-  - question: "Pha loãng cổ phiếu có làm giá cổ phiếu giảm ngay lập tức không?"
-    answer: "Giá tham chiếu của cổ phiếu sẽ được điều chỉnh giảm tương ứng vào ngày giao dịch không hưởng quyền để bảo đảm tổng giá trị vốn hóa doanh nghiệp không thay đổi đột ngột tại thời điểm chốt quyền."
-  - question: "Tôi có nên nộp tiền mua cổ phiếu phát hành thêm không?"
-    answer: "Nhà đầu tư nên nộp tiền mua nếu doanh nghiệp có dự án mở rộng kinh doanh khả thi với tỷ suất sinh lời cao hơn chi phí vốn, và giá phát hành ưu đãi thấp hơn đáng kể so với giá trị thực tế."
-  - question: "EPS pha loãng khác gì so với EPS cơ bản?"
-    answer: "EPS cơ bản chỉ tính trên số cổ phiếu đang lưu hành thực tế. Trong khi đó, EPS pha loãng tính thêm tất cả các chứng khoán có tiềm năng chuyển đổi thành cổ phiếu trong tương lai như trái phiếu chuyển đổi hay cổ phiếu ESOP."
+  - question: Pha loãng cổ phiếu có làm giá cổ phiếu giảm ngay lập tức không?
+    answer: >-
+      Giá tham chiếu của cổ phiếu sẽ được điều chỉnh giảm tương ứng vào ngày
+      giao dịch không hưởng quyền để bảo đảm tổng giá trị vốn hóa doanh nghiệp
+      không thay đổi đột ngột tại thời điểm chốt quyền.
+  - question: Tôi có nên nộp tiền mua cổ phiếu phát hành thêm không?
+    answer: >-
+      Nhà đầu tư nên nộp tiền mua nếu doanh nghiệp có dự án mở rộng kinh doanh
+      khả thi với tỷ suất sinh lời cao hơn chi phí vốn, và giá phát hành ưu đãi
+      thấp hơn đáng kể so với giá trị thực tế.
+  - question: EPS pha loãng khác gì so với EPS cơ bản?
+    answer: >-
+      EPS cơ bản chỉ tính trên số cổ phiếu đang lưu hành thực tế. Trong khi đó,
+      EPS pha loãng tính thêm tất cả các chứng khoán có tiềm năng chuyển đổi
+      thành cổ phiếu trong tương lai như trái phiếu chuyển đổi hay cổ phiếu
+      ESOP.
 sources:
-  - "Ủy ban Chứng khoán Nhà nước (UBCKNN)"
-  - "Luật Doanh nghiệp 2020"
+  - Ủy ban Chứng khoán Nhà nước (UBCKNN)
+  - Luật Doanh nghiệp 2020
 ---
 
 Bạn vừa thấy thông báo doanh nghiệp mình nắm giữ sắp phát hành thêm hàng chục triệu cổ phiếu và lo lắng tài sản của mình bị bốc hơi? Hiện tượng pha loãng cổ phiếu xảy ra phổ biến trên thị trường chứng khoán Việt Nam, nhưng không phải F0 nào cũng hiểu rõ bản chất và cách bảo vệ túi tiền của **[Value Investing](/)**.
@@ -92,3 +112,9 @@ Khi doanh nghiệp thông báo kế hoạch phát hành cổ phiếu mới, bạ
 * **Bước 3: Quyết định nộp tiền hoặc bán trước chốt.** Nếu tin tưởng vào dự án mới, hãy nộp tiền thực hiện quyền mua. Ngược lại, nếu thấy doanh nghiệp pha loãng vô tội vạ, bạn nên bán cổ phiếu trước ngày giao dịch không hưởng quyền.
 
 Đầu tư cổ phiếu luôn đòi hỏi sự chủ động theo dõi và đánh giá bản chất kinh doanh. Hãy tiếp tục tra cứu thêm về [chỉ số EPS](/phan-tich/co-ban/eps-la-gi/) để đưa ra những quyết định tài chính sáng suốt nhất.
+
+
+> **Xem hướng dẫn tổng quan:** Đọc bài viết **[Cổ phiếu là gì](/dau-tu/co-phieu/co-phieu-la-gi/)** để biết chi tiết các bước thực hiện.
+
+
+> **Xem hướng dẫn tổng quan:** Đọc bài viết **[Cách đầu tư cổ phiếu](/dau-tu/co-phieu/cach-dau-tu-co-phieu/)** để biết chi tiết các bước thực hiện.

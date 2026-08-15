@@ -1,35 +1,49 @@
 ---
-title: "NAV Là Gì? Cách Đọc Giá Trị Tài Sản Ròng Quỹ Đầu Tư"
-description: "NAV là gì? Hiểu rõ cách tính giá trị tài sản ròng (Net Asset Value), phân biệt NAV quỹ mở vs ETF và cách dùng NAV để chọn quỹ đầu tư hiệu quả."
-category: "etf"
-heroImage: "/images/articles/nav-la-gi/nav-la-gi.jpg"
-publishDate: "2026-08-09"
-updatedDate: "2026-08-09"
-readingTime: "7 phút đọc"
+title: NAV Là Gì? Cách Đọc Giá Trị Tài Sản Ròng Quỹ Đầu Tư
+description: >-
+  NAV là gì? Hiểu rõ cách tính giá trị tài sản ròng (Net Asset Value), phân biệt
+  NAV quỹ mở vs ETF và cách dùng NAV để chọn quỹ đầu tư hiệu quả.
+category: etf
+heroImage: /images/articles/nav-la-gi/nav-la-gi.jpg
+publishDate: '2026-08-09'
+updatedDate: '2026-08-09'
+readingTime: 7 phút đọc
 featured: false
 order: 86
 tags:
-  - "NAV"
-  - "giá trị tài sản ròng"
-  - "quỹ mở"
-  - "chứng chỉ quỹ"
-  - "quỹ ETF"
+  - NAV
+  - giá trị tài sản ròng
+  - quỹ mở
+  - chứng chỉ quỹ
+  - quỹ ETF
 faq:
-  - question: "NAV cập nhật bao lâu một lần?"
-    answer: "Với quỹ mở, NAV/CCQ được cập nhật 1 lần vào cuối ngày giao dịch (T+1). Với quỹ ETF niêm yết trên sàn, giá thị trường biến động liên tục theo phiên."
-  - question: "NAV thấp có phải là chứng chỉ quỹ rẻ hơn không?"
-    answer: "Không. NAV/CCQ phụ thuộc vào số lượng chứng chỉ quỹ lưu hành. Quỹ có NAV 10.000 đồng không rẻ hơn quỹ có NAV 50.000 đồng về mặt định giá."
-  - question: "Làm sao biết quỹ đầu tư nào đang hoạt động tốt qua NAV?"
-    answer: "Hãy so sánh tỷ lệ tăng trưởng NAV (% thay đổi) trong 1 năm, 3 năm của quỹ với chỉ số chuẩn VN-Index, đồng thời kiểm tra tỷ lệ chi phí quản lý (TER)."
+  - question: NAV cập nhật bao lâu một lần?
+    answer: >-
+      Với quỹ mở, NAV/CCQ được cập nhật 1 lần vào cuối ngày giao dịch (T+1). Với
+      quỹ ETF niêm yết trên sàn, giá thị trường biến động liên tục theo phiên.
+  - question: NAV thấp có phải là chứng chỉ quỹ rẻ hơn không?
+    answer: >-
+      Không. NAV/CCQ phụ thuộc vào số lượng chứng chỉ quỹ lưu hành. Quỹ có NAV
+      10.000 đồng không rẻ hơn quỹ có NAV 50.000 đồng về mặt định giá.
+  - question: Làm sao biết quỹ đầu tư nào đang hoạt động tốt qua NAV?
+    answer: >-
+      Hãy so sánh tỷ lệ tăng trưởng NAV (% thay đổi) trong 1 năm, 3 năm của quỹ
+      với chỉ số chuẩn VN-Index, đồng thời kiểm tra tỷ lệ chi phí quản lý (TER).
 sources:
-  - "Ủy ban Chứng khoán Nhà nước (UBCKNN)"
-  - "Công ty Quản lý Quỹ SSI (SSIAM)"
-  - "VinaCapital"
+  - Ủy ban Chứng khoán Nhà nước (UBCKNN)
+  - Công ty Quản lý Quỹ SSI (SSIAM)
+  - VinaCapital
 keyTakeaways:
-  - "NAV (Net Asset Value) là giá trị tài sản ròng của quỹ đầu tư sau khi trừ đi toàn bộ nợ phải trả."
-  - "NAV/CCQ là mức giá để nhà đầu tư mua hoặc bán chứng chỉ quỹ mở hàng ngày."
-  - "Quỹ mở giao dịch trực tiếp theo NAV cuối ngày, còn ETF giao dịch theo giá thị trường trên sàn có thể có premium hoặc discount."
-  - "Tốc độ tăng trưởng % của NAV và tỷ lệ chi phí quản lý (TER) là hai yếu tố cốt lõi để đánh giá hiệu quả quỹ."
+  - >-
+    NAV (Net Asset Value) là giá trị tài sản ròng của quỹ đầu tư sau khi trừ đi
+    toàn bộ nợ phải trả.
+  - NAV/CCQ là mức giá để nhà đầu tư mua hoặc bán chứng chỉ quỹ mở hàng ngày.
+  - >-
+    Quỹ mở giao dịch trực tiếp theo NAV cuối ngày, còn ETF giao dịch theo giá
+    thị trường trên sàn có thể có premium hoặc discount.
+  - >-
+    Tốc độ tăng trưởng % của NAV và tỷ lệ chi phí quản lý (TER) là hai yếu tố
+    cốt lõi để đánh giá hiệu quả quỹ.
 ---
 
 Bạn vừa mua 100 triệu đồng chứng chỉ quỹ mở, hôm sau kiểm tra thấy NAV/CCQ giảm 1,5%. Hoảng hốt, bạn định bán ngay. Nhưng thực ra NAV biến động hàng ngày là chuyện hoàn toàn bình thường — giống như giá vàng hay tỷ giá USD. Hiểu đúng NAV là gì sẽ giúp bạn bình tĩnh hơn khi đầu tư quỹ. **[Value Investing](/)** giải thích đơn giản nhất cách đọc và sử dụng chỉ số NAV.
@@ -108,3 +122,6 @@ Một ví dụ thực tế: nếu bạn đầu tư 100 triệu vào quỹ có NA
 NAV là thước đo giá trị thực của quỹ đầu tư, nhưng tốc độ tăng trưởng NAV mới là con số bạn cần theo dõi mỗi quý. Bắt đầu bằng việc tra cứu NAV/CCQ của 2–3 quỹ VN phổ biến, so sánh % tăng trưởng 1 năm với VN-Index để đánh giá hiệu quả quản lý.
 
 Bước tiếp theo: [Nên đầu tư quỹ mở hay quỹ ETF](/dau-tu/etf/nen-dau-tu-quy-mo-hay-quy-etf/) — so sánh chi tiết giúp bạn chọn đúng loại quỹ phù hợp.
+
+
+> **Xem hướng dẫn tổng quan:** Đọc bài viết **[Cách đầu tư quỹ ETF](/dau-tu/etf/cach-dau-tu-quy-etf/)** để biết chi tiết các bước thực hiện.

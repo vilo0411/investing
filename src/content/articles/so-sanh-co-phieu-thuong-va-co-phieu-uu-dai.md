@@ -1,28 +1,48 @@
 ---
-title: "So sánh cổ phiếu thường và cổ phiếu ưu đãi: Nên mua loại nào?"
-description: "So sánh cổ phiếu thường và cổ phiếu ưu đãi chi tiết qua 6 tiêu chí: Quyền biểu quyết, cổ tức, rủi ro, khả năng chuyển nhượng. Hướng dẫn F0 lựa chọn phù hợp."
-category: "co-phieu"
-heroImage: "/images/articles/so-sanh-co-phieu-thuong-va-co-phieu-uu-dai/so-sanh-co-phieu-thuong-va-co-phieu-uu-dai.jpg"
-publishDate: "2026-08-02"
-updatedDate: "2026-08-02"
-readingTime: "8 phút đọc"
+title: 'So sánh cổ phiếu thường và cổ phiếu ưu đãi: Nên mua loại nào?'
+description: >-
+  So sánh cổ phiếu thường và cổ phiếu ưu đãi chi tiết qua 6 tiêu chí: Quyền biểu
+  quyết, cổ tức, rủi ro, khả năng chuyển nhượng. Hướng dẫn F0 lựa chọn phù hợp.
+category: co-phieu
+heroImage: >-
+  /images/articles/so-sanh-co-phieu-thuong-va-co-phieu-uu-dai/so-sanh-co-phieu-thuong-va-co-phieu-uu-dai.jpg
+publishDate: '2026-08-02'
+updatedDate: '2026-08-02'
+readingTime: 8 phút đọc
 featured: false
 order: 72
 keyTakeaways:
-  - "Cổ phiếu thường (Common Stock) là loại phổ biến nhất, cho phép cổ đông có quyền biểu quyết và hưởng lợi nhuận theo sự tăng trưởng của doanh nghiệp."
-  - "Cổ phiếu ưu đãi (Preferred Stock) mang lại đặc quyền về cổ tức cố định hoặc quyền biểu quyết, nhưng bị hạn chế một số quyền lợi khác."
-  - "Hầu hết các cổ phiếu niêm yết trên sàn chứng khoán Việt Nam (HOSE, HNX) hiện nay đều là cổ phiếu thường."
-  - "F0 hướng tới tích sản dài hạn và lợi nhuận từ chênh lệch giá nên tập trung vào cổ phiếu thường."
+  - >-
+    Cổ phiếu thường (Common Stock) là loại phổ biến nhất, cho phép cổ đông có
+    quyền biểu quyết và hưởng lợi nhuận theo sự tăng trưởng của doanh nghiệp.
+  - >-
+    Cổ phiếu ưu đãi (Preferred Stock) mang lại đặc quyền về cổ tức cố định hoặc
+    quyền biểu quyết, nhưng bị hạn chế một số quyền lợi khác.
+  - >-
+    Hầu hết các cổ phiếu niêm yết trên sàn chứng khoán Việt Nam (HOSE, HNX) hiện
+    nay đều là cổ phiếu thường.
+  - >-
+    F0 hướng tới tích sản dài hạn và lợi nhuận từ chênh lệch giá nên tập trung
+    vào cổ phiếu thường.
 faq:
-  - question: "Cổ phiếu ưu đãi có được mua bán tự do trên sàn giao dịch không?"
-    answer: "Cổ phiếu ưu đãi biểu quyết bị cấm chuyển nhượng theo quy định của Luật Doanh nghiệp. Các loại cổ phiếu ưu đãi khác (như cổ tức, hoàn lại) chỉ được giao dịch nếu điều lệ công ty cho phép."
-  - question: "Cổ phiếu ưu đãi có thể chuyển đổi thành cổ phiếu thường được không?"
-    answer: "Có thể. Cổ phiếu ưu đãi có thể chuyển đổi thành cổ phiếu thường theo Nghị quyết của Đại hội đồng cổ đông. Tuy nhiên, cổ phiếu thường tuyệt đối không thể chuyển thành cổ phiếu ưu đãi."
-  - question: "Khi công ty phá sản, ai sẽ được thanh toán tiền trước?"
-    answer: "Thứ tự ưu tiên trả tiền khi thanh lý tài sản lần lượt là: Chủ nợ và người lao động -> Trái chủ sở hữu trái phiếu -> Cổ đông nắm cổ phiếu ưu đãi -> Cổ đông nắm cổ phiếu thường."
+  - question: Cổ phiếu ưu đãi có được mua bán tự do trên sàn giao dịch không?
+    answer: >-
+      Cổ phiếu ưu đãi biểu quyết bị cấm chuyển nhượng theo quy định của Luật
+      Doanh nghiệp. Các loại cổ phiếu ưu đãi khác (như cổ tức, hoàn lại) chỉ
+      được giao dịch nếu điều lệ công ty cho phép.
+  - question: Cổ phiếu ưu đãi có thể chuyển đổi thành cổ phiếu thường được không?
+    answer: >-
+      Có thể. Cổ phiếu ưu đãi có thể chuyển đổi thành cổ phiếu thường theo Nghị
+      quyết của Đại hội đồng cổ đông. Tuy nhiên, cổ phiếu thường tuyệt đối không
+      thể chuyển thành cổ phiếu ưu đãi.
+  - question: 'Khi công ty phá sản, ai sẽ được thanh toán tiền trước?'
+    answer: >-
+      Thứ tự ưu tiên trả tiền khi thanh lý tài sản lần lượt là: Chủ nợ và người
+      lao động -> Trái chủ sở hữu trái phiếu -> Cổ đông nắm cổ phiếu ưu đãi ->
+      Cổ đông nắm cổ phiếu thường.
 sources:
-  - "Luật Doanh nghiệp 2020 (Điều 114, 115, 116, 117)"
-  - "Ủy ban Chứng khoán Nhà nước (UBCKNN)"
+  - 'Luật Doanh nghiệp 2020 (Điều 114, 115, 116, 117)'
+  - Ủy ban Chứng khoán Nhà nước (UBCKNN)
 ---
 
 Cổ phiếu thường mang lại quyền làm chủ và tiềm năng tăng giá vô tận, trong khi cổ phiếu ưu đãi hứa hẹn mức cổ tức cố định an toàn. Khi mới tham gia thị trường, F0 thường bối rối không biết loại cổ phiếu nào phù hợp với mục tiêu tài chính của mình. **[Value Investing](/)** sẽ so sánh chi tiết giúp bạn đưa ra lựa chọn sáng suốt.
@@ -70,3 +90,6 @@ Hầu hết 99% các mã cổ phiếu được niêm yết công khai trên các
 Cổ phiếu ưu đãi ít khi được giao dịch tự do trên bảng điện công khai. Chúng thường chỉ xuất hiện trong các thương vụ chào bán riêng lẻ cho nhà đầu tư chiến lược, các quỹ đầu tư tư nhân (Private Equity) hoặc chương trình thưởng ESOP riêng cho ban điều hành.
 
 Do đó, nếu mục tiêu của bạn là tích sản dài hạn, tìm kiếm lợi nhuận từ chênh lệch giá và hưởng tính thanh khoản cao, hãy tập trung 100% vào việc phân tích và lựa chọn các **cổ phiếu thường** tốt trên thị trường.
+
+
+> **Xem hướng dẫn tổng quan:** Đọc bài viết **[Cách đầu tư cổ phiếu](/dau-tu/co-phieu/cach-dau-tu-co-phieu/)** để biết chi tiết các bước thực hiện.

@@ -1,28 +1,54 @@
 ---
-title: "Cổ Phiếu Bị Hủy Niêm Yết Là Gì? Nguyên Nhân & Cách Xử Lý Cho F0"
-description: "Cổ phiếu bị hủy niêm yết là gì? Phân biệt hủy niêm yết bắt buộc và tự nguyện, cùng hướng dẫn xử lý giúp nhà đầu tư bảo vệ tài sản."
-category: "co-phieu"
-heroImage: "/images/articles/co-phieu-bi-huy-niem-yet/co-phieu-bi-huy-niem-yet.jpg"
-publishDate: "2026-08-04"
-updatedDate: "2026-08-04"
-readingTime: "7 phút đọc"
+title: Cổ Phiếu Bị Hủy Niêm Yết Là Gì? Nguyên Nhân & Cách Xử Lý Cho F0
+description: >-
+  Cổ phiếu bị hủy niêm yết là gì? Phân biệt hủy niêm yết bắt buộc và tự nguyện,
+  cùng hướng dẫn xử lý giúp nhà đầu tư bảo vệ tài sản.
+category: co-phieu
+heroImage: /images/articles/co-phieu-bi-huy-niem-yet/co-phieu-bi-huy-niem-yet.jpg
+publishDate: '2026-08-04'
+updatedDate: '2026-08-04'
+readingTime: 7 phút đọc
 featured: false
 order: 25
 keyTakeaways:
-  - "Hủy niêm yết là việc cổ phiếu chấm dứt giao dịch trên sàn chính (HOSE/HNX) do vi phạm quy định hoặc chủ động rút niêm yết."
-  - "Hủy niêm yết không có nghĩa là công ty phá sản hay cổ phiếu thành giấy lộn; bạn vẫn sở hữu cổ phần của doanh nghiệp."
-  - "Hầu hết cổ phiếu bị hủy niêm yết bắt buộc nếu đáp ứng điều kiện công ty đại chúng sẽ chuyển xuống giao dịch trên sàn UPCoM."
-  - "Nhà đầu tư nên theo dõi danh sách cảnh báo kiểm soát của SGDCK để hạ tỷ trọng cổ phiếu rủi ro trước khi có quyết định chính thức."
+  - >-
+    Hủy niêm yết là việc cổ phiếu chấm dứt giao dịch trên sàn chính (HOSE/HNX)
+    do vi phạm quy định hoặc chủ động rút niêm yết.
+  - >-
+    Hủy niêm yết không có nghĩa là công ty phá sản hay cổ phiếu thành giấy lộn;
+    bạn vẫn sở hữu cổ phần của doanh nghiệp.
+  - >-
+    Hầu hết cổ phiếu bị hủy niêm yết bắt buộc nếu đáp ứng điều kiện công ty đại
+    chúng sẽ chuyển xuống giao dịch trên sàn UPCoM.
+  - >-
+    Nhà đầu tư nên theo dõi danh sách cảnh báo kiểm soát của SGDCK để hạ tỷ
+    trọng cổ phiếu rủi ro trước khi có quyết định chính thức.
 faq:
-  - question: "Cổ phiếu bị hủy niêm yết có được mua bán trên UPCoM ngay không?"
-    answer: "Thông thường sau khi có quyết định hủy niêm yết chính thức trên HOSE hoặc HNX, nếu doanh nghiệp vẫn là công ty đại chúng, Ủy ban Chứng khoán Nhà nước và SGDCK sẽ tự động làm thủ tục chuyển giao dịch sang hệ thống UPCoM trong khoảng 7 đến 10 ngày làm việc."
-  - question: "Doanh nghiệp bị hủy niêm yết có mua lại cổ phiếu của cổ đông không?"
-    answer: "Trong trường hợp hủy niêm yết tự nguyện, doanh nghiệp thường có phương án chào mua lại cổ phiếu của cổ đông nhỏ lẻ với mức giá hợp lý được Đại hội đồng cổ đông thông qua. Tuy nhiên với hủy niêm yết bắt buộc, doanh nghiệp không có nghĩa vụ pháp lý phải mua lại cổ phiếu."
-  - question: "Làm sao để biết cổ phiếu của mình đang nằm trong danh sách rủi ro bị hủy niêm yết?"
-    answer: "Bạn nên chủ động kiểm tra danh sách cổ phiếu thuộc diện cảnh báo, diện kiểm soát hoặc diện hạn chế giao dịch được các Sở Giao dịch Chứng khoán (HOSE, HNX) công bố định kỳ trên website chính thức hoặc trên ứng dụng của công ty chứng khoán."
+  - question: Cổ phiếu bị hủy niêm yết có được mua bán trên UPCoM ngay không?
+    answer: >-
+      Thông thường sau khi có quyết định hủy niêm yết chính thức trên HOSE hoặc
+      HNX, nếu doanh nghiệp vẫn là công ty đại chúng, Ủy ban Chứng khoán Nhà
+      nước và SGDCK sẽ tự động làm thủ tục chuyển giao dịch sang hệ thống UPCoM
+      trong khoảng 7 đến 10 ngày làm việc.
+  - question: Doanh nghiệp bị hủy niêm yết có mua lại cổ phiếu của cổ đông không?
+    answer: >-
+      Trong trường hợp hủy niêm yết tự nguyện, doanh nghiệp thường có phương án
+      chào mua lại cổ phiếu của cổ đông nhỏ lẻ với mức giá hợp lý được Đại hội
+      đồng cổ đông thông qua. Tuy nhiên với hủy niêm yết bắt buộc, doanh nghiệp
+      không có nghĩa vụ pháp lý phải mua lại cổ phiếu.
+  - question: >-
+      Làm sao để biết cổ phiếu của mình đang nằm trong danh sách rủi ro bị hủy
+      niêm yết?
+    answer: >-
+      Bạn nên chủ động kiểm tra danh sách cổ phiếu thuộc diện cảnh báo, diện
+      kiểm soát hoặc diện hạn chế giao dịch được các Sở Giao dịch Chứng khoán
+      (HOSE, HNX) công bố định kỳ trên website chính thức hoặc trên ứng dụng của
+      công ty chứng khoán.
 sources:
-  - "Nghị định 155/2020/NĐ-CP chi tiết thi hành một số điều của Luật Chứng khoán"
-  - "Sở Giao dịch Chứng khoán TP.HCM (HOSE) — Quy chế niêm yết và quản lý niêm yết chứng khoán"
+  - Nghị định 155/2020/NĐ-CP chi tiết thi hành một số điều của Luật Chứng khoán
+  - >-
+    Sở Giao dịch Chứng khoán TP.HCM (HOSE) — Quy chế niêm yết và quản lý niêm
+    yết chứng khoán
 ---
 
 Hãy tưởng tượng bạn mua vé vào xem một bộ phim hay tại rạp chiếu lớn, nhưng giữa chừng bộ phim bị cắt lịch chiếu và trả về chiếu ở phòng chiếu nhỏ hơn hoặc ngừng chiếu hoàn toàn. Trên thị trường chứng khoán, việc một mã cổ phiếu bị hủy niêm yết cũng diễn ra tương tự như vậy. Bài viết này từ **[Value Investing](/)** sẽ giúp bạn hiểu rõ bản chất của việc hủy niêm yết, nguyên nhân vì sao cổ phiếu rời sàn và giải pháp ứng phó an toàn nhất cho nhà đầu tư cá nhân.
@@ -101,3 +127,9 @@ Hãy đọc lại báo cáo tài chính gần nhất để xác định xem khó
 Nếu doanh nghiệp thua lỗi nặng và có nguy cơ âm vốn chủ sở hữu, việc giữ cổ phiếu sẽ mang lại rủi ro thanh khoản cực kỳ cao. Bạn nên chủ động bán ra để thu hồi một phần vốn trong các phiên cổ phiếu được mở giao dịch lại trước thời điểm hủy niêm yết chính thức. Điều này giúp bạn giải phóng vốn để tái đầu tư nhằm hạn chế [rủi ro đầu tư chứng khoán](/dau-tu/co-phieu/rui-ro-dau-tu-chung-khoan/) dài hạn.
 
 Nhìn chung, hủy niêm yết không làm biến mất tư cách sở hữu doanh nghiệp của bạn nhưng sẽ làm giảm đáng kể khả năng thanh khoản của tài sản. Việc chủ động theo dõi các báo cáo tài chính kiểm toán và danh sách cảnh báo của Sở Giao dịch Chứng khoán là chìa khóa quan trọng nhất giúp bạn bảo vệ an toàn cho danh mục đầu tư của mình. Hãy kiểm tra ngay danh mục cổ phiếu đang nắm giữ hôm nay để đảm bảo không có mã nào nằm trong diện kiểm soát!
+
+
+> **Xem hướng dẫn tổng quan:** Đọc bài viết **[Cổ phiếu là gì](/dau-tu/co-phieu/co-phieu-la-gi/)** để biết chi tiết các bước thực hiện.
+
+
+> **Xem hướng dẫn tổng quan:** Đọc bài viết **[Cách đầu tư cổ phiếu](/dau-tu/co-phieu/cach-dau-tu-co-phieu/)** để biết chi tiết các bước thực hiện.

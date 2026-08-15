@@ -143,6 +143,11 @@ Index toàn bộ bài đã publish tại `src/content/articles/`. Dùng cho inte
 | `vps-vs-ssi` | So sánh VPS và SSI | `/reviews/vps-vs-ssi/` | so sánh VPS và SSI |
 | `tcbs-vs-vndirect` | So sánh TCBS và VNDIRECT | `/reviews/tcbs-vs-vndirect/` | so sánh TCBS và VNDIRECT |
 | `dnse-vs-tcbs` | So sánh DNSE và TCBS | `/reviews/dnse-vs-tcbs/` | so sánh DNSE và TCBS |
+| `dsc-vs-tcbs` | So sánh DSC và TCBS | `/reviews/dsc-vs-tcbs/` | so sánh DSC và TCBS |
+| `dsc-vs-vps` | So sánh DSC và VPS | `/reviews/dsc-vs-vps/` | so sánh DSC và VPS |
+| `dsc-vs-dnse` | So sánh DSC và DNSE | `/reviews/dsc-vs-dnse/` | so sánh DSC và DNSE |
+| `dsc-vs-pinetree` | So sánh DSC và Pinetree | `/reviews/dsc-vs-pinetree/` | so sánh DSC và Pinetree |
+| `dsc-vs-ssi` | So sánh DSC và SSI | `/reviews/dsc-vs-ssi/` | so sánh DSC và SSI |
 | `review-hsc-securities` | Đánh giá chứng khoán HSC | `/reviews/review-hsc-securities/` | đánh giá HSC |
 | `review-mirae-asset-securities` | Đánh giá chứng khoán Mirae Asset | `/reviews/review-mirae-asset-securities/` | đánh giá Mirae Asset |
 | `review-vietcap-securities` | Đánh giá chứng khoán Vietcap | `/reviews/review-vietcap-securities/` | đánh giá Vietcap |

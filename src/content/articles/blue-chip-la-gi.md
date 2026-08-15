@@ -98,3 +98,27 @@ Thứ hai là theo dõi chu kỳ ngành. Một số doanh nghiệp lớn như ng
 Thứ ba là luôn đa dạng hóa danh mục. Dù tin tưởng đến đâu, bạn cũng không nên dồn toàn bộ số tiền tiết kiệm vào một cổ phiếu duy nhất. Việc chia vốn vào 3-5 mã Blue chip thuộc các ngành khác nhau sẽ giúp tối ưu hóa rủi ro cho bạn.
  Bên cạnh đó, bạn cũng nên đọc thêm bài viết phân tích về [Cách nhận biết cổ phiếu tiềm năng cho người mới](/dau-tu/co-phieu/cach-nhan-biet-co-phieu-tiem-nang/) để trang bị kiến thức đầy đủ nhất.
  Bên cạnh đó, bạn cũng nên đọc thêm bài viết phân tích về [Các Loại Lệnh Trong Chứng Khoán: Hướng Dẫn Chi Tiết Từ A-Z Cho F0](/dau-tu/co-phieu/cac-loai-lenh-trong-chung-khoan/) để trang bị kiến thức đầy đủ nhất.
+
+
+> **Bài viết cùng chủ đề:** Tìm hiểu thêm về **[Các Loại Tài Khoản Chứng Khoán: Phân Biệt Thường, Margin & Phái Sinh](/dau-tu/co-phieu/cac-loai-tai-khoan-chung-khoan/)** để có góc nhìn toàn diện hơn.
+
+
+> **Bài viết cùng chủ đề:** Tìm hiểu thêm về **[Cổ Phiếu Bị Hủy Niêm Yết Là Gì? Nguyên Nhân & Cách Xử Lý Cho F0](/dau-tu/co-phieu/co-phieu-bi-huy-niem-yet/)** để có góc nhìn toàn diện hơn.
+
+
+> **Bài viết cùng chủ đề:** Tìm hiểu thêm về **[Giờ Giao Dịch Chứng Khoán Việt Nam: HOSE, HNX & UPCoM](/dau-tu/co-phieu/gio-giao-dich-chung-khoan/)** để có góc nhìn toàn diện hơn.
+
+
+> **Bài viết cùng chủ đề:** Tìm hiểu thêm về **[IPO Là Gì? Quy Trình Đăng Ký Mua Cổ Phiếu IPO An Toàn Cho F0](/dau-tu/co-phieu/ipo-la-gi/)** để có góc nhìn toàn diện hơn.
+
+
+> **Bài viết cùng chủ đề:** Tìm hiểu thêm về **[Kinh Nghiệm Chơi Chứng Khoán: 7 Bài Học Thực Chiến Cho F0](/dau-tu/co-phieu/kinh-nghiem-choi-chung-khoan/)** để có góc nhìn toàn diện hơn.
+
+
+> **Bài viết cùng chủ đề:** Tìm hiểu thêm về **[Mid Cap Là Gì? Đặc Điểm & Chiến Lược Đầu Tư Cổ Phiếu Vốn Hóa Vừa](/dau-tu/co-phieu/mid-cap-la-gi/)** để có góc nhìn toàn diện hơn.
+
+
+> **Bài viết cùng chủ đề:** Tìm hiểu thêm về **[So sánh cổ phiếu thường và cổ phiếu ưu đãi: Nên mua loại nào?](/dau-tu/co-phieu/so-sanh-co-phieu-thuong-va-co-phieu-uu-dai/)** để có góc nhìn toàn diện hơn.
+
+
+> **Bài viết cùng chủ đề:** Tìm hiểu thêm về **[Thị giá cổ phiếu là gì? Yếu tố ảnh hưởng & Phân biệt với BVPS](/dau-tu/co-phieu/thi-gia-co-phieu-la-gi/)** để có góc nhìn toàn diện hơn.

@@ -1,28 +1,54 @@
 ---
-title: "Các Loại Tài Khoản Chứng Khoán: Phân Biệt Thường, Margin & Phái Sinh"
-description: "Phân biệt các loại tài khoản chứng khoán: Tài khoản thường, Margin và Phái sinh. Hướng dẫn chọn tiểu khoản phù hợp cho nhà đầu tư F0."
-category: "co-phieu"
-heroImage: "/images/articles/cac-loai-tai-khoan-chung-khoan/cac-loai-tai-khoan-chung-khoan.jpg"
-publishDate: "2026-08-04"
-updatedDate: "2026-08-04"
-readingTime: "7 phút đọc"
+title: 'Các Loại Tài Khoản Chứng Khoán: Phân Biệt Thường, Margin & Phái Sinh'
+description: >-
+  Phân biệt các loại tài khoản chứng khoán: Tài khoản thường, Margin và Phái
+  sinh. Hướng dẫn chọn tiểu khoản phù hợp cho nhà đầu tư F0.
+category: co-phieu
+heroImage: >-
+  /images/articles/cac-loai-tai-khoan-chung-khoan/cac-loai-tai-khoan-chung-khoan.jpg
+publishDate: '2026-08-04'
+updatedDate: '2026-08-04'
+readingTime: 7 phút đọc
 featured: false
 order: 29
 keyTakeaways:
-  - "Công ty chứng khoán phân chia một số tài khoản gốc thành các tiểu khoản khác nhau để quản lý vốn và cơ chế đòn bẩy."
-  - "Tài khoản thường là loại an toàn nhất, chỉ mua bán bằng đúng số tiền mặt hiện có trong tài khoản."
-  - "Tài khoản Margin cho phép dùng đòn bẩy vay thêm tiền nhưng đi kèm rủi ro bị Call Margin và phải trả lãi vay."
-  - "Tài khoản phái sinh dùng riêng để giao dịch Hợp đồng tương lai VN30, có mức độ đòn bẩy và rủi ro cực cao."
+  - >-
+    Công ty chứng khoán phân chia một số tài khoản gốc thành các tiểu khoản khác
+    nhau để quản lý vốn và cơ chế đòn bẩy.
+  - >-
+    Tài khoản thường là loại an toàn nhất, chỉ mua bán bằng đúng số tiền mặt
+    hiện có trong tài khoản.
+  - >-
+    Tài khoản Margin cho phép dùng đòn bẩy vay thêm tiền nhưng đi kèm rủi ro bị
+    Call Margin và phải trả lãi vay.
+  - >-
+    Tài khoản phái sinh dùng riêng để giao dịch Hợp đồng tương lai VN30, có mức
+    độ đòn bẩy và rủi ro cực cao.
 faq:
-  - question: "Mở tài khoản Margin hoặc Phái sinh có mất thêm phí duy trì không?"
-    answer: "Không. Việc đăng ký mở thêm các tiểu khoản Margin hay Phái sinh tại công ty chứng khoán hoàn toàn miễn phí duy trì. Bạn chỉ phải trả lãi vay khi thực tế có phát sinh khoản vay margin hoặc phí giao dịch khi đặt lệnh phái sinh."
-  - question: "Trót đặt lệnh nhầm trên tiểu khoản Margin thì phải xử lý làm sao?"
-    answer: "Nếu trong tiểu khoản Margin của bạn có đủ tiền mặt và không bị tính nợ vay, lệnh mua sẽ dùng tiền mặt có sẵn trước. Nếu bị tính nợ margin, bạn có thể thực hiện thao tác nạp thêm tiền hoặc chuyển tiền từ tiểu khoản thường sang để trả nợ gốc ngay trong ngày."
-  - question: "Một cá nhân có thể chuyển tiền qua lại giữa các tiểu khoản không?"
-    answer: "Có. Các ứng dụng chứng khoán hiện nay đều hỗ trợ tính năng chuyển tiền nội bộ cực kỳ nhanh chóng giữa tiểu khoản thường, tiểu khoản margin và tiểu khoản phái sinh mà không mất bất kỳ khoản phí nào."
+  - question: Mở tài khoản Margin hoặc Phái sinh có mất thêm phí duy trì không?
+    answer: >-
+      Không. Việc đăng ký mở thêm các tiểu khoản Margin hay Phái sinh tại công
+      ty chứng khoán hoàn toàn miễn phí duy trì. Bạn chỉ phải trả lãi vay khi
+      thực tế có phát sinh khoản vay margin hoặc phí giao dịch khi đặt lệnh phái
+      sinh.
+  - question: Trót đặt lệnh nhầm trên tiểu khoản Margin thì phải xử lý làm sao?
+    answer: >-
+      Nếu trong tiểu khoản Margin của bạn có đủ tiền mặt và không bị tính nợ
+      vay, lệnh mua sẽ dùng tiền mặt có sẵn trước. Nếu bị tính nợ margin, bạn có
+      thể thực hiện thao tác nạp thêm tiền hoặc chuyển tiền từ tiểu khoản thường
+      sang để trả nợ gốc ngay trong ngày.
+  - question: Một cá nhân có thể chuyển tiền qua lại giữa các tiểu khoản không?
+    answer: >-
+      Có. Các ứng dụng chứng khoán hiện nay đều hỗ trợ tính năng chuyển tiền nội
+      bộ cực kỳ nhanh chóng giữa tiểu khoản thường, tiểu khoản margin và tiểu
+      khoản phái sinh mà không mất bất kỳ khoản phí nào.
 sources:
-  - "Ủy ban Chứng khoán Nhà nước (UBCKNN) — Quy định về giao dịch ký quỹ chứng khoán"
-  - "Sở Giao dịch Chứng khoán Hà Nội (HNX) — Quy chế giao dịch chứng khoán phái sinh"
+  - >-
+    Ủy ban Chứng khoán Nhà nước (UBCKNN) — Quy định về giao dịch ký quỹ chứng
+    khoán
+  - >-
+    Sở Giao dịch Chứng khoán Hà Nội (HNX) — Quy chế giao dịch chứng khoán phái
+    sinh
 ---
 
 Khi mới mở tài khoản tại các công ty chứng khoán, bạn sẽ thấy ứng dụng chia thành nhiều mục như Tiểu khoản 1, Tiểu khoản 6 hay Tài khoản phái sinh. Việc đặt lệnh nhầm tiểu khoản có thể khiến bạn vô tình đi vay nợ trả lãi mà không hề hay biết. Bài viết này từ **[Value Investing](/)** sẽ giúp bạn phân biệt rõ ràng 3 loại tài khoản chứng khoán phổ biến nhất và chọn đúng tài khoản phù hợp với khẩu vị rủi ro của mình.
@@ -89,3 +115,9 @@ Tài khoản phái sinh là tiểu khoản độc lập hoàn toàn dùng riêng
 Đối với nhà đầu tư F0 mới tham gia thị trường trong 6 tháng đầu tiên, lời khuyên thực chiến từ **Value Investing** là bạn chỉ nên giao dịch 100% trên **Tài khoản thường (Tiểu khoản 1)**.
 
 Sau khi đã quen thuộc với tâm lý thị trường, thành thạo các loại lệnh giao dịch và có phương pháp quản trị rủi ro rõ ràng, bạn mới nên cân nhắc mở thêm tiểu khoản Margin với một tỷ trọng vốn nhỏ!
+
+
+> **Xem hướng dẫn tổng quan:** Đọc bài viết **[Cổ phiếu là gì](/dau-tu/co-phieu/co-phieu-la-gi/)** để biết chi tiết các bước thực hiện.
+
+
+> **Xem hướng dẫn tổng quan:** Đọc bài viết **[Cách đầu tư cổ phiếu](/dau-tu/co-phieu/cach-dau-tu-co-phieu/)** để biết chi tiết các bước thực hiện.

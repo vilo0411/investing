@@ -1,36 +1,52 @@
 ---
-title: "Giờ Giao Dịch Chứng Khoán Việt Nam: HOSE, HNX & UPCoM"
-description: "Giờ giao dịch chứng khoán Việt Nam mới nhất 2026 — chi tiết khung giờ phiên ATO, khớp lệnh liên tục, phiên ATC trên sàn HOSE, HNX, UPCoM và phái sinh."
-category: "co-phieu"
-heroImage: "/images/articles/gio-giao-dich-chung-khoan/gio-giao-dich-chung-khoan.jpg"
-publishDate: "2026-08-09"
-updatedDate: "2026-08-09"
-readingTime: "7 phút đọc"
+title: 'Giờ Giao Dịch Chứng Khoán Việt Nam: HOSE, HNX & UPCoM'
+description: >-
+  Giờ giao dịch chứng khoán Việt Nam mới nhất 2026 — chi tiết khung giờ phiên
+  ATO, khớp lệnh liên tục, phiên ATC trên sàn HOSE, HNX, UPCoM và phái sinh.
+category: co-phieu
+heroImage: /images/articles/gio-giao-dich-chung-khoan/gio-giao-dich-chung-khoan.jpg
+publishDate: '2026-08-09'
+updatedDate: '2026-08-09'
+readingTime: 7 phút đọc
 featured: false
 order: 88
 tags:
-  - "giờ giao dịch chứng khoán"
-  - "phiên ATO"
-  - "phiên ATC"
-  - "HOSE"
-  - "HNX"
-  - "UPCoM"
+  - giờ giao dịch chứng khoán
+  - phiên ATO
+  - phiên ATC
+  - HOSE
+  - HNX
+  - UPCoM
 faq:
-  - question: "Đặt lệnh ngoài giờ giao dịch có được không?"
-    answer: "Có. Đa số công ty chứng khoán cho phép đặt lệnh ngoài giờ. Lệnh sẽ được lưu vào hệ thống và tự động gửi vào sàn khi phiên sáng mở cửa lúc 9h00."
-  - question: "Tại sao sàn HOSE và HNX có giờ đóng cửa khác nhau?"
-    answer: "Sàn HOSE kết thúc phiên khớp lệnh ATC lúc 14h45, trong khi sàn HNX phiên ATC diễn ra từ 14h45 đến 15h00 mới chính thức đóng cửa."
-  - question: "Thị trường phái sinh giao dịch vào khung giờ nào?"
-    answer: "Thị trường phái sinh mở cửa sớm hơn 15 phút so với cổ phiếu cơ sở, bắt đầu từ 8h45 sáng và kết thúc lúc 15h00 chiều."
+  - question: Đặt lệnh ngoài giờ giao dịch có được không?
+    answer: >-
+      Có. Đa số công ty chứng khoán cho phép đặt lệnh ngoài giờ. Lệnh sẽ được
+      lưu vào hệ thống và tự động gửi vào sàn khi phiên sáng mở cửa lúc 9h00.
+  - question: Tại sao sàn HOSE và HNX có giờ đóng cửa khác nhau?
+    answer: >-
+      Sàn HOSE kết thúc phiên khớp lệnh ATC lúc 14h45, trong khi sàn HNX phiên
+      ATC diễn ra từ 14h45 đến 15h00 mới chính thức đóng cửa.
+  - question: Thị trường phái sinh giao dịch vào khung giờ nào?
+    answer: >-
+      Thị trường phái sinh mở cửa sớm hơn 15 phút so với cổ phiếu cơ sở, bắt đầu
+      từ 8h45 sáng và kết thúc lúc 15h00 chiều.
 sources:
-  - "Sở Giao dịch Chứng khoán TP.HCM (HOSE)"
-  - "Sở Giao dịch Chứng khoán Hà Nội (HNX)"
-  - "Ủy ban Chứng khoán Nhà nước (UBCKNN)"
+  - Sở Giao dịch Chứng khoán TP.HCM (HOSE)
+  - Sở Giao dịch Chứng khoán Hà Nội (HNX)
+  - Ủy ban Chứng khoán Nhà nước (UBCKNN)
 keyTakeaways:
-  - "Thị trường chứng khoán Việt Nam giao dịch từ thứ Hai đến thứ Sáu, nghỉ thứ Bảy, Chủ Nhật và ngày lễ Tết."
-  - "Khung giờ phiên sáng từ 9h00 đến 11h30, phiên chiều từ 13h00 đến 14h45 (HOSE) hoặc 15h00 (HNX/UPCoM)."
-  - "Phiên ATO (mở cửa) và ATC (đóng cửa) là phiên khớp lệnh định kỳ xác định mức giá quan trọng trong ngày."
-  - "Nhà đầu tư mới nên ưu tiên đặt lệnh LO trước giờ mở cửa để chủ động kiểm soát mức giá khớp."
+  - >-
+    Thị trường chứng khoán Việt Nam giao dịch từ thứ Hai đến thứ Sáu, nghỉ thứ
+    Bảy, Chủ Nhật và ngày lễ Tết.
+  - >-
+    Khung giờ phiên sáng từ 9h00 đến 11h30, phiên chiều từ 13h00 đến 14h45
+    (HOSE) hoặc 15h00 (HNX/UPCoM).
+  - >-
+    Phiên ATO (mở cửa) và ATC (đóng cửa) là phiên khớp lệnh định kỳ xác định mức
+    giá quan trọng trong ngày.
+  - >-
+    Nhà đầu tư mới nên ưu tiên đặt lệnh LO trước giờ mở cửa để chủ động kiểm
+    soát mức giá khớp.
 ---
 
 8h30 sáng, bạn mở app chứng khoán đặt lệnh mua VCB. Lệnh hiện trạng thái chờ khớp nhưng mãi không có kết quả. Lý do đơn giản: sàn HOSE chưa mở cửa — phiên giao dịch bắt đầu từ 9h00. Hiểu đúng giờ giao dịch chứng khoán là bước đầu tiên để đặt lệnh đúng thời điểm và tận dụng thanh khoản thị trường. **[Value Investing](/)** tổng hợp chi tiết giờ giao dịch 3 sàn HOSE, HNX, UPCoM và phái sinh — cập nhật mới nhất 2026.
@@ -124,3 +140,9 @@ Không phải mọi khung giờ đều giống nhau. Mỗi phiên có đặc đi
 Hiểu giờ giao dịch chứng khoán giúp bạn đặt lệnh đúng phiên, tận dụng thanh khoản và tránh lỗi kỹ thuật. Lưu bảng giờ giao dịch trong bài này, đặt lịch nhắc trên điện thoại trước 8h55 mỗi sáng — đó là cách đơn giản nhất để không bỏ lỡ phiên mở cửa.
 
 Bước tiếp theo: [Các loại lệnh trong chứng khoán](/dau-tu/co-phieu/cac-loai-lenh-trong-chung-khoan/) — hiểu ATO, ATC, LO, MP để đặt lệnh chính xác.
+
+
+> **Xem hướng dẫn tổng quan:** Đọc bài viết **[Cổ phiếu là gì](/dau-tu/co-phieu/co-phieu-la-gi/)** để biết chi tiết các bước thực hiện.
+
+
+> **Xem hướng dẫn tổng quan:** Đọc bài viết **[Cách đầu tư cổ phiếu](/dau-tu/co-phieu/cach-dau-tu-co-phieu/)** để biết chi tiết các bước thực hiện.

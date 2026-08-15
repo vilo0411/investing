@@ -1,28 +1,48 @@
 ---
-title: "Mid Cap Là Gì? Đặc Điểm & Chiến Lược Đầu Tư Cổ Phiếu Vốn Hóa Vừa"
-description: "Mid cap là gì? Phân biệt cổ phiếu Mid-cap với Blue-chip và Penny, cùng tiêu chí chọn mã Mid-cap tăng trưởng tốt trên thị trường Việt Nam."
-category: "co-phieu"
-heroImage: "/images/articles/mid-cap-la-gi/mid-cap-la-gi.jpg"
-publishDate: "2026-08-04"
-updatedDate: "2026-08-04"
-readingTime: "7 phút đọc"
+title: Mid Cap Là Gì? Đặc Điểm & Chiến Lược Đầu Tư Cổ Phiếu Vốn Hóa Vừa
+description: >-
+  Mid cap là gì? Phân biệt cổ phiếu Mid-cap với Blue-chip và Penny, cùng tiêu
+  chí chọn mã Mid-cap tăng trưởng tốt trên thị trường Việt Nam.
+category: co-phieu
+heroImage: /images/articles/mid-cap-la-gi/mid-cap-la-gi.jpg
+publishDate: '2026-08-04'
+updatedDate: '2026-08-04'
+readingTime: 7 phút đọc
 featured: false
 order: 26
 keyTakeaways:
-  - "Mid-cap là nhóm cổ phiếu của các doanh nghiệp có vốn hóa thị trường ở mức trung bình từ 1.000 tỷ đến 10.000 tỷ đồng tại Việt Nam."
-  - "Cổ phiếu Mid-cap có sự cân bằng hài hòa giữa tiềm năng tăng trưởng vượt trội và mức độ an toàn tài chính."
-  - "Chỉ số VNMID Index trên sàn HOSE là thước đo tập hợp các doanh nghiệp Mid-cap tiêu biểu nhất."
-  - "Nhà đầu tư nên chọn cổ phiếu Mid-cap có lợi thế cạnh tranh ngành rõ ràng và ban lãnh đạo minh bạch để hạn chế rủi ro."
+  - >-
+    Mid-cap là nhóm cổ phiếu của các doanh nghiệp có vốn hóa thị trường ở mức
+    trung bình từ 1.000 tỷ đến 10.000 tỷ đồng tại Việt Nam.
+  - >-
+    Cổ phiếu Mid-cap có sự cân bằng hài hòa giữa tiềm năng tăng trưởng vượt trội
+    và mức độ an toàn tài chính.
+  - >-
+    Chỉ số VNMID Index trên sàn HOSE là thước đo tập hợp các doanh nghiệp
+    Mid-cap tiêu biểu nhất.
+  - >-
+    Nhà đầu tư nên chọn cổ phiếu Mid-cap có lợi thế cạnh tranh ngành rõ ràng và
+    ban lãnh đạo minh bạch để hạn chế rủi ro.
 faq:
-  - question: "F0 mới chơi chứng khoán có nên mua cổ phiếu Mid-cap không?"
-    answer: "Có. Nhóm Mid-cap rất phù hợp cho F0 vì giá cổ phiếu ở mức vừa phải, thanh khoản tốt và tiềm năng tăng trưởng giá cao hơn nhóm Blue-chip lâu đời."
-  - question: "Làm sao để biết một cổ phiếu đang thuộc nhóm Mid-cap hay Penny?"
-    answer: "Bạn có thể tính vốn hóa bằng cách lấy giá cổ phiếu nhân với số lượng cổ phiếu lưu hành. Nếu kết quả nằm trong khoảng từ 1.000 tỷ đến 10.000 tỷ đồng thì mã đó thuộc nhóm Mid-cap."
-  - question: "Nên phân bổ bao nhiêu % danh mục cho nhóm cổ phiếu Mid-cap?"
-    answer: "Một tỷ lệ phân bổ danh mục phổ biến cho nhà đầu tư cá nhân là 40-50% cho cổ phiếu Blue-chip an toàn, 30-40% cho cổ phiếu Mid-cap tăng trưởng và 10-20% cho tiền mặt hoặc tài sản tích sản dài hạn."
+  - question: F0 mới chơi chứng khoán có nên mua cổ phiếu Mid-cap không?
+    answer: >-
+      Có. Nhóm Mid-cap rất phù hợp cho F0 vì giá cổ phiếu ở mức vừa phải, thanh
+      khoản tốt và tiềm năng tăng trưởng giá cao hơn nhóm Blue-chip lâu đời.
+  - question: Làm sao để biết một cổ phiếu đang thuộc nhóm Mid-cap hay Penny?
+    answer: >-
+      Bạn có thể tính vốn hóa bằng cách lấy giá cổ phiếu nhân với số lượng cổ
+      phiếu lưu hành. Nếu kết quả nằm trong khoảng từ 1.000 tỷ đến 10.000 tỷ
+      đồng thì mã đó thuộc nhóm Mid-cap.
+  - question: Nên phân bổ bao nhiêu % danh mục cho nhóm cổ phiếu Mid-cap?
+    answer: >-
+      Một tỷ lệ phân bổ danh mục phổ biến cho nhà đầu tư cá nhân là 40-50% cho
+      cổ phiếu Blue-chip an toàn, 30-40% cho cổ phiếu Mid-cap tăng trưởng và
+      10-20% cho tiền mặt hoặc tài sản tích sản dài hạn.
 sources:
-  - "Sở Giao dịch Chứng khoán TP.HCM (HOSE) — Bộ chỉ số VNMID Index"
-  - "Vietcap Research — Báo cáo phân loại nhóm vốn hóa thị trường chứng khoán Việt Nam"
+  - Sở Giao dịch Chứng khoán TP.HCM (HOSE) — Bộ chỉ số VNMID Index
+  - >-
+    Vietcap Research — Báo cáo phân loại nhóm vốn hóa thị trường chứng khoán
+    Việt Nam
 ---
 
 Nếu cổ phiếu Blue-chip giống như những tập đoàn đa quốc gia lâu đời vững chãi nhưng tăng trưởng chậm lại, còn cổ phiếu Penny lại như các cửa hàng khởi nghiệp rủi ro cao, thì Mid-cap chính là những công ty đang ở độ tuổi sung sức nhất — đủ lớn để an toàn và đủ nhanh để bứt phá. Bài viết này từ **[Value Investing](/)** sẽ giải mã toàn bộ về nhóm cổ phiếu Mid-cap tại Việt Nam và cách chọn mã tiềm năng cho danh mục của bạn.
@@ -80,3 +100,9 @@ Bộ chỉ số này bao gồm 70 công ty có quy mô vốn hóa trung bình đ
 5.  **Ban lãnh đạo minh bạch và sở hữu cổ phần thực tế**. Người lãnh đạo có nắm giữ cổ phiếu doanh nghiệp sẽ có động lực đưa công ty phát triển bền vững.
 
 Nhìn chung, cổ phiếu Mid-cap chính là chiếc cầu nối hoàn hảo giữa sự an toàn và kỳ vọng sinh lời cao cho danh mục đầu tư. Việc kết hợp phân tích sức khỏe tài chính và chọn đúng điểm mua hợp lý sẽ giúp bạn gặt hái thành công bền vững trên thị trường chứng khoán!
+
+
+> **Xem hướng dẫn tổng quan:** Đọc bài viết **[Cổ phiếu là gì](/dau-tu/co-phieu/co-phieu-la-gi/)** để biết chi tiết các bước thực hiện.
+
+
+> **Xem hướng dẫn tổng quan:** Đọc bài viết **[Cách đầu tư cổ phiếu](/dau-tu/co-phieu/cach-dau-tu-co-phieu/)** để biết chi tiết các bước thực hiện.
