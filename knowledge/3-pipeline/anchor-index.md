@@ -129,7 +129,6 @@ Index toàn bộ bài đã publish tại `src/content/articles/`. Dùng cho inte
 
 | Slug | Title | URL Path | Anchor Text gợi ý |
 |------|-------|----------|-------------------|
-| `cong-ty-chung-khoan-phi-thap` | Công ty chứng khoán phí thấp | `/reviews/cong-ty-chung-khoan-phi-thap/` | công ty chứng khoán phí thấp |
 | `review-cong-ty-chung-khoan-cho-nguoi-moi` | Công ty chứng khoán cho người mới | `/reviews/review-cong-ty-chung-khoan-cho-nguoi-moi/` | chọn công ty chứng khoán cho người mới |
 | `review-tcbs-securities` | Đánh giá chứng khoán TCBS | `/reviews/review-tcbs-securities/` | đánh giá TCBS |
 | `review-vndirect-securities` | Đánh giá chứng khoán VNDIRECT | `/reviews/review-vndirect-securities/` | đánh giá VNDIRECT |
@@ -156,6 +155,11 @@ Index toàn bộ bài đã publish tại `src/content/articles/`. Dùng cho inte
 | `review-pinetree-securities` | Đánh giá chứng khoán Pinetree | `/reviews/review-pinetree-securities/` | đánh giá Pinetree |
 | `review-kis-securities` | Đánh giá chứng khoán KIS | `/reviews/review-kis-securities/` | đánh giá KIS |
 | `review-kb-securities` | Đánh giá chứng khoán KB | `/reviews/review-kb-securities/` | đánh giá KB |
+| `review-shs-securities` | Đánh giá chứng khoán SHS | `/reviews/review-shs-securities/` | đánh giá SHS |
+| `review-bsc-securities` | Đánh giá chứng khoán BSC | `/reviews/review-bsc-securities/` | đánh giá BSC |
+| `review-yuanta-securities` | Đánh giá chứng khoán Yuanta | `/reviews/review-yuanta-securities/` | đánh giá Yuanta |
+| `review-acbs-securities` | Đánh giá chứng khoán ACBS | `/reviews/review-acbs-securities/` | đánh giá ACBS |
+| `review-tps-securities` | Đánh giá chứng khoán TPS | `/reviews/review-tps-securities/` | đánh giá TPS |
 
 ## Nhóm Nhà đầu tư (`/nha-dau-tu/`)
 

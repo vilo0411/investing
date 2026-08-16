@@ -447,11 +447,11 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 | Pinetree | `review-pinetree-securities` | `Finalized` | ✅ |
 | KIS | `review-kis-securities` | `Finalized` | ✅ |
 | KB (KBSV) | `review-kb-securities` | `Finalized` | ✅ |
-| SHS | `review-shs-securities` | `Planned` | ⭐⭐ Tier B |
-| BSC | `review-bsc-securities` | `Planned` | ⭐⭐ Tier B |
-| Yuanta | `review-yuanta-securities` | `Planned` | ⭐⭐ Tier B |
-| ACBS | `review-acbs-securities` | `Planned` | ⭐⭐ Tier B |
-| TPS | `review-tps-securities` | `Planned` | ⭐⭐ Tier B |
+| SHS | `review-shs-securities` | `Finalized` | ✅ |
+| BSC | `review-bsc-securities` | `Finalized` | ✅ |
+| Yuanta | `review-yuanta-securities` | `Finalized` | ✅ |
+| ACBS | `review-acbs-securities` | `Finalized` | ✅ |
+| TPS | `review-tps-securities` | `Finalized` | ✅ |
 | BVSC | `review-bvsc-securities` | `Planned` | ⭐⭐ Tier B |
 
 *(Mỗi pillar bắt buộc có H2: Ưu/nhược điểm · Bảng phí + margin thực tế · Trải nghiệm app · "Ai nên / không nên mở tài khoản X" · Hướng dẫn mở nhanh · So sánh nhanh 1–2 đối thủ.)*
