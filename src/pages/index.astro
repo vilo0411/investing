@@ -4,7 +4,8 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 import ArticleList from "@/components/ArticleList.astro";
 import StartHereGrid from "@/components/StartHereGrid.astro";
 import EeatBanner from "@/components/EeatBanner.astro";
-import { categories, getCategoryPath, site, url } from "@/data/site";
+import { categories, getArticlePath, getCategoryPath, site, url } from "@/data/site";
+import { buildCollectionPageNodes } from "@/lib/schema";
 
 const articles = await getCollection("articles");
 
@@ -28,9 +29,27 @@ const startSlugs = [
 const startHere = startSlugs
   .map((slug) => articles.find((article) => article.slug === slug))
   .filter((article): article is NonNullable<typeof article> => Boolean(article));
+
+const siteUrl = Astro.site?.toString() ?? "";
+
+// WebPage, not CollectionPage: the homepage is a mixed hub (hero + start-here
+// + per-category previews), not the index of a single collection. No breadcrumb
+// either — a one-hop trail on the root URL carries no information.
+const schemaNodes = buildCollectionPageNodes({
+  siteUrl,
+  pageUrl: siteUrl,
+  title: site.name,
+  description: site.description,
+  pageType: "WebPage",
+  about: true,
+  items: startHere.map((article) => ({
+    name: article.data.title,
+    url: new URL(getArticlePath(article), Astro.site).toString(),
+  })),
+});
 ---
 
-<BaseLayout title={site.name} description={site.description}>
+<BaseLayout title={site.name} description={site.description} schemaNodes={schemaNodes}>
   <section class="home-hero">
     <div class="container home-hero-grid">
       <div>

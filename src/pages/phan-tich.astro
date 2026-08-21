@@ -1,7 +1,8 @@
 ---
 import { getCollection } from "astro:content";
 import BaseLayout from "@/layouts/BaseLayout.astro";
-import { categories, getCategoryPath, getArticlePath } from "@/data/site";
+import { categories, getCategoryPath, getArticlePath, url } from "@/data/site";
+import { buildCollectionPageNodes } from "@/lib/schema";
 import Breadcrumb from "@/components/Breadcrumb.astro";
 
 const articles = await getCollection("articles");
@@ -23,12 +24,31 @@ const gradients: Record<string, string> = {
   "phan-tich-co-ban":   "thumb-analyse",
   "phan-tich-ky-thuat": "thumb-technical",
 };
+
+const pageTitle = "Phân tích Tài chính Chứng khoán";
+const pageDescription =
+  "Hướng dẫn phân tích cơ bản và kỹ thuật: chỉ số P/E, P/B, ROE, RSI, MACD và cách đọc báo cáo tài chính doanh nghiệp cho nhà đầu tư Việt Nam.";
+
+const siteUrl = Astro.site?.toString() ?? "";
+const pageUrl = new URL(url("/phan-tich/"), Astro.site).toString();
+
+const schemaNodes = buildCollectionPageNodes({
+  siteUrl,
+  pageUrl,
+  title: pageTitle,
+  description: pageDescription,
+  breadcrumb: [
+    { name: "Trang chủ", item: siteUrl },
+    { name: "Phân tích", item: pageUrl },
+  ],
+  items: analysis.map((cat) => ({
+    name: cat.title,
+    url: new URL(getCategoryPath(cat), Astro.site).toString(),
+  })),
+});
 ---
 
-<BaseLayout
-  title="Phân tích Tài chính Chứng khoán"
-  description="Hướng dẫn phân tích cơ bản và kỹ thuật: chỉ số P/E, P/B, ROE, RSI, MACD và cách đọc báo cáo tài chính doanh nghiệp cho nhà đầu tư Việt Nam."
->
+<BaseLayout title={pageTitle} description={pageDescription} schemaNodes={schemaNodes}>
   <section class="page-hero">
     <div class="container hero-grid">
       <div class="hero-content">
