@@ -13,6 +13,9 @@ export const author = {
     "Đầu tư nên bắt đầu từ việc hiểu doanh nghiệp, biết giới hạn rủi ro của bản thân trước khi nhìn vào tỷ suất lợi nhuận kỳ vọng.",
   education:
     "Cử nhân Quản trị Kinh doanh Học viện Chính sách và Phát triển",
+  // Institution name alone, kept separate from the free-text `education`
+  // sentence so JSON-LD can emit a resolvable EducationalOrganization entity.
+  alumniOf: "Học viện Chính sách và Phát triển",
   publishedIn: ["Value Investing"],
 };
 
