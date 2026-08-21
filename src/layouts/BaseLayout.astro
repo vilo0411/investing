@@ -3,6 +3,7 @@ import { SEO } from "astro-seo";
 import { getCollection } from "astro:content";
 import { categories, categoryMeta, getArticlePath, site, url } from "@/data/site";
 import { author } from "@/data/authors";
+import { buildSiteNodes, type SchemaNode } from "@/lib/schema";
 import "@/styles/global.css";
 
 const investCategories = categories.filter(c => c.group === "Đầu tư");
@@ -36,6 +37,8 @@ interface Props {
     modifiedTime?: string;
     author?: string;
   };
+  /** Page-level JSON-LD nodes, merged into the single site-wide @graph. */
+  schemaNodes?: SchemaNode[];
 }
 
 const {
@@ -44,11 +47,21 @@ const {
   ogImage = "/images/hero-investing.png",
   ogType = "website",
   articleMeta,
+  schemaNodes = [],
 } = Astro.props;
 
 const pageTitle = title === site.name ? title : `${title} | ${site.name}`;
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
 const ogImageUrl = new URL(ogImage, Astro.site).toString();
+
+// One @graph per page: site-level entities first, then whatever the child
+// layout contributed. Keeping it in a single script keeps every @id reference
+// resolvable within the same document.
+const siteUrl = Astro.site?.toString() ?? "";
+const graph = {
+  "@context": "https://schema.org",
+  "@graph": [...buildSiteNodes(siteUrl), ...schemaNodes],
+};
 
 const openGraphExtra =
   ogType === "article" && articleMeta
@@ -84,45 +97,8 @@ const openGraphExtra =
     <link rel="preload" href="/fonts/outfit-latin-ext.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="/fonts/space-grotesk-vietnamese.woff2" as="font" type="font/woff2" crossorigin />
 
-    <!-- Organization + WebSite schema (all pages) -->
-    <script type="application/ld+json" set:html={JSON.stringify({
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "Organization",
-          "@id": `${Astro.site}#organization`,
-          "name": site.name,
-          "url": Astro.site,
-          "logo": {
-            "@type": "ImageObject",
-            "url": `${Astro.site}images/hero-investing.png`,
-          },
-          "email": site.email,
-          "areaServed": "VN",
-          "sameAs": [author.socialLinks?.linkedin].filter(Boolean),
-          "founder": {
-            "@type": "Person",
-            "@id": `${Astro.site}author/${author.slug}/#person`,
-            "name": author.name,
-            "url": `${Astro.site}author/${author.slug}/`,
-          },
-        },
-        {
-          "@type": "WebSite",
-          "@id": `${Astro.site}#website`,
-          "url": Astro.site,
-          "name": site.name,
-          "description": site.description,
-          "inLanguage": "vi",
-          "publisher": { "@id": `${Astro.site}#organization` },
-          "potentialAction": {
-            "@type": "SearchAction",
-            "target": `${Astro.site}search/?q={search_term_string}`,
-            "query-input": "required name=search_term_string",
-          },
-        },
-      ],
-    })} />
+    <!-- Single entity graph: site nodes + page nodes (see src/lib/schema.ts) -->
+    <script type="application/ld+json" set:html={JSON.stringify(graph)} />
 
 
     <SEO
