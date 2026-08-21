@@ -3,6 +3,7 @@ import { getCollection } from "astro:content";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { author } from "@/data/authors";
 import { url } from "@/data/site";
+import { buildStaticPageNodes, orgId } from "@/lib/schema";
 
 const articles = await getCollection("articles");
 const articleCount = articles.length;
@@ -23,9 +24,31 @@ const editorialSteps = [
     description: "Bài viết được rà soát và cập nhật khi số liệu, quy định hoặc sản phẩm tài chính liên quan thay đổi.",
   },
 ];
+
+const pageTitle = "Về Value Investing | Sứ mệnh & Đội ngũ Biên tập";
+const pageDescription =
+  "Value Investing là nền tảng giáo dục đầu tư tài chính uy tín tại Việt Nam. Tìm hiểu sứ mệnh, đội ngũ biên tập và quy trình kiểm duyệt nội dung YMYL.";
+
+const siteUrl = Astro.site?.toString() ?? "";
+const pageUrl = new URL(Astro.url.pathname, Astro.site).toString();
+
+// mainEntity is a bare reference: the Organization is fully defined once in
+// buildSiteNodes, so redefining it here would split one @id into two shapes.
+const schemaNodes = buildStaticPageNodes({
+  siteUrl,
+  pageUrl,
+  title: pageTitle,
+  description: pageDescription,
+  pageType: "AboutPage",
+  mainEntityId: orgId(siteUrl),
+  breadcrumb: [
+    { name: "Trang chủ", item: siteUrl },
+    { name: "Về Value Investing", item: pageUrl },
+  ],
+});
 ---
 
-<BaseLayout title="Về Value Investing | Sứ mệnh & Đội ngũ Biên tập" description="Value Investing là nền tảng giáo dục đầu tư tài chính uy tín tại Việt Nam. Tìm hiểu sứ mệnh, đội ngũ biên tập và quy trình kiểm duyệt nội dung YMYL.">
+<BaseLayout title={pageTitle} description={pageDescription} schemaNodes={schemaNodes}>
   <section class="page-hero">
     <div class="container">
       <div class="eyebrow">Giới thiệu</div>

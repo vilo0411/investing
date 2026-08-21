@@ -1,8 +1,27 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
+import { buildStaticPageNodes } from "@/lib/schema";
+
+const pageTitle = "Chính sách Biên tập | Quy trình Kiểm duyệt";
+const pageDescription =
+  "Quy trình biên tập và kiểm duyệt nội dung tài chính của Value Investing — đảm bảo tính chính xác, khách quan theo tiêu chuẩn YMYL.";
+
+const siteUrl = Astro.site?.toString() ?? "";
+const pageUrl = new URL(Astro.url.pathname, Astro.site).toString();
+
+const schemaNodes = buildStaticPageNodes({
+  siteUrl,
+  pageUrl,
+  title: pageTitle,
+  description: pageDescription,
+  breadcrumb: [
+    { name: "Trang chủ", item: siteUrl },
+    { name: "Chính sách biên tập", item: pageUrl },
+  ],
+});
 ---
 
-<BaseLayout title="Chính sách Biên tập | Quy trình Kiểm duyệt" description="Quy trình biên tập và kiểm duyệt nội dung tài chính của Value Investing — đảm bảo tính chính xác, khách quan theo tiêu chuẩn YMYL.">
+<BaseLayout title={pageTitle} description={pageDescription} schemaNodes={schemaNodes}>
   <section class="article-header">
     <div class="article-container">
       <h1>Chính sách biên tập</h1>

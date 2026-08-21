@@ -2,6 +2,7 @@
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { site, url } from "@/data/site";
 import { author } from "@/data/authors";
+import { buildStaticPageNodes, orgId } from "@/lib/schema";
 
 const contactReasons = [
   {
@@ -33,12 +34,31 @@ const contactReasons = [
     linkText: null,
   },
 ];
+
+const pageTitle = "Liên hệ với Value Investing";
+const pageDescription =
+  "Liên hệ để góp ý nội dung, báo lỗi thông tin hoặc đề xuất chủ đề đầu tư mới. Phản hồi trong 24–48 giờ làm việc.";
+
+const siteUrl = Astro.site?.toString() ?? "";
+const pageUrl = new URL(Astro.url.pathname, Astro.site).toString();
+
+// contactPoint is NOT declared here — it lives on the Organization node emitted
+// by buildSiteNodes on every page, so the shared @id serializes identically.
+const schemaNodes = buildStaticPageNodes({
+  siteUrl,
+  pageUrl,
+  title: pageTitle,
+  description: pageDescription,
+  pageType: "ContactPage",
+  mainEntityId: orgId(siteUrl),
+  breadcrumb: [
+    { name: "Trang chủ", item: siteUrl },
+    { name: "Liên hệ", item: pageUrl },
+  ],
+});
 ---
 
-<BaseLayout
-  title="Liên hệ với Value Investing"
-  description="Liên hệ để góp ý nội dung, báo lỗi thông tin hoặc đề xuất chủ đề đầu tư mới. Phản hồi trong 24–48 giờ làm việc."
->
+<BaseLayout title={pageTitle} description={pageDescription} schemaNodes={schemaNodes}>
   <section class="page-hero">
     <div class="container">
       <div class="eyebrow">Liên hệ</div>

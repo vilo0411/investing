@@ -3,7 +3,8 @@ import { getCollection } from "astro:content";
 import ArticleList from "@/components/ArticleList.astro";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { author } from "@/data/authors";
-import { url } from "@/data/site";
+import { getArticlePath, url } from "@/data/site";
+import { buildProfilePageNodes } from "@/lib/schema";
 
 export async function getStaticPaths() {
   return [{ params: { slug: author.slug }, props: { author } }];
@@ -17,25 +18,30 @@ const articles = (await getCollection("articles")).toSorted(
 
 const authorInitial = profileAuthor.name.split(" ").pop()?.charAt(0) ?? profileAuthor.name.charAt(0);
 const pageSize = 9;
+
+const siteUrl = Astro.site?.toString() ?? "";
+const pageUrl = new URL(Astro.url.pathname, Astro.site).toString();
+
+// The Person node comes from the shared builder, so this page and every article
+// page define the same @id with one identical property set. Every article is in
+// the DOM (hidden past the 9th by CSS), so the ItemList matches what is rendered.
+const schemaNodes = buildProfilePageNodes({
+  siteUrl,
+  pageUrl,
+  title: profileAuthor.name,
+  description: profileAuthor.bio,
+  breadcrumb: [
+    { name: "Trang chủ", item: siteUrl },
+    { name: profileAuthor.name, item: pageUrl },
+  ],
+  items: articles.map((article) => ({
+    name: article.data.title,
+    url: new URL(getArticlePath(article), Astro.site).toString(),
+  })),
+});
 ---
 
-<BaseLayout title={profileAuthor.name} description={profileAuthor.bio}>
-  <script slot="head" type="application/ld+json" set:html={JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "@id": `${Astro.site}author/${profileAuthor.slug}/#person`,
-    "name": profileAuthor.name,
-    "url": `${Astro.site}author/${profileAuthor.slug}/`,
-    "jobTitle": profileAuthor.role,
-    "description": profileAuthor.bio,
-    "knowsAbout": profileAuthor.expertise,
-    "sameAs": profileAuthor.socialLinks
-      ? [
-          profileAuthor.socialLinks.linkedin,
-          profileAuthor.socialLinks.twitter
-        ].filter(Boolean)
-      : []
-  })} />
+<BaseLayout title={profileAuthor.name} description={profileAuthor.bio} schemaNodes={schemaNodes}>
   <section class="author-hero">
     <div class="container author-hero-grid">
       <div class="author-identity">
