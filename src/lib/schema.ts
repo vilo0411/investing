@@ -64,6 +64,48 @@ export interface ArticlePageInput {
   review?: ReviewInput;
 }
 
+/** One entry of a listing page's ItemList. `url` must be absolute. */
+export interface ListingItem {
+  name: string;
+  url: string;
+}
+
+/** Listing pages: the 8 category hubs, the 2 group hubs and the homepage. */
+export interface CollectionPageInput {
+  siteUrl: string;
+  pageUrl: string;
+  title: string;
+  description: string;
+  breadcrumb?: BreadcrumbEntry[];
+  items?: ListingItem[];
+  /** The homepage is a mixed hub, not a single collection — it uses WebPage. */
+  pageType?: "CollectionPage" | "WebPage";
+  /** Emit `about → #organization` (strongest brand signal, homepage only). */
+  about?: boolean;
+}
+
+/** Static pages: about, contact and the four policy pages. */
+export interface StaticPageInput {
+  siteUrl: string;
+  pageUrl: string;
+  title: string;
+  description: string;
+  breadcrumb?: BreadcrumbEntry[];
+  pageType?: "WebPage" | "AboutPage" | "ContactPage";
+  /** Reference target for `mainEntity` (e.g. the Organization on about/). */
+  mainEntityId?: string;
+}
+
+/** The author profile page. */
+export interface ProfilePageInput {
+  siteUrl: string;
+  pageUrl: string;
+  title: string;
+  description: string;
+  breadcrumb?: BreadcrumbEntry[];
+  items?: ListingItem[];
+}
+
 /* ── @id helpers ─────────────────────────────────────────────────────────── */
 
 export const orgId = (siteUrl: string) => `${siteUrl}#organization`;
@@ -96,6 +138,15 @@ export function buildSiteNodes(siteUrl: string): SchemaNode[] {
       },
       "email": site.email,
       "areaServed": "VN",
+      // Lives on every page, not just contact/: two pages defining the same @id
+      // with different property sets is exactly the bug fixed in Phase 1+2.
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "email": site.email,
+        "url": `${siteUrl}contact/`,
+        "availableLanguage": ["Vietnamese"],
+      },
       // Inline definition (not a bare reference) so pages without a full Person
       // node still resolve; merges with the Person node on article pages.
       "founder": {
@@ -154,6 +205,41 @@ function buildCitations(
   return sources?.length ? sources : undefined;
 }
 
+/**
+ * BreadcrumbList node. Shared by every page builder so the emitted shape stays
+ * byte-identical across article, listing, static and profile pages.
+ */
+function breadcrumbNode(pageUrl: string, entries: BreadcrumbEntry[]): SchemaNode {
+  return {
+    "@type": "BreadcrumbList",
+    "@id": `${pageUrl}#breadcrumb`,
+    "itemListElement": entries.map((crumb, i) => ({
+      "@type": "ListItem",
+      "position": i + 1,
+      "name": crumb.name,
+      ...(crumb.item ? { "item": crumb.item } : {}),
+    })),
+  };
+}
+
+/**
+ * ItemList node listing exactly the items rendered in the page DOM. The owning
+ * page node points at it via `mainEntity` (or `hasPart`) so it never orphans.
+ */
+function itemListNode(pageUrl: string, items: ListingItem[]): SchemaNode {
+  return {
+    "@type": "ItemList",
+    "@id": `${pageUrl}#itemlist`,
+    "numberOfItems": items.length,
+    "itemListElement": items.map((item, i) => ({
+      "@type": "ListItem",
+      "position": i + 1,
+      "name": item.name,
+      "url": item.url,
+    })),
+  };
+}
+
 /** Person node, hoisted to top level so Article.author is a pure reference. */
 function buildPersonNode(siteUrl: string): SchemaNode {
   const sameAs = [
@@ -173,6 +259,21 @@ function buildPersonNode(siteUrl: string): SchemaNode {
       "@type": "ImageObject",
       "url": `${siteUrl}${author.avatar.replace(/^\//, "")}`,
     },
+    // Reverse edge of Organization.founder — without it the Person↔brand link
+    // is one-directional and search engines resolve the author more weakly.
+    "worksFor": { "@id": orgId(siteUrl) },
+    ...(author.alumniOf
+      ? {
+          "alumniOf": {
+            "@type": "EducationalOrganization",
+            "name": author.alumniOf,
+          },
+        }
+      : {}),
+    // A plain URL string, deliberately NOT {"@id": ...}: this Person node is
+    // emitted on every article page, where the profile's #webpage node does not
+    // exist. A reference would dangle there and break graph verification.
+    "mainEntityOfPage": `${siteUrl}author/${author.slug}/`,
     ...(sameAs.length > 0 ? { "sameAs": sameAs } : {}),
   };
 }
@@ -222,16 +323,7 @@ export function buildArticlePageNodes(input: ArticlePageInput): SchemaNode[] {
 
   const nodes: SchemaNode[] = [
     buildPersonNode(siteUrl),
-    {
-      "@type": "BreadcrumbList",
-      "@id": breadcrumbNodeId,
-      "itemListElement": breadcrumb.map((crumb, i) => ({
-        "@type": "ListItem",
-        "position": i + 1,
-        "name": crumb.name,
-        ...(crumb.item ? { "item": crumb.item } : {}),
-      })),
-    },
+    breadcrumbNode(pageUrl, breadcrumb),
     {
       "@type": "ImageObject",
       "@id": imageNodeId,
@@ -327,6 +419,126 @@ export function buildArticlePageNodes(input: ArticlePageInput): SchemaNode[] {
       "isPartOf": { "@id": webPageId },
     });
   }
+
+  return nodes;
+}
+
+/**
+ * Build the page graph for a listing page (category hub, group hub, homepage).
+ *
+ * The page node is the hub: it references the breadcrumb and the ItemList, so
+ * neither is left orphaned the way the standalone BreadcrumbList block was.
+ * Node order: page → BreadcrumbList → ItemList.
+ */
+export function buildCollectionPageNodes(
+  input: CollectionPageInput
+): SchemaNode[] {
+  const {
+    siteUrl,
+    pageUrl,
+    title,
+    description,
+    breadcrumb,
+    items,
+    pageType,
+    about,
+  } = input;
+
+  const hasBreadcrumb = Boolean(breadcrumb?.length);
+  const hasItems = Boolean(items?.length);
+
+  const nodes: SchemaNode[] = [
+    {
+      "@type": pageType ?? "CollectionPage",
+      "@id": `${pageUrl}#webpage`,
+      "url": pageUrl,
+      "name": title,
+      "description": description,
+      "inLanguage": "vi",
+      "isPartOf": { "@id": websiteId(siteUrl) },
+      ...(hasBreadcrumb
+        ? { "breadcrumb": { "@id": `${pageUrl}#breadcrumb` } }
+        : {}),
+      ...(hasItems ? { "mainEntity": { "@id": `${pageUrl}#itemlist` } } : {}),
+      ...(about ? { "about": { "@id": orgId(siteUrl) } } : {}),
+    },
+  ];
+
+  if (breadcrumb?.length) nodes.push(breadcrumbNode(pageUrl, breadcrumb));
+  if (items?.length) nodes.push(itemListNode(pageUrl, items));
+
+  return nodes;
+}
+
+/**
+ * Build the page graph for a static page (about, contact, policy pages).
+ *
+ * `mainEntityId` is emitted as a bare reference — the Organization is already
+ * fully defined once in buildSiteNodes, and redefining it here would produce
+ * two different property sets under one @id.
+ */
+export function buildStaticPageNodes(input: StaticPageInput): SchemaNode[] {
+  const {
+    siteUrl,
+    pageUrl,
+    title,
+    description,
+    breadcrumb,
+    pageType,
+    mainEntityId,
+  } = input;
+
+  const nodes: SchemaNode[] = [
+    {
+      "@type": pageType ?? "WebPage",
+      "@id": `${pageUrl}#webpage`,
+      "url": pageUrl,
+      "name": title,
+      "description": description,
+      "inLanguage": "vi",
+      "isPartOf": { "@id": websiteId(siteUrl) },
+      ...(breadcrumb?.length
+        ? { "breadcrumb": { "@id": `${pageUrl}#breadcrumb` } }
+        : {}),
+      ...(mainEntityId ? { "mainEntity": { "@id": mainEntityId } } : {}),
+    },
+  ];
+
+  if (breadcrumb?.length) nodes.push(breadcrumbNode(pageUrl, breadcrumb));
+
+  return nodes;
+}
+
+/**
+ * Build the page graph for the author profile page.
+ *
+ * The Person node comes from the same builder used on article pages, so the
+ * shared @id resolves to one identical definition site-wide. The author's
+ * article list hangs off `hasPart` — `mainEntity` stays the Person.
+ */
+export function buildProfilePageNodes(input: ProfilePageInput): SchemaNode[] {
+  const { siteUrl, pageUrl, title, description, breadcrumb, items } = input;
+
+  const nodes: SchemaNode[] = [
+    buildPersonNode(siteUrl),
+    {
+      "@type": "ProfilePage",
+      "@id": `${pageUrl}#webpage`,
+      "url": pageUrl,
+      "name": title,
+      "description": description,
+      "inLanguage": "vi",
+      "isPartOf": { "@id": websiteId(siteUrl) },
+      ...(breadcrumb?.length
+        ? { "breadcrumb": { "@id": `${pageUrl}#breadcrumb` } }
+        : {}),
+      "mainEntity": { "@id": personId(siteUrl) },
+      ...(items?.length ? { "hasPart": { "@id": `${pageUrl}#itemlist` } } : {}),
+    },
+  ];
+
+  if (breadcrumb?.length) nodes.push(breadcrumbNode(pageUrl, breadcrumb));
+  if (items?.length) nodes.push(itemListNode(pageUrl, items));
 
   return nodes;
 }

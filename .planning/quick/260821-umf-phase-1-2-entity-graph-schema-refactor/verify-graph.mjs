@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Verify the JSON-LD entity graph of built article pages.
+// Verify the JSON-LD entity graph of any built page (article or not).
 //
 // Usage: node verify-graph.mjs dist/path/index.html [more.html ...]
 //
@@ -9,7 +9,14 @@
 //   3. Every bare {"@id": ...} reference resolves to a node defined in the graph.
 //   4. The graph is connected (no orphan nodes / detached clusters).
 //   5. No `dateReviewed` anywhere; worstRating is always 1; the root
-//      #organization node keeps the brand name; the core page nodes exist.
+//      #organization node keeps the brand name.
+//   5d. Pages carrying an Article node must additionally define all four core
+//      page nodes (#webpage, #breadcrumb, #primaryimage, #article). Non-article
+//      pages (listing, static, profile) legitimately have no article/image node,
+//      so this check is scoped to article pages only.
+//   6. Shape checks that apply to every page: when a #webpage / #itemlist /
+//      #breadcrumb node exists it must be well formed (absolute url, inLanguage,
+//      isPartOf; non-empty itemListElement with numeric position + absolute url).
 //
 // Zero dependencies — plain Node ESM.
 
@@ -22,6 +29,12 @@ const isObject = v => typeof v === "object" && v !== null && !Array.isArray(v);
 
 /** An object with exactly one key, "@id", is a reference — not a definition. */
 const isReference = v => isObject(v) && Object.keys(v).length === 1 && "@id" in v;
+
+/** @type may be a string or an array of strings. */
+const hasType = (node, type) => {
+  const t = node["@type"];
+  return Array.isArray(t) ? t.includes(type) : t === type;
+};
 
 /**
  * Walk a value, collecting inline-defined @ids and every @id referenced from
@@ -153,10 +166,57 @@ function checkFile(file) {
     );
   }
 
-  // 5d. Required page nodes exist.
-  for (const suffix of ["#webpage", "#breadcrumb", "#primaryimage", "#article"]) {
-    if (![...defined].some(id => id.endsWith(suffix))) {
-      errors.push(`missing node ending in ${suffix}`);
+  // 5d. Required page nodes exist — article pages only. Listing/static/profile
+  // pages have no Article or primary image, so demanding those nodes there
+  // would be meaningless; the shape checks below cover them instead.
+  const isArticlePage = graph.some(n => isObject(n) && hasType(n, "Article"));
+  if (isArticlePage) {
+    for (const suffix of ["#webpage", "#breadcrumb", "#primaryimage", "#article"]) {
+      if (![...defined].some(id => id.endsWith(suffix))) {
+        errors.push(`missing node ending in ${suffix}`);
+      }
+    }
+  }
+
+  // 6. Shape checks for page-level nodes, applied to every page that has them.
+  const nodeBySuffix = suffix =>
+    graph.find(
+      n => isObject(n) && typeof n["@id"] === "string" && n["@id"].endsWith(suffix)
+    );
+
+  const isAbsoluteUrl = v => typeof v === "string" && v.startsWith("https://");
+
+  const webPageNode = nodeBySuffix("#webpage");
+  if (webPageNode) {
+    if (!isAbsoluteUrl(webPageNode.url)) {
+      errors.push(`#webpage url must be an absolute https URL, got ${JSON.stringify(webPageNode.url)}`);
+    }
+    if (!webPageNode.inLanguage) errors.push(`#webpage missing inLanguage`);
+    if (!webPageNode.isPartOf) errors.push(`#webpage missing isPartOf`);
+  }
+
+  const itemListNode = nodeBySuffix("#itemlist");
+  if (itemListNode) {
+    const elements = itemListNode.itemListElement;
+    if (!Array.isArray(elements) || elements.length === 0) {
+      errors.push(`#itemlist itemListElement must be a non-empty array`);
+    } else {
+      const bad = elements.filter(
+        el => !isObject(el) || typeof el.position !== "number" || !isAbsoluteUrl(el.url)
+      );
+      if (bad.length) {
+        errors.push(
+          `#itemlist has ${bad.length} entr(ies) missing numeric position or absolute url`
+        );
+      }
+    }
+  }
+
+  const breadcrumbNode = nodeBySuffix("#breadcrumb");
+  if (breadcrumbNode) {
+    const elements = breadcrumbNode.itemListElement;
+    if (!Array.isArray(elements) || elements.length === 0) {
+      errors.push(`#breadcrumb itemListElement must be a non-empty array`);
     }
   }
 

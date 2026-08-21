@@ -1,9 +1,28 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { url } from "@/data/site";
+import { buildStaticPageNodes } from "@/lib/schema";
+
+const pageTitle = "Miễn trừ Trách nhiệm | Value Investing";
+const pageDescription =
+  "Value Investing cung cấp nội dung giáo dục tài chính, không phải tư vấn đầu tư cá nhân. Đọc để hiểu phạm vi và giới hạn trách nhiệm của Value Investing.";
+
+const siteUrl = Astro.site?.toString() ?? "";
+const pageUrl = new URL(Astro.url.pathname, Astro.site).toString();
+
+const schemaNodes = buildStaticPageNodes({
+  siteUrl,
+  pageUrl,
+  title: pageTitle,
+  description: pageDescription,
+  breadcrumb: [
+    { name: "Trang chủ", item: siteUrl },
+    { name: "Miễn trừ trách nhiệm", item: pageUrl },
+  ],
+});
 ---
 
-<BaseLayout title="Miễn trừ Trách nhiệm | Value Investing" description="Value Investing cung cấp nội dung giáo dục tài chính, không phải tư vấn đầu tư cá nhân. Đọc để hiểu phạm vi và giới hạn trách nhiệm của Value Investing.">
+<BaseLayout title={pageTitle} description={pageDescription} schemaNodes={schemaNodes}>
   <section class="article-header">
     <div class="article-container">
       <h1>Miễn trừ trách nhiệm</h1>
