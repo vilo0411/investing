@@ -35,6 +35,11 @@ Tài liệu ghi nhận toàn bộ lịch sử chỉnh sửa bài viết dựa tr
 | 2026-08-09 | `ebitda-la-gi` | Người dùng duyệt `/approve` (Batch 5 bài) | Finalize bài viết, tải ảnh Unsplash, tạo ảnh bìa Playwright, dọn dẹp file tạm, cập nhật anchor-index & topic-clusters | **Hoàn thành** |
 | 2026-08-09 | `gio-giao-dich-chung-khoan` | Người dùng duyệt `/approve` (Batch 5 bài) | Finalize bài viết, tải ảnh Unsplash, tạo ảnh bìa Playwright, dọn dẹp file tạm, cập nhật anchor-index & topic-clusters | **Hoàn thành** |
 | 2026-08-09 | `chu-ky-kinh-te-la-gi` | Người dùng duyệt `/approve` (Batch 5 bài) | Tối ưu hóa bài viết, tải ảnh Unsplash, tạo ảnh bìa Playwright, dọn dẹp file tạm, cập nhật anchor-index & topic-clusters | **Hoàn thành** |
+| 2026-08-21 | `cach-dau-tu-chung-khoan` | Người dùng duyệt `/approve` (Batch 5 bài - Bài 1) | Finalize bài viết, tải ảnh Unsplash, tạo ảnh bìa Playwright, dọn dẹp file tạm, cập nhật anchor-index & topic-clusters, link wheel | **Hoàn thành** |
+| 2026-08-21 | `nen-mo-tai-khoan-chung-khoan-o-dau` | Người dùng duyệt `/approve` (Batch 5 bài - Bài 2) | Finalize bài viết, tải ảnh Unsplash, tạo ảnh bìa Playwright, dọn dẹp file tạm, cập nhật anchor-index & topic-clusters, link wheel | **Hoàn thành** |
+| 2026-08-21 | `cach-dau-tu-chung-chi-quy` | Người dùng duyệt `/approve` (Batch 5 bài - Bài 3) | Finalize bài viết, tải ảnh Unsplash, tạo ảnh bìa Playwright, dọn dẹp file tạm, cập nhật anchor-index & topic-clusters, link wheel | **Hoàn thành** |
+| 2026-08-21 | `mot-nguoi-duoc-mo-bao-nhieu-tai-khoan-chung-khoan` | Người dùng duyệt `/approve` (Batch 5 bài - Bài 4) | Finalize bài viết, tải ảnh Unsplash, tạo ảnh bìa Playwright, dọn dẹp file tạm, cập nhật anchor-index & topic-clusters, link wheel | **Hoàn thành** |
+| 2026-08-21 | `hop-dong-mo-tai-khoan-chung-khoan` | Người dùng duyệt `/approve` (Batch 5 bài - Bài 5) | Finalize bài viết, tải ảnh Unsplash, tạo ảnh bìa Playwright, dọn dẹp file tạm, cập nhật anchor-index & topic-clusters, link wheel | **Hoàn thành** |
 
 ---
 

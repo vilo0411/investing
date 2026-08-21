@@ -53,7 +53,7 @@ Trong quá khứ, việc theo dõi thị trường chứng khoán thường gắ
 
 Hiện nay, smartphone đã trở thành công cụ giao dịch chính của hơn 90% nhà đầu tư cá nhân tại Việt Nam. Toàn bộ thao tác từ mở tài khoản, nạp tiền đến đặt lệnh mua bán chỉ mất vài giây.
 
-Sử dụng điện thoại giúp bạn cập nhật biến động giá mọi lúc mọi nơi. Nhờ đó, bạn dễ dàng quản lý danh mục ngay cả khi đang làm việc văn phòng.
+Sử dụng điện thoại giúp bạn cập nhật biến động giá mọi lúc mọi nơi. Nhờ đó, bạn dễ dàng quản lý danh mục ngay cả khi đang làm việc văn phòng. Nếu chưa biết bắt đầu từ đâu, bạn hãy tìm hiểu **[cách đầu tư chứng khoán](/dau-tu/co-phieu/cach-dau-tu-chung-khoan/)** bài bản để có định hướng đúng đắn.
 
 ## Chuẩn bị những gì trước khi giao dịch chứng khoán trên điện thoại?
 

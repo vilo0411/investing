@@ -69,7 +69,7 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 
 ## CLUSTER C2 — Cách Đầu Tư Chứng Khoán *(Sprint hiện tại)*
 
-**Hub:** Cách đầu tư chứng khoán | `/dau-tu/co-phieu/cach-dau-tu-chung-khoan/` | `Planned`
+**Hub:** Cách đầu tư chứng khoán | `/dau-tu/co-phieu/cach-dau-tu-chung-khoan/` | `Finalized`
 
 | Keyword (Spoke) | Slug | Status | Ghi chú |
 |---|---|---|---|
@@ -88,7 +88,7 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 | Tâm lý đầu tư chứng khoán | `tam-ly-dau-tu-chung-khoan` | `Planned` | Sprint Wave 4 |
 | Đầu tư chứng khoán có những rủi ro gì | `rui-ro-dau-tu-chung-khoan` | `Finalized` | Sprint Wave 3 |
 | Các sai lầm dẫn tới phá sản | `sai-lam-dau-tu-chung-khoan` | `Planned` | Sprint Wave 4 |
-| Cách đầu tư chứng chỉ quỹ | `cach-dau-tu-chung-chi-quy` | `Planned` | Backlog |
+| Cách đầu tư chứng chỉ quỹ | `cach-dau-tu-chung-chi-quy` | `Finalized` | Backlog |
 | Nên đầu tư cổ phiếu nào | `nen-dau-tu-co-phieu-nao` | `Finalized` | Backlog |
 | Cách nhận biết cổ phiếu tiềm năng | `cach-nhan-biet-co-phieu-tiem-nang` | `Finalized` | Backlog |
 | Kinh nghiệm chơi chứng khoán | `kinh-nghiem-choi-chung-khoan` | `Finalized` | Backlog |
@@ -99,15 +99,15 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 
 ## CLUSTER C3 — Mở Tài Khoản Chứng Khoán
 
-**Hub:** Nên mở tài khoản chứng khoán ở đâu | `/dau-tu/co-phieu/nen-mo-tai-khoan-chung-khoan-o-dau/` | `Planned`
+**Hub:** Nên mở tài khoản chứng khoán ở đâu | `/dau-tu/co-phieu/nen-mo-tai-khoan-chung-khoan-o-dau/` | `Finalized`
 
 | Keyword (Spoke) | Slug | Status | Ghi chú |
 |---|---|---|---|
 | Mở tài khoản chứng khoán có mất phí không | `mo-tai-khoan-chung-khoan-co-mat-phi-khong` | `Finalized` | |
 | Mở tài khoản chứng khoán online có an toàn không | `mo-tai-khoan-chung-khoan-online-co-an-toan-khong` | `Finalized` | ✅ Đã publish |
 | Các loại tài khoản chứng khoán | `cac-loai-tai-khoan-chung-khoan` | `Optimizing` | ✅ Đã publish |
-| Một người được mở bao nhiêu tài khoản | `mot-nguoi-duoc-mo-bao-nhieu-tai-khoan-chung-khoan` | `Planned` | |
-| Hợp đồng mở tài khoản chứng khoán | `hop-dong-mo-tai-khoan-chung-khoan` | `Planned` | |
+| Một người được mở bao nhiêu tài khoản | `mot-nguoi-duoc-mo-bao-nhieu-tai-khoan-chung-khoan` | `Finalized` | |
+| Hợp đồng mở tài khoản chứng khoán | `hop-dong-mo-tai-khoan-chung-khoan` | `Finalized` | |
 
 ---
 

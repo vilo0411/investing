@@ -59,7 +59,7 @@ Khi đăng ký thành công dịch vụ tại một công ty chứng khoán, b�
 
 Tuy nhiên, để tách biệt cơ chế quản lý tiền mặt an toàn với các dịch vụ vay đòn bẩy tài chính, công ty chứng khoán sẽ tự động mở thêm các tiểu khoản con nối sau số tài khoản gốc đó.
 
-Mỗi tiểu khoản có một nguyên tắc vận hành, tỷ lệ ký quỹ và quy định pháp lý khác nhau. Việc nắm rõ tính chất từng tiểu khoản giúp bạn chủ động kiểm soát dòng tiền đầu tư của mình.
+Mỗi tiểu khoản có một nguyên tắc vận hành, tỷ lệ ký quỹ và quy định pháp lý khác nhau. Việc nắm rõ tính chất từng tiểu khoản giúp bạn chủ động kiểm soát dòng tiền đầu tư của mình. Trước khi tiến hành mở tài khoản trực tuyến, bạn nên lựa chọn **[nên mở tài khoản chứng khoán ở đâu](/dau-tu/co-phieu/nen-mo-tai-khoan-chung-khoan-o-dau/)** để được tối ưu hóa về quyền lợi. Ngoài ra, hãy xem luật quy định **[một người được mở bao nhiêu tài khoản chứng khoán](/dau-tu/co-phieu/mot-nguoi-duoc-mo-bao-nhieu-tai-khoan-chung-khoan/)** để phân bổ vốn hợp lý.
 
 ## 1. Tài khoản thường (Tiểu khoản tiền mặt): Lựa chọn an toàn cho F0
 

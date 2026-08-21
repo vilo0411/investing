@@ -63,6 +63,10 @@ Index toàn bộ bài đã publish tại `src/content/articles/`. Dùng cho inte
 | `cac-loai-tai-khoan-chung-khoan` | Các Loại Tài Khoản Chứng Khoán: Phân Biệt Thường, Margin & Phái Sinh | `/dau-tu/co-phieu/cac-loai-tai-khoan-chung-khoan/` | các loại tài khoản chứng khoán |
 | `kinh-nghiem-choi-chung-khoan` | Kinh Nghiệm Chơi Chứng Khoán: 7 Bài Học Thực Chiến Cho F0 | `/dau-tu/co-phieu/kinh-nghiem-choi-chung-khoan/` | kinh nghiệm chơi chứng khoán |
 | `gio-giao-dich-chung-khoan` | Giờ Giao Dịch Chứng Khoán Việt Nam: HOSE, HNX & UPCoM | `/dau-tu/co-phieu/gio-giao-dich-chung-khoan/` | giờ giao dịch chứng khoán |
+| `cach-dau-tu-chung-khoan` | Cách Đầu Tư Chứng Khoán: Hướng Dẫn 5 Bước Bài Bản Cho F0 | `/dau-tu/co-phieu/cach-dau-tu-chung-khoan/` | cách đầu tư chứng khoán |
+| `nen-mo-tai-khoan-chung-khoan-o-dau` | Nên Mở Tài Khoản Chứng Khoán Ở Đâu Tốt Nhất 2026 Cho F0? | `/dau-tu/co-phieu/nen-mo-tai-khoan-chung-khoan-o-dau/` | nên mở tài khoản chứng khoán ở đâu |
+| `mot-nguoi-duoc-mo-bao-nhieu-tai-khoan-chung-khoan` | Một Người Được Mở Bao Nhiêu Tài Khoản Chứng Khoán Theo Luật? | `/dau-tu/co-phieu/mot-nguoi-duoc-mo-bao-nhieu-tai-khoan-chung-khoan/` | một người được mở bao nhiêu tài khoản chứng khoán |
+| `hop-dong-mo-tai-khoan-chung-khoan` | Hướng Dẫn Đọc Hợp Đồng Mở Tài Khoản Chứng Khoán Cho F0 | `/dau-tu/co-phieu/hop-dong-mo-tai-khoan-chung-khoan/` | hợp đồng mở tài khoản chứng khoán |
 
 ## Nhóm Đầu tư — Quỹ ETF (`/dau-tu/etf/`)
 
@@ -78,6 +82,7 @@ Index toàn bộ bài đã publish tại `src/content/articles/`. Dùng cho inte
 | `chung-chi-quy-tot-nhat-hien-nay` | Chứng chỉ quỹ tốt nhất hiện nay: Gợi ý các quỹ uy tín cho F0 | `/dau-tu/etf/chung-chi-quy-tot-nhat-hien-nay/` | chứng chỉ quỹ tốt nhất hiện nay |
 | `etf-diamond-la-gi` | Quỹ ETF Diamond là gì? Đánh giá tiềm năng đầu tư FUEVFVND | `/dau-tu/etf/etf-diamond-la-gi/` | ETF Diamond |
 | `nav-la-gi` | NAV Là Gì? Cách Đọc Giá Trị Tài Sản Ròng Quỹ Đầu Tư | `/dau-tu/etf/nav-la-gi/` | NAV là gì |
+| `cach-dau-tu-chung-chi-quy` | Hướng Dẫn Cách Đầu Tư Chứng Chỉ Quỹ Hiệu Quả Cho Người Mới | `/dau-tu/etf/cach-dau-tu-chung-chi-quy/` | cách đầu tư chứng chỉ quỹ |
 
 ## Nhóm Đầu tư — Trái phiếu (`/dau-tu/trai-phieu/`)
 

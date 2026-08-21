@@ -67,7 +67,7 @@ Bắt đầu với 5–10 triệu đồng — vừa đủ để mua 1 lô (100 c
 
 * **1 lô FPT.** Giá khoảng 140.000 đồng/cổ phiếu × 100 = 14 triệu đồng.
 
-Mục tiêu 3 tháng đầu: làm quen bảng điện, hiểu cách đặt lệnh (ATO, ATC, LO), biết đọc khối lượng giao dịch và quan sát cổ phiếu phản ứng thế nào với tin tức thị trường. Khi bạn đã thoải mái với quy trình, hãy tăng dần số vốn.
+Mục tiêu 3 tháng đầu: làm quen bảng điện, hiểu cách đặt lệnh (ATO, ATC, LO), biết đọc khối lượng giao dịch và quan sát cổ phiếu phản ứng thế nào với tin tức thị trường. Bạn có thể tham khảo chi tiết hơn **[cách đầu tư chứng khoán](/dau-tu/co-phieu/cach-dau-tu-chung-khoan/)** bài bản cho người mới để rút ngắn thời gian tự học. Khi bạn đã thoải mái với quy trình, hãy tăng dần số vốn.
 
 ## Bài học 3 — Luôn đặt mức cắt lỗ trước khi mua
 
@@ -83,7 +83,7 @@ Hãy thử nghĩ thế này: bạn mua HPG ở giá 25.000 đồng/cổ phiếu.
 
 ## Bài học 4 — Đa dạng hóa danh mục thay vì dồn vào một mã
 
-Đặt toàn bộ vốn vào 1 cổ phiếu là cách nhanh nhất để mất tiền khi ngành đó gặp khó khăn. Nguyên tắc đa dạng hóa giúp giảm [rủi ro đầu tư chứng khoán](/dau-tu/co-phieu/rui-ro-dau-tu-chung-khoan/) bằng cách phân bổ vốn vào nhiều cổ phiếu khác ngành.
+Đặt toàn bộ vốn vào 1 cổ phiếu là cách nhanh nhất để mất tiền khi ngành đó gặp khó khăn. Nguyên tắc đa dạng hóa giúp giảm [rủi ro đầu tư chứng khoán](/dau-tu/co-phieu/rui-ro-dau-tu-chung-khoan/) bằng cách phân bổ vốn vào nhiều cổ phiếu khác ngành. Nếu chưa tự tin tự chọn cổ phiếu, bạn nên tìm hiểu **[cách đầu tư chứng chỉ quỹ](/dau-tu/etf/cach-dau-tu-chung-chi-quy/)** mở để phân tán rủi ro.
 
 Một danh mục mẫu cho F0 với 100 triệu đồng:
 

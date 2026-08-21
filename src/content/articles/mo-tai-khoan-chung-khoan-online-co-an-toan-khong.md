@@ -56,11 +56,11 @@ Nhiều người muốn tham gia thị trường chứng khoán nhưng lại ng�
 
 ## Mở tài khoản chứng khoán online có an toàn không?
 
-Khẳng định trực diện: Mở tài khoản chứng khoán online thông qua công nghệ định danh điện tử eKYC hoàn toàn an toàn và có giá trị pháp lý tương đương với việc ký hợp đồng giấy tại trụ sở công ty chứng khoán.
+Khẳng định trực diện: Mở tài khoản chứng khoán online thông qua công nghệ định danh điện tử eKYC hoàn toàn an toàn và có giá trị pháp lý tương đương với việc ký hợp đồng giấy tại trụ sở công ty chứng khoán. Việc xác lập giao kết online này dựa trên các quy định chặt chẽ về **[hợp đồng mở tài khoản chứng khoán](/dau-tu/co-phieu/hop-dong-mo-tai-khoan-chung-khoan/)** điện tử của pháp luật giao dịch điện tử.
 
 Hình thức mở tài khoản trực tuyến đã được Ủy ban Chứng khoán Nhà nước và Bộ Tài chính ban hành khung pháp lý công nhận chính thức từ nhiều năm nay.
 
-Dịch vụ này giúp người dân ở bất kỳ tỉnh thành nào tại Việt Nam cũng có thể sở hữu tài khoản đầu tư hợp pháp chỉ trong 3 phút mà không cần phải tốn thời gian di chuyển trực tiếp đến các chi nhánh ở Hà Nội hay TP.HCM.
+Dịch vụ này giúp người dân ở bất kỳ tỉnh thành nào tại Việt Nam cũng có thể sở hữu tài khoản đầu tư hợp pháp chỉ trong 3 phút mà không cần phải tốn thời gian di chuyển trực tiếp đến các chi nhánh ở Hà Nội hay TP.HCM. Nếu chưa chọn được sàn phù hợp, bạn nên xem xét **[nên mở tài khoản chứng khoán ở đâu](/dau-tu/co-phieu/nen-mo-tai-khoan-chung-khoan-o-dau/)** tốt nhất để tối ưu chi phí.
 
 ## Cơ chế bảo mật đằng sau công nghệ định danh eKYC
 
