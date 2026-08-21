@@ -4,8 +4,8 @@ milestone: v1.0
 milestone_name: milestone
 status: executing
 stopped_at: Phase 6 context gathered
-last_updated: "2026-06-13T03:54:18.192Z"
-last_activity: 2026-06-13 -- Phase 6 planning complete
+last_updated: "2026-08-21T15:21:00.000Z"
+last_activity: 2026-08-21 -- Completed quick task 260821-umf: Entity Graph schema Phase 1+2
 progress:
   total_phases: 6
   completed_phases: 5
@@ -28,7 +28,7 @@ See: .planning/PROJECT.md (updated 2026-06-10)
 Phase: 6
 Plan: Not started
 Status: Ready to execute
-Last activity: 2026-06-13 -- Phase 6 planning complete
+Last activity: 2026-08-21 -- Completed quick task 260821-umf: Entity Graph schema Phase 1+2
 
 Progress: [█████░░░░░] 50%
 
@@ -80,6 +80,7 @@ None yet.
 |---|-------------|------|--------|-----------|
 | 260615-u57 | Xây dựng layout riêng cho trang Reviews (reviewType schema, 4 shared components, 3 body layouts, ReviewLayout dispatcher, migrate listicle mẫu) | 2026-06-16 | f17fae8 | [260615-u57-...](./quick/260615-u57-x-y-d-ng-layout-ri-ng-cho-trang-reviews-/) |
 | 260710-9lc | Tắt deploy GitHub Pages (xoá deploy.yml) để ngừng bản trùng vilo0411.github.io/investing — còn bước thủ công tắt Pages trong Settings | 2026-07-09 | f48fcd7 | [260710-9lc-...](./quick/260710-9lc-t-t-deploy-github-pages/) |
+| 260821-umf | Entity Graph schema Phase 1+2: gộp 4 khối JSON-LD rời về một @graph/trang qua src/lib/schema.ts, thêm node WebPage làm trục, sửa 4 lỗi P0 (reviewedBy ghi đè Organization, dateReviewed không hợp lệ, sameAs gán nhầm, worstRating 0), tách Review khỏi Article, khử duplicate 2 layout | 2026-08-21 | 29a4614 | [260821-umf-...](./quick/260821-umf-phase-1-2-entity-graph-schema-refactor/) |
 
 ### Blockers/Concerns
 
@@ -97,7 +98,7 @@ Items acknowledged and carried forward from previous milestone close:
 
 ## Session Continuity
 
-Last activity: 2026-07-09 - Completed quick task 260710-9lc: Tắt deploy GitHub Pages (xoá deploy.yml)
+Last activity: 2026-08-21 - Completed quick task 260821-umf: Entity Graph schema Phase 1+2
 
 Last session: 2026-06-13T03:49:28.759Z
 Stopped at: Phase 6 context gathered
