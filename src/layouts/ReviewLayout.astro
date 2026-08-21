@@ -7,6 +7,7 @@ import ReviewJumpNav from "@/components/ReviewJumpNav.astro";
 import { categories, getCategoryPath, site, url } from "@/data/site";
 import { mergeBroker } from "@/data/brokers";
 import { author } from "@/data/authors";
+import { buildArticlePageNodes } from "@/lib/schema";
 import Breadcrumb from "@/components/Breadcrumb.astro";
 import KeyTakeaways from "@/components/KeyTakeaways.astro";
 import CitationBox from "@/components/CitationBox.astro";
@@ -70,112 +71,48 @@ const featuredImage = heroImage ?? categoryDefaultImages[entry.data.category] ??
 const articleUrl = new URL(Astro.url.pathname, Astro.site).toString();
 const ogImageUrl = new URL(featuredImage, Astro.site).toString();
 
-const sameAs = author.socialLinks
-  ? [author.socialLinks.linkedin, author.socialLinks.twitter].filter((v): v is string => Boolean(v))
-  : [];
-
-const structuredCitations = citations?.length
-  ? citations.map((c: { title: string; url?: string; publisher?: string; date?: string }) => ({
-      "@type": "CreativeWork",
-      "name": c.title,
-      ...(c.url ? { "url": c.url } : {}),
-      ...(c.publisher ? { "publisher": { "@type": "Organization", "name": c.publisher } } : {}),
-      ...(c.date ? { "datePublished": c.date } : {}),
-    }))
-  : sources;
-
 const isCompanyReview = entry.data.reviewType === "company";
 const primaryBroker = isCompanyReview ? mergedBrokers[0] : null;
 
-const articleSchema = {
-  "@context": "https://schema.org",
-  "@type": isCompanyReview ? ["Article", "Review"] : "Article",
-  "@id": `${articleUrl}#article`,
-  "headline": title,
-  "description": description,
-  "url": articleUrl,
-  "mainEntityOfPage": { "@type": "WebPage", "@id": articleUrl },
-  "datePublished": publishDate.toISOString(),
-  "dateModified": updatedDate.toISOString(),
-  "inLanguage": "vi",
-  "articleSection": categoryTitle,
-  "keywords": entry.data.tags?.join(", "),
-  ...(factCheckedDate ? { "dateReviewed": factCheckedDate.toISOString() } : {}),
-  ...(isCompanyReview && primaryBroker ? {
-    "itemReviewed": {
-      "@type": "FinancialService",
-      "name": primaryBroker.name,
-      ...(entry.data.companyInfo?.website ? { "url": entry.data.companyInfo.website } : {}),
-    },
-    "reviewRating": {
-      "@type": "Rating",
-      "ratingValue": primaryBroker.rating,
-      "bestRating": 5,
-      "worstRating": 0,
-    },
-  } : {}),
-  "image": {
-    "@type": "ImageObject",
-    "url": ogImageUrl,
-    "width": 1200,
-    "height": 630,
-  },
-  "author": {
-    "@type": "Person",
-    "@id": new URL(`/author/${author.slug}/#person`, Astro.site).toString(),
-    "name": author.name,
-    "url": new URL(`/author/${author.slug}/`, Astro.site).toString(),
-    "jobTitle": author.role,
-    "description": author.bio,
-    "knowsAbout": author.expertise,
-    "image": {
-      "@type": "ImageObject",
-      "url": new URL(author.avatar, Astro.site).toString(),
-    },
-    ...(sameAs.length > 0 ? { "sameAs": sameAs } : {}),
-  },
-  "reviewedBy": {
-    "@type": "Organization",
-    "@id": `${Astro.site}#organization`,
-    "name": site.editorialReviewer,
-    "url": new URL("/editorial-policy/", Astro.site).toString(),
-  },
-  "publisher": { "@id": `${Astro.site}#organization` },
-  "isPartOf": { "@id": `${Astro.site}#website` },
-  "citation": structuredCitations,
-};
+// Breadcrumb trail for the entity graph — absolute URLs, current page last.
+const schemaBreadcrumb = [
+  { name: "Trang chủ", item: Astro.site?.toString() },
+  ...(categoryGroup && categoryGroupPath
+    ? [{ name: categoryGroup, item: new URL(categoryGroupPath, Astro.site).toString() }]
+    : []),
+  { name: categoryTitle, item: new URL(categoryPath, Astro.site).toString() },
+  { name: title, item: articleUrl },
+];
 
-const faqSchema = entry.data.faq?.length
-  ? {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": entry.data.faq.map((item: { question: string; answer: string }) => ({
-        "@type": "Question",
-        "name": item.question,
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": item.answer,
+// Company reviews get a dedicated Review node; the Article node stays a plain
+// Article instead of being dual-typed as ["Article", "Review"].
+const pageNodes = buildArticlePageNodes({
+  siteUrl: Astro.site?.toString() ?? "",
+  pageUrl: articleUrl,
+  title,
+  description,
+  publishDate,
+  updatedDate,
+  factCheckedDate,
+  categoryTitle,
+  tags: entry.data.tags,
+  imageUrl: ogImageUrl,
+  breadcrumb: schemaBreadcrumb,
+  faq: entry.data.faq,
+  citations,
+  sources,
+  ...(isCompanyReview && primaryBroker
+    ? {
+        review: {
+          name: primaryBroker.name,
+          ...(entry.data.companyInfo?.website
+            ? { url: entry.data.companyInfo.website }
+            : {}),
+          ratingValue: primaryBroker.rating,
         },
-      })),
-    }
-  : null;
-
-const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": hasGroup
-    ? [
-        { "@type": "ListItem", "position": 1, "name": "Trang chủ", "item": Astro.site?.toString() },
-        { "@type": "ListItem", "position": 2, "name": categoryGroup, "item": new URL(categoryGroupPath, Astro.site).toString() },
-        { "@type": "ListItem", "position": 3, "name": categoryTitle, "item": new URL(categoryPath, Astro.site).toString() },
-        { "@type": "ListItem", "position": 4, "name": title, "item": articleUrl },
-      ]
-    : [
-        { "@type": "ListItem", "position": 1, "name": "Trang chủ", "item": Astro.site?.toString() },
-        { "@type": "ListItem", "position": 2, "name": categoryTitle, "item": new URL(categoryPath, Astro.site).toString() },
-        { "@type": "ListItem", "position": 3, "name": title, "item": articleUrl },
-      ],
-};
+      }
+    : {}),
+});
 
 const reviewType = entry.data.reviewType as "company" | "comparison" | "listicle" | undefined;
 
@@ -222,13 +159,8 @@ const navItems = [...structuredItems, ...proseOnly];
     modifiedTime: updatedDate?.toISOString(),
     author: author.name,
   }}
+  schemaNodes={pageNodes}
 >
-  <Fragment slot="head">
-    <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
-    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
-    {faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
-  </Fragment>
-
   <header class="article-header">
     <div class="article-container">
       <Breadcrumb items={breadcrumbItems} />
