@@ -120,6 +120,11 @@ Index toàn bộ bài đã publish tại `src/content/articles/`. Dùng cho inte
 | `gia-tri-noi-tai-cua-co-phieu` | Giá Trị Nội Tại Của Cổ Phiếu Là Gì? Chìa Khóa Đầu Tư Giá Trị | `/phan-tich/co-ban/gia-tri-noi-tai-cua-co-phieu/` | giá trị nội tại |
 | `ebitda-la-gi` | EBITDA Là Gì? Công Thức, Ý Nghĩa Và Cách Tính Cho F0 | `/phan-tich/co-ban/ebitda-la-gi/` | EBITDA là gì |
 | `chu-ky-kinh-te-la-gi` | Chu Kỳ Kinh Tế Là Gì? 4 Giai Đoạn & Cách Đầu Tư Cho F0 | `/phan-tich/co-ban/chu-ky-kinh-te-la-gi/` | chu kỳ kinh tế |
+| `cach-doc-bao-cao-tai-chinh` | Cách đọc báo cáo tài chính cho người mới từ cơ bản đến thực chiến | `/phan-tich/co-ban/cach-doc-bao-cao-tai-chinh/` | cách đọc báo cáo tài chính |
+| `cach-phan-tich-bao-cao-tai-chinh` | Cách phân tích báo cáo tài chính chuẩn xác để chọn cổ phiếu tăng trưởng | `/phan-tich/co-ban/cach-phan-tich-bao-cao-tai-chinh/` | cách phân tích báo cáo tài chính |
+| `bang-can-doi-ke-toan-nguon-von` | Bảng cân đối kế toán là gì? Hướng dẫn cách đọc tài sản và nguồn vốn | `/phan-tich/co-ban/bang-can-doi-ke-toan-nguon-von/` | bảng cân đối kế toán |
+| `bao-cao-luu-chuyen-tien-te-la-gi` | Báo cáo lưu chuyển tiền tệ là gì? Cấu tạo, phương pháp lập và cách đọc | `/phan-tich/co-ban/bao-cao-luu-chuyen-tien-te-la-gi/` | báo cáo lưu chuyển tiền tệ |
+| `dong-tien-tu-hoat-dong-kinh-doanh` | Dòng tiền từ hoạt động kinh doanh (CFO) là gì? Cách đánh giá cỗ máy in tiền | `/phan-tich/co-ban/dong-tien-tu-hoat-dong-kinh-doanh/` | dòng tiền từ hoạt động kinh doanh |
 
 ## Nhóm Phân tích — Kỹ thuật (`/phan-tich/ky-thuat/`)
 

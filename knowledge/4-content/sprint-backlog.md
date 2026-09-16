@@ -1,11 +1,26 @@
 # Sprint Backlog — Value Investing
 
-> **Cập nhật:** 2026-07-21
+> **Cập nhật:** 2026-09-16
 > **Trạng thái có thể dùng:** `Planned` | `In Progress` | `Outline-Approved` | `Drafting` | `Finalized`
 
 ---
 
-## 🏃 Sprint: 5 Bài Mới Hệ Thống (Hiện tại)
+## 🏃 Sprint: 5 Bài Báo Cáo Tài Chính (C14) (Hiện tại)
+
+**Mục tiêu:** Hoàn thiện cụm bài viết cốt lõi về Đọc & Phân tích Báo cáo tài chính, Bảng cân đối kế toán, Lưu chuyển tiền tệ và Dòng tiền kinh doanh phục vụ nhà đầu tư giá trị.
+**Thời gian thực hiện:** Hoàn thành
+
+| # | Keyword | Slug | Category | Status | URL đích |
+|---|---|---|---|---|---|
+| 1 | Cách đọc báo cáo tài chính | `cach-doc-bao-cao-tai-chinh` | `co-ban` | `Finalized` | `/phan-tich/co-ban/cach-doc-bao-cao-tai-chinh/` |
+| 2 | Cách phân tích báo cáo tài chính | `cach-phan-tich-bao-cao-tai-chinh` | `co-ban` | `Finalized` | `/phan-tich/co-ban/cach-phan-tich-bao-cao-tai-chinh/` |
+| 3 | Bảng cân đối kế toán | `bang-can-doi-ke-toan-nguon-von` | `co-ban` | `Finalized` | `/phan-tich/co-ban/bang-can-doi-ke-toan-nguon-von/` |
+| 4 | Báo cáo lưu chuyển tiền tệ là gì | `bao-cao-luu-chuyen-tien-te-la-gi` | `co-ban` | `Finalized` | `/phan-tich/co-ban/bao-cao-luu-chuyen-tien-te-la-gi/` |
+| 5 | Dòng tiền từ hoạt động kinh doanh | `dong-tien-tu-hoat-dong-kinh-doanh` | `co-ban` | `Finalized` | `/phan-tich/co-ban/dong-tien-tu-hoat-dong-kinh-doanh/` |
+
+---
+
+## 🏃 Sprint trước: 5 Bài Mới Hệ Thống
 
 **Mục tiêu:** Viết 5 bài viết mới thuộc các nhóm chủ đề cốt lõi (Đầu tư giá trị, DCA, Định giá, Chiến lược, Rủi ro) phục vụ độc giả F0.
 **Thời gian dự kiến:** Sprint 1 tuần

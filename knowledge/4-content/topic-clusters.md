@@ -301,14 +301,14 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 
 ## CLUSTER C14 — Đọc Báo Cáo Tài Chính
 
-**Hub:** Cách đọc báo cáo tài chính | `/phan-tich/co-ban/cach-doc-bao-cao-tai-chinh/` | `Planned`
+**Hub:** Cách đọc báo cáo tài chính | `/phan-tich/co-ban/cach-doc-bao-cao-tai-chinh/` | `Finalized`
 
 | Keyword (Spoke) | Slug | Status |
 |---|---|---|
-| Cách phân tích báo cáo tài chính | `cach-phan-tich-bao-cao-tai-chinh` | `Planned` |
-| Báo cáo lưu chuyển tiền tệ là gì | `bao-cao-luu-chuyen-tien-te-la-gi` | `Planned` |
-| Dòng tiền từ hoạt động kinh doanh | `dong-tien-tu-hoat-dong-kinh-doanh` | `Planned` |
-| Bảng cân đối kế toán nguồn vốn | `bang-can-doi-ke-toan-nguon-von` | `Planned` |
+| Cách phân tích báo cáo tài chính | `cach-phan-tich-bao-cao-tai-chinh` | `Finalized` |
+| Báo cáo lưu chuyển tiền tệ là gì | `bao-cao-luu-chuyen-tien-te-la-gi` | `Finalized` |
+| Dòng tiền từ hoạt động kinh doanh | `dong-tien-tu-hoat-dong-kinh-doanh` | `Finalized` |
+| Bảng cân đối kế toán nguồn vốn | `bang-can-doi-ke-toan-nguon-von` | `Finalized` |
 | Phân tích BCTC Vinamilk | `phan-tich-bao-cao-tai-chinh-vinamilk` | `Planned` |
 | Phân tích BCTC FPT | `phan-tich-bao-cao-tai-chinh-fpt` | `Planned` |
 | Phân tích BCTC Hòa Phát | `phan-tich-bao-cao-tai-chinh-hoa-phat` | `Planned` |
