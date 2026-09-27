@@ -67,6 +67,11 @@ Index toàn bộ bài đã publish tại `src/content/articles/`. Dùng cho inte
 | `nen-mo-tai-khoan-chung-khoan-o-dau` | Nên Mở Tài Khoản Chứng Khoán Ở Đâu Tốt Nhất 2026 Cho F0? | `/dau-tu/co-phieu/nen-mo-tai-khoan-chung-khoan-o-dau/` | nên mở tài khoản chứng khoán ở đâu |
 | `mot-nguoi-duoc-mo-bao-nhieu-tai-khoan-chung-khoan` | Một Người Được Mở Bao Nhiêu Tài Khoản Chứng Khoán Theo Luật? | `/dau-tu/co-phieu/mot-nguoi-duoc-mo-bao-nhieu-tai-khoan-chung-khoan/` | một người được mở bao nhiêu tài khoản chứng khoán |
 | `hop-dong-mo-tai-khoan-chung-khoan` | Hướng Dẫn Đọc Hợp Đồng Mở Tài Khoản Chứng Khoán Cho F0 | `/dau-tu/co-phieu/hop-dong-mo-tai-khoan-chung-khoan/` | hợp đồng mở tài khoản chứng khoán |
+| `gia-tran-gia-san` | Giá Trần Giá Sàn Là Gì? Biên Độ Dao Động Và Màu Sắc Bảng Điện | `/dau-tu/co-phieu/gia-tran-gia-san/` | giá trần giá sàn |
+| `so-sanh-co-phieu-va-chung-chi-quy-dau-tu` | So Sánh Cổ Phiếu Và Chứng Chỉ Quỹ: Lựa Chọn Nào Cho Người Mới? | `/dau-tu/co-phieu/so-sanh-co-phieu-va-chung-chi-quy-dau-tu/` | so sánh cổ phiếu và chứng chỉ quỹ |
+| `cat-lo-la-gi` | Cắt Lỗ Là Gì? 3 Quy Tắc Cắt Lỗ Sống Còn Trong Chứng Khoán | `/dau-tu/co-phieu/cat-lo-la-gi/` | cắt lỗ |
+| `ban-giai-chap-co-phieu-la-gi` | Bán Giải Chấp Cổ Phiếu Là Gì? Force Sell Và Cách Phòng Ngừa | `/dau-tu/co-phieu/ban-giai-chap-co-phieu-la-gi/` | bán giải chấp cổ phiếu |
+| `full-margin-la-gi` | Full Margin Là Gì? Con Dao Hai Lưỡi Khi Dùng Hết Đòn Bẩy | `/dau-tu/co-phieu/full-margin-la-gi/` | full margin |
 
 ## Nhóm Đầu tư — Quỹ ETF (`/dau-tu/etf/`)
 

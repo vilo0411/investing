@@ -40,6 +40,11 @@ Tài liệu ghi nhận toàn bộ lịch sử chỉnh sửa bài viết dựa tr
 | 2026-08-21 | `cach-dau-tu-chung-chi-quy` | Người dùng duyệt `/approve` (Batch 5 bài - Bài 3) | Finalize bài viết, tải ảnh Unsplash, tạo ảnh bìa Playwright, dọn dẹp file tạm, cập nhật anchor-index & topic-clusters, link wheel | **Hoàn thành** |
 | 2026-08-21 | `mot-nguoi-duoc-mo-bao-nhieu-tai-khoan-chung-khoan` | Người dùng duyệt `/approve` (Batch 5 bài - Bài 4) | Finalize bài viết, tải ảnh Unsplash, tạo ảnh bìa Playwright, dọn dẹp file tạm, cập nhật anchor-index & topic-clusters, link wheel | **Hoàn thành** |
 | 2026-08-21 | `hop-dong-mo-tai-khoan-chung-khoan` | Người dùng duyệt `/approve` (Batch 5 bài - Bài 5) | Finalize bài viết, tải ảnh Unsplash, tạo ảnh bìa Playwright, dọn dẹp file tạm, cập nhật anchor-index & topic-clusters, link wheel | **Hoàn thành** |
+| 2026-09-27 | `gia-tran-gia-san` | Viết mới (--auto --sprint: 5 bài) | Finalize bài viết, tải ảnh Unsplash, tạo ảnh bìa Playwright, dọn dẹp file tạm, cập nhật anchor-index & topic-clusters | **Hoàn thành** |
+| 2026-09-27 | `so-sanh-co-phieu-va-chung-chi-quy-dau-tu` | Viết mới (--auto --sprint: 5 bài) | Finalize bài viết, tải ảnh Unsplash, tạo ảnh bìa Playwright, dọn dẹp file tạm, cập nhật anchor-index & topic-clusters | **Hoàn thành** |
+| 2026-09-27 | `cat-lo-la-gi` | Viết mới (--auto --sprint: 5 bài) | Finalize bài viết, tải ảnh Unsplash, tạo ảnh bìa Playwright, dọn dẹp file tạm, cập nhật anchor-index & topic-clusters | **Hoàn thành** |
+| 2026-09-27 | `ban-giai-chap-co-phieu-la-gi` | Viết mới (--auto --sprint: 5 bài) | Finalize bài viết, tải ảnh Unsplash, tạo ảnh bìa Playwright, dọn dẹp file tạm, cập nhật anchor-index & topic-clusters | **Hoàn thành** |
+| 2026-09-27 | `full-margin-la-gi` | Viết mới (--auto --sprint: 5 bài) | Finalize bài viết, tải ảnh Unsplash, tạo ảnh bìa Playwright, dọn dẹp file tạm, cập nhật anchor-index & topic-clusters | **Hoàn thành** |
 
 ---
 

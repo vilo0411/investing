@@ -1,11 +1,26 @@
 # Sprint Backlog — Value Investing
 
-> **Cập nhật:** 2026-09-16
+> **Cập nhật:** 2026-09-27
 > **Trạng thái có thể dùng:** `Planned` | `In Progress` | `Outline-Approved` | `Drafting` | `Finalized`
 
 ---
 
-## 🏃 Sprint: 5 Bài Báo Cáo Tài Chính (C14) (Hiện tại)
+## 🏃 Sprint: 5 Bài Quản Trị Rủi Ro & Giao Dịch An Toàn F0 (Hiện tại)
+
+**Mục tiêu:** Hoàn thiện nhóm bài viết cốt lõi về cơ chế bảng điện, so sánh sản phẩm đầu tư, kỷ luật cắt lỗ và quản trị đòn bẩy margin bảo vệ vốn cho F0.
+**Thời gian thực hiện:** Hoàn thành (2026-09-27)
+
+| # | Keyword | Slug | Category | Status | URL đích |
+|---|---|---|---|---|---|
+| 1 | Giá trần giá sàn là gì | `gia-tran-gia-san` | `co-phieu` | `Finalized` | `/dau-tu/co-phieu/gia-tran-gia-san/` |
+| 2 | So sánh cổ phiếu và chứng chỉ quỹ | `so-sanh-co-phieu-va-chung-chi-quy-dau-tu` | `co-phieu` | `Finalized` | `/dau-tu/co-phieu/so-sanh-co-phieu-va-chung-chi-quy-dau-tu/` |
+| 3 | Cắt lỗ là gì | `cat-lo-la-gi` | `co-phieu` | `Finalized` | `/dau-tu/co-phieu/cat-lo-la-gi/` |
+| 4 | Bán giải chấp cổ phiếu là gì | `ban-giai-chap-co-phieu-la-gi` | `co-phieu` | `Finalized` | `/dau-tu/co-phieu/ban-giai-chap-co-phieu-la-gi/` |
+| 5 | Full margin là gì | `full-margin-la-gi` | `co-phieu` | `Finalized` | `/dau-tu/co-phieu/full-margin-la-gi/` |
+
+---
+
+## 🏃 Sprint trước: 5 Bài Báo Cáo Tài Chính (C14)
 
 **Mục tiêu:** Hoàn thiện cụm bài viết cốt lõi về Đọc & Phân tích Báo cáo tài chính, Bảng cân đối kế toán, Lưu chuyển tiền tệ và Dòng tiền kinh doanh phục vụ nhà đầu tư giá trị.
 **Thời gian thực hiện:** Hoàn thành

@@ -195,7 +195,7 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 | Quỹ thụ động là gì | `quy-thu-dong-la-gi` | `Finalized` | |
 | Nên đầu tư quỹ mở hay quỹ ETF | `nen-dau-tu-quy-mo-hay-quy-etf` | `Finalized` | |
 | NAV là gì | `nav-la-gi` | `Finalized` | |
-| So sánh cổ phiếu và chứng chỉ quỹ | `so-sanh-co-phieu-va-chung-chi-quy-dau-tu` | `Planned` | |
+| So sánh cổ phiếu và chứng chỉ quỹ | `so-sanh-co-phieu-va-chung-chi-quy-dau-tu` | `Finalized` | ✅ Đã publish |
 
 ---
 
@@ -236,14 +236,14 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 
 | Keyword (Spoke) | Slug | Status | Ghi chú |
 |---|---|---|---|
-| Call margin là gì | `call-margin-la-gi` | `Planned` | |
+| Call margin là gì | `call-margin-la-gi` | `Finalized` | ✅ Đã publish |
 | Cắt margin là gì | `cat-margin-la-gi` | `Planned` | |
-| Full margin là gì | `full-margin-la-gi` | `Planned` | |
-| Bán giải chấp cổ phiếu là gì | `ban-giai-chap-co-phieu-la-gi` | `Planned` | |
-| Cắt lỗ là gì | `cat-lo-la-gi` | `Planned` | |
+| Full margin là gì | `full-margin-la-gi` | `Finalized` | ✅ Đã publish |
+| Bán giải chấp cổ phiếu là gì | `ban-giai-chap-co-phieu-la-gi` | `Finalized` | ✅ Đã publish |
+| Cắt lỗ là gì | `cat-lo-la-gi` | `Finalized` | ✅ Đã publish |
 | Các loại lệnh trong chứng khoán | `cac-loai-lenh-trong-chung-khoan` | `Finalized` | ✅ Đã publish |
 | Giờ giao dịch chứng khoán | `gio-giao-dich-chung-khoan` | `Finalized` | |
-| Giá trần giá sàn là gì | `gia-tran-gia-san` | `Planned` | |
+| Giá trần giá sàn là gì | `gia-tran-gia-san` | `Finalized` | ✅ Đã publish |
 | Biên độ giao dịch chứng khoán | `bien-do-giao-dich-chung-khoan` | `Planned` | |
 
 ---
