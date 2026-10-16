@@ -5,7 +5,38 @@
 
 ---
 
-## 🏃 Sprint: 5 Bài Quản Trị Rủi Ro & Giao Dịch An Toàn F0 (Hiện tại)
+## 🏃 Sprint: 5 Bài Phân Tích Kỹ Thuật & Chỉ Báo Nền Tảng (C16) (Hiện tại)
+
+**Mục tiêu:** Hoàn thiện cụm bài viết cốt lõi về các chỉ báo xu hướng, đường trung bình động và vùng giá quan trọng (Đường EMA, Đường MA200, Golden Cross, Bollinger Bands, Hỗ trợ & Kháng cự) phục vụ nhà đầu tư F0 theo đuổi trường phái kết hợp hoặc phân tích xu hướng thị trường.
+**Thời gian thực hiện:** Hoàn thành (2026-10-15)
+**Chế độ thực thi:** `--auto` (Tự động hoàn thiện chuỗi 5 bài)
+
+| # | Keyword | Slug | Category | Status | URL đích |
+|---|---|---|---|---|---|
+| 1 | Đường EMA | `duong-ema` | `ky-thuat` | `Finalized` | `/phan-tich/ky-thuat/duong-ema/` |
+| 2 | Đường MA200 | `duong-ma200` | `ky-thuat` | `Finalized` | `/phan-tich/ky-thuat/duong-ma200/` |
+| 3 | Golden Cross là gì | `golden-cross-la-gi` | `ky-thuat` | `Finalized` | `/phan-tich/ky-thuat/golden-cross-la-gi/` |
+| 4 | Bollinger Bands là gì | `chi-bao-bollinger-bands` | `ky-thuat` | `Finalized` | `/phan-tich/ky-thuat/chi-bao-bollinger-bands/` |
+| 5 | Hỗ trợ kháng cự là gì | `ho-tro-khang-cu-la-gi` | `ky-thuat` | `Finalized` | `/phan-tich/ky-thuat/ho-tro-khang-cu-la-gi/` |
+
+---
+
+## 🏃 Sprint trước: 5 Bài Phân Tích Cơ Bản & Chỉ Số Tài Chính (C13)
+
+**Mục tiêu:** Hoàn thiện cụm bài viết cốt lõi về chỉ số sinh lời nâng cao và sức khỏe tài chính doanh nghiệp (ROIC, Biên lợi nhuận gộp, Biên lợi nhuận ròng, Hệ số thanh toán, Cơ cấu vốn) phục vụ nhà đầu tư giá trị F0.
+**Thời gian thực hiện:** Hoàn thành (2026-10-03)
+
+| # | Keyword | Slug | Category | Status | URL đích |
+|---|---|---|---|---|---|
+| 1 | ROIC là gì | `roic-la-gi` | `co-ban` | `Finalized` | `/phan-tich/co-ban/roic-la-gi/` |
+| 2 | Biên lợi nhuận gộp là gì | `bien-loi-nhuan-gop-la-gi` | `co-ban` | `Finalized` | `/phan-tich/co-ban/bien-loi-nhuan-gop-la-gi/` |
+| 3 | Biên lợi nhuận ròng | `bien-loi-nhuan-rong` | `co-ban` | `Finalized` | `/phan-tich/co-ban/bien-loi-nhuan-rong/` |
+| 4 | Hệ số thanh toán là gì | `he-so-thanh-toan-la-gi` | `co-ban` | `Finalized` | `/phan-tich/co-ban/he-so-thanh-toan-la-gi/` |
+| 5 | Cơ cấu vốn là gì | `co-cau-von-la-gi` | `co-ban` | `Finalized` | `/phan-tich/co-ban/co-cau-von-la-gi/` |
+
+---
+
+## 🏃 Sprint trước: 5 Bài Quản Trị Rủi Ro & Giao Dịch An Toàn F0
 
 **Mục tiêu:** Hoàn thiện nhóm bài viết cốt lõi về cơ chế bảng điện, so sánh sản phẩm đầu tư, kỷ luật cắt lỗ và quản trị đòn bẩy margin bảo vệ vốn cho F0.
 **Thời gian thực hiện:** Hoàn thành (2026-09-27)

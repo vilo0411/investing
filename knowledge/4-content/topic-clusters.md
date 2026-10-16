@@ -284,18 +284,18 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 |---|---|---|---|
 | ROE là gì | `roe-la-gi` | `Finalized` | ✅ Đã publish |
 | ROA là gì | `roa-la-gi` | `Finalized` | ✅ Đã publish |
-| ROIC là gì | `roic-la-gi` | `Planned` | |
+| ROIC là gì | `roic-la-gi` | `Finalized` | ✅ Đã publish |
 | EBITDA là gì | `ebitda-la-gi` | `Finalized` | |
-| Biên lợi nhuận gộp là gì | `bien-loi-nhuan-gop-la-gi` | `Planned` | |
-| Biên lợi nhuận ròng | `bien-loi-nhuan-rong` | `Planned` | |
+| Biên lợi nhuận gộp là gì | `bien-loi-nhuan-gop-la-gi` | `Finalized` | ✅ Đã publish |
+| Biên lợi nhuận ròng | `bien-loi-nhuan-rong` | `Finalized` | ✅ Đã publish |
 
 ### Chỉ số Thanh khoản & Nợ
 | Keyword | Slug | Status |
 |---|---|---|
-| Hệ số thanh toán là gì | `he-so-thanh-toan-la-gi` | `Planned` |
+| Hệ số thanh toán là gì | `he-so-thanh-toan-la-gi` | `Finalized` |
 | Current ratio là gì | `current-ratio-la-gi` | `Planned` |
 | Tỷ số nợ trên tổng tài sản | `ty-so-no-tren-tong-tai-san` | `Planned` |
-| Cơ cấu vốn là gì | `co-cau-von-la-gi` | `Planned` |
+| Cơ cấu vốn là gì | `co-cau-von-la-gi` | `Finalized` |
 
 ---
 
@@ -347,14 +347,14 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 | Keyword | Slug | Status |
 |---|---|---|
 | Đường MA là gì | `duong-ma-la-gi` | `Finalized` |
-| Đường EMA | `duong-ema` | `Planned` |
-| Đường MA200 | `duong-ma200` | `Planned` |
-| Golden Cross là gì | `golden-cross-la-gi` | `Planned` |
+| Đường EMA | `duong-ema` | `Finalized` |
+| Đường MA200 | `duong-ma200` | `Finalized` |
+| Golden Cross là gì | `golden-cross-la-gi` | `Finalized` |
 
 ### Bollinger Bands
 | Keyword | Slug | Status |
 |---|---|---|
-| Bollinger Bands là gì | `chi-bao-bollinger-bands` | `Planned` |
+| Bollinger Bands là gì | `chi-bao-bollinger-bands` | `Finalized` |
 | Bollinger Band Squeeze | `chi-bao-bollinger-band-squeeze-la-gi` | `Planned` |
 
 ### Mô hình giá
@@ -365,7 +365,7 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 | Mô hình 2 đáy | `mo-hinh-2-day` | `Planned` |
 | Mô hình cốc tay cầm | `mo-hinh-coc-tay-cam` | `Planned` |
 | Mô hình tam giác | `mo-hinh-tam-giac` | `Planned` |
-| Hỗ trợ kháng cự là gì | `ho-tro-khang-cu-la-gi` | `Planned` |
+| Hỗ trợ kháng cự là gì | `ho-tro-khang-cu-la-gi` | `Finalized` |
 | Breakout trong chứng khoán | `breakout-trong-chung-khoan-la-gi` | `Planned` |
 | Ichimoku là gì | `ichimoku-la-gi` | `Planned` |
 | Sóng Elliott là gì | `song-elliott-la-gi` | `Planned` |

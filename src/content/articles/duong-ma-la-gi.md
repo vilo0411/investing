@@ -69,7 +69,7 @@ Trong phân tích kỹ thuật, có hai loại đường trung bình động đ�
 
 **Đường trung bình động giản đơn SMA**. Đường SMA được tính bằng cách lấy trung bình cộng đơn thuần giá đóng cửa của cổ phiếu trong một số phiên nhất định. Vì chia đều trọng số, SMA phản ứng khá chậm rãi với các biến động giá đột ngột trong ngắn hạn. Điều này giúp SMA giảm thiểu tối đa các tín hiệu giao dịch giả, giúp bạn nhìn nhận xu hướng dài hạn một cách an toàn và chắc chắn.
 
-**Đường trung bình động lũy thừa EMA**. Khác với SMA, đường EMA gán trọng số cao hơn cho các phiên giao dịch gần nhất. Công thức tính toán phức tạp này giúp EMA phản ứng cực kỳ nhạy bén với những thay đổi giá mới nhất trên thị trường. Điểm mạnh của EMA là giúp bạn sớm nhận diện các điểm đảo chiều xu hướng, tuy nhiên nó cũng đi kèm với rủi ro xuất hiện nhiều tín hiệu nhiễu hơn.
+**Đường trung bình động lũy thừa EMA**. Khác với SMA, [đường EMA](/phan-tich/ky-thuat/duong-ema/) gán trọng số cao hơn cho các phiên giao dịch gần nhất. Công thức tính toán phức tạp này giúp EMA phản ứng cực kỳ nhạy bén với những thay đổi giá mới nhất trên thị trường. Điểm mạnh của EMA là giúp bạn sớm nhận diện các điểm đảo chiều xu hướng, tuy nhiên nó cũng đi kèm với rủi ro xuất hiện nhiều tín hiệu nhiễu hơn.
 
 ![Biểu đồ giá cổ phiếu hiển thị các đường trung bình động MA](./images/duong-ma-la-gi/featured-01.jpg)
 *Ảnh: Maxim Hopman / Unsplash*
@@ -81,7 +81,7 @@ Con số đi kèm sau chữ MA đại diện cho số phiên giao dịch đượ
 
 Các chu kỳ ngắn như MA10 hoặc MA20 thường được dùng để theo dõi xu hướng ngắn hạn của cổ phiếu. Đường MA20 được xem là đường xu hướng "chuẩn" cho các quyết định lướt sóng ngắn hạn của đa số nhà giao dịch cá nhân. Các nhà giao dịch ngắn hạn thường chú trọng đến đường MA20 vì nó đại diện cho trung bình giá của một tháng giao dịch thực tế.
 
-Chu kỳ trung hạn MA50 giúp bạn xác định xu hướng của cổ phiếu trong vòng vài tháng. Trong khi đó, đường dài hạn MA200 được ví như "bức tường thành" quyết định xu hướng dài hạn của thị trường chung. Các quỹ đầu tư lớn thường sử dụng MA200 làm mốc phân định giữa thị trường bò tót và gấu ngủ đông. Khi giá cổ phiếu nằm trên MA200, thị trường đang ở trong xu hướng tăng dài hạn và ngược lại.
+Chu kỳ trung hạn MA50 giúp bạn xác định xu hướng của cổ phiếu trong vòng vài tháng. Trong khi đó, [đường MA200](/phan-tich/ky-thuat/duong-ma200/) được ví như bức tường thành quyết định xu hướng dài hạn của thị trường chung. Các quỹ đầu tư lớn thường sử dụng MA200 làm mốc phân định giữa thị trường bò tót và gấu ngủ đông. Khi giá cổ phiếu nằm trên MA200, thị trường đang ở trong xu hướng tăng dài hạn và ngược lại.
 
 
 ## Cách sử dụng đường MA trong thực chiến giao dịch
@@ -90,9 +90,9 @@ Khi đã hiểu rõ phân loại và chu kỳ, bạn có thể áp dụng đư�
 
 **Xác định hướng đi của xu hướng**. Khi đường MA dốc lên và giá nằm trên đường MA, thị trường đang trong xu hướng tăng. Ngược lại, khi đường MA dốc xuống và giá nằm dưới đường MA, thị trường đang trong xu hướng giảm chủ đạo. Ngoài ra, độ dốc của đường MA20 còn giúp bạn xác định sức mạnh của xu hướng hiện tại.
 
-**Làm ngưỡng hỗ trợ hoặc kháng cự động**. Trong một xu hướng tăng, mỗi khi giá điều chỉnh giảm về chạm đường MA rồi bật lên, đường MA đó đóng vai trò là ngưỡng hỗ trợ động. Ngược lại, trong xu hướng giảm, đường MA sẽ là ngưỡng kháng cự ngăn cản đà hồi phục của giá. Nhiều nhà giao dịch chuyên nghiệp cũng dùng mốc kháng cự động này làm điểm dừng lỗ di động.
+**Làm ngưỡng hỗ trợ hoặc kháng cự động**. Trong một xu hướng tăng, mỗi khi giá điều chỉnh giảm về chạm đường MA rồi bật lên, đường MA đó đóng vai trò là ngưỡng [hỗ trợ hoặc kháng cự](/phan-tich/ky-thuat/ho-tro-khang-cu-la-gi/) động. Ngược lại, trong xu hướng giảm, đường MA sẽ là ngưỡng kháng cự ngăn cản đà hồi phục của giá. Nhiều nhà giao dịch chuyên nghiệp cũng dùng mốc kháng cự động này làm điểm dừng lỗ di động.
 
-**Giao cắt vàng và giao cắt tử thần**. Tín hiệu mua xuất hiện khi đường MA ngắn hạn cắt từ dưới lên đường MA dài hạn (Golden Cross). Ngược lại, tín hiệu bán xuất hiện khi đường ngắn hạn cắt xuống dưới đường dài hạn (Death Cross). Sự giao cắt này đại diện cho sự thay đổi về mặt động lượng giá.
+**Giao cắt vàng và giao cắt tử thần**. Tín hiệu mua xuất hiện khi đường MA ngắn hạn cắt từ dưới lên đường MA dài hạn ([Golden Cross](/phan-tich/ky-thuat/golden-cross-la-gi/)). Ngược lại, tín hiệu bán xuất hiện khi đường ngắn hạn cắt xuống dưới đường dài hạn (Death Cross). Sự giao cắt này đại diện cho sự thay đổi về mặt động lượng giá.
 
 ![Cầu Vàng tại San Francisco lúc hoàng hôn](./images/duong-ma-la-gi/golden-gate-bridge-sunset.jpg)
 *Ảnh: Joonyeop Baek / Unsplash*

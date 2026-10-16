@@ -130,6 +130,11 @@ Index toàn bộ bài đã publish tại `src/content/articles/`. Dùng cho inte
 | `bang-can-doi-ke-toan-nguon-von` | Bảng cân đối kế toán là gì? Hướng dẫn cách đọc tài sản và nguồn vốn | `/phan-tich/co-ban/bang-can-doi-ke-toan-nguon-von/` | bảng cân đối kế toán |
 | `bao-cao-luu-chuyen-tien-te-la-gi` | Báo cáo lưu chuyển tiền tệ là gì? Cấu tạo, phương pháp lập và cách đọc | `/phan-tich/co-ban/bao-cao-luu-chuyen-tien-te-la-gi/` | báo cáo lưu chuyển tiền tệ |
 | `dong-tien-tu-hoat-dong-kinh-doanh` | Dòng tiền từ hoạt động kinh doanh (CFO) là gì? Cách đánh giá cỗ máy in tiền | `/phan-tich/co-ban/dong-tien-tu-hoat-dong-kinh-doanh/` | dòng tiền từ hoạt động kinh doanh |
+| `roic-la-gi` | ROIC là gì? Thước đo vàng chọn cổ phiếu của Warren Buffett | `/phan-tich/co-ban/roic-la-gi/` | chỉ số ROIC |
+| `bien-loi-nhuan-gop-la-gi` | Biên lợi nhuận gộp là gì? Thước đo quyền lực định giá | `/phan-tich/co-ban/bien-loi-nhuan-gop-la-gi/` | biên lợi nhuận gộp |
+| `bien-loi-nhuan-rong` | Biên lợi nhuận ròng là gì? Thước đo tiền thực bỏ túi | `/phan-tich/co-ban/bien-loi-nhuan-rong/` | biên lợi nhuận ròng |
+| `he-so-thanh-toan-la-gi` | Hệ số thanh toán là gì? 3 chỉ số đo lường nguy cơ vỡ nợ | `/phan-tich/co-ban/he-so-thanh-toan-la-gi/` | hệ số thanh toán |
+| `co-cau-von-la-gi` | Cơ cấu vốn là gì? Mô hình tối ưu và cách phân tích đòn bẩy | `/phan-tich/co-ban/co-cau-von-la-gi/` | cơ cấu vốn |
 
 ## Nhóm Phân tích — Kỹ thuật (`/phan-tich/ky-thuat/`)
 
@@ -138,7 +143,12 @@ Index toàn bộ bài đã publish tại `src/content/articles/`. Dùng cho inte
 | `rsi-la-gi` | RSI là gì? | `/phan-tich/ky-thuat/rsi-la-gi/` | chỉ báo RSI |
 | `phan-tich-ky-thuat-la-gi` | Phân tích kỹ thuật là gì? | `/phan-tich/ky-thuat/phan-tich-ky-thuat-la-gi/` | phân tích kỹ thuật |
 | `duong-ma-la-gi` | Đường MA là gì? Hướng dẫn cách dùng đường trung bình động | `/phan-tich/ky-thuat/duong-ma-la-gi/` | đường MA là gì |
+| `duong-ema` | Đường EMA là gì? Hướng dẫn cách dùng chỉ báo EMA | `/phan-tich/ky-thuat/duong-ema/` | đường EMA là gì, chỉ báo EMA |
+| `duong-ma200` | Đường MA200 là gì? Hướng dẫn cách dùng đường trung bình 200 ngày | `/phan-tich/ky-thuat/duong-ma200/` | đường MA200 là gì, đường MA200 |
+| `golden-cross-la-gi` | Golden Cross là gì? Ý nghĩa điểm giao cắt vàng và chiến lược giao dịch | `/phan-tich/ky-thuat/golden-cross-la-gi/` | Golden Cross là gì, điểm giao cắt vàng |
 | `macd-la-gi` | Chỉ báo MACD là gì? Cách sử dụng MACD hiệu quả cho F0 | `/phan-tich/ky-thuat/macd-la-gi/` | chỉ báo MACD |
+| `chi-bao-bollinger-bands` | Bollinger Bands là gì? Hướng dẫn cách dùng dải Bollinger thực chiến | `/phan-tich/ky-thuat/chi-bao-bollinger-bands/` | Bollinger Bands là gì, dải Bollinger |
+| `ho-tro-khang-cu-la-gi` | Hỗ trợ kháng cự là gì? Bản chất và cách xác định trong chứng khoán | `/phan-tich/ky-thuat/ho-tro-khang-cu-la-gi/` | hỗ trợ kháng cự là gì, vùng hỗ trợ, ngưỡng kháng cự |
 
 ## Nhóm Reviews (`/reviews/`)
 

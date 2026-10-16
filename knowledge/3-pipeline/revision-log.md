@@ -45,6 +45,16 @@ Tài liệu ghi nhận toàn bộ lịch sử chỉnh sửa bài viết dựa tr
 | 2026-09-27 | `cat-lo-la-gi` | Viết mới (--auto --sprint: 5 bài) | Finalize bài viết, tải ảnh Unsplash, tạo ảnh bìa Playwright, dọn dẹp file tạm, cập nhật anchor-index & topic-clusters | **Hoàn thành** |
 | 2026-09-27 | `ban-giai-chap-co-phieu-la-gi` | Viết mới (--auto --sprint: 5 bài) | Finalize bài viết, tải ảnh Unsplash, tạo ảnh bìa Playwright, dọn dẹp file tạm, cập nhật anchor-index & topic-clusters | **Hoàn thành** |
 | 2026-09-27 | `full-margin-la-gi` | Viết mới (--auto --sprint: 5 bài) | Finalize bài viết, tải ảnh Unsplash, tạo ảnh bìa Playwright, dọn dẹp file tạm, cập nhật anchor-index & topic-clusters | **Hoàn thành** |
+| 2026-10-03 | `roic-la-gi` | Người dùng duyệt `/approve` (Sprint C13 - Bài 1/5) | Finalize bài viết, tải 2 ảnh Unsplash, tạo ảnh bìa Playwright, khép vành Link Wheel 2 chiều, dọn dẹp file tạm, cập nhật anchor-index & topic-clusters | **Hoàn thành** |
+| 2026-10-03 | `bien-loi-nhuan-gop-la-gi` | Người dùng duyệt `/approve` (Sprint C13 - Bài 2/5) | Finalize bài viết, tải 2 ảnh Unsplash, tạo ảnh bìa Playwright, khép vành Link Wheel 2 chiều, dọn dẹp file tạm, cập nhật anchor-index & topic-clusters | **Hoàn thành** |
+| 2026-10-03 | `bien-loi-nhuan-rong` | Người dùng duyệt `tự động approve hết` (Sprint C13 - Bài 3/5) | Finalize bài viết, tải 2 ảnh Unsplash, tạo ảnh bìa Playwright, khép vành Link Wheel 2 chiều, dọn dẹp file tạm, cập nhật anchor-index & topic-clusters | **Hoàn thành** |
+| 2026-10-03 | `he-so-thanh-toan-la-gi` | Người dùng duyệt `tự động approve hết` (Sprint C13 - Bài 4/5) | Finalize bài viết, tải 2 ảnh Unsplash, tạo ảnh bìa Playwright, khép vành Link Wheel 2 chiều, dọn dẹp file tạm, cập nhật anchor-index & topic-clusters | **Hoàn thành** |
+| 2026-10-03 | `co-cau-von-la-gi` | Người dùng duyệt `tự động approve hết` (Sprint C13 - Bài 5/5) | Finalize bài viết, tải 2 ảnh Unsplash, tạo ảnh bìa Playwright, khép vành Link Wheel 2 chiều, dọn dẹp file tạm, cập nhật anchor-index & topic-clusters | **Hoàn thành** |
+| 2026-10-15 | `duong-ema` | Người dùng duyệt `/approve` (Sprint C16 - Bài 1/5) | Finalize bài viết, tải 2 ảnh Unsplash, tạo ảnh bìa Playwright, dọn dẹp file tạm, cập nhật anchor-index & topic-clusters, khép vành Link Wheel | **Hoàn thành** |
+| 2026-10-15 | `duong-ma200` | Tự động duyệt `--auto` (Sprint C16 - Bài 2/5) | Finalize bài viết, tải 2 ảnh Unsplash, tạo ảnh bìa Playwright, dọn dẹp file tạm, cập nhật anchor-index & topic-clusters, khép vành Link Wheel | **Hoàn thành** |
+| 2026-10-15 | `golden-cross-la-gi` | Tự động duyệt `--auto` (Sprint C16 - Bài 3/5) | Finalize bài viết, tải 2 ảnh Unsplash, tạo ảnh bìa Playwright, dọn dẹp file tạm, cập nhật anchor-index & topic-clusters, khép vành Link Wheel | **Hoàn thành** |
+| 2026-10-15 | `chi-bao-bollinger-bands` | Tự động duyệt `--auto` (Sprint C16 - Bài 4/5) | Finalize bài viết, tải 2 ảnh Unsplash, tạo ảnh bìa Playwright, dọn dẹp file tạm, cập nhật anchor-index & topic-clusters, khép vành Link Wheel | **Hoàn thành** |
+| 2026-10-15 | `ho-tro-khang-cu-la-gi` | Tự động duyệt `--auto` (Sprint C16 - Bài 5/5) | Finalize bài viết, tải 2 ảnh Unsplash, tạo ảnh bìa Playwright, dọn dẹp file tạm, cập nhật anchor-index & topic-clusters, khép vành Link Wheel | **Hoàn thành** |
 
 ---
 

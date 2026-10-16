@@ -43,7 +43,7 @@ Mục tiêu chính của MACD là giúp bạn nhận biết liệu thị trườ
 
 Giao diện chỉ báo MACD trên đồ thị kỹ thuật gồm bốn thành phần riêng biệt hoạt động đồng thời cùng nhau.
 
-**Đường MACD chính**. Đây là đường đại diện cho sự chênh lệch giữa hai đường trung bình động lũy thừa (EMA) chu kỳ khác nhau. Công thức chuẩn thường lấy giá trị của đường EMA 12 ngày trừ đi đường EMA 26 ngày. Đường này di chuyển nhanh và nhạy bén với các biến động giá ngắn hạn. Việc sử dụng hai đường trung bình động lũy thừa giúp chỉ báo này bám sát xu hướng giá thực tế của cổ phiếu nhanh hơn so với các phương pháp tính toán trung bình cộng thông thường khác.
+**Đường MACD chính**. Đây là đường đại diện cho sự chênh lệch giữa hai đường trung bình động lũy thừa (EMA) chu kỳ khác nhau. Công thức chuẩn thường lấy giá trị của [đường EMA](/phan-tich/ky-thuat/duong-ema/) 12 ngày trừ đi đường EMA 26 ngày. Đường này di chuyển nhanh và nhạy bén với các biến động giá ngắn hạn. Việc sử dụng hai đường trung bình động lũy thừa giúp chỉ báo này bám sát xu hướng giá thực tế của cổ phiếu nhanh hơn so với các phương pháp tính toán trung bình cộng thông thường khác.
 
 **Đường tín hiệu Signal Line**. Đường này thực chất là đường EMA chu kỳ 9 ngày của chính đường MACD đã được tính ở trên. Đường tín hiệu di chuyển chậm hơn, mượt mà hơn và đóng vai trò làm mốc đối chiếu để phát hiện sự thay đổi xu hướng. Khi hai đường này giao nhau, các tín hiệu mua bán quan trọng sẽ xuất hiện. Sự tương tác giữa đường MACD nhanh và đường tín hiệu chậm giúp bạn hạn chế bớt các dao động nhiễu của giá cổ phiếu.
 
