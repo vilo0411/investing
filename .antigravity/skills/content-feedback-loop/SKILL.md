@@ -27,10 +27,11 @@ Ghi vào **đúng file** theo loại bài học:
 | Loại bài học | Ghi vào | Điều kiện |
 | :--- | :--- | :--- |
 | Pattern lặp ≥ 2 bài (từ/cụm từ cụ thể) | `knowledge/3-pipeline/anti-ai-rules.md` | Chỉ append, không overwrite |
-| Judgment call, cách tiếp cận, ngữ cảnh cụ thể | `.antigravity/memory/instincts.md` | Ngay sau mỗi /approve, kể cả 1 lần |
+| Judgment call, cách tiếp cận, ngữ cảnh cụ thể | `.antigravity/memory/instincts-archive.md` (rồi chạy script đồng bộ `instincts.md`) | Ngay sau mỗi /approve, kể cả 1 lần |
 | Raw event (bài nào, ngày nào, sửa gì) | `knowledge/3-pipeline/revision-log.md` | Luôn luôn ghi |
 
-**Quy tắc ghi `instincts.md`** — dùng format chuẩn:
+**Quy tắc ghi bộ nhớ bản năng (Instincts Memory):**
+1. **Ghi đầy đủ vào archive:** append bản năng mới (đủ metadata) vào cuối `.antigravity/memory/instincts-archive.md` theo format chuẩn. Archive là nguồn chân lý — chỉ append, không xoá; muốn bỏ bản năng cũ thì đổi `Trạng thái` thành `DEPRECATED` (hỏi user trước).
 ```
 ### [Tên ngắn gọn]
 - **Trạng thái:** ACTIVE
@@ -39,6 +40,8 @@ Ghi vào **đúng file** theo loại bài học:
 - **Bản năng:** [Quy tắc hành động cụ thể]
 - **Phạm vi:** [Global / Chỉ topic: X]
 ```
+2. **Đồng bộ bản rút gọn:** chạy `python3 scripts/optimize_instincts.py`. Script tự dedupe tiêu đề gần trùng (giữ bản mới hơn), tách bản năng có `Phạm vi: Chỉ topic: X` sang `.antigravity/memory/instincts-by-scope/<x>.md`, và cảnh báo khi `instincts.md` vượt 8.000 ký tự (khi đó đề xuất DEPRECATE bớt trong archive). **Không bao giờ sửa tay `instincts.md`** — mọi thay đổi đi qua archive.
+3. **Phạm vi:** bản năng chỉ đúng cho một nhóm bài (ví dụ phân tích kỹ thuật, review CTCK) thì ghi `Phạm vi: Chỉ topic: X` thay vì `Global`, để không làm phình `instincts.md` mà mọi bài đều phải load.
 
 4. **Report to User**: Báo cáo tóm tắt: *"Đã học X bài học mới — Y rule mới vào anti-ai-rules, Z bản năng mới vào instincts."*
 

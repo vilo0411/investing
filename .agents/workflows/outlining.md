@@ -14,8 +14,26 @@ Tương đương với `Phase 1` và `Phase 2` của lệnh `/write`.
 2. `knowledge/1-brand/personas.md`
 3. `knowledge/3-pipeline/anti-ai-rules.md`
 4. `knowledge/3-pipeline/glossary.md`
-5. `knowledge/4-content/topic-clusters.md`
-6. `.antigravity/memory/instincts.md`
+5. Trạng thái topic: `python3 scripts/topic_status.py --find "[keyword]"` (chỉ đọc, chưa set — không load cả `knowledge/4-content/topic-clusters.md`)
+6. `.antigravity/memory/instincts.md` (bản rút gọn, sinh tự động) + `.antigravity/memory/instincts-by-scope/<topic>.md` nếu đầu file instincts.md liệt kê file khớp topic bài
+
+### Bước 0.5: Cannibalization Gate (trước SERP research)
+Mục đích: không tốn SERP research và không tạo bài trùng intent với bài Value Investing đã publish.
+
+1. **Luôn chạy** (miễn phí, bắt được cả bài mới chưa có dữ liệu GSC):
+   `python3 scripts/find_links.py "[keyword]" --top 5`
+2. **Nếu agent có SEO Dashboard MCP:**
+   - Gọi `list_properties` trước, chọn property có chứa `valueinvesting.com.vn` và copy `property_url` nguyên văn (dạng `https://.../` hoặc `sc-domain:...`, không hardcode). Không có property nào khớp → bỏ qua bước MCP.
+   - Gọi `query_search_analytics` với `property_url` đó, `dimensions: ["page"]`, `query_value: "[keyword]"`, `days: 90`, `limit: 10`.
+3. **Quy tắc xác định cannibalization** — có URL Value Investing cùng intent:
+   - Trong kết quả find_links: title/slug nhắm cùng keyword (cùng câu hỏi chính, không chỉ trùng 1 từ); hoặc
+   - Trong GSC: 1 page chiếm phần lớn impressions của keyword với vị trí trung bình ≤ 10.
+4. **Xử lý khi có cannibalization:**
+   - Mặc định / `--step`: **DỪNG**, đề xuất `/optimize [slug-đó]` thay vì viết bài mới, chờ user quyết.
+   - `--auto` / `--sprint`: KHÔNG viết bài mới và KHÔNG tự chạy `/optimize` (sửa bài đã publish cần user đồng ý). Ghi khối `⚠️ Cannibalization` (URL đang rank, intent, đề xuất `/optimize [slug]`) vào báo cáo cuối rồi kết thúc keyword này, không dừng chờ. Đang `--sprint` thì chuyển sang keyword kế tiếp.
+   - `--force-new` (user xác nhận vẫn muốn viết bài mới): bỏ qua lệnh dừng, nhưng outline bắt buộc có `Intent_Boundary:` và link chéo 2 chiều với bài đã có.
+5. **Khác intent** → tiếp tục; ghi `Intent_Boundary:` trong outline YAML và link chéo 2 chiều với bài gần chủ đề.
+6. **Qua gate rồi mới set trạng thái:** `python3 scripts/topic_status.py [slug] --set "In Progress"`. Slug chưa có dòng nào → thêm 1 dòng vào bảng của cluster phù hợp trong topic-clusters.md theo đúng format (`| Keyword | `slug` | `Planned` |`), rồi chạy lại lệnh.
 
 ### Bước 1: SEO Collector — SERP Research + Gap Synthesis + Internal Link Planning
 - Kích hoạt agent `.antigravity/agents/seo-collector.md`.
@@ -23,7 +41,7 @@ Tương đương với `Phase 1` và `Phase 2` của lệnh `/write`.
 - Dùng skill `.antigravity/skills/web-serp/SKILL.md` — SERP Lookup + Content Extraction song song qua Jina AI. KHÔNG dùng browser.
 - Thu thập: H-tag structure, số liệu cụ thể, content gaps, UX elements.
 - **Chạy Competitor Gap Synthesis** (theo format trong `web-serp/SKILL.md`) sau khi extract xong tất cả competitors.
-- **Internal Link Planning**: Đọc `knowledge/3-pipeline/anchor-index.md`, identify 2–3 bài phù hợp để link, ghi vào `Internal_Links:` trong outline YAML.
+- **Internal Link Planning**: `python3 scripts/find_links.py "[keyword]" --top 6 --exclude [slug]` (không đọc anchor-index.md), chọn 2–3 URL phù hợp, ghi URL root-relative đúng như script in ra vào `Internal_Links:` trong outline YAML.
 
 > **30-second Rule:** Nếu trong lúc research gặp data/insight hay mà không dùng ngay vào bài này → save 1 dòng vào `knowledge/raw/intel/dump.md` (ngày + nguồn + mô tả ngắn) trong 30 giây. Categorize thành file riêng sau.
 
@@ -34,9 +52,9 @@ Tương đương với `Phase 1` và `Phase 2` của lệnh `/write`.
 ### Bước 3: Expert Outline Generation
 - Tích hợp Brand Context Snippet (bao gồm Writer Profile) vào output của SERP Research.
 - Tạo Outline theo template `.antigravity/skills/seo-outlining/references/brief-template.md`.
-- Đảm bảo outline YAML có đầy đủ: `Writer_Profile:`, `Internal_Links:`, `Featured_Snippet:`.
+- Đảm bảo outline YAML có đầy đủ: `Writer_Profile:`, `Internal_Links:`, `Featured_Snippet:` (+ `Intent_Boundary:` khi Bước 0.5 phát hiện bài gần chủ đề).
 - Lưu tại: `knowledge/4-content/1-outlines/[slug].md`.
-- Cập nhật `topic-clusters.md` → trạng thái `Outlining`.
+- Trạng thái đã là `In Progress` từ Bước 0.5 — không set thêm ở bước này.
 
 ### Bước 4: Image Manifest & Cover Image Planning
 - **Ảnh bìa (Hero/Cover Image)**:
@@ -69,4 +87,4 @@ Thu thập tài nguyên chính thức từ doanh nghiệp được review để 
 ### 🚧 APPROVAL GATE:
 > Trình bày Outline + SERP summary cho người dùng.
 > **DỪNG LẠI. Chờ `/approve` trước khi tiếp tục sang drafting.**
-> Khi approve: cập nhật `topic-clusters.md` → `Outline-Approved`.
+> Khi approve: `python3 scripts/topic_status.py [slug] --set Outline-Approved`.

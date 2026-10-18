@@ -45,8 +45,9 @@ Cluster_Role: "Pillar | Cluster"
 Category: "[slug category — ví dụ: co-phieu, co-ban, etf]"
 Internal_Links:
   - anchor: "[Anchor text tự nhiên]"
-    url: "[URL từ anchor-index.md]"
+    url: "[URL root-relative từ `python3 scripts/find_links.py`]"
     placement: "[Vị trí trong bài — ví dụ: H2 Công thức EPS]"
+Intent_Boundary: "[chỉ dùng khi đã có bài cùng chủ đề — ranh giới intent]"  # optional
 ---
 ```
 
@@ -122,14 +123,14 @@ Internal_Links:
 ### Kết bài & CTA
 - **Mục tiêu:** 1 insight cốt lõi nhất bài + 1 hành động cụ thể làm ngay hôm nay.
 - **Câu cuối:** Câu hỏi mở hoặc CTA nhẹ dẫn sang bài liên quan.
-- **Internal link CTA:** [Bài nào trong anchor-index.md phù hợp nhất để dẫn tới?]
+- **Internal link CTA:** [Bài nào phù hợp nhất để dẫn tới? Tra bằng `python3 scripts/find_links.py "[chủ đề]"`]
 
 ---
 
 ## 4. Kế hoạch Liên kết
 
 - **External Links (Nguồn uy tín):** [UBCKNN, HOSE, CFA Institute, báo cáo tài chính doanh nghiệp...]
-- **Internal Links:** [Xem `knowledge/3-pipeline/anchor-index.md` — ghi rõ anchor text + URL]
+- **Internal Links:** [Chạy `python3 scripts/find_links.py "[keyword]" --top 6 --exclude [slug]` — ghi rõ anchor text + URL root-relative]
 - **Yếu tố cạnh tranh:** [Bảng biểu | Ví dụ số liệu thực | Box "Lưu ý quan trọng"]
 
 ---

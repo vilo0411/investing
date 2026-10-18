@@ -12,9 +12,9 @@ Chỉnh sửa một đoạn / section cụ thể trong bài viết theo yêu c�
 ## Bước 0: Context Load (BẮT BUỘC — đọc đủ 4 file trước khi chạm vào bất kỳ nội dung nào)
 
 1. `knowledge/3-pipeline/anti-ai-rules.md` — toàn bộ, không skip section nào
-2. `.antigravity/memory/instincts.md` — lỗi đã học từ các vòng sửa trước
+2. `.antigravity/memory/instincts.md` (bản rút gọn, sinh tự động) + `.antigravity/memory/instincts-by-scope/<topic>.md` nếu đầu file instincts.md liệt kê file khớp topic bài — lỗi đã học từ các vòng sửa trước
 3. `knowledge/3-pipeline/glossary.md` — thuật ngữ chuẩn thương hiệu
-4. File cần sửa (Draft hoặc Final tương ứng với slug)
+4. File cần sửa: Draft (`knowledge/4-content/2-drafts/Draft-[slug].md` hoặc `Optimize-[slug].md`) hoặc Final = `src/content/articles/[slug].md`
 
 ---
 
@@ -26,6 +26,18 @@ Xác nhận với người dùng:
 - **Yêu cầu:** `[mô tả lại yêu cầu sửa của người dùng để tránh hiểu nhầm]`
 
 Nếu người dùng không chỉ rõ slug hoặc section → hỏi lại trước khi làm.
+
+---
+
+## Bước 1.5: Log trước khi sửa (BẮT BUỘC — workflow-integrity rule 5)
+
+Trước khi viết bản sửa, append 1 dòng vào cuối bảng dưới `## Nhật ký chỉnh sửa` trong `knowledge/3-pipeline/revision-log.md` (ngay sau dòng cuối của bảng, trước `## Hướng dẫn cập nhật cho Agent`):
+
+```
+| YYYY-MM-DD | `slug` | [yêu cầu tóm tắt] | [hành động dự kiến] | **Đang xử lý** |
+```
+
+Không chờ đến `/approve` mới ghi.
 
 ---
 
@@ -66,3 +78,5 @@ Trình bày bản sửa dưới dạng diff rõ ràng:
 Sau đó hỏi: *"Bạn muốn ghi đè vào file hay cần chỉnh thêm?"*
 
 Chỉ ghi đè vào file khi người dùng xác nhận.
+
+Sau khi người dùng xác nhận và đã ghi vào file → đổi trạng thái dòng log ở Bước 1.5 thành `**Hoàn thành**` (cập nhật cột "Hành động xử lý" nếu khác dự kiến). Người dùng bỏ yêu cầu → đổi thành `**Huỷ**`.

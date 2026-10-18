@@ -30,7 +30,8 @@ description: >
 - knowledge/3-pipeline/anti-ai-rules.md        ← Blacklist & quy tắc viết
 - knowledge/3-pipeline/glossary.md             ← Tên chuẩn & forbidden terms
 - knowledge/1-brand/profile.md                 ← Fact-check sản phẩm DSC
-- .antigravity/memory/instincts.md             ← Lỗi đã gặp từ trước
+- .antigravity/memory/instincts.md             ← Lỗi đã gặp từ trước (bản rút gọn, sinh tự động)
+- .antigravity/memory/instincts-by-scope/<topic>.md ← chỉ khi đầu instincts.md liệt kê file khớp topic bài
 ```
 
 ### Step 1.5 — Word Count Pre-check (Bắt buộc, chạy trước 7 checklist)
@@ -73,11 +74,12 @@ Dùng template trong `quality-guardian.md` mục "Template báo cáo".
 
 **PASS** (0 CRITICAL + 0 MAJOR): Chuyển sang Step 4.  
 **FAIL**: Gửi báo cáo cho Main Agent sửa, quay lại Step 1 sau khi nhận bản sửa.
+FAIL → sửa đúng các mục FAIL rồi QA lại, **tối đa 2 vòng sửa**. Sau vòng 2 vẫn FAIL → dừng (không tự chạy vòng 3), trình bày bản hiện tại kèm mục `⚠️ Remaining issues` (từng CRITICAL/MAJOR còn lại: mã checklist, số dòng, mô tả). `--auto`: không dừng chờ — đặt `⚠️ Remaining issues` lên đầu báo cáo cuối, ghi 1 dòng revision-log trạng thái `**Cần xử lý**`, vẫn finalize nhưng KHÔNG thêm `factCheckedDate` (chỉ thêm khi đã fact-check).
 
-### Step 4 — Finalization (chỉ sau khi PASS + user `/approve`)
+### Step 4 — Finalization (sau khi user `/approve`; bản còn Remaining issues chỉ finalize khi user đồng ý hoặc ở `--auto`)
 
-1. Di chuyển: `2-drafts/[slug].md` → `3-finalized/Final-[slug].md`
-2. Cập nhật `knowledge/4-content/topic-clusters.md` → trạng thái `Finalized`
+1. Di chuyển: `2-drafts/[slug].md` → `src/content/articles/[slug].md` (kèm frontmatter Astro)
+2. Cập nhật trạng thái: `python3 scripts/topic_status.py [slug] --set Finalized`
 3. Trigger `content-feedback-loop` skill để học từ vòng viết này
 4. Confirm đường dẫn file cuối với user
 
