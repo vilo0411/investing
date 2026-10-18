@@ -135,10 +135,11 @@ Thời gian ước tính: ~5–10s cho cả 5 URLs song song (so với 2–3 ph�
 pip install firecrawl-py
 ```
 
-Thêm API key vào `.antigravity/config/api-keys.md`:
+API key — ưu tiên biến môi trường (scrape.py đọc env `FIRECRAWL_API_KEY` trước):
+```bash
+export FIRECRAWL_API_KEY=fc-your_key_here   # hoặc đặt dòng này trong `.env` (đã gitignore)
 ```
-FIRECRAWL_API_KEY=fc-your_key_here
-```
+Cách thay thế: copy `.antigravity/config/api-keys.example.md` thành `.antigravity/config/api-keys.md` (đã gitignore) rồi điền dòng `FIRECRAWL_API_KEY=...`. Không bao giờ commit key.
 Lấy key tại: https://firecrawl.dev (có free tier)
 
 **Cách dùng:**

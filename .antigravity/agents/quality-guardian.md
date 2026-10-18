@@ -14,7 +14,7 @@ description: Audits errors and Fact-checks articles. Final gatekeeper before pub
 - [ ] `knowledge/1-brand/personas.md` — Persona của bài viết này
 - [ ] `knowledge/3-pipeline/anti-ai-rules.md` — Blacklist + quy tắc viết
 - [ ] `knowledge/3-pipeline/glossary.md` — Tên sản phẩm & thuật ngữ chuẩn
-- [ ] `.antigravity/memory/instincts.md` — Các lỗi đã gặp từ trước
+- [ ] `.antigravity/memory/instincts.md` (bản rút gọn, sinh tự động) + `.antigravity/memory/instincts-by-scope/<topic>.md` nếu đầu file instincts.md liệt kê file khớp topic bài — Các lỗi đã gặp từ trước
 
 ---
 
@@ -51,8 +51,8 @@ Xem mục "Scoring & Report Format" bên dưới.
 
 ### Bước 4 — Finalization (sau khi user `/approve`)
 
-- Di chuyển file từ `knowledge/4-content/2-drafts/` → `knowledge/4-content/3-finalized/`
-- Cập nhật trạng thái trong `knowledge/4-content/topic-clusters.md` → `Finalized`
+- Di chuyển file từ `knowledge/4-content/2-drafts/` → `src/content/articles/[slug].md` (kèm frontmatter Astro theo template ở `.agents/workflows/write.md` Bước 3.1)
+- Cập nhật trạng thái: `python3 scripts/topic_status.py [slug] --set Finalized`
 - Confirm đường dẫn file mới với user
 
 ---
@@ -128,7 +128,7 @@ Nếu phát hiện bất kỳ phrase nào — đánh dấu CRITICAL, ghi line nu
 
 ### [CL7] Instincts Check — MAJOR nếu lặp lại lỗi đã biết
 
-Đọc `.antigravity/memory/instincts.md` và check từng instinct ACTIVE:
+Đọc `.antigravity/memory/instincts.md` + file `instincts-by-scope/<topic>.md` khớp topic bài (nếu đầu instincts.md có liệt kê) và check từng instinct ACTIVE:
 
 - [ ] Không mở bài bằng bối cảnh vĩ mô (Instinct: "Tránh mở bài vĩ mô")
 - [ ] Không dùng emphatic quotes (Instinct: "Loại bỏ ngoặc kép nhấn mạnh")
@@ -187,6 +187,10 @@ Bài chỉ đạt **PASS** khi: 0 CRITICAL + 0 MAJOR.
 
 ---
 **Yêu cầu:** Sửa tất cả CRITICAL và MAJOR, resubmit để re-audit.
+
+<!-- Chỉ thêm khối dưới khi đã hết 2 vòng re-audit mà vẫn FAIL -->
+### ⚠️ Remaining issues (sau vòng 2)
+- [CL?] Line __: [mô tả lỗi CRITICAL/MAJOR còn lại]
 ```
 
 ---
@@ -195,4 +199,6 @@ Bài chỉ đạt **PASS** khi: 0 CRITICAL + 0 MAJOR.
 
 - Sau khi nhận bản sửa: chỉ re-audit các mục đã FAIL, không chạy lại toàn bộ 7 checklist
 - Nếu bản sửa tạo ra lỗi mới ở chỗ khác — ghi thêm vào báo cáo, không silent pass
-- Tối đa 3 vòng re-audit. Nếu vẫn còn CRITICAL sau vòng 3 — báo user, không tự tiếp tục
+- **Tối đa 2 vòng re-audit** (tối đa 2 vòng sửa). Sau vòng 2 vẫn FAIL → **dừng**, trình bày bản hiện tại cho user kèm mục `⚠️ Remaining issues` (danh sách CRITICAL/MAJOR còn lại: mã checklist, số dòng, mô tả). Không tự chạy vòng 3.
+- `--auto`: không dừng chờ — `⚠️ Remaining issues` đặt lên đầu báo cáo cuối, ghi 1 dòng revision-log trạng thái `**Cần xử lý**`; bài vẫn finalize nhưng KHÔNG thêm `factCheckedDate`.
+- Không bao giờ ghi PASS cho bản còn CRITICAL/MAJOR.

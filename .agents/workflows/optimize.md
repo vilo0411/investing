@@ -18,21 +18,20 @@ Cập nhật và tối ưu lại một bài viết cũ đang tồn tại để t
 ### 🔄 Bước 0: System Context Load (BẮT BUỘC — trước mọi bước)
 1. `knowledge/1-brand/profile.md` — Brand identity, USPs hiện tại
 2. `knowledge/1-brand/personas.md` — 4 persona + ma trận Persona → Product Bridge
-3. `knowledge/1-brand/service-operations.md` — Thông tin sản phẩm/dịch vụ mới nhất
-4. `knowledge/3-pipeline/anti-ai-rules.md` — Bộ quy tắc Anti-AI
-5. `knowledge/3-pipeline/glossary.md` — Thuật ngữ chuẩn thương hiệu
-6. `knowledge/3-pipeline/revision-log.md` — Xem lỗi cũ đã được ghi nhận để không lặp
-7. `.antigravity/memory/instincts.md` — Bản năng học được từ các vòng sửa trước
-8. `knowledge/4-content/3-finalized/Final-[slug].md` — Bài gốc cần tối ưu
+3. `knowledge/3-pipeline/anti-ai-rules.md` — Bộ quy tắc Anti-AI
+4. `knowledge/3-pipeline/glossary.md` — Thuật ngữ chuẩn thương hiệu
+5. `knowledge/3-pipeline/revision-log.md` — Xem lỗi cũ đã được ghi nhận để không lặp
+6. `.antigravity/memory/instincts.md` (bản rút gọn, sinh tự động) + `.antigravity/memory/instincts-by-scope/<topic>.md` nếu đầu file instincts.md liệt kê file khớp topic bài — Bản năng học được từ các vòng sửa trước
+7. `src/content/articles/[slug].md` — Bài gốc cần tối ưu
 
 ---
 
 ### ⚙️ Bước 1: Intake & Persona Declaration (BẮT BUỘC trước mọi audit)
 
 **Bước 1.1 — Intake & Tracking:**
-- Xác nhận file gốc tồn tại tại `knowledge/4-content/3-finalized/Final-[slug].md`. Nếu không tìm thấy: DỪNG và hỏi người dùng.
-- Cập nhật `knowledge/4-content/topic-clusters.md` → trạng thái `Optimizing`.
-- Tạo working copy: `knowledge/4-content/2-drafts/Optimize-[slug].md`.
+- Xác nhận file gốc tồn tại tại `src/content/articles/[slug].md`. Nếu không tìm thấy: DỪNG và hỏi người dùng.
+- Cập nhật trạng thái: `python3 scripts/topic_status.py [slug] --set Optimizing`.
+- Tạo working copy: `knowledge/4-content/2-drafts/Optimize-[slug].md` (copy nguyên file, gồm cả frontmatter Astro).
   - Toàn bộ chỉnh sửa diễn ra trên bản copy này. Bài gốc không bị chạm đến.
 
 **Bước 1.2 — Intent & Persona Declaration (BẮT BUỘC — thực hiện trước khi chạy bất kỳ audit nào):**
@@ -97,7 +96,7 @@ PRODUCT BRIDGE : [Tên sản phẩm DSC phù hợp] — [Góc dẫn dắt tự n
 - Mở `knowledge/4-content/2-drafts/Optimize-[slug].md`.
 - **Trước khi viết bất kỳ dòng nào — BẮT BUỘC đọc lại 3 file sau theo thứ tự:**
   1. `knowledge/3-pipeline/anti-ai-rules.md` — toàn bộ, không bỏ qua section nào
-  2. `.antigravity/memory/instincts.md` — các lỗi đã học từ các vòng trước
+  2. `.antigravity/memory/instincts.md` (bản rút gọn, sinh tự động) + `.antigravity/memory/instincts-by-scope/<topic>.md` nếu đầu file instincts.md liệt kê file khớp topic bài — các lỗi đã học từ các vòng trước
   3. Content Strategy Header (Section 0 của Proposal) — Persona, Intent, Product Bridge
 - Mọi câu viết ra phải đúng Persona, đúng Intent, đúng Product Bridge đã khai báo.
 - Áp dụng tuần tự 7 bước quét (Clarity → Voice → So What → Prove It → Specificity → Emotion → Zero Risk).
@@ -108,9 +107,10 @@ PRODUCT BRIDGE : [Tên sản phẩm DSC phù hợp] — [Góc dẫn dắt tự n
 ### ⚙️ Bước 5: QA (BẮT BUỘC trước khi trình bày)
 - Kích hoạt agent `.antigravity/agents/quality-guardian.md`.
 - QA đọc: `Optimize-[slug].md` + `anti-ai-rules.md` + `glossary.md` + `instincts.md`.
-- Kết quả PASS → tiếp tục. Kết quả FAIL → sửa và QA lại.
+- Kết quả PASS → tiếp tục.
+- FAIL → sửa đúng các mục FAIL rồi QA lại, **tối đa 2 vòng sửa**. Sau vòng 2 vẫn FAIL → dừng (không tự chạy vòng 3), trình bày bản hiện tại kèm mục `⚠️ Remaining issues` (từng CRITICAL/MAJOR còn lại: mã checklist, số dòng, mô tả). `--auto`: không dừng chờ — đặt `⚠️ Remaining issues` lên đầu báo cáo cuối, ghi 1 dòng revision-log trạng thái `**Cần xử lý**`, vẫn finalize nhưng KHÔNG thêm `factCheckedDate` (chỉ thêm khi đã fact-check).
 
 **🚧 APPROVAL GATE 2:**
-> Trình bày bản Optimize đã QA PASS cho người dùng.
+> Trình bày bản Optimize kèm QA report (PASS, hoặc kèm `⚠️ Remaining issues`) cho người dùng.
 > **DỪNG LẠI. Chờ người dùng đọc và gõ `/approve`.**
-> Khi approve: xử lý theo workflow `/approve` (ghi đè lên Final, xóa bản nháp và proposal, update topic-clusters).
+> Khi approve: xử lý theo workflow `/approve` (ghi đè lên `src/content/articles/[slug].md`, xóa bản nháp và proposal, `python3 scripts/topic_status.py [slug] --set Finalized`).

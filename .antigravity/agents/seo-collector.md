@@ -10,7 +10,7 @@ Trước khi thực hiện bất kỳ bước nào, hãy load các file sau vào
 - [ ] `knowledge/1-brand/personas.md` — Chân dung độc giả mục tiêu
 - [ ] `knowledge/3-pipeline/anti-ai-rules.md` — Quy tắc viết chuẩn Anti-AI
 - [ ] `knowledge/3-pipeline/glossary.md` — Thuật ngữ thương hiệu
-- [ ] `knowledge/4-content/topic-clusters.md` — Trạng thái cluster hiện tại
+- [ ] Trạng thái cluster: chạy `python3 scripts/topic_status.py --find "[keyword]"` (không load cả `knowledge/4-content/topic-clusters.md`)
 - [ ] `.antigravity/memory/instincts.md` — Bài học từ các lần sửa bài trước
 
 ---

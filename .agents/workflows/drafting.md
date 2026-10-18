@@ -12,16 +12,17 @@ Dùng sau khi Outline đã được `/approve`. Chỉ thực hiện Phase 3 (Dra
 ### 🔄 Bước 0: Context Load (BẮT BUỘC)
 1. `knowledge/4-content/1-outlines/[slug].md` — Outline đã approve (BẮT BUỘC)
 2. `knowledge/1-brand/profile.md`
-3. `knowledge/1-brand/service-operations.md`
-4. `knowledge/3-pipeline/anti-ai-rules.md`
-5. `knowledge/3-pipeline/glossary.md`
-6. `knowledge/3-pipeline/anchor-index.md` — Danh sách bài để link nội bộ
-7. `.antigravity/memory/instincts.md`
-8. `knowledge/1-brand/writers/[Writer_Profile].md` — Đọc field `Writer_Profile` trong outline YAML, load file tương ứng (`educational` / `analytical` / `comparison`). Nếu không có field này → dùng `educational` làm default.
+3. `knowledge/3-pipeline/anti-ai-rules.md`
+4. `knowledge/3-pipeline/glossary.md`
+5. `.antigravity/memory/instincts.md` (bản rút gọn, sinh tự động) + `.antigravity/memory/instincts-by-scope/<topic>.md` nếu đầu file instincts.md liệt kê file khớp topic bài
+6. `knowledge/1-brand/writers/[Writer_Profile].md` — Đọc field `Writer_Profile` trong outline YAML, load file tương ứng (`educational` / `analytical` / `comparison`). Nếu không có field này → dùng `educational` làm default.
 
-> **Nếu Outline không tồn tại hoặc chưa có trạng thái `Outline-Approved` trong `topic-clusters.md`: DỪNG LẠI và yêu cầu người dùng chạy `/outlining [keyword]` trước.**
+Link nội bộ không cần load anchor-index.md — tra bằng `scripts/find_links.py` ở Bước 2.
+
+> **Kiểm tra trạng thái bằng `python3 scripts/topic_status.py [slug]`. Nếu Outline không tồn tại hoặc dòng của slug chưa ở `Outline-Approved`: DỪNG LẠI và yêu cầu người dùng chạy `/outlining [keyword]` trước.**
 
 ### Bước 1: Drafting
+- Đầu bước: `python3 scripts/topic_status.py [slug] --set Drafting`.
 - Kích hoạt skill `.antigravity/skills/seo-drafting/SKILL.md` → Step 1: Execute.
 - Viết bài tuân thủ Outline, áp dụng 3S Rule xuyên suốt.
 - **Bắt buộc** chèn tên thương hiệu "**[Value Investing](/)**" (có link về trang chủ `/`) một cách tự nhiên trong Sapo (đoạn mở đầu, ngay dưới H1).
@@ -67,14 +68,17 @@ Dùng sau khi Outline đã được `/approve`. Chỉ thực hiện Phase 3 (Dra
 ### Bước 2: Internal Linking
 - Kích hoạt skill `.antigravity/skills/internal-linking/SKILL.md` → **Mode: Link Wheel trước** (bắt buộc), rồi Mode: Contextual Insertion.
 - Link Wheel: chèn 2 nan hoa (Hub + bài "cách đầu tư" của category) + 2 link tới bài `Finalized` gần nhất cùng cluster. Tra `knowledge/3-pipeline/link-wheel.md`.
+  - Lấy 2 bài Finalized gần nhất: `python3 scripts/topic_status.py [slug]` (để biết cluster `Cxx`) → `python3 scripts/topic_status.py --list Finalized --cluster <Cxx>` (đã sort theo publishDate, mới nhất trước; bỏ chính bài đang viết).
+- Contextual Insertion: `python3 scripts/find_links.py "[keyword]" --top 6 --exclude [slug]`, dùng URL root-relative đúng như script in ra.
 - Việc khép vành 2 chiều (chèn backlink vào 2 bài cũ) thực hiện ở bước `/approve` khi bài chính thức Finalized.
 
 ### Bước 3: Quality Guardian (QA — BẮT BUỘC)
 - Kích hoạt agent `.antigravity/agents/quality-guardian.md`.
 - QA load đầy đủ context của agent trước khi audit.
-- Kết quả PASS → tiếp tục. Kết quả FAIL → sửa và QA lại.
+- Kết quả PASS → tiếp tục.
+- FAIL → sửa đúng các mục FAIL rồi QA lại, **tối đa 2 vòng sửa**. Sau vòng 2 vẫn FAIL → dừng (không tự chạy vòng 3), trình bày bản hiện tại kèm mục `⚠️ Remaining issues` (từng CRITICAL/MAJOR còn lại: mã checklist, số dòng, mô tả). `--auto`: không dừng chờ — đặt `⚠️ Remaining issues` lên đầu báo cáo cuối, ghi 1 dòng revision-log trạng thái `**Cần xử lý**`, vẫn finalize nhưng KHÔNG thêm `factCheckedDate` (chỉ thêm khi đã fact-check).
 
 ### 🚧 APPROVAL GATE:
-> Trình bày Draft + QA PASS report.
+> Trình bày Draft + QA report (PASS, hoặc kèm `⚠️ Remaining issues` nếu sau 2 vòng vẫn còn lỗi).
 > **DỪNG LẠI. Chờ người dùng đọc và gõ `/approve`.**
 > Khi approve: trigger `.antigravity/skills/seo-drafting/SKILL.md` → Step 2: Finalize & Learn.

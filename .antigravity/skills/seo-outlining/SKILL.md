@@ -17,11 +17,11 @@ This skill focuses on SERP intelligence and creating high-detail Content Briefs 
     *   **Chạy Competitor Gap Synthesis** theo format trong `web-serp/SKILL.md` — bắt buộc trước khi sang Step 2.
 2. **Consult Knowledge**: Read brand profile and anti-ai rules.
 3. **Verify Product Match**: Identify which brand product fits this specific intent.
-4. **Internal Link Planning**: Đọc `knowledge/3-pipeline/anchor-index.md`. Identify 2–3 bài đã publish phù hợp nhất để link từ bài này. Ghi vào field `Internal_Links:` của outline YAML theo format:
+4. **Internal Link Planning**: Chạy `python3 scripts/find_links.py "[keyword]" --top 6 --exclude [slug]` (không load anchor-index.md). Identify 2–3 bài đã publish phù hợp nhất để link từ bài này. Ghi vào field `Internal_Links:` của outline YAML theo format:
     ```yaml
     Internal_Links:
       - anchor: "[anchor text]"
-        url: "[url từ anchor-index]"
+        url: "[URL root-relative lấy từ output của find_links.py]"
         suggested_placement: "[tên H2 nên chèn link]"
     ```
 

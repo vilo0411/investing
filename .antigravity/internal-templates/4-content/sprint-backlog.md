@@ -12,4 +12,4 @@ This file tracks the current production status of SEO articles.
 - `Outline-Approved`: Approved, ready for drafting.
 - `Writing`: Draft in progress.
 - `Review-Pending`: Draft awaiting review in `2-drafts/`.
-- `Finalized`: Completed and moved to `3-finalized/`.
+- `Finalized`: Completed — finalize vào `src/content/articles/`.

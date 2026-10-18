@@ -1,7 +1,7 @@
 # API Keys — Template
 
-> Copy file này thành `api-keys.md` (cùng thư mục) và điền key thật vào.
-> `api-keys.md` đã được thêm vào `.gitignore` — không bao giờ commit file đó.
+> **Cách ưu tiên:** đặt key bằng biến môi trường — `export FIRECRAWL_API_KEY=...` trong shell, hoặc ghi vào file `.env` ở thư mục gốc (`.env` đã có trong `.gitignore`). `scrape.py` đọc biến môi trường trước.
+> **Cách thay thế:** copy file này thành `.antigravity/config/api-keys.md` (cùng thư mục) và điền key thật. `.antigravity/config/api-keys.md` đã nằm trong `.gitignore` — không bao giờ commit file đó.
 
 ---
 

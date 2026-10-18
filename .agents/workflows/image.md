@@ -13,10 +13,9 @@ Thường chạy sau khi Draft được approve hoặc bài đã finalized.
 
 ### 🔄 Bước 0: Context Load
 1. `.antigravity/skills/seo-image/skill.md` — Image skill (brand DNA, templates, QA)
-2. `knowledge/4-content/3-finalized/Final-[slug].md` — ưu tiên file final
+2. `src/content/articles/[slug].md` — ưu tiên file final (bài đã finalize)
 3. Nếu chưa final: `knowledge/4-content/2-drafts/Draft-[slug].md`
-4. Nếu bài đã finalized vào `src/content/articles/[slug].md` thì đọc trực tiếp từ đó
-5. `knowledge/4-content/1-outlines/[slug].md` — để hiểu cấu trúc section
+4. `knowledge/4-content/1-outlines/[slug].md` — để hiểu cấu trúc section
 
 ### 🔀 Bước 0.5: Detect Review Type
 

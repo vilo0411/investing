@@ -137,12 +137,12 @@ Sau frontmatter, body bài viết theo thứ tự:
    - Xóa file draft tạm: `knowledge/4-content/2-drafts/Draft-[slug].md` (hoặc `Optimize-[slug].md`)
    - Xóa file cover HTML tạm: `knowledge/4-content/2-drafts/[slug]-cover.html` (nếu có)
    - Xóa file image prompts: `knowledge/4-content/2-drafts/[slug]-image-prompts.md` (nếu có)
-3. Thêm vào anchor-index: `knowledge/3-pipeline/anchor-index.md` — bổ sung dòng mới cho bài vừa publish
-4. Cập nhật status: `knowledge/4-content/topic-clusters.md` → `Finalized`
+3. Thêm vào anchor-index: `knowledge/3-pipeline/anchor-index.md` — append 1 dòng mới cho bài vừa publish vào đúng bảng của nhóm category (chỉ ghi: `grep -n` heading của nhóm rồi chèn dòng, không load cả file)
+4. Cập nhật status: `python3 scripts/topic_status.py [slug] --set Finalized`
 
 ### 2.4 — Learning
 
-Trigger **`content-feedback-loop`** skill để phân tích revisions và cập nhật `.antigravity/memory/instincts.md`.
+Trigger **`content-feedback-loop`** skill để phân tích revisions: bản năng mới ghi vào `.antigravity/memory/instincts-archive.md`, rồi chạy `python3 scripts/optimize_instincts.py` để sinh lại `instincts.md` (không sửa tay).
 
 ### 2.5 — Delivery
 
