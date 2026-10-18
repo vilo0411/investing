@@ -4,3 +4,6 @@ dist/
 .DS_Store
 .env
 __pycache__/
+
+# Local API keys for content engine scripts
+.antigravity/config/api-keys.md

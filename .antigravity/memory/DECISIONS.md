@@ -10,6 +10,10 @@ This file tracks key decisions made during the project lifecycle to ensure long-
 - **2026-05-17:** Slash commands are the primary interface for triggering workflows.
 - **2026-05-17:** Writer profiles added (`knowledge/1-brand/writers/`) — phân loại theo loại bài: educational / analytical / comparison.
 - **2026-05-17:** Intel capture system added (`knowledge/raw/intel/`) — 30-second rule áp dụng khi SERP research.
+- **2026-10-18:** Bài final nằm ở `src/content/articles/[slug].md` (Astro content collection), thay cho bước `3-finalized` trong quyết định 2026-05-17. URL bài tính theo `categories[].path` trong `src/data/site.ts`, link nội bộ dạng root-relative.
+- **2026-10-18:** Tra trạng thái topic và link nội bộ bằng script (`scripts/topic_status.py`, `scripts/find_links.py`) thay vì load nguyên topic-clusters.md / anchor-index.md vào context.
+- **2026-10-18:** Instincts tách làm 2: `instincts-archive.md` là nguồn chân lý (chỉ append), `instincts.md` là bản rút gọn ≤ 8.000 ký tự sinh tự động bởi `scripts/optimize_instincts.py` (+ `instincts-by-scope/` cho bản năng theo topic).
+- **2026-10-18:** QA tối đa 2 vòng sửa, sau đó trình bày kèm `⚠️ Remaining issues`. Cannibalization Gate (find_links + SEO Dashboard MCP) chạy trước SERP research của /outlining và /write.
 
 ## ✍️ Content & Style Decisions
 - **2026-05-17:** Anti-AI rules established in `knowledge/3-pipeline/anti-ai-rules.md`. Chuẩn câu: tối đa 25 từ/câu, 2-3 câu/đoạn.

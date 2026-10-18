@@ -9,7 +9,7 @@ description: >
 # Skill: SEO Optimization (Tối ưu bài cũ)
 
 ## 🔄 Context Loading (Đọc trước khi bắt đầu)
-- [ ] `knowledge/4-content/3-finalized/Final-[slug].md` — Bài gốc đang được tối ưu
+- [ ] `src/content/articles/[slug].md` — Bài gốc đang được tối ưu
 - [ ] `knowledge/4-content/2-drafts/Optimize-[slug].md` — Working copy (đã được tạo bởi workflow)
 - [ ] `knowledge/3-pipeline/anti-ai-rules.md` — Quy tắc Anti-AI đầy đủ
 - [ ] `knowledge/1-brand/profile.md` — Brand USPs hiện tại để fact-check
