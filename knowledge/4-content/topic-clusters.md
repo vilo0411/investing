@@ -3,7 +3,7 @@
 > **Cập nhật:** 2026-06-14 | **Nguồn:** keywords.csv (1080 keywords, phân tích semantic)
 > **Phương pháp:** Hub & Spoke — mỗi cluster có 1 bài Hub (pillar) và nhiều bài Spoke (supporting)
 
-Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | `Drafting` | `Finalized`
+Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | `Drafting` | `Optimizing` | `Finalized`
 
 ---
 
