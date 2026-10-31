@@ -39,7 +39,7 @@ Dòng tiền từ hoạt động kinh doanh (Cash Flow from Operating Activities
 
 Nó đại diện cho số tiền thực chảy vào túi doanh nghiệp sau khi đã trừ đi mọi chi phí vận hành thường nhật như tiền mua hàng, tiền trả lương nhân viên, tiền thuê kho bãi và tiền nộp thuế.
 
-CFO không chịu sự chi phối của các nghiệp vụ vay nợ tài chính hay mua bán tài sản cố định. Đây chính là tấm gương phản chiếu chân thực nhất năng lực tự nuôi sống bản thân của doanh nghiệp.
+CFO không chịu sự chi phối của các nghiệp vụ vay nợ tài chính hay mua bán tài sản cố định. Trong trường phái [phân tích cơ bản là gì](/phan-tich/co-ban/phan-tich-co-ban-la-gi/), đây chính là tấm gương phản chiếu chân thực nhất năng lực tự tạo ra tiền mặt của doanh nghiệp.
 
 
 ## Ví dụ đời thường về cửa hàng bán chịu và cỗ máy in tiền

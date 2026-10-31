@@ -124,7 +124,7 @@ Thứ ba là lợi nhuận đột biến chủ yếu đến từ doanh thu tài 
 
 ## Bắt đầu hành trình phân tích doanh nghiệp của bạn
 
-Hiểu cách đọc báo cáo tài chính là bước nền tảng sống còn để bạn tiến tới phương pháp [phân tích cơ bản](/phan-tich/co-ban/phan-tich-co-ban-la-gi/) và [định giá cổ phiếu](/phan-tich/co-ban/cach-dinh-gia-co-phieu/). Những con số khô khan sẽ trở thành công cụ đắc lực bảo vệ túi tiền của bạn.
+Hiểu cách đọc báo cáo tài chính là bước nền tảng sống còn để bạn tiến tới phương pháp [phân tích cơ bản](/phan-tich/co-ban/phan-tich-co-ban-la-gi/), nắm vững [cách chọn cổ phiếu tốt](/dau-tu/co-phieu/cach-chon-co-phieu-tot/) và tự tin [định giá cổ phiếu](/phan-tich/co-ban/cach-dinh-gia-co-phieu/). Những con số khô khan sẽ trở thành công cụ đắc lực bảo vệ túi tiền của bạn.
 
 Thay vì cố gắng phân tích các mô hình phức tạp ngay từ đầu, bạn hãy chọn báo cáo tài chính kiểm toán gần nhất của một doanh nghiệp đầu ngành quen thuộc như Vinamilk hay FPT để thực hành 4 bước trên ngay hôm nay.
 

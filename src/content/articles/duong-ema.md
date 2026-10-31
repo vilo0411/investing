@@ -176,4 +176,4 @@ Một nguyên tắc then chốt là bạn cần kiên nhẫn chờ cây nến đ
 Ngay hôm nay, bạn hãy mở đồ thị kỹ thuật của chỉ số VN-Index. Hãy kích hoạt hai đường EMA 20 và EMA 50 trên khung nến ngày để quan sát điểm giao cắt.
 
 
-Khi đã quen thuộc với đường EMA, bạn có thể tìm hiểu thêm [đường MA](/phan-tich/ky-thuat/duong-ma-la-gi/) và [chỉ báo MACD](/phan-tich/ky-thuat/macd-la-gi/). Bộ đôi này sẽ giúp bạn hoàn thiện hệ thống giao dịch cá nhân.
+Khi đã quen thuộc với đường EMA, bạn hãy kết hợp với cẩm nang [cách đầu tư cổ phiếu](/dau-tu/co-phieu/cach-dau-tu-co-phieu/) cũng như tìm hiểu thêm về [đường MA](/phan-tich/ky-thuat/duong-ma-la-gi/) và [chỉ báo MACD](/phan-tich/ky-thuat/macd-la-gi/). Hệ thống công cụ này sẽ giúp bạn xây dựng phương pháp giao dịch bài bản và bền vững.

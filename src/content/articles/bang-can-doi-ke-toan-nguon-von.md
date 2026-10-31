@@ -35,7 +35,7 @@ Khi quyết định mua một căn nhà, bạn chắc chắn sẽ muốn kiểm 
 
 ## Bảng cân đối kế toán là gì? Bản chất của phương trình kế toán
 
-Bảng cân đối kế toán là một báo cáo tài chính tổng hợp phản ánh toàn bộ giá trị tài sản và nguồn hình thành tài sản của công ty tại một thời điểm cụ thể. Thời điểm này thường là ngày cuối cùng của quý hoặc ngày cuối cùng của năm tài chính.
+Bảng cân đối kế toán là một báo cáo tài chính tổng hợp phản ánh toàn bộ giá trị tài sản và nguồn hình thành tài sản của công ty tại một thời điểm cụ thể. Trong trường phái [phân tích cơ bản là gì](/phan-tich/co-ban/phan-tich-co-ban-la-gi/), đây là tài liệu nền tảng giúp bạn thẩm định độ an toàn tài chính của doanh nghiệp trước khi xuống tiền.
 
 Báo cáo này hoạt động giống như một bức ảnh chụp nhanh tĩnh. Nó cho bạn biết chính xác doanh nghiệp đang có trong tay những gì và nợ những ai vào đúng ngày lập báo cáo.
 
@@ -118,5 +118,5 @@ Thêm vào đó, việc hàng tồn kho tăng liên tục qua nhiều quý nhưn
 
 Hiểu và làm chủ bảng cân đối kế toán là chìa khóa để bạn định lượng [giá trị nội tại](/phan-tich/co-ban/gia-tri-noi-tai-cua-co-phieu/) và xác định mức định giá theo [chỉ số P/B](/phan-tich/co-ban/pb-la-gi/). Một bảng cân đối vững chắc là tấm đệm đỡ giá an toàn nhất cho cổ phiếu trong các chu kỳ suy thoái.
 
-Hãy kết hợp tài liệu này với bài viết [cách phân tích báo cáo tài chính](/phan-tich/co-ban/cach-phan-tich-bao-cao-tai-chinh/) để có góc nhìn đa chiều về hiệu quả hoạt động của doanh nghiệp bạn đang quan tâm.
+Hãy kết hợp tài liệu này với bài viết [cách phân tích báo cáo tài chính](/phan-tich/co-ban/cach-phan-tich-bao-cao-tai-chinh/) và cẩm nang [cách chọn cổ phiếu tốt](/dau-tu/co-phieu/cach-chon-co-phieu-tot/) để có góc nhìn đa chiều và tự tin lọc ra những doanh nghiệp sở hữu nền tảng vững vàng nhất.
 

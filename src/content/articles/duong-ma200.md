@@ -169,4 +169,4 @@ Nếu giá cổ phiếu bất ngờ đóng cửa gãy thủng ngưỡng MA200 k�
 Ngay hôm nay, bạn hãy mở đồ thị kỹ thuật của các cổ phiếu trong danh mục theo dõi. Hãy bật đường MA200 lên để tự mình kiểm tra xem cổ phiếu đang nằm ở chu kỳ tăng giá hay suy thoái.
 
 
-Khi đã hiểu rõ đường MA200, bạn hãy tìm hiểu thêm [đường MA](/phan-tich/ky-thuat/duong-ma-la-gi/) và [đường EMA](/phan-tich/ky-thuat/duong-ema/). Bộ đôi này giúp bạn làm chủ trọn vẹn xu hướng.
+Khi đã hiểu rõ đường MA200, bạn hãy tham khảo hướng dẫn [cách đầu tư cổ phiếu](/dau-tu/co-phieu/cach-dau-tu-co-phieu/) cũng như tìm hiểu thêm về [đường MA](/phan-tich/ky-thuat/duong-ma-la-gi/) và [đường EMA](/phan-tich/ky-thuat/duong-ema/). Bộ công cụ này sẽ giúp bạn làm chủ trọn vẹn xu hướng và quản trị rủi ro hiệu quả.

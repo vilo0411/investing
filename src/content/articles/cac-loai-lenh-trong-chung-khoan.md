@@ -140,7 +140,7 @@ Các lệnh này đặc biệt hữu ích khi bạn bận rộn làm việc ho�
 
 Việc hiểu và làm chủ các loại lệnh giao dịch là kỹ năng thao tác cơ bản nhưng vô cùng quan trọng đối với mọi nhà đầu tư.
 
-Sự thật là đối với F0 đầu tư dài hạn, lệnh giới hạn (LO) vẫn là người bạn đồng hành an toàn và dễ kiểm soát nhất. Bước tiếp theo bạn có thể làm ngay hôm nay là mở ứng dụng chứng khoán và thử thực hành đặt 1 lệnh LO với số lượng tối thiểu 100 cổ phiếu để làm quen giao diện.
+Sự thật là đối với F0 đầu tư dài hạn, lệnh giới hạn (LO) vẫn là người bạn đồng hành an toàn và dễ kiểm soát nhất. Bạn hãy tham khảo cẩm nang **[cách mua cổ phiếu](/dau-tu/co-phieu/cach-mua-co-phieu/)** để nắm trọn vẹn quy trình 5 bước thực hành đặt lệnh an toàn trên ứng dụng điện thoại.
  Bên cạnh đó, bạn cũng nên đọc thêm bài viết phân tích về [Cổ Phếu Phòng Thủ Là Gì? Lá Chắn An Toàn Cho F0 Khi Thị Trường Biến Động](/dau-tu/co-phieu/co-phieu-phong-thu/) để trang bị kiến thức đầy đủ nhất.
 
 

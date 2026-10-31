@@ -61,7 +61,7 @@ Bài viết từ **[Value Investing](/)** giải thích **bán giải chấp c�
 
 ## Bản chất bán giải chấp: Khi quyền bán thuộc về chủ nợ
 
-Bán giải chấp (còn gọi là Force Sell) là lệnh bán cưỡng bức do công ty chứng khoán thực hiện. Họ bán bớt cổ phiếu trong tài khoản của bạn để thu hồi khoản nợ vay mua ký quỹ.
+Bán giải chấp (còn gọi là Force Sell) là lệnh bán cưỡng bức do công ty chứng khoán thực hiện. Họ bán bớt cổ phiếu trong tài khoản của bạn để thu hồi khoản nợ vay mua ký quỹ. Với người mới bắt đầu tìm hiểu [cổ phiếu là gì](/dau-tu/co-phieu/co-phieu-la-gi/), việc dùng đòn bẩy khi chưa nắm vững các nguyên tắc cơ bản là nguyên nhân hàng đầu dẫn đến kịch bản này.
 
 Hãy hình dung bạn vay ngân hàng 70% giá trị để mua một ngôi nhà:
 
@@ -122,4 +122,4 @@ Bạn hoàn toàn có thể né tránh kịch bản này bằng 3 nguyên tắc 
 
 * **Chủ động cắt lỗ từ sớm**. Đừng chờ công ty chứng khoán bán hộ bạn với giá sàn. Hãy tự quyết định bán cắt lỗ khi tài khoản mới chớm lỗ nhẹ.
 
-Bán giải chấp là bài học đắt giá về việc sử dụng đòn bẩy quá đà. Hãy mở tài khoản và kiểm tra tỷ lệ an toàn ký quỹ (Rtt). Hãy đưa tỷ lệ này về vùng an toàn ngay hôm nay.
+Bán giải chấp là bài học đắt giá về việc sử dụng đòn bẩy quá đà. Hãy trang bị cho mình [cách đầu tư cổ phiếu](/dau-tu/co-phieu/cach-dau-tu-co-phieu/) bài bản, thường xuyên kiểm tra tỷ lệ an toàn ký quỹ (Rtt) và chủ động đưa tài khoản về vùng an toàn trước mọi biến động khó lường của thị trường.

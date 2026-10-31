@@ -52,7 +52,7 @@ Lại suất tiết kiệm ngân hàng xuống thấp khiến nhiều bạn F0 s
 
 Khi mua chứng chỉ quỹ, bạn thực chất đang ủy thác nguồn vốn nhàn rỗi của mình cho các công ty quản lý quỹ chuyên nghiệp. Đội ngũ chuyên gia tài chính giàu kinh nghiệm sẽ thay mặt bạn thực hiện nghiên cứu, phân tích và đưa ra quyết định mua bán cổ phiếu. Điều này giúp bạn tiết kiệm thời gian theo dõi bảng điện tử liên tục hàng ngày.
 
-Bên cạnh đó, các quỹ đầu tư sở hữu danh mục đa dạng gồm từ 30 đến 40 mã cổ phiếu lớn đầu ngành. Việc phân bổ rộng rãi này giúp giảm thiểu tối đa rủi ro thua lỗ nặng nề so với việc bạn tự dồn toàn bộ vốn mua một vài mã cổ phiếu riêng lẻ. Đây là giải pháp tích lũy tài sản vô cùng an toàn cho nhân viên văn phòng bận rộn.
+Bên cạnh đó, các quỹ đầu tư sở hữu danh mục đa dạng gồm từ 30 đến 40 mã cổ phiếu lớn đầu ngành. Việc phân bổ rộng rãi này giúp giảm thiểu tối đa rủi ro thua lỗ nặng nề so với việc bạn tự dồn toàn bộ vốn mua một vài mã cổ phiếu riêng lẻ. Nếu muốn cân nhắc kỹ lưỡng ưu nhược điểm giữa hai kênh, bạn có thể xem bài [so sánh cổ phiếu và chứng chỉ quỹ](/dau-tu/co-phieu/so-sanh-co-phieu-va-chung-chi-quy-dau-tu/) trước khi chọn danh mục tích lũy.
 
 
 ## Phân loại chứng chỉ quỹ phổ biến trên thị trường

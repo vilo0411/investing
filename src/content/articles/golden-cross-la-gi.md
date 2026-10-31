@@ -29,7 +29,7 @@ sources:
   - "Bloomberg Markets - Technical Indicators Guide"
 ---
 
-Trong phân tích kỹ thuật chứng khoán, việc nắm bắt thời điểm đảo chiều là chìa khóa then chốt. Cùng **[Value Investing](/)**, khái niệm **Golden Cross là gì** luôn thu hút sự quan tâm của nhiều nhà đầu tư.
+Trong trường phái [phân tích kỹ thuật là gì](/phan-tich/ky-thuat/phan-tich-ky-thuat-la-gi/), việc nắm bắt thời điểm đảo chiều là chìa khóa then chốt. Cùng **[Value Investing](/)**, khái niệm **Golden Cross là gì** luôn thu hút sự quan tâm của nhiều nhà đầu tư.
 
 Tín hiệu này được ví như tiếng còi báo hiệu chu kỳ tăng giá dài hạn mới. Khi hiểu rõ bản chất của nó, bạn sẽ tự tin giải ngân và nâng cao hiệu quả đầu tư.
 
@@ -105,4 +105,4 @@ Sai lầm tiếp theo là dùng mô hình trong giai đoạn thị trường đi
 
 Để giao dịch an toàn, bạn hãy tuân thủ 3 nguyên tắc thực chiến quan trọng sau.
 
-Thứ nhất, luôn đợi khối lượng giao dịch đột biến xác nhận dòng tiền lớn nhập cuộc. Thứ hai, tuyệt đối không mua đuổi khi giá đã chạy quá xa đường MA200. Thứ ba, luôn kết hợp phân tích nội tại doanh nghiệp. Điều này giúp bạn chọn được cổ phiếu có kết quả kinh doanh tăng trưởng vượt trội.
+Thứ nhất, luôn đợi khối lượng giao dịch đột biến xác nhận dòng tiền lớn nhập cuộc. Thứ hai, tuyệt đối không mua đuổi khi giá đã chạy quá xa đường MA200. Thứ ba, luôn kết hợp phân tích nội tại doanh nghiệp với cẩm nang [cách đầu tư cổ phiếu](/dau-tu/co-phieu/cach-dau-tu-co-phieu/) để chọn được những mã có nền tảng cơ bản vững vàng cùng điểm mua kỹ thuật tối ưu.

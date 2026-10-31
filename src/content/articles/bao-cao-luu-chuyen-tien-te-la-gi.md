@@ -35,7 +35,7 @@ Nhiều doanh nghiệp công bố những con số lợi nhuận ấn tượng t
 
 ## Báo cáo lưu chuyển tiền tệ là gì?
 
-Báo cáo lưu chuyển tiền tệ là bảng báo cáo tài chính tổng hợp phản ánh việc hình thành và sử dụng các dòng tiền phát sinh trong kỳ kế toán của doanh nghiệp.
+Báo cáo lưu chuyển tiền tệ là bảng báo cáo tài chính tổng hợp phản ánh việc hình thành và sử dụng các dòng tiền phát sinh trong kỳ kế toán của doanh nghiệp. Trong phương pháp [phân tích cơ bản là gì](/phan-tich/co-ban/phan-tich-co-ban-la-gi/), đây là công cụ giúp bạn kiểm chứng chất lượng lợi nhuận thực tế thay vì chỉ nhìn vào các con số kế toán dồn tích.
 
 Nếu Báo cáo kết quả kinh doanh được lập theo nguyên tắc dồn tích ghi nhận doanh thu ngay khi xuất hóa đơn, thì Báo cáo lưu chuyển tiền tệ chỉ ghi nhận khi tiền thực sự đã vào hoặc ra khỏi tài khoản.
 
@@ -107,5 +107,5 @@ Doanh nghiệp sở hữu dòng tiền tự do dồi dào sẽ có nguồn lực
 
 Đọc hiểu báo cáo lưu chuyển tiền tệ sẽ giúp bạn có cái nhìn khách quan, tránh bị đánh lừa bởi những chiêu trò hạch toán sổ sách. Dòng tiền thực tế chính là bài kiểm tra trung thực nhất cho sức khỏe doanh nghiệp.
 
-Hãy tiếp tục đào sâu kỹ năng đọc chỉ số bằng cách tìm hiểu bài viết chuyên sâu về [dòng tiền từ hoạt động kinh doanh](/phan-tich/co-ban/dong-tien-tu-hoat-dong-kinh-doanh/) để nhận diện chính xác cỗ máy in tiền của doanh nghiệp.
+Hãy tiếp tục đào sâu kỹ năng đọc chỉ số bằng cách tìm hiểu bài viết chuyên sâu về [dòng tiền từ hoạt động kinh doanh](/phan-tich/co-ban/dong-tien-tu-hoat-dong-kinh-doanh/) và hướng dẫn [cách chọn cổ phiếu tốt](/dau-tu/co-phieu/cach-chon-co-phieu-tot/) để tự tin nhận diện những cỗ máy tạo tiền bền vững nhất trên thị trường.
 

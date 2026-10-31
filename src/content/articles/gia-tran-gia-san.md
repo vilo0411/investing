@@ -63,7 +63,7 @@ Bài viết từ **[Value Investing](/)** giải thích **giá trần giá sàn 
 Hãy hình dung một căn phòng ngủ thông thường. Trần nhà là điểm cao nhất bạn có thể chạm tới, còn sàn nhà là mặt phẳng thấp nhất nâng đỡ bước chân.
 
 
-Biên độ giá trên thị trường chứng khoán vận hành tương tự như vậy:
+Biên độ giá trên thị trường chứng khoán vận hành tương tự như vậy. Đối với người mới tìm hiểu [cổ phiếu là gì](/dau-tu/co-phieu/co-phieu-la-gi/), ba khái niệm giá sau đây là kiến thức nền tảng bắt buộc phải nắm vững:
 
 * **Giá trần (Ceiling price)**. Mức giá tối đa người mua có thể đặt lệnh mua hoặc người bán có thể bán trong phiên giao dịch. Trên bảng điện tử, giá trần luôn được hiển thị bằng màu tím.
 
@@ -139,4 +139,4 @@ Bạn hãy ghi nhớ 3 nguyên tắc thực tế sau.
 
 * **Lập kế hoạch từ trước phiên**. Hãy xác định ngưỡng chốt lời và phòng thủ cụ thể. Đừng quyết định cảm tính theo màu sắc bảng điện.
 
-Hiểu giá trần giá sàn giúp bạn làm chủ giao dịch. Hãy mở bảng điện tử bạn đang dùng và tự tính thử biên độ một mã cổ phiếu ngay hôm nay.
+Hiểu rõ cơ chế giá trần giá sàn giúp bạn làm chủ bảng điện và tránh tâm lý mua đỉnh bán đáy. Hãy tham khảo thêm hướng dẫn [cách đầu tư cổ phiếu](/dau-tu/co-phieu/cach-dau-tu-co-phieu/) để xây dựng kế hoạch giao dịch bài bản, kỷ luật ngay từ những bước đầu tiên.

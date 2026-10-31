@@ -7,3 +7,9 @@ __pycache__/
 
 # Local API keys for content engine scripts
 .antigravity/config/api-keys.md
+
+# Internal link report & visual dashboards
+internal-link-dashboard.html
+*.dashboard.html
+scripts/generate-dashboard.mjs
+

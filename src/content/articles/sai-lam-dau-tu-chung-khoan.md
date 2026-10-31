@@ -75,7 +75,7 @@ Cổ phiếu giá 3.000 đồng/cp có vẻ rẻ hơn cổ phiếu giá 80.000 �
 
 Margin (vay ký quỹ) khuếch đại cả lãi lẫn lỗ. Nếu dùng đòn bẩy 1:1 (vay bằng số vốn tự có), cổ phiếu giảm 20% thì tài khoản bạn lỗ 40%.
 
-Giai đoạn VN-Index giảm từ 1.500 về 900 điểm (cuối 2022), dư nợ margin toàn thị trường lên đến hơn 200.000 tỷ đồng. Nhiều nhà đầu tư dùng full margin bị call margin liên tục rồi bị bán giải chấp — mất 60–80% tài khoản.
+Giai đoạn VN-Index giảm từ 1.500 về 900 điểm (cuối 2022), dư nợ margin toàn thị trường lên đến hơn 200.000 tỷ đồng. Nhiều nhà đầu tư dùng [full margin](/dau-tu/co-phieu/full-margin-la-gi/) bị [call margin](/dau-tu/co-phieu/call-margin-la-gi/) liên tục rồi bị [bán giải chấp](/dau-tu/co-phieu/ban-giai-chap-co-phieu-la-gi/) — mất 60–80% tài khoản.
 
 **Cách sửa.** Tối đa chỉ sử dụng 30–40% hạn mức margin. Với F0 trong 2 năm đầu, tốt nhất không dùng margin. Nếu muốn hiểu rõ hơn, đọc bài [rủi ro đầu tư chứng khoán](/dau-tu/co-phieu/rui-ro-dau-tu-chung-khoan/).
 

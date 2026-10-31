@@ -39,7 +39,7 @@ Sau khi đã nắm vững [cách đọc báo cáo tài chính](/phan-tich/co-ban
 
 Phân tích báo cáo tài chính là bước chẩn đoán chuyên sâu của bác sĩ. Bạn phải tìm hiểu nguyên nhân đằng sau các biến động đó và dự báo xu hướng tương lai.
 
-Việc phân tích giúp bạn trả lời câu hỏi liệu doanh nghiệp có đang kinh doanh hiệu quả hay không. Nhờ đó, bạn sẽ tránh được việc mua phải các công ty có vỏ bọc hào nhoáng nhưng nội lực rỗng tuếch.
+Việc phân tích giúp bạn trả lời câu hỏi liệu doanh nghiệp có đang kinh doanh hiệu quả hay không. Trong trường phái [phân tích cơ bản là gì](/phan-tich/co-ban/phan-tich-co-ban-la-gi/), đây là kỹ năng then chốt giúp bạn tránh được việc mua phải các công ty có vỏ bọc hào nhoáng nhưng nội lực rỗng tuếch.
 
 
 ## Ví dụ đời thường về hiệu quả đồng vốn kinh doanh
@@ -117,5 +117,5 @@ Sai lầm thứ ba là bỏ qua phần Thuyết minh báo cáo tài chính. Thuy
 
 Nắm vững cách phân tích báo cáo tài chính là tấm khiên vững chắc nhất bảo vệ bạn trên thị trường chứng khoán. Bạn sẽ không còn bị lung lay bởi những lời rủ rê hay những phiên rung lắc nhất thời.
 
-Hãy kết hợp phân tích tài chính với việc định giá qua [chỉ số P/E](/phan-tich/co-ban/pe-la-gi/) để nhận diện những [cổ phiếu tăng trưởng](/dau-tu/co-phieu/cach-nhan-biet-co-phieu-tiem-nang/) đang được thị trường định giá dưới giá trị thực.
+Hãy kết hợp phân tích tài chính với việc định giá qua [chỉ số P/E](/phan-tich/co-ban/pe-la-gi/) và cẩm nang [cách chọn cổ phiếu tốt](/dau-tu/co-phieu/cach-chon-co-phieu-tot/) để tự tin nhận diện những [cổ phiếu tăng trưởng](/dau-tu/co-phieu/cach-nhan-biet-co-phieu-tiem-nang/) đang được thị trường định giá dưới giá trị thực.
 

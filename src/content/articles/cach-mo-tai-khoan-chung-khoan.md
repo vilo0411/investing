@@ -137,7 +137,7 @@ Cuối cùng là chất lượng dịch vụ hỗ trợ khách hàng và hệ th
 
 ## Hướng dẫn nộp tiền và kích hoạt tài khoản
 
-Sau khi nhận được thông báo mở tài khoản thành công, bạn cần nộp tiền để kích hoạt và bắt đầu mua **[cổ phiếu](/dau-tu/co-phieu/co-phieu-la-gi/)**. Hầu hết các công ty lớn hiện nay đều tích hợp hệ thống tài khoản định danh rất tiện lợi.
+Sau khi nhận được thông báo mở tài khoản thành công, bạn cần nộp tiền để kích hoạt và bắt đầu mua **[cổ phiếu](/dau-tu/co-phieu/co-phieu-la-gi/)**. Sau khi nộp tiền thành công, bạn có thể xem hướng dẫn **[cách mua cổ phiếu](/dau-tu/co-phieu/cach-mua-co-phieu/)** để tự tin thực hiện lệnh đặt mua đầu tiên trên ứng dụng. Hầu hết các công ty lớn hiện nay đều tích hợp hệ thống tài khoản định danh rất tiện lợi.
 
 
 Ví dụ, khi nộp tiền vào TCBS, bạn chỉ cần mở ứng dụng ngân hàng bất kỳ của mình lên và thực hiện chuyển khoản. Bạn điền số tài khoản thụ hưởng là mã định danh riêng do công ty cấp.

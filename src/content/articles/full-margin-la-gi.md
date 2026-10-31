@@ -61,7 +61,7 @@ Bài viết từ **[Value Investing](/)** giải thích **full margin là gì**.
 
 ## Bản chất full margin: Lái xe quá tải trên đường đèo dốc
 
-Full margin là trạng thái bạn dùng hết 100% hạn mức vay ký quỹ. Tại thời điểm này, sức mua của tài khoản về bằng 0.
+Full margin là trạng thái bạn dùng hết 100% hạn mức vay ký quỹ. Tại thời điểm này, sức mua của tài khoản về bằng 0. Đối với nhà đầu tư mới tìm hiểu [cổ phiếu là gì](/dau-tu/co-phieu/co-phieu-la-gi/), việc lạm dụng tối đa đòn bẩy khi chưa tích lũy đủ kinh nghiệm thường tiềm ẩn rủi ro rất lớn.
 
 Hãy hình dung một chiếc xe tải chở hàng:
 
@@ -118,4 +118,4 @@ Nếu sử dụng margin, bạn hãy ghi nhớ những nguyên tắc thực tế
 
 * **Luôn có kế hoạch cắt lỗ dứt khoát**. Khi dùng vốn vay, bạn bắt buộc phải tuân thủ kỷ luật cắt lỗ ở mức 5% đến 7% mà không được phép do dự.
 
-Đòn bẩy tài chính là công cụ hỗ trợ, không phải đường tắt làm giàu. Hãy kiểm tra lại tỷ lệ nợ vay trên tài khoản. Chủ động hạ tỷ trọng đòn bẩy về mức an toàn ngay hôm nay.
+Đòn bẩy tài chính là công cụ hỗ trợ, không phải con đường tắt làm giàu. Thay vì mạo hiểm với đòn bẩy quá mức, bạn hãy tập trung học [cách đầu tư cổ phiếu](/dau-tu/co-phieu/cach-dau-tu-co-phieu/) bài bản bằng nguồn vốn tự có. Hãy kiểm tra lại tỷ lệ nợ vay trên tài khoản và chủ động hạ tỷ trọng đòn bẩy về mức an toàn ngay hôm nay.

@@ -28,7 +28,7 @@ sources:
   - "CFA Institute - Technical Analysis Readings"
 ---
 
-Trong phân tích kỹ thuật chứng khoán, việc đo lường mức độ biến động giá là yếu tố sống còn. Cùng **[Value Investing](/)**, câu hỏi **Bollinger Bands là gì** luôn là thắc mắc phổ biến của các nhà đầu tư mới.
+Trong trường phái [phân tích kỹ thuật là gì](/phan-tich/ky-thuat/phan-tich-ky-thuat-la-gi/), việc đo lường mức độ biến động giá là yếu tố sống còn. Cùng **[Value Investing](/)**, câu hỏi **Bollinger Bands là gì** luôn là thắc mắc phổ biến của các nhà đầu tư mới.
 
 Chỉ báo này giống như một đường hầm đàn hồi bao quanh đường giá. Khi hiểu rõ bản chất của nó, bạn sẽ nhận diện được các vùng giá bùng nổ tiềm năng.
 
@@ -99,4 +99,4 @@ Sai lầm đầu tiên là vội vàng bán tháo khi giá vừa chạm dải tr
 
 Sai lầm thứ hai là vội vã bắt đáy khi giá đâm thủng dải dưới. Nhiều người lầm tưởng giá chạm dải dưới là đã quá rẻ để mua vào. Tuy nhiên, trong thị trường giá xuống khốc liệt, giá có thể trượt dài dọc theo dải dưới nhiều phiên liên tiếp. Việc bắt dao rơi lúc này sẽ khiến tài khoản chịu mức tổn thất nặng nề.
 
-Sai lầm thứ ba là sử dụng dải Bollinger một cách đơn độc. Bạn nên kết hợp thêm các đường xu hướng dài hạn như [đường MA200](/phan-tich/ky-thuat/duong-ma200/) hoặc tín hiệu [Golden Cross](/phan-tich/ky-thuat/golden-cross-la-gi/). Bức tranh toàn cảnh về xu hướng và dòng tiền sẽ giúp mọi quyết định giao dịch của bạn trở nên chính xác hơn.
+Sai lầm thứ ba là sử dụng dải Bollinger một cách đơn độc. Bạn nên kết hợp thêm các đường xu hướng dài hạn như [đường MA200](/phan-tich/ky-thuat/duong-ma200/) hoặc tín hiệu [Golden Cross](/phan-tich/ky-thuat/golden-cross-la-gi/), đồng thời hoàn thiện chiến lược [cách đầu tư cổ phiếu](/dau-tu/co-phieu/cach-dau-tu-co-phieu/) bài bản để đưa ra những quyết định giao dịch chuẩn xác nhất.

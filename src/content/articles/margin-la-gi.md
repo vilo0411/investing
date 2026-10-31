@@ -75,7 +75,7 @@ Khái niệm thứ ba là Force Sell (Bán giải chấp). Nếu bạn không b�
 
 ## Nguyên tắc vàng sử dụng margin an toàn cho người mới bắt đầu
 
-Giao dịch ký quỹ không dành cho tất cả mọi người. Nếu bạn còn mới, hãy nắm vững **[cách đầu tư cổ phiếu](/dau-tu/co-phieu/cach-dau-tu-co-phieu/)** cơ bản trước khi dùng đòn bẩy. Để không bị thị trường đào thải, hãy tuân thủ nghiêm ngặt các nguyên tắc sau.
+Giao dịch ký quỹ không dành cho tất cả mọi người. Nếu bạn còn mới, hãy nắm vững **[cách đầu tư cổ phiếu](/dau-tu/co-phieu/cach-dau-tu-co-phieu/)** cơ bản trước khi dùng đòn bẩy và tránh rơi vào bẫy [full margin](/dau-tu/co-phieu/full-margin-la-gi/) quá sớm. Để không bị thị trường đào thải, hãy tuân thủ nghiêm ngặt các nguyên tắc sau.
 
 Thứ nhất là chỉ dùng margin khi thị trường chung đang trong xu hướng tăng rõ ràng (Up-trend). Tuyệt đối không dùng margin khi thị trường đang rơi hoặc đi ngang tích lũy.
 

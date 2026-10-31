@@ -676,6 +676,906 @@ export const brokerRegistry: Record<string, BrokerProfile> = {
       },
     ],
   },
+
+  bsc: {
+    slug: "bsc",
+    name: "Chứng khoán BSC (BIDV Securities)",
+    shortName: "BSC",
+    rating: 4.4,
+    best_for: "Nhà đầu tư ưu tiên an toàn ngân hàng BIDV, phí online thấp & lãi margin ưu đãi",
+    fee_rate: "0.08% (online ưu đãi)",
+    margin_rate: "7.5%/năm (ưu đãi) – 11.5%/năm",
+    app_rating: "4.1/5",
+    min_deposit: "Không yêu cầu",
+    ctaUrl: "https://www.bsc.com.vn",
+    pros: [
+      "Trực thuộc BIDV — ngân hàng quốc doanh lớn nhất Việt Nam, đảm bảo an toàn vốn và bảo mật cao",
+      "Phí giao dịch online siêu ưu đãi chỉ 0.08%, thuộc nhóm thấp nhất thị trường",
+      "Gói lãi suất margin ưu đãi khách hàng mới chỉ từ 7.5%/năm",
+      "Nạp rút tiền tức thì và miễn phí qua liên kết BIDV SmartBanking",
+    ],
+    cons: [
+      "Phí giao dịch qua nhân viên môi giới trực tiếp còn cao (0.15% – 0.35%)",
+      "Giao diện app BSC Mobile còn hơi phức tạp, cần thời gian làm quen cho F0",
+      "Hệ thống công cụ Open API cho giao dịch tự động thuật toán còn hạn chế",
+    ],
+    verdict:
+      "BSC là lựa chọn lý tưởng cho nhà đầu tư tìm kiếm sự kết hợp giữa uy tín, độ an toàn tuyệt đối từ ngân hàng quốc doanh BIDV với chính sách chi phí cạnh tranh (phí online 0.08% và lãi margin ưu đãi từ 7.5%/năm).",
+    ratingBreakdown: {
+      fee: 4.7,
+      app: 4.0,
+      support: 4.3,
+      stability: 4.6,
+      products: 4.3,
+    },
+    userVoices: [
+      {
+        quote: "Phí online 0.08% quá bất ngờ đối với một CTCK trực thuộc ngân hàng lớn. Nạp rút tiền qua BIDV SmartBanking chỉ mất vài giây.",
+        source: "Google Play — BSC Mobile",
+        type: "pro",
+      },
+      {
+        quote: "Giao diện app BSC Mobile có nhiều chức năng xếp dày đặc, người mới bắt đầu như tôi phải mất vài ngày mới quen thao tác đặt lệnh.",
+        source: "Diễn đàn Chứng khoán F319",
+        type: "con",
+      },
+    ],
+    companyInfo: {
+      founded: "1999",
+      hq: "Tầng 8, 9 Tòa nhà Thaiholdings Tower, 210 Trần Quang Khải, Hoàn Kiếm, Hà Nội",
+      license: "Giấy phép KDCK số 02/GPHĐKD",
+      website: "https://www.bsc.com.vn",
+      products: [
+        "Môi giới cổ phiếu, trái phiếu, chứng chỉ quỹ",
+        "Giao dịch ký quỹ Margin (lãi suất ưu đãi từ 7.5%)",
+        "Giao dịch chứng khoán phái sinh",
+        "Tư vấn tài chính doanh nghiệp và bảo lãnh phát hành",
+      ],
+    },
+    accountSteps: [
+      {
+        title: "Tải ứng dụng BSC Mobile",
+        desc: "Tải app BSC Mobile trên App Store hoặc Google Play và chọn Đăng ký mở tài khoản.",
+      },
+      {
+        title: "Xác minh định danh eKYC",
+        desc: "Chụp ảnh hai mặt CCCD gắn chip và quét nhận diện khuôn mặt theo hướng dẫn trên màn hình.",
+      },
+      {
+        title: "Liên kết tài khoản BIDV",
+        desc: "Liên kết với BIDV SmartBanking để nạp rút tiền chứng khoán tức thì và hoàn toàn miễn phí.",
+      },
+      {
+        title: "Kích hoạt và nạp tiền giao dịch",
+        desc: "Xác nhận hợp đồng điện tử qua OTP và nạp tiền bắt đầu giao dịch với phí 0.08%.",
+      },
+    ],
+  },
+
+  shs: {
+    slug: "shs",
+    name: "Chứng khoán SHS (Sài Gòn - Hà Nội)",
+    shortName: "SHS",
+    rating: 4.3,
+    best_for: "Nhà đầu tư vốn vừa và lớn, giao dịch năng động cần nguồn margin dồi dào",
+    fee_rate: "0.15% (online)",
+    margin_rate: "9.9%/năm (Gói S30) – 12.0%/năm",
+    app_rating: "4.0/5",
+    min_deposit: "Không yêu cầu",
+    ctaUrl: "https://www.shs.com.vn",
+    pros: [
+      "Nguồn vốn margin dồi dào từ bệ phóng Ngân hàng SHB và Tập đoàn T&T, hiếm khi cạn room",
+      "Các gói margin chuyên biệt cạnh tranh như Margin S30 lãi suất chỉ từ 9.9%/năm",
+      "Báo cáo phân tích chiến lược vĩ mô và ngành có chất lượng chuyên môn cao",
+      "Hệ thống quản lý tài sản và danh mục đầu tư toàn diện",
+    ],
+    cons: [
+      "Phí giao dịch online 0.15% ở mức tiêu chuẩn, chưa cạnh tranh bằng các sàn miễn phí",
+      "Ứng dụng SHS Mobile đôi khi phản hồi chậm trong những phút cao điểm mở phiên",
+      "Kết quả kinh doanh chịu ảnh hưởng lớn từ biến động danh mục tự doanh",
+    ],
+    verdict:
+      "SHS là điểm đến thích hợp cho các nhà đầu tư giao dịch năng động, cần quy mô vốn vay margin lớn và các gói lãi suất ưu đãi chuyên biệt (từ 9.9%/năm) cùng sự hỗ trợ vốn vững chắc từ ngân hàng SHB.",
+    ratingBreakdown: {
+      fee: 4.1,
+      app: 3.9,
+      support: 4.2,
+      stability: 4.3,
+      products: 4.4,
+    },
+    userVoices: [
+      {
+        quote: "Gói margin S30 lãi 9.9% rất hữu ích cho các đợt lướt sóng ngắn hạn. Hạn mức room vay luôn sẵn sàng khi thị trường bùng nổ.",
+        source: "Diễn đàn F247",
+        type: "pro",
+      },
+      {
+        quote: "Phí 0.15% chưa tối ưu nếu lướt sóng liên tục mỗi ngày. Ứng dụng SHS Mobile cần cải thiện tốc độ mượt mà hơn.",
+        source: "App Store — SHS Mobile",
+        type: "con",
+      },
+    ],
+    companyInfo: {
+      founded: "2007",
+      hq: "Tầng 1-5 Tòa nhà Unimex Hà Nội, số 41 Ngô Quyền, Hàng Bài, Hoàn Kiếm, Hà Nội",
+      license: "Giấy phép UBCKNN số 66/UBCK-GP",
+      website: "https://www.shs.com.vn",
+      products: [
+        "Môi giới cổ phiếu, trái phiếu, chứng quyền",
+        "Cho vay ký quỹ Margin (Gói Elite, Gói S30)",
+        "Giao dịch chứng khoán phái sinh",
+        "Dịch vụ bảo lãnh phát hành và tư vấn tài chính",
+      ],
+    },
+    accountSteps: [
+      {
+        title: "Tải ứng dụng SHS Mobile",
+        desc: "Tải ứng dụng SHS Mobile từ App Store hoặc Google Play và chọn Đăng ký tài khoản mới.",
+      },
+      {
+        title: "Xác thực danh tính eKYC",
+        desc: "Chụp ảnh hai mặt CCCD và nhận diện khuôn mặt tự động bằng camera điện thoại.",
+      },
+      {
+        title: "Ký hợp đồng mở tài khoản điện tử",
+        desc: "Kiểm tra thông tin cá nhân và ký kết hợp đồng điện tử qua mã OTP gửi về số điện thoại.",
+      },
+      {
+        title: "Nạp tiền và bắt đầu giao dịch",
+        desc: "Chuyển tiền vào tài khoản định danh SHS và bắt đầu giải ngân giao dịch cổ phiếu.",
+      },
+    ],
+  },
+
+  acbs: {
+    slug: "acbs",
+    name: "Chứng khoán ACBS (ACB Securities)",
+    shortName: "ACBS",
+    rating: 4.4,
+    best_for: "Khách hàng ngân hàng ACB, nhà đầu tư thích lướt sóng ngắn hạn với gói margin T+",
+    fee_rate: "0.075% – 0.10% (tự giao dịch)",
+    margin_rate: "Miễn lãi 7 ngày (Gói T+) – 11.5%/năm",
+    app_rating: "4.2/5",
+    min_deposit: "Không yêu cầu",
+    ctaUrl: "https://www.acbs.com.vn",
+    pros: [
+      "Hậu thuẫn 100% vốn từ Ngân hàng ACB, xếp hạng tín nhiệm hạng A từ FiinRatings",
+      "Phí giao dịch online siêu ưu đãi chỉ từ 0.075% đến 0.10% cho tài khoản tự giao dịch",
+      "Gói margin T+ độc đáo: miễn lãi 0% trong 7 ngày đầu hoặc 8% trong 14 ngày đầu",
+      "Nạp rút tiền liền mạch, nhanh chóng trong hệ sinh thái ngân hàng số ACB",
+    ],
+    cons: [
+      "Phí giao dịch có môi giới tư vấn còn ở mức tương đối cao (0.15% – 0.30%)",
+      "App ACBS Smart còn thiếu một số công cụ phân tích kỹ thuật chuyên sâu",
+      "Các chi nhánh phòng giao dịch tập trung chủ yếu ở Hà Nội và TP.HCM",
+    ],
+    verdict:
+      "ACBS là lựa chọn tuyệt vời cho các nhà đầu tư sẵn có tài khoản tại ACB, muốn tối ưu chi phí với phí online chỉ từ 0.075% và tận dụng gói margin T+ miễn lãi 7 ngày để giao dịch ngắn hạn.",
+    ratingBreakdown: {
+      fee: 4.8,
+      app: 4.1,
+      support: 4.3,
+      stability: 4.5,
+      products: 4.2,
+    },
+    userVoices: [
+      {
+        quote: "Phí online 0.075% rẻ ngỡ ngàng so với các sàn ngân hàng khác. Gói margin T+ miễn lãi tuần đầu đánh T+ cực kỳ hời.",
+        source: "Google Play — ACBS Smart",
+        type: "pro",
+      },
+      {
+        quote: "App đôi khi đăng nhập vào buổi sáng giờ mở phiên hơi chậm, cần tối ưu thêm về tốc độ load dữ liệu bảng giá.",
+        source: "Diễn đàn Đầu tư ACB",
+        type: "con",
+      },
+    ],
+    companyInfo: {
+      founded: "2000",
+      hq: "Tầng 3, Tòa nhà Léman Luxury, 117 Nguyễn Đình Chiểu, Phường Võ Thị Sáu, Quận 3, TP.HCM",
+      license: "Giấy phép KDCK số 06/GPHĐKD",
+      website: "https://www.acbs.com.vn",
+      products: [
+        "Môi giới cổ phiếu, trái phiếu, chứng chỉ quỹ",
+        "Gói cho vay ký quỹ Margin T+",
+        "Giao dịch chứng khoán phái sinh",
+        "Tư vấn đầu tư và tài chính doanh nghiệp",
+      ],
+    },
+    accountSteps: [
+      {
+        title: "Tải ứng dụng ACBS Smart",
+        desc: "Tải app ACBS Smart trên điện thoại từ App Store hoặc Google Play và chọn Mở tài khoản.",
+      },
+      {
+        title: "Định danh điện tử eKYC",
+        desc: "Chụp ảnh 2 mặt CCCD và quét khuôn mặt xác thực sinh trắc học tự động.",
+      },
+      {
+        title: "Liên kết tài khoản ngân hàng ACB",
+        desc: "Liên kết tài khoản ACB ONE để nạp rút tiền tức thì 24/7 không tốn phí.",
+      },
+      {
+        title: "Ký hợp đồng và bắt đầu giao dịch",
+        desc: "Ký hợp đồng điện tử bằng mã OTP và nạp tiền bắt đầu giao dịch với phí từ 0.075%.",
+      },
+    ],
+  },
+
+  tps: {
+    slug: "tps",
+    name: "Chứng khoán TPS (Tiên Phong Securities)",
+    shortName: "TPS",
+    rating: 4.3,
+    best_for: "Khách hàng hệ sinh thái TPBank, nhà đầu tư ưa chuộng công nghệ số & margin M7",
+    fee_rate: "0.15% (thường xuyên có gói 0%)",
+    margin_rate: "Miễn lãi 7 ngày (Gói M7) – 12.0%/năm",
+    app_rating: "4.1/5",
+    min_deposit: "Không yêu cầu",
+    ctaUrl: "https://tpbs.com.vn",
+    pros: [
+      "Nằm trong hệ sinh thái TPBank — ngân hàng tiên phong về chuyển đổi số tại Việt Nam",
+      "Gói margin M7 hấp dẫn: miễn lãi suất 0% trong 7 ngày đầu tiên",
+      "Thường xuyên có các chương trình khuyến mãi miễn phí giao dịch cho khách hàng mở mới",
+      "Nạp rút tiền tức thì 24/7 qua kết nối sâu với ứng dụng TPBank Mobile",
+    ],
+    cons: [
+      "Biểu phí tiêu chuẩn ngoài thời gian khuyến mãi ở mức 0.15%, chưa thuộc nhóm rẻ nhất",
+      "Báo cáo phân tích doanh nghiệp chưa phong phú bằng các CTCK top đầu như SSI hay HSC",
+      "Ứng dụng TPS Mobile thỉnh thoảng có độ trễ nhẹ khi thị trường có biến động lớn",
+    ],
+    verdict:
+      "TPS phù hợp cho các nhà đầu tư trẻ yêu thích trải nghiệm số hiện đại của TPBank, tận dụng gói ưu đãi margin ngắn hạn M7 miễn lãi và chuyển nạp tiền tức thì qua ngân hàng số.",
+    ratingBreakdown: {
+      fee: 4.3,
+      app: 4.2,
+      support: 4.1,
+      stability: 4.3,
+      products: 4.2,
+    },
+    userVoices: [
+      {
+        quote: "Nạp tiền từ app TPBank vào chứng khoán TPS chỉ mất 5 giây. Gói margin M7 miễn lãi 7 ngày rất thích hợp cho trading ngắn hạn.",
+        source: "App Store — TPS Mobile",
+        type: "pro",
+      },
+      {
+        quote: "Biểu phí sau khi hết khuyến mãi 0% sẽ về mức 0.15%, cần theo dõi kỹ các chương trình ưu đãi để không bị bất ngờ.",
+        source: "Cộng đồng Nhà đầu tư TPS",
+        type: "con",
+      },
+    ],
+    companyInfo: {
+      founded: "2006",
+      hq: "Tầng 4 & Tầng 7, Tòa nhà Doji Tower, số 81-83-85 Hàm Nghi, Quận 1, TP.HCM",
+      license: "Giấy phép KDCK số 41/UBCK-GPHĐKD",
+      website: "https://tpbs.com.vn",
+      products: [
+        "Môi giới cổ phiếu, trái phiếu doanh nghiệp",
+        "Cho vay margin (Gói M7 ưu đãi)",
+        "Tư vấn tài chính và bảo lãnh phát hành",
+        "Sản phẩm tích lũy tài chính",
+      ],
+    },
+    accountSteps: [
+      {
+        title: "Tải ứng dụng TPS Mobile",
+        desc: "Tải app TPS Mobile từ App Store hoặc CH Play và chọn Mở tài khoản trực tuyến.",
+      },
+      {
+        title: "Xác thực danh tính eKYC",
+        desc: "Chụp ảnh hai mặt CCCD gắn chip và quét nhận diện gương mặt qua camera.",
+      },
+      {
+        title: "Liên kết tài khoản TPBank",
+        desc: "Kết nối tài khoản ngân hàng TPBank để hỗ trợ nạp rút tự động và nhận ưu đãi.",
+      },
+      {
+        title: "Kích hoạt và nạp tiền giao dịch",
+        desc: "Xác thực mã OTP gửi về điện thoại để hoàn tất ký hợp đồng và bắt đầu giao dịch.",
+      },
+    ],
+  },
+
+  yuanta: {
+    slug: "yuanta",
+    name: "Chứng khoán Yuanta Việt Nam",
+    shortName: "Yuanta",
+    rating: 4.4,
+    best_for: "Nhà đầu tư chủ động cần công cụ quét sóng YSradar và đòn bẩy vốn ngoại linh hoạt",
+    fee_rate: "0.10% (tự giao dịch) – 0.15%",
+    margin_rate: "Miễn lãi 7 ngày (Gói YST+) – 11.5%/năm",
+    app_rating: "4.2/5",
+    min_deposit: "Không yêu cầu",
+    ctaUrl: "https://yuanta.com.vn",
+    pros: [
+      "Tiềm lực tài chính vững mạnh từ Tập đoàn Yuanta Đài Loan — tập đoàn tài chính hàng đầu châu Á",
+      "Bộ công cụ phân tích công nghệ vượt trội: YSradar (quét tín hiệu), YSflex, YSinvest miễn phí",
+      "Phí giao dịch online chỉ 0.10% cho tài khoản tự giao dịch, cạnh tranh cao",
+      "Gói margin YST+ miễn lãi 0% trong 7 ngày đầu tiên với hạn mức vay lớn",
+    ],
+    cons: [
+      "Mạng lưới chi nhánh vật lý còn tập trung ở các thành phố lớn",
+      "Giao diện app YSflex có rất nhiều tính năng nâng cao nên người mới cần thời gian làm quen",
+      "Các khuyến nghị đầu tư tự động đôi khi có độ trễ so với nhịp giao dịch thực tế",
+    ],
+    verdict:
+      "Yuanta là sự kết hợp hoàn hảo giữa nguồn vốn ngoại dồi dào, chi phí giao dịch thấp (0.10%) và hệ thống công cụ định lượng YSradar mạnh mẽ cho nhà đầu tư thích tự chủ phân tích.",
+    ratingBreakdown: {
+      fee: 4.6,
+      app: 4.4,
+      support: 4.1,
+      stability: 4.4,
+      products: 4.3,
+    },
+    userVoices: [
+      {
+        quote: "Công cụ YSradar quét sóng và chấm điểm cổ phiếu rất chuẩn, giúp tôi tiết kiệm nhiều thời gian lọc mã hàng ngày.",
+        source: "Google Play — YSflex",
+        type: "pro",
+      },
+      {
+        quote: "Nhiều công cụ quá nên lúc đầu vào app hơi bị ngợp. Nếu có thêm video hướng dẫn chi tiết từng tính năng thì tốt hơn.",
+        source: "Diễn đàn Chứng khoán F319",
+        type: "con",
+      },
+    ],
+    companyInfo: {
+      founded: "2007",
+      hq: "Tầng 4, Tòa nhà Saigon Centre Tower 1, 65 Lê Lợi, Phường Bến Nghé, Quận 1, TP.HCM",
+      license: "Giấy phép KDCK số 77/UBCK-GP",
+      website: "https://yuanta.com.vn",
+      products: [
+        "Môi giới cổ phiếu, chứng quyền, phái sinh",
+        "Bộ công cụ phân tích dữ liệu YSradar",
+        "Cho vay ký quỹ Margin (Gói YST+)",
+        "Tư vấn tài chính doanh nghiệp",
+      ],
+    },
+    accountSteps: [
+      {
+        title: "Tải ứng dụng YSflex",
+        desc: "Tải app YSflex trên App Store hoặc Google Play và chọn nút Mở tài khoản eKYC.",
+      },
+      {
+        title: "Chụp ảnh CCCD và xác thực khuôn mặt",
+        desc: "Chụp rõ 2 mặt thẻ CCCD và hoàn tất nhận diện sinh trắc học chỉ trong 1 phút.",
+      },
+      {
+        title: "Đăng ký dịch vụ và gói Margin",
+        desc: "Lựa chọn gói tự giao dịch (phí 0.10%) hoặc đăng ký gói margin ưu đãi YST+.",
+      },
+      {
+        title: "Ký hợp đồng và nạp tiền giao dịch",
+        desc: "Nhận thông tin tài khoản qua email/SMS, nạp tiền và bắt đầu trải nghiệm YSradar.",
+      },
+    ],
+  },
+
+  kis: {
+    slug: "kis",
+    name: "Chứng khoán KIS Việt Nam",
+    shortName: "KIS",
+    rating: 4.3,
+    best_for: "Nhà đầu tư cần nguồn margin vốn ngoại dồi dào, lãi suất ưu đãi và phái sinh/chứng quyền",
+    fee_rate: "0.15% (online tiêu chuẩn)",
+    margin_rate: "Từ 8.9%/năm (ưu đãi) – 11.8%/năm",
+    app_rating: "4.0/5",
+    min_deposit: "Không yêu cầu",
+    ctaUrl: "https://kisvn.vn",
+    pros: [
+      "Thuộc Tập đoàn Korea Investment & Securities (Hàn Quốc) — định chế tài chính sừng sỏ châu Á",
+      "Nguồn vốn margin ngoại cực kỳ dồi dào, room vay lớn và lãi suất ưu đãi chỉ từ 8.9%/năm",
+      "Đơn vị tiên phong và dẫn đầu thị trường về phát hành chứng quyền có bảo đảm (CW)",
+      "Đội ngũ chuyên gia phân tích và quản lý rủi ro theo chuẩn mực quốc tế",
+    ],
+    cons: [
+      "Biểu phí giao dịch online 0.15% chưa hấp dẫn bằng các sàn miễn phí hoặc 0.08%",
+      "Giao diện app iKIS / KIS MTS còn mang phong cách Hàn Quốc khá đặc thù",
+      "Dịch vụ chăm sóc khách hàng cá nhân ngoài giờ hành chính đôi khi phản hồi chậm",
+    ],
+    verdict:
+      "KIS Việt Nam là bến đỗ sáng giá cho nhà đầu tư cần đòn bẩy tài chính ổn định với lãi suất margin rẻ từ nguồn vốn Hàn Quốc, cũng như những ai muốn giao dịch chứng quyền và phái sinh chuyên nghiệp.",
+    ratingBreakdown: {
+      fee: 4.2,
+      app: 4.0,
+      support: 4.0,
+      stability: 4.5,
+      products: 4.6,
+    },
+    userVoices: [
+      {
+        quote: "Room margin tại KIS rất thoải mái, vào sóng lớn không bao giờ lo hết hạn mức. Gói lãi suất 8.9% giúp tiết kiệm chi phí vay đáng kể.",
+        source: "Diễn đàn Vietstock",
+        type: "pro",
+      },
+      {
+        quote: "App iKIS thiết kế hơi khác thói quen của người Việt, một số nút bấm và biểu đồ cần thời gian làm quen.",
+        source: "Google Play — iKIS",
+        type: "con",
+      },
+    ],
+    companyInfo: {
+      founded: "2010",
+      hq: "Phòng 1801, Tầng 18, Tòa nhà MPlaza Saigon, 39 Lê Duẩn, Phường Bến Nghé, Quận 1, TP.HCM",
+      license: "Giấy phép KDCK số 118/GP-UBCK",
+      website: "https://kisvn.vn",
+      products: [
+        "Môi giới cổ phiếu, trái phiếu, chứng chỉ quỹ",
+        "Phát hành và môi giới chứng quyền có bảo đảm (CW)",
+        "Cho vay ký quỹ Margin (lãi suất ưu đãi từ 8.9%)",
+        "Giao dịch chứng khoán phái sinh",
+      ],
+    },
+    accountSteps: [
+      {
+        title: "Tải ứng dụng iKIS",
+        desc: "Tải ứng dụng iKIS trên App Store hoặc Google Play và chọn Đăng ký mở tài khoản.",
+      },
+      {
+        title: "Định danh điện tử eKYC",
+        desc: "Chụp ảnh thẻ CCCD và thực hiện quay quét khuôn mặt theo chỉ dẫn trên app.",
+      },
+      {
+        title: "Xác nhận gói dịch vụ và margin",
+        desc: "Kiểm tra thông tin tài khoản và đăng ký gói lãi suất margin ưu đãi nếu có nhu cầu.",
+      },
+      {
+        title: "Ký hợp đồng online và nạp tiền",
+        desc: "Ký hợp đồng bằng mã OTP điện tử và chuyển tiền vào tài khoản để bắt đầu giao dịch.",
+      },
+    ],
+  },
+
+  fpts: {
+    slug: "fpts",
+    name: "Chứng khoán FPTS (FPT Securities)",
+    shortName: "FPTS",
+    rating: 4.4,
+    best_for: "Nhà đầu tư theo trường phái phân tích cơ bản, coi trọng tính ổn định công nghệ",
+    fee_rate: "0.10% – 0.15%",
+    margin_rate: "12.0%/năm",
+    app_rating: "4.1/5",
+    min_deposit: "Không yêu cầu",
+    ctaUrl: "https://www.fpts.com.vn",
+    pros: [
+      "Hậu thuẫn công nghệ mạnh mẽ và tính ổn định vượt trội từ Tập đoàn FPT",
+      "Chính sách tách bạch phí tư vấn đầu tư minh bạch, không ép khách hàng quay vòng lệnh",
+      "Hệ thống phân tích báo cáo tài chính và dữ liệu vĩ mô cực kỳ chất lượng",
+      "Hệ thống cảnh báo và kiểm soát rủi ro tài khoản an toàn cao",
+    ],
+    cons: [
+      "Giao diện phần mềm EzTrade tương đối cổ điển, hiển thị nhiều bảng biểu phức tạp",
+      "Biểu phí giao dịch và lãi suất margin không thuộc nhóm rẻ nhất thị trường",
+      "Ít có các chương trình khuyến mãi hay giảm lãi suất đòn bẩy ngắn hạn",
+    ],
+    verdict:
+      "FPTS là bến đỗ an tâm cho nhà đầu tư tích lũy dài hạn, ưa chuộng sự ổn định tuyệt đối về hạ tầng công nghệ và dịch vụ tư vấn độc lập, minh bạch từ bệ phóng FPT.",
+    ratingBreakdown: {
+      fee: 4.0,
+      app: 4.1,
+      support: 4.4,
+      stability: 4.8,
+      products: 4.3,
+    },
+    userVoices: [
+      {
+        quote: "Hệ thống EzTrade cực kỳ ổn định, những ngày thị trường nghẽn lệnh kỷ lục vẫn đặt và khớp lệnh trơn tru.",
+        source: "Diễn đàn F319",
+        type: "pro",
+      },
+      {
+        quote: "Giao diện EzMobile nhìn hơi cũ kỹ và ngợp số liệu đối với F0 mới học đầu tư.",
+        source: "App Store — EzMobile",
+        type: "con",
+      },
+    ],
+    companyInfo: {
+      founded: "2007",
+      hq: "Số 52 đường Lạc Long Quân, Phường Bưởi, Quận Tây Hồ, Hà Nội",
+      license: "Giấy phép KDCK số 59/UBCK-GP",
+      website: "https://www.fpts.com.vn",
+      products: [
+        "Môi giới cổ phiếu, trái phiếu niêm yết",
+        "Giao dịch ký quỹ Margin",
+        "Cổng tư vấn đầu tư EzAdvisor",
+        "Dịch vụ lưu ký và quản lý cổ đông",
+      ],
+    },
+    accountSteps: [
+      {
+        title: "Tải ứng dụng EzMobile",
+        desc: "Tải app EzMobile trên App Store hoặc Google Play và chọn nút Mở tài khoản.",
+      },
+      {
+        title: "Xác thực danh tính eKYC",
+        desc: "Chụp ảnh CCCD 2 mặt và quét khuôn mặt theo chuẩn định danh điện tử eKYC.",
+      },
+      {
+        title: "Thiết lập mật khẩu và phương thức OTP",
+        desc: "Cài đặt mật khẩu giao dịch và kích hoạt phương thức Smart OTP bảo mật.",
+      },
+      {
+        title: "Ký hợp đồng online và nạp tiền",
+        desc: "Ký hợp đồng mở tài khoản qua mã OTP và chuyển tiền bắt đầu giao dịch trên EzTrade.",
+      },
+    ],
+  },
+
+  vcbs: {
+    slug: "vcbs",
+    name: "Chứng khoán VCBS (Vietcombank Securities)",
+    shortName: "VCBS",
+    rating: 4.4,
+    best_for: "Khách hàng ngân hàng Vietcombank, nhà đầu tư lớn ưu tiên an toàn tuyệt đối",
+    fee_rate: "0.15% – 0.20%",
+    margin_rate: "11.5% – 12.0%/năm",
+    app_rating: "4.1/5",
+    min_deposit: "Không yêu cầu",
+    ctaUrl: "https://www.vcbs.com.vn",
+    pros: [
+      "Hậu thuẫn 100% vốn từ Ngân hàng Vietcombank — định chế tài chính uy tín số 1 Việt Nam",
+      "Tích hợp tính năng quản lý và chuyển tiền tức thì ngay trên app VCB Digibank",
+      "Độ an toàn vốn và bảo mật tiêu chuẩn ngân hàng quốc doanh cao nhất",
+      "Mạng lưới chi nhánh và phòng giao dịch hỗ trợ rộng khắp toàn quốc",
+    ],
+    cons: [
+      "Biểu phí giao dịch 0.15% – 0.20% không phù hợp cho nhà đầu tư lướt sóng",
+      "Gói lãi suất margin ít chương trình ưu đãi giảm sâu như các CTCK tư nhân",
+      "Thủ tục hành chính mang tính chuẩn mực ngân hàng chặt chẽ",
+    ],
+    verdict:
+      "VCBS là lựa chọn số một cho các nhà đầu tư tổ chức hoặc cá nhân có nguồn vốn lớn coi trọng sự an toàn tài sản, bảo mật cao cấp và sự tiện lợi tối đa khi liên kết trực tiếp với Vietcombank.",
+    ratingBreakdown: {
+      fee: 3.8,
+      app: 4.1,
+      support: 4.3,
+      stability: 4.7,
+      products: 4.4,
+    },
+    userVoices: [
+      {
+        quote: "Nạp rút tiền trực tiếp từ VCB Digibank sang tài khoản VCBS trong tích tắc. Tiền gửi ngân hàng nhà nước nên cực kỳ yên tâm.",
+        source: "VCB Digibank User",
+        type: "pro",
+      },
+      {
+        quote: "Phí giao dịch hơi cao nếu lướt sóng ngắn hạn, dịch vụ môi giới tư vấn mang tính thận trọng.",
+        source: "Cộng đồng Nhà đầu tư",
+        type: "con",
+      },
+    ],
+    companyInfo: {
+      founded: "2002",
+      hq: "Tầng 12 & 17, Tòa nhà Vietcombank, 198 Trần Quang Khải, Hoàn Kiếm, Hà Nội",
+      license: "Giấy phép KDCK số 09/GPHĐKD",
+      website: "https://www.vcbs.com.vn",
+      products: [
+        "Môi giới chứng khoán và chứng chỉ quỹ",
+        "Giao dịch ký quỹ Margin",
+        "Môi giới chứng khoán phái sinh",
+        "Bảo lãnh phát hành và tư vấn tài chính doanh nghiệp",
+      ],
+    },
+    accountSteps: [
+      {
+        title: "Mở tài khoản qua app VCBS hoặc VCB Digibank",
+        desc: "Tải app VCBS Mobile hoặc truy cập mục Đầu tư trên ứng dụng VCB Digibank.",
+      },
+      {
+        title: "Xác thực danh tính eKYC",
+        desc: "Chụp ảnh hai mặt CCCD gắn chip và quét khuôn mặt theo quy trình sinh trắc học.",
+      },
+      {
+        title: "Liên kết tài khoản Vietcombank",
+        desc: "Đồng bộ tài khoản thanh toán VCB để nạp rút tiền chứng khoán hoàn toàn miễn phí.",
+      },
+      {
+        title: "Kích hoạt và nạp tiền giao dịch",
+        desc: "Ký hợp đồng trực tuyến và nạp tiền bắt đầu mua bán cổ phiếu trên VCBS Mobile.",
+      },
+    ],
+  },
+
+  hsc: {
+    slug: "hsc",
+    name: "Chứng khoán HSC (TP.HCM Securities)",
+    shortName: "HSC",
+    rating: 4.5,
+    best_for: "Nhà đầu tư chuyên nghiệp, khách hàng tổ chức & giao dịch phái sinh",
+    fee_rate: "0.15% – 0.20%",
+    margin_rate: "11.5% – 12.0%/năm",
+    app_rating: "4.3/5",
+    min_deposit: "Không yêu cầu",
+    ctaUrl: "https://www.hsc.com.vn",
+    pros: [
+      "Top đầu thị phần môi giới cho khối ngoại và các quỹ đầu tư tổ chức lớn",
+      "Ứng dụng HSC ONE có tốc độ đặt lệnh nhanh và bộ công cụ phái sinh chuyên nghiệp",
+      "Báo cáo phân tích doanh nghiệp và chiến lược thị trường chuẩn quốc tế",
+      "Hệ thống quản trị rủi ro chặt chẽ và uy tín thương hiệu lâu đời từ 2003",
+    ],
+    cons: [
+      "Phí giao dịch thuộc phân khúc cao cấp, không có chính sách zero-fee",
+      "Chính sách margin tập trung vào nhóm cổ phiếu cơ bản vốn hóa lớn",
+      "Định vị dịch vụ hướng nhiều về khách hàng lớn hơn là người mới F0",
+    ],
+    verdict:
+      "HSC là bến đỗ đẳng cấp cho nhà đầu tư nghiêm túc và chuyên nghiệp, nơi giá trị nhận lại từ hệ thống giao dịch mượt mà, phân tích xuất sắc và tính chuyên nghiệp cao vượt xa bài toán chi phí phí lẻ.",
+    ratingBreakdown: {
+      fee: 3.7,
+      app: 4.4,
+      support: 4.5,
+      stability: 4.7,
+      products: 4.6,
+    },
+    userVoices: [
+      {
+        quote: "App HSC ONE giao diện cực kỳ mượt mà, đặt lệnh phái sinh không hề bị giật lag. Báo cáo phân tích của HSC chuẩn chỉnh số 1.",
+        source: "App Store — HSC ONE",
+        type: "pro",
+      },
+      {
+        quote: "Phí 0.15% - 0.20% không phù hợp với tài khoản nhỏ thích lướt sóng liên tục.",
+        source: "Diễn đàn Vietstock",
+        type: "con",
+      },
+    ],
+    companyInfo: {
+      founded: "2003",
+      hq: "Tầng 5 & 6, Tòa nhà AB Tower, 76 Lê Lai, Quận 1, TP.HCM",
+      license: "Giấy phép KDCK số 11/GPHĐKD",
+      website: "https://www.hsc.com.vn",
+      products: [
+        "Môi giới cổ phiếu, trái phiếu và chứng chỉ quỹ",
+        "Môi giới chứng khoán phái sinh hàng đầu",
+        "Cho vay giao dịch ký quỹ Margin",
+        "Tư vấn đầu tư và tài chính doanh nghiệp",
+      ],
+    },
+    accountSteps: [
+      {
+        title: "Tải ứng dụng HSC ONE",
+        desc: "Tải ứng dụng HSC ONE trên thiết bị di động và chọn Mở tài khoản trực tuyến.",
+      },
+      {
+        title: "Định danh điện tử eKYC",
+        desc: "Chụp ảnh CCCD và thực hiện xác thực khuôn mặt tự động qua camera.",
+      },
+      {
+        title: "Lựa chọn gói dịch vụ tư vấn",
+        desc: "Chọn hình thức tự giao dịch hoặc giao dịch cùng chuyên viên tư vấn đầu tư.",
+      },
+      {
+        title: "Ký hợp đồng online và nạp tiền",
+        desc: "Ký kết hợp đồng điện tử qua OTP và nạp tiền trải nghiệm nền tảng HSC ONE.",
+      },
+    ],
+  },
+
+  vietcap: {
+    slug: "vietcap",
+    name: "Chứng khoán Vietcap (VCI)",
+    shortName: "Vietcap",
+    rating: 4.5,
+    best_for: "Nhà đầu tư giá trị, khách hàng tìm kiếm deal đầu tư độc quyền và IB hàng đầu",
+    fee_rate: "0.15%",
+    margin_rate: "11.5%/năm",
+    app_rating: "4.2/5",
+    min_deposit: "Không yêu cầu",
+    ctaUrl: "https://www.vietcap.com.vn",
+    pros: [
+      "Ngân hàng đầu tư (IB) hàng đầu Việt Nam — bảo lãnh phát hành các thương vụ IPO tỷ đô",
+      "Khối phân tích Vietcap Research có tầm ảnh hưởng lớn nhất đối với các quỹ ngoại",
+      "Ứng dụng Vietcap Mobile hiện đại, giao diện trực quan và đặt lệnh nhanh",
+      "Năng lực quản trị rủi ro và an toàn tài chính vượt trội",
+    ],
+    cons: [
+      "Mức phí giao dịch 0.15% không theo xu hướng miễn phí để cạnh tranh số lượng",
+      "Dịch vụ khách hàng tập trung mạnh cho nhóm khách hàng VIP và tổ chức",
+      "Số lượng chi nhánh phòng giao dịch vật lý không nhiều",
+    ],
+    verdict:
+      "Vietcap là sự lựa chọn chất lượng cao cho các nhà đầu tư dài hạn muốn tiếp cận tầm nhìn phân tích của các quỹ tổ chức lớn và hưởng lợi từ vị thế dẫn đầu trong các thương vụ IPO đình đám.",
+    ratingBreakdown: {
+      fee: 3.9,
+      app: 4.3,
+      support: 4.4,
+      stability: 4.6,
+      products: 4.5,
+    },
+    userVoices: [
+      {
+        quote: "Báo cáo Vietcap Research định giá doanh nghiệp rất sâu, nhiều góc nhìn độc quyền mà các bên khác không có.",
+        source: "Cộng đồng Đầu tư Giá trị",
+        type: "pro",
+      },
+      {
+        quote: "Phí giao dịch tiêu chuẩn không rẻ, chủ yếu thích hợp cho các nhà đầu tư nắm giữ trung và dài hạn.",
+        source: "Google Play — Vietcap Mobile",
+        type: "con",
+      },
+    ],
+    companyInfo: {
+      founded: "2007",
+      hq: "Tòa nhà Bitexco Financial Tower, Số 2 Hải Triều, Quận 1, TP.HCM",
+      license: "Giấy phép KDCK số 68/UBCK-GP",
+      website: "https://www.vietcap.com.vn",
+      products: [
+        "Môi giới chứng khoán cá nhân và tổ chức",
+        "Ngân hàng đầu tư (Tư vấn M&A, IPO)",
+        "Cho vay ký quỹ Margin",
+        "Môi giới phái sinh và chứng quyền",
+      ],
+    },
+    accountSteps: [
+      {
+        title: "Tải ứng dụng Vietcap Mobile",
+        desc: "Tải app Vietcap Mobile trên App Store hoặc Google Play và chọn Đăng ký tài khoản.",
+      },
+      {
+        title: "Định danh eKYC trực tuyến",
+        desc: "Chụp ảnh thẻ CCCD hai mặt và quét nhận diện khuôn mặt tự động.",
+      },
+      {
+        title: "Hoàn tất hợp đồng điện tử",
+        desc: "Xác nhận điều khoản hợp đồng và nhập mã OTP gửi về số điện thoại đăng ký.",
+      },
+      {
+        title: "Nạp tiền và bắt đầu đầu tư",
+        desc: "Chuyển tiền vào tài khoản định danh Vietcap và bắt đầu thực hiện lệnh giao dịch.",
+      },
+    ],
+  },
+
+  kb: {
+    slug: "kb",
+    name: "Chứng khoán KB Việt Nam (KBSV)",
+    shortName: "KBSV",
+    rating: 4.4,
+    best_for: "Nhà đầu tư cá nhân tự học với app KB Buddy, cần đòn bẩy margin vốn ngoại Hàn Quốc",
+    fee_rate: "0.10% – 0.15%",
+    margin_rate: "Từ 9.0%/năm (ưu đãi) – 11.5%/năm",
+    app_rating: "4.3/5",
+    min_deposit: "Không yêu cầu",
+    ctaUrl: "https://www.kbsec.com.vn",
+    pros: [
+      "Hậu thuẫn bởi Tập đoàn Tài chính KB (Hàn Quốc) — tập đoàn tài chính số 1 xứ kim chi",
+      "Ứng dụng KB Buddy thiết kế riêng cho F0 với tính năng chấm điểm cổ phiếu KB Rating",
+      "Gói vay margin ưu đãi từ nguồn vốn ngoại dồi dào, lãi suất chỉ từ 9.0%/năm",
+      "Quy trình mở tài khoản eKYC mượt mà, tích hợp nhiều nội dung giáo dục đầu tư",
+    ],
+    cons: [
+      "Khách hàng phải cài đặt 2 ứng dụng riêng biệt (KB Buddy cho người mới và KB Trade cho chuyên nghiệp)",
+      "Mức phí giao dịch có môi giới vẫn ở mức 0.15% – 0.25%",
+      "Thị phần môi giới còn đứng sau các công ty top đầu nội địa",
+    ],
+    verdict:
+      "KBSV là lựa chọn rất đáng giá cho người mới bắt đầu nhờ app KB Buddy trực quan, kết hợp với lợi thế nguồn vốn margin giá rẻ dồi dào từ tập đoàn tài chính KB Hàn Quốc.",
+    ratingBreakdown: {
+      fee: 4.4,
+      app: 4.4,
+      support: 4.2,
+      stability: 4.5,
+      products: 4.3,
+    },
+    userVoices: [
+      {
+        quote: "App KB Buddy giao diện cực kỳ đẹp và dễ hiểu cho người mới. Tính năng chấm điểm KB Rating tham khảo rất tiện.",
+        source: "App Store — KB Buddy",
+        type: "pro",
+      },
+      {
+        quote: "Phải chuyển đổi giữa 2 app KB Buddy và KB Trade khi cần dùng tính năng nâng cao hơi bất tiện một chút.",
+        source: "Google Play — KB Buddy",
+        type: "con",
+      },
+    ],
+    companyInfo: {
+      founded: "2008",
+      hq: "Tầng 16 & 17, Tòa nhà TNR Tower, 54A Nguyễn Chí Thanh, Đống Đa, Hà Nội",
+      license: "Giấy phép KDCK số 87/UBCK-GP",
+      website: "https://www.kbsec.com.vn",
+      products: [
+        "Môi giới chứng khoán cơ sở và phái sinh",
+        "Cho vay giao dịch ký quỹ Margin",
+        "Nền tảng KB Buddy & KB Trade",
+        "Dịch vụ ngân hàng đầu tư",
+      ],
+    },
+    accountSteps: [
+      {
+        title: "Tải ứng dụng KB Buddy",
+        desc: "Tải app KB Buddy trên App Store hoặc Google Play và chọn nút Mở tài khoản eKYC.",
+      },
+      {
+        title: "Chụp ảnh CCCD và quét khuôn mặt",
+        desc: "Chụp ảnh 2 mặt CCCD và quét khuôn mặt theo hướng dẫn trực quan trên app.",
+      },
+      {
+        title: "Thiết lập tài khoản và mã PIN",
+        desc: "Tạo mật khẩu đăng nhập và mã PIN giao dịch bảo mật.",
+      },
+      {
+        title: "Ký hợp đồng và nạp tiền giao dịch",
+        desc: "Ký kết hợp đồng điện tử qua OTP và nạp tiền bắt đầu giao dịch nhận ưu đãi.",
+      },
+    ],
+  },
+
+  "mirae-asset": {
+    slug: "mirae-asset",
+    name: "Chứng khoán Mirae Asset Việt Nam (MAS)",
+    shortName: "Mirae Asset",
+    rating: 4.4,
+    best_for: "Nhà đầu tư sử dụng đòn bẩy margin quy mô lớn, vốn ngoại ổn định",
+    fee_rate: "0.15% (online)",
+    margin_rate: "Từ 8.5%/năm (ưu đãi) – 11.0%/năm",
+    app_rating: "4.1/5",
+    min_deposit: "Không yêu cầu",
+    ctaUrl: "https://masvn.com",
+    pros: [
+      "Quy mô vốn điều lệ hàng đầu thị trường nhờ dòng vốn từ Tập đoàn Mirae Asset (Hàn Quốc)",
+      "Nguồn cung margin cực kỳ dồi dào, hạn mức lớn và lãi suất ưu đãi chỉ từ 8.5%/năm",
+      "Hệ thống vận hành chuyên nghiệp theo chuẩn quốc tế, mạng lưới chi nhánh rộng",
+      "Nhiều gói đòn bẩy tài chính linh hoạt phù hợp với từng khẩu vị rủi ro",
+    ],
+    cons: [
+      "Phí giao dịch online 0.15% chưa cạnh tranh với các sàn miễn phí phí giao dịch",
+      "Giao diện ứng dụng My Asset đôi khi chưa tối ưu tốt cho người dùng chuộng sự tối giản",
+      "Quy trình xử lý một số thủ tục tài khoản còn khá nhiều bước xác thực",
+    ],
+    verdict:
+      "Mirae Asset là điểm tựa vững chắc cho các nhà đầu tư coi trọng tiềm lực tài chính vốn ngoại, cần hạn mức vay margin lớn và lãi suất ưu đãi cạnh tranh mà không lo bị hạn chế room.",
+    ratingBreakdown: {
+      fee: 4.2,
+      app: 4.0,
+      support: 4.2,
+      stability: 4.6,
+      products: 4.5,
+    },
+    userVoices: [
+      {
+        quote: "Room margin của Mirae Asset phải nói là vô địch, thị trường sôi động cỡ nào cũng không sợ hết hạn mức vay.",
+        source: "Diễn đàn F247",
+        type: "pro",
+      },
+      {
+        quote: "App My Asset dùng ổn nhưng giao diện hơi nhiều chữ số, người mới cần thời gian làm quen.",
+        source: "App Store — My Asset",
+        type: "con",
+      },
+    ],
+    companyInfo: {
+      founded: "2007",
+      hq: "Tòa nhà Le Meridien, 3C Tôn Đức Thắng, Phường Bến Nghé, Quận 1, TP.HCM",
+      license: "Giấy phép KDCK số 62/UBCK-GP",
+      website: "https://masvn.com",
+      products: [
+        "Môi giới cổ phiếu, trái phiếu, phái sinh",
+        "Cho vay ký quỹ Margin quy mô lớn",
+        "Chứng quyền có bảo đảm (CW)",
+        "Dịch vụ tư vấn tài chính doanh nghiệp",
+      ],
+    },
+    accountSteps: [
+      {
+        title: "Tải app My Asset",
+        desc: "Tải ứng dụng My Asset từ App Store hoặc Google Play và chọn Mở tài khoản.",
+      },
+      {
+        title: "Định danh điện tử eKYC",
+        desc: "Chụp 2 mặt CCCD và hoàn tất nhận diện khuôn mặt sinh trắc học.",
+      },
+      {
+        title: "Đăng ký gói dịch vụ và Margin",
+        desc: "Lựa chọn các gói margin ưu đãi theo nhu cầu sử dụng đòn bẩy.",
+      },
+      {
+        title: "Ký hợp đồng online và nạp tiền",
+        desc: "Nhận thông tin tài khoản qua email, ký hợp đồng điện tử và bắt đầu giao dịch.",
+      },
+    ],
+  },
 };
 
 /** Look up a broker profile by slug. Returns undefined if not found. */

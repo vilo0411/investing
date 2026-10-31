@@ -51,7 +51,7 @@ Cùng **[Value Investing](/)** tìm hiểu hệ số thanh toán là gì. Bài v
 
 ## Hệ số thanh toán là gì? Tấm khiên bảo vệ doanh nghiệp khỏi vỡ nợ
 
-Hệ số thanh toán (Liquidity Ratios) đo lường khả năng trả nợ ngắn hạn của doanh nghiệp. Nhóm chỉ số này cho biết doanh nghiệp có đủ tiền mặt và tài sản để thanh toán hay không.
+Hệ số thanh toán (Liquidity Ratios) đo lường khả năng trả nợ ngắn hạn của doanh nghiệp. Trong trường phái [phân tích cơ bản là gì](/phan-tich/co-ban/phan-tich-co-ban-la-gi/), nhóm chỉ số này cho biết doanh nghiệp có đủ tiền mặt và tài sản lưu động để thanh toán đúng hạn hay không.
 
 
 Các khoản nợ ngắn hạn này thường có thời hạn thanh toán dưới 12 tháng. Chúng bao gồm nợ vay ngân hàng, tiền nợ nhà cung cấp và thuế phải nộp.

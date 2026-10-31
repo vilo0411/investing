@@ -118,6 +118,6 @@ Không có công cụ nào hoàn hảo cho tất cả mọi người. Sự lựa
 * **Bạn nên chọn chứng chỉ quỹ nếu**. Bạn là nhân viên văn phòng bận rộn, chưa có nhiều kiến thức tài chính. Bạn muốn xây dựng lộ trình [đầu tư tích sản cổ phiếu là gì](/dau-tu/co-phieu/dau-tu-tich-san-co-phieu-la-gi/) an toàn trong 5 đến 10 năm.
 
 
-* **Bạn nên tự chọn cổ phiếu nếu**. Bạn yêu thích kinh doanh, sẵn sàng dành 3 đến 5 giờ mỗi tuần đọc báo cáo và theo dõi thị trường. Bạn có tâm lý vững vàng và muốn tối ưu hóa tỷ suất lợi nhuận cá nhân.
+* **Bạn nên tự chọn cổ phiếu nếu**. Bạn yêu thích nghiên cứu doanh nghiệp, sẵn sàng học [cách đầu tư cổ phiếu](/dau-tu/co-phieu/cach-dau-tu-co-phieu/) bài bản và dành 3 đến 5 giờ mỗi tuần đọc báo cáo tài chính. Bạn có tâm lý vững vàng và muốn chủ động tối ưu hóa tỷ suất sinh lời của mình.
 
 Nếu còn phân vân, bạn có thể kết hợp cả hai. Hãy dành 80% vốn cho chứng chỉ quỹ và 20% vốn để tự chọn cổ phiếu. Hãy mở ứng dụng chứng khoán và tìm hiểu danh mục một chứng chỉ quỹ ngay hôm nay.

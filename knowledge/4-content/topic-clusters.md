@@ -105,7 +105,7 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 |---|---|---|---|
 | Mở tài khoản chứng khoán có mất phí không | `mo-tai-khoan-chung-khoan-co-mat-phi-khong` | `Finalized` | |
 | Mở tài khoản chứng khoán online có an toàn không | `mo-tai-khoan-chung-khoan-online-co-an-toan-khong` | `Finalized` | ✅ Đã publish |
-| Các loại tài khoản chứng khoán | `cac-loai-tai-khoan-chung-khoan` | `Optimizing` | ✅ Đã publish |
+| Các loại tài khoản chứng khoán | `cac-loai-tai-khoan-chung-khoan` | `Finalized` | ✅ Đã publish |
 | Một người được mở bao nhiêu tài khoản | `mot-nguoi-duoc-mo-bao-nhieu-tai-khoan-chung-khoan` | `Finalized` | |
 | Hợp đồng mở tài khoản chứng khoán | `hop-dong-mo-tai-khoan-chung-khoan` | `Finalized` | |
 
@@ -113,15 +113,15 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 
 ## CLUSTER C4 — Cách Mua Cổ Phiếu [Ticker]
 
-**Hub:** Cách đặt lệnh mua cổ phiếu | `/dau-tu/co-phieu/cach-mua-co-phieu/` | `Planned`
+**Hub:** Cách đặt lệnh mua cổ phiếu | `/dau-tu/co-phieu/cach-mua-co-phieu/` | `Finalized`
 > *(Các bài ticker cụ thể là spoke của hub này)*
 
 | Keyword (Spoke) | Slug | Status |
 |---|---|---|
-| Cách mua cổ phiếu VCB | `cach-mua-co-phieu-vcb` | `Planned` |
-| Cách mua cổ phiếu FPT | `cach-mua-co-phieu-fpt` | `Planned` |
-| Cách mua cổ phiếu Hòa Phát | `cach-mua-co-phieu-hoa-phat` | `Planned` |
-| Cách mua cổ phiếu Vinamilk | `cach-mua-co-phieu-vinamilk` | `Planned` |
+| Cách mua cổ phiếu VCB | `cach-mua-co-phieu-vcb` | `Finalized` |
+| Cách mua cổ phiếu FPT | `cach-mua-co-phieu-fpt` | `Finalized` |
+| Cách mua cổ phiếu Hòa Phát | `cach-mua-co-phieu-hoa-phat` | `Finalized` |
+| Cách mua cổ phiếu Vinamilk | `cach-mua-co-phieu-vinamilk` | `Finalized` |
 | Cách mua cổ phiếu Techcombank | `cach-mua-co-phieu-techcombank` | `Planned` |
 | Cách mua cổ phiếu Vingroup | `cach-mua-co-phieu-vingroup` | `Planned` |
 | Cách mua cổ phiếu ACB | `cach-mua-co-phieu-acb` | `Planned` |

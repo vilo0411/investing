@@ -61,7 +61,7 @@ Bài viết từ **[Value Investing](/)** giải thích **cắt lỗ là gì** v
 
 ## Bản chất cắt lỗ: Chi phí bảo hiểm cho danh mục
 
-Cắt lỗ (Stop Loss) là hành động chủ động bán cổ phiếu khi giá giảm. Bạn chấp nhận khoản lỗ nhỏ định sẵn để bảo vệ vốn. Mục tiêu duy nhất là chặn đứng đà hao mòn của dòng vốn.
+Cắt lỗ (Stop Loss) là hành động chủ động bán cổ phiếu khi giá giảm. Bạn chấp nhận khoản lỗ nhỏ định sẵn để bảo vệ vốn. Mục tiêu duy nhất là chặn đứng đà hao mòn của dòng vốn. Dù mới tìm hiểu [cổ phiếu là gì](/dau-tu/co-phieu/co-phieu-la-gi/) hay đã có kinh nghiệm trên sàn, bảo toàn vốn luôn là điều kiện tiên quyết trước khi nghĩ đến tìm kiếm lợi nhuận.
 
 Hãy hình dung bạn kinh doanh cửa hàng thời trang. Khi nhập phải một lô áo lỗi mốt không ai mua, bạn sẽ làm gì?
 
@@ -121,4 +121,4 @@ Những cái bẫy này nằm trong nhóm các [sai lầm đầu tư chứng kho
 
 Quản trị cảm xúc và tuân thủ kỷ luật là chìa khóa then chốt của [tâm lý đầu tư chứng khoán](/dau-tu/co-phieu/tam-ly-dau-tu-chung-khoan/) chuyên nghiệp.
 
-Cắt lỗ chứng minh bạn là một nhà đầu tư có trách nhiệm với đồng vốn. Hãy rà soát danh mục và tìm ra cổ phiếu đang giảm giá trái kỳ vọng. Mạnh dạn thiết lập kỷ luật cắt lỗ ngay hôm nay.
+Cắt lỗ chứng minh bạn là một nhà đầu tư có trách nhiệm với đồng vốn. Trong hành trình tìm hiểu [cách đầu tư cổ phiếu](/dau-tu/co-phieu/cach-dau-tu-co-phieu/) bài bản, việc giữ kỷ luật cắt lỗ sẽ bảo vệ bạn sống sót qua những nhịp sụt giảm bất ngờ của thị trường. Hãy rà soát danh mục và thiết lập ngưỡng an toàn ngay từ hôm nay.

@@ -28,7 +28,7 @@ sources:
   - "CFA Institute - Technical Analysis Foundation"
 ---
 
-Trong phân tích kỹ thuật chứng khoán, việc đọc hiểu các mốc cản tâm lý là nền tảng cốt lõi. Cùng **[Value Investing](/)**, khái niệm **hỗ trợ kháng cự là gì** luôn là bài học đầu tiên mà mọi nhà đầu tư cần thành thục.
+Trong trường phái [phân tích kỹ thuật là gì](/phan-tich/ky-thuat/phan-tich-ky-thuat-la-gi/), việc đọc hiểu các mốc cản tâm lý là nền tảng cốt lõi. Cùng **[Value Investing](/)**, khái niệm **hỗ trợ kháng cự là gì** luôn là bài học đầu tiên mà mọi nhà đầu tư cần thành thục.
 
 Hai khái niệm này tựa như sàn nhà và trần nhà của một căn phòng. Khi nắm vững nguyên lý vận hành của chúng, bạn sẽ xác định điểm mua bán an toàn và kiểm soát rủi ro hiệu quả.
 
@@ -94,7 +94,7 @@ Chiến lược thứ hai là giao dịch bứt phá (Breakout). Khi giá cổ p
 
 Tuy nhiên, bạn phải luôn đề phòng bẫy phá vỡ giả (Bull trap hoặc Bear trap). Đôi khi, giá chỉ nhô lên khỏi kháng cự trong phiên rồi nhanh chóng thụt lùi vào trong dải. Để phòng tránh bẫy này, bạn hãy đợi cây nến ngày đóng cửa hoàn toàn bên ngoài vùng cản.
 
-Cuối cùng, đừng bao giờ quên cài đặt lệnh [cắt lỗ](/dau-tu/co-phieu/cat-lo-la-gi/) từ 3% đến 5% dưới vùng hỗ trợ gần nhất. Trong đầu tư tài chính, việc giữ được tiền luôn là điều kiện tiên quyết trước khi nghĩ đến việc kiếm được tiền.
+Cuối cùng, đừng bao giờ quên cài đặt lệnh [cắt lỗ](/dau-tu/co-phieu/cat-lo-la-gi/) từ 3% đến 5% dưới vùng hỗ trợ gần nhất. Trong quy trình rèn luyện [cách đầu tư cổ phiếu](/dau-tu/co-phieu/cach-dau-tu-co-phieu/) bài bản, việc bảo toàn vốn luôn là điều kiện tiên quyết trước khi nghĩ đến việc tìm kiếm lợi nhuận.
 
 ![Nhà đầu tư xác định hỗ trợ và kháng cự trên đồ thị kỹ thuật](./images/ho-tro-khang-cu-la-gi/nha-dau-tu-xac-dinh-ho-tro-khang-cu.jpg)
 *Ảnh: Nicholas Cappello / Unsplash*

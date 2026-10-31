@@ -1,116 +1,101 @@
 ---
-title: 'Đánh giá Công ty Chứng khoán Vietcap (VCI): Phí, App và Chất Lượng Phân Tích'
-description: >-
-  Đánh giá công ty chứng khoán Vietcap (VCI) chi tiết 2026. Phân tích phí giao
-  dịch, lãi margin, chất lượng báo cáo phân tích và ứng dụng Vietcap Mobile.
+title: "Review Vietcap: Có nên mở tài khoản chứng khoán Vietcap không? (2026)"
+description: "Đánh giá chi tiết Chứng khoán Vietcap (VCI) năm 2026: Vị thế ngân hàng đầu tư IB số 1, chất lượng báo cáo Vietcap Research, app Vietcap Mobile và biểu phí giao dịch."
 category: reviews
-heroImage: /images/articles/review-vietcap-securities/review-vietcap-securities.jpg
-publishDate: '2026-07-29'
-updatedDate: '2026-07-29'
-readingTime: 7 phút đọc
+heroImage: "/images/articles/review-vietcap-securities/review-vietcap-securities.jpg"
+publishDate: "2026-07-29"
+updatedDate: "2026-07-29"
+factCheckedDate: "2026-07-29"
+readingTime: "7 phút đọc"
 featured: false
 order: 10
-sources:
-  - Báo cáo thường niên Vietcap 2025 - Công ty Cổ phần Chứng khoán Vietcap
-  - >-
-    Số liệu công bố kết quả hoạt động tư vấn Ngân hàng Đầu tư (IB) 2025 -
-    Vietcap
-keyTakeaways:
-  - >-
-    Vietcap (mã VCI, tiền thân là Chứng khoán Bản Việt) là CTCK dẫn đầu thị
-    trường trong mảng Ngân hàng Đầu tư (IB) và khách hàng tổ chức.
-  - >-
-    Báo cáo nghiên cứu phân tích doanh nghiệp và ngành của Vietcap có độ chi
-    tiết và chất lượng hàng đầu tại Việt Nam.
-  - Biểu phí giao dịch cá nhân dao động từ 0.15% - 0.30% tùy quy mô tài khoản.
-  - >-
-    Ứng dụng Vietcap Mobile có giao diện hiện đại, tích hợp công cụ phân tích và
-    dữ liệu doanh nghiệp phong phú.
+layoutType: review
+reviewType: company
+tags:
+  - review vietcap securities
+  - chứng khoán vietcap
+  - đánh giá vietcap
+  - mở tài khoản vietcap
+brokers:
+  - slug: vietcap
 faq:
-  - question: Chứng khoán Vietcap đổi tên từ công ty nào?
-    answer: >-
-      Chứng khoán Vietcap tiền thân là Công ty Cổ phần Chứng khoán Bản Việt
-      (VCSC - mã chứng khoán VCI), được chính thức đổi tên thương hiệu thành
-      Vietcap từ năm 2023.
-  - question: Phí giao dịch tại chứng khoán Vietcap là bao nhiêu?
-    answer: >-
-      Phí giao dịch trực tuyến tự thực hiện tại Vietcap là 0.15%, còn phí qua
-      môi giới hỗ trợ dao động từ 0.20% - 0.30%.
-  - question: Mở tài khoản Vietcap online có cần đến phòng giao dịch không?
-    answer: >-
-      Không cần, bạn có thể mở tài khoản trực tuyến 100% qua eKYC trên ứng dụng
-      Vietcap Mobile chỉ trong vài phút.
+  - question: "Chứng khoán Vietcap đổi tên từ công ty nào?"
+    answer: "Chứng khoán Vietcap tiền thân là Công ty Cổ phần Chứng khoán Bản Việt (VCSC - mã chứng khoán VCI), được chính thức đổi tên thương hiệu thành Vietcap từ năm 2023."
+  - question: "Phí giao dịch tại chứng khoán Vietcap là bao nhiêu?"
+    answer: "Phí giao dịch trực tuyến tự thực hiện tại Vietcap là 0.15%, còn phí qua nhân viên môi giới hỗ trợ dao động từ 0.20% - 0.30%."
+  - question: "Mở tài khoản Vietcap online có cần đến phòng giao dịch không?"
+    answer: "Không cần, bạn có thể mở tài khoản trực tuyến 100% qua công nghệ eKYC trên ứng dụng Vietcap Mobile chỉ trong vài phút."
+sources:
+  - "Báo cáo thường niên Vietcap 2026 - Công ty Cổ phần Chứng khoán Vietcap"
+  - "Số liệu công bố kết quả hoạt động tư vấn Ngân hàng Đầu tư (IB) - Vietcap"
+citations:
+  - title: "Báo cáo thường niên Vietcap (cập nhật 2026)"
+    publisher: "Công ty Cổ phần Chứng khoán Vietcap"
+    url: "https://www.vietcap.com.vn"
+  - title: "Kết quả hoạt động tư vấn ngân hàng đầu tư (IB)"
+    publisher: "Sở Giao dịch Chứng khoán TP.HCM (HOSE)"
+keyTakeaways:
+  - "Vietcap (mã VCI) là CTCK dẫn đầu thị trường trong mảng Ngân hàng Đầu tư (IB) và phục vụ các tổ chức quỹ ngoại lớn."
+  - "Báo cáo nghiên cứu phân tích doanh nghiệp và ngành của Vietcap Research có độ chi tiết và chất lượng số 1 tại Việt Nam."
+  - "Ứng dụng Vietcap Mobile có giao diện hiện đại, đặt lệnh mượt mà và tích hợp đọc báo cáo nghiên cứu ngay trên app."
+  - "Biểu phí 0.15% rất tương xứng với giá trị thông tin và khuyến nghị phân tích dành cho nhà đầu tư giá trị."
 ---
 
-# Đánh giá Công ty Chứng khoán Vietcap (VCI): Phí, App và Chất Lượng Phân Tích
+Bạn đang tìm hiểu về Chứng khoán Vietcap (tiền thân là Chứng khoán Bản Việt - mã VCI) — thương hiệu hàng đầu trong mảng ngân hàng đầu tư (IB) và khách hàng tổ chức? Trong bài viết [review công ty chứng khoán](/reviews/review-cong-ty-chung-khoan-cho-nguoi-moi/) này từ **[Value Investing](/)**, chúng ta sẽ mổ xẻ xem Vietcap có thực sự phù hợp cho nhà đầu tư cá nhân hay không.
 
-Bạn đang tò mò về Chứng khoán Vietcap (tiền thân là Chứng khoán Bản Việt - VCI) - thương hiệu hàng đầu trong mảng ngân hàng đầu tư (IB) và khách hàng tổ chức? Trong bài review này từ **[Value Investing](/)**, chúng ta sẽ mổ xẻ xem Vietcap có phù hợp cho nhà đầu tư cá nhân F0 hay không.
+## Chứng khoán Vietcap là công ty gì?
 
-## Vietcap (VCI) là ai? Từ Chứng khoán Bản Việt đến thương hiệu mới
+Công ty Cổ phần Chứng khoán Vietcap (Mã niêm yết HOSE: VCI) được thành lập vào năm 2007. Trước đây, công ty được biết đến rộng rãi với tên gọi Chứng khoán Bản Việt (VCSC). Năm 2023, doanh nghiệp chính thức tái định vị thương hiệu và đổi tên thành Vietcap để tiếp cận chuẩn mực tài chính toàn cầu.
 
-Công ty Cổ phần Chứng khoán Vietcap (Mã niêm yết HOSE: VCI) được thành lập vào năm 2007. Trước đây, thương hiệu này được biết đến rộng rãi với tên gọi Chứng khoán Bản Việt (VCSC).
+Vietcap từ lâu đã khẳng định vị thế dẫn đầu tuyệt đối trong lĩnh vực Ngân hàng đầu tư (Investment Banking - IB). Sàn là đơn vị đứng sau hàng loạt thương vụ M&A, phát hành cổ phiếu lần đầu ra công chúng (IPO) và niêm yết cho các tập đoàn kinh tế hàng đầu Việt Nam. Nhờ đó, Vietcap sở hữu mối quan hệ khăng khít với giới lãnh đạo doanh nghiệp và các định chế tài chính quốc tế lớn.
 
-Năm 2023, công ty chính thức tái cấu trúc thương hiệu và đổi tên thành Vietcap. Sự thay đổi này đánh dấu bước chuyển mình hướng tới sự hiện đại, trẻ trung và tiệm cận các tiêu chuẩn tài chính quốc tế.
+## Đánh giá chi tiết Chứng khoán Vietcap: Ưu và nhược điểm
 
-Vietcap từ lâu đã khẳng định thế mạnh vượt trội trong lĩnh vực Ngân hàng đầu tư (Investment Banking - IB). Công ty là đơn vị đứng sau hàng loạt thương vụ M&A, phát hành cổ phiếu IPO và niêm yết cho các tập đoàn lớn nhất Việt Nam.
+Dưới đây là các đánh giá cụ thể về chi phí, nền tảng app và giá trị phân tích độc quyền tại Vietcap.
 
-## Biểu phí giao dịch và lãi suất margin Vietcap
+### Biểu phí giao dịch và lãi suất margin
 
-Mặc dù có định thế mạnh ở mảng tổ chức, Vietcap vẫn cung cấp chính sách giá cạnh tranh cho nhà đầu tư cá nhân.
+Mặc dù định vị ở phân khúc khách hàng cao cấp và tổ chức, Vietcap vẫn áp dụng biểu phí cạnh tranh cho nhà đầu tư cá nhân tự giao dịch trực tuyến ở mức 0.15%.
 
-Đối với khách hàng tự giao dịch qua ứng dụng di động, mức phí cố định là 0.15% (mức phí tương đương với chính sách ở bài [đánh giá VCBS](/reviews/review-vcbs-securities/)). Nếu sử dụng dịch vụ tư vấn môi giới trực tiếp, phí giao dịch sẽ từ 0.20% đến 0.30%.
+| Dịch vụ giao dịch | Phí tự giao dịch Online | Phí có Môi giới chăm sóc |
+| :--- | :--- | :--- |
+| Cổ phiếu / Chứng chỉ quỹ | 0.15% | 0.20% – 0.30% |
+| Chứng quyền có bảo đảm (CW) | 0.15% | 0.20% – 0.25% |
+| Hợp đồng tương lai phái sinh | 3.000 VNĐ/HĐ | 4.000 – 5.000 VNĐ/HĐ |
 
-| Dịch vụ | Phí tự giao dịch Online | Phí có Môi giới chăm sóc |
-|---|---|---|
-| Cổ phiếu / Chứng chỉ quỹ | 0.15% | 0.20% - 0.30% |
-| Chứng quyền có bảo đảm | 0.15% | 0.20% - 0.25% |
-| Hợp đồng Phái sinh | 3.000 VNĐ/HĐ | 4.000 - 5.000 VNĐ/HĐ |
+Lãi suất [giao dịch ký quỹ (margin)](/dau-tu/co-phieu/margin-la-gi/) tại Vietcap dao động khoảng 11.5%/năm. Danh mục cổ phiếu được cấp hạn mức margin tại Vietcap được sàng lọc rất kỹ lưỡng theo các tiêu chí cơ bản lành mạnh, giúp nhà đầu tư tránh xa các mã cổ phiếu rác hay biến động đầu cơ nguy hiểm.
 
-Lãi suất margin tại Vietcap dao động từ 12.5% đến 13.5%/năm. Danh mục cổ phiếu cho phép vay ký quỹ tại Vietcap được sàng lọc rất kỹ lưỡng, ưu tiên các doanh nghiệp có nền tảng tài chính lành mạnh.
+### Chất lượng báo cáo phân tích Vietcap Research độc quyền
 
-![Báo cáo phân tích tài chính doanh nghiệp trên máy tính](./images/review-vietcap-securities/inline-01.jpg)
-*Ảnh: Adam Śmigielski / Unsplash*
+Nếu phải chọn ra một lý do khiến các nhà đầu tư theo trường phái [phân tích cơ bản](/phan-tich/co-ban/phan-tich-co-ban-la-gi/) yêu thích Vietcap, đó chính là chất lượng vượt trội của khối nghiên cứu (Research).
 
-## Đánh giá chất lượng báo cáo phân tích và tư vấn đầu tư
+Đội ngũ chuyên gia phân tích của Vietcap nổi tiếng với các báo cáo cập nhật kết quả kinh doanh doanh nghiệp, báo cáo chiến lược ngành và triển vọng vĩ mô cực kỳ chi tiết. Các mô hình định giá DCF và P/E được xây dựng theo chuẩn mực CFA quốc tế. Khi mở tài khoản tại Vietcap, bạn được tiếp cận kho dữ liệu tri thức quý giá này hoàn toàn miễn phí.
 
-Nếu phải chọn ra một lý do khiến các nhà đầu tư theo trường phái [phân tích cơ bản](/phan-tich/co-ban/phan-tich-co-ban-la-gi/) yêu thích Vietcap, đó chính là chất lượng của khối nghiên cứu (Research).
+### Trải nghiệm ứng dụng Vietcap Mobile
 
-Đội ngũ chuyên gia phân tích của Vietcap nổi tiếng với các báo cáo cập nhật doanh nghiệp, báo cáo ngành và báo cáo chiến lược vĩ mô cực kỳ chi tiết. Các mô hình định giá được xây dựng bài bản theo chuẩn CFA.
+Cùng với bước chuyển mình đổi tên thương hiệu, Vietcap đã ra mắt ứng dụng Vietcap Mobile hoàn toàn mới với giao diện trực quan, tinh tế và tốc độ xử lý nhanh.
 
-Nhà đầu tư sở hữu tài khoản tại Vietcap có quyền truy cập miễn phí vào kho dữ liệu báo cáo phân tích này. Đây là lợi thế rất lớn giúp bạn tích lũy kiến thức và tự tin đưa ra quyết định đầu tư.
+App tích hợp đầy đủ bảng giá thời gian thực, công cụ vẽ đồ thị phân tích kỹ thuật và đặt lệnh nhanh một chạm. Điểm sáng lớn nhất là nhà đầu tư có thể đọc tin tức chuyên sâu và xem trực tiếp các bản tin tóm tắt phân tích của Vietcap Research ngay trên điện thoại di động mà không cần mở máy tính.
 
-## Trải nghiệm ứng dụng Vietcap Mobile
+## Hướng dẫn mở tài khoản Vietcap online bằng eKYC
 
-Cùng với việc đổi tên thương hiệu, Vietcap đã ra mắt ứng dụng Vietcap Mobile với giao diện trực quan và tốc độ xử lý nhanh.
+Quy trình đăng ký tài khoản trực tuyến tại Vietcap diễn ra 100% online trong khoảng 3 đến 5 phút:
 
-App tích hợp đầy đủ tính năng mở tài khoản trực tuyến eKYC, xác thực sinh trắc học và nạp rút tiền tiện lợi. Bảng giá được thiết kế thông thoáng giúp theo dõi thị trường dễ dàng.
+* **Bước 1**. Tải app Vietcap Mobile từ App Store hoặc Google Play và chọn Đăng ký mở tài khoản.
+* **Bước 2**. Chụp ảnh hai mặt CCCD gắn chip rõ nét và quay quét khuôn mặt theo quy trình định danh sinh trắc học.
+* **Bước 3**. Kiểm tra và thiết lập thông tin bảo mật, liên kết tài khoản ngân hàng để phục vụ nạp rút tiền.
+* **Bước 4**. Xác nhận hợp đồng điện tử qua mã OTP và bắt đầu nạp tiền trải nghiệm nền tảng Vietcap Mobile.
 
-Đặc biệt, tính năng đọc tin tức và xem báo cáo nghiên cứu doanh nghiệp ngay trên app di động là điểm cộng rất lớn so với các đối thủ cùng phân khúc.
+## Có nên mở tài khoản Vietcap không?
 
-## Ưu điểm và hạn chế của Chứng khoán Vietcap
+Vietcap là sự lựa chọn đặc biệt phù hợp cho:
 
-Dưới đây là tổng hợp những góc nhìn khách quan về Chứng khoán Vietcap.
+* **Nhà đầu tư theo trường phái giá trị**: Muốn tiếp cận các báo cáo phân tích doanh nghiệp chuyên sâu có độ tin cậy số một thị trường.
+* **Nhà đầu tư quan tâm đến các thương vụ IPO và deal lớn**: Thường xuyên theo dõi các doanh nghiệp đầu ngành do Vietcap tư vấn niêm yết.
+* **Nhà đầu tư trung và dài hạn**: Coi trọng chất lượng khuyến nghị và độ an toàn quản trị hơn là lướt sóng quay vòng lệnh hàng ngày.
 
-* **Báo cáo nghiên cứu phân tích xuất sắc**. Đem lại giá trị thông tin rất cao cho nhà đầu tư thích đọc báo cáo tài chính.
-* **Uy tín thương hiệu và mảng IB dẫn đầu**. Đóng vai trò là tư vấn chính cho nhiều cổ phiếu blue-chip trên sàn.
-* **Ứng dụng di động mượt mà**. Tích hợp đầy đủ công cụ cho cả nhà đầu tư mới và chuyên nghiệp.
-* **Chính sách ưu đãi phí chưa quá bùng nổ**. Không theo đuổi cuộc đua zero-fee như một số sàn công nghệ nêu trong bài [đánh giá FPTS](/reviews/review-fpts-securities/).
+Nếu bạn là nhà đầu tư vốn nhỏ thích lướt sóng tần suất cao cần sàn miễn phí 100% phí giao dịch, hãy tham khảo bài [review TCBS](/reviews/review-tcbs-securities/) hoặc [đánh giá Pinetree](/reviews/review-pinetree-securities/). Bạn cũng có thể so sánh thêm với các đối thủ cùng phân khúc uy tín cao trong bài [review SSI](/reviews/review-ssi-securities/) hoặc [đánh giá HSC](/reviews/review-hsc-securities/).
 
-## So sánh Vietcap với SSI và HSC
+---
 
-Bảng so sánh sau đây thể hiện vị thế của Vietcap bên cạnh các thương hiệu chứng khoán uy tín khác.
-
-| Tiêu chí | Vietcap (VCI) | Chứng khoán SSI | Chứng khoán HSC |
-|---|---|---|---|
-| Thế mạnh nổi bật | IB & Phân tích doanh nghiệp | Thị phần & Thanh khoản | Tư vấn & Hạ tầng |
-| Phí giao dịch online | 0.15% | 0.15% - 0.25% | 0.15% - 0.20% |
-| Lãi suất Margin | ~12.5% - 13.5%/năm | ~13.5%/năm | ~13.0%/năm |
-| Chất lượng Báo cáo | Cực kỳ xuất sắc | Rất tốt | Rất tốt |
-
-Bạn cũng có thể tham khảo thêm hướng dẫn chi tiết bài [chọn công ty chứng khoán cho người mới](/reviews/review-cong-ty-chung-khoan-cho-nguoi-moi/).
-
-## Có nên mở tài khoản chứng khoán Vietcap không?
-
-Vietcap là lựa chọn đặc biệt phù hợp cho những nhà đầu tư hướng tới triết lý đầu tư giá trị, muốn tìm kiếm thông tin phân tích doanh nghiệp chuẩn mực và tin tưởng vào uy tín của một thương hiệu lớn. Để hiểu rõ hơn về chủ đề này, bạn có thể tham khảo thêm hướng dẫn **[cách mở tài khoản chứng khoán](/dau-tu/co-phieu/cach-mo-tai-khoan-chung-khoan/)**.
-
-> **Tuyên bố miễn trừ trách nhiệm:** Thông tin trong bài viết được thu thập từ nguồn công khai chính thức của Vietcap và mang tính chất tham khảo độc lập. Bài viết không chứa liên kết tài trợ ẩn và không phải khuyến nghị đầu tư.
+> **Xem hướng dẫn tổng quan:** Đọc bài viết **[Cách mở tài khoản chứng khoán](/dau-tu/co-phieu/cach-mo-tai-khoan-chung-khoan/)** để biết chi tiết các bước chuẩn bị mở tài khoản.

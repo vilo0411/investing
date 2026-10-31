@@ -25,6 +25,11 @@ Index toàn bộ bài đã publish tại `src/content/articles/`. Dùng cho inte
 | `dau-tu-chung-khoan-can-bao-nhieu-tien` | Đầu tư chứng khoán cần bao nhiêu tiền? | `/dau-tu/co-phieu/dau-tu-chung-khoan-can-bao-nhieu-tien/` | đầu tư chứng khoán cần bao nhiêu tiền |
 | `co-nen-dau-tu-chung-khoan-khong` | Có nên đầu tư chứng khoán không? | `/dau-tu/co-phieu/co-nen-dau-tu-chung-khoan-khong/` | có nên đầu tư chứng khoán |
 | `cach-mo-tai-khoan-chung-khoan` | Cách mở tài khoản chứng khoán | `/dau-tu/co-phieu/cach-mo-tai-khoan-chung-khoan/` | cách mở tài khoản chứng khoán |
+| `cach-mua-co-phieu` | Cách mua cổ phiếu cho người mới | `/dau-tu/co-phieu/cach-mua-co-phieu/` | cách mua cổ phiếu |
+| `cach-mua-co-phieu-fpt` | Cách mua cổ phiếu FPT | `/dau-tu/co-phieu/cach-mua-co-phieu-fpt/` | cách mua cổ phiếu FPT |
+| `cach-mua-co-phieu-hoa-phat` | Cách mua cổ phiếu Hòa Phát | `/dau-tu/co-phieu/cach-mua-co-phieu-hoa-phat/` | cách mua cổ phiếu Hòa Phát |
+| `cach-mua-co-phieu-vcb` | Cách mua cổ phiếu Vietcombank | `/dau-tu/co-phieu/cach-mua-co-phieu-vcb/` | cách mua cổ phiếu VCB |
+| `cach-mua-co-phieu-vinamilk` | Cách mua cổ phiếu Vinamilk | `/dau-tu/co-phieu/cach-mua-co-phieu-vinamilk/` | cách mua cổ phiếu Vinamilk |
 | `cach-chon-co-phieu-tot` | Cách chọn cổ phiếu tốt | `/dau-tu/co-phieu/cach-chon-co-phieu-tot/` | cách chọn cổ phiếu tốt |
 | `dau-tu-chung-khoan-von-nho` | Đầu tư chứng khoán với số vốn nhỏ | `/dau-tu/co-phieu/dau-tu-chung-khoan-von-nho/` | đầu tư chứng khoán với số vốn nhỏ |
 | `khi-nao-nen-ban-co-phieu` | Khi nào nên bán cổ phiếu | `/dau-tu/co-phieu/khi-nao-nen-ban-co-phieu/` | khi nào nên bán cổ phiếu |

@@ -37,7 +37,7 @@ Muốn đầu tư tích sản dài hạn nhưng không có thời gian bám bả
 Để hiểu một cách đơn giản, đầu tư chứng chỉ quỹ giống như việc bạn đi xe buýt. Bạn không cần biết lái xe hay tự tìm đường đi phức tạp giữa dòng xe cộ. Tài xế là chuyên gia quản lý quỹ sẽ đưa bạn đến đích an toàn theo đúng lộ trình đã cam kết.
 
 
-Ngược lại, tự học **[cách đầu tư chứng khoán](/dau-tu/co-phieu/cach-dau-tu-chung-khoan/)** mua cổ phiếu riêng lẻ giống như tự lái xe máy. Bạn phải tự quyết định hướng đi, tự đối mặt rủi ro va chạm và đòi hỏi kỹ năng xử lý tình huống tốt.
+Ngược lại, tự học **[cách đầu tư chứng khoán](/dau-tu/co-phieu/cach-dau-tu-chung-khoan/)** mua cổ phiếu riêng lẻ giống như tự lái xe máy. Bạn phải tự quyết định hướng đi, tự đối mặt rủi ro va chạm và đòi hỏi kỹ năng xử lý tình huống tốt. Nếu chưa rõ hình thức nào phù hợp với khẩu vị rủi ro của mình, bạn có thể tham khảo bài [so sánh cổ phiếu và chứng chỉ quỹ](/dau-tu/co-phieu/so-sanh-co-phieu-va-chung-chi-quy-dau-tu/) trước khi đưa ra quyết định.
 
 
 Khi bạn mua chứng chỉ quỹ mở, tiền của bạn sẽ được gộp chung với hàng nghìn nhà đầu tư khác. Đội ngũ chuyên gia tài chính sẽ dùng quỹ này để thiết lập danh mục đầu tư đa dạng. Nhờ vậy, rủi ro thua lỗ do một cổ phiếu giảm giá sẽ được phân tán hiệu quả.

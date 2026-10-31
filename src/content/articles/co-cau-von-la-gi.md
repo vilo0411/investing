@@ -57,7 +57,7 @@ Cùng **[Value Investing](/)** tìm hiểu cơ cấu vốn là gì. Bài viết 
 Cơ cấu vốn (Capital Structure) là tỷ lệ kết hợp giữa nợ phải trả và vốn chủ sở hữu. Doanh nghiệp huy động các nguồn vốn này để tài trợ cho tài sản và hoạt động sản xuất kinh doanh.
 
 
-Chỉ số này phản ánh chiến lược tài chính của ban lãnh đạo. Nó cho biết công ty đang tự lực bằng tiền của cổ đông hay đang phụ thuộc vào tiền đi vay.
+Chỉ số này phản ánh chiến lược tài chính của ban lãnh đạo. Trong phương pháp [phân tích cơ bản là gì](/phan-tich/co-ban/phan-tich-co-ban-la-gi/), việc mổ xẻ cơ cấu vốn cho biết công ty đang phát triển bằng nội lực vốn cổ đông hay đang phụ thuộc quá nhiều vào nguồn vốn vay rủi ro.
 
 
 Khi mở rộng quy mô, doanh nghiệp luôn cần lượng vốn lớn. Nguồn tiền này dùng để xây dựng nhà xưởng và mua sắm máy móc.
