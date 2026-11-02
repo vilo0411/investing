@@ -56,7 +56,7 @@ Tâm lý đầu tư là tập hợp cảm xúc, thiên kiến nhận thức và 
 
 Số liệu từ Dalbar (2023) cho thấy hậu quả cụ thể: nhà đầu tư cá nhân trung bình đạt tỷ suất sinh lời 3,6%/năm trong giai đoạn 30 năm, trong khi chỉ số S&P 500 đạt 10,2%/năm. Khoảng cách 6,6%/năm đó không đến từ thiếu kiến thức — mà từ tâm lý mua đỉnh bán đáy.
 
-Tại Việt Nam, giai đoạn VN-Index giảm từ 1.500 về 900 điểm (cuối 2022), lượng tài khoản mở mới vẫn tăng kỷ lục. Nhiều nhà đầu tư mới mua ở vùng 1.200–1.400 vì FOMO, rồi hoảng loạn bán tháo khi chỉ số chạm 900. Ai giữ được bình tĩnh và mua thêm ở đáy, đến 2024 đã lãi hơn 40%.
+Tại Việt Nam, giai đoạn VN-Index giảm từ 1.500 về 900 điểm (cuối 2022), lượng tài khoản mở mới vẫn tăng kỷ lục. Nhiều nhà đầu tư mới mua ở vùng 1.200–1.400 vì FOMO, rồi hoảng loạn bán tháo khi chỉ số chạm 900. Ngoài ra, việc nhìn sang các đợt rung lắc từ thị trường Mỹ qua [chỉ số Dow Jones](/dau-tu/co-phieu/chi-so-dow-jones/) cũng thường kích hoạt tâm lý bán tháo quá đà vào đầu phiên sáng. Ai giữ được bình tĩnh và mua thêm ở đáy, đến 2024 đã lãi hơn 40%.
 
 ## 5 bẫy tâm lý phổ biến nhất khi đầu tư chứng khoán
 

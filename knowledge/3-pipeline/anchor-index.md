@@ -77,6 +77,11 @@ Index toàn bộ bài đã publish tại `src/content/articles/`. Dùng cho inte
 | `cat-lo-la-gi` | Cắt Lỗ Là Gì? 3 Quy Tắc Cắt Lỗ Sống Còn Trong Chứng Khoán | `/dau-tu/co-phieu/cat-lo-la-gi/` | cắt lỗ |
 | `ban-giai-chap-co-phieu-la-gi` | Bán Giải Chấp Cổ Phiếu Là Gì? Force Sell Và Cách Phòng Ngừa | `/dau-tu/co-phieu/ban-giai-chap-co-phieu-la-gi/` | bán giải chấp cổ phiếu |
 | `full-margin-la-gi` | Full Margin Là Gì? Con Dao Hai Lưỡi Khi Dùng Hết Đòn Bẩy | `/dau-tu/co-phieu/full-margin-la-gi/` | full margin |
+| `chi-so-vn-index-la-gi` | Chỉ số VN-Index là gì? Ý nghĩa, cách tính và các mốc lịch sử cho F0 | `/dau-tu/co-phieu/chi-so-vn-index-la-gi/` | chỉ số VN-Index |
+| `chi-so-vn30-index-la-gi` | Chỉ số VN30 là gì? Tiêu chí lựa chọn và cách đầu tư cho F0 | `/dau-tu/co-phieu/chi-so-vn30-index-la-gi/` | chỉ số VN30 |
+| `chi-so-hnx-index` | Chỉ số HNX-Index là gì? Phân biệt với VN-Index và cách theo dõi | `/dau-tu/co-phieu/chi-so-hnx-index/` | chỉ số HNX-Index |
+| `cac-chi-so-chung-khoan-viet-nam` | Các chỉ số chứng khoán Việt Nam: Tổng hợp toàn diện bộ chỉ số HOSE, HNX và UPCoM | `/dau-tu/co-phieu/cac-chi-so-chung-khoan-viet-nam/` | các chỉ số chứng khoán Việt Nam |
+| `chi-so-dow-jones` | Chỉ số Dow Jones là gì? Cách tính và tác động tới chứng khoán Việt Nam | `/dau-tu/co-phieu/chi-so-dow-jones/` | chỉ số Dow Jones |
 
 ## Nhóm Đầu tư — Quỹ ETF (`/dau-tu/etf/`)
 

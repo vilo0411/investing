@@ -50,11 +50,11 @@ keyTakeaways:
     số VN-Index để đưa ra quyết định mua bán chính xác.
 ---
 
-Trên bảng điện chứng khoán Việt Nam, có những ngày chỉ số VN-Index tăng điểm xanh rì dù phần lớn các mã cổ phiếu trên thị trường chìm trong sắc đỏ. Hiện tượng lạ kỳ này thường bắt nguồn từ biến động của nhóm cổ phiếu trụ. **[Value Investing](/)** sẽ giúp bạn hiểu rõ cổ phiếu trụ là gì, vai trò chi phối điểm số thị trường và cách ứng xử khôn ngoan dành cho nhà đầu tư mới.
+Trên bảng điện chứng khoán Việt Nam, có những ngày [chỉ số VN-Index](/dau-tu/co-phieu/chi-so-vn-index-la-gi/) tăng điểm xanh rì dù phần lớn các mã cổ phiếu trên thị trường chìm trong sắc đỏ. Hiện tượng lạ kỳ này thường bắt nguồn từ biến động của nhóm cổ phiếu trụ. **[Value Investing](/)** sẽ giúp bạn hiểu rõ cổ phiếu trụ là gì, vai trò chi phối điểm số thị trường và cách ứng xử khôn ngoan dành cho nhà đầu tư mới.
 
 ## Cổ phiếu trụ là gì?
 
-Cổ phiếu trụ (Leader Stock) là cụm từ dùng để chỉ những mã cổ phiếu của các doanh nghiệp có giá trị vốn hóa thị trường thuộc hàng lớn nhất trên sàn giao dịch. Nhờ quy mô khổng lồ, biến động giá của nhóm này đóng vai trò như những chiếc cột trụ chống đỡ và định hình xu hướng cho cả chỉ số VN-Index.
+Cổ phiếu trụ (Leader Stock) là cụm từ dùng để chỉ những mã cổ phiếu của các doanh nghiệp có giá trị vốn hóa thị trường thuộc hàng lớn nhất trên sàn giao dịch. Nhờ quy mô khổng lồ, biến động giá của nhóm này đóng vai trò như những chiếc cột trụ chống đỡ và định hình xu hướng cho cả [chỉ số VN-Index](/dau-tu/co-phieu/chi-so-vn-index-la-gi/).
 
 Cơ chế tính điểm của VN-Index dựa trên tổng giá trị vốn hóa. Do đó, một mã **[cổ phiếu](/dau-tu/co-phieu/co-phieu-la-gi/)** có vốn hóa hàng trăm nghìn tỷ đồng tăng giá 1% sẽ đóng góp số điểm nhiều hơn gấp hàng chục lần so với một cổ phiếu nhỏ tăng trần 7%.
 
@@ -89,7 +89,7 @@ Ngược lại với kéo trụ, đạp trụ xảy ra khi các nhà đầu tư 
 
 ## Danh sách các cổ phiếu trụ tiêu biểu tại Việt Nam
 
-Hầu hết các cổ phiếu trụ tại Việt Nam đều hội tụ trong rổ chỉ số VN30 trên sàn HOSE.
+Hầu hết các cổ phiếu trụ tại Việt Nam đều hội tụ trong [rổ chỉ số VN30](/dau-tu/co-phieu/chi-so-vn30-index-la-gi/) trên sàn HOSE.
 
 * **Ngành Ngân hàng**: Vietcombank (VCB), BIDV (BID), VietinBank (CTG). Trong đó VCB là mã có vốn hóa lớn nhất toàn thị trường.
 

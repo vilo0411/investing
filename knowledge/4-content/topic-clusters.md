@@ -250,14 +250,14 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 
 ## CLUSTER C12 — Chỉ Số Thị Trường
 
-**Hub:** Chỉ số VN-Index là gì | `/dau-tu/co-phieu/chi-so-vn-index-la-gi/` | `Planned`
+**Hub:** Chỉ số VN-Index là gì | `/dau-tu/co-phieu/chi-so-vn-index-la-gi/` | `Finalized`
 
 | Keyword (Spoke) | Slug | Status |
 |---|---|---|
-| Chỉ số VN30-Index là gì | `chi-so-vn30-index-la-gi` | `Planned` |
-| Chỉ số HNX Index | `chi-so-hnx-index` | `Planned` |
-| Các chỉ số chứng khoán Việt Nam | `cac-chi-so-chung-khoan-viet-nam` | `Planned` |
-| Chỉ số Dow Jones | `chi-so-dow-jones` | `Planned` |
+| Chỉ số VN30-Index là gì | `chi-so-vn30-index-la-gi` | `Finalized` |
+| Chỉ số HNX Index | `chi-so-hnx-index` | `Finalized` |
+| Các chỉ số chứng khoán Việt Nam | `cac-chi-so-chung-khoan-viet-nam` | `Finalized` |
+| Chỉ số Dow Jones | `chi-so-dow-jones` | `Finalized` |
 | Chỉ số Nasdaq là gì | `chi-so-nasdaq-la-gi` | `Planned` |
 | Chỉ số Nikkei là gì | `chi-so-nikkei-la-gi` | `Planned` |
 | Chỉ số DAX là gì | `chi-so-dax-la-gi` | `Planned` |

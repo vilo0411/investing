@@ -1,11 +1,27 @@
 # Sprint Backlog — Value Investing
 
-> **Cập nhật:** 2026-09-27
+> **Cập nhật:** 2026-11-02
 > **Trạng thái có thể dùng:** `Planned` | `In Progress` | `Outline-Approved` | `Drafting` | `Finalized`
 
 ---
 
-## 🏃 Sprint: 5 Bài Phân Tích Kỹ Thuật & Chỉ Báo Nền Tảng (C16) (Hiện tại)
+## 🏃 Sprint: 5 Bài Chỉ Số Thị Trường & Thước Đo Bảng Điện (C12) (Hiện tại)
+
+**Mục tiêu:** Hoàn thiện cụm bài viết cốt lõi về các chỉ số thị trường chứng khoán (VN-Index, VN30-Index, HNX-Index, Tổng hợp các chỉ số chứng khoán Việt Nam, Dow Jones) giúp nhà đầu tư F0 đọc vị sức khỏe thị trường, hiểu cấu trúc các sàn và tránh bẫy tâm lý xanh vỏ đỏ lòng.
+**Thời gian thực hiện:** Hoàn thành (2026-11-02)
+**Chế độ thực thi:** `--auto` (Tự động hoàn thiện chuỗi 5 bài không cần duyệt)
+
+| # | Keyword | Slug | Category | Status | URL đích |
+|---|---|---|---|---|---|
+| 1 | Chỉ số VN-Index là gì | `chi-so-vn-index-la-gi` | `co-phieu` | `Finalized` | `/dau-tu/co-phieu/chi-so-vn-index-la-gi/` |
+| 2 | Chỉ số VN30 là gì | `chi-so-vn30-index-la-gi` | `co-phieu` | `Finalized` | `/dau-tu/co-phieu/chi-so-vn30-index-la-gi/` |
+| 3 | Chỉ số HNX-Index | `chi-so-hnx-index` | `co-phieu` | `Finalized` | `/dau-tu/co-phieu/chi-so-hnx-index/` |
+| 4 | Các chỉ số chứng khoán Việt Nam | `cac-chi-so-chung-khoan-viet-nam` | `co-phieu` | `Finalized` | `/dau-tu/co-phieu/cac-chi-so-chung-khoan-viet-nam/` |
+| 5 | Chỉ số Dow Jones | `chi-so-dow-jones` | `co-phieu` | `Finalized` | `/dau-tu/co-phieu/chi-so-dow-jones/` |
+
+---
+
+## 🏃 Sprint trước: 5 Bài Phân Tích Kỹ Thuật & Chỉ Báo Nền Tảng (C16)
 
 **Mục tiêu:** Hoàn thiện cụm bài viết cốt lõi về các chỉ báo xu hướng, đường trung bình động và vùng giá quan trọng (Đường EMA, Đường MA200, Golden Cross, Bollinger Bands, Hỗ trợ & Kháng cự) phục vụ nhà đầu tư F0 theo đuổi trường phái kết hợp hoặc phân tích xu hướng thị trường.
 **Thời gian thực hiện:** Hoàn thành (2026-10-15)
