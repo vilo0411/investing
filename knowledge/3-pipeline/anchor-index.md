@@ -82,6 +82,11 @@ Index toàn bộ bài đã publish tại `src/content/articles/`. Dùng cho inte
 | `chi-so-hnx-index` | Chỉ số HNX-Index là gì? Phân biệt với VN-Index và cách theo dõi | `/dau-tu/co-phieu/chi-so-hnx-index/` | chỉ số HNX-Index |
 | `cac-chi-so-chung-khoan-viet-nam` | Các chỉ số chứng khoán Việt Nam: Tổng hợp toàn diện bộ chỉ số HOSE, HNX và UPCoM | `/dau-tu/co-phieu/cac-chi-so-chung-khoan-viet-nam/` | các chỉ số chứng khoán Việt Nam |
 | `chi-so-dow-jones` | Chỉ số Dow Jones là gì? Cách tính và tác động tới chứng khoán Việt Nam | `/dau-tu/co-phieu/chi-so-dow-jones/` | chỉ số Dow Jones |
+| `chi-so-nasdaq-la-gi` | Chỉ số Nasdaq là gì? Phân biệt Nasdaq Composite và Nasdaq-100 | `/dau-tu/co-phieu/chi-so-nasdaq-la-gi/` | chỉ số Nasdaq |
+| `chi-so-nikkei-la-gi` | Chỉ số Nikkei là gì? Tìm hiểu chỉ số Nikkei 225 của Nhật Bản | `/dau-tu/co-phieu/chi-so-nikkei-la-gi/` | chỉ số Nikkei |
+| `chi-so-dax-la-gi` | Chỉ số DAX là gì? Giải mã chỉ số DAX 40 của chứng khoán Đức | `/dau-tu/co-phieu/chi-so-dax-la-gi/` | chỉ số DAX |
+| `hang-seng-la-gi` | Hang Seng là gì? Tìm hiểu chỉ số HSI của chứng khoán Hồng Kông | `/dau-tu/co-phieu/hang-seng-la-gi/` | chỉ số Hang Seng |
+| `cat-margin-la-gi` | Cắt margin là gì? Nguyên nhân cổ phiếu bị cắt margin và cách xử lý | `/dau-tu/co-phieu/cat-margin-la-gi/` | cắt margin |
 
 ## Nhóm Đầu tư — Quỹ ETF (`/dau-tu/etf/`)
 

@@ -79,6 +79,6 @@ Giao dịch ký quỹ không dành cho tất cả mọi người. Nếu bạn c�
 
 Thứ nhất là chỉ dùng margin khi thị trường chung đang trong xu hướng tăng rõ ràng (Up-trend). Tuyệt đối không dùng margin khi thị trường đang rơi hoặc đi ngang tích lũy.
 
-Thứ hai là chỉ ký quỹ đối với các cổ phiếu cực kỳ chất lượng. Đó phải là những [cổ phiếu Blue chip](/dau-tu/co-phieu/blue-chip-la-gi/), có thanh khoản cao và tình hình kinh doanh vững mạnh. Tránh xa các cổ phiếu đầu cơ có tính chất làm giá hoặc thanh khoản kém.
+Thứ hai là chỉ ký quỹ đối với các cổ phiếu cực kỳ chất lượng. Đó phải là những [cổ phiếu Blue chip](/dau-tu/co-phieu/blue-chip-la-gi/), có thanh khoản cao và tình hình kinh doanh vững mạnh, không có nguy cơ thua lỗ dẫn đến việc bị Sở Giao dịch [cắt margin](/dau-tu/co-phieu/cat-margin-la-gi/). Tránh xa các cổ phiếu đầu cơ có tính chất làm giá hoặc thanh khoản kém.
 
 Thứ ba là tuyệt đối không trung bình giá xuống bằng margin. Khi cổ phiếu giảm, việc vay thêm để mua tiếp chỉ làm đẩy nhanh tài khoản của bạn đến ngưỡng bị Force Sell. Hãy chấp nhận cắt lỗ bằng tiền mặt trước khi để công ty chứng khoán bán giải chấp tài khoản của bạn.

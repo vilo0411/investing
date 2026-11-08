@@ -237,7 +237,7 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 | Keyword (Spoke) | Slug | Status | Ghi chú |
 |---|---|---|---|
 | Call margin là gì | `call-margin-la-gi` | `Finalized` | ✅ Đã publish |
-| Cắt margin là gì | `cat-margin-la-gi` | `Planned` | |
+| Cắt margin là gì | `cat-margin-la-gi` | `Finalized` | |
 | Full margin là gì | `full-margin-la-gi` | `Finalized` | ✅ Đã publish |
 | Bán giải chấp cổ phiếu là gì | `ban-giai-chap-co-phieu-la-gi` | `Finalized` | ✅ Đã publish |
 | Cắt lỗ là gì | `cat-lo-la-gi` | `Finalized` | ✅ Đã publish |
@@ -258,10 +258,10 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 | Chỉ số HNX Index | `chi-so-hnx-index` | `Finalized` |
 | Các chỉ số chứng khoán Việt Nam | `cac-chi-so-chung-khoan-viet-nam` | `Finalized` |
 | Chỉ số Dow Jones | `chi-so-dow-jones` | `Finalized` |
-| Chỉ số Nasdaq là gì | `chi-so-nasdaq-la-gi` | `Planned` |
-| Chỉ số Nikkei là gì | `chi-so-nikkei-la-gi` | `Planned` |
-| Chỉ số DAX là gì | `chi-so-dax-la-gi` | `Planned` |
-| Hang Seng là gì | `hang-seng-la-gi` | `Planned` |
+| Chỉ số Nasdaq là gì | `chi-so-nasdaq-la-gi` | `Finalized` |
+| Chỉ số Nikkei là gì | `chi-so-nikkei-la-gi` | `Finalized` |
+| Chỉ số DAX là gì | `chi-so-dax-la-gi` | `Finalized` |
+| Hang Seng là gì | `hang-seng-la-gi` | `Finalized` |
 
 ---
 

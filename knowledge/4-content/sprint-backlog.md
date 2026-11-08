@@ -1,11 +1,27 @@
 # Sprint Backlog — Value Investing
 
-> **Cập nhật:** 2026-11-02
+> **Cập nhật:** 2026-11-08
 > **Trạng thái có thể dùng:** `Planned` | `In Progress` | `Outline-Approved` | `Drafting` | `Finalized`
 
 ---
 
-## 🏃 Sprint: 5 Bài Chỉ Số Thị Trường & Thước Đo Bảng Điện (C12) (Hiện tại)
+## 🏃 Sprint: 5 Bài Chỉ Số Chứng Khoán Quốc Tế & Quản Trị Margin (C12 & C11) (Hiện tại)
+
+**Mục tiêu:** Hoàn thiện trọn vẹn cụm Chỉ số thị trường quốc tế (Nasdaq, Nikkei 225, DAX 40, Hang Seng) và cơ chế Cắt margin trên sàn chứng khoán Việt Nam, giúp nhà đầu tư F0 hiểu bức tranh liên thị trường và quản trị rủi ro vay ký quỹ an toàn.
+**Thời gian thực hiện:** Hoàn thành (2026-11-08)
+**Chế độ thực thi:** `--auto` (Tự động hoàn thiện chuỗi 5 bài không cần duyệt)
+
+| # | Keyword | Slug | Category | Status | URL đích |
+|---|---|---|---|---|---|
+| 1 | Chỉ số Nasdaq là gì | `chi-so-nasdaq-la-gi` | `co-phieu` | `Finalized` | `/dau-tu/co-phieu/chi-so-nasdaq-la-gi/` |
+| 2 | Chỉ số Nikkei là gì | `chi-so-nikkei-la-gi` | `co-phieu` | `Finalized` | `/dau-tu/co-phieu/chi-so-nikkei-la-gi/` |
+| 3 | Chỉ số DAX là gì | `chi-so-dax-la-gi` | `co-phieu` | `Finalized` | `/dau-tu/co-phieu/chi-so-dax-la-gi/` |
+| 4 | Hang Seng là gì | `hang-seng-la-gi` | `co-phieu` | `Finalized` | `/dau-tu/co-phieu/hang-seng-la-gi/` |
+| 5 | Cắt margin là gì | `cat-margin-la-gi` | `co-phieu` | `Finalized` | `/dau-tu/co-phieu/cat-margin-la-gi/` |
+
+---
+
+## 🏃 Sprint trước: 5 Bài Chỉ Số Thị Trường & Thước Đo Bảng Điện (C12)
 
 **Mục tiêu:** Hoàn thiện cụm bài viết cốt lõi về các chỉ số thị trường chứng khoán (VN-Index, VN30-Index, HNX-Index, Tổng hợp các chỉ số chứng khoán Việt Nam, Dow Jones) giúp nhà đầu tư F0 đọc vị sức khỏe thị trường, hiểu cấu trúc các sàn và tránh bẫy tâm lý xanh vỏ đỏ lòng.
 **Thời gian thực hiện:** Hoàn thành (2026-11-02)

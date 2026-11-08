@@ -80,7 +80,7 @@ Một mức biến động 5% của công ty X (thay đổi 15 USD) sẽ tác đ
 Mối liên hệ giữa Dow Jones và VN-Index là chủ đề được thảo luận sôi nổi trên mọi diễn đàn tài chính. Thực tế, sự tương quan này diễn ra trên hai bình diện:
 
 ### 1. Tác động tâm lý ngắn hạn (Phiên sáng)
-Thị trường tài chính toàn cầu ngày nay kết nối liên tục. Khi chứng khoán Mỹ lao dốc mạnh do các thông tin địa chính trị hoặc chỉ số lạm phát leo thang, tâm lý lo ngại rủi ro sẽ lan tỏa nhanh chóng sang các sàn chứng khoán châu Á vào sáng hôm sau. 
+Thị trường tài chính toàn cầu ngày nay kết nối liên tục từ Mỹ qua [chỉ số Nasdaq](/dau-tu/co-phieu/chi-so-nasdaq-la-gi/), sang châu Âu với [chỉ số DAX](/dau-tu/co-phieu/chi-so-dax-la-gi/) và nối tiếp sang châu Á qua [chỉ số Nikkei](/dau-tu/co-phieu/chi-so-nikkei-la-gi/) hay chỉ số [Hang Seng](/dau-tu/co-phieu/hang-seng-la-gi/). Khi chứng khoán Mỹ lao dốc mạnh do các thông tin địa chính trị hoặc chỉ số lạm phát leo thang, tâm lý lo ngại rủi ro sẽ lan tỏa nhanh chóng sang các sàn chứng khoán châu Á vào sáng hôm sau. 
 
 Nhà đầu tư cá nhân trong nước thường có xu hướng bán bớt tài sản vào đầu phiên để phòng thủ, khiến VN-Index hay bị nhúng đỏ trong 30 đến 45 phút đầu ngày.
 
