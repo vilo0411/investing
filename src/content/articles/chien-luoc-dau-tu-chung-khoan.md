@@ -81,7 +81,7 @@ Tại thị trường Việt Nam, cơ hội đầu tư giá trị thường xu�
 
 Tìm hiểu [cách đầu tư quỹ ETF](/dau-tu/etf/cach-dau-tu-quy-etf/) là bước đi an toàn và đơn giản nhất cho F0 bận rộn. Bạn sẽ không cần tốn thời gian theo dõi sát sao từng báo cáo tài chính.
 
-Bên cạnh đó, phí quản lý của các quỹ ETF thường thấp hơn nhiều so với quỹ chủ động. Đây là điểm cộng lớn giúp F0 tối ưu hóa lợi nhuận thực tế nhận về trong tương lai dài hạn.
+Bên cạnh đó, phí quản lý của các quỹ ETF thường thấp hơn nhiều so với **[quỹ chủ động](/dau-tu/etf/quy-chu-dong-la-gi/)**. Đây là điểm cộng lớn giúp F0 tối ưu hóa lợi nhuận thực tế nhận về trong tương lai dài hạn.
 
 ![Bản đồ và la bàn tượng trưng cho việc lập kế hoạch chiến lược đầu tư rõ ràng](./images/chien-luoc-dau-tu-chung-khoan/featured-01.jpg)
 *Ảnh: Himesh Kumar Behera / Unsplash*

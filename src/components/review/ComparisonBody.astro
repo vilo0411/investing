@@ -3,6 +3,7 @@ import ComparisonTable from "@/components/ComparisonTable.astro";
 import ProsConsBox from "@/components/ProsConsBox.astro";
 import ReviewCTA from "@/components/ReviewCTA.astro";
 import type { RatingDimension, UserVoice } from "@/data/brokers";
+import SourcedComparison from './SourcedComparison.astro';
 
 interface Broker {
   name: string;
@@ -72,6 +73,16 @@ const hasBreakdown = brokers.some((b) => b.ratingBreakdown);
 ---
 
 <div class="comparison-body">
+
+  <section id="so-sanh">
+    <h2>So sánh chi phí có nguồn</h2>
+    <SourcedComparison brokers={brokers} />
+    {rows.length > 0 && <details class="review-alternatives"><summary>Tiêu chí biên tập từ bản đánh giá trước</summary><ComparisonTable columns={columns} rows={rows} /></details>}
+  </section>
+
+  <details class="review-alternatives legacy-comparison-verdict">
+  <summary>Xem nhận định và điểm biên tập từ phiên bản trước</summary>
+  <p>Phần nhận định này chưa được tái kiểm định theo bộ dữ liệu mới. Dùng bảng phí có nguồn phía trên để kiểm tra chi phí; không dùng điểm cũ để đo mức an toàn.</p>
 
   <!-- Verdict card: kết luận tổng thể với visual rõ ràng -->
   <div class="verdict-card" id="ket-luan-tong-the">
@@ -182,12 +193,7 @@ const hasBreakdown = brokers.some((b) => b.ratingBreakdown);
     ))}
   </div>
 
-  <section id="so-sanh">
-    <h2>So sánh nhanh</h2>
-    {rows.length > 0 && (
-      <ComparisonTable columns={columns} rows={rows} highlightMap={highlightMap} />
-    )}
-  </section>
+  </details>
 
   <section id="uu-nhuoc-diem">
     <h2>Ưu & nhược điểm từng bên</h2>

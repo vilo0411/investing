@@ -120,7 +120,7 @@ Khi mua cổ phiếu, bạn sẽ được hưởng ba quyền lợi sát sườn
 
 Quyền lợi đầu tiên và được mong đợi nhất là nhận [cổ tức](/dau-tu/co-phieu/co-tuc-la-gi/). Khi công ty hoạt động có lãi, một phần lợi nhuận sau thuế sẽ được trích ra để chia lại cho các cổ đông. Đây là nguồn thu nhập thụ động cho các nhà đầu tư nắm giữ lâu dài.
 
-Cổ tức có thể được chi trả bằng tiền mặt chuyển thẳng vào tài khoản chứng khoán của bạn. Ngoài ra, doanh nghiệp cũng có thể chi trả cổ tức bằng cổ phiếu mới phát hành để tăng vốn.
+Cổ tức có thể được chi trả bằng tiền mặt chuyển thẳng vào tài khoản chứng khoán của bạn. Ngoài ra, doanh nghiệp cũng có thể **[chi trả cổ tức bằng cổ phiếu](/dau-tu/co-phieu/tra-co-tuc-bang-co-phieu-la-gi/)** mới phát hành để tăng vốn.
 
 Quyền lợi thứ hai là hưởng mức chênh lệch giá cổ phiếu trên sàn giao dịch. Khi kết quả kinh doanh của doanh nghiệp tăng trưởng tốt, nhu cầu mua cổ phiếu của công ty sẽ tăng theo. Quy luật cung cầu của thị trường sẽ đẩy giá cổ phiếu tăng lên so với mức bạn đã mua ban đầu.
 
@@ -148,7 +148,7 @@ Bước đầu tiên đơn giản hơn bạn nghĩ. Value Investing tóm gọn l
 
 **Bước 2. Nạp tiền và làm quen bảng giá.** Sau khi tài khoản được duyệt, nạp đủ để mua 100 cổ phiếu (lô tối thiểu trên HOSE). Dành 1–2 tuần quan sát bảng điện — theo dõi giá mở cửa, giá trần/sàn, khối lượng giao dịch. Chưa đặt lệnh thật và không dùng [margin](/dau-tu/co-phieu/margin-la-gi/) ở giai đoạn này.
 
-**Bước 3. Mua thử một lô nhỏ để luyện tay.** Chọn doanh nghiệp bạn hiểu lĩnh vực kinh doanh — ví dụ công ty có sản phẩm bạn dùng hàng ngày. Mua một lô 100 cổ phiếu, theo dõi trong 3 tháng và học đọc báo cáo tài chính song song.
+**Bước 3. Mua thử một lô nhỏ để luyện tay.** Chọn doanh nghiệp bạn hiểu lĩnh vực kinh doanh — ví dụ công ty có sản phẩm bạn dùng hàng ngày. Mua một lô 100 cổ phiếu, theo dõi trong 3 tháng và học **[đọc báo cáo tài chính](/phan-tich/co-ban/cach-doc-bao-cao-tai-chinh/)** song song.
 
 ---
 

@@ -69,7 +69,7 @@ Theo Quy chế hướng dẫn giao dịch ký quỹ của Ủy ban Chứng khoá
 
 1. **Lợi nhuận sau thuế là số âm.** Báo cáo tài chính năm được kiểm toán hoặc báo cáo bán niên được soát xét có lợi nhuận sau thuế của cổ đông công ty mẹ hoặc lợi nhuận sau thuế chưa phân phối là số âm. Đây là nguyên nhân chiếm tỷ lệ cao nhất trên sàn.
 2. **Ý kiến kiểm toán không phải là chấp nhận toàn phần.** Báo cáo tài chính bị đơn vị kiểm toán đưa ra ý kiến ngoại trừ, ý kiến trái ngược hoặc từ chối đưa ra ý kiến.
-3. **Thời gian niêm yết chưa đủ 6 tháng.** Mọi cổ phiếu vừa mới lên sàn HOSE hoặc HNX dưới 6 tháng đều mặc định chưa được cấp margin để đảm bảo giá cổ phiếu ổn định sau khi niêm yết.
+3. **Thời gian niêm yết chưa đủ 6 tháng.** Mọi cổ phiếu vừa mới lên sàn HOSE hoặc HNX dưới 6 tháng đều mặc định chưa được cấp margin để đảm bảo **[biên độ giao dịch chứng khoán](/dau-tu/co-phieu/bien-do-giao-dich-chung-khoan/)** và giá cổ phiếu ổn định sau khi niêm yết.
 4. **Cổ phiếu thuộc diện cảnh báo, kiểm soát hoặc hạn chế giao dịch.** Do doanh nghiệp chậm nộp báo cáo tài chính quá thời hạn quy định hoặc vi phạm quy chế công bố thông tin.
 5. **Vi phạm pháp luật về thuế hoặc kế toán.** Doanh nghiệp nhận kết luận của cơ quan chức năng về hành vi trốn thuế, gian lận thuế hoặc không chấp hành quyết định cưỡng chế hành chính.
 6. **Chứng chỉ quỹ có NAV suy giảm liên tục.** Đối với quỹ đầu tư đại chúng, nếu giá trị tài sản ròng (NAV) trên một đơn vị chứng chỉ quỹ nhỏ hơn mệnh giá trong 3 tháng liên tiếp cũng sẽ bị ngừng cấp ký quỹ.

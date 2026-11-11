@@ -1,0 +1,15 @@
+---
+import { getCollection } from 'astro:content';
+import { getPolicy, sourceById } from '@/data/review-catalog';
+import { brokerRegistry } from '@/data/brokers';
+import { formatPolicy } from '@/lib/review-data.mjs';
+import { getArticlePath } from '@/data/site';
+interface Props { slug: string; }
+const { slug } = Astro.props;
+const policy = getPolicy(slug, 'stocks');
+const review = (await getCollection('articles')).find((entry) => entry.data.reviewType === 'company' && entry.data.brokers?.[0]?.slug === slug);
+---
+<aside class="review-note" aria-label="Kiểm tra gói phí trước khi mở tài khoản">
+  <p><strong>Kiểm tra gói phí trước khi xác nhận:</strong> {policy ? `mức tham chiếu cho ${brokerRegistry[slug]?.shortName ?? slug} là ${formatPolicy(policy)} (${policy.label}).` : 'chưa có mức phí được đối chiếu cho công ty này.'} Phí giao dịch khác phí mở tài khoản; cách gắn chuyên viên hoặc người giới thiệu có thể làm thay đổi biểu phí.</p>
+  <p>{policy && <a href={sourceById[policy.sourceId].url} target="_blank" rel="noopener noreferrer">Xem biểu phí gốc ↗</a>}{policy && review && ' · '}{review && <a href={`${getArticlePath(review)}#bieu-phi-co-nguon`}>Đọc đầy đủ phí và đánh giá công ty →</a>}</p>
+</aside>

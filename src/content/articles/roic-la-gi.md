@@ -139,7 +139,7 @@ Ngược lại, ROIC tính cả vốn vay lẫn vốn chủ vào mẫu số. N�
 Lợi thế thứ hai là sự kết nối mật thiết giữa ROIC và chi phí vốn bình quân (WACC). Doanh nghiệp muốn tồn tại và phát triển bắt buộc phải tạo ra lợi nhuận cao hơn chi phí huy động vốn.
 
 
-Tại Việt Nam, chi phí vốn WACC của các doanh nghiệp sản xuất thường dao động quanh mốc 9% đến 11%. Mức này bao gồm lãi suất vay ngân hàng và kỳ vọng lợi nhuận của cổ đông.
+Tại Việt Nam, chi phí vốn WACC của các doanh nghiệp sản xuất thường dao động quanh mốc 9% đến 11%. Mức này bao gồm lãi suất vay ngân hàng và kỳ vọng lợi nhuận của cổ đông tính theo **[mô hình CAPM là gì](/phan-tich/co-ban/mo-hinh-capm-la-gi/)**.
 
 
 Khi ROIC lớn hơn WACC, doanh nghiệp đang tạo ra giá trị gia tăng kinh tế thực sự. Càng mở rộng quy mô sản xuất, ban lãnh đạo càng tạo thêm của cải bền vững cho nhà đầu tư.

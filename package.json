@@ -5,8 +5,16 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev --host 0.0.0.0",
-    "build": "astro check && astro build",
-    "preview": "astro preview --host 0.0.0.0"
+    "build": "npm run reviews:validate && astro check && astro build && npm run links:check",
+    "preview": "astro preview --host 0.0.0.0",
+    "reviews:admin": "node scripts/reviews/admin.mjs",
+    "reviews:validate": "node scripts/reviews/validate.mjs",
+    "reviews:sources": "node scripts/reviews/check-sources.mjs",
+    "reviews:test": "node --test scripts/reviews/reviews.test.mjs",
+    "reviews:test:browser": "node scripts/reviews/browser-check.mjs",
+    "links:audit": "node scripts/audit-links.mjs",
+    "links:check": "node scripts/audit-built-links.mjs",
+    "links:test": "node --test scripts/internal-links.test.mjs"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
@@ -17,6 +25,7 @@
   },
   "devDependencies": {
     "gray-matter": "^4.0.3",
+    "parse5": "7.3.0",
     "playwright": "^1.61.1"
   }
 }

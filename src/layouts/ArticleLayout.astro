@@ -11,6 +11,8 @@ import { buildArticlePageNodes } from "@/lib/schema";
 import Breadcrumb from "@/components/Breadcrumb.astro";
 import KeyTakeaways from "@/components/KeyTakeaways.astro";
 import CitationBox from "@/components/CitationBox.astro";
+import BrokerJourney from "@/components/review/BrokerJourney.astro";
+import AccountFeeNote from "@/components/review/AccountFeeNote.astro";
 
 interface Props {
   entry: any;
@@ -98,6 +100,7 @@ const pageNodes = buildArticlePageNodes({
   title={title}
   description={description}
   ogType="article"
+  ogImage={featuredImage}
   articleMeta={{
     publishedTime: publishDate?.toISOString(),
     modifiedTime: updatedDate?.toISOString(),
@@ -142,6 +145,8 @@ const pageNodes = buildArticlePageNodes({
     </div>
   </header>
 
+  {entry.data.reviewType === 'account' && <div class="article-container review-journey-shell"><BrokerJourney slugs={(entry.data.brokers ?? []).map((broker: { slug: string }) => broker.slug)} currentSlug={entry.slug} intent="account" /></div>}
+
   <div class:list={["article-hero-wrapper", { "article-hero-wrapper--toc": hasToc }]}>
     <div class="article-hero">
       <img src={featuredImage} alt={title} width="1000" height="600" />
@@ -160,6 +165,10 @@ const pageNodes = buildArticlePageNodes({
         <strong>Lưu ý trước khi đọc:</strong>
         <span>{site.disclosure}</span>
       </aside>
+      {entry.data.reviewType === 'account' && <>
+
+        {entry.data.brokers?.[0] && <AccountFeeNote slug={entry.data.brokers[0].slug} />}
+      </>}
       <KeyTakeaways items={entry.data.keyTakeaways} />
 
       {hasToc && (

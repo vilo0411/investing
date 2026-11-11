@@ -90,7 +90,7 @@ Giới phân tích tài chính sử dụng bộ ba chỉ số thanh toán. Mức
 *Ảnh: Kelly Sikkema / Unsplash*
 
 
-Chỉ số thứ nhất là Hệ số thanh toán hiện hành (Current Ratio). Đây là thước đo phổ biến nhất dùng để so sánh toàn bộ tài sản ngắn hạn với nợ ngắn hạn:
+Chỉ số thứ nhất là Hệ số thanh toán hiện hành (**[Current Ratio là gì](/phan-tich/co-ban/current-ratio-la-gi/)**). Đây là thước đo phổ biến nhất dùng để so sánh toàn bộ tài sản ngắn hạn với nợ ngắn hạn:
 
 **Hệ số thanh toán hiện hành = Tài sản ngắn hạn / Nợ ngắn hạn**
 

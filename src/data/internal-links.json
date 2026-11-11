@@ -1,0 +1,10 @@
+{
+  "co-phieu": { "path": "/dau-tu/co-phieu/", "hub": "co-phieu-la-gi", "action": "cach-dau-tu-co-phieu" },
+  "etf": { "path": "/dau-tu/etf/", "hub": "etf-la-gi", "action": "cach-dau-tu-quy-etf" },
+  "trai-phieu": { "path": "/dau-tu/trai-phieu/", "hub": "trai-phieu-la-gi", "action": "cach-dau-tu-trai-phieu" },
+  "phai-sinh": { "path": "/dau-tu/phai-sinh/", "hub": "phai-sinh-la-gi", "action": "cach-dau-tu-chung-khoan-phai-sinh" },
+  "co-ban": { "path": "/phan-tich/co-ban/", "hub": "phan-tich-co-ban-la-gi", "action": "cach-chon-co-phieu-tot" },
+  "ky-thuat": { "path": "/phan-tich/ky-thuat/", "hub": "phan-tich-ky-thuat-la-gi", "action": "cach-dau-tu-co-phieu" },
+  "reviews": { "path": "/reviews/", "hub": "review-cong-ty-chung-khoan-cho-nguoi-moi", "action": "cach-mo-tai-khoan-chung-khoan" },
+  "nha-dau-tu": { "path": "/nha-dau-tu/", "hub": "warren-buffett", "action": "cach-dau-tu-co-phieu" }
+}

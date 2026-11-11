@@ -100,7 +100,7 @@ Bên cạnh con số CFO trên báo cáo, nhà đầu tư thông minh luôn tín
 
 Dòng tiền tự do là lượng tiền mặt thực tế còn lại sau khi công ty đã chi trả toàn bộ chi phí hoạt động và các khoản chi mua sắm tài sản cố định (CapEx). Công thức tính đơn giản là lấy CFO trừ đi CapEx.
 
-Doanh nghiệp sở hữu dòng tiền tự do dồi dào sẽ có nguồn lực dồi dào để trả cổ tức tiền mặt, mua lại cổ phiếu quỹ hoặc thâu tóm các đối thủ cạnh tranh khi có cơ hội.
+Doanh nghiệp sở hữu dòng tiền tự do dồi dào sẽ có nguồn lực dồi dào để trả cổ tức tiền mặt, **[mua lại cổ phiếu quỹ](/dau-tu/co-phieu/co-phieu-quy-la-gi/)** hoặc thâu tóm các đối thủ cạnh tranh khi có cơ hội.
 
 
 ## Lời khuyên khi phân tích dòng tiền thực tế

@@ -43,7 +43,7 @@ Hãy thử nghĩ thế này. Khi bạn quyết định xuống tiền mua một 
 
 Phân tích cơ bản trong đầu tư tài chính cũng hoạt động hoàn toàn tương tự như vậy. Phương pháp này tập trung đo lường giá trị nội tại của một doanh nghiệp. Mục tiêu là tìm ra giá trị thực tế của doanh nghiệp đó. Từ đó, bạn đối chiếu với giá thị trường hiện tại để hành động.
 
-Nếu giá cổ phiếu trên bảng điện rẻ hơn giá trị nội tại, đây là cơ hội mua tích lũy tốt. Nếu giá thị trường đắt hơn nhiều so với giá trị thực tế, bạn nên tránh xa. Triết lý này được khởi xướng bởi cha đẻ đầu tư giá trị Benjamin Graham. Phương pháp giúp bạn đầu tư dựa trên nền tảng kinh doanh thực tế của doanh nghiệp. Bạn sẽ không bị cuốn theo những biến động tăng giảm ngắn hạn của đám đông.
+Nếu giá cổ phiếu trên bảng điện rẻ hơn giá trị nội tại, đây là cơ hội mua tích lũy tốt. Nếu giá thị trường đắt hơn nhiều so với giá trị thực tế, bạn nên tránh xa. Triết lý này được khởi xướng bởi cha đẻ đầu tư giá trị **[Benjamin Graham](/nha-dau-tu/benjamin-graham/)**. Phương pháp giúp bạn đầu tư dựa trên nền tảng kinh doanh thực tế của doanh nghiệp. Bạn sẽ không bị cuốn theo những biến động tăng giảm ngắn hạn của đám đông.
 
 Thị trường chứng khoán trong ngắn hạn hoạt động như một máy bỏ phiếu bằng cảm xúc. Tuy nhiên, về dài hạn, thị trường sẽ là một chiếc cân đo chính xác giá trị doanh nghiệp. Phân tích cơ bản chính là chiếc cân giúp bạn tìm ra những viên kim cương thô.
 
@@ -75,7 +75,7 @@ Tiếp theo là lợi thế cạnh tranh độc quyền hay còn gọi là con h
 
 ### Phân tích định lượng (Phần chìm dưới nước)
 
-Phân tích định lượng giúp bạn kiểm tra sức khỏe tài chính bằng số liệu cụ thể. Công việc chính là đọc hiểu ba báo cáo tài chính cốt lõi của doanh nghiệp. Đó là bảng cân đối kế toán, báo cáo kết quả kinh doanh, và báo cáo lưu chuyển tiền tệ. Những tài liệu này được công bố định kỳ mỗi quý và mỗi năm.
+Phân tích định lượng giúp bạn kiểm tra sức khỏe tài chính bằng số liệu cụ thể. Công việc chính là **[đọc hiểu ba báo cáo tài chính cốt lõi](/phan-tich/co-ban/cach-doc-bao-cao-tai-chinh/)** của doanh nghiệp. Đó là bảng cân đối kế toán, báo cáo kết quả kinh doanh, và báo cáo lưu chuyển tiền tệ. Những tài liệu này được công bố định kỳ mỗi quý và mỗi năm.
 
 Bạn cần sử dụng các chỉ số định giá quen thuộc để phân tích. Ví dụ điển hình là chỉ số P/E, chỉ số P/B và chỉ số EPS. Các chỉ số này giúp bạn so sánh giá cổ phiếu với lợi nhuận thực tế kiếm được. Bạn cũng phải theo dõi các chỉ số sinh lời như ROE để đánh giá hiệu quả sử dụng vốn. Những con số này không biết nói dối và phản ánh trung thực kết quả kinh doanh.
 

@@ -1,0 +1,37 @@
+---
+import { getCollection } from 'astro:content';
+import { brokerRegistry } from '@/data/brokers';
+import { getArticlePath, url } from '@/data/site';
+import '@/styles/reviews.css';
+interface Props { slugs: string[]; currentSlug: string; intent: string; }
+const { slugs, currentSlug, intent } = Astro.props;
+const articles = (await getCollection('articles')).filter((entry) => entry.data.category === 'reviews');
+const companies = [...new Set(slugs)].filter((slug) => brokerRegistry[slug]);
+const paths = companies.map((slug) => ({
+  slug, name: brokerRegistry[slug].shortName,
+  review: articles.find((entry) => entry.data.reviewType === 'company' && entry.data.brokers?.[0]?.slug === slug),
+  account: articles.find((entry) => entry.data.reviewType === 'account' && entry.data.brokers?.[0]?.slug === slug),
+}));
+const comparisons = articles.filter((entry) => entry.data.reviewType === 'comparison' && entry.data.brokers?.some((broker) => companies.includes(broker.slug))).sort((a, b) => Number(b.slug === currentSlug) - Number(a.slug === currentSlug) || b.data.brokers!.filter((broker) => companies.includes(broker.slug)).length - a.data.brokers!.filter((broker) => companies.includes(broker.slug)).length || a.data.order - b.data.order).slice(0, 2);
+const generalGuide = (await getCollection('articles')).find((entry) => entry.slug === 'cach-mo-tai-khoan-chung-khoan');
+const peer = companies[0] === 'ssi' ? 'tcbs' : 'ssi';
+---
+{companies.length > 0 && <nav class="broker-journey" aria-label="Hành trình tìm hiểu công ty chứng khoán">
+  <div class:list={['journey-step', { 'journey-step--current': intent === 'company' }]}>
+    <span class="journey-step-label">Tìm hiểu</span><strong>Review công ty</strong>
+    {paths.map((item) => item.review && (item.review.slug === currentSlug ? <span aria-current="page">{item.name} · đang xem</span> : <a href={getArticlePath(item.review)}>Đánh giá {item.name} →</a>))}
+  </div>
+  <div class:list={['journey-step', { 'journey-step--current': intent === 'comparison' }]}>
+    <span class="journey-step-label">Cân nhắc</span><strong>So sánh lựa chọn</strong>
+    {comparisons.map((entry) => {
+      const label = entry.data.brokers!.map((broker) => brokerRegistry[broker.slug]?.shortName ?? broker.slug).join(' và ');
+      return entry.slug === currentSlug ? <span aria-current="page">{label} · đang xem</span> : <a href={getArticlePath(entry)}>{label} →</a>;
+    })}
+    <a class="journey-tool-link" href={url(`/reviews/so-sanh/?ctck=${companies.length > 1 ? companies.join(',') : `${companies[0]},${peer}`}`)}>Đối chiếu phí tùy chọn ↗</a>
+  </div>
+  <div class:list={['journey-step', { 'journey-step--current': intent === 'account' }]}>
+    <span class="journey-step-label">Bắt đầu</span><strong>Mở tài khoản</strong>
+    {paths.filter((item) => item.account).map((item) => item.account!.slug === currentSlug ? <span aria-current="page">{item.name} · đang xem</span> : <a href={getArticlePath(item.account!)}>Cách mở {item.name} →</a>)}
+    {!paths.some((item) => item.account) && generalGuide && <a href={getArticlePath(generalGuide)}>Hướng dẫn mở tài khoản chung →</a>}
+  </div>
+</nav>}

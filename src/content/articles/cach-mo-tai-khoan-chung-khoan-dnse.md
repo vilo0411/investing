@@ -4,6 +4,9 @@ description: >-
   Hướng dẫn chi tiết cách mở tài khoản chứng khoán DNSE online 100% qua app
   Entrade X hoặc website. Định danh eKYC tích hợp VNeID mới nhất cho F0.
 category: reviews
+reviewType: account
+brokers:
+  - slug: dnse
 heroImage: >-
   /images/articles/cach-mo-tai-khoan-chung-khoan-dnse/cach-mo-tai-khoan-chung-khoan-dnse.jpg
 publishDate: '2026-07-27'

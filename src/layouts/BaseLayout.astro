@@ -4,6 +4,7 @@ import { getCollection } from "astro:content";
 import { categories, categoryMeta, getArticlePath, site, url } from "@/data/site";
 import { author } from "@/data/authors";
 import { buildSiteNodes, type SchemaNode } from "@/lib/schema";
+import { reviewSearchEntries } from "@/data/review-navigation";
 import "@/styles/global.css";
 
 const investCategories = categories.filter(c => c.group === "Đầu tư");
@@ -26,6 +27,7 @@ const searchIndex = allArticles
         .join(" ").toLowerCase(),
     };
   });
+searchIndex.unshift(...reviewSearchEntries);
 
 interface Props {
   title?: string;
@@ -39,6 +41,8 @@ interface Props {
   };
   /** Page-level JSON-LD nodes, merged into the single site-wide @graph. */
   schemaNodes?: SchemaNode[];
+  /** Utility pages whose query combinations should not compete with articles. */
+  noindex?: boolean;
 }
 
 const {
@@ -48,6 +52,7 @@ const {
   ogType = "website",
   articleMeta,
   schemaNodes = [],
+  noindex = false,
 } = Astro.props;
 
 const pageTitle = title === site.name ? title : `${title} | ${site.name}`;
@@ -105,6 +110,7 @@ const openGraphExtra =
       title={pageTitle}
       description={description}
       canonical={canonicalUrl}
+      noindex={noindex}
       openGraph={{
         basic: {
           title: pageTitle,

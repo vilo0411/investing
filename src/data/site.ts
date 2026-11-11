@@ -3,7 +3,6 @@ export const site = {
   email: "hello@valueinvesting.com.vn",
   description:
     "Tìm hiểu cổ phiếu, ETF, quỹ đầu tư và phân tích tài chính dành cho người mới (F0) tại Việt Nam. Kiến thức thực chiến, cập nhật 2026, ngôn ngữ đời thường.",
-  editorialReviewer: "Ban biên tập Value Investing",
   trustStats: [
     "Nội dung giáo dục, không khuyến nghị mua bán",
     "Ưu tiên nguồn gốc: cơ quan quản lý, sàn giao dịch, tài liệu công bố",

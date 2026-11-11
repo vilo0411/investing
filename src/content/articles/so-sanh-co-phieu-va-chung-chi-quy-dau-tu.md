@@ -109,7 +109,7 @@ Kênh này mang lại cảm giác chủ động tối đa cho nhà đầu tư.
 * **Ưu điểm lớn nhất**. Giảm thiểu rủi ro thua lỗ nặng nhờ phân bổ vốn vào hàng chục công ty đầu ngành. Bạn không cần đọc báo cáo tài chính hàng đêm.
 
 
-* **Rào cản thực tế**. Lợi nhuận khó tạo ra đột biến trong ngắn hạn. Bạn cũng phải trích trả phí quản lý thường niên cho công ty quản lý quỹ. Bạn có thể tham khảo thêm về [quỹ ETF](/dau-tu/etf/cach-dau-tu-quy-etf/) để tối ưu chi phí quản lý ở mức thấp nhất.
+* **Rào cản thực tế**. Lợi nhuận khó tạo ra đột biến trong ngắn hạn. Bạn cũng phải trích trả phí quản lý thường niên cho công ty quản lý quỹ. Bạn có thể tham khảo thêm về [quỹ ETF](/dau-tu/etf/cach-dau-tu-quy-etf/) và cách **[phân biệt quỹ ETF và quỹ tương hỗ](/dau-tu/etf/phan-biet-quy-etf-va-quy-tuong-ho/)** để tối ưu chi phí quản lý ở mức thấp nhất.
 
 ## Bạn nên chọn cổ phiếu hay chứng chỉ quỹ?
 

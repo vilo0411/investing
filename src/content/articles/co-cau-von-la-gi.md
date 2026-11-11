@@ -193,7 +193,7 @@ Chỉ số thứ nhất là Tỷ lệ Nợ trên Vốn chủ sở hữu (Debt to
 Tỷ lệ D/E cho biết với mỗi 1 đồng vốn cổ đông tự bỏ ra, doanh nghiệp đang gánh thêm bao nhiêu đồng nợ. Tỷ lệ D/E càng cao thì mức độ đòn bẩy tài chính càng lớn.
 
 
-Chỉ số thứ hai là Tỷ lệ Nợ vay trên Tổng tài sản (Debt to Assets). Chỉ số này đo lường phần trăm tài sản của công ty được tài trợ bởi nợ vay ngân hàng:
+Chỉ số thứ hai là **[tỷ số nợ trên tổng tài sản](/phan-tich/co-ban/ty-so-no-tren-tong-tai-san/)** (Debt to Assets). Chỉ số này đo lường phần trăm tài sản của công ty được tài trợ bởi nợ vay ngân hàng:
 
 **Tỷ lệ Nợ vay / Tổng tài sản = Tổng nợ vay chịu lãi / Tổng tài sản**
 

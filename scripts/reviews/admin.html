@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Quản trị Reviews | Value Investing</title><link rel="stylesheet" href="/admin.css"><script src="/admin-client.js" type="module"></script></head>
+<body><header class="admin-header"><div class="container"><strong>VALUE INVESTING</strong><span>Quản trị Reviews · Cục bộ</span></div></header>
+<main class="container admin-main">
+  <h1>Dữ liệu review</h1><p>Nhập chính sách, đính kèm nguồn, rồi chọn trạng thái xuất bản. Dữ liệu nháp không xuất hiện trên website.</p>
+  <p class="admin-notice">Sau khi lưu: chạy <code>npm run build</code> để xuất bản theo quy trình hiện tại. Bản sao trước mỗi lần lưu nằm trong <code>.local/reviews/history/</code>.</p>
+  <div id="admin-status" role="status" aria-live="polite">Đang tải dữ liệu…</div>
+  <div class="admin-toolbar"><label>Lý do chỉnh sửa<input id="save-note" placeholder="Ví dụ: Đối chiếu lại biểu phí SSI ngày…" required></label><button class="btn-primary" id="save-all" type="button" disabled>Lưu dữ liệu</button><button class="btn-secondary" id="reload-data" type="button">Tải lại</button></div>
+  <nav class="admin-tabs" aria-label="Nhóm dữ liệu"><button type="button" data-section="policies" aria-current="page">Biểu phí & lãi suất</button><button type="button" data-section="sources">Nguồn</button><button type="button" data-section="offers">Ưu đãi</button><button type="button" data-section="links">Liên kết</button><button type="button" data-section="history">Lịch sử</button></nav>
+  <div class="admin-actions"><label>Tìm trong nhóm<input id="entry-search" type="search" placeholder="ID, tên gói, công ty…"></label><button class="btn-secondary" id="new-entry" type="button">Thêm mục</button></div>
+  <div class="admin-grid"><section class="admin-list" id="entry-list" aria-label="Danh sách dữ liệu"></section><section class="admin-editor"><h2 id="editor-title">Chọn một mục để sửa</h2><form id="entry-form"></form></section></div>
+  <details class="admin-json"><summary>JSON nâng cao</summary><p>Chỉ dùng khi cần nhập nhiều mục. Kiểm tra JSON rồi áp dụng vào bản làm việc trước khi lưu.</p><textarea id="raw-json" spellcheck="false" aria-label="Dữ liệu JSON"></textarea><button class="btn-secondary" id="apply-json" type="button">Áp dụng JSON vào bản làm việc</button></details>
+</main></body></html>

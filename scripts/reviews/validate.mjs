@@ -1,0 +1,11 @@
+import { readFile } from 'node:fs/promises';
+import { reviewDataSchema, isPolicyActive, isOfferActive, isStale, todayVN } from '../../src/lib/review-data.mjs';
+const data = reviewDataSchema.parse(JSON.parse(await readFile(new URL('../../src/data/reviews/catalog.json', import.meta.url), 'utf8')));
+const today = todayVN();
+const futureChecks = [...data.policies, ...data.offers].filter((item) => item.checkedAt > today);
+if (futureChecks.length) throw new Error(`Ngày đối chiếu ở tương lai: ${futureChecks.map((item) => item.id).join(', ')}`);
+const active = data.policies.filter((policy) => isPolicyActive(policy, today));
+console.log(`${data.brokers.length} công ty, ${active.length} chính sách đang áp dụng, ${data.offers.filter((offer) => isOfferActive(offer, today)).length} ưu đãi đang hiển thị.`);
+const stale = active.filter((policy) => isStale(policy.checkedAt, today));
+if (stale.length) console.log(`Cần kiểm tra lại ${stale.length} chính sách: ${stale.map((policy) => policy.id).join(', ')}`);
+console.log('Dữ liệu hợp lệ.');

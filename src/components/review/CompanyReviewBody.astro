@@ -2,6 +2,8 @@
 import ProsConsBox from "@/components/ProsConsBox.astro";
 import ReviewCTA from "@/components/ReviewCTA.astro";
 import type { RatingDimension, UserVoice } from "@/data/brokers";
+import { getCollection } from 'astro:content';
+import { getArticlePath } from '@/data/site';
 
 interface OfficialResource {
   type: "video" | "article" | "guide";
@@ -30,6 +32,7 @@ interface Props {
   verdict?: string;
   bestFor?: string;
   name?: string;
+  slug?: string;
   feeRate?: string;
   marginRate?: string;
   appRating?: string;
@@ -49,6 +52,7 @@ const {
   verdict,
   bestFor,
   name,
+  slug,
   feeRate,
   marginRate,
   appRating,
@@ -63,6 +67,7 @@ function getYouTubeId(url: string): string | null {
 }
 
 const accountVideo = officialResources.find((r) => r.type === "video");
+const accountGuide = slug ? (await getCollection('articles')).find((entry) => entry.data.reviewType === 'account' && entry.data.brokers?.[0]?.slug === slug) : undefined;
 
 const infoRows = companyInfo
   ? [
@@ -99,7 +104,7 @@ const dimensions: { key: keyof RatingDimension; label: string; desc: string }[] 
           <span class:list={["star", { "star--filled": filled }]} aria-hidden="true">★</span>
         ))}
       </div>
-      <div class="score-label">Điểm Value Investing</div>
+      <div class="score-label">Điểm biên tập cũ, cần rà soát</div>
     </div>
 
     <div class="score-right">
@@ -121,7 +126,7 @@ const dimensions: { key: keyof RatingDimension; label: string; desc: string }[] 
         </div>
       )}
 
-      <ReviewCTA label={ctaLabel ?? "Mở tài khoản ngay"} url={ctaUrl ?? "#"} />
+      {accountGuide ? <a class="btn-primary" href={getArticlePath(accountGuide)}>Hướng dẫn mở tài khoản →</a> : ctaUrl && <ReviewCTA label={ctaLabel ?? "Truy cập website chính thức"} url={ctaUrl} />}
     </div>
   </div>
 
@@ -138,7 +143,7 @@ const dimensions: { key: keyof RatingDimension; label: string; desc: string }[] 
     <section class="rating-breakdown" id="tieu-chi-danh-gia">
       <h2>Điểm theo từng tiêu chí</h2>
       <p class="breakdown-methodology">
-        Điểm được tính dựa trên dữ liệu công khai (phí, lãi suất margin, app store rating), phản hồi người dùng thu thập từ App Store / Google Play / CafeF, và kiểm tra thực tế của đội biên tập Value Investing. Thang điểm 1–5.
+        Điểm biên tập lưu từ phiên bản trước, chưa được tái kiểm định theo bộ dữ liệu có nguồn mới. Không dùng điểm này để đo mức an toàn của công ty. Biểu phí được đối chiếu riêng ở bảng phía trên.
       </p>
       <div class="dimension-list">
         {dimensions.map((dim) => {
@@ -190,7 +195,7 @@ const dimensions: { key: keyof RatingDimension; label: string; desc: string }[] 
   {accountSteps.length > 0 && (
     <section id="mo-tai-khoan">
       <h2>Hướng dẫn mở tài khoản {name ?? ""}</h2>
-      <ol class="account-steps">
+      {accountGuide ? <p>Đã cân nhắc công ty này? Xem <a href={getArticlePath(accountGuide)}>hướng dẫn mở tài khoản {name}</a> để chuẩn bị giấy tờ, làm theo từng bước và kiểm tra gói dịch vụ trước khi xác nhận.</p> : <ol class="account-steps">
         {accountSteps.map((step, i) => (
           <li class="step-item">
             <div class="step-num" aria-hidden="true">{i + 1}</div>
@@ -200,7 +205,7 @@ const dimensions: { key: keyof RatingDimension; label: string; desc: string }[] 
             </div>
           </li>
         ))}
-      </ol>
+      </ol>}
 
       {accountVideo && (() => {
         const ytId = getYouTubeId(accountVideo.url);
@@ -757,6 +762,10 @@ const dimensions: { key: keyof RatingDimension; label: string; desc: string }[] 
 
   /* ── Responsive ─────────────────────────────── */
   @media (max-width: 580px) {
+    .info-list { min-width: 0; width: 100%; }
+    .info-row { min-width: 0; flex-direction: column; gap: 4px; }
+    .info-row dt { flex: unset; }
+    .info-row dd { overflow-wrap: anywhere; }
     .score-card {
       flex-direction: column;
       gap: var(--space-4);

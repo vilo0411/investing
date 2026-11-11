@@ -1,0 +1,20 @@
+---
+import PolicyValue from './PolicyValue.astro';
+import { metricKeys, metricLabels } from '@/lib/review-data.mjs';
+import { url } from '@/data/site';
+interface Props { brokers: { slug: string; name: string; shortName?: string }[]; }
+const { brokers } = Astro.props;
+const peerSlugs = brokers.map((broker) => broker.slug);
+---
+<div class="sourced-comparison">
+  <p class="review-data-context">Số liệu dưới đây dùng chung với bảng so sánh tổng, có nguồn và ngày đối chiếu riêng cho từng mức.</p>
+  <div class="review-table-scroll" tabindex="0" role="region" aria-label="Chi phí của các công ty trong bài, có thể cuộn ngang">
+    <table class="broker-table review-comparison-table" data-policy-comparison="selected">
+      <caption>Chi phí tham chiếu, kèm điều kiện của từng công ty</caption>
+      <thead><tr><th scope="col">Tiêu chí</th>{brokers.map((broker) => <th scope="col">{broker.shortName ?? broker.name}</th>)}</tr></thead>
+      <tbody>{metricKeys.map((metric) => <tr><th scope="row">{metricLabels[metric]}</th>{brokers.map((broker) => <td><PolicyValue broker={broker.slug} metric={metric} peerSlugs={peerSlugs} /></td>)}</tr>)}</tbody>
+    </table>
+  </div>
+  <p class="review-heat-legend">Sắc xanh nhấn mạnh mức chi phí thấp hơn trong cùng đơn vị và cách gồm phí; không chấm mức an toàn hoặc chất lượng tư vấn.</p>
+  <a class="review-data-link" href={url(`/reviews/so-sanh/?ctck=${peerSlugs.join(',')}`)}>Tùy chỉnh công ty trong bảng →</a>
+</div>

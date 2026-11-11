@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
+import { validateStructuredData } from "./lib/schema-validation.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const workspaceRoot = path.resolve(__dirname, "..");
@@ -149,128 +150,34 @@ function runVerification() {
     console.log(`⚠️ CWV Auditor: Found ${results.cwv.failed} violations.\n`);
   }
 
-  // 3. Structured Data Validator: Parse JSON-LD scripts
+  // 3. Structured Data Validator: traverse graphs and resolve entity references.
   console.log("--- Running Structured Data Validator ---");
+  let schemaNodesChecked = 0;
   for (const htmlFile of htmlFiles) {
-    const content = fs.readFileSync(htmlFile, "utf-8");
-    const jsonLdRegex = /<script[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi;
-    let match;
     const relPath = path.relative(buildDir, htmlFile);
-
-    while ((match = jsonLdRegex.exec(content)) !== null) {
-      const jsonText = match[1].trim();
-      try {
-        const schema = JSON.parse(jsonText);
-        const schemasToCheck = Array.isArray(schema) ? schema : [schema];
-
-        for (const item of schemasToCheck) {
-          const type = item["@type"];
-          if (!type) continue;
-
-          if (type === "Article") {
-            // Check required fields: headline, author (Person + name), publisher (Organization or @id reference), datePublished, dateModified
-            const required = ["headline", "author", "publisher", "datePublished", "dateModified"];
-            for (const req of required) {
-              if (!item[req]) {
-                const errorMsg = `[Schema Article Missing Field] '${req}' in ${relPath}`;
-                results.schema.violations.push(errorMsg);
-                results.schema.failed++;
-                failedChecks++;
-                blockerErrors++;
-                console.error(`❌ ${errorMsg}`);
-              } else {
-                results.schema.passed++;
-                passedChecks++;
-              }
-            }
-
-            // Check author type Person and name
-            if (item.author) {
-              const authors = Array.isArray(item.author) ? item.author : [item.author];
-              for (const author of authors) {
-                if (author["@type"] !== "Person" || !author.name) {
-                  const errorMsg = `[Schema Article Author Invalid] expected Person with name in ${relPath}`;
-                  results.schema.violations.push(errorMsg);
-                  results.schema.failed++;
-                  failedChecks++;
-                  blockerErrors++;
-                  console.error(`❌ ${errorMsg}`);
-                } else {
-                  results.schema.passed++;
-                  passedChecks++;
-                }
-              }
-            }
-
-            // Check publisher type Organization or @id reference
-            if (item.publisher) {
-              if (item.publisher["@type"] !== "Organization" && !item.publisher["@id"]) {
-                const errorMsg = `[Schema Article Publisher Invalid] expected Organization or @id reference in ${relPath}`;
-                results.schema.violations.push(errorMsg);
-                results.schema.failed++;
-                failedChecks++;
-                blockerErrors++;
-                console.error(`❌ ${errorMsg}`);
-              } else {
-                results.schema.passed++;
-                passedChecks++;
-              }
-            }
-          } else if (type === "Person") {
-            // Check required fields for Author Profile: name
-            if (!item.name) {
-              const errorMsg = `[Schema Person Missing name] in ${relPath}`;
-              results.schema.violations.push(errorMsg);
-              results.schema.failed++;
-              failedChecks++;
-              blockerErrors++;
-              console.error(`❌ ${errorMsg}`);
-            } else {
-              results.schema.passed++;
-              passedChecks++;
-            }
-          } else if (type === "BreadcrumbList") {
-            // Check required fields: itemListElement containing position, name, item per item
-            if (!item.itemListElement || !Array.isArray(item.itemListElement)) {
-              const errorMsg = `[Schema BreadcrumbList Invalid] 'itemListElement' missing or not array in ${relPath}`;
-              results.schema.violations.push(errorMsg);
-              results.schema.failed++;
-              failedChecks++;
-              blockerErrors++;
-              console.error(`❌ ${errorMsg}`);
-            } else {
-              for (const element of item.itemListElement) {
-                if (element.position === undefined || !element.name || !element.item) {
-                  const errorMsg = `[Schema BreadcrumbList Element Invalid] missing position, name, or item in ${relPath}`;
-                  results.schema.violations.push(errorMsg);
-                  results.schema.failed++;
-                  failedChecks++;
-                  blockerErrors++;
-                  console.error(`❌ ${errorMsg}`);
-                } else {
-                  results.schema.passed++;
-                  passedChecks++;
-                }
-              }
-            }
-          }
-        }
-      } catch (err) {
-        const errorMsg = `[Schema Parse Error] malformed JSON-LD in ${relPath}: ${err.message}`;
-        results.schema.violations.push(errorMsg);
-        results.schema.failed++;
-        failedChecks++;
-        blockerErrors++;
-        console.error(`❌ ${errorMsg}`);
-      }
+    const validation = validateStructuredData(fs.readFileSync(htmlFile, "utf-8"));
+    schemaNodesChecked += validation.nodes;
+    results.schema.passed += validation.passed;
+    results.schema.failed += validation.failed;
+    passedChecks += validation.passed;
+    failedChecks += validation.failed;
+    blockerErrors += validation.failed;
+    for (const violation of validation.violations) {
+      const errorMsg = `${violation} in ${relPath}`;
+      results.schema.violations.push(errorMsg);
+      console.error(`❌ ${errorMsg}`);
     }
   }
-
-  if (results.schema.failed === 0) {
-    console.log("✅ Structured Data Validator: All parsed JSON-LD scripts are compliant.\n");
-  } else {
-    console.log(`⚠️ Structured Data Validator: Found ${results.schema.failed} violations.\n`);
+  if (schemaNodesChecked === 0) {
+    const errorMsg = "[Schema Empty Build] No typed JSON-LD entities were checked";
+    results.schema.violations.push(errorMsg);
+    results.schema.failed++;
+    failedChecks++;
+    blockerErrors++;
+    console.error(`❌ ${errorMsg}`);
   }
+  results.schema.nodesChecked = schemaNodesChecked;
+  console.log(`Structured data: ${schemaNodesChecked} entities checked; ${results.schema.failed} violations.\n`);
   console.log("--- Running Sitemap & URL Freeze Auditor ---");
   const sitemapFiles = fs.readdirSync(buildDir).filter(f => f.startsWith("sitemap") && f.endsWith(".xml"));
   if (sitemapFiles.length === 0) {

@@ -3,6 +3,7 @@ dist/
 .astro/
 .DS_Store
 .env
+.local/
 __pycache__/
 
 # Local API keys for content engine scripts

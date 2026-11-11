@@ -2,7 +2,7 @@
 //
 // Every page emits exactly one <script type="application/ld+json"> containing a
 // single @graph. BaseLayout contributes the site-level nodes (Organization,
-// editorial board, WebSite); article/review layouts contribute page-level nodes
+// WebSite); article/review layouts contribute page-level nodes
 // through the `schemaNodes` prop. Keeping the logic here means ArticleLayout and
 // ReviewLayout share one source of truth instead of duplicating schema objects.
 //
@@ -109,8 +109,6 @@ export interface ProfilePageInput {
 /* ── @id helpers ─────────────────────────────────────────────────────────── */
 
 export const orgId = (siteUrl: string) => `${siteUrl}#organization`;
-export const editorialBoardId = (siteUrl: string) =>
-  `${siteUrl}#organization/ban-bien-tap`;
 export const websiteId = (siteUrl: string) => `${siteUrl}#website`;
 export const personId = (siteUrl: string) =>
   `${siteUrl}author/${author.slug}/#person`;
@@ -118,10 +116,8 @@ export const personId = (siteUrl: string) =>
 /* ── Site-level nodes (present on every page) ────────────────────────────── */
 
 /**
- * Organization + editorial board + WebSite.
- *
- * The editorial board is its own Organization node rather than reusing the root
- * @id — sharing an @id made `reviewedBy` overwrite the brand's name and URL.
+ * Organization + WebSite. The editorial policy identifies the founder as the
+ * content reviewer, so no separate editorial-board organization is declared.
  * The root Organization intentionally carries no `sameAs`: the founder's
  * personal profiles belong on the Person node, not on the brand entity.
  */
@@ -134,7 +130,9 @@ export function buildSiteNodes(siteUrl: string): SchemaNode[] {
       "url": siteUrl,
       "logo": {
         "@type": "ImageObject",
-        "url": `${siteUrl}images/hero-investing.png`,
+        "url": `${siteUrl}images/value-investing-logo.svg`,
+        "width": 512,
+        "height": 512,
       },
       "email": site.email,
       "areaServed": "VN",
@@ -155,13 +153,6 @@ export function buildSiteNodes(siteUrl: string): SchemaNode[] {
         "name": author.name,
         "url": `${siteUrl}author/${author.slug}/`,
       },
-    },
-    {
-      "@type": "Organization",
-      "@id": editorialBoardId(siteUrl),
-      "name": site.editorialReviewer,
-      "url": `${siteUrl}editorial-policy/`,
-      "parentOrganization": { "@id": orgId(siteUrl) },
     },
     {
       "@type": "WebSite",
@@ -288,9 +279,8 @@ function buildPersonNode(siteUrl: string): SchemaNode {
  *
  * WebPage is the hub: it references the breadcrumb, primary image, the main
  * entity (Article, plus Review on company reviews) and the FAQ, so no node is
- * left orphaned. Fact-check dates land on WebPage.lastReviewed — the property
- * previously used on Article does not exist in schema.org, so the YMYL
- * fact-check signal was being silently dropped.
+ * left orphaned. Review metadata belongs on WebPage and is emitted only when a
+ * fact-check date is recorded. The reviewer matches the public editorial policy.
  */
 export function buildArticlePageNodes(input: ArticlePageInput): SchemaNode[] {
   const {
@@ -348,9 +338,11 @@ export function buildArticlePageNodes(input: ArticlePageInput): SchemaNode[] {
       "datePublished": publishDate.toISOString(),
       "dateModified": updatedDate.toISOString(),
       ...(factCheckedDate
-        ? { "lastReviewed": factCheckedDate.toISOString() }
+        ? {
+            "lastReviewed": factCheckedDate.toISOString(),
+            "reviewedBy": { "@id": personId(siteUrl) },
+          }
         : {}),
-      "reviewedBy": { "@id": editorialBoardId(siteUrl) },
       ...(hasFaq ? { "hasPart": [{ "@id": faqId }] } : {}),
     },
     {
@@ -367,7 +359,6 @@ export function buildArticlePageNodes(input: ArticlePageInput): SchemaNode[] {
       ...(tags?.length ? { "keywords": tags.join(", ") } : {}),
       "image": { "@id": imageNodeId },
       "author": { "@id": personId(siteUrl) },
-      "reviewedBy": { "@id": editorialBoardId(siteUrl) },
       "publisher": { "@id": orgId(siteUrl) },
       "isPartOf": { "@id": websiteId(siteUrl) },
       ...(citation ? { "citation": citation } : {}),
@@ -375,6 +366,8 @@ export function buildArticlePageNodes(input: ArticlePageInput): SchemaNode[] {
   ];
 
   if (faq?.length) {
+    // Retained for semantic description of the visible FAQ. Google retired FAQ
+    // rich results in May 2026; this markup does not promise that appearance.
     nodes.push({
       "@type": "FAQPage",
       "@id": faqId,
@@ -514,7 +507,8 @@ export function buildStaticPageNodes(input: StaticPageInput): SchemaNode[] {
  *
  * The Person node comes from the same builder used on article pages, so the
  * shared @id resolves to one identical definition site-wide. The author's
- * article list hangs off `hasPart` — `mainEntity` stays the Person.
+ * Article WebPages are CreativeWork parts; ItemList is an Intangible mentioned by the
+ * profile, not a CreativeWork part. `mainEntity` stays the Person.
  */
 export function buildProfilePageNodes(input: ProfilePageInput): SchemaNode[] {
   const { siteUrl, pageUrl, title, description, breadcrumb, items } = input;
@@ -533,7 +527,17 @@ export function buildProfilePageNodes(input: ProfilePageInput): SchemaNode[] {
         ? { "breadcrumb": { "@id": `${pageUrl}#breadcrumb` } }
         : {}),
       "mainEntity": { "@id": personId(siteUrl) },
-      ...(items?.length ? { "hasPart": { "@id": `${pageUrl}#itemlist` } } : {}),
+      ...(items?.length
+        ? {
+            "hasPart": items.map((item) => ({
+              "@type": "WebPage",
+              "@id": `${item.url}#webpage`,
+              "url": item.url,
+              "name": item.name,
+            })),
+            "mentions": { "@id": `${pageUrl}#itemlist` },
+          }
+        : {}),
     },
   ];
 

@@ -77,7 +77,7 @@ Mọi giao dịch mua bán hợp lệ chỉ được dao động trong hành lan
 
 ## Biên độ dao động trên các sàn chứng khoán Việt Nam
 
-Thị trường chứng khoán Việt Nam có 3 sàn giao dịch với biên độ khác nhau. Bảng dưới đây thể hiện quy định chi tiết.
+Thị trường chứng khoán Việt Nam có 3 sàn giao dịch với **[biên độ giao dịch chứng khoán](/dau-tu/co-phieu/bien-do-giao-dich-chung-khoan/)** khác nhau. Bảng dưới đây thể hiện quy định chi tiết.
 
 
 | Sàn giao dịch | Biên độ dao động ngày thường | Biên độ ngày giao dịch đầu tiên | Màu sắc giá trần | Màu sắc giá sàn |

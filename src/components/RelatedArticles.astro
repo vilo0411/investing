@@ -1,18 +1,16 @@
 ---
 import { getCollection } from "astro:content";
 import { getArticlePath } from "@/data/site";
+import { selectRelatedArticles } from "@/lib/related-articles.mjs";
 
 interface Props {
   category: string;
   currentSlug: string;
 }
 
-const { category, currentSlug } = Astro.props;
+const { currentSlug } = Astro.props;
 
-const related = (await getCollection("articles"))
-  .filter((a) => a.data.category === category && a.slug !== currentSlug)
-  .sort((a, b) => a.data.order - b.data.order)
-  .slice(0, 3);
+const related = selectRelatedArticles(await getCollection("articles"), currentSlug);
 ---
 
 {related.length > 0 && (

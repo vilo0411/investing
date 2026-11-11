@@ -7,7 +7,7 @@ import { buildCollectionPageNodes } from "@/lib/schema";
 
 export async function getStaticPaths() {
   return categories
-    .filter((category) => category.group !== "Đầu tư" && category.group !== "Phân tích")
+    .filter((category) => category.group !== "Đầu tư" && category.group !== "Phân tích" && category.slug !== "reviews")
     .map((category) => ({
       params: { category: category.slug },
       props: { category },

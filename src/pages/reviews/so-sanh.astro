@@ -1,0 +1,110 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Breadcrumb from '@/components/Breadcrumb.astro';
+import PolicyValue from '@/components/review/PolicyValue.astro';
+import { brokerRegistry } from '@/data/brokers';
+import { reviewCatalog, getOutboundLink } from '@/data/review-catalog';
+import { metricKeys, metricLabels } from '@/lib/review-data.mjs';
+import { getArticlePath, url } from '@/data/site';
+import '@/styles/reviews.css';
+const reviewArticles = (await getCollection('articles')).filter((entry) => entry.data.category === 'reviews');
+const articles = reviewArticles.filter((entry) => entry.data.reviewType === 'company');
+const articleByBroker = new Map(articles.map((entry) => [entry.data.brokers?.[0]?.slug, entry]));
+const accountByBroker = new Map(reviewArticles.filter((entry) => entry.data.reviewType === 'account').map((entry) => [entry.data.brokers?.[0]?.slug, entry]));
+const editorialComparisons = reviewArticles.filter((entry) => entry.data.reviewType === 'comparison' && entry.data.brokers?.length === 2);
+const brokers = reviewCatalog.brokers.map((slug) => brokerRegistry[slug]).sort((a, b) => a.shortName.localeCompare(b.shortName, 'vi'));
+const defaults = ['tcbs', 'ssi', 'vndirect'];
+---
+<BaseLayout title="So sánh công ty chứng khoán theo lựa chọn" description="Chọn 2 hoặc 3 công ty chứng khoán để xem phí cổ phiếu, lãi margin, phí phái sinh và điều kiện áp dụng cạnh nhau." noindex={true}>
+  <div class="review-hub" data-review-comparison>
+    <header class="review-hero"><div class="container"><Breadcrumb items={[{ label: 'Trang chủ', href: '/' }, { label: 'Reviews', href: '/reviews/' }, { label: 'Đối chiếu phí' }]} /><h1>Đối chiếu phí theo lựa chọn</h1><p class="lead">Chọn 2–3 công ty. Đọc phân tích chuyên sâu trước khi quyết định.</p></div></header>
+    <div class="container review-section">
+      <section class="editorial-bridge" data-editorial-comparisons hidden={!editorialComparisons.some((entry) => entry.data.brokers!.every((broker) => defaults.includes(broker.slug)))}>
+        <div><span class="journey-step-label">Phân tích cho lựa chọn này</span><h2>Đi từ số liệu đến quyết định</h2></div>
+        <ul>{editorialComparisons.map((entry) => <li data-editorial-pair={entry.data.brokers!.map((broker) => broker.slug).join(',')} hidden={!entry.data.brokers!.every((broker) => defaults.includes(broker.slug))}><a href={getArticlePath(entry)}>{entry.data.title} →</a></li>)}</ul>
+      </section>
+      <form class="review-compare-form" data-compare-form>
+        {[0, 1, 2].map((index) => <label>Công ty {index + 1}{index === 2 ? ' (tùy chọn)' : ''}<select name={`company-${index}`} required={index < 2}>
+          <option value="">Chọn công ty</option>{brokers.map((broker) => <option value={broker.slug} selected={defaults[index] === broker.slug}>{broker.shortName}</option>)}
+        </select></label>)}
+        <button class="btn-primary" type="submit">Cập nhật so sánh</button>
+      </form>
+      <p data-comparison-status role="status">Đang so sánh TCBS, SSI và VNDIRECT. Bạn có thể đổi công ty ở trên.</p>
+      <noscript><p class="review-note">Bảng mặc định hiển thị TCBS, SSI và VNDIRECT. Bật JavaScript để thay đổi lựa chọn.</p></noscript>
+      <div class="review-table-scroll" tabindex="0" role="region" aria-label="So sánh các công ty đã chọn, có thể cuộn ngang">
+        <table class="broker-table review-comparison-table" data-policy-comparison="selected"><caption data-comparison-caption>Phí tham chiếu theo từng gói. Mở điều kiện để xem nguồn.</caption>
+          <thead><tr><th scope="col">Tiêu chí</th>{brokers.map((broker) => <th scope="col" data-compare-column={broker.slug} hidden={!defaults.includes(broker.slug)}>{broker.shortName}</th>)}</tr></thead>
+          <tbody>
+            {metricKeys.map((metric) => <tr><th scope="row">{metricLabels[metric]}</th>{brokers.map((broker) => <td data-compare-column={broker.slug} hidden={!defaults.includes(broker.slug)}><PolicyValue broker={broker.slug} metric={metric} peerSlugs={defaults} /></td>)}</tr>)}
+            <tr><th scope="row">Bài đánh giá</th>{brokers.map((broker) => {
+              const article = articleByBroker.get(broker.slug);
+              return <td data-compare-column={broker.slug} hidden={!defaults.includes(broker.slug)}>{article ? <a href={getArticlePath(article)}>Review {broker.shortName} →</a> : 'Đang bổ sung'} </td>;
+            })}</tr>
+            <tr><th scope="row">Hướng dẫn mở tài khoản</th>{brokers.map((broker) => {
+              const article = accountByBroker.get(broker.slug);
+              return <td data-compare-column={broker.slug} hidden={!defaults.includes(broker.slug)}>{article ? <a href={getArticlePath(article)}>Cách mở tài khoản {broker.shortName} →</a> : 'Đang bổ sung hướng dẫn'}</td>;
+            })}</tr>
+            <tr><th scope="row">Nguồn chính thức</th>{brokers.map((broker) => {
+              const outbound = getOutboundLink(broker.slug);
+              return <td data-compare-column={broker.slug} hidden={!defaults.includes(broker.slug)}>{outbound && <a href={outbound.url} target="_blank" rel={outbound.kind === 'partner' ? 'sponsored noopener noreferrer' : 'noopener noreferrer'} data-broker-outbound={broker.slug} data-link-kind={outbound.kind}>Website {broker.shortName} ↗</a>}</td>;
+            })}</tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="review-hero-actions"><button class="btn-secondary" data-copy-comparison type="button">Sao chép liên kết so sánh</button><a href={url('/reviews/#bang-so-sanh')} class="btn-secondary">Về bảng đầy đủ</a></div>
+      <p class="review-note">Không có lựa chọn tốt nhất cho mọi tài khoản. Phí có thể khác khi sử dụng tư vấn, người giới thiệu hoặc gói ưu đãi. Ô “Chưa xác minh” không được hiểu là miễn phí.</p>
+    </div>
+  </div>
+  <script>
+    const root = document.querySelector<HTMLElement>('[data-review-comparison]');
+    if (root) {
+      const form = root.querySelector<HTMLFormElement>('[data-compare-form]')!;
+      const selects = Array.from(form.querySelectorAll<HTMLSelectElement>('select'));
+      const valid = new Set(Array.from(selects[0].options).map((option) => option.value).filter(Boolean));
+      const names = new Map(Array.from(selects[0].options).map((option) => [option.value, option.text]));
+      const status = root.querySelector<HTMLElement>('[data-comparison-status]')!;
+      let current = ['tcbs', 'ssi', 'vndirect'];
+      function show(slugs: string[], syncUrl: boolean) {
+        current = slugs;
+        root!.querySelectorAll<HTMLElement>('[data-compare-column]').forEach((cell) => { cell.hidden = !slugs.includes(cell.dataset.compareColumn!); });
+        // Match column order to the user's selection, not registry order.
+        root!.querySelectorAll('tr').forEach((row) => slugs.forEach((slug) => {
+          const cell = row.querySelector<HTMLElement>(`[data-compare-column="${slug}"]`);
+          if (cell) row.append(cell);
+        }));
+        selects.forEach((select, index) => { select.value = slugs[index] ?? ''; });
+        const articles = Array.from(root!.querySelectorAll<HTMLElement>('[data-editorial-pair]'));
+        articles.forEach((article) => { article.hidden = !article.dataset.editorialPair!.split(',').every((slug) => slugs.includes(slug)); });
+        const editorial = root!.querySelector<HTMLElement>('[data-editorial-comparisons]');
+        if (editorial) editorial.hidden = !articles.some((article) => !article.hidden);
+        const label = slugs.map((slug) => names.get(slug)).join(', ');
+        status.textContent = `Đang so sánh ${label}.`;
+        root!.querySelector('[data-comparison-caption]')!.textContent = `${label}: mức tham chiếu theo từng gói, kèm nguồn và điều kiện.`;
+        if (syncUrl) { const next = new URL(location.href); next.searchParams.set('ctck', slugs.join(',')); history.replaceState(null, '', next); }
+        document.dispatchEvent(new CustomEvent('review:comparisonchange'));
+      }
+      function restore() {
+        const raw = new URLSearchParams(location.search).get('ctck');
+        if (!raw) { show(['tcbs', 'ssi', 'vndirect'], false); return; }
+        const slugs = [...new Set(raw.split(',').filter((slug) => valid.has(slug)))];
+        if (slugs.length >= 2 && slugs.length <= 3) show(slugs, false);
+        else { show(['tcbs', 'ssi', 'vndirect'], false); status.textContent = 'Liên kết cần có 2 hoặc 3 công ty hợp lệ. Đang hiển thị bộ so sánh mặc định.'; }
+      }
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const values = selects.map((select) => select.value).filter(Boolean);
+        if (values.length < 2 || new Set(values).size !== values.length || values.some((slug) => !valid.has(slug))) { status.textContent = 'Vui lòng chọn 2 hoặc 3 công ty khác nhau.'; return; }
+        show(values, true);
+      });
+      root.querySelector('[data-copy-comparison]')!.addEventListener('click', async () => {
+        const link = new URL(location.href); link.searchParams.set('ctck', current.join(','));
+        try { await navigator.clipboard.writeText(link.toString()); status.textContent = 'Đã sao chép liên kết so sánh.'; }
+        catch { status.textContent = `Sao chép liên kết này: ${link.toString()}`; }
+      });
+      window.addEventListener('popstate', restore);
+      restore();
+    }
+  </script>
+  <script src="../../scripts/review-runtime.ts"></script>
+</BaseLayout>

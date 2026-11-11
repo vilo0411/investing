@@ -83,7 +83,7 @@ Trước khi thực hiện bước đầu tiên, bạn hãy chọn một công t
 
 2. **Bước 2. Nạp tiền vào tài khoản.** Sau khi có số tài khoản chứng khoán, bạn chuyển khoản từ ngân hàng của mình vào. Các công ty chứng khoán đều hướng dẫn chi tiết cách viết nội dung chuyển khoản để tiền vào đúng tài khoản của bạn.
 
-3. **Bước 3. Tìm hiểu và chọn cổ phiếu.** Bạn nên bắt đầu bằng cách tìm hiểu các doanh nghiệp lớn quen thuộc trên thị trường. Hãy đọc các thông tin cơ bản về doanh nghiệp trước khi quyết định mua.
+3. **Bước 3. Tìm hiểu và [chọn cổ phiếu](/dau-tu/co-phieu/nen-dau-tu-co-phieu-nao/).** Bạn nên bắt đầu bằng cách tìm hiểu các doanh nghiệp lớn quen thuộc trên thị trường. Hãy đọc các thông tin cơ bản về doanh nghiệp trước khi quyết định mua.
 
 4. **Bước 4. Đặt lệnh mua cổ phiếu.** Bạn đăng nhập vào ứng dụng của công ty chứng khoán, chọn mã cổ phiếu, nhập số lượng và mức giá mong muốn rồi ấn xác nhận. Lô tối thiểu để giao dịch trên sàn HOSE và HNX là 100 cổ phiếu.
 

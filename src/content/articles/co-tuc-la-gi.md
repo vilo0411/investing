@@ -60,7 +60,7 @@ Mỗi loại hình đều có ưu và nhược điểm riêng mà bạn cần c�
 | :--- | :--- | :--- |
 | **Bản chất** | Tiền mặt chuyển khoản trực tiếp vào tài khoản chứng khoán của bạn. | Doanh nghiệp phát hành thêm cổ phiếu mới để gửi cho bạn. |
 | **Ưu điểm** | Nhận tiền thực tế, tạo dòng tiền thụ động ngay lập tức cho bạn. | Doanh nghiệp giữ lại tiền mặt để mở rộng kinh doanh, không mất thuế TNCN 5%. |
-| **Nhược điểm** | Doanh nghiệp có thể bị thiếu hụt tiền mặt để đầu tư tăng trưởng. | Số lượng cổ phiếu lưu hành tăng lên gây pha loãng cổ phiếu. |
+| **Nhược điểm** | Doanh nghiệp có thể bị thiếu hụt tiền mặt để đầu tư tăng trưởng. | Số lượng cổ phiếu lưu hành tăng lên gây **[pha loãng cổ phiếu](/dau-tu/co-phieu/pha-loang-co-phieu-la-gi/)**. |
 
 Hầu hết các doanh nghiệp phát triển ổn định như Vinamilk (VNM) hay Dược Hậu Giang (DHG) thường chọn trả cổ tức tiền mặt cao. Trong khi đó, các công ty đang đà tăng trưởng nóng như Hòa Phát (HPG) hay FPT (FPT) thường ưu tiên trả bằng cổ phiếu để giữ vốn đầu tư trang thiết bị, nhà xưởng mới.
 

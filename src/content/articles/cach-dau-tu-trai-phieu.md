@@ -82,7 +82,7 @@ Cùng một loại tài sản, nhưng cách bạn tiếp cận trái phiếu s�
 
 Để được công nhận là nhà đầu tư chuyên nghiệp, cá nhân cần nắm danh mục chứng khoán giá trị trên 2 tỷ đồng, hoặc có thu nhập chịu thuế trên 1 tỷ đồng mỗi năm. Phần lớn người mới chưa đáp ứng điều kiện này.
 
-Với đa số người mới, lựa chọn thực tế hơn là mua trái phiếu niêm yết qua công ty chứng khoán, hoặc đầu tư qua chứng chỉ quỹ của các quỹ trái phiếu mở. Những quỹ này gom tiền của nhiều nhà đầu tư nhỏ để mua một danh mục trái phiếu đa dạng, giúp giảm rủi ro tập trung vào một bên phát hành.
+Với đa số người mới, lựa chọn thực tế hơn là **[mua trái phiếu](/dau-tu/trai-phieu/cach-mua-trai-phieu/)** niêm yết qua công ty chứng khoán, hoặc đầu tư qua chứng chỉ quỹ của các quỹ trái phiếu mở. Những quỹ này gom tiền của nhiều nhà đầu tư nhỏ để mua một danh mục trái phiếu đa dạng, giúp giảm rủi ro tập trung vào một bên phát hành.
 
 ![Theo dõi biến động lãi suất và giá trái phiếu trên báo tài chính](./images/cach-dau-tu-trai-phieu/inline-01-cach-dau-tu-trai-phieu.jpg)
 *Ảnh: Markus Spiske / Unsplash*

@@ -1,0 +1,26 @@
+---
+import { reviewCatalog, sourceById } from '@/data/review-catalog';
+import { brokerRegistry } from '@/data/brokers';
+import { isOfferActive, todayVN } from '@/lib/review-data.mjs';
+interface Props { broker?: string; }
+const { broker } = Astro.props;
+const offers = reviewCatalog.offers.filter((offer) => offer.status === 'published' && (!broker || offer.broker === broker));
+const today = todayVN();
+---
+<div class="review-offers" data-review-offers>
+  <div class="review-offer-list">
+    {offers.map((offer) => <article class="review-offer" hidden={!isOfferActive(offer, today)}
+      data-offer data-offer-start={offer.startsAt} data-offer-end={offer.endsAt}>
+      <h3>{brokerRegistry[offer.broker]?.shortName ?? offer.broker}: {offer.title}</h3>
+      <p><strong>{offer.benefit}</strong></p><p>{offer.conditions}</p>
+      <p>Hạn đăng ký: {offer.endsAt ? new Date(`${offer.endsAt}T00:00:00+07:00`).toLocaleDateString('vi-VN', { timeZone: 'Asia/Ho_Chi_Minh' }) : 'Nguồn không ghi ngày kết thúc'}.</p>
+      <p>Thời gian hưởng: {offer.benefitDuration}</p>
+      <a href={sourceById[offer.sourceId].url} target="_blank" rel="noopener noreferrer">Thể lệ chính thức ↗</a>
+      <small> · Đối chiếu {offer.checkedAt}</small>
+    </article>)}
+  </div>
+  <div class="review-empty" data-offers-empty hidden={offers.some((offer) => isOfferActive(offer, today))}>
+    <h3>Chưa có ưu đãi được xác minh đang hiển thị</h3>
+    <p>Chỉ đăng khi đã đối chiếu thể lệ, đối tượng và thời hạn. Bạn có thể kiểm tra chương trình mới trên website chính thức của từng công ty.</p>
+  </div>
+</div>

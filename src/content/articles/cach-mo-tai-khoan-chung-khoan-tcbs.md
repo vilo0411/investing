@@ -4,6 +4,9 @@ description: >-
   Hướng dẫn cách mở tài khoản chứng khoán TCBS online bằng eKYC nhanh nhất. Các
   lưu ý về hợp đồng điện tử và chữ ký số FPT-CA cho F0.
 category: reviews
+reviewType: account
+brokers:
+  - slug: tcbs
 heroImage: >-
   /images/articles/cach-mo-tai-khoan-chung-khoan-tcbs/cach-mo-tai-khoan-chung-khoan-tcbs.jpg
 publishDate: '2026-07-27'

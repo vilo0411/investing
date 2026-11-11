@@ -1,0 +1,82 @@
+[
+  {
+    "broker": "kb",
+    "metric": "stocks",
+    "reason": "Tài liệu biểu phí từ 22/07/2026 được trang tham khảo dẫn tới đang trả lỗi 400/Request Blocked trong lần đối chiếu. Chưa sử dụng số liệu của bên tổng hợp hoặc biểu phí cũ làm mức hiện hành.",
+    "url": "https://www.kbsec.com.vn/pic/general/files/18_%20VN_Bi%E1%BB%83u%20ph%C3%AD%20d%E1%BB%8Bch%20v%E1%BB%A5%20t%E1%BB%AB%2022_07_2026.pdf",
+    "title": "KBSV: tài liệu cần đối chiếu",
+    "checkedAt": "2026-11-11"
+  },
+  {
+    "broker": "kb",
+    "metric": "margin",
+    "reason": "Tài liệu biểu phí từ 22/07/2026 được trang tham khảo dẫn tới đang trả lỗi 400/Request Blocked trong lần đối chiếu. Chưa sử dụng số liệu của bên tổng hợp hoặc biểu phí cũ làm mức hiện hành.",
+    "url": "https://www.kbsec.com.vn/pic/general/files/18_%20VN_Bi%E1%BB%83u%20ph%C3%AD%20d%E1%BB%8Bch%20v%E1%BB%A5%20t%E1%BB%AB%2022_07_2026.pdf",
+    "title": "KBSV: tài liệu cần đối chiếu",
+    "checkedAt": "2026-11-11"
+  },
+  {
+    "broker": "kb",
+    "metric": "derivatives",
+    "reason": "Tài liệu biểu phí từ 22/07/2026 được trang tham khảo dẫn tới đang trả lỗi 400/Request Blocked trong lần đối chiếu. Chưa sử dụng số liệu của bên tổng hợp hoặc biểu phí cũ làm mức hiện hành.",
+    "url": "https://www.kbsec.com.vn/pic/general/files/18_%20VN_Bi%E1%BB%83u%20ph%C3%AD%20d%E1%BB%8Bch%20v%E1%BB%A5%20t%E1%BB%AB%2022_07_2026.pdf",
+    "title": "KBSV: tài liệu cần đối chiếu",
+    "checkedAt": "2026-11-11"
+  },
+  {
+    "broker": "kb",
+    "metric": "advance",
+    "reason": "Tài liệu biểu phí từ 22/07/2026 được trang tham khảo dẫn tới đang trả lỗi 400/Request Blocked trong lần đối chiếu. Chưa sử dụng số liệu của bên tổng hợp hoặc biểu phí cũ làm mức hiện hành.",
+    "url": "https://www.kbsec.com.vn/pic/general/files/18_%20VN_Bi%E1%BB%83u%20ph%C3%AD%20d%E1%BB%8Bch%20v%E1%BB%A5%20t%E1%BB%AB%2022_07_2026.pdf",
+    "title": "KBSV: tài liệu cần đối chiếu",
+    "checkedAt": "2026-11-11"
+  },
+  {
+    "broker": "dsc",
+    "metric": "margin",
+    "reason": "Biểu lãi suất cho khách phổ thông, áp dụng 02/03/2026, ghi 13,5% cho cả margin trong hạn và ứng trước. Trang chưa ghi rõ đơn vị ngày/năm và cơ sở tính lãi; cần DSC xác nhận trước khi đưa vào bảng xếp chi phí. Mở mục “Biểu lãi suất giao dịch ký quỹ và ứng trước tiền bán” trên trang chính thức để xem nội dung.",
+    "url": "https://www.dsc.com.vn/bieu-phi/bieu-lai-suat-giao-dich-ky-quy-va-ung-truoc-tien-ban",
+    "title": "DSC: biểu lãi suất",
+    "checkedAt": "2026-11-11"
+  },
+  {
+    "broker": "dsc",
+    "metric": "advance",
+    "reason": "Biểu lãi suất cho khách phổ thông, áp dụng 02/03/2026, ghi 13,5% cho cả margin trong hạn và ứng trước. Trang chưa ghi rõ đơn vị ngày/năm và cơ sở tính lãi; cần DSC xác nhận trước khi đưa vào bảng xếp chi phí. Mở mục “Biểu lãi suất giao dịch ký quỹ và ứng trước tiền bán” trên trang chính thức để xem nội dung.",
+    "url": "https://www.dsc.com.vn/bieu-phi/bieu-lai-suat-giao-dich-ky-quy-va-ung-truoc-tien-ban",
+    "title": "DSC: biểu lãi suất",
+    "checkedAt": "2026-11-11"
+  },
+  {
+    "broker": "dsc",
+    "metric": "derivatives",
+    "reason": "Chưa tìm được mức phí phái sinh trong các biểu phí công khai đã kiểm tra. Điều này không có nghĩa công ty không cung cấp dịch vụ hoặc phí bằng 0.",
+    "url": "https://www.dsc.com.vn/bieu-phi",
+    "title": "DSC: biểu phí công khai",
+    "checkedAt": "2026-11-11"
+  },
+  {
+    "broker": "tps",
+    "metric": "derivatives",
+    "reason": "Biểu phí chính thức cập nhật 26/03/2026 đã kiểm tra chưa có mức phí giao dịch phái sinh để đối chiếu. Không suy ra phí bằng 0 hoặc công ty không cung cấp dịch vụ.",
+    "url": "https://tpbs.com.vn/static/uploads/Bieu_phi_giao_dich_update_26.03.2026.pdf",
+    "title": "TPS: biểu phí 26/03/2026",
+    "checkedAt": "2026-11-11"
+  },
+  {
+    "broker": "kis",
+    "metric": "advance",
+    "reason": "Trang dịch vụ ứng trước chính thức hiện chưa có mức phí trong phần nội dung công khai đã đọc. Chưa xác nhận được mức 10,4%/năm mà trang tham khảo nêu; cần kiểm tra biểu phí theo tài khoản.",
+    "url": "https://kisvn.vn/san-pham-dich-vu/dich-vu-ho-tro-tai-chinh/ung-truoc-11300",
+    "title": "KIS: dịch vụ ứng trước",
+    "checkedAt": "2026-11-11"
+  },
+  {
+    "broker": "mirae-asset",
+    "metric": "derivatives",
+    "reason": "Đã đối chiếu biểu phí cơ sở nhưng nguồn phái sinh được dẫn tới trả Request Rejected. Chưa xác nhận mức tiêu chuẩn và thời hạn ưu đãi nên chưa dùng số từ trang tham khảo.",
+    "url": "https://www.masvn.com/api/categories/fe/1720/article",
+    "title": "Mirae Asset: nguồn phái sinh cần đối chiếu",
+    "checkedAt": "2026-11-11"
+  }
+]

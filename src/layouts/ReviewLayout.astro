@@ -14,6 +14,9 @@ import CitationBox from "@/components/CitationBox.astro";
 import CompanyReviewBody from "@/components/review/CompanyReviewBody.astro";
 import ComparisonBody from "@/components/review/ComparisonBody.astro";
 import ListicleBody from "@/components/review/ListicleBody.astro";
+import BrokerPolicies from "@/components/review/BrokerPolicies.astro";
+import BrokerJourney from "@/components/review/BrokerJourney.astro";
+import "@/styles/reviews.css";
 
 interface Props {
   entry: any;
@@ -118,15 +121,15 @@ const reviewType = entry.data.reviewType as "company" | "comparison" | "listicle
 
 const structuredNavByType: Record<string, { label: string; href: string }[]> = {
   company: [
+    { label: "Biểu phí có nguồn", href: "#bieu-phi-co-nguon" },
     { label: "Tiêu chí đánh giá", href: "#tieu-chi-danh-gia" },
     { label: "Thông tin nhanh", href: "#thong-tin-nhanh" },
     { label: "Mở tài khoản", href: "#mo-tai-khoan" },
     { label: "Ưu nhược điểm", href: "#uu-nhuoc-diem" },
-    { label: "Người dùng nói gì", href: "#phan-hoi-nguoi-dung" },
   ],
   comparison: [
-    { label: "Kết luận", href: "#ket-luan-tong-the" },
-    { label: "So sánh nhanh", href: "#so-sanh" },
+    { label: "So sánh phí", href: "#so-sanh" },
+    { label: "Nhận định biên tập", href: "#ket-luan-tong-the" },
     { label: "Ưu nhược điểm", href: "#uu-nhuoc-diem" },
     { label: "Nên chọn ai", href: "#nen-chon-ai" },
   ],
@@ -154,6 +157,7 @@ const navItems = [...structuredItems, ...proseOnly];
   title={title}
   description={description}
   ogType="article"
+  ogImage={featuredImage}
   articleMeta={{
     publishedTime: publishDate?.toISOString(),
     modifiedTime: updatedDate?.toISOString(),
@@ -198,6 +202,8 @@ const navItems = [...structuredItems, ...proseOnly];
     </div>
   </header>
 
+  <div class="article-container review-journey-shell"><BrokerJourney slugs={mergedBrokers.map((broker: { slug: string }) => broker.slug)} currentSlug={entry.slug} intent={entry.data.reviewType ?? 'company'} /></div>
+
   <div class="article-hero-wrapper">
     <div class="article-hero">
       <img src={featuredImage} alt={title} width="1000" height="600" />
@@ -212,6 +218,12 @@ const navItems = [...structuredItems, ...proseOnly];
         <strong>Lưu ý trước khi đọc:</strong>
         <span>{site.disclosure}</span>
       </aside>
+
+
+      <aside class="review-note">
+        <p><strong>Về số liệu chi phí:</strong> bảng có nguồn dưới đây được cập nhật độc lập với phần nhận định biên tập cũ. Khi có khác biệt, hãy kiểm tra điều kiện và biểu phí chính thức. <a href={url('/reviews/#bang-so-sanh')}>Xem bảng so sánh mới</a>.</p>
+      </aside>
+      {isCompanyReview && primaryBroker && <BrokerPolicies slug={primaryBroker.slug} name={primaryBroker.shortName ?? primaryBroker.name} />}
       <KeyTakeaways items={entry.data.keyTakeaways} />
 
       {reviewType === "company" && (
@@ -228,6 +240,7 @@ const navItems = [...structuredItems, ...proseOnly];
           verdict={mergedBrokers[0]?.verdict}
           bestFor={mergedBrokers[0]?.best_for}
           name={mergedBrokers[0]?.name}
+          slug={mergedBrokers[0]?.slug}
           feeRate={mergedBrokers[0]?.fee_rate}
           marginRate={mergedBrokers[0]?.margin_rate}
           appRating={mergedBrokers[0]?.app_rating}
@@ -278,6 +291,8 @@ const navItems = [...structuredItems, ...proseOnly];
     </article>
   </div>
 </BaseLayout>
+
+<script src="../scripts/review-runtime.ts"></script>
 
 <style>
   .meta a {

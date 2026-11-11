@@ -65,7 +65,7 @@ Thị trường tài chính hiện nay chia phái sinh làm bốn loại hợp �
 
 *   **Hợp đồng tương lai**. Đây thực chất là một hợp đồng kỳ hạn đã được chuẩn hóa chi tiết. Hợp đồng này được niêm yết và giao dịch tập trung công khai trên các sàn chứng khoán. Mọi điều khoản về số lượng, chất lượng và ngày đáo hạn đều do sàn quy định sẵn. Đây là sản phẩm phái sinh phổ biến nhất dành cho nhà đầu tư cá nhân.
 
-*   **Hợp đồng quyền chọn**. Công cụ này cho phép người mua có quyền, chứ không phải nghĩa vụ mua hoặc bán tài sản. Bạn sẽ trả một khoản phí nhỏ để mua quyền này trong một thời hạn nhất định. Nếu giá đi ngược hướng dự kiến, bạn có quyền từ bỏ hợp đồng và chỉ mất khoản phí ban đầu. Người bán quyền chọn thì bắt buộc phải thực hiện theo yêu cầu của người mua.
+*   **[Hợp đồng quyền chọn](/dau-tu/phai-sinh/quyen-chon-la-gi/)**. Công cụ này cho phép người mua có quyền, chứ không phải nghĩa vụ mua hoặc bán tài sản. Bạn sẽ trả một khoản phí nhỏ để mua quyền này trong một thời hạn nhất định. Nếu giá đi ngược hướng dự kiến, bạn có quyền từ bỏ hợp đồng và chỉ mất khoản phí ban đầu. Người bán quyền chọn thì bắt buộc phải thực hiện theo yêu cầu của người mua.
 
 *   **Hợp đồng hoán đổi**. Thỏa thuận này cho phép hai bên trao đổi các dòng tiền tài chính với nhau định kỳ. Ví dụ thông dụng là hoán đổi khoản vay lãi suất cố định lấy lãi suất thả nổi. Mục đích là để phòng ngừa biến động lãi suất hoặc tận dụng lợi thế chi phí vốn. Hợp đồng này chủ yếu dành cho các tổ chức tài chính lớn tham gia.
 

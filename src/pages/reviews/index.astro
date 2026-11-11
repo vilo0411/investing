@@ -1,0 +1,114 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Breadcrumb from '@/components/Breadcrumb.astro';
+import PolicyValue from '@/components/review/PolicyValue.astro';
+import ReviewOffers from '@/components/review/ReviewOffers.astro';
+import { brokerRegistry } from '@/data/brokers';
+import { reviewCatalog, getPolicy, getOutboundLink } from '@/data/review-catalog';
+import { metricKeys, todayVN } from '@/lib/review-data.mjs';
+import { getArticlePath, url } from '@/data/site';
+import { buildCollectionPageNodes } from '@/lib/schema';
+import '@/styles/reviews.css';
+
+const articles = (await getCollection('articles')).filter((entry) => entry.data.category === 'reviews');
+const companyArticles = new Map(articles.filter((entry) => entry.data.reviewType === 'company').map((entry) => [entry.data.brokers?.[0]?.slug, entry]));
+const articleGroups = [
+  { id: 'so-sanh-chuyen-sau', title: 'So sánh hai công ty', description: 'Đã có hai lựa chọn? Đọc phân tích điểm khác biệt và đánh đổi theo từng nhu cầu.', articles: articles.filter((entry) => entry.data.reviewType === 'comparison') },
+  { id: 'huong-dan-mo-tai-khoan', title: 'Hướng dẫn mở tài khoản', description: 'Đã chọn được công ty? Chuẩn bị giấy tờ, xem từng bước đăng ký và cách xử lý lỗi.', articles: articles.filter((entry) => entry.data.reviewType === 'account') },
+  { id: 'bai-viet', title: 'Kinh nghiệm chọn công ty chứng khoán', description: 'Tiêu chí và kiến thức bổ sung trước khi bạn quyết định.', articles: articles.filter((entry) => !['company', 'comparison', 'account'].includes(entry.data.reviewType ?? '')) },
+].map((group) => ({ ...group, articles: group.articles.sort((a, b) => a.data.order - b.data.order) }));
+const editorialPairs = articles.filter((entry) => entry.data.reviewType === 'comparison' && entry.data.brokers?.length === 2).map((entry) => ({ slugs: entry.data.brokers!.map((broker) => broker.slug), href: getArticlePath(entry) }));
+const brokers = reviewCatalog.brokers.map((slug) => {
+  const profile = brokerRegistry[slug];
+  if (!profile) throw new Error(`Missing broker profile: ${slug}`);
+  return { ...profile, article: companyArticles.get(slug), coverage: metricKeys.filter((metric) => getPolicy(slug, metric)).length };
+}).sort((a, b) => b.coverage - a.coverage || a.shortName.localeCompare(b.shortName, 'vi'));
+const sourcedCount = brokers.filter((broker) => broker.coverage > 0).length;
+const lastChecked = reviewCatalog.policies.filter((policy) => policy.status === 'published').map((policy) => policy.checkedAt).sort().at(-1);
+const title = 'Review & so sánh công ty chứng khoán';
+const description = 'So sánh phí cổ phiếu, lãi margin, phí phái sinh và ứng trước tiền bán. Xem điều kiện, nguồn chính thức và bài review từng công ty chứng khoán.';
+const pageUrl = new URL(url('/reviews/'), Astro.site).toString();
+const schemaNodes = buildCollectionPageNodes({
+  siteUrl: Astro.site?.toString() ?? '', pageUrl, title, description,
+  breadcrumb: [{ name: 'Trang chủ', item: Astro.site?.toString() ?? '' }, { name: 'Reviews', item: pageUrl }],
+  items: brokers.filter((broker) => broker.article).map((broker) => ({ name: broker.name, url: new URL(getArticlePath(broker.article!), Astro.site).toString() })),
+});
+---
+<BaseLayout title={title} description={description} schemaNodes={schemaNodes}>
+  <div class="review-hub" data-review-directory data-today={todayVN()} data-editorial-pairs={JSON.stringify(editorialPairs)}>
+    <header class="review-hero"><div class="container">
+      <Breadcrumb items={[{ label: 'Trang chủ', href: '/' }, { label: 'Reviews' }]} />
+      <h1>Review công ty chứng khoán</h1>
+      <p class="lead">Hiểu chi phí. Cân nhắc lựa chọn. Bắt đầu giao dịch.</p>
+      <p class="review-coverage">{brokers.length} công ty · {sourcedCount} công ty có số liệu kèm nguồn · Đối chiếu {lastChecked?.split('-').reverse().join('/')}</p>
+      <nav class="review-paths" aria-label="Chọn bước tìm hiểu">
+        <a href="#bang-so-sanh"><span>Tìm hiểu</span><strong>Review & biểu phí →</strong></a>
+        <a href="#so-sanh-chuyen-sau"><span>Cân nhắc</span><strong>So sánh hai công ty →</strong></a>
+        <a href="#huong-dan-mo-tai-khoan"><span>Bắt đầu</span><strong>Cách mở tài khoản →</strong></a>
+      </nav>
+    </div></header>
+    <div class="container">
+      <nav class="review-subnav" aria-label="Nội dung mục review"><a href="#bang-so-sanh">Review & biểu phí</a><a href="#so-sanh-chuyen-sau">So sánh hai công ty</a><a href="#huong-dan-mo-tai-khoan">Mở tài khoản</a><a href="#uu-dai">Ưu đãi</a><a href="#cach-danh-gia">Nguồn dữ liệu</a></nav>
+      <section class="review-section" id="bang-so-sanh" aria-labelledby="comparison-title">
+        <div class="review-section-heading"><h2 id="comparison-title">So sánh chi phí</h2><p>Mức tham chiếu cho khách tự giao dịch. Bấm tên để đọc review, chọn công ty để so sánh.</p></div>
+        <form class="review-controls" role="search" onsubmit="return false">
+          <div class="review-control-row">
+            <label for="broker-search">Tìm công ty chứng khoán<input id="broker-search" name="q" type="search" placeholder="Tên công ty, ví dụ SSI, TCBS…" autocomplete="off" /></label>
+            <label for="broker-sort">Sắp xếp<select id="broker-sort" name="sort"><option value="coverage">Có dữ liệu trước</option><option value="name">Tên công ty</option><option value="stocks">Phí cổ phiếu</option><option value="margin">Lãi margin (%/năm, rồi %/ngày)</option><option value="derivatives">Phí phái sinh</option></select></label>
+          </div>
+          <fieldset class="review-filters"><legend>Lọc theo nhu cầu</legend>
+            <label><input type="checkbox" name="sourced" /> Có số liệu kèm nguồn</label>
+            <label><input type="checkbox" name="low-fee" /> Phí cổ phiếu cố định ≤ 0,1%</label>
+            <label><input type="checkbox" name="zero-derivatives" /> Phái sinh 0đ phần CTCK thu</label>
+          </fieldset>
+        </form>
+        <div class="review-result-bar"><p id="broker-count" aria-live="polite" aria-atomic="true">{brokers.length} công ty · {lastChecked ? `Đối chiếu gần nhất ${lastChecked.split('-').reverse().join('/')}` : 'Đang bổ sung nguồn'}</p><button class="review-reset" type="button" data-reset-filters>Xóa bộ lọc</button></div>
+        <p class="review-scroll-hint">Vuốt ngang để xem các khoản phí.</p>
+        <noscript><p class="review-note">Bạn đang xem toàn bộ bảng. Bật JavaScript để tìm kiếm, lọc và chọn công ty so sánh.</p></noscript>
+        <div class="review-table-scroll" tabindex="0" role="region" aria-label="Bảng chi phí công ty chứng khoán, có thể cuộn ngang">
+          <table class="broker-table" id="broker-directory" data-policy-comparison="directory"><caption class="sr-only">Chi phí theo gói tiêu chuẩn, chưa tính toàn bộ thuế và chi phí phát sinh.</caption>
+            <colgroup><col class="broker-name-column" /><col /><col /><col /><col /><col class="broker-action-column" /></colgroup>
+            <thead><tr>
+              <th scope="col" data-sort-column="name"><button type="button" data-sort="name">Công ty <span data-sort-indicator aria-hidden="true">↕</span></button></th>
+              <th scope="col" data-sort-column="stocks"><button type="button" data-sort="stocks">Phí cổ phiếu <span data-sort-indicator aria-hidden="true">↕</span></button><small>% mỗi lệnh</small></th>
+              <th scope="col" data-sort-column="margin"><button type="button" data-sort="margin">Lãi margin <span data-sort-indicator aria-hidden="true">↕</span></button><small>Theo kỳ công bố</small></th>
+              <th scope="col" data-sort-column="derivatives"><button type="button" data-sort="derivatives">Phí phái sinh <span data-sort-indicator aria-hidden="true">↕</span></button><small>Phần CTCK / HĐ</small></th>
+              <th scope="col">Ứng trước<small>Phí ứng tiền bán</small></th><th scope="col">Tìm hiểu thêm</th>
+            </tr></thead>
+            <tbody>{brokers.map((broker) => {
+              const outbound = getOutboundLink(broker.slug);
+              return <tr data-broker-row data-broker={broker.slug} data-name={broker.name} data-short-name={broker.shortName}>
+                <td class="broker-identity"><a class="broker-name" href={broker.article ? getArticlePath(broker.article) : outbound?.url}>{broker.shortName}</a>{broker.article && <span class="broker-short-description">Đọc đánh giá →</span>}</td>
+                {metricKeys.map((metric) => <td><PolicyValue broker={broker.slug} metric={metric} /></td>)}
+                <td><div class="broker-actions">
+                  {articles.find((entry) => entry.data.reviewType === 'account' && entry.data.brokers?.[0]?.slug === broker.slug) && <a href={getArticlePath(articles.find((entry) => entry.data.reviewType === 'account' && entry.data.brokers?.[0]?.slug === broker.slug)!)}>Cách mở tài khoản →</a>}
+                  <label class="broker-compare-label"><input type="checkbox" data-compare={broker.slug} aria-label={`Chọn ${broker.shortName} để so sánh`} /> So sánh</label>
+                </div></td>
+              </tr>;
+            })}</tbody>
+          </table>
+        </div>
+        <details class="review-reading-guide"><summary>Cách đọc bảng & màu sắc</summary><p>Sắc xanh đậm nhấn mạnh chi phí thấp hơn. Chỉ so mức cố định cùng đơn vị và cách gồm phí; mức theo năm và ngày được tách nhóm. Đây không phải điểm chất lượng công ty. Phí 0đ có thể chỉ là phần CTCK thu.</p></details>
+        <div class="review-empty" data-directory-empty hidden><h3>Không tìm thấy công ty phù hợp</h3><p>Thử tên khác hoặc bỏ bớt điều kiện lọc. Ô chưa xác minh không được coi là mức phí 0đ.</p><button class="btn-secondary" type="button" data-reset-filters>Xóa bộ lọc</button></div>
+        <p><button class="btn-secondary" type="button" data-show-more hidden>Xem thêm công ty</button></p>
+        <div class="review-compare-tray" data-compare-tray hidden>
+          <div><p data-compare-names></p><small data-compare-status role="status">Chọn ít nhất 2 công ty.</small></div>
+          <div class="review-tray-actions"><a class="btn-primary" data-selected-editorial href={url('/reviews/')} hidden>Đọc bài so sánh →</a><a class="btn-primary" data-compare-link href={url('/reviews/so-sanh/')} aria-disabled="true">Đối chiếu phí đã chọn →</a><button class="review-reset" type="button" data-clear-compare>Bỏ chọn</button></div>
+        </div>
+      </section>
+      <section class="review-section" id="uu-dai"><div class="review-section-heading"><h2>Ưu đãi, kèm điều kiện</h2><p>Hạn đăng ký và thời gian hưởng ưu đãi là hai mốc khác nhau. Kiểm tra thể lệ tại nguồn trước khi đăng ký.</p></div><ReviewOffers /></section>
+      {articleGroups.filter((group) => group.articles.length).map((group) => <section class="review-section" id={group.id}><div class="review-section-heading"><h2>{group.title}</h2><p>{group.description}</p></div>
+        <ul class="review-article-list">{group.articles.map((article) => <li><a href={getArticlePath(article)}>{article.data.title}</a><small>{article.data.readingTime}</small></li>)}</ul>
+      </section>)}
+      <section class="review-section" id="cach-danh-gia"><div class="review-section-heading"><h2>Có nguồn để bạn tự kiểm tra</h2><p>Đánh giá biên tập và dữ liệu chi phí được trình bày riêng. Chúng tôi chưa dùng điểm sao cũ để xếp hạng trong bảng này.</p></div>
+        <div class="review-method"><div><h3>Đối chiếu từ tài liệu gốc</h3><p>Ưu tiên biểu phí, chính sách và thể lệ do công ty công bố. Mỗi mức có nguồn, ngày kiểm tra và điều kiện áp dụng. Nguồn quá 30 ngày được nhắc kiểm tra lại.</p></div><div><h3>So sánh cùng điều kiện</h3><p>Mức chuẩn tách khỏi ưu đãi. Sắp xếp dùng mức đầu của khoảng giá trị, chưa phải tổng chi phí của mọi tài khoản. Ô thiếu dữ liệu luôn đứng sau mức đã có số liệu.</p></div></div>
+        <details class="review-alternatives"><summary>Danh sách nguồn đã đối chiếu ({reviewCatalog.sources.length})</summary><ul>{reviewCatalog.sources.map((source) => <li><a href={source.url} target="_blank" rel="noopener noreferrer">{source.publisher}: {source.title} ↗</a></li>)}</ul></details>
+        <p>Phát hiện số liệu cần sửa? <a href={url('/contact/')}>Gửi thông tin cho chúng tôi</a>. Xem <a href={url('/sources-policy/')}>chính sách nguồn</a> và <a href={url('/corrections-policy/')}>quy trình đính chính</a>.</p>
+        <p class="review-note">Nội dung nhằm cung cấp thông tin, không phải tư vấn đầu tư cá nhân. Các liên kết hiện được ghi rõ là website chính thức hoặc liên kết đối tác tại vị trí hiển thị.</p>
+      </section>
+    </div>
+  </div>
+  <script src="../../scripts/review-directory.ts"></script>
+  <script src="../../scripts/review-runtime.ts"></script>
+</BaseLayout>

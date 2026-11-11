@@ -1,6 +1,7 @@
 import type { APIRoute } from "astro";
 import { getCollection } from "astro:content";
 import { categoryMeta, getArticlePath } from "@/data/site";
+import { reviewSearchEntries } from "@/data/review-navigation";
 
 export const GET: APIRoute = async () => {
   const articles = await getCollection("articles");
@@ -34,7 +35,7 @@ export const GET: APIRoute = async () => {
       };
     });
 
-  return new Response(JSON.stringify(index), {
+  return new Response(JSON.stringify([...reviewSearchEntries, ...index]), {
     headers: {
       "Content-Type": "application/json",
       "Cache-Control": "public, max-age=3600",

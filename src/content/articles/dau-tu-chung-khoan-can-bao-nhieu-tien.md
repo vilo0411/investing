@@ -82,6 +82,8 @@ Trước khi quyết định số tiền, hãy trả lời 3 câu hỏi này.
 
 Học bằng tiền thật nhỏ nhanh hơn học bằng tài khoản demo nhiều lần — nhưng đừng học bằng toàn bộ số tiền tiết kiệm của bạn.
 
+Nếu ngân sách ban đầu còn hạn chế, hướng dẫn **[đầu tư chứng khoán với số vốn nhỏ](/dau-tu/co-phieu/dau-tu-chung-khoan-von-nho/)** giúp bạn đi tiếp từ việc xác định số tiền sang lập kế hoạch phân bổ vốn.
+
 ## Những chi phí cần tính khi đầu tư chứng khoán
 
 Nhiều người bỏ qua chi phí khi tính toán lợi nhuận. Đây là các loại phí bạn sẽ gặp.

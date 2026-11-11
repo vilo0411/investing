@@ -110,7 +110,7 @@ Hãy coi số vốn ban đầu như khoản học phí nhỏ để trải nghi�
 
 Với số tiền 1 triệu đồng nhàn rỗi, mục tiêu chính của bạn là làm quen với giao diện ứng dụng và các bước đặt lệnh. Bạn không nên kỳ vọng kiếm được lợi nhuận lớn từ số vốn nhỏ này. Hãy xem đây là cơ hội học tập thực tế.
 
-Bạn có thể chọn mua các cổ phiếu có thị giá thấp dưới 10.000 đồng để sở hữu một lô chẵn 100 cổ phiếu dễ dàng. Cách khác là mua khoảng 10 đến 20 cổ phiếu lô lẻ của các doanh nghiệp lớn đầu ngành.
+Bạn có thể chọn mua các cổ phiếu có thị giá thấp dưới 10.000 đồng để sở hữu một lô chẵn 100 cổ phiếu dễ dàng. Cách khác là mua khoảng 10 đến 20 **[cổ phiếu lô lẻ](/dau-tu/co-phieu/co-phieu-lo-le-la-gi/)** của các doanh nghiệp lớn đầu ngành.
 
 Phương pháp này giúp bạn hiểu được cách dòng tiền chuyển động và cách đặt lệnh trên ứng dụng. Bạn có thể tham khảo thêm bài viết [đầu tư chứng khoán với số vốn nhỏ](/dau-tu/co-phieu/dau-tu-chung-khoan-von-nho/) để xây dựng kế hoạch chi tiết hơn.
 

@@ -2,6 +2,7 @@
 import { getCollection } from "astro:content";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { categories, categoryMeta, getArticlePath, url } from "@/data/site";
+import { reviewSearchEntries } from "@/data/review-navigation";
 
 const articles = (await getCollection("articles"))
   .toSorted((a, b) => b.data.updatedDate.getTime() - a.data.updatedDate.getTime());
@@ -34,6 +35,7 @@ const searchIndex = articles.map((article) => {
     ].join(" ").toLowerCase(),
   };
 });
+searchIndex.unshift(...reviewSearchEntries);
 ---
 
 <BaseLayout title="Tìm kiếm" description="Tìm kiếm nhanh khái niệm đầu tư, chỉ số tài chính, review chứng khoán và hướng dẫn phân tích trên Value Investing — hàng chục bài viết chuyên sâu.">

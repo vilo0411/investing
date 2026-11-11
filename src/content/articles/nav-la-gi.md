@@ -85,7 +85,7 @@ Bảng NAV/CCQ thực tế của một số quỹ phổ biến tại Việt Nam 
 
 ## Phân biệt NAV quỹ mở và NAV ETF
 
-Tuy cùng dùng chỉ số NAV, cách giao dịch của quỹ mở và ETF hoàn toàn khác nhau.
+Tuy cùng dùng chỉ số NAV, khi **[phân biệt quỹ ETF và quỹ tương hỗ](/dau-tu/etf/phan-biet-quy-etf-va-quy-tuong-ho/)**, cách giao dịch của quỹ mở và ETF hoàn toàn khác nhau.
 
 | Tiêu chí | Quỹ mở | ETF |
 |---|---|---|

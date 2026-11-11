@@ -4,27 +4,11 @@ import matter from "gray-matter";
 
 const ARTICLES_DIR = path.join(process.cwd(), "src/content/articles");
 
-const CATEGORY_PATHS = {
-  "co-phieu": "/dau-tu/co-phieu/",
-  "etf": "/dau-tu/etf/",
-  "trai-phieu": "/dau-tu/trai-phieu/",
-  "phai-sinh": "/dau-tu/phai-sinh/",
-  "co-ban": "/phan-tich/co-ban/",
-  "ky-thuat": "/phan-tich/ky-thuat/",
-  "reviews": "/reviews/",
-  "nha-dau-tu": "/nha-dau-tu/",
-};
+import categoryLinks from "../src/data/internal-links.json" with { type: "json" };
+import { resolveInternalUrl } from "./lib/internal-link-audit.mjs";
 
-const HUB_ACTION_MAP = {
-  "co-phieu": { hub: "co-phieu-la-gi", action: "cach-dau-tu-co-phieu" },
-  "etf": { hub: "etf-la-gi", action: "cach-dau-tu-quy-etf" },
-  "trai-phieu": { hub: "trai-phieu-la-gi", action: "cach-dau-tu-trai-phieu" },
-  "phai-sinh": { hub: "phai-sinh-la-gi", action: "cach-dau-tu-chung-khoan-phai-sinh" },
-  "co-ban": { hub: "phan-tich-co-ban-la-gi", action: "cach-chon-co-phieu-tot" },
-  "ky-thuat": { hub: "phan-tich-ky-thuat-la-gi", action: "cach-dau-tu-co-phieu" },
-  "reviews": { hub: "review-cong-ty-chung-khoan-cho-nguoi-moi", action: "cach-mo-tai-khoan-chung-khoan" },
-  "nha-dau-tu": { hub: "warren-buffett", action: "cach-dau-tu-co-phieu" },
-};
+const CATEGORY_PATHS = Object.fromEntries(Object.entries(categoryLinks).map(([slug, config]) => [slug, config.path]));
+const HUB_ACTION_MAP = categoryLinks;
 
 const VALID_STATIC_ROUTES = new Set([
   "/",
@@ -119,40 +103,15 @@ function runAudit() {
         });
       }
 
-      if (
-        rawUrl.startsWith("http://") ||
-        rawUrl.startsWith("https://") ||
-        rawUrl.startsWith("mailto:") ||
-        rawUrl.startsWith("#") ||
-        /\.(png|jpg|jpeg|webp|svg|gif)$/i.test(rawUrl)
-      ) {
-        continue;
-      }
-
-      const cleanUrl = rawUrl.split("#")[0];
-      if (!cleanUrl) continue;
-
-      let targetSlug = validArticleUrls.get(cleanUrl);
-
+      const resolved = resolveInternalUrl(rawUrl, `https://valueinvesting.com.vn${art.fullUrl}`);
+      if (!resolved || rawUrl.startsWith("#")) continue;
+      const cleanUrl = resolved.pathname;
+      const normalizedUrl = cleanUrl.endsWith("/") ? cleanUrl : cleanUrl + "/";
+      const targetSlug = validArticleUrls.get(normalizedUrl);
       if (!targetSlug) {
-        const normalizedUrl = cleanUrl.endsWith("/") ? cleanUrl : cleanUrl + "/";
-        if (VALID_STATIC_ROUTES.has(normalizedUrl) || VALID_STATIC_ROUTES.has(cleanUrl)) {
-          continue;
-        }
-
-        const parts = cleanUrl.split("/").filter(Boolean);
-        const lastPart = parts[parts.length - 1];
-        if (validSlugs.has(lastPart)) {
-          targetSlug = lastPart;
-        } else {
-          brokenLinks.push({
-            sourceFile: art.file,
-            sourceSlug: art.slug,
-            anchorText,
-            url: rawUrl,
-          });
-          continue;
-        }
+        if (VALID_STATIC_ROUTES.has(normalizedUrl)) continue;
+        brokenLinks.push({ sourceFile: art.file, sourceSlug: art.slug, anchorText, url: rawUrl });
+        continue;
       }
 
       if (targetSlug) {
@@ -227,7 +186,7 @@ function runAudit() {
     console.log("   ✅ Tất cả bài viết đều tuân thủ nan hoa Link Wheel!");
   }
 
-  console.log(`\n4. Orphan Articles (Bài viết mồ côi - 0 link nội bộ trỏ tới): ${orphanArticles.length}`);
+  console.log(`\n4. Bài không có nguồn link trong thân bài (không tính menu / bài liên quan): ${orphanArticles.length}`);
   if (orphanArticles.length > 0) {
     orphanArticles.forEach((slug) => {
       console.log(`   - ${slug}`);
@@ -244,6 +203,9 @@ function runAudit() {
   } else {
     console.log("   ✅ Tất cả bài viết đều có link trỏ đi!");
   }
+  const lowInbound = [...incomingLinks].filter(([, sources]) => sources.size <= 2);
+  console.log(`\n6. Bài nhận tối đa 2 nguồn link trong thân bài: ${lowInbound.length}/${articles.length}`);
+  if (brokenLinks.length) process.exitCode = 1;
 }
 
 runAudit();

@@ -87,6 +87,7 @@ Index toàn bộ bài đã publish tại `src/content/articles/`. Dùng cho inte
 | `chi-so-dax-la-gi` | Chỉ số DAX là gì? Giải mã chỉ số DAX 40 của chứng khoán Đức | `/dau-tu/co-phieu/chi-so-dax-la-gi/` | chỉ số DAX |
 | `hang-seng-la-gi` | Hang Seng là gì? Tìm hiểu chỉ số HSI của chứng khoán Hồng Kông | `/dau-tu/co-phieu/hang-seng-la-gi/` | chỉ số Hang Seng |
 | `cat-margin-la-gi` | Cắt margin là gì? Nguyên nhân cổ phiếu bị cắt margin và cách xử lý | `/dau-tu/co-phieu/cat-margin-la-gi/` | cắt margin |
+| `bien-do-giao-dich-chung-khoan` | Biên độ giao dịch chứng khoán là gì? Quy định HOSE, HNX, UPCoM | `/dau-tu/co-phieu/bien-do-giao-dich-chung-khoan/` | biên độ giao dịch chứng khoán |
 
 ## Nhóm Đầu tư — Quỹ ETF (`/dau-tu/etf/`)
 
@@ -103,6 +104,7 @@ Index toàn bộ bài đã publish tại `src/content/articles/`. Dùng cho inte
 | `etf-diamond-la-gi` | Quỹ ETF Diamond là gì? Đánh giá tiềm năng đầu tư FUEVFVND | `/dau-tu/etf/etf-diamond-la-gi/` | ETF Diamond |
 | `nav-la-gi` | NAV Là Gì? Cách Đọc Giá Trị Tài Sản Ròng Quỹ Đầu Tư | `/dau-tu/etf/nav-la-gi/` | NAV là gì |
 | `cach-dau-tu-chung-chi-quy` | Hướng Dẫn Cách Đầu Tư Chứng Chỉ Quỹ Hiệu Quả Cho Người Mới | `/dau-tu/etf/cach-dau-tu-chung-chi-quy/` | cách đầu tư chứng chỉ quỹ |
+| `phan-biet-quy-etf-va-quy-tuong-ho` | Phân biệt quỹ ETF và quỹ tương hỗ (Mutual Fund) chi tiết cho F0 | `/dau-tu/etf/phan-biet-quy-etf-va-quy-tuong-ho/` | phân biệt quỹ ETF và quỹ tương hỗ |
 
 ## Nhóm Đầu tư — Trái phiếu (`/dau-tu/trai-phieu/`)
 
@@ -150,6 +152,9 @@ Index toàn bộ bài đã publish tại `src/content/articles/`. Dùng cho inte
 | `bien-loi-nhuan-rong` | Biên lợi nhuận ròng là gì? Thước đo tiền thực bỏ túi | `/phan-tich/co-ban/bien-loi-nhuan-rong/` | biên lợi nhuận ròng |
 | `he-so-thanh-toan-la-gi` | Hệ số thanh toán là gì? 3 chỉ số đo lường nguy cơ vỡ nợ | `/phan-tich/co-ban/he-so-thanh-toan-la-gi/` | hệ số thanh toán |
 | `co-cau-von-la-gi` | Cơ cấu vốn là gì? Mô hình tối ưu và cách phân tích đòn bẩy | `/phan-tich/co-ban/co-cau-von-la-gi/` | cơ cấu vốn |
+| `mo-hinh-capm-la-gi` | Mô hình CAPM là gì? Công thức tính và ứng dụng định giá cổ phiếu | `/phan-tich/co-ban/mo-hinh-capm-la-gi/` | mô hình CAPM là gì |
+| `current-ratio-la-gi` | Current Ratio là gì? Công thức tính và mức an toàn theo ngành | `/phan-tich/co-ban/current-ratio-la-gi/` | Current Ratio là gì |
+| `ty-so-no-tren-tong-tai-san` | Tỷ số nợ trên tổng tài sản (D/A) là gì? Công thức và mức an toàn | `/phan-tich/co-ban/ty-so-no-tren-tong-tai-san/` | tỷ số nợ trên tổng tài sản |
 
 ## Nhóm Phân tích — Kỹ thuật (`/phan-tich/ky-thuat/`)
 

@@ -48,7 +48,7 @@ const articles = defineCollection({
     layoutType: z.enum(["article", "review"]).default("article"),
     brokers: z.array(brokerSchema).optional(),
     reviewSummary: z.string().optional(),
-    reviewType: z.enum(["company", "comparison", "listicle"]).optional(),
+    reviewType: z.enum(["company", "comparison", "listicle", "account"]).optional(),
     companyInfo: z.object({
       founded: z.string().optional(),
       hq: z.string().optional(),

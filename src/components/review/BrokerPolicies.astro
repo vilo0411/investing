@@ -1,0 +1,34 @@
+---
+import PolicyValue from './PolicyValue.astro';
+import { getPolicies, getOutboundLink, sourceById, getOffers } from '@/data/review-catalog';
+import ReviewOffers from './ReviewOffers.astro';
+import { metricKeys, metricLabels, formatPolicy } from '@/lib/review-data.mjs';
+import { url } from '@/data/site';
+interface Props { slug: string; name: string; }
+const { slug, name } = Astro.props;
+const alternatives = getPolicies(slug).filter((policy) => !policy.primary);
+const outbound = getOutboundLink(slug);
+---
+<section class="broker-policies review-surface" id="bieu-phi-co-nguon" aria-label={`Biểu phí có nguồn của ${name}`}>
+  <div class="review-section-heading">
+    <h2>Biểu phí & điều kiện áp dụng</h2>
+    <p>Mỗi mức dưới đây gắn với một gói cụ thể. Mở điều kiện để xem nguồn và ngày đối chiếu.</p>
+  </div>
+  <dl class="policy-grid">
+    {metricKeys.map((metric) => <div><dt>{metricLabels[metric]}</dt><dd><PolicyValue broker={slug} metric={metric} /></dd></div>)}
+  </dl>
+  <p class="review-heat-legend">Nhãn thấp/cao đối chiếu với các mức chuẩn cùng đơn vị và cách gồm phí trong danh bạ, không phải điểm chất lượng công ty.</p>
+  {alternatives.length > 0 && <details class="review-alternatives"><summary>Các gói và kênh khác ({alternatives.length})</summary>
+    {alternatives.map((policy) => <div data-policy-start={policy.validFrom} data-policy-end={policy.validUntil}>
+      <strong>{policy.label}: {formatPolicy(policy)}</strong><p>{policy.conditions}</p>
+      <a href={sourceById[policy.sourceId].url} target="_blank" rel="noopener noreferrer">Nguồn {sourceById[policy.sourceId].publisher} ↗</a>
+    </div>)}
+  </details>}
+  {getOffers(slug).length > 0 && <div class="broker-relevant-offers"><h3>Ưu đãi đang công bố, có điều kiện</h3><ReviewOffers broker={slug} /></div>}
+  <div class="review-policy-footer">
+    <a href={url('/reviews/#bang-so-sanh')}>So sánh với công ty khác →</a>
+    {outbound && <div><a class="review-outbound" href={outbound.url} target="_blank"
+      rel={outbound.kind === 'partner' ? 'sponsored noopener noreferrer' : 'noopener noreferrer'}
+      data-broker-outbound={slug} data-link-kind={outbound.kind}>Website {name} ↗</a><small>{outbound.disclosure}</small></div>}
+  </div>
+</section>

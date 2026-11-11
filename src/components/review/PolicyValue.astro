@@ -1,0 +1,39 @@
+---
+import { getPolicy, getVerificationGap, sourceById, reviewCatalog, type Metric } from '@/data/review-catalog';
+import { formatPolicy, isStale, todayVN } from '@/lib/review-data.mjs';
+import { policyEmphasis } from '@/lib/review-emphasis.mjs';
+interface Props { broker: string; metric: Metric; peerSlugs?: string[]; }
+const { broker, metric, peerSlugs } = Astro.props;
+const policy = getPolicy(broker, metric);
+const gap = !policy ? getVerificationGap(broker, metric) : undefined;
+const source = policy ? sourceById[policy.sourceId] : undefined;
+const emphasis = policyEmphasis(policy, reviewCatalog.policies.filter((p) => !peerSlugs || peerSlugs.includes(p.broker)), todayVN());
+---
+<div class:list={['policy-value', { 'policy-value--unknown': !policy }]}
+  data-policy-id={policy?.id} data-policy-start={policy?.validFrom} data-policy-end={policy?.validUntil}
+  data-policy-checked={policy?.checkedAt} data-policy-metric={metric} data-policy-value={policy?.value} data-policy-unit={policy?.unit}
+  data-policy-qualifier={policy?.qualifier} data-policy-max={policy?.maxValue} data-policy-exchange={policy?.exchangeFee}
+  data-policy-broker={broker} data-emphasis={emphasis.kind} style={`--policy-strength: ${emphasis.strength}`}>
+  <strong class="policy-number" aria-label={!policy ? 'Chưa xác minh' : undefined}>{policy ? formatPolicy(policy) : '—'}</strong>
+  <span class="policy-extreme" hidden={!emphasis.label}>{emphasis.label}</span>
+  {policy && source ? <>
+    <span class="policy-condition">{policy.label}</span>
+    {policy.exchangeFee !== 'not-applicable' && <span class="policy-fee-basis">{policy.exchangeFee === 'included' ? 'Đã gồm phí Sở' : policy.exchangeFee === 'excluded' ? 'Chưa gồm phí Sở' : 'Phí Sở: cần xác nhận'}</span>}
+    <details class="policy-detail">
+      <summary>Điều kiện & nguồn</summary>
+      <p>{policy.conditions}</p>
+      <a href={source.url} target="_blank" rel="noopener noreferrer">{source.publisher}: {source.title} ↗</a>
+      {policy.supportingSourceIds?.map((id) => sourceById[id]).filter(Boolean).map((support) => <a href={support.url} target="_blank" rel="noopener noreferrer">Đối chiếu: {support.publisher} · {support.title} ↗</a>)}
+      <span class="policy-checked">Đối chiếu {new Date(`${policy.checkedAt}T00:00:00+07:00`).toLocaleDateString('vi-VN', { timeZone: 'Asia/Ho_Chi_Minh' })}</span>
+    </details>
+    <span class="policy-stale" hidden={!isStale(policy.checkedAt)}>Cần kiểm tra lại nguồn</span>
+  </> : <>
+    <span class="policy-condition">Chưa xác minh</span>
+    {gap && <details class="policy-detail">
+      <summary>Vì sao thiếu?</summary>
+      <p>{gap.reason}</p>
+      <a href={gap.url} target="_blank" rel="noopener noreferrer">{gap.title} ↗</a>
+      <span class="policy-checked">Kiểm tra {new Date(`${gap.checkedAt}T00:00:00+07:00`).toLocaleDateString('vi-VN', { timeZone: 'Asia/Ho_Chi_Minh' })}</span>
+    </details>}
+  </>}
+</div>

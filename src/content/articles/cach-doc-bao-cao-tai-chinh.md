@@ -44,7 +44,7 @@ Mỗi bảng báo cáo kể cho bạn một câu chuyện riêng về tình hìn
 
 * **Báo cáo kết quả hoạt động kinh doanh**. Thước phim ghi lại doanh thu, chi phí và lợi nhuận làm ra trong một khoảng thời gian.
 
-* **Báo cáo lưu chuyển tiền tệ**. Dòng chảy tiền mặt thực tế đi vào và đi ra khỏi tài khoản của doanh nghiệp.
+* **[Báo cáo lưu chuyển tiền tệ](/phan-tich/co-ban/bao-cao-luu-chuyen-tien-te-la-gi/)**. Dòng chảy tiền mặt thực tế đi vào và đi ra khỏi tài khoản của doanh nghiệp.
 
 * **Thuyết minh báo cáo tài chính**. Phần giải thích chi tiết các nguyên tắc kế toán và từng khoản mục trọng yếu.
 
@@ -113,7 +113,7 @@ Phương pháp này giúp bạn tiết kiệm thời gian và sớm loại bỏ 
 
 ## Dấu hiệu cảnh báo đỏ (Red Flags) cần tránh
 
-Khi phân tích báo cáo tài chính, việc phát hiện rủi ro quan trọng hơn việc tìm kiếm tiềm năng tăng trưởng. Dưới đây là những dấu hiệu mà nhà đầu tư cẩn trọng không bao giờ bỏ qua.
+Khi **[phân tích báo cáo tài chính](/phan-tich/co-ban/cach-phan-tich-bao-cao-tai-chinh/)**, việc phát hiện rủi ro quan trọng hơn việc tìm kiếm tiềm năng tăng trưởng. Dưới đây là những dấu hiệu mà nhà đầu tư cẩn trọng không bao giờ bỏ qua.
 
 Thứ nhất là các khoản phải thu và hàng tồn kho tăng vọt nhanh hơn nhiều so với tốc độ tăng trưởng doanh thu. Tình trạng này cho thấy công ty đang bán chịu quá nhiều hoặc hàng hóa bị ứ đọng.
 

@@ -61,7 +61,7 @@ Ví dụ: Nếu bạn sở hữu 1.250 cổ phiếu HPG, tài khoản của bạ
 Mặc dù khi chủ động giao dịch trên sàn, bạn luôn đặt mua theo lô chuẩn 100 cổ phiếu, lô lẻ vẫn tự động xuất hiện do 3 lý do chính sau:
 
 * **Nhận [trả cổ tức bằng cổ phiếu](/dau-tu/co-phieu/tra-co-tuc-bang-co-phieu-la-gi/).** Ví dụ: Bạn có 500 cổ phiếu A và công ty chia cổ tức tỷ lệ 15%. Số cổ phiếu nhận thêm là 500 x 0,15 = 75 cổ phiếu (lô lẻ).
-* **Nhận cổ phiếu thưởng hoặc ESOP.** Các chương trình thưởng cổ phiếu thường có tỷ lệ lẻ phát sinh cổ phiếu dư.
+* **Nhận [cổ phiếu thưởng](/dau-tu/co-phieu/co-phieu-thuong-la-gi/) hoặc ESOP.** Các chương trình thưởng cổ phiếu thường có tỷ lệ lẻ phát sinh cổ phiếu dư.
 * **Thực hiện quyền mua cổ phiếu phát hành thêm.** Tỷ lệ thực hiện quyền lẻ (ví dụ 100:13) tạo ra số lượng cổ phiếu lẻ trong tài khoản.
 
 ## Quy định giao dịch cổ phiếu lô lẻ mới nhất

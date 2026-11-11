@@ -97,6 +97,8 @@ Nhưng đối với hợp đồng tương lai phái sinh, tỷ lệ ký quỹ ba
 
 Chính đòn bẩy khổng lồ này khiến tài khoản của bạn biến động cực nhanh. Chỉ cần chỉ số VN30 biến động ngược chiều kỳ vọng của bạn khoảng 2% (tương đương 25 điểm), toàn bộ số tiền ký quỹ ban đầu của bạn sẽ bị quét sạch hoàn toàn.
 
+Ngoài hướng biến động giá, bạn cần theo dõi kỳ hạn hợp đồng. Bài **[đáo hạn phái sinh là gì](/dau-tu/phai-sinh/dao-han-phai-sinh-la-gi/)** giải thích cách xác định ngày đáo hạn và những điểm cần lưu ý khi giữ vị thế đến gần thời điểm này.
+
 ## Nguyên tắc sinh tồn trên thị trường phái sinh cho F0
 
 Nếu chưa có từ 1 - 2 năm kinh nghiệm thực chiến trên sàn cơ sở, Value Investing khuyên bạn chưa nên tham gia [thị trường phái sinh](/dau-tu/phai-sinh/cach-dau-tu-chung-khoan-phai-sinh/). Nếu vẫn muốn thử sức, hãy tuân thủ các nguyên tắc sau.

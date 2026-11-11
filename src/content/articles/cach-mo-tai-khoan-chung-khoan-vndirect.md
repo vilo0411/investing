@@ -4,6 +4,9 @@ description: >-
   Hướng dẫn chi tiết cách mở tài khoản chứng khoán VNDIRECT online 100% bằng
   eKYC. Cập nhật quy định xác thực VNeID mới nhất cho F0 năm 2026.
 category: reviews
+reviewType: account
+brokers:
+  - slug: vndirect
 heroImage: >-
   /images/articles/cach-mo-tai-khoan-chung-khoan-vndirect/cach-mo-tai-khoan-chung-khoan-vndirect.jpg
 publishDate: '2026-07-27'

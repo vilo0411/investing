@@ -113,6 +113,8 @@ Hiện nay có hơn 10 quỹ ETF được niêm yết tại thị trường Vi�
 
 Nếu bạn mới bắt đầu, E1VFVN30 là lựa chọn phổ biến nhất do thanh khoản cao và phí thấp. FUEVFVND phù hợp hơn nếu bạn muốn tiếp cận nhóm cổ phiếu chất lượng cao bị hạn chế room khối ngoại như VCB, VHM, FPT.
 
+Để thu hẹp danh sách trước khi đặt lệnh, bạn có thể dùng các tiêu chí trong bài **[nên đầu tư quỹ ETF nào](/dau-tu/etf/nen-dau-tu-quy-etf-nao/)** và đối chiếu với mục tiêu của mình.
+
 ## Chiến lược đầu tư ETF hiệu quả cho người mới
 
 Sự thật là, không cần chọn đúng thời điểm thị trường mới có thể đầu tư ETF thành công. Chiến lược phổ biến nhất với F0 là DCA (Dollar Cost Averaging — Trung bình giá).

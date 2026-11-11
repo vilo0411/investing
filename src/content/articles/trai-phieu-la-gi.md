@@ -68,11 +68,13 @@ Trước khi đầu tư trái phiếu, bạn cần nắm rõ ba thông số cố
 
 **Ngày đáo hạn.** Thời điểm tổ chức phát hành phải hoàn trả toàn bộ tiền gốc. Kỳ hạn của trái phiếu thường kéo dài từ 1 năm đến 10 năm tùy đợt phát hành.
 
+Khi so sánh các trái phiếu có giá mua khác nhau, hãy tìm hiểu **[lợi suất trái phiếu (bond yield)](/dau-tu/trai-phieu/bond-yield-la-gi/)** để phân biệt lợi suất theo giá mua với lãi suất coupon ghi trên trái phiếu.
+
 ## Phân loại trái phiếu phổ biến tại Việt Nam
 
 Thị trường tài chính Việt Nam phân chia trái phiếu thành hai nhóm chính theo chủ thể phát hành.
 
-**Trái phiếu Chính phủ.** Do Bộ Tài chính và Kho bạc Nhà nước phát hành để huy động vốn cho ngân sách hoặc các công trình công cộng. Đây là tài sản không có rủi ro vỡ nợ tại Việt Nam. Lãi suất trái phiếu Chính phủ kỳ hạn 5–10 năm hiện dao động khoảng 3–5%/năm — thấp hơn tiết kiệm ngân hàng nhưng bù lại an toàn tuyệt đối.
+**[Trái phiếu Chính phủ](/dau-tu/trai-phieu/trai-phieu-chinh-phu-la-gi/).** Do Bộ Tài chính và Kho bạc Nhà nước phát hành để huy động vốn cho ngân sách hoặc các công trình công cộng. Đây là tài sản không có rủi ro vỡ nợ tại Việt Nam. Lãi suất trái phiếu Chính phủ kỳ hạn 5–10 năm hiện dao động khoảng 3–5%/năm — thấp hơn tiết kiệm ngân hàng nhưng bù lại an toàn tuyệt đối.
 
 **Trái phiếu doanh nghiệp.** Do các công ty cổ phần hoặc TNHH phát hành để tài trợ dự án hoặc bổ sung vốn kinh doanh. Lãi suất hấp dẫn hơn, dao động từ 8% đến 12%/năm (theo khảo sát thị trường 2024–2025). Tuy nhiên, nhóm này đi kèm rủi ro tín dụng cao hơn — nếu doanh nghiệp mất khả năng thanh toán, bạn có thể không nhận được lãi hoặc mất gốc.
 
@@ -101,6 +103,8 @@ Tùy vào vốn và mức độ am hiểu, bạn có thể chọn một trong ba
 
 **Kênh 3. Quỹ trái phiếu — phù hợp nhất với F0.** Bạn mua chứng chỉ quỹ mở trái phiếu (như Dragon Capital Bond Fund, Techcom Asset Management Bond Fund) với số vốn từ vài trăm nghìn đồng. Quỹ phân tán rủi ro bằng cách mua nhiều trái phiếu khác nhau, không đặt toàn bộ vào một tổ chức phát hành.
 
+Trước khi chọn tổ chức phát hành, bạn có thể đối chiếu mục tiêu, kỳ hạn và khả năng chịu rủi ro qua bài **[có nên đầu tư trái phiếu](/dau-tu/trai-phieu/co-nen-dau-tu-trai-phieu/)**.
+
 ## Lưu ý quan trọng khi đầu tư trái phiếu doanh nghiệp tại VN
 
 Sau các sự kiện thị trường 2022–2023 (một số doanh nghiệp bất động sản mất khả năng thanh toán trái phiếu), có ba nguyên tắc bạn cần nhớ kỹ:
@@ -109,7 +113,7 @@ Sau các sự kiện thị trường 2022–2023 (một số doanh nghiệp bấ
 
 **Ưu tiên trái phiếu có tài sản đảm bảo.** Trái phiếu có tài sản thế chấp (bất động sản, cổ phiếu) cho bạn quyền ưu tiên thu hồi nếu doanh nghiệp mất khả năng thanh toán. Trái phiếu không có tài sản đảm bảo rủi ro cao hơn đáng kể.
 
-**Kiểm tra sức khỏe tài chính của tổ chức phát hành.** Đọc báo cáo tài chính ít nhất 3 năm gần nhất. Doanh nghiệp có dòng tiền kinh doanh dương ổn định và tỷ lệ nợ/vốn chủ sở hữu dưới 3 lần là tín hiệu đáng tin cậy hơn.
+**Kiểm tra sức khỏe tài chính của tổ chức phát hành.** **[Đọc báo cáo tài chính](/phan-tich/co-ban/cach-doc-bao-cao-tai-chinh/)** ít nhất 3 năm gần nhất. Doanh nghiệp có dòng tiền kinh doanh dương ổn định và tỷ lệ nợ/vốn chủ sở hữu dưới 3 lần là tín hiệu đáng tin cậy hơn.
 
 ---
 

@@ -1,8 +1,12 @@
+import { getPolicy, getOutboundLink } from './review-catalog';
+import { formatPolicy } from '../lib/review-data.mjs';
+
 /**
  * Canonical broker registry — single source of truth for Vietnamese broker profiles.
  *
  * Review articles reference brokers by slug. The ReviewLayout merges this central
- * data with any article-level overrides in frontmatter (article wins on conflict).
+ * data with article-level editorial overrides. Financial facts and outbound URLs
+ * come from the sourced review catalog, including explicit unknown values.
  *
  * Data reflects publicly available information; update when official sources change.
  * Last updated: 2026-06
@@ -1592,5 +1596,15 @@ export function mergeBroker(
   fallback?: Partial<BrokerProfile>
 ): BrokerProfile {
   const central = brokerRegistry[articleBroker.slug] ?? {};
-  return { ...central, ...fallback, ...articleBroker } as BrokerProfile;
+  const merged = { ...central, ...fallback, ...articleBroker } as BrokerProfile;
+  // Financial facts come from the sourced catalog, never stale article overrides.
+  // Retain legacy editorial fields until their individual reviews are revised.
+  return {
+    ...merged,
+    fee_rate: formatPolicy(getPolicy(articleBroker.slug, 'stocks')),
+    margin_rate: formatPolicy(getPolicy(articleBroker.slug, 'margin')),
+    app_rating: 'Chưa xác minh',
+    ctaUrl: getOutboundLink(articleBroker.slug)?.url ?? merged.ctaUrl,
+    userVoices: undefined,
+  };
 }

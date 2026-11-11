@@ -183,7 +183,7 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 | ETF VN30 là gì | `etf-vn30-la-gi` | `Finalized` | ✅ Đã publish |
 | ETF Diamond là gì | `etf-diamond-la-gi` | `Finalized` | ✅ Đã publish |
 | Nên đầu tư quỹ ETF nào | `nen-dau-tu-quy-etf-nao` | `Finalized` | |
-| Phân biệt quỹ ETF và quỹ tương hỗ | `phan-biet-quy-etf-va-quy-tuong-ho` | `Planned` | |
+| Phân biệt quỹ ETF và quỹ tương hỗ | `phan-biet-quy-etf-va-quy-tuong-ho` | `Finalized` | |
 
 ### Quỹ mở & Chứng chỉ quỹ
 | Keyword (Spoke) | Slug | Status | Ghi chú |
@@ -244,7 +244,7 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 | Các loại lệnh trong chứng khoán | `cac-loai-lenh-trong-chung-khoan` | `Finalized` | ✅ Đã publish |
 | Giờ giao dịch chứng khoán | `gio-giao-dich-chung-khoan` | `Finalized` | |
 | Giá trần giá sàn là gì | `gia-tran-gia-san` | `Finalized` | ✅ Đã publish |
-| Biên độ giao dịch chứng khoán | `bien-do-giao-dich-chung-khoan` | `Planned` | |
+| Biên độ giao dịch chứng khoán | `bien-do-giao-dich-chung-khoan` | `Finalized` | |
 
 ---
 
@@ -277,7 +277,7 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 | EPS là gì | `eps-la-gi` | `Finalized` | ✅ Đã publish |
 | Giá trị nội tại của cổ phiếu | `gia-tri-noi-tai-cua-co-phieu` | `Finalized` | ✅ Đã publish |
 | Cách định giá cổ phiếu | `cach-dinh-gia-co-phieu` | `Finalized` | Sprint Wave 3 |
-| Mô hình CAPM là gì | `mo-hinh-capm-la-gi` | `Planned` | |
+| Mô hình CAPM là gì | `mo-hinh-capm-la-gi` | `Finalized` | |
 
 ### Chỉ số Sinh lời
 | Keyword | Slug | Status | Ghi chú |
@@ -293,8 +293,8 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 | Keyword | Slug | Status |
 |---|---|---|
 | Hệ số thanh toán là gì | `he-so-thanh-toan-la-gi` | `Finalized` |
-| Current ratio là gì | `current-ratio-la-gi` | `Planned` |
-| Tỷ số nợ trên tổng tài sản | `ty-so-no-tren-tong-tai-san` | `Planned` |
+| Current ratio là gì | `current-ratio-la-gi` | `Finalized` |
+| Tỷ số nợ trên tổng tài sản | `ty-so-no-tren-tong-tai-san` | `Finalized` |
 | Cơ cấu vốn là gì | `co-cau-von-la-gi` | `Finalized` |
 
 ---

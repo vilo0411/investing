@@ -1,11 +1,27 @@
 # Sprint Backlog — Value Investing
 
-> **Cập nhật:** 2026-11-08
+> **Cập nhật:** 2026-11-11
 > **Trạng thái có thể dùng:** `Planned` | `In Progress` | `Outline-Approved` | `Drafting` | `Finalized`
 
 ---
 
-## 🏃 Sprint: 5 Bài Chỉ Số Chứng Khoán Quốc Tế & Quản Trị Margin (C12 & C11) (Hiện tại)
+## 🏃 Sprint: 5 Bài Hoàn Thiện Cụm Phân Tích Cơ Bản, Giao Dịch & Quỹ ETF (C13, C11 & C7) (Hiện tại)
+
+**Mục tiêu:** Hoàn thiện 100% 3 cụm chủ đề trọng tâm 3 sao (C13 Phân tích cơ bản chỉ số tài chính, C11 Margin & Giao dịch, C7 Quỹ ETF) với 5 bài viết về Biên độ giao dịch chứng khoán, Mô hình CAPM, Current Ratio, Tỷ số nợ trên tổng tài sản và Phân biệt quỹ ETF với quỹ tương hỗ.
+**Thời gian thực hiện:** Hoàn thành (2026-11-11)
+**Chế độ thực thi:** `--auto` (Tự động hoàn thiện chuỗi 5 bài không cần duyệt)
+
+| # | Keyword | Slug | Category | Status | URL đích |
+|---|---|---|---|---|---|
+| 1 | Biên độ giao dịch chứng khoán | `bien-do-giao-dich-chung-khoan` | `co-phieu` | `Finalized` | `/dau-tu/co-phieu/bien-do-giao-dich-chung-khoan/` |
+| 2 | Mô hình CAPM là gì | `mo-hinh-capm-la-gi` | `co-ban` | `Finalized` | `/phan-tich/co-ban/mo-hinh-capm-la-gi/` |
+| 3 | Current ratio là gì | `current-ratio-la-gi` | `co-ban` | `Finalized` | `/phan-tich/co-ban/current-ratio-la-gi/` |
+| 4 | Tỷ số nợ trên tổng tài sản | `ty-so-no-tren-tong-tai-san` | `co-ban` | `Finalized` | `/phan-tich/co-ban/ty-so-no-tren-tong-tai-san/` |
+| 5 | Phân biệt quỹ ETF và quỹ tương hỗ | `phan-biet-quy-etf-va-quy-tuong-ho` | `etf` | `Finalized` | `/dau-tu/etf/phan-biet-quy-etf-va-quy-tuong-ho/` |
+
+---
+
+## 🏃 Sprint trước: 5 Bài Chỉ Số Chứng Khoán Quốc Tế & Quản Trị Margin (C12 & C11)
 
 **Mục tiêu:** Hoàn thiện trọn vẹn cụm Chỉ số thị trường quốc tế (Nasdaq, Nikkei 225, DAX 40, Hang Seng) và cơ chế Cắt margin trên sàn chứng khoán Việt Nam, giúp nhà đầu tư F0 hiểu bức tranh liên thị trường và quản trị rủi ro vay ký quỹ an toàn.
 **Thời gian thực hiện:** Hoàn thành (2026-11-08)
