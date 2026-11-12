@@ -82,6 +82,8 @@ export interface CollectionPageInput {
   pageType?: "CollectionPage" | "WebPage";
   /** Emit `about → #organization` (strongest brand signal, homepage only). */
   about?: boolean;
+  /** Visible FAQ on the hub, emitted as FAQPage + Question nodes. */
+  faq?: { question: string; answer: string }[];
 }
 
 /** Static pages: about, contact and the four policy pages. */
@@ -435,10 +437,12 @@ export function buildCollectionPageNodes(
     items,
     pageType,
     about,
+    faq,
   } = input;
 
   const hasBreadcrumb = Boolean(breadcrumb?.length);
   const hasItems = Boolean(items?.length);
+  const hasFaq = Boolean(faq?.length);
 
   const nodes: SchemaNode[] = [
     {
@@ -454,11 +458,26 @@ export function buildCollectionPageNodes(
         : {}),
       ...(hasItems ? { "mainEntity": { "@id": `${pageUrl}#itemlist` } } : {}),
       ...(about ? { "about": { "@id": orgId(siteUrl) } } : {}),
+      ...(hasFaq ? { "hasPart": [{ "@id": `${pageUrl}#faq` }] } : {}),
     },
   ];
 
   if (breadcrumb?.length) nodes.push(breadcrumbNode(pageUrl, breadcrumb));
   if (items?.length) nodes.push(itemListNode(pageUrl, items));
+  if (faq?.length) {
+    nodes.push({
+      "@type": "FAQPage",
+      "@id": `${pageUrl}#faq`,
+      "mainEntity": faq.map((_item, i) => ({ "@id": `${pageUrl}#faq-question-${i + 1}` })),
+      "isPartOf": { "@id": `${pageUrl}#webpage` },
+    });
+    faq.forEach((item, i) => nodes.push({
+      "@type": "Question",
+      "@id": `${pageUrl}#faq-question-${i + 1}`,
+      "name": item.question,
+      "acceptedAnswer": { "@type": "Answer", "text": item.answer },
+    }));
+  }
 
   return nodes;
 }

@@ -1,6 +1,6 @@
 ---
 import { reviewCatalog, sourceById } from '@/data/review-catalog';
-import { brokerRegistry } from '@/data/brokers';
+import { brokerMeta } from '@/data/brokers';
 import { isOfferActive, todayVN } from '@/lib/review-data.mjs';
 interface Props { broker?: string; }
 const { broker } = Astro.props;
@@ -11,7 +11,7 @@ const today = todayVN();
   <div class="review-offer-list">
     {offers.map((offer) => <article class="review-offer" hidden={!isOfferActive(offer, today)}
       data-offer data-offer-start={offer.startsAt} data-offer-end={offer.endsAt}>
-      <h3>{brokerRegistry[offer.broker]?.shortName ?? offer.broker}: {offer.title}</h3>
+      <h3>{brokerMeta[offer.broker]?.shortName ?? offer.broker}: {offer.title}</h3>
       <p><strong>{offer.benefit}</strong></p><p>{offer.conditions}</p>
       <p>Hạn đăng ký: {offer.endsAt ? new Date(`${offer.endsAt}T00:00:00+07:00`).toLocaleDateString('vi-VN', { timeZone: 'Asia/Ho_Chi_Minh' }) : 'Nguồn không ghi ngày kết thúc'}.</p>
       <p>Thời gian hưởng: {offer.benefitDuration}</p>

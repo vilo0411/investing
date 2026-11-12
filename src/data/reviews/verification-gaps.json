@@ -72,11 +72,43 @@
     "checkedAt": "2026-11-11"
   },
   {
-    "broker": "mirae-asset",
+    "broker": "abs",
     "metric": "derivatives",
-    "reason": "Đã đối chiếu biểu phí cơ sở nhưng nguồn phái sinh được dẫn tới trả Request Rejected. Chưa xác nhận mức tiêu chuẩn và thời hạn ưu đãi nên chưa dùng số từ trang tham khảo.",
-    "url": "https://www.masvn.com/api/categories/fe/1720/article",
-    "title": "Mirae Asset: nguồn phái sinh cần đối chiếu",
-    "checkedAt": "2026-11-11"
+    "reason": "Biểu phí giao dịch công khai của ABS chưa có mức phí phái sinh để đối chiếu.",
+    "url": "https://www.abs.vn/bieu-phi-giao-dich/",
+    "title": "ABS: biểu phí giao dịch",
+    "checkedAt": "2026-11-12"
+  },
+  {
+    "broker": "shinhan",
+    "metric": "derivatives",
+    "reason": "Trang phí giao dịch chỉ có biểu phí chứng khoán cơ sở. Chưa tìm được biểu phí phái sinh chính thức.",
+    "url": "https://shinhansec.com.vn/vi/ho-tro-khach-hang/phi-giao-dich.html",
+    "title": "Shinhan: phí giao dịch",
+    "checkedAt": "2026-11-12"
+  },
+  {
+    "broker": "kafi",
+    "metric": "advance",
+    "reason": "Biểu phí giao dịch Kafi đã đọc chưa nêu mức phí ứng trước tiền bán.",
+    "url": "https://kafi.vn/stock-trading?tab=bpgd",
+    "title": "Kafi: biểu phí giao dịch",
+    "checkedAt": "2026-11-12"
+  },
+  {
+    "broker": "agriseco",
+    "metric": "stocks",
+    "reason": "Trang hỗ trợ giao dịch và dịch vụ tài chính không có biểu phí giao dịch cổ phiếu dạng công khai để đối chiếu.",
+    "url": "https://agriseco.com.vn/Supports/Trading/vi-VN",
+    "title": "Agriseco: hỗ trợ giao dịch",
+    "checkedAt": "2026-11-12"
+  },
+  {
+    "broker": "agriseco",
+    "metric": "derivatives",
+    "reason": "Chưa tìm được biểu phí phái sinh chính thức của Agriseco.",
+    "url": "https://agriseco.com.vn/ProductsServices/SecuritiesBroker/FinancialServices/vi-VN",
+    "title": "Agriseco: dịch vụ tài chính",
+    "checkedAt": "2026-11-12"
   }
 ]

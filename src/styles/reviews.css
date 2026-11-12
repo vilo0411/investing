@@ -211,3 +211,168 @@ html.policy-dialog-open { overflow: hidden; }
 @media (prefers-reduced-motion: reduce) {
   .review-hub *, .broker-policies * { scroll-behavior: auto !important; transition: none !important; }
 }
+
+/* ───────── Hub v2: calmer directory, fewer words per cell ───────── */
+.review-hero { padding-block: 28px 24px; border-bottom: 0; }
+.review-hero h1 { font-size: clamp(1.9rem, 3.2vw, 2.6rem); margin: 18px 0 10px; }
+.review-hero .lead { color: var(--muted); font-size: 1rem; max-width: 640px; }
+.review-kpis { display: flex; flex-wrap: wrap; gap: 0; margin: 20px 0 0; }
+.review-kpis div { display: grid; gap: 2px; padding: 0 24px; border-left: 1px solid var(--line); }
+.review-kpis div:first-child { padding-left: 0; border-left: 0; }
+.review-kpis dt { font-size: .72rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; }
+.review-kpis dd { margin: 0; font: 700 1.35rem/1.2 var(--font-serif); }
+.review-kpis dd a { color: var(--brand); }
+.review-subnav { position: sticky; top: 0; z-index: 30; padding: 0; background: var(--surface); border-block: 1px solid var(--line); font-size: .85rem; }
+.review-subnav .container { display: flex; gap: 4px 24px; overflow-x: auto; scrollbar-width: none; padding-block: 12px; white-space: nowrap; }
+.review-subnav b { font-weight: 700; color: var(--muted); margin-left: 4px; }
+.review-section { padding-top: 48px; scroll-margin-top: 64px; }
+.review-section--table { padding-top: 24px; }
+.review-section-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px 24px; flex-wrap: wrap; margin-bottom: 16px; }
+.review-section-head h2 { margin: 0; }
+.review-section-head a { font-weight: 700; font-size: .9rem; }
+.review-section-head span { color: var(--muted); font-size: .85rem; }
+
+/* Toolbar */
+.review-toolbar { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 12px; margin-bottom: 12px; }
+.review-search input { width: 100%; }
+.review-sort { display: flex; align-items: center; gap: 8px; font-size: .85rem; color: var(--muted); }
+.review-sort select { width: auto; min-width: 190px; }
+.review-toolbar .review-filters { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; border: 0; }
+.review-chip { position: relative; display: inline-flex; align-items: center; gap: 6px; padding: 7px 12px; border: 1px solid color-mix(in srgb, var(--line) 35%, transparent); background: var(--surface); font-size: .82rem; font-weight: 600; cursor: pointer; user-select: none; transition: background .15s, border-color .15s; }
+.review-chip:hover { border-color: var(--line); }
+.review-chip input { position: absolute; opacity: 0; width: 1px; height: 1px; pointer-events: none; }
+.review-chip::before { content: "+"; font-weight: 700; color: var(--muted); }
+.review-chip:has(input:checked) { background: var(--brand); border-color: var(--brand); color: var(--surface); }
+.review-chip:has(input:checked)::before { content: "✓"; color: inherit; }
+.review-chip:has(input:focus-visible) { outline: 3px solid var(--brand); outline-offset: 2px; }
+.review-result-bar { margin: 0 0 8px; }
+.review-result-bar p { font-size: .82rem; }
+
+/* Table */
+.review-table-scroll { border: 1px solid var(--line); }
+#broker-directory { min-width: 980px; }
+#broker-directory col { width: 16%; }
+#broker-directory .broker-name-column { width: 17%; }
+#broker-directory .broker-action-column { width: 19%; }
+#broker-directory thead th { padding: 12px; font-size: .8rem; position: sticky; top: 0; }
+#broker-directory thead th small { font-size: .7rem; }
+#broker-directory tbody tr { transition: background .15s; }
+#broker-directory tbody tr:hover { background: color-mix(in srgb, var(--surface-alt) 70%, transparent); }
+#broker-directory td, #broker-directory tbody th { padding: 14px 12px; vertical-align: top; border-bottom: 1px solid color-mix(in srgb, var(--line) 18%, transparent); }
+#broker-directory tbody th { text-align: left; font-weight: 400; background: transparent; font-size: inherit; }
+#broker-directory .broker-identity { padding: 14px 16px; }
+.broker-name { font-size: 1.1rem; margin: 0; }
+.broker-parent { display: block; color: var(--muted); font-size: .72rem; line-height: 1.4; margin-top: 2px; }
+.broker-tag { display: inline-block; margin-top: 6px; padding: 1px 6px; border: 1px solid var(--brand); color: var(--brand); font: 700 .65rem/1.5 var(--font-sans); letter-spacing: .05em; }
+.broker-tag:hover { background: var(--brand); color: var(--surface); text-decoration: none; }
+
+/* Compact policy cell: number + ⓘ, then one muted line */
+.policy-value--compact { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 6px; min-height: 0; padding: 0; border-left: 0; }
+.policy-value--compact[data-emphasis="low"], .policy-value--compact[data-emphasis="middle"] { padding: 0; margin: 0; border-left: 0; background: none; }
+.policy-value--compact .policy-number { font-size: 1.05rem; white-space: nowrap; }
+.policy-value--compact[data-emphasis="low"] .policy-number { font-size: 1.05rem; padding: 0 4px; margin-left: -4px; background: color-mix(in srgb, var(--color-mint) 70%, transparent); }
+.policy-value--compact[data-emphasis="high"] .policy-number { text-decoration: none; }
+.policy-value--compact .policy-condition { order: 3; flex-basis: 100%; font-size: .74rem; -webkit-line-clamp: 1; }
+.policy-value--compact .policy-detail { order: 2; font-size: .8rem; max-width: none; }
+.policy-value--compact .policy-detail summary { list-style: none; color: var(--muted); cursor: pointer; padding: 0 2px; }
+.policy-value--compact .policy-detail summary::-webkit-details-marker { display: none; }
+.policy-value--compact .policy-detail summary:hover { color: var(--brand); text-decoration: none; }
+.policy-value--compact .policy-detail[open] { flex-basis: 100%; order: 4; }
+.policy-value--compact .policy-stale { order: 5; flex-basis: 100%; font-size: .7rem; }
+.policy-value--compact.policy-value--unknown .policy-number { color: var(--muted); font-size: 1rem; }
+.cell-offer-mark { display: inline-block; width: 7px; height: 7px; background: var(--brand); flex-shrink: 0; }
+.cell-offer { display: flex; align-items: baseline; gap: 6px; margin-top: 6px; font-size: .72rem; font-weight: 700; line-height: 1.35; color: var(--brand-strong); }
+.cell-offer .cell-offer-mark { transform: translateY(-1px); }
+.cell-offer-date { font-weight: 400; color: var(--muted); }
+
+/* Actions */
+.broker-actions { display: grid; gap: 8px; justify-items: start; padding: 0; font-size: .8rem; }
+.broker-actions .broker-cta { display: inline-block; padding: 6px 12px; background: var(--brand); color: var(--surface); border: 1px solid var(--brand); font-weight: 700; text-decoration: none; box-shadow: none; }
+.broker-actions .broker-cta:hover { background: var(--brand-strong); text-decoration: none; }
+.broker-actions .broker-cta small { display: block; font-weight: 400; font-size: .65rem; opacity: .85; }
+.broker-links { display: flex; gap: 12px; }
+.broker-links a { font-weight: 700; }
+.broker-links a + a { color: var(--muted); font-weight: 500; }
+.broker-compare-label { font-size: .78rem; color: var(--muted); }
+
+.review-legend { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 12px 0 0; font-size: .75rem; color: var(--muted); }
+.review-empty { padding: 24px; }
+.review-empty p { margin-bottom: 12px; }
+.review-topics { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: baseline; margin-top: 20px; font-size: .85rem; }
+.review-topics span { color: var(--muted); }
+.review-topics a { font-weight: 700; }
+
+/* Offers */
+.review-offer-counts { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 12px; }
+.review-offer-counts a { padding: 4px 10px; border: 1px solid color-mix(in srgb, var(--line) 35%, transparent); font-size: .8rem; }
+.review-offer-counts b { color: var(--brand); margin-left: 4px; }
+.offer-list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+.offer-row { display: grid; grid-template-columns: 110px minmax(0, 1fr) 130px; gap: 6px 20px; align-items: baseline; padding: 14px 0; border-bottom: 1px solid color-mix(in srgb, var(--line) 18%, transparent); }
+.offer-row--full { grid-template-columns: 110px minmax(0, 1fr) 130px 150px; }
+.offer-broker { font: 700 1rem/1.3 var(--font-serif); }
+.offer-main { display: grid; gap: 2px; min-width: 0; }
+.offer-main strong { font-size: .98rem; }
+.offer-main small, .offer-title { color: var(--muted); font-size: .8rem; }
+.offer-end { font-size: .82rem; color: var(--muted); }
+.offer-end b { color: var(--text); }
+.offer-noend { font-style: italic; }
+.offer-conditions { font-size: .82rem; margin-top: 4px; }
+.offer-conditions summary { cursor: pointer; color: var(--brand); font-weight: 600; }
+.offer-conditions p { margin: 6px 0 0; color: var(--muted); max-width: 640px; }
+.offer-links { display: grid; gap: 4px; justify-items: start; font-size: .82rem; }
+.offer-links a { font-weight: 700; }
+.offer-links small { color: var(--muted); font-size: .72rem; }
+
+/* Related articles + FAQ + trust */
+.review-article-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
+.review-article-grid li { display: grid; gap: 8px; align-content: space-between; padding: 16px; border: 1px solid color-mix(in srgb, var(--line) 25%, transparent); }
+.review-article-grid li:hover { border-color: var(--line); }
+.review-article-grid a { font-weight: 700; line-height: 1.45; }
+.review-article-grid small { color: var(--muted); font-size: .75rem; }
+.review-faq { max-width: 820px; border-top: 1px solid var(--line); }
+.review-faq details { border-bottom: 1px solid color-mix(in srgb, var(--line) 25%, transparent); padding: 16px 0; }
+.review-faq summary { cursor: pointer; font-weight: 700; font-size: 1rem; }
+.review-faq p { margin: 10px 0 0; color: var(--muted); max-width: 720px; }
+.review-trust { font-size: .85rem; color: var(--muted); max-width: 860px; }
+.review-trust a { font-weight: 600; }
+
+@media (max-width: 760px) {
+  .review-kpis div { padding: 0 14px; }
+  .review-kpis dd { font-size: 1.15rem; }
+  .review-toolbar { grid-template-columns: 1fr; }
+  .review-sort select { flex: 1; min-width: 0; }
+  .review-toolbar .review-filters { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; margin-inline: -16px; padding-inline: 16px; }
+  .review-chip { flex-shrink: 0; }
+  /* Rows become cards */
+  .review-table-scroll:has(#broker-directory) { overflow: visible; border: 0; background: transparent; }
+  #broker-directory { min-width: 0; display: block; table-layout: auto; }
+  #broker-directory thead, #broker-directory colgroup { display: none; }
+  #broker-directory tbody { display: grid; gap: 12px; }
+  #broker-directory tbody tr { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border: 1px solid var(--line); background: var(--surface); }
+  #broker-directory tbody tr[hidden] { display: none; }
+  #broker-directory tbody tr:hover { background: var(--surface); }
+  #broker-directory tr > :first-child { position: static; border-right: 0; }
+  #broker-directory td, #broker-directory tbody th { display: block; min-width: 0; padding: 10px 12px; overflow-wrap: break-word; }
+  #broker-directory .policy-detail a { overflow-wrap: anywhere; }
+  #broker-directory .broker-identity { grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; max-width: none; padding: 12px; border-bottom: 1px solid color-mix(in srgb, var(--line) 18%, transparent); }
+  #broker-directory .broker-parent, #broker-directory .broker-tag { margin: 0; }
+  #broker-directory td[data-label]::before { content: attr(data-label); display: block; font-size: .66rem; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; margin-bottom: 2px; }
+  #broker-directory td:is(:nth-child(2), :nth-child(4)) { border-right: 1px solid color-mix(in srgb, var(--line) 18%, transparent); }
+  #broker-directory .broker-action-cell { grid-column: 1 / -1; border-bottom: 0; background: var(--surface-alt); }
+  .broker-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; }
+  .policy-value--compact .policy-number, .policy-value--compact[data-emphasis="low"] .policy-number { white-space: normal; }
+  .offer-row, .offer-row--full { grid-template-columns: minmax(0, 1fr) auto; }
+  .offer-row .offer-broker { grid-column: 1 / -1; }
+  .offer-row--full .offer-links { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 4px 16px; align-items: baseline; }
+}
+@media (max-width: 360px) {
+  #broker-directory td[data-label] { padding: 10px 8px; }
+  .policy-value--compact .policy-number, .policy-value--compact[data-emphasis="low"] .policy-number { font-size: .92rem; }
+}
+/* Visually hidden, still announced. Not defined globally, so scoped here. */
+.review-hub .sr-only, .review-hub caption.sr-only { position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+/* Fieldsets default to min-content width; let the chip row scroll instead of widening the grid. */
+.review-toolbar > * { min-width: 0; }
+.review-toolbar .review-filters { min-inline-size: 0; }
+.policy-annual { font-size: .74rem; color: var(--text); font-variant-numeric: tabular-nums; }
+.policy-value--compact .policy-annual { order: 3; flex-basis: 100%; }

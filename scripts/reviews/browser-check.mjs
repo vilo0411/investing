@@ -16,10 +16,11 @@ const page = await context.newPage();
 page.on('pageerror', (error) => errors.push(error.message));
 const go = async (pathname) => { const response = await page.goto(`${base}${pathname}`); assert.equal(response.status(), 200, pathname); };
 const visibleRows = () => page.locator('[data-broker-row]:visible');
+const brokerCount = JSON.parse(await readFile(new URL('../../src/data/reviews/catalog.json', import.meta.url), 'utf8')).brokers.length;
 try {
   await go('/reviews/');
-  await page.waitForFunction(() => document.querySelectorAll('[data-broker-row]:not([hidden])').length === 8);
-  assert.equal(await page.locator('[data-broker-row]').count(), 20);
+  await page.waitForFunction((count) => document.querySelectorAll('[data-broker-row]:not([hidden])').length === count, brokerCount);
+  assert.equal(await page.locator('[data-broker-row]').count(), brokerCount);
   await page.locator('#broker-search').fill('SSI');
   assert.equal(await visibleRows().count(), 1);
   assert.equal(await visibleRows().getAttribute('data-broker'), 'ssi');
@@ -39,9 +40,23 @@ try {
   assert.equal(await visibleRows().count(), 0);
   assert.ok(await page.locator('[data-directory-empty]').isVisible());
   await page.locator('[data-reset-filters]').first().click();
-  await page.locator('[name="low-fee"]').check();
+  await page.locator('[name="low-fee"]').check({ force: true });
   for (const row of await visibleRows().all()) assert.ok(Number(await row.locator('[data-policy-metric="stocks"]').getAttribute('data-policy-value')) <= .1);
   assert.equal(await page.locator('[data-broker="hsc"]:visible').count(), 0, 'A starting rate is not a guaranteed fixed fee');
+  await page.locator('[data-reset-filters]').first().click();
+  await page.locator('[name="low-margin"]').check({ force: true });
+  assert.ok(await visibleRows().count() > 0);
+  for (const row of await visibleRows().all()) {
+    const margin = row.locator('[data-policy-metric="margin"]');
+    const perDay = (await margin.getAttribute('data-policy-unit')) === 'percent-day';
+    assert.ok(Number(await margin.getAttribute('data-policy-value')) * (perDay ? 365 : 1) < 12);
+  }
+  await page.locator('[data-reset-filters]').first().click();
+  await page.locator('[name="api"]').check({ force: true });
+  assert.deepEqual((await visibleRows().evaluateAll((rows) => rows.map((row) => row.dataset.broker))).sort(), ['dnse', 'ssi', 'tcbs', 'vpbanks']);
+  await page.locator('[data-reset-filters]').first().click();
+  await page.locator('[name="has-offer"]').check({ force: true });
+  for (const row of await visibleRows().all()) assert.ok(Number(await row.getAttribute('data-offers')) > 0);
   await page.locator('[data-reset-filters]').first().click();
   await page.locator('#broker-sort').selectOption('stocks');
   const values = await visibleRows().locator('[data-policy-metric="stocks"]').evaluateAll((cells) => cells.map((cell) => Number(cell.dataset.policyValue ?? Infinity)));
@@ -81,7 +96,11 @@ try {
     if (slug === 'so-sanh-tcbs-vs-ssi') assert.equal(await page.locator('.sourced-comparison [data-policy-id]').count() > 0, true);
     if (slug === 'cach-mo-tai-khoan-chung-khoan-ssi') assert.ok(await page.getByRole('link', { name: 'Đọc đầy đủ phí và đánh giá công ty →' }).isVisible());
   }
+  await go('/reviews/uu-dai/');
+  assert.ok(await page.locator('.offer-row').count() >= 20);
+  assert.equal(await page.locator('h1').count(), 1);
   const sitemap = await (await context.request.get(`${base}/sitemap-pages.xml`)).text();
+  assert.ok(sitemap.includes('/reviews/uu-dai/'));
   assert.equal(sitemap.includes('/reviews/so-sanh/'), false);
   await go('/reviews/');
   await page.locator('#bang-so-sanh').scrollIntoViewIfNeeded();
@@ -90,7 +109,7 @@ try {
 
   for (const width of [375, 320]) {
     await page.setViewportSize({ width, height: 900 });
-    for (const pathname of ['/reviews/', '/reviews/so-sanh/?ctck=ssi,tcbs', '/reviews/review-ssi-securities/', '/reviews/so-sanh-tcbs-vs-ssi/', '/reviews/cach-mo-tai-khoan-chung-khoan-ssi/']) {
+    for (const pathname of ['/reviews/', '/reviews/uu-dai/', '/reviews/so-sanh/?ctck=ssi,tcbs', '/reviews/review-ssi-securities/', '/reviews/so-sanh-tcbs-vs-ssi/', '/reviews/cach-mo-tai-khoan-chung-khoan-ssi/']) {
       await go(pathname); await page.evaluate(() => document.fonts.ready);
       const dimensions = await page.evaluate(() => ({ page: document.documentElement.scrollWidth, viewport: innerWidth }));
       assert.ok(dimensions.page <= dimensions.viewport + 1, `${width}px overflow ${pathname}: ${JSON.stringify(dimensions)}`);
@@ -100,7 +119,7 @@ try {
   }
   const noJS = await browser.newContext({ javaScriptEnabled: false });
   const fallback = await noJS.newPage(); await fallback.goto(`${base}/reviews/`);
-  assert.equal(await fallback.locator('[data-broker-row]:visible').count(), 20);
+  assert.equal(await fallback.locator('[data-broker-row]:visible').count(), brokerCount);
   await noJS.close();
 
   const temp = await mkdtemp(path.join(tmpdir(), 'review-browser-admin-'));

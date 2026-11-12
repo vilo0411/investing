@@ -1,0 +1,71 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { buildStaticPageNodes } from "@/lib/schema";
+import { reviewCatalog } from "@/data/review-catalog";
+import { brokerMeta } from "@/data/brokers";
+import { url } from "@/data/site";
+
+const pageTitle = "Công khai đối tác | Value Investing";
+const pageDescription =
+  "Cách Value Investing gắn nhãn liên kết đối tác, nguyên tắc giữ số liệu và thứ tự độc lập, cùng danh sách đối tác hiện tại.";
+
+const siteUrl = Astro.site?.toString() ?? "";
+const pageUrl = new URL(Astro.url.pathname, Astro.site).toString();
+
+// Partner list is rendered from the sourced catalog so the page never drifts from the hub.
+const partners = reviewCatalog.links
+  .filter((link) => link.kind === "partner")
+  .map((link) => ({ ...link, name: brokerMeta[link.broker]?.name ?? link.broker }));
+
+const schemaNodes = buildStaticPageNodes({
+  siteUrl,
+  pageUrl,
+  title: pageTitle,
+  description: pageDescription,
+  breadcrumb: [
+    { name: "Trang chủ", item: siteUrl },
+    { name: "Công khai đối tác", item: pageUrl },
+  ],
+});
+---
+
+<BaseLayout title={pageTitle} description={pageDescription} schemaNodes={schemaNodes}>
+  <section class="article-header">
+    <div class="article-container">
+      <h1>Công khai đối tác</h1>
+      <p class="lead">Bạn có quyền biết khi nào một đường link mang lại thu nhập cho Value Investing. Trang này giải thích cách nhận biết và những gì không bị ảnh hưởng.</p>
+    </div>
+  </section>
+  <section class="article-container prose">
+    <h2>Value Investing có thu nhập từ đâu?</h2>
+    <p>
+      Một số công ty chứng khoán có chương trình giới thiệu khách hàng. Khi bạn mở tài khoản qua liên kết đối tác, Value Investing có thể nhận phí giới thiệu từ công ty đó. Bạn không phải trả thêm khoản nào cho Value Investing.
+    </p>
+
+    <h2>Những gì phí giới thiệu không thay đổi</h2>
+    <ul>
+      <li>Số liệu phí, lãi margin và phí phái sinh trong <a href={url("/reviews/")}>bảng so sánh</a>. Các con số luôn lấy từ biểu phí chính thức và có link nguồn.</li>
+      <li>Thứ tự hiển thị. Bảng sắp xếp theo mức độ đầy đủ dữ liệu hoặc theo cột bạn chọn, không theo quan hệ đối tác.</li>
+      <li>Nhận định trong bài review. Điểm cần lưu ý của đối tác vẫn được nêu như mọi công ty khác.</li>
+    </ul>
+
+    <h2>Cách nhận biết liên kết đối tác</h2>
+    <p>
+      Nút có liên kết đối tác luôn kèm dòng chữ nhỏ "Liên kết đối tác". Link tới website công ty ghi "Trang chính thức" và không mang lại thu nhập. Biểu phí cuối cùng do công ty chứng khoán quyết định, nên bạn nên đối chiếu trên website chính thức trước khi ký hợp đồng.
+    </p>
+
+    <h2>Đối tác hiện tại</h2>
+    {partners.length ? (
+      <ul>
+        {partners.map((partner) => <li><strong>{partner.name}</strong>: {partner.disclosure}</li>)}
+      </ul>
+    ) : (
+      <p>Hiện Value Investing chưa có đối tác nào. Mọi link tới công ty chứng khoán trên trang đều là website chính thức.</p>
+    )}
+
+    <h2>Liên hệ</h2>
+    <p>
+      Nếu thấy một link chưa được gắn nhãn đúng, bạn có thể <a href={url("/contact/")}>gửi thông tin cho Value Investing</a>. Xem thêm <a href={url("/editorial-policy/")}>chính sách biên tập</a> và <a href={url("/disclaimer/")}>tuyên bố miễn trừ</a>.
+    </p>
+  </section>
+</BaseLayout>

@@ -30,6 +30,10 @@ export interface BrokerProfile {
   slug: string;
   name: string;
   shortName: string;
+  /** Parent group, shown as "Thuộc …" on the hub. Only set when ownership is public and certain. */
+  parent?: string;
+  /** Official public trading API documentation, used by the "Có API giao dịch" filter. */
+  tradingApi?: { name: string; url: string };
   rating: number;
   best_for: string;
   fee_rate: string;
@@ -57,6 +61,8 @@ export const brokerRegistry: Record<string, BrokerProfile> = {
     slug: "tcbs",
     name: "TCBS (Techcom Securities)",
     shortName: "TCBS",
+    tradingApi: { name: "TCBS OpenAPI", url: "https://developers.tcbs.com.vn/specs/tcbs-openapi-v1.0.0-vi.pdf" },
+    parent: "Techcombank",
     rating: 4.7,
     best_for: "Nhà đầu tư tự chủ, ưu tiên phí thấp & công cụ phân tích",
     fee_rate: "0% (miễn phí trọn đời)",
@@ -139,6 +145,7 @@ export const brokerRegistry: Record<string, BrokerProfile> = {
     slug: "ssi",
     name: "SSI Securities",
     shortName: "SSI",
+    tradingApi: { name: "SSI FastConnect API", url: "https://www.ssi.com.vn/en/individual-customer/fast-connect-api" },
     rating: 4.5,
     best_for: "Nhà đầu tư cần sự ổn định, uy tín & phân tích chuyên sâu",
     fee_rate: "0.15% – 0.25%",
@@ -450,6 +457,7 @@ export const brokerRegistry: Record<string, BrokerProfile> = {
     slug: "dnse",
     name: "DNSE Securities",
     shortName: "DNSE",
+    tradingApi: { name: "DNSE LightSpeed API", url: "https://hdsd.dnse.com.vn/san-pham-dich-vu/lightspeed-api_krx/ii.-trading-api/1.-gioi-thieu-chung" },
     rating: 4.3,
     best_for: "Nhà đầu tư tự chủ, muốn quản lý margin theo từng giao dịch và miễn phí trọn đời",
     fee_rate: "0% (miễn phí trọn đời)",
@@ -530,6 +538,7 @@ export const brokerRegistry: Record<string, BrokerProfile> = {
     slug: "mbs",
     name: "MBS (Chứng khoán MB)",
     shortName: "MBS",
+    parent: "Ngân hàng MB",
     rating: 4.4,
     best_for: "Nhà đầu tư muốn sự an toàn từ ngân hàng quân đội và ứng dụng giao dịch hiện đại",
     fee_rate: "0.10% – 0.15%",
@@ -685,6 +694,7 @@ export const brokerRegistry: Record<string, BrokerProfile> = {
     slug: "bsc",
     name: "Chứng khoán BSC (BIDV Securities)",
     shortName: "BSC",
+    parent: "BIDV",
     rating: 4.4,
     best_for: "Nhà đầu tư ưu tiên an toàn ngân hàng BIDV, phí online thấp & lãi margin ưu đãi",
     fee_rate: "0.08% (online ưu đãi)",
@@ -835,6 +845,7 @@ export const brokerRegistry: Record<string, BrokerProfile> = {
     slug: "acbs",
     name: "Chứng khoán ACBS (ACB Securities)",
     shortName: "ACBS",
+    parent: "Ngân hàng ACB",
     rating: 4.4,
     best_for: "Khách hàng ngân hàng ACB, nhà đầu tư thích lướt sóng ngắn hạn với gói margin T+",
     fee_rate: "0.075% – 0.10% (tự giao dịch)",
@@ -910,6 +921,7 @@ export const brokerRegistry: Record<string, BrokerProfile> = {
     slug: "tps",
     name: "Chứng khoán TPS (Tiên Phong Securities)",
     shortName: "TPS",
+    parent: "TPBank",
     rating: 4.3,
     best_for: "Khách hàng hệ sinh thái TPBank, nhà đầu tư ưa chuộng công nghệ số & margin M7",
     fee_rate: "0.15% (thường xuyên có gói 0%)",
@@ -985,6 +997,7 @@ export const brokerRegistry: Record<string, BrokerProfile> = {
     slug: "yuanta",
     name: "Chứng khoán Yuanta Việt Nam",
     shortName: "Yuanta",
+    parent: "Yuanta (Đài Loan)",
     rating: 4.4,
     best_for: "Nhà đầu tư chủ động cần công cụ quét sóng YSradar và đòn bẩy vốn ngoại linh hoạt",
     fee_rate: "0.10% (tự giao dịch) – 0.15%",
@@ -1060,6 +1073,7 @@ export const brokerRegistry: Record<string, BrokerProfile> = {
     slug: "kis",
     name: "Chứng khoán KIS Việt Nam",
     shortName: "KIS",
+    parent: "Korea Investment & Securities",
     rating: 4.3,
     best_for: "Nhà đầu tư cần nguồn margin vốn ngoại dồi dào, lãi suất ưu đãi và phái sinh/chứng quyền",
     fee_rate: "0.15% (online tiêu chuẩn)",
@@ -1135,6 +1149,7 @@ export const brokerRegistry: Record<string, BrokerProfile> = {
     slug: "fpts",
     name: "Chứng khoán FPTS (FPT Securities)",
     shortName: "FPTS",
+    parent: "Tập đoàn FPT",
     rating: 4.4,
     best_for: "Nhà đầu tư theo trường phái phân tích cơ bản, coi trọng tính ổn định công nghệ",
     fee_rate: "0.10% – 0.15%",
@@ -1210,6 +1225,7 @@ export const brokerRegistry: Record<string, BrokerProfile> = {
     slug: "vcbs",
     name: "Chứng khoán VCBS (Vietcombank Securities)",
     shortName: "VCBS",
+    parent: "Vietcombank",
     rating: 4.4,
     best_for: "Khách hàng ngân hàng Vietcombank, nhà đầu tư lớn ưu tiên an toàn tuyệt đối",
     fee_rate: "0.15% – 0.20%",
@@ -1435,6 +1451,7 @@ export const brokerRegistry: Record<string, BrokerProfile> = {
     slug: "kb",
     name: "Chứng khoán KB Việt Nam (KBSV)",
     shortName: "KBSV",
+    parent: "KB Securities (Hàn Quốc)",
     rating: 4.4,
     best_for: "Nhà đầu tư cá nhân tự học với app KB Buddy, cần đòn bẩy margin vốn ngoại Hàn Quốc",
     fee_rate: "0.10% – 0.15%",
@@ -1510,6 +1527,7 @@ export const brokerRegistry: Record<string, BrokerProfile> = {
     slug: "mirae-asset",
     name: "Chứng khoán Mirae Asset Việt Nam (MAS)",
     shortName: "Mirae Asset",
+    parent: "Mirae Asset (Hàn Quốc)",
     rating: 4.4,
     best_for: "Nhà đầu tư sử dụng đòn bẩy margin quy mô lớn, vốn ngoại ổn định",
     fee_rate: "0.15% (online)",
@@ -1608,3 +1626,24 @@ export function mergeBroker(
     userVoices: undefined,
   };
 }
+
+/** Fields the fee directory needs; brokers without an editorial review only carry these. */
+export type BrokerMeta = Pick<BrokerProfile, "slug" | "name" | "shortName" | "parent" | "tradingApi">;
+
+/**
+ * Directory-only brokers: listed in /reviews/ with sourced fees and offers,
+ * but no editorial review yet. Move to brokerRegistry once a review is written.
+ */
+export const directoryBrokers: Record<string, BrokerMeta> = {
+  abs: { slug: "abs", name: "Chứng khoán An Bình (ABS)", shortName: "ABS", parent: "ABBank" },
+  shinhan: { slug: "shinhan", name: "Chứng khoán Shinhan Việt Nam", shortName: "Shinhan", parent: "Shinhan Financial Group (Hàn Quốc)" },
+  kafi: { slug: "kafi", name: "Chứng khoán Kafi", shortName: "Kafi" },
+  vpbanks: {
+    slug: "vpbanks", name: "Chứng khoán VPBank (VPBankS)", shortName: "VPBankS", parent: "VPBank",
+    tradingApi: { name: "NEO API", url: "https://www.vpbanks.com.vn/post/neo-invest-neo-api" },
+  },
+  agriseco: { slug: "agriseco", name: "Chứng khoán Agribank (Agriseco)", shortName: "Agriseco", parent: "Agribank" },
+};
+
+/** Lookup for any broker in the review catalog, reviewed or directory-only. */
+export const brokerMeta: Record<string, BrokerMeta> = { ...directoryBrokers, ...brokerRegistry };

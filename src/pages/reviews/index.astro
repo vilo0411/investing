@@ -3,109 +3,193 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import Breadcrumb from '@/components/Breadcrumb.astro';
 import PolicyValue from '@/components/review/PolicyValue.astro';
-import ReviewOffers from '@/components/review/ReviewOffers.astro';
-import { brokerRegistry } from '@/data/brokers';
-import { reviewCatalog, getPolicy, getOutboundLink } from '@/data/review-catalog';
-import { metricKeys, todayVN } from '@/lib/review-data.mjs';
+import { brokerMeta } from '@/data/brokers';
+import { reviewCatalog, getPolicy, getOutboundLink, getOffers } from '@/data/review-catalog';
+import { metricKeys, metricLabels, todayVN } from '@/lib/review-data.mjs';
 import { getArticlePath, url } from '@/data/site';
 import { buildCollectionPageNodes } from '@/lib/schema';
 import '@/styles/reviews.css';
 
-const articles = (await getCollection('articles')).filter((entry) => entry.data.category === 'reviews');
+const allArticles = await getCollection('articles');
+const articles = allArticles.filter((entry) => entry.data.category === 'reviews');
 const companyArticles = new Map(articles.filter((entry) => entry.data.reviewType === 'company').map((entry) => [entry.data.brokers?.[0]?.slug, entry]));
+const accountArticles = new Map(articles.filter((entry) => entry.data.reviewType === 'account').map((entry) => [entry.data.brokers?.[0]?.slug, entry]));
 const articleGroups = [
-  { id: 'so-sanh-chuyen-sau', title: 'So sánh hai công ty', description: 'Đã có hai lựa chọn? Đọc phân tích điểm khác biệt và đánh đổi theo từng nhu cầu.', articles: articles.filter((entry) => entry.data.reviewType === 'comparison') },
-  { id: 'huong-dan-mo-tai-khoan', title: 'Hướng dẫn mở tài khoản', description: 'Đã chọn được công ty? Chuẩn bị giấy tờ, xem từng bước đăng ký và cách xử lý lỗi.', articles: articles.filter((entry) => entry.data.reviewType === 'account') },
-  { id: 'bai-viet', title: 'Kinh nghiệm chọn công ty chứng khoán', description: 'Tiêu chí và kiến thức bổ sung trước khi bạn quyết định.', articles: articles.filter((entry) => !['company', 'comparison', 'account'].includes(entry.data.reviewType ?? '')) },
-].map((group) => ({ ...group, articles: group.articles.sort((a, b) => a.data.order - b.data.order) }));
+  { id: 'so-sanh-chuyen-sau', title: 'So sánh hai công ty', articles: articles.filter((entry) => entry.data.reviewType === 'comparison') },
+  { id: 'huong-dan-mo-tai-khoan', title: 'Hướng dẫn mở tài khoản', articles: articles.filter((entry) => entry.data.reviewType === 'account') },
+  { id: 'bai-viet', title: 'Kinh nghiệm chọn công ty', articles: articles.filter((entry) => !['company', 'comparison', 'account'].includes(entry.data.reviewType ?? '')) },
+].map((group) => ({ ...group, articles: group.articles.sort((a, b) => a.data.order - b.data.order) })).filter((group) => group.articles.length);
 const editorialPairs = articles.filter((entry) => entry.data.reviewType === 'comparison' && entry.data.brokers?.length === 2).map((entry) => ({ slugs: entry.data.brokers!.map((broker) => broker.slug), href: getArticlePath(entry) }));
+
+// Ending soonest first; offers without an end date last.
+const byEndDate = (a: { endsAt: string | null }, b: { endsAt: string | null }) => (a.endsAt ?? '9999').localeCompare(b.endsAt ?? '9999');
+const activeOffers = getOffers().sort(byEndDate);
+const isZeroFeeOffer = (offer: (typeof activeOffers)[number]) => offer.metric === 'stocks' && /^0đ/.test(offer.badge ?? '');
+
 const brokers = reviewCatalog.brokers.map((slug) => {
-  const profile = brokerRegistry[slug];
+  const profile = brokerMeta[slug];
   if (!profile) throw new Error(`Missing broker profile: ${slug}`);
-  return { ...profile, article: companyArticles.get(slug), coverage: metricKeys.filter((metric) => getPolicy(slug, metric)).length };
+  const offers = activeOffers.filter((offer) => offer.broker === slug);
+  return {
+    ...profile,
+    article: companyArticles.get(slug),
+    account: accountArticles.get(slug),
+    outbound: getOutboundLink(slug),
+    offers,
+    zeroFee: getPolicy(slug, 'stocks')?.value === 0 || offers.some(isZeroFeeOffer),
+    coverage: metricKeys.filter((metric) => getPolicy(slug, metric)).length,
+  };
 }).sort((a, b) => b.coverage - a.coverage || a.shortName.localeCompare(b.shortName, 'vi'));
-const sourcedCount = brokers.filter((broker) => broker.coverage > 0).length;
-const lastChecked = reviewCatalog.policies.filter((policy) => policy.status === 'published').map((policy) => policy.checkedAt).sort().at(-1);
-const title = 'Review & so sánh công ty chứng khoán';
-const description = 'So sánh phí cổ phiếu, lãi margin, phí phái sinh và ứng trước tiền bán. Xem điều kiện, nguồn chính thức và bài review từng công ty chứng khoán.';
+
+const lastChecked = [...reviewCatalog.policies, ...reviewCatalog.offers].map((item) => item.checkedAt).sort().at(-1);
+const formatDate = (iso?: string | null) => iso ? iso.split('-').reverse().join('/') : undefined;
+const shortDate = (iso: string) => formatDate(iso)!.slice(0, 5);
+const year = todayVN().slice(0, 4);
+const missingCells = brokers.reduce((sum, broker) => sum + metricKeys.length - broker.coverage, 0);
+const offerCounts = metricKeys.map((metric) => ({ metric, count: activeOffers.filter((offer) => offer.metric === metric).length })).filter((item) => item.count);
+const topicLinks = [
+  ['review-cong-ty-chung-khoan-cho-nguoi-moi', 'Chọn công ty cho người mới'],
+  ['margin-la-gi', 'Margin là gì?'],
+  ['cat-margin-la-gi', 'Khi nào bị cắt margin?'],
+  ['phai-sinh-la-gi', 'Phái sinh là gì?'],
+].map(([slug, label]) => ({ label, entry: allArticles.find((entry) => entry.slug === slug) })).filter((link) => link.entry);
+const faq = [
+  { question: 'Số liệu phí trong bảng lấy từ đâu?', answer: 'Từ biểu phí, chính sách ký quỹ và thể lệ do từng công ty chứng khoán công bố trên website chính thức. Bấm biểu tượng ⓘ cạnh mỗi số để xem điều kiện, link nguồn và ngày Value Investing đối chiếu.' },
+  { question: 'Ô ghi "Chưa xác minh" nghĩa là gì?', answer: 'Value Investing chưa đọc được tài liệu chính thức nêu mức đó, thường vì website công ty chặn tải hoặc biểu phí không ghi rõ. Ô trống không có nghĩa là phí 0đ. Bấm ⓘ để xem lý do cụ thể.' },
+  { question: 'Phí giao dịch trong bảng đã gồm phí Sở chưa?', answer: 'Tùy công ty, và thông tin này nằm trong phần ⓘ của từng ô. Phí phái sinh trong bảng là phần công ty chứng khoán thu, chưa gồm phí Sở và phí VSDC.' },
+  { question: 'Ưu đãi khác mức phí chuẩn thế nào?', answer: 'Mức chuẩn áp dụng lâu dài cho mọi khách. Ưu đãi chỉ áp trong thời gian ngắn, cho nhóm khách nhất định và thường có hạn mức. Bảng tách hai loại này để bạn không nhầm mức khuyến mãi là mức lâu dài.' },
+  { question: 'Có nên chọn công ty chứng khoán chỉ vì phí rẻ nhất?', answer: 'Không nên. Với tài khoản giao dịch 50 triệu đồng mỗi tháng, chênh lệch 0,05% phí chỉ khoảng 25.000đ. Lãi margin, độ ổn định của app và chất lượng hỗ trợ thường ảnh hưởng tới bạn nhiều hơn.' },
+];
+const title = `So sánh ${brokers.length} công ty chứng khoán ${year}: phí, margin, phái sinh`;
+const description = `So sánh phí giao dịch, lãi margin, phí phái sinh và ứng trước của ${brokers.length} công ty chứng khoán, kèm ${activeOffers.length} ưu đãi đang chạy. Mỗi số liệu có nguồn chính thức.`;
 const pageUrl = new URL(url('/reviews/'), Astro.site).toString();
 const schemaNodes = buildCollectionPageNodes({
   siteUrl: Astro.site?.toString() ?? '', pageUrl, title, description,
   breadcrumb: [{ name: 'Trang chủ', item: Astro.site?.toString() ?? '' }, { name: 'Reviews', item: pageUrl }],
-  items: brokers.filter((broker) => broker.article).map((broker) => ({ name: broker.name, url: new URL(getArticlePath(broker.article!), Astro.site).toString() })),
+  items: brokers.map((broker) => ({ name: broker.name, url: broker.article ? new URL(getArticlePath(broker.article), Astro.site).toString() : `${pageUrl}#ctck-${broker.slug}` })),
+  faq,
 });
 ---
 <BaseLayout title={title} description={description} schemaNodes={schemaNodes}>
   <div class="review-hub" data-review-directory data-today={todayVN()} data-editorial-pairs={JSON.stringify(editorialPairs)}>
     <header class="review-hero"><div class="container">
       <Breadcrumb items={[{ label: 'Trang chủ', href: '/' }, { label: 'Reviews' }]} />
-      <h1>Review công ty chứng khoán</h1>
-      <p class="lead">Hiểu chi phí. Cân nhắc lựa chọn. Bắt đầu giao dịch.</p>
-      <p class="review-coverage">{brokers.length} công ty · {sourcedCount} công ty có số liệu kèm nguồn · Đối chiếu {lastChecked?.split('-').reverse().join('/')}</p>
-      <nav class="review-paths" aria-label="Chọn bước tìm hiểu">
-        <a href="#bang-so-sanh"><span>Tìm hiểu</span><strong>Review & biểu phí →</strong></a>
-        <a href="#so-sanh-chuyen-sau"><span>Cân nhắc</span><strong>So sánh hai công ty →</strong></a>
-        <a href="#huong-dan-mo-tai-khoan"><span>Bắt đầu</span><strong>Cách mở tài khoản →</strong></a>
-      </nav>
+      <h1>So sánh {brokers.length} công ty chứng khoán {year}</h1>
+      <p class="lead">Phí, lãi margin và ưu đãi lấy từ biểu phí chính thức. Bấm ⓘ để xem nguồn của từng con số.</p>
+      <dl class="review-kpis">
+        <div><dt>Công ty</dt><dd>{brokers.length}</dd></div>
+        <div><dt>Ưu đãi đang chạy</dt><dd><a href={url('/reviews/uu-dai/')}>{activeOffers.length}</a></dd></div>
+        <div><dt>Kiểm chứng</dt><dd>{formatDate(lastChecked)}</dd></div>
+      </dl>
     </div></header>
+
+    <nav class="review-subnav" aria-label="Nội dung mục review"><div class="container">
+      <a href="#bang-so-sanh">Bảng phí</a><a href={url('/reviews/uu-dai/')}>Ưu đãi</a><a href="#so-sanh-chuyen-sau">So sánh hai công ty</a><a href="#huong-dan-mo-tai-khoan">Mở tài khoản</a><a href="#cau-hoi">Hỏi đáp</a>
+    </div></nav>
+
     <div class="container">
-      <nav class="review-subnav" aria-label="Nội dung mục review"><a href="#bang-so-sanh">Review & biểu phí</a><a href="#so-sanh-chuyen-sau">So sánh hai công ty</a><a href="#huong-dan-mo-tai-khoan">Mở tài khoản</a><a href="#uu-dai">Ưu đãi</a><a href="#cach-danh-gia">Nguồn dữ liệu</a></nav>
-      <section class="review-section" id="bang-so-sanh" aria-labelledby="comparison-title">
-        <div class="review-section-heading"><h2 id="comparison-title">So sánh chi phí</h2><p>Mức tham chiếu cho khách tự giao dịch. Bấm tên để đọc review, chọn công ty để so sánh.</p></div>
-        <form class="review-controls" role="search" onsubmit="return false">
-          <div class="review-control-row">
-            <label for="broker-search">Tìm công ty chứng khoán<input id="broker-search" name="q" type="search" placeholder="Tên công ty, ví dụ SSI, TCBS…" autocomplete="off" /></label>
-            <label for="broker-sort">Sắp xếp<select id="broker-sort" name="sort"><option value="coverage">Có dữ liệu trước</option><option value="name">Tên công ty</option><option value="stocks">Phí cổ phiếu</option><option value="margin">Lãi margin (%/năm, rồi %/ngày)</option><option value="derivatives">Phí phái sinh</option></select></label>
-          </div>
-          <fieldset class="review-filters"><legend>Lọc theo nhu cầu</legend>
-            <label><input type="checkbox" name="sourced" /> Có số liệu kèm nguồn</label>
-            <label><input type="checkbox" name="low-fee" /> Phí cổ phiếu cố định ≤ 0,1%</label>
-            <label><input type="checkbox" name="zero-derivatives" /> Phái sinh 0đ phần CTCK thu</label>
+      <section class="review-section review-section--table" id="bang-so-sanh" aria-labelledby="comparison-title">
+        <h2 id="comparison-title" class="sr-only">Bảng phí công ty chứng khoán</h2>
+        <form class="review-toolbar" role="search" onsubmit="return false">
+          <label class="review-search"><span class="sr-only">Tìm công ty chứng khoán</span><input id="broker-search" name="q" type="search" placeholder="Tìm SSI, TCBS, VPS…" autocomplete="off" /></label>
+          <label class="review-sort"><span>Sắp xếp</span><select id="broker-sort" name="sort">
+            <option value="coverage">Mặc định</option>
+            <option value="stocks">Phí cổ phiếu thấp</option>
+            <option value="margin">Lãi margin thấp</option>
+            <option value="derivatives">Phí phái sinh thấp</option>
+            <option value="advance">Ứng trước thấp</option>
+            <option value="offers">Nhiều ưu đãi</option>
+            <option value="name">Tên A–Z</option>
+          </select></label>
+          <fieldset class="review-filters"><legend class="sr-only">Lọc nhanh</legend>
+            <label class="review-chip"><input type="checkbox" name="has-offer" /> Có ưu đãi</label>
+            <label class="review-chip"><input type="checkbox" name="zero-fee" /> Có gói phí 0đ</label>
+            <label class="review-chip"><input type="checkbox" name="low-margin" /> Margin dưới 12%</label>
+            <label class="review-chip"><input type="checkbox" name="low-fee" /> Phí ≤ 0,1%</label>
+            <label class="review-chip"><input type="checkbox" name="zero-derivatives" /> Phái sinh 0đ</label>
+            <label class="review-chip"><input type="checkbox" name="api" /> Có API giao dịch</label>
           </fieldset>
         </form>
-        <div class="review-result-bar"><p id="broker-count" aria-live="polite" aria-atomic="true">{brokers.length} công ty · {lastChecked ? `Đối chiếu gần nhất ${lastChecked.split('-').reverse().join('/')}` : 'Đang bổ sung nguồn'}</p><button class="review-reset" type="button" data-reset-filters>Xóa bộ lọc</button></div>
-        <p class="review-scroll-hint">Vuốt ngang để xem các khoản phí.</p>
-        <noscript><p class="review-note">Bạn đang xem toàn bộ bảng. Bật JavaScript để tìm kiếm, lọc và chọn công ty so sánh.</p></noscript>
-        <div class="review-table-scroll" tabindex="0" role="region" aria-label="Bảng chi phí công ty chứng khoán, có thể cuộn ngang">
-          <table class="broker-table" id="broker-directory" data-policy-comparison="directory"><caption class="sr-only">Chi phí theo gói tiêu chuẩn, chưa tính toàn bộ thuế và chi phí phát sinh.</caption>
+        <div class="review-result-bar"><p id="broker-count" aria-live="polite" aria-atomic="true">{brokers.length} công ty</p><button class="review-reset" type="button" data-reset-filters>Bỏ lọc</button></div>
+        <noscript><p class="review-note">Bật JavaScript để tìm kiếm, lọc và chọn công ty so sánh.</p></noscript>
+        <div class="review-table-scroll" tabindex="0" role="region" aria-label="Bảng chi phí công ty chứng khoán" data-review-offers>
+          <table class="broker-table" id="broker-directory" data-policy-comparison="directory"><caption class="sr-only">Mức phí chuẩn của từng công ty; ưu đãi có hạn ghi riêng bên dưới số.</caption>
             <colgroup><col class="broker-name-column" /><col /><col /><col /><col /><col class="broker-action-column" /></colgroup>
             <thead><tr>
               <th scope="col" data-sort-column="name"><button type="button" data-sort="name">Công ty <span data-sort-indicator aria-hidden="true">↕</span></button></th>
-              <th scope="col" data-sort-column="stocks"><button type="button" data-sort="stocks">Phí cổ phiếu <span data-sort-indicator aria-hidden="true">↕</span></button><small>% mỗi lệnh</small></th>
-              <th scope="col" data-sort-column="margin"><button type="button" data-sort="margin">Lãi margin <span data-sort-indicator aria-hidden="true">↕</span></button><small>Theo kỳ công bố</small></th>
-              <th scope="col" data-sort-column="derivatives"><button type="button" data-sort="derivatives">Phí phái sinh <span data-sort-indicator aria-hidden="true">↕</span></button><small>Phần CTCK / HĐ</small></th>
-              <th scope="col">Ứng trước<small>Phí ứng tiền bán</small></th><th scope="col">Tìm hiểu thêm</th>
+              <th scope="col" data-sort-column="stocks"><button type="button" data-sort="stocks">Phí cổ phiếu <span data-sort-indicator aria-hidden="true">↕</span></button><small>% giá trị lệnh</small></th>
+              <th scope="col" data-sort-column="margin"><button type="button" data-sort="margin">Lãi margin <span data-sort-indicator aria-hidden="true">↕</span></button><small>mức chuẩn</small></th>
+              <th scope="col" data-sort-column="derivatives"><button type="button" data-sort="derivatives">Phí phái sinh <span data-sort-indicator aria-hidden="true">↕</span></button><small>phần CTCK thu / HĐ</small></th>
+              <th scope="col" data-sort-column="advance"><button type="button" data-sort="advance">Ứng trước <span data-sort-indicator aria-hidden="true">↕</span></button><small>tiền bán</small></th>
+              <th scope="col"><span class="sr-only">Hành động</span></th>
             </tr></thead>
-            <tbody>{brokers.map((broker) => {
-              const outbound = getOutboundLink(broker.slug);
-              return <tr data-broker-row data-broker={broker.slug} data-name={broker.name} data-short-name={broker.shortName}>
-                <td class="broker-identity"><a class="broker-name" href={broker.article ? getArticlePath(broker.article) : outbound?.url}>{broker.shortName}</a>{broker.article && <span class="broker-short-description">Đọc đánh giá →</span>}</td>
-                {metricKeys.map((metric) => <td><PolicyValue broker={broker.slug} metric={metric} /></td>)}
-                <td><div class="broker-actions">
-                  {articles.find((entry) => entry.data.reviewType === 'account' && entry.data.brokers?.[0]?.slug === broker.slug) && <a href={getArticlePath(articles.find((entry) => entry.data.reviewType === 'account' && entry.data.brokers?.[0]?.slug === broker.slug)!)}>Cách mở tài khoản →</a>}
+            <tbody>{brokers.map((broker) => (
+              <tr data-broker-row data-broker={broker.slug} data-name={broker.name} data-short-name={broker.shortName} id={`ctck-${broker.slug}`}
+                data-offers={broker.offers.length} data-zero-fee={broker.zeroFee ? '1' : undefined} data-api={broker.tradingApi ? '1' : undefined}>
+                <th scope="row" class="broker-identity">
+                  {broker.article ? <a class="broker-name" href={getArticlePath(broker.article)}>{broker.shortName}</a> : <span class="broker-name">{broker.shortName}</span>}
+                  {broker.parent && <span class="broker-parent">Thuộc {broker.parent}</span>}
+                  {broker.tradingApi && <a class="broker-tag" href={broker.tradingApi.url} target="_blank" rel="noopener noreferrer" title={broker.tradingApi.name}>API</a>}
+                </th>
+                {metricKeys.map((metric) => {
+                  const offer = broker.offers.find((item) => item.metric === metric);
+                  return <td data-label={metricLabels[metric]}>
+                    <PolicyValue broker={broker.slug} metric={metric} compact />
+                    {offer && <a class="cell-offer" href={`${url('/reviews/uu-dai/')}#uu-dai-${offer.id}`} data-offer data-offer-start={offer.startsAt} data-offer-end={offer.endsAt}
+                      title={`${offer.title}: ${offer.benefit}`}><span class="cell-offer-mark" aria-hidden="true"></span>{offer.badge ?? offer.benefit}{offer.endsAt && <span class="cell-offer-date"> · đến {shortDate(offer.endsAt)}</span>}</a>}
+                  </td>;
+                })}
+                <td class="broker-action-cell"><div class="broker-actions">
+                  {broker.outbound?.kind === 'partner'
+                    ? <a class="broker-cta" href={broker.outbound.url} target="_blank" rel="sponsored noopener noreferrer" data-broker-outbound={broker.slug} data-link-kind="partner">Mở tài khoản ↗<small>Liên kết đối tác</small></a>
+                    : broker.account && <a class="broker-cta" href={getArticlePath(broker.account)}>Mở tài khoản</a>}
+                  <div class="broker-links">
+                    {broker.article && <a href={getArticlePath(broker.article)}>Đánh giá</a>}
+                    {broker.outbound?.kind === 'official' && <a href={broker.outbound.url} target="_blank" rel="noopener noreferrer" data-broker-outbound={broker.slug} data-link-kind="official" title="Website chính thức, không phải liên kết đối tác">Website ↗</a>}
+                  </div>
                   <label class="broker-compare-label"><input type="checkbox" data-compare={broker.slug} aria-label={`Chọn ${broker.shortName} để so sánh`} /> So sánh</label>
                 </div></td>
-              </tr>;
-            })}</tbody>
+              </tr>
+            ))}</tbody>
           </table>
         </div>
-        <details class="review-reading-guide"><summary>Cách đọc bảng & màu sắc</summary><p>Sắc xanh đậm nhấn mạnh chi phí thấp hơn. Chỉ so mức cố định cùng đơn vị và cách gồm phí; mức theo năm và ngày được tách nhóm. Đây không phải điểm chất lượng công ty. Phí 0đ có thể chỉ là phần CTCK thu.</p></details>
-        <div class="review-empty" data-directory-empty hidden><h3>Không tìm thấy công ty phù hợp</h3><p>Thử tên khác hoặc bỏ bớt điều kiện lọc. Ô chưa xác minh không được coi là mức phí 0đ.</p><button class="btn-secondary" type="button" data-reset-filters>Xóa bộ lọc</button></div>
-        <p><button class="btn-secondary" type="button" data-show-more hidden>Xem thêm công ty</button></p>
+        <div class="review-empty" data-directory-empty hidden><p>Không có công ty nào khớp bộ lọc.</p><button class="btn-secondary" type="button" data-reset-filters>Bỏ lọc</button></div>
+        <p class="review-legend"><span class="cell-offer-mark" aria-hidden="true"></span> Ưu đãi có điều kiện, kèm hạn · Nền xanh: mức thấp trong nhóm cùng cách tính · ⓘ điều kiện và nguồn{missingCells > 0 && ` · ${missingCells} ô chưa xác minh`}</p>
+        {topicLinks.length > 0 && <nav class="review-topics" aria-label="Kiến thức liên quan"><span>Tìm hiểu thêm</span>{topicLinks.map((link) => <a href={getArticlePath(link.entry!)}>{link.label}</a>)}</nav>}
         <div class="review-compare-tray" data-compare-tray hidden>
           <div><p data-compare-names></p><small data-compare-status role="status">Chọn ít nhất 2 công ty.</small></div>
           <div class="review-tray-actions"><a class="btn-primary" data-selected-editorial href={url('/reviews/')} hidden>Đọc bài so sánh →</a><a class="btn-primary" data-compare-link href={url('/reviews/so-sanh/')} aria-disabled="true">Đối chiếu phí đã chọn →</a><button class="review-reset" type="button" data-clear-compare>Bỏ chọn</button></div>
         </div>
       </section>
-      <section class="review-section" id="uu-dai"><div class="review-section-heading"><h2>Ưu đãi, kèm điều kiện</h2><p>Hạn đăng ký và thời gian hưởng ưu đãi là hai mốc khác nhau. Kiểm tra thể lệ tại nguồn trước khi đăng ký.</p></div><ReviewOffers /></section>
-      {articleGroups.filter((group) => group.articles.length).map((group) => <section class="review-section" id={group.id}><div class="review-section-heading"><h2>{group.title}</h2><p>{group.description}</p></div>
-        <ul class="review-article-list">{group.articles.map((article) => <li><a href={getArticlePath(article)}>{article.data.title}</a><small>{article.data.readingTime}</small></li>)}</ul>
+
+      <section class="review-section" id="uu-dai" aria-labelledby="offers-title">
+        <div class="review-section-head"><h2 id="offers-title">Ưu đãi sắp hết hạn</h2><a href={url('/reviews/uu-dai/')}>Xem tất cả {activeOffers.length} ưu đãi →</a></div>
+        <p class="review-offer-counts">{offerCounts.map((item) => <a href={`${url('/reviews/uu-dai/')}#${item.metric}`}>{metricLabels[item.metric]} <b>{item.count}</b></a>)}</p>
+        <ul class="offer-list offer-list--compact" data-review-offers>
+          {activeOffers.filter((offer) => offer.endsAt).slice(0, 5).map((offer) => (
+            <li class="offer-row" data-offer data-offer-start={offer.startsAt} data-offer-end={offer.endsAt}>
+              <span class="offer-broker">{brokerMeta[offer.broker]?.shortName}</span>
+              <span class="offer-main"><strong>{offer.benefit}</strong><small>{offer.title} · {metricLabels[offer.metric]}</small></span>
+              <span class="offer-end">đến {formatDate(offer.endsAt)}</span>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      {articleGroups.map((group) => <section class="review-section" id={group.id}>
+        <div class="review-section-head"><h2>{group.title}</h2></div>
+        <ul class="review-article-grid">{group.articles.map((article) => <li><a href={getArticlePath(article)}>{article.data.title}</a><small>{article.data.readingTime}</small></li>)}</ul>
       </section>)}
-      <section class="review-section" id="cach-danh-gia"><div class="review-section-heading"><h2>Có nguồn để bạn tự kiểm tra</h2><p>Đánh giá biên tập và dữ liệu chi phí được trình bày riêng. Chúng tôi chưa dùng điểm sao cũ để xếp hạng trong bảng này.</p></div>
-        <div class="review-method"><div><h3>Đối chiếu từ tài liệu gốc</h3><p>Ưu tiên biểu phí, chính sách và thể lệ do công ty công bố. Mỗi mức có nguồn, ngày kiểm tra và điều kiện áp dụng. Nguồn quá 30 ngày được nhắc kiểm tra lại.</p></div><div><h3>So sánh cùng điều kiện</h3><p>Mức chuẩn tách khỏi ưu đãi. Sắp xếp dùng mức đầu của khoảng giá trị, chưa phải tổng chi phí của mọi tài khoản. Ô thiếu dữ liệu luôn đứng sau mức đã có số liệu.</p></div></div>
-        <details class="review-alternatives"><summary>Danh sách nguồn đã đối chiếu ({reviewCatalog.sources.length})</summary><ul>{reviewCatalog.sources.map((source) => <li><a href={source.url} target="_blank" rel="noopener noreferrer">{source.publisher}: {source.title} ↗</a></li>)}</ul></details>
-        <p>Phát hiện số liệu cần sửa? <a href={url('/contact/')}>Gửi thông tin cho chúng tôi</a>. Xem <a href={url('/sources-policy/')}>chính sách nguồn</a> và <a href={url('/corrections-policy/')}>quy trình đính chính</a>.</p>
-        <p class="review-note">Nội dung nhằm cung cấp thông tin, không phải tư vấn đầu tư cá nhân. Các liên kết hiện được ghi rõ là website chính thức hoặc liên kết đối tác tại vị trí hiển thị.</p>
+
+      <section class="review-section" id="cau-hoi" aria-labelledby="faq-title">
+        <div class="review-section-head"><h2 id="faq-title">Câu hỏi thường gặp</h2></div>
+        <div class="review-faq">{faq.map((item) => <details><summary>{item.question}</summary><p>{item.answer}</p></details>)}</div>
+      </section>
+
+      <section class="review-section review-trust" id="cach-danh-gia">
+        <p>Số liệu đối chiếu từ {reviewCatalog.sources.length} tài liệu chính thức. Mức chuẩn và ưu đãi tách riêng; nguồn quá 30 ngày được đánh dấu cần kiểm tra lại. Thấy số liệu sai? <a href={url('/contact/')}>Báo cho Value Investing</a> · <a href={url('/sources-policy/')}>Chính sách nguồn</a> · <a href={url('/cong-khai-doi-tac/')}>Công khai đối tác</a></p>
+        <details class="review-alternatives"><summary>Danh sách nguồn ({reviewCatalog.sources.length})</summary><ul>{reviewCatalog.sources.map((source) => <li><a href={source.url} target="_blank" rel="noopener noreferrer">{source.publisher}: {source.title} ↗</a></li>)}</ul></details>
+        <p class="review-note">Không phải khuyến nghị đầu tư. Vay ký quỹ và giao dịch phái sinh có thể làm bạn mất nhiều hơn số vốn ban đầu.</p>
       </section>
     </div>
   </div>

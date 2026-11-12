@@ -6,7 +6,6 @@ if (directory) {
   const rows = Array.from(tbody.querySelectorAll<HTMLTableRowElement>('[data-broker-row]'));
   const count = directory.querySelector<HTMLElement>('#broker-count')!;
   const empty = directory.querySelector<HTMLElement>('[data-directory-empty]')!;
-  const more = directory.querySelector<HTMLButtonElement>('[data-show-more]')!;
   const filters = Array.from(directory.querySelectorAll<HTMLInputElement>('.review-filters input'));
   const params = new URLSearchParams(location.search);
   const validSorts = Array.from(sort.options).map((option) => option.value);
@@ -14,7 +13,6 @@ if (directory) {
   sort.value = validSorts.includes(params.get('sort') ?? '') ? params.get('sort')! : 'coverage';
   let direction: 'asc' | 'desc' = params.get('dir') === 'desc' ? 'desc' : 'asc';
   filters.forEach((filter) => { filter.checked = params.get(filter.name) === '1'; });
-  let visibleLimit = 8;
 
   const normalize = (value: string) => value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/đ/g, 'd');
   const today = () => new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Ho_Chi_Minh', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
@@ -22,7 +20,9 @@ if (directory) {
     const policy = row.querySelector<HTMLElement>(`[data-policy-metric="${metric}"]`);
     if (!policy || !policy.dataset.policyValue || (policy.dataset.policyEnd && policy.dataset.policyEnd < today()) || (policy.dataset.policyStart && policy.dataset.policyStart > today())) return undefined;
     const number = Number(policy.dataset.policyValue);
-    return Number.isFinite(number) ? number : undefined;
+    if (!Number.isFinite(number)) return undefined;
+    // Compare daily and yearly margin/advance rates on one scale (365-day convention).
+    return policy.dataset.policyUnit === 'percent-day' ? number * 365 : number;
   };
   const has = (name: string) => filters.find((filter) => filter.name === name)?.checked;
   const coverage = (row: HTMLElement) => ['stocks', 'margin', 'derivatives', 'advance'].filter((metric) => value(row, metric) !== undefined).length;
@@ -34,20 +34,17 @@ if (directory) {
       return normalize(`${row.dataset.name} ${row.dataset.shortName} ${row.dataset.broker}`).includes(query) &&
         (!has('sourced') || coverage(row) > 0) &&
         (!has('low-fee') || (stocks !== undefined && stocks <= .1 && row.querySelector<HTMLElement>('[data-policy-metric="stocks"]')?.dataset.policyQualifier === 'fixed')) &&
-        (!has('zero-derivatives') || value(row, 'derivatives') === 0);
+        (!has('zero-derivatives') || value(row, 'derivatives') === 0) &&
+        (!has('has-offer') || Number(row.dataset.offers ?? 0) > 0) &&
+        (!has('zero-fee') || row.dataset.zeroFee === '1') &&
+        (!has('api') || row.dataset.api === '1') &&
+        (!has('low-margin') || (value(row, 'margin') ?? Infinity) < 12);
     });
     filtered.sort((a, b) => {
       const name = (a.dataset.shortName ?? '').localeCompare(b.dataset.shortName ?? '', 'vi');
       if (sort.value === 'coverage') return coverage(b) - coverage(a) || name;
       if (sort.value === 'name') return direction === 'asc' ? name : -name;
-      if (sort.value === 'margin') {
-        const unitRank = (row: HTMLElement) => {
-          const unit = row.querySelector<HTMLElement>('[data-policy-metric="margin"]')?.dataset.policyUnit;
-          return value(row, 'margin') === undefined ? 2 : unit === 'percent-year' ? 0 : 1;
-        };
-        const unitOrder = unitRank(a) - unitRank(b);
-        if (unitOrder) return unitOrder;
-      }
+      if (sort.value === 'offers') return Number(b.dataset.offers ?? 0) - Number(a.dataset.offers ?? 0) || name;
       const left = value(a, sort.value), right = value(b, sort.value);
       if (left === undefined && right === undefined) return name;
       if (left === undefined) return 1;
@@ -55,11 +52,9 @@ if (directory) {
       return (direction === 'asc' ? left - right : right - left) || name;
     });
     rows.forEach((row) => { row.hidden = true; });
-    filtered.forEach((row, index) => { row.hidden = index >= visibleLimit; tbody.append(row); });
+    filtered.forEach((row) => { row.hidden = false; tbody.append(row); });
     empty.hidden = filtered.length > 0;
-    more.hidden = filtered.length <= visibleLimit;
-    more.textContent = `Xem thêm ${Math.min(8, filtered.length - visibleLimit)} công ty`;
-    count.textContent = `Hiển thị ${Math.min(visibleLimit, filtered.length)}/${filtered.length} công ty phù hợp · ${rows.length} công ty trong danh bạ`;
+    count.textContent = filtered.length === rows.length ? `${rows.length} công ty` : `${filtered.length}/${rows.length} công ty phù hợp`;
     directory!.querySelectorAll<HTMLElement>('[data-sort-column]').forEach((header) => {
       if (header.dataset.sortColumn === sort.value) header.setAttribute('aria-sort', direction === 'asc' ? 'ascending' : 'descending');
       else header.removeAttribute('aria-sort');
@@ -77,17 +72,16 @@ if (directory) {
       history.replaceState(null, '', next);
     }
   }
-  search.addEventListener('input', () => { visibleLimit = 8; render(); });
-  sort.addEventListener('change', () => { direction = 'asc'; visibleLimit = 8; render(); });
-  filters.forEach((filter) => filter.addEventListener('change', () => { visibleLimit = 8; render(); }));
+  search.addEventListener('input', () => { render(); });
+  sort.addEventListener('change', () => { direction = 'asc'; render(); });
+  filters.forEach((filter) => filter.addEventListener('change', () => { render(); }));
   directory.querySelectorAll<HTMLButtonElement>('[data-sort]').forEach((button) => button.addEventListener('click', () => {
     direction = sort.value === button.dataset.sort && direction === 'asc' ? 'desc' : 'asc';
-    sort.value = button.dataset.sort!; visibleLimit = 8; render();
+    sort.value = button.dataset.sort!; render();
   }));
   directory.querySelectorAll<HTMLButtonElement>('[data-reset-filters]').forEach((button) => button.addEventListener('click', () => {
-    search.value = ''; sort.value = 'coverage'; direction = 'asc'; filters.forEach((filter) => { filter.checked = false; }); visibleLimit = 8; render(); search.focus();
+    search.value = ''; sort.value = 'coverage'; direction = 'asc'; filters.forEach((filter) => { filter.checked = false; }); render(); search.focus();
   }));
-  more.addEventListener('click', () => { visibleLimit += 8; render(false); });
   window.addEventListener('pageshow', () => render(false));
   document.addEventListener('review:datechange', () => render(false));
   render(false);

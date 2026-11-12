@@ -3,7 +3,7 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import Breadcrumb from '@/components/Breadcrumb.astro';
 import PolicyValue from '@/components/review/PolicyValue.astro';
-import { brokerRegistry } from '@/data/brokers';
+import { brokerMeta } from '@/data/brokers';
 import { reviewCatalog, getOutboundLink } from '@/data/review-catalog';
 import { metricKeys, metricLabels } from '@/lib/review-data.mjs';
 import { getArticlePath, url } from '@/data/site';
@@ -13,7 +13,7 @@ const articles = reviewArticles.filter((entry) => entry.data.reviewType === 'com
 const articleByBroker = new Map(articles.map((entry) => [entry.data.brokers?.[0]?.slug, entry]));
 const accountByBroker = new Map(reviewArticles.filter((entry) => entry.data.reviewType === 'account').map((entry) => [entry.data.brokers?.[0]?.slug, entry]));
 const editorialComparisons = reviewArticles.filter((entry) => entry.data.reviewType === 'comparison' && entry.data.brokers?.length === 2);
-const brokers = reviewCatalog.brokers.map((slug) => brokerRegistry[slug]).sort((a, b) => a.shortName.localeCompare(b.shortName, 'vi'));
+const brokers = reviewCatalog.brokers.map((slug) => brokerMeta[slug]).sort((a, b) => a.shortName.localeCompare(b.shortName, 'vi'));
 const defaults = ['tcbs', 'ssi', 'vndirect'];
 ---
 <BaseLayout title="So sánh công ty chứng khoán theo lựa chọn" description="Chọn 2 hoặc 3 công ty chứng khoán để xem phí cổ phiếu, lãi margin, phí phái sinh và điều kiện áp dụng cạnh nhau." noindex={true}>

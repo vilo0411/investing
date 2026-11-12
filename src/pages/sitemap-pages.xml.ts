@@ -14,6 +14,8 @@ export const GET: APIRoute = ({ site }) => {
     "/corrections-policy/",
     "/sources-policy/",
     "/disclaimer/",
+    "/cong-khai-doi-tac/",
+    "/reviews/uu-dai/",
     "/so-do-trang/",
     "/search/",
     `/author/${author.slug}/`,

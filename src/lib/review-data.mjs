@@ -46,6 +46,8 @@ export const reviewDataSchema = z.object({
     id, broker: id, metric: z.enum(metricKeys), title: text, benefit: text, conditions: text,
     sourceId: id, checkedAt: date, startsAt: date.nullable(), endsAt: date.nullable(),
     benefitDuration: text, status: z.enum(['draft', 'published', 'ended']),
+    /** Short label shown inside the fee table cell, e.g. "0đ 90 ngày". */
+    badge: text.optional(),
   })),
   links: z.array(z.object({ broker: id, url: webUrl, kind: z.enum(['official', 'partner']), disclosure: text })),
   history: z.array(z.object({ at: text, note: text, changes: z.array(text) })),
@@ -111,7 +113,15 @@ export function isStale(checkedAt, today = todayVN()) {
 
 export function formatPolicy(policy) {
   if (!policy) return 'Chưa xác minh';
-  const number = (value) => new Intl.NumberFormat('vi-VN', { maximumFractionDigits: 8 }).format(value);
+  // Daily rates are published with up to 8 decimals; 4 is enough to compare and stays readable.
+  const number = (value) => new Intl.NumberFormat('vi-VN', { maximumFractionDigits: policy.unit === 'percent-day' ? 4 : 8 }).format(value);
   const suffix = { percent: '%', 'percent-year': '%/năm', 'percent-day': '%/ngày', 'vnd-contract': 'đ/HĐ' };
   return `${policy.qualifier === 'from' ? 'Từ ' : ''}${number(policy.value)}${policy.maxValue !== null ? `–${number(policy.maxValue)}` : ''}${suffix[policy.unit]}`;
+}
+
+/** Annual equivalent of a daily rate (365-day convention used in Vietnamese margin tables). */
+export function annualizedRate(policy) {
+  if (!policy || policy.unit !== 'percent-day') return null;
+  const number = (value) => new Intl.NumberFormat('vi-VN', { maximumFractionDigits: 2 }).format(value * 365);
+  return `≈ ${number(policy.value)}${policy.maxValue !== null ? `–${number(policy.maxValue)}` : ''}%/năm`;
 }

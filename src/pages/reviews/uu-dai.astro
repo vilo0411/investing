@@ -1,0 +1,90 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Breadcrumb from '@/components/Breadcrumb.astro';
+import { brokerMeta } from '@/data/brokers';
+import { getOffers, getOutboundLink, sourceById } from '@/data/review-catalog';
+import { metricKeys, metricLabels, todayVN } from '@/lib/review-data.mjs';
+import { getArticlePath, url } from '@/data/site';
+import { buildCollectionPageNodes } from '@/lib/schema';
+import '@/styles/reviews.css';
+
+const articles = (await getCollection('articles')).filter((entry) => entry.data.category === 'reviews');
+const reviewOf = (slug: string, type: string) => articles.find((entry) => entry.data.reviewType === type && entry.data.brokers?.[0]?.slug === slug);
+// Ending soonest first; offers without an end date last.
+const offers = getOffers().sort((a, b) => (a.endsAt ?? '9999').localeCompare(b.endsAt ?? '9999') || a.broker.localeCompare(b.broker));
+const groups = metricKeys
+  .map((metric) => ({ metric, title: metric === 'stocks' ? 'Phí giao dịch cổ phiếu' : metricLabels[metric], offers: offers.filter((offer) => offer.metric === metric) }))
+  .filter((group) => group.offers.length);
+const brokerCount = new Set(offers.map((offer) => offer.broker)).size;
+const lastChecked = offers.map((offer) => offer.checkedAt).sort().at(-1);
+const formatDate = (iso?: string | null) => iso ? iso.split('-').reverse().join('/') : undefined;
+const year = todayVN().slice(0, 4);
+
+const title = `${offers.length} ưu đãi công ty chứng khoán đang chạy ${year}`;
+const description = `Tổng hợp ${offers.length} ưu đãi phí giao dịch, lãi margin và phí phái sinh của ${brokerCount} công ty chứng khoán, kèm điều kiện, hạn và thể lệ chính thức.`;
+const pageUrl = new URL(url('/reviews/uu-dai/'), Astro.site).toString();
+const siteUrl = Astro.site?.toString() ?? '';
+const schemaNodes = buildCollectionPageNodes({
+  siteUrl, pageUrl, title, description,
+  breadcrumb: [{ name: 'Trang chủ', item: siteUrl }, { name: 'Reviews', item: new URL(url('/reviews/'), Astro.site).toString() }, { name: 'Ưu đãi', item: pageUrl }],
+});
+---
+<BaseLayout title={title} description={description} schemaNodes={schemaNodes}>
+  <div class="review-hub">
+    <header class="review-hero"><div class="container">
+      <Breadcrumb items={[{ label: 'Trang chủ', href: '/' }, { label: 'Reviews', href: '/reviews/' }, { label: 'Ưu đãi' }]} />
+      <h1>Ưu đãi công ty chứng khoán đang chạy</h1>
+      <p class="lead">Chỉ đăng ưu đãi đã đọc thể lệ gốc. Ưu đãi nào cũng có điều kiện và hạn mức, nên bạn hãy đọc kỹ trước khi đăng ký.</p>
+      <dl class="review-kpis">
+        <div><dt>Ưu đãi</dt><dd>{offers.length}</dd></div>
+        <div><dt>Công ty</dt><dd>{brokerCount}</dd></div>
+        <div><dt>Kiểm chứng</dt><dd>{formatDate(lastChecked)}</dd></div>
+      </dl>
+    </div></header>
+    <nav class="review-subnav" aria-label="Loại ưu đãi"><div class="container">
+      {groups.map((group) => <a href={`#${group.metric}`}>{group.title} <b>{group.offers.length}</b></a>)}
+      <a href={url('/reviews/')}>← Bảng phí chuẩn</a>
+    </div></nav>
+    <div class="container" data-review-offers>
+      {groups.map((group) => (
+        <section class="review-section" id={group.metric} aria-labelledby={`${group.metric}-title`}>
+          <div class="review-section-head"><h2 id={`${group.metric}-title`}>{group.title}</h2><span>{group.offers.length} ưu đãi · sắp hết hạn trước</span></div>
+          <ul class="offer-list">
+            {group.offers.map((offer) => {
+              const broker = brokerMeta[offer.broker];
+              const review = reviewOf(offer.broker, 'company');
+              const account = reviewOf(offer.broker, 'account');
+              const outbound = getOutboundLink(offer.broker);
+              const source = sourceById[offer.sourceId];
+              return <li class="offer-row offer-row--full" id={`uu-dai-${offer.id}`} data-offer data-offer-start={offer.startsAt} data-offer-end={offer.endsAt}>
+                <div class="offer-broker">
+                  {review ? <a href={getArticlePath(review)}>{broker?.shortName ?? offer.broker}</a> : <span>{broker?.shortName ?? offer.broker}</span>}
+                </div>
+                <div class="offer-main">
+                  <strong>{offer.benefit}</strong>
+                  <span class="offer-title">{offer.title}</span>
+                  <details class="offer-conditions"><summary>Điều kiện</summary><p>{offer.conditions}</p><p>Thời gian hưởng: {offer.benefitDuration}</p></details>
+                </div>
+                <div class="offer-end">{offer.endsAt ? <>đến <b>{formatDate(offer.endsAt)}</b></> : <span class="offer-noend">Không ghi hạn</span>}</div>
+                <div class="offer-links">
+                  {source && <a href={source.url} target="_blank" rel="noopener noreferrer">Thể lệ ↗</a>}
+                  <small>kiểm {formatDate(offer.checkedAt)}</small>
+                  {outbound?.kind === 'partner'
+                    ? <a class="broker-cta" href={outbound.url} target="_blank" rel="sponsored noopener noreferrer" data-broker-outbound={offer.broker} data-link-kind="partner">Mở tài khoản ↗<small>Liên kết đối tác</small></a>
+                    : account && <a href={getArticlePath(account)}>Cách mở tài khoản</a>}
+                </div>
+              </li>;
+            })}
+          </ul>
+        </section>
+      ))}
+      <div class="review-empty" data-offers-empty hidden={offers.length > 0}><p>Chưa có ưu đãi đã xác minh đang chạy.</p></div>
+      <section class="review-section review-trust">
+        <p>Ưu đãi có thể dừng sớm khi hết hạn mức. "Không ghi hạn" nghĩa là thể lệ ghi áp dụng đến khi công ty có thông báo mới. Ưu đãi qua liên kết đối tác có thể khác với khi bạn tự mở tài khoản. Xem <a href={url('/cong-khai-doi-tac/')}>công khai đối tác</a>.</p>
+        <p class="review-note">Không phải khuyến nghị đầu tư. Lãi margin ưu đãi chỉ áp trong thời gian ngắn; sau đó lãi suất về mức chuẩn trong <a href={url('/reviews/')}>bảng phí</a>.</p>
+      </section>
+    </div>
+  </div>
+  <script src="../../scripts/review-runtime.ts"></script>
+</BaseLayout>
