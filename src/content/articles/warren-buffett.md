@@ -59,7 +59,7 @@ Sau khi tích lũy kinh nghiệm và vốn liếng, Buffett mua lại Berkshire 
 
 ## Triết lý 1: Mua doanh nghiệp tốt thay vì mua cổ phiếu rẻ
 
-Khác với người thầy Benjamin Graham vốn chỉ tập trung vào tài sản thanh lý giá rẻ, Buffett — dưới ảnh hưởng của người cộng sự Charlie Munger — phát triển triết lý của mình lên tầm cao mới.
+Khác với người thầy Benjamin Graham vốn chỉ tập trung vào tài sản thanh lý giá rẻ, Buffett — dưới ảnh hưởng của người cộng sự [Charlie Munger](/nha-dau-tu/charlie-munger/) — phát triển triết lý của mình lên tầm cao mới.
 
 Ông chấp nhận mua một doanh nghiệp tuyệt vời với mức giá hợp lý, thay vì mua một doanh nghiệp trung bình với mức giá rẻ mạt.
 

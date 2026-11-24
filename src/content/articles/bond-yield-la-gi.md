@@ -87,7 +87,7 @@ Không phải mọi bond yield đều tính giống nhau. Ba loại phổ biến
 
 - **Yield to Call — YTC (lợi suất khi trái phiếu bị thu hồi sớm).** Một số trái phiếu doanh nghiệp cho phép tổ chức phát hành mua lại trước hạn. YTC tính lợi suất dựa trên ngày thu hồi sớm thay vì ngày đáo hạn.
 
-> **Mẹo:** Với nhà đầu tư F0, chỉ cần nắm vững current yield và YTM là đủ. YTC chỉ cần quan tâm khi mua trái phiếu doanh nghiệp có điều khoản mua lại sớm.
+> **Mẹo:** Với nhà đầu tư F0, chỉ cần nắm vững current yield và YTM là đủ. YTC chỉ cần quan tâm khi mua trái phiếu doanh nghiệp có điều khoản mua lại sớm, thường gặp ở [trái phiếu chuyển đổi](/dau-tu/trai-phieu/trai-phieu-chuyen-doi-la-gi/).
 
 ## Bond yield ảnh hưởng gì đến thị trường cổ phiếu
 

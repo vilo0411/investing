@@ -70,7 +70,7 @@ Biểu đồ lúc này trông giống như phần cổ hẹp của một chiếc
 
 Các nhà phân tích ví giai đoạn thắt nút cổ chai giống như một chiếc lò xo đang bị nén hết cỡ. Thời gian nén càng lâu, năng lượng tích tụ bên trong càng lớn. Sau giai đoạn này, thị trường thường sẽ giải phóng năng lượng bằng một cú bùng nổ cực mạnh.
 
-Cú bứt phá có thể theo chiều hướng tăng giá vọt lên hoặc sụt giảm thẳng đứng. Vì vậy, nhiệm vụ của nhà đầu tư là không nên đoán mò trước hướng đi. Bạn hãy kiên nhẫn quan sát cây nến xác nhận phá vỡ dải.
+Cú bứt phá có thể theo chiều hướng tăng giá vọt lên hoặc sụt giảm thẳng đứng. Vì vậy, nhiệm vụ của nhà đầu tư là không nên đoán mò trước hướng đi. Bạn hãy kiên nhẫn quan sát cây nến xác nhận phá vỡ dải. Cách đo co thắt bằng BandWidth và cách tránh phá vỡ giả có trong bài [Bollinger Band Squeeze là gì](/phan-tich/ky-thuat/chi-bao-bollinger-band-squeeze-la-gi/).
 
 Nếu một cây nến xanh bùng nổ vượt qua dải trên với thanh khoản lớn, đó là tín hiệu mua gom mạnh mẽ. Ngược lại, nếu giá xuyên thủng dải dưới kèm lực bán xả hàng, bạn cần phải đứng ngoài bảo vệ danh mục.
 

@@ -207,12 +207,12 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 |---|---|---|---|
 | Trái phiếu doanh nghiệp | `trai-phieu-doanh-nghiep` | `Finalized` | ✅ Đã publish |
 | Trái phiếu chính phủ là gì | `trai-phieu-chinh-phu-la-gi` | `Finalized` | |
-| Trái phiếu chuyển đổi là gì | `trai-phieu-chuyen-doi-la-gi` | `Planned` | |
-| Trái phiếu ngân hàng là gì | `trai-phieu-ngan-hang-la-gi` | `Planned` | |
+| Trái phiếu chuyển đổi là gì | `trai-phieu-chuyen-doi-la-gi` | `Finalized` | |
+| Trái phiếu ngân hàng là gì | `trai-phieu-ngan-hang-la-gi` | `Finalized` | `/dau-tu/trai-phieu/trai-phieu-ngan-hang-la-gi/` |
 | Cách mua trái phiếu | `cach-mua-trai-phieu` | `Finalized` | |
 | Cách đầu tư trái phiếu | `cach-dau-tu-trai-phieu` | `Finalized` | ✅ Đã publish |
 | Có nên đầu tư trái phiếu | `co-nen-dau-tu-trai-phieu` | `Finalized` | |
-| Bond yield là gì | `bond-yield-la-gi` | `Planned` | |
+| Bond yield là gì | `bond-yield-la-gi` | `Finalized` | |
 
 ---
 
@@ -340,8 +340,8 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 |---|---|---|---|
 | RSI là gì | `rsi-la-gi` | `Finalized` | ✅ Đã publish |
 | MACD là gì | `macd-la-gi` | `Finalized` | |
-| Stochastic RSI là gì | `chi-bao-stochastic-rsi-la-gi` | `Planned` | |
-| Phân kỳ RSI | `phan-ky-rsi` | `Planned` | |
+| Stochastic RSI là gì | `chi-bao-stochastic-rsi-la-gi` | `Finalized` | |
+| Phân kỳ RSI | `phan-ky-rsi` | `Finalized` | |
 
 ### Đường MA
 | Keyword | Slug | Status |
@@ -355,21 +355,21 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 | Keyword | Slug | Status |
 |---|---|---|
 | Bollinger Bands là gì | `chi-bao-bollinger-bands` | `Finalized` |
-| Bollinger Band Squeeze | `chi-bao-bollinger-band-squeeze-la-gi` | `Planned` |
+| Bollinger Band Squeeze | `chi-bao-bollinger-band-squeeze-la-gi` | `Finalized` |
 
 ### Mô hình giá
 | Keyword | Slug | Status |
 |---|---|---|
-| Mô hình vai đầu vai | `mo-hinh-vai-dau-vai` | `Planned` |
-| Mô hình 2 đỉnh | `mo-hinh-2-dinh-la-gi` | `Planned` |
-| Mô hình 2 đáy | `mo-hinh-2-day` | `Planned` |
-| Mô hình cốc tay cầm | `mo-hinh-coc-tay-cam` | `Planned` |
-| Mô hình tam giác | `mo-hinh-tam-giac` | `Planned` |
+| Mô hình vai đầu vai | `mo-hinh-vai-dau-vai` | `Finalized` |
+| Mô hình 2 đỉnh | `mo-hinh-2-dinh-la-gi` | `Finalized` |
+| Mô hình 2 đáy | `mo-hinh-2-day` | `Finalized` |
+| Mô hình cốc tay cầm | `mo-hinh-coc-tay-cam` | `Finalized` |
+| Mô hình tam giác | `mo-hinh-tam-giac` | `Finalized` |
 | Hỗ trợ kháng cự là gì | `ho-tro-khang-cu-la-gi` | `Finalized` |
-| Breakout trong chứng khoán | `breakout-trong-chung-khoan-la-gi` | `Planned` |
-| Ichimoku là gì | `ichimoku-la-gi` | `Planned` |
-| Sóng Elliott là gì | `song-elliott-la-gi` | `Planned` |
-| Fibonacci thoái lui | `fibonacci-thoai-lui` | `Planned` |
+| Breakout trong chứng khoán | `breakout-trong-chung-khoan-la-gi` | `Finalized` |
+| Ichimoku là gì | `ichimoku-la-gi` | `Finalized` |
+| Sóng Elliott là gì | `song-elliott-la-gi` | `Finalized` |
+| Fibonacci thoái lui | `fibonacci-thoai-lui` | `Finalized` |
 
 ---
 
@@ -491,8 +491,8 @@ Trạng thái có thể dùng: `Planned` | `In Progress` | `Outline-Approved` | 
 |---|---|---|---|
 | Warren Buffett là ai | `warren-buffett` | `Finalized` | ✅ Đã publish |
 | Benjamin Graham là ai | `benjamin-graham` | `Finalized` | ✅ Đã publish |
-| Charlie Munger là ai | `charlie-munger` | `Planned` | |
-| Peter Lynch là ai | `peter-lynch` | `Planned` | |
+| Charlie Munger là ai | `charlie-munger` | `Finalized` | |
+| Peter Lynch là ai | `peter-lynch` | `Finalized` | |
 | Phương pháp đầu tư giá trị của Graham | `phuong-phap-dau-tu-gia-tri-cua-graham-benjamin` | `Planned` | |
 | Sách về chứng khoán của Warren Buffett | `sach-ve-chung-khoan-cua-warren-buffett` | `Planned` | |
 | Sách về đầu tư giá trị | `sach-ve-dau-tu-gia-tri` | `Planned` | |

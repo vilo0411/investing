@@ -68,6 +68,8 @@ Hiện tượng phân kỳ dương (phân kỳ tăng giá) xảy ra trong xu hư
 
 Hiện tượng phân kỳ âm (phân kỳ giảm giá) xảy ra trong xu hướng tăng. Khi giá cổ phiếu tăng mạnh tạo đỉnh sau cao hơn đỉnh trước, nhưng đường chỉ báo RSI lại tạo đỉnh sau thấp hơn đỉnh trước. Tín hiệu này cảnh báo lực mua của phe bò đã cạn kiệt và cổ phiếu có rủi ro sụt giảm mạnh trong các phiên tiếp theo.
 
+Ngoài hai dạng trên còn có phân kỳ ẩn, báo hiệu xu hướng tiếp diễn. Bạn có thể đọc hướng dẫn chi tiết về [phân kỳ RSI](/phan-tich/ky-thuat/phan-ky-rsi/) để biết cách nối đỉnh đáy và xác nhận tín hiệu.
+
 ## Những lưu ý sống còn để sử dụng RSI hiệu quả cho F0
 
 RSI là công cụ tuyệt vời nhưng nếu sử dụng máy móc, bạn sẽ rất dễ bị thị trường quét sạch tài khoản. Để tăng độ chính xác, hãy kết hợp RSI với **[chỉ báo MACD](/phan-tich/ky-thuat/macd-la-gi/)** hoặc **[chỉ báo Bollinger Bands](/phan-tich/ky-thuat/chi-bao-bollinger-bands/)**. RSI chỉ là một chỉ báo trong **[phân tích kỹ thuật](/phan-tich/ky-thuat/phan-tich-ky-thuat-la-gi/)** tổng thể. Hãy lưu ý các nguyên tắc thực chiến sau.

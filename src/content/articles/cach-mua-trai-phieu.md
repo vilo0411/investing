@@ -79,6 +79,8 @@ Có nhiều cách để bạn chứng minh điều kiện nhà đầu tư chuyê
 
 Bạn cũng có thể chứng minh qua mức thu nhập chịu thuế tối thiểu đạt 1 tỷ đồng mỗi năm hoặc sở hữu các chứng chỉ hành nghề tài chính chuyên nghiệp. Hãy liên hệ với công ty chứng khoán nơi mở tài khoản để được hỗ trợ xác thực hồ sơ này nhanh chóng nhất trước khi thực hiện mua trái phiếu. Thủ tục này hoàn toàn miễn phí và thường chỉ mất từ 1 đến 2 ngày làm việc để hoàn thành.
 
+> **Lưu ý:** Điều kiện nhà đầu tư chuyên nghiệp cũng áp dụng với lô riêng lẻ **[trái phiếu chuyển đổi](/dau-tu/trai-phieu/trai-phieu-chuyen-doi-la-gi/)**, loại trái phiếu kèm quyền đổi sang cổ phiếu của doanh nghiệp phát hành.
+
 ## Những lưu ý sống còn để mua trái phiếu an toàn
 
 Lưu ý quan trọng nhất là trái phiếu doanh nghiệp hoàn toàn không phải là tiền gửi tiết kiệm ngân hàng. Trái phiếu có mức độ rủi ro cao hơn nhiều do không được bảo hiểm tiền gửi quốc gia bảo hộ. Nếu doanh nghiệp phát hành gặp khủng hoảng hoặc phá sản, bạn có nguy cơ mất toàn bộ số vốn đầu tư ban đầu. Bạn cần nghiên cứu kỹ bài phân tích về việc [có nên đầu tư trái phiếu](/dau-tu/trai-phieu/co-nen-dau-tu-trai-phieu/) để đánh giá đúng rủi ro trước khi ra quyết định.

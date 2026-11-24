@@ -1,11 +1,127 @@
 # Sprint Backlog — Value Investing
 
-> **Cập nhật:** 2026-11-11
+> **Cập nhật:** 2026-11-24
 > **Trạng thái có thể dùng:** `Planned` | `In Progress` | `Outline-Approved` | `Drafting` | `Finalized`
 
 ---
 
-## 🏃 Sprint: 5 Bài Hoàn Thiện Cụm Phân Tích Cơ Bản, Giao Dịch & Quỹ ETF (C13, C11 & C7) (Hiện tại)
+## 🏃 Sprint hiện tại: Charlie Munger & Peter Lynch (C20 — Nhà Đầu Tư Lỗi Lạc)
+
+**Mục tiêu:** Mở rộng cụm C20 Nhà Đầu Tư Lỗi Lạc với 2 huyền thoại đầu tư giá trị và tăng trưởng hợp lý (Charlie Munger và Peter Lynch), kết nối chặt chẽ với Warren Buffett, Benjamin Graham, chỉ số P/E và ROE.
+**Chế độ thực thi:** `--auto` (2026-11-24)
+
+| # | Keyword | Slug | Category | Status | URL đích |
+|---|---|---|---|---|---|
+| 1 | Charlie Munger là ai | `charlie-munger` | `nha-dau-tu` | `Finalized` | `/nha-dau-tu/charlie-munger/` |
+| 2 | Peter Lynch là ai | `peter-lynch` | `nha-dau-tu` | `Finalized` | `/nha-dau-tu/peter-lynch/` |
+
+---
+
+## 🏃 Sprint trước: Sóng Elliott (C16 — Mô hình giá)
+
+**Mục tiêu:** Đóng spoke cuối của nhóm Mô hình giá C16, nối Fibonacci thoái lui, phân kỳ RSI và mô hình tam giác.
+**Chế độ thực thi:** `--auto` (scheduled run, 2026-11-24)
+
+| # | Keyword | Slug | Category | Status | URL đích |
+|---|---|---|---|---|---|
+| 1 | Sóng Elliott là gì | `song-elliott-la-gi` | `ky-thuat` | `Finalized` | `/phan-tich/ky-thuat/song-elliott-la-gi/` |
+
+---
+
+## 🏃 Sprint trước: Ichimoku (C16 — Mô hình giá)
+
+**Mục tiêu:** Bổ sung hệ thống chỉ báo xu hướng tổng hợp, nối hub hỗ trợ kháng cự, đường MA, MACD với breakout và Fibonacci.
+**Chế độ thực thi:** `--auto` (scheduled run, 2026-11-23)
+
+| # | Keyword | Slug | Category | Status | URL đích |
+|---|---|---|---|---|---|
+| 1 | Ichimoku là gì | `ichimoku-la-gi` | `ky-thuat` | `Finalized` | `/phan-tich/ky-thuat/ichimoku-la-gi/` |
+
+---
+
+## 🏃 Sprint trước: Bollinger Band Squeeze (C16 — Bollinger Bands)
+
+**Mục tiêu:** Lấp spoke cuối của nhóm Bollinger Bands, nối hub Bollinger với breakout và mô hình tam giác.
+**Chế độ thực thi:** `--auto` (scheduled run, 2026-11-22)
+
+| # | Keyword | Slug | Category | Status | URL đích |
+|---|---|---|---|---|---|
+| 1 | Bollinger Band Squeeze | `chi-bao-bollinger-band-squeeze-la-gi` | `ky-thuat` | `Finalized` | `/phan-tich/ky-thuat/chi-bao-bollinger-band-squeeze-la-gi/` |
+
+---
+
+## 🏃 Sprint trước: Fibonacci thoái lui (C16 — Mô hình giá)
+
+**Mục tiêu:** Bổ sung công cụ đo nhịp điều chỉnh, nối hub hỗ trợ kháng cự với breakout và các mô hình giá.
+**Chế độ thực thi:** `--auto` (scheduled run, 2026-11-21)
+
+| # | Keyword | Slug | Category | Status | URL đích |
+|---|---|---|---|---|---|
+| 1 | Fibonacci thoái lui | `fibonacci-thoai-lui` | `ky-thuat` | `Finalized` | `/phan-tich/ky-thuat/fibonacci-thoai-lui/` |
+
+---
+
+## 🏃 Sprint trước: Breakout & công cụ xác nhận (C16 — Mô hình giá)
+
+**Mục tiêu:** Viết bài nền về breakout làm cầu nối cho 5 mô hình giá đã có (mỗi mô hình kết thúc bằng một breakout).
+**Chế độ thực thi:** `--auto` (scheduled run, 2026-11-19)
+
+| # | Keyword | Slug | Category | Status | URL đích |
+|---|---|---|---|---|---|
+| 1 | Breakout trong chứng khoán | `breakout-trong-chung-khoan-la-gi` | `ky-thuat` | `Finalized` | `/phan-tich/ky-thuat/breakout-trong-chung-khoan-la-gi/` |
+
+---
+
+## 🏃 Sprint trước: Mô hình giá tiếp diễn (C16 — Mô hình giá)
+
+**Mục tiêu:** Mở rộng cụm Mô hình giá sang nhóm tiếp diễn/tích lũy, link chéo với 3 mô hình đảo chiều.
+**Chế độ thực thi:** `--auto` (scheduled run, 2026-11-17)
+
+| # | Keyword | Slug | Category | Status | URL đích |
+|---|---|---|---|---|---|
+| 1 | Mô hình cốc tay cầm | `mo-hinh-coc-tay-cam` | `ky-thuat` | `Finalized` | `/phan-tich/ky-thuat/mo-hinh-coc-tay-cam/` |
+| 2 | Mô hình tam giác | `mo-hinh-tam-giac` | `ky-thuat` | `Finalized` | `/phan-tich/ky-thuat/mo-hinh-tam-giac/` |
+
+---
+
+## 🏃 Sprint trước: Mô hình giá đảo chiều (C16 — Mô hình giá)
+
+**Mục tiêu:** Mở cụm Mô hình giá với các mô hình đảo chiều phổ biến nhất, link chéo 2 chiều.
+**Chế độ thực thi:** `--auto` (scheduled run, 2026-11-15 → 2026-11-16)
+
+| # | Keyword | Slug | Category | Status | URL đích |
+|---|---|---|---|---|---|
+| 1 | Mô hình vai đầu vai | `mo-hinh-vai-dau-vai` | `ky-thuat` | `Finalized` | `/phan-tich/ky-thuat/mo-hinh-vai-dau-vai/` |
+| 2 | Mô hình 2 đỉnh | `mo-hinh-2-dinh-la-gi` | `ky-thuat` | `Finalized` | `/phan-tich/ky-thuat/mo-hinh-2-dinh-la-gi/` |
+| 3 | Mô hình 2 đáy | `mo-hinh-2-day` | `ky-thuat` | `Finalized` | `/phan-tich/ky-thuat/mo-hinh-2-day/` |
+
+---
+
+## 🏃 Sprint trước: Hoàn thiện cụm RSI (C16 / C17 — Chỉ báo Momentum)
+
+**Mục tiêu:** Lấp 2 spoke còn trống quanh hub RSI là gì.
+**Chế độ thực thi:** `--auto` (scheduled run, 2026-11-14)
+
+| # | Keyword | Slug | Category | Status | URL đích |
+|---|---|---|---|---|---|
+| 1 | Phân kỳ RSI | `phan-ky-rsi` | `ky-thuat` | `Finalized` | `/phan-tich/ky-thuat/phan-ky-rsi/` |
+| 2 | Stochastic RSI là gì | `chi-bao-stochastic-rsi-la-gi` | `ky-thuat` | `Finalized` | `/phan-tich/ky-thuat/chi-bao-stochastic-rsi-la-gi/` |
+
+---
+
+## 🏃 Sprint trước: Hoàn thiện cụm Trái phiếu (C9)
+
+**Mục tiêu:** Lấp các spoke còn trống của cụm C9 ⭐⭐⭐.
+**Chế độ thực thi:** `--auto` (scheduled run)
+
+| # | Keyword | Slug | Category | Status | URL đích |
+|---|---|---|---|---|---|
+| 1 | Trái phiếu chuyển đổi là gì | `trai-phieu-chuyen-doi-la-gi` | `trai-phieu` | `Finalized` | `/dau-tu/trai-phieu/trai-phieu-chuyen-doi-la-gi/` |
+| 2 | Trái phiếu ngân hàng là gì | `trai-phieu-ngan-hang-la-gi` | `trai-phieu` | `Finalized` | `/dau-tu/trai-phieu/trai-phieu-ngan-hang-la-gi/` |
+
+---
+
+## 🏃 Sprint trước: 5 Bài Hoàn Thiện Cụm Phân Tích Cơ Bản, Giao Dịch & Quỹ ETF (C13, C11 & C7)
 
 **Mục tiêu:** Hoàn thiện 100% 3 cụm chủ đề trọng tâm 3 sao (C13 Phân tích cơ bản chỉ số tài chính, C11 Margin & Giao dịch, C7 Quỹ ETF) với 5 bài viết về Biên độ giao dịch chứng khoán, Mô hình CAPM, Current Ratio, Tỷ số nợ trên tổng tài sản và Phân biệt quỹ ETF với quỹ tương hỗ.
 **Thời gian thực hiện:** Hoàn thành (2026-11-11)

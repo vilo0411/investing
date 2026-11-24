@@ -117,6 +117,8 @@ Index toàn bộ bài đã publish tại `src/content/articles/`. Dùng cho inte
 | `co-nen-dau-tu-trai-phieu` | Có nên đầu tư trái phiếu không? | `/dau-tu/trai-phieu/co-nen-dau-tu-trai-phieu/` | có nên đầu tư trái phiếu |
 | `cach-mua-trai-phieu` | Cách mua trái phiếu doanh nghiệp an toàn cho F0 | `/dau-tu/trai-phieu/cach-mua-trai-phieu/` | cách mua trái phiếu |
 | `bond-yield-la-gi` | Bond Yield Là Gì? Cách Đọc Lợi Suất Trái Phiếu Cho F0 | `/dau-tu/trai-phieu/bond-yield-la-gi/` | bond yield |
+| `trai-phieu-chuyen-doi-la-gi` | Trái phiếu chuyển đổi là gì? Cách tính, ưu nhược điểm cho F0 | `/dau-tu/trai-phieu/trai-phieu-chuyen-doi-la-gi/` | trái phiếu chuyển đổi |
+| `trai-phieu-ngan-hang-la-gi` | Trái phiếu ngân hàng là gì? Lãi suất, rủi ro và cách mua cho F0 | `/dau-tu/trai-phieu/trai-phieu-ngan-hang-la-gi/` | trái phiếu ngân hàng |
 
 ## Nhóm Đầu tư — Phái sinh (`/dau-tu/phai-sinh/`)
 
@@ -169,6 +171,18 @@ Index toàn bộ bài đã publish tại `src/content/articles/`. Dùng cho inte
 | `macd-la-gi` | Chỉ báo MACD là gì? Cách sử dụng MACD hiệu quả cho F0 | `/phan-tich/ky-thuat/macd-la-gi/` | chỉ báo MACD |
 | `chi-bao-bollinger-bands` | Bollinger Bands là gì? Hướng dẫn cách dùng dải Bollinger thực chiến | `/phan-tich/ky-thuat/chi-bao-bollinger-bands/` | Bollinger Bands là gì, dải Bollinger |
 | `ho-tro-khang-cu-la-gi` | Hỗ trợ kháng cự là gì? Bản chất và cách xác định trong chứng khoán | `/phan-tich/ky-thuat/ho-tro-khang-cu-la-gi/` | hỗ trợ kháng cự là gì, vùng hỗ trợ, ngưỡng kháng cự |
+| `phan-ky-rsi` | Phân kỳ RSI là gì? 4 loại phân kỳ và cách xác nhận | `/phan-tich/ky-thuat/phan-ky-rsi/` | phân kỳ RSI, phân kỳ ẩn |
+| `chi-bao-stochastic-rsi-la-gi` | Stochastic RSI là gì? Công thức và cách dùng cho F0 | `/phan-tich/ky-thuat/chi-bao-stochastic-rsi-la-gi/` | Stochastic RSI, chỉ báo Stochastic RSI |
+| `mo-hinh-vai-dau-vai` | Mô hình vai đầu vai là gì? Cách nhận diện và giao dịch | `/phan-tich/ky-thuat/mo-hinh-vai-dau-vai/` | mô hình vai đầu vai, vai đầu vai ngược |
+| `mo-hinh-2-dinh-la-gi` | Mô hình 2 đỉnh là gì? 4 tiêu chí nhận diện chữ M chuẩn | `/phan-tich/ky-thuat/mo-hinh-2-dinh-la-gi/` | mô hình 2 đỉnh, double top |
+| `mo-hinh-2-day` | Mô hình 2 đáy là gì? 4 tiêu chí nhận diện chữ W và cách mua | `/phan-tich/ky-thuat/mo-hinh-2-day/` | mô hình 2 đáy, double bottom, mô hình chữ W |
+| `mo-hinh-coc-tay-cam` | Mô hình cốc tay cầm là gì? 5 tiêu chí nhận diện và cách mua | `/phan-tich/ky-thuat/mo-hinh-coc-tay-cam/` | mô hình cốc tay cầm, cup and handle |
+| `mo-hinh-tam-giac` | Mô hình tam giác là gì? 3 loại, cách nhận diện và giao dịch | `/phan-tich/ky-thuat/mo-hinh-tam-giac/` | mô hình tam giác, tam giác tăng, tam giác giảm, tam giác cân |
+| `breakout-trong-chung-khoan-la-gi` | Breakout trong chứng khoán là gì? Cách xác nhận và tránh phá vỡ giả | `/phan-tich/ky-thuat/breakout-trong-chung-khoan-la-gi/` | breakout trong chứng khoán, breakout là gì, phá vỡ giá, breakout giả |
+| `fibonacci-thoai-lui` | Fibonacci thoái lui là gì? Cách vẽ và dùng đúng các mức | `/phan-tich/ky-thuat/fibonacci-thoai-lui/` | Fibonacci thoái lui, Fibonacci retracement, các mức Fibonacci, cách vẽ Fibonacci |
+| `chi-bao-bollinger-band-squeeze-la-gi` | Bollinger Band Squeeze là gì? Cách nhận diện và giao dịch | `/phan-tich/ky-thuat/chi-bao-bollinger-band-squeeze-la-gi/` | Bollinger Band Squeeze, co thắt Bollinger, thắt nút cổ chai, BandWidth, TTM Squeeze |
+| `ichimoku-la-gi` | Ichimoku là gì? Cách đọc mây Kumo và 5 đường chỉ báo | `/phan-tich/ky-thuat/ichimoku-la-gi/` | Ichimoku, mây Kumo, Ichimoku Kinko Hyo, Kijun-sen, Tenkan-sen |
+| `song-elliott-la-gi` | Sóng Elliott là gì? Cấu trúc 5-3, 3 quy tắc và cách đếm sóng | `/phan-tich/ky-thuat/song-elliott-la-gi/` | sóng Elliott, lý thuyết sóng Elliott, Elliott Wave, đếm sóng Elliott |
 
 ## Nhóm Reviews (`/reviews/`)
 
@@ -212,6 +226,8 @@ Index toàn bộ bài đã publish tại `src/content/articles/`. Dùng cho inte
 |------|-------|----------|-------------------|
 | `warren-buffett` | Warren Buffett là ai? | `/nha-dau-tu/warren-buffett/` | Warren Buffett |
 | `benjamin-graham` | Benjamin Graham là ai? | `/nha-dau-tu/benjamin-graham/` | Benjamin Graham |
+| `charlie-munger` | Charlie Munger là ai? Triết lý đầu tư của bộ óc Berkshire | `/nha-dau-tu/charlie-munger/` | Charlie Munger |
+| `peter-lynch` | Peter Lynch là ai? Triết lý đầu tư Trên đỉnh Phố Wall | `/nha-dau-tu/peter-lynch/` | Peter Lynch |
 
 ---
 

@@ -41,6 +41,9 @@
 ### Không chèn FAQ vào body — Layout tự render từ frontmatter
 - ArticleLayout và ReviewLayout tự render mục "Câu hỏi thường gặp" từ trường `faq[]` trong frontmatter (giống `keyTakeaways`). Khi finalize, tuyệt đối KHÔNG để lại H2 `## Câu hỏi thường gặp` với các H3 câu hỏi trong body — sẽ bị trùng lặp. Đưa toàn bộ Q&A vào frontmatter `faq[]`; `sources` cũng để frontmatter (CitationBox tự render). CTA/disclosure cuối bài thì giữ trong body.
 
+### Target H2 cha khớp độ dài đoạn dẫn và tránh liệt kê số trong ngoặc
+- Khi H2 cha chỉ là đoạn dẫn vào các H3, đặt target 30-40 từ hoặc viết sẵn 2 đoạn dẫn (giới thiệu + thứ tự đọc). Không nhét bộ thông số dạng "(9, 26, 52)" vào câu dài; viết "thông số mặc định" hoặc tách thành câu riêng.
+
 ## Cấu trúc & Định dạng (Structure & Formatting)
 
 ### Trình bày trực quan bằng List/Table
@@ -64,7 +67,16 @@
 ### Cách đặt dấu câu trong list-item/FAQ để tối ưu tách câu
 - Khi viết câu hỏi FAQ hoặc list-item bắt đầu bằng thẻ in đậm `**`, hãy đặt dấu chấm `. ` hoặc dấu chấm hỏi `? ` ngay bên ngoài thẻ in đậm (ví dụ: `* **Nhóm hàng hóa tỷ trọng lớn nhất**. Hàng ăn...` thay vì `* **Nhóm hàng hóa tỷ trọng lớn nhất?** Hàng ăn...`). Điều này giúp regex phân tách câu của script QA nhận diện dấu câu chính xác và ngăn chặn hiện tượng gộp đầu dòng thành câu dài quá 25 từ.
 
+### Khai báo H3 kèm target trong outline khi draft có H3
+- Khi lập outline, mọi H3 dự kiến viết trong draft (ví dụ "Ví dụ tính...", "Fibonacci mở rộng...") phải có dòng `#### H3:` kèm `**Target:**` riêng, và target của H2 cha chỉ tính phần đoạn văn trước H3 đầu tiên.
+
+### List-item có tiêu đề in đậm tối đa 2 câu sau tiêu đề
+- Với list-item dạng `**Tiêu đề**. ...`, chỉ viết tối đa 2 câu sau tiêu đề; cần thêm ý thì gộp bằng "nên"/"và" hoặc chuyển sang đoạn văn xuôi sau danh sách. Với ảnh Unsplash, tránh query chứa "candlestick chart"/"stock chart": top-1 `fiXLQXAhCfk` đã dùng cho bài breakout và lặp lại 2 lần.
+
 ## Sản phẩm & Thương hiệu (Products & Brand Context)
 
 ### Tránh sử dụng callout box không tương thích
 - Không sử dụng cú pháp callout mở rộng của Markdown (như `> [!NOTE]`, `> [!TIP]`, `> [!IMPORTANT]`, `> [!WARNING]`) vì chúng không tương thích hiển thị trên một số CMS. Hãy thay thế bằng cú pháp trích dẫn chuẩn của Markdown kết hợp tiêu đề in đậm (ví dụ: `> **Lưu ý:**` hoặc `> **Mẹo:**`).
+
+### Kiểm tra trùng ảnh ngay sau khi tải Unsplash
+- Sau mỗi lần `unsplash.mjs download`, chạy `node scripts/check-duplicate-images.mjs` và grep slug bài mới. Ảnh trùng thì xóa và chọn ảnh khác hoặc đổi query cụ thể hơn (ví dụ "investor studying price chart monitor" thay vì "stock chart analysis screen"). Không để 2 bài dùng chung 1 ảnh inline.
